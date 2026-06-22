@@ -41,98 +41,86 @@ class DateFieldsSwCD extends DateFieldsSw {
   const DateFieldsSwCD(super.cld);
 
   @override
-  MultiLength get era => const MultiLength(
-        long: 'Wakati',
-        short: 'Wakati',
-        narrow: 'Wakati',
-      );
+  MultiLength get era =>
+      const MultiLength(long: 'Wakati', short: 'Wakati', narrow: 'Wakati');
 
   @override
   DateFieldFullData get week => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'Juma',
-          short: 'Juma',
-          narrow: 'Juma',
-        ),
-        previous: MultiLength(
-          long: 'wiki iliyopita',
-          short: 'wiki iliyopita',
-          narrow: 'wiki iliyopita',
-        ),
-        now: MultiLength(
-          long: 'wiki hii',
-          short: 'wiki hii',
-          narrow: 'wiki hii',
-        ),
-        next: MultiLength(
-          long: 'wiki ijayo',
-          short: 'wiki ijayo',
-          narrow: 'wiki ijayo',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'wiki {0} iliyopita',
-            other: 'wiki {0} zilizopita',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'wiki {0} iliyopita',
-            other: 'wiki {0} zilizopita',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'wiki {0} iliyopita',
-            other: 'wiki {0} zilizopita',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'baada ya wiki {0}',
-            other: 'baada ya wiki {0}',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'baada ya wiki {0}',
-            other: 'baada ya wiki {0}',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'baada ya wiki {0}',
-            other: 'baada ya wiki {0}',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'Juma', short: 'Juma', narrow: 'Juma'),
+    previous: MultiLength(
+      long: 'wiki iliyopita',
+      short: 'wiki iliyopita',
+      narrow: 'wiki iliyopita',
+    ),
+    now: MultiLength(long: 'wiki hii', short: 'wiki hii', narrow: 'wiki hii'),
+    next: MultiLength(
+      long: 'wiki ijayo',
+      short: 'wiki ijayo',
+      narrow: 'wiki ijayo',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'wiki {0} iliyopita',
+        other: 'wiki {0} zilizopita',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'wiki {0} iliyopita',
+        other: 'wiki {0} zilizopita',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'wiki {0} iliyopita',
+        other: 'wiki {0} zilizopita',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'baada ya wiki {0}',
+        other: 'baada ya wiki {0}',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'baada ya wiki {0}',
+        other: 'baada ya wiki {0}',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'baada ya wiki {0}',
+        other: 'baada ya wiki {0}',
+      ),
+    ),
+  );
 
   @override
   MultiLength get weekday => const MultiLength(
-        long: 'Siku ya juma',
-        short: 'Siku ya juma',
-        narrow: 'Siku ya juma',
-      );
+    long: 'Siku ya juma',
+    short: 'Siku ya juma',
+    narrow: 'Siku ya juma',
+  );
 
   @override
   MultiLength get dayperiod => const MultiLength(
-        long: 'Muda wa siku',
-        short: 'Muda wa siku',
-        narrow: 'Muda wa siku',
-      );
+    long: 'Muda wa siku',
+    short: 'Muda wa siku',
+    narrow: 'Muda wa siku',
+  );
 
   @override
-  MultiLength get zone => const MultiLength(
-        long: 'Majira ya saa',
-        short: 'eneo',
-        narrow: 'eneo',
-      );
+  MultiLength get zone =>
+      const MultiLength(long: 'Majira ya saa', short: 'eneo', narrow: 'eneo');
 }
 
 class LanguagesSwCD extends LanguagesSw {
   const LanguagesSwCD(super.cld);
 
   static const _ak = Language('ak', 'Kiakan');
-  static const _ar001 =
-      Language('ar-001', 'Kiarabu cha Dunia Kilichosanifishwa');
+  static const _ar001 = Language(
+    'ar-001',
+    'Kiarabu cha Dunia Kilichosanifishwa',
+  );
   static const _arq = Language('arq', 'Kiarabu cha Aljeria');
   static const _az = Language('az', 'Kiazabajani', short: 'Kiazeri');
   static const _gv = Language('gv', 'Kimanksi');
@@ -228,41 +216,41 @@ class LanguagesSwCD extends LanguagesSw {
 
   @override
   Map<String, Language> get languages => Map.unmodifiable({
-        ...LanguagesSw.staticLanguages,
-        ...const {
-          'ak': _ak,
-          'ar-001': _ar001,
-          'arq': _arq,
-          'az': _az,
-          'gv': _gv,
-          'gwi': _gwi,
-          'hup': _hup,
-          'jbo': _jbo,
-          'kac': _kac,
-          'kkj': _kkj,
-          'koi': _koi,
-          'kru': _kru,
-          'kum': _kum,
-          'ky': _ky,
-          'lam': _lam,
-          'li': _li,
-          'mdf': _mdf,
-          'mic': _mic,
-          'mk': _mk,
-          'moh': _moh,
-          'mos': _mos,
-          'nnh': _nnh,
-          'nqo': _nqo,
-          'pcm': _pcm,
-          'quc': _quc,
-          'shu': _shu,
-          'srn': _srn,
-          'swb': _swb,
-          'syr': _syr,
-          'udm': _udm,
-          'yi': _yi,
-        }
-      });
+    ...LanguagesSw.staticLanguages,
+    ...const {
+      'ak': _ak,
+      'ar-001': _ar001,
+      'arq': _arq,
+      'az': _az,
+      'gv': _gv,
+      'gwi': _gwi,
+      'hup': _hup,
+      'jbo': _jbo,
+      'kac': _kac,
+      'kkj': _kkj,
+      'koi': _koi,
+      'kru': _kru,
+      'kum': _kum,
+      'ky': _ky,
+      'lam': _lam,
+      'li': _li,
+      'mdf': _mdf,
+      'mic': _mic,
+      'mk': _mk,
+      'moh': _moh,
+      'mos': _mos,
+      'nnh': _nnh,
+      'nqo': _nqo,
+      'pcm': _pcm,
+      'quc': _quc,
+      'shu': _shu,
+      'srn': _srn,
+      'swb': _swb,
+      'syr': _syr,
+      'udm': _udm,
+      'yi': _yi,
+    },
+  });
 }
 
 class TerritoriesSwCD extends TerritoriesSw {
@@ -292,8 +280,11 @@ class TerritoriesSwCD extends TerritoriesSw {
   static const _sd = Territory('SD', 'Sudani');
   static const _st = Territory('ST', 'Sao Tome na Prinsipe');
   static const _td = Territory('TD', 'Chadi');
-  static const _tl =
-      Territory('TL', 'Timori ya Mashariki', variant: 'Timor ya Mashariki');
+  static const _tl = Territory(
+    'TL',
+    'Timori ya Mashariki',
+    variant: 'Timor ya Mashariki',
+  );
 
   @override
   Territory get easternAsia => _$030;
@@ -350,73 +341,118 @@ class TerritoriesSwCD extends TerritoriesSw {
 
   @override
   Map<String, Territory> get territories => Map.unmodifiable({
-        ...TerritoriesSw.staticTerritories,
-        ...const {
-          '030': _$030,
-          'AF': _af,
-          'AZ': _az,
-          'BJ': _bj,
-          'CI': _ci,
-          'CX': _cx,
-          'HR': _hr,
-          'JO': _jo,
-          'LB': _lb,
-          'LI': _li,
-          'LU': _lu,
-          'LV': _lv,
-          'MA': _ma,
-          'MM': _mm,
-          'NE': _ne,
-          'NG': _ng,
-          'NO': _no,
-          'NP': _np,
-          'OM': _om,
-          'PR': _pr,
-          'QA': _qa,
-          'SD': _sd,
-          'ST': _st,
-          'TD': _td,
-          'TL': _tl,
-        }
-      });
+    ...TerritoriesSw.staticTerritories,
+    ...const {
+      '030': _$030,
+      'AF': _af,
+      'AZ': _az,
+      'BJ': _bj,
+      'CI': _ci,
+      'CX': _cx,
+      'HR': _hr,
+      'JO': _jo,
+      'LB': _lb,
+      'LI': _li,
+      'LU': _lu,
+      'LV': _lv,
+      'MA': _ma,
+      'MM': _mm,
+      'NE': _ne,
+      'NG': _ng,
+      'NO': _no,
+      'NP': _np,
+      'OM': _om,
+      'PR': _pr,
+      'QA': _qa,
+      'SD': _sd,
+      'ST': _st,
+      'TD': _td,
+      'TL': _tl,
+    },
+  });
 }
 
 class CurrenciesSwCD extends CurrenciesSw {
   const CurrenciesSwCD(super.cld);
 
-  static const _cdf = Currency(_cld, 'CDF', 'Faranga ya Kongo',
-      one: 'faranga ya Kongo', other: 'faranga za Kongo', symbol: 'FC');
-  static const _cny = Currency(_cld, 'CNY', 'Yuan Renminbi ya China',
-      one: 'yuan ya Uchina',
-      other: 'yuan za Uchina',
-      symbol: 'CN¥',
-      symbolNarrow: '¥');
-  static const _etb = Currency(_cld, 'ETB', 'Bir ya Uhabeshi',
-      one: 'birr ya Uhabeshi', other: 'birr za Uhabeshi');
-  static const _jpy = Currency(_cld, 'JPY', 'Sarafu ya Kijapani',
-      one: 'yen ya Japani',
-      other: 'yen za Japani',
-      symbol: 'JP¥',
-      symbolNarrow: '¥');
-  static const _mga = Currency(_cld, 'MGA', 'Ariary ya Bukini',
-      one: 'ariari ya Madagaska',
-      other: 'ariari za Madagaska',
-      symbolNarrow: 'Ar');
-  static const _mro = Currency(_cld, 'MRO', 'Ugwiya ya Moritania (1973–2017)',
-      one: 'ouguiya ya Mauritania (1973–2017)',
-      other: 'ouguiya za Mauritania (1973–2017)');
-  static const _mru = Currency(_cld, 'MRU', 'Ugwiya ya Moritania',
-      one: 'ouguiya ya Moritania', other: 'ouguiya za Moritania');
-  static const _scr = Currency(_cld, 'SCR', 'Rupia ya Shelisheli',
-      one: 'rupia ya Ushelisheli', other: 'rupia za Ushelisheli');
-  static const _xaf = Currency(_cld, 'XAF', 'Faranga CFA BEAC',
-      one: 'faranga ya Afrika ya Kati CFA',
-      other: 'faranga za Afrika ya Kati CFA',
-      symbol: 'FCFA');
-  static const _xof = Currency(_cld, 'XOF', 'Faranga CFA BCEAO',
-      one: 'faranga ya Afrika Magharibi CFA',
-      other: 'faranga za Afrika Magharibi CFA',
-      symbol: 'F CFA');
+  static const _cdf = Currency(
+    _cld,
+    'CDF',
+    'Faranga ya Kongo',
+    one: 'faranga ya Kongo',
+    other: 'faranga za Kongo',
+    symbol: 'FC',
+  );
+  static const _cny = Currency(
+    _cld,
+    'CNY',
+    'Yuan Renminbi ya China',
+    one: 'yuan ya Uchina',
+    other: 'yuan za Uchina',
+    symbol: 'CN¥',
+    symbolNarrow: '¥',
+  );
+  static const _etb = Currency(
+    _cld,
+    'ETB',
+    'Bir ya Uhabeshi',
+    one: 'birr ya Uhabeshi',
+    other: 'birr za Uhabeshi',
+  );
+  static const _jpy = Currency(
+    _cld,
+    'JPY',
+    'Sarafu ya Kijapani',
+    one: 'yen ya Japani',
+    other: 'yen za Japani',
+    symbol: 'JP¥',
+    symbolNarrow: '¥',
+  );
+  static const _mga = Currency(
+    _cld,
+    'MGA',
+    'Ariary ya Bukini',
+    one: 'ariari ya Madagaska',
+    other: 'ariari za Madagaska',
+    symbolNarrow: 'Ar',
+  );
+  static const _mro = Currency(
+    _cld,
+    'MRO',
+    'Ugwiya ya Moritania (1973–2017)',
+    one: 'ouguiya ya Mauritania (1973–2017)',
+    other: 'ouguiya za Mauritania (1973–2017)',
+  );
+  static const _mru = Currency(
+    _cld,
+    'MRU',
+    'Ugwiya ya Moritania',
+    one: 'ouguiya ya Moritania',
+    other: 'ouguiya za Moritania',
+  );
+  static const _scr = Currency(
+    _cld,
+    'SCR',
+    'Rupia ya Shelisheli',
+    one: 'rupia ya Ushelisheli',
+    other: 'rupia za Ushelisheli',
+  );
+  static const _xaf = Currency(
+    _cld,
+    'XAF',
+    'Faranga CFA BEAC',
+    one: 'faranga ya Afrika ya Kati CFA',
+    other: 'faranga za Afrika ya Kati CFA',
+    symbol: 'FCFA',
+  );
+  static const _xof = Currency(
+    _cld,
+    'XOF',
+    'Faranga CFA BCEAO',
+    one: 'faranga ya Afrika Magharibi CFA',
+    other: 'faranga za Afrika Magharibi CFA',
+    symbol: 'F CFA',
+  );
 
   @override
   Currency get cdf => _cdf;
@@ -441,18 +477,18 @@ class CurrenciesSwCD extends CurrenciesSw {
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesSw.staticCurrencies,
-        ...const {
-          'CDF': _cdf,
-          'CNY': _cny,
-          'ETB': _etb,
-          'JPY': _jpy,
-          'MGA': _mga,
-          'MRO': _mro,
-          'MRU': _mru,
-          'SCR': _scr,
-          'XAF': _xaf,
-          'XOF': _xof,
-        }
-      });
+    ...CurrenciesSw.staticCurrencies,
+    ...const {
+      'CDF': _cdf,
+      'CNY': _cny,
+      'ETB': _etb,
+      'JPY': _jpy,
+      'MGA': _mga,
+      'MRO': _mro,
+      'MRU': _mru,
+      'SCR': _scr,
+      'XAF': _xaf,
+      'XOF': _xof,
+    },
+  });
 }

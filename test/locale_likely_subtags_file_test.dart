@@ -23,28 +23,36 @@ void main() async {
     group(g.$1, () {
       for (var t in g.$2) {
         test(
-            '${t.source} => ${t.addLikely}; ${t.removeFavorScript}; ${t.removeFavorRegion} (line: ${t.lineNr})',
-            skip: t.skipReason, () {
-          if (t.addLikely == 'FAIL') {
-            expect(LocaleId.parse(t.source).addLikelySubTags().toUnicodeBCP47(),
-                t.source);
-          } else {
-            expect(LocaleId.parse(t.source).addLikelySubTags().toUnicodeBCP47(),
-                t.addLikely);
-          }
-          if (t.removeFavorScript.isNotEmpty) {
-            expect(
-                LocaleId.parse(t.source)
-                    .removeLikelySubTags(favorScript: true)
-                    .toUnicodeBCP47(),
-                t.removeFavorScript);
-          }
-          if (t.removeFavorRegion.isNotEmpty) {
-            expect(
+          '${t.source} => ${t.addLikely}; ${t.removeFavorScript}; ${t.removeFavorRegion} (line: ${t.lineNr})',
+          skip: t.skipReason,
+          () {
+            if (t.addLikely == 'FAIL') {
+              expect(
+                LocaleId.parse(t.source).addLikelySubTags().toUnicodeBCP47(),
+                t.source,
+              );
+            } else {
+              expect(
+                LocaleId.parse(t.source).addLikelySubTags().toUnicodeBCP47(),
+                t.addLikely,
+              );
+            }
+            if (t.removeFavorScript.isNotEmpty) {
+              expect(
+                LocaleId.parse(
+                  t.source,
+                ).removeLikelySubTags(favorScript: true).toUnicodeBCP47(),
+                t.removeFavorScript,
+              );
+            }
+            if (t.removeFavorRegion.isNotEmpty) {
+              expect(
                 LocaleId.parse(t.source).removeLikelySubTags().toUnicodeBCP47(),
-                t.removeFavorRegion);
-          }
-        });
+                t.removeFavorRegion,
+              );
+            }
+          },
+        );
       }
     });
   }

@@ -20,11 +20,16 @@ void main() async {
   for (var g in root) {
     group(g.$1, () {
       for (var t in g.$2) {
-        test('${t.original} => ${t.canonicalized} (line: ${t.lineNr})',
-            skip: t.skipReason, () {
-          expect(LocaleId.parse(t.original).canonicalize().toUnicodeBCP47(),
-              t.canonicalized.replaceAll('_', '-'));
-        });
+        test(
+          '${t.original} => ${t.canonicalized} (line: ${t.lineNr})',
+          skip: t.skipReason,
+          () {
+            expect(
+              LocaleId.parse(t.original).canonicalize().toUnicodeBCP47(),
+              t.canonicalized.replaceAll('_', '-'),
+            );
+          },
+        );
       }
     });
   }

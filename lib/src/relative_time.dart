@@ -71,8 +71,13 @@ class RelativeTimeFormat {
   }) {
     var now = clock ?? DateTime.now();
     if (elapsed) {
-      return formatDuration(date.difference(now),
-          length: length, numeric: numeric, minUnit: minUnit, maxUnit: maxUnit);
+      return formatDuration(
+        date.difference(now),
+        length: length,
+        numeric: numeric,
+        minUnit: minUnit,
+        maxUnit: maxUnit,
+      );
     }
 
     var seconds =
@@ -158,7 +163,8 @@ class RelativeTimeFormat {
 
     var clamped = _clamp(unit, minUnit, maxUnit);
     if (clamped != unit) {
-      value = duration.inMicroseconds /
+      value =
+          duration.inMicroseconds /
           Duration.microsecondsPerSecond /
           _secondsPerUnit(clamped);
       unit = clamped;
@@ -174,11 +180,14 @@ class RelativeTimeFormat {
     RelativeUnit unit, {
     RelativeTimeLength length = RelativeTimeLength.long,
     bool numeric = false,
-  }) =>
-      _formatUnit(offset, unit, length, numeric);
+  }) => _formatUnit(offset, unit, length, numeric);
 
   String _formatUnit(
-      int value, RelativeUnit unit, RelativeTimeLength length, bool numeric) {
+    int value,
+    RelativeUnit unit,
+    RelativeTimeLength length,
+    bool numeric,
+  ) {
     var field = _field(unit);
 
     if (!numeric) {
@@ -198,7 +207,10 @@ class RelativeTimeFormat {
   /// "this Tuesday" (0) or "next Tuesday" (1), or `null` if [weekOffset] is out
   /// of range. [weekday] follows [DateTime.weekday] (1 = Monday … 7 = Sunday).
   String? _formatWeekday(
-      int weekday, int weekOffset, RelativeTimeLength length) {
+    int weekday,
+    int weekOffset,
+    RelativeTimeLength length,
+  ) {
     var field = _weekday(weekday);
     switch (weekOffset) {
       case 0:
@@ -286,7 +298,9 @@ class RelativeTimeFormat {
   }
 
   RelativeTime _relativeTime(
-      MultiLengthRelativeTime value, RelativeTimeLength length) {
+    MultiLengthRelativeTime value,
+    RelativeTimeLength length,
+  ) {
     switch (length) {
       case RelativeTimeLength.long:
         return value.long;
@@ -314,8 +328,11 @@ class RelativeTimeFormat {
   DateTime _startOfWeek(DateTime date) {
     var shift = (date.weekday - _weekInfo.firstDayOfWeek) % 7;
     if (shift < 0) shift += 7;
-    return DateTime.utc(date.year, date.month, date.day)
-        .subtract(Duration(days: shift));
+    return DateTime.utc(
+      date.year,
+      date.month,
+      date.day,
+    ).subtract(Duration(days: shift));
   }
 }
 

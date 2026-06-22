@@ -32,19 +32,22 @@ class CommonLocaleDataMsID extends CommonLocaleDataMs {
 class CurrenciesMsID extends CurrenciesMs {
   const CurrenciesMsID(super.cld);
 
-  static const _idr = Currency(_cld, 'IDR', 'Rupiah Indonesia',
-      symbol: 'Rp', symbolNarrow: 'Rp');
+  static const _idr = Currency(
+    _cld,
+    'IDR',
+    'Rupiah Indonesia',
+    symbol: 'Rp',
+    symbolNarrow: 'Rp',
+  );
 
   @override
   Currency get idr => _idr;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesMs.staticCurrencies,
-        ...const {
-          'IDR': _idr,
-        }
-      });
+    ...CurrenciesMs.staticCurrencies,
+    ...const {'IDR': _idr},
+  });
 }
 
 class TimeZonesMsID extends TimeZonesMs {

@@ -41,11 +41,7 @@ class LanguagesFrCH extends LanguagesFr {
 
   @override
   Map<String, Language> get languages => Map.unmodifiable({
-        ...LanguagesFr.staticLanguages,
-        ...const {
-          'gu': _gu,
-          'pdc': _pdc,
-          'sdh': _sdh,
-        }
-      });
+    ...LanguagesFr.staticLanguages,
+    ...const {'gu': _gu, 'pdc': _pdc, 'sdh': _sdh},
+  });
 }

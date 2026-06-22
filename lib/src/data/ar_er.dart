@@ -35,9 +35,7 @@ class CurrenciesArER extends CurrenciesAr {
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesAr.staticCurrencies,
-        ...const {
-          'ERN': _ern,
-        }
-      });
+    ...CurrenciesAr.staticCurrencies,
+    ...const {'ERN': _ern},
+  });
 }

@@ -21,7 +21,7 @@ dependencies:
 dev_dependencies:
   analyzer:
   build_runner:
-  dart_style: ^2.3.7
+  dart_style: ^3.0.0
   http:
   json_annotation:
   json_serializable:

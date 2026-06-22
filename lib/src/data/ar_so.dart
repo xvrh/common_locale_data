@@ -35,9 +35,7 @@ class CurrenciesArSO extends CurrenciesAr {
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesAr.staticCurrencies,
-        ...const {
-          'SOS': _sos,
-        }
-      });
+    ...CurrenciesAr.staticCurrencies,
+    ...const {'SOS': _sos},
+  });
 }

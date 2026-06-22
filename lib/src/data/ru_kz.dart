@@ -28,22 +28,24 @@ class CommonLocaleDataRuKZ extends CommonLocaleDataRu {
 class CurrenciesRuKZ extends CurrenciesRu {
   const CurrenciesRuKZ(super.cld);
 
-  static const _kzt = Currency(_cld, 'KZT', 'казахский тенге',
-      one: 'казахский тенге',
-      few: 'казахских тенге',
-      many: 'казахских тенге',
-      other: 'казахского тенге',
-      symbol: '₸',
-      symbolNarrow: '₸');
+  static const _kzt = Currency(
+    _cld,
+    'KZT',
+    'казахский тенге',
+    one: 'казахский тенге',
+    few: 'казахских тенге',
+    many: 'казахских тенге',
+    other: 'казахского тенге',
+    symbol: '₸',
+    symbolNarrow: '₸',
+  );
 
   @override
   Currency get kzt => _kzt;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesRu.staticCurrencies,
-        ...const {
-          'KZT': _kzt,
-        }
-      });
+    ...CurrenciesRu.staticCurrencies,
+    ...const {'KZT': _kzt},
+  });
 }

@@ -28,17 +28,21 @@ class CommonLocaleDataSqMK extends CommonLocaleDataSq {
 class CurrenciesSqMK extends CurrenciesSq {
   const CurrenciesSqMK(super.cld);
 
-  static const _mkd = Currency(_cld, 'MKD', 'Denari maqedonas',
-      one: 'denar maqedonas', other: 'denarë maqedonas', symbol: 'den');
+  static const _mkd = Currency(
+    _cld,
+    'MKD',
+    'Denari maqedonas',
+    one: 'denar maqedonas',
+    other: 'denarë maqedonas',
+    symbol: 'den',
+  );
 
   @override
   Currency get mkd => _mkd;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesSq.staticCurrencies,
-        ...const {
-          'MKD': _mkd,
-        }
-      });
+    ...CurrenciesSq.staticCurrencies,
+    ...const {'MKD': _mkd},
+  });
 }

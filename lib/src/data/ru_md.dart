@@ -28,21 +28,23 @@ class CommonLocaleDataRuMD extends CommonLocaleDataRu {
 class CurrenciesRuMD extends CurrenciesRu {
   const CurrenciesRuMD(super.cld);
 
-  static const _mdl = Currency(_cld, 'MDL', 'молдавский лей',
-      one: 'молдавский лей',
-      few: 'молдавских лея',
-      many: 'молдавских леев',
-      other: 'молдавского лея',
-      symbol: 'L');
+  static const _mdl = Currency(
+    _cld,
+    'MDL',
+    'молдавский лей',
+    one: 'молдавский лей',
+    few: 'молдавских лея',
+    many: 'молдавских леев',
+    other: 'молдавского лея',
+    symbol: 'L',
+  );
 
   @override
   Currency get mdl => _mdl;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesRu.staticCurrencies,
-        ...const {
-          'MDL': _mdl,
-        }
-      });
+    ...CurrenciesRu.staticCurrencies,
+    ...const {'MDL': _mdl},
+  });
 }

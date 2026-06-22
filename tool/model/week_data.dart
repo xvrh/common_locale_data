@@ -19,10 +19,13 @@ final _regionMatcher = RegExp(r'^([A-Z]{2}|[0-9]{3})$');
 /// region-less locales (so e.g. `en` resolves to US, `fr` to FR).
 String generateWeekData() {
   var weekData = readJsonData(
-      'tool/data/core/supplemental/weekData.json', 'supplemental/weekData');
-  var likely = readJsonData('tool/data/core/supplemental/likelySubtags.json',
-          'supplemental/likelySubtags')
-      .cast<String, String>();
+    'tool/data/core/supplemental/weekData.json',
+    'supplemental/weekData',
+  );
+  var likely = readJsonData(
+    'tool/data/core/supplemental/likelySubtags.json',
+    'supplemental/likelySubtags',
+  ).cast<String, String>();
 
   var firstDay = weekData['firstDay'] as Map<String, dynamic>;
   var weekendStart = weekData['weekendStart'] as Map<String, dynamic>;
@@ -37,8 +40,7 @@ String generateWeekData() {
     ...firstDay.keys,
     ...weekendStart.keys,
     ...weekendEnd.keys,
-  }.where((k) => _regionMatcher.hasMatch(k)).toList()
-    ..sort();
+  }.where((k) => _regionMatcher.hasMatch(k)).toList()..sort();
 
   String? regionOf(String key) {
     var maximized = likely[key];
@@ -51,7 +53,9 @@ String generateWeekData() {
     if (id.region != null) continue;
     var langKey = id.script != null ? '${id.lang}-${id.script}' : id.lang!;
     likelyRegion.putIfAbsent(
-        langKey, () => regionOf(langKey) ?? regionOf(id.lang!) ?? '001');
+      langKey,
+      () => regionOf(langKey) ?? regionOf(id.lang!) ?? '001',
+    );
   }
 
   var b = StringBuffer();
@@ -59,24 +63,31 @@ String generateWeekData() {
   b.writeln();
   b.writeln("import 'week_data.dart';");
   b.writeln();
-  b.writeln('/// Week conventions per region (ISO 3166), '
-      'with "001" as the world default.');
+  b.writeln(
+    '/// Week conventions per region (ISO 3166), '
+    'with "001" as the world default.',
+  );
   b.writeln('const weekDataByRegion = <String, WeekInfo>{');
   for (var region in regions) {
-    b.writeln("'$region': WeekInfo("
-        'firstDayOfWeek: ${day(firstDay, region)}, '
-        'weekendStart: ${day(weekendStart, region)}, '
-        'weekendEnd: ${day(weekendEnd, region)}, '
-        'minDaysInFirstWeek: '
-        '${int.parse((minDays[region] ?? minDays['001']) as String)}),');
+    b.writeln(
+      "'$region': WeekInfo("
+      'firstDayOfWeek: ${day(firstDay, region)}, '
+      'weekendStart: ${day(weekendStart, region)}, '
+      'weekendEnd: ${day(weekendEnd, region)}, '
+      'minDaysInFirstWeek: '
+      '${int.parse((minDays[region] ?? minDays['001']) as String)}),',
+    );
   }
   b.writeln('};');
   b.writeln();
-  b.writeln('/// Likely region for region-less locales '
-      '(derived from CLDR likelySubtags).');
+  b.writeln(
+    '/// Likely region for region-less locales '
+    '(derived from CLDR likelySubtags).',
+  );
   b.writeln('const likelyRegion = <String, String>{');
-  for (var entry in likelyRegion.entries.toList()
-    ..sort((a, b) => a.key.compareTo(b.key))) {
+  for (var entry
+      in likelyRegion.entries.toList()
+        ..sort((a, b) => a.key.compareTo(b.key))) {
     b.writeln("'${entry.key}': '${entry.value}',");
   }
   b.writeln('};');

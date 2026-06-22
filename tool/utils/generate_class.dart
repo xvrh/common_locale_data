@@ -8,16 +8,23 @@ String? getBaseLocale(String locale) {
   var languageId = BaseLanguageId.parse(locale);
 
   if (languageId.region == null && languageId.variants.isEmpty) return null;
-  return BaseLanguageId(lang: languageId.lang, script: languageId.script)
-      .toUnicodeBCP47();
+  return BaseLanguageId(
+    lang: languageId.lang,
+    script: languageId.script,
+  ).toUnicodeBCP47();
 }
 
-String updateModel(String path, String type, String unknown,
-    final Map<String, String> reference) {
+String updateModel(
+  String path,
+  String type,
+  String unknown,
+  Map<String, String> reference,
+) {
   var entries = <MapEntry<String, String>>[];
 
   entries.add(
-      MapEntry(reference[unknown]!.toLowerCamelCase(), reference[unknown]!));
+    MapEntry(reference[unknown]!.toLowerCamelCase(), reference[unknown]!),
+  );
 
   entries.addAll(reference.entries.where((e) => !e.key.contains('-alt-')));
 
@@ -25,13 +32,18 @@ String updateModel(String path, String type, String unknown,
 }
 
 String updateModelFlexible(
-    String path, String type, Iterable<MapEntry<String, String>> entries,
-    [String Function(String code)? translateDefaultEntry]) {
+  String path,
+  String type,
+  Iterable<MapEntry<String, String>> entries, [
+  String Function(String code)? translateDefaultEntry,
+]) {
   var lines = File(path).readAsLinesSync();
 
-  var idx = lines.indexWhere((e) =>
-      e.contains('/// Localized name for ') ||
-      e.contains('// FROM HERE ON GENERATED CODE - DO NOT MODIFY BY HAND'));
+  var idx = lines.indexWhere(
+    (e) =>
+        e.contains('/// Localized name for ') ||
+        e.contains('// FROM HERE ON GENERATED CODE - DO NOT MODIFY BY HAND'),
+  );
   if (idx == -1) idx = lines.length - 1;
 
   lines.removeRange(idx, lines.length);
@@ -46,7 +58,8 @@ String updateModelFlexible(
       lines.add('$type get ${toKeyword(entry.key)};');
     } else {
       lines.add(
-          '$type get ${toKeyword(entry.key)} => const ${translateDefaultEntry(entry.key)};');
+        '$type get ${toKeyword(entry.key)} => const ${translateDefaultEntry(entry.key)};',
+      );
     }
   }
 
@@ -68,8 +81,10 @@ String? generateInheritedClass<T>(
   var fileName = filePath.replaceAll(r'$locale', locale);
   Map<String, T>? data;
   if (File(fileName).existsSync()) {
-    data = readJsonData(fileName, jsonPath.replaceAll(r'$locale', locale))
-        .cast<String, T>();
+    data = readJsonData(
+      fileName,
+      jsonPath.replaceAll(r'$locale', locale),
+    ).cast<String, T>();
   } else {
     stderr.write('*** File not found: $fileName\n');
   }
@@ -80,8 +95,9 @@ String? generateInheritedClass<T>(
     var baseFileName = filePath.replaceAll(r'$locale', baseLocale);
     if (File(fileName).existsSync()) {
       baseData = readJsonData(
-              baseFileName, jsonPath.replaceAll(r'$locale', baseLocale))
-          .cast<String, T>();
+        baseFileName,
+        jsonPath.replaceAll(r'$locale', baseLocale),
+      ).cast<String, T>();
     }
   }
 
@@ -93,8 +109,9 @@ String? generateInheritedClass<T>(
     data ?? {},
     (code) => generateCode(code, data ?? {}),
     baseLocale: baseLocale,
-    translateBaseEntry:
-        baseData == null ? null : (code) => generateCode(code, baseData!),
+    translateBaseEntry: baseData == null
+        ? null
+        : (code) => generateCode(code, baseData!),
     unknown: unknown,
     skipAddUnknown: skipAddUnknown,
   );
@@ -117,9 +134,11 @@ String? generateClass<T>(
   if (!skipAddUnknown) {
     reference = {
       if (unknown != null) reference[unknown]!: unknown,
-      ...Map.fromEntries(reference.entries
-          .where((ref) => !ref.key.contains('-alt-'))
-          .map((ref) => MapEntry(ref.key, ref.key)))
+      ...Map.fromEntries(
+        reference.entries
+            .where((ref) => !ref.key.contains('-alt-'))
+            .map((ref) => MapEntry(ref.key, ref.key)),
+      ),
     };
   }
 
@@ -133,7 +152,7 @@ class $collectionClassName${locale.toUpperCamelCase()} extends $collectionClassN
     var code = translateEntry(key);
     var baseCode = translateBaseEntry?.call(key);
     if (code != baseCode) {
-      buffer.writeln('static const _${toKeyword(key)} = const $code;');
+      buffer.writeln('static const _${toKeyword(key)} = $code;');
       nonEmpty = true;
     }
   }
@@ -145,35 +164,42 @@ class $collectionClassName${locale.toUpperCamelCase()} extends $collectionClassN
       if (entries.containsKey(ref.value) || unknown != null) {
         buffer.writeln('@override');
         buffer.writeln(
-            'final ${toKeyword(ref.key)} = _${toKeyword(entries.containsKey(ref.value) ? ref.value : unknown!)};');
+          'final ${toKeyword(ref.key)} = _${toKeyword(entries.containsKey(ref.value) ? ref.value : unknown!)};',
+        );
       }
     }
   } else {
-    for (var ref in reference.entries.where((e) =>
-        entries.containsKey(e.value) &&
-        translateEntry(e.value) != translateBaseEntry?.call(e.value))) {
+    for (var ref in reference.entries.where(
+      (e) =>
+          entries.containsKey(e.value) &&
+          translateEntry(e.value) != translateBaseEntry?.call(e.value),
+    )) {
       buffer.writeln('@override');
       buffer.writeln(
-          '$className get ${toKeyword(ref.key)} => _${toKeyword(ref.value)};');
+        '$className get ${toKeyword(ref.key)} => _${toKeyword(ref.value)};',
+      );
     }
   }
 
   final overrides = entries.keys
-      .where((key) =>
-          !key.contains('-alt-') &&
-          (baseLocale == null ||
-              translateEntry(key) != translateBaseEntry?.call(key)))
+      .where(
+        (key) =>
+            !key.contains('-alt-') &&
+            (baseLocale == null ||
+                translateEntry(key) != translateBaseEntry?.call(key)),
+      )
       .toSet();
 
   var constMap = generateConstMap(
-      overrides
-          .map((key) => '${escapeDartString(key)}: _${toKeyword(key)}')
-          .toSet(),
-      {},
-      className,
-      collectionClassName,
-      collectionClassName,
-      baseLocale);
+    overrides
+        .map((key) => '${escapeDartString(key)}: _${toKeyword(key)}')
+        .toSet(),
+    {},
+    className,
+    collectionClassName,
+    collectionClassName,
+    baseLocale,
+  );
 
   if (constMap != null) {
     buffer.writeln();

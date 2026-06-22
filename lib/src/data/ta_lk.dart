@@ -28,20 +28,22 @@ class CommonLocaleDataTaLK extends CommonLocaleDataTa {
 class CurrenciesTaLK extends CurrenciesTa {
   const CurrenciesTaLK(super.cld);
 
-  static const _lkr = Currency(_cld, 'LKR', 'இலங்கை ரூபாய்',
-      one: 'இலங்கை ரூபாய்',
-      other: 'இலங்கை ரூபாய்கள்',
-      symbol: 'Rs.',
-      symbolNarrow: 'Rs');
+  static const _lkr = Currency(
+    _cld,
+    'LKR',
+    'இலங்கை ரூபாய்',
+    one: 'இலங்கை ரூபாய்',
+    other: 'இலங்கை ரூபாய்கள்',
+    symbol: 'Rs.',
+    symbolNarrow: 'Rs',
+  );
 
   @override
   Currency get lkr => _lkr;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesTa.staticCurrencies,
-        ...const {
-          'LKR': _lkr,
-        }
-      });
+    ...CurrenciesTa.staticCurrencies,
+    ...const {'LKR': _lkr},
+  });
 }

@@ -3,43 +3,55 @@ import '../utils/escape_dart_string.dart';
 import '../utils/generate_class.dart';
 import '../utils/read_json_data.dart';
 
-var _reference = readJsonData(
-        'tool/data/numbers/currencies/en.json', 'main/en/numbers/currencies')
-    .cast<String, Map<String, dynamic>>()
-    .map((key, value) => MapEntry(key, value.cast<String, String>()));
+var _reference =
+    readJsonData(
+      'tool/data/numbers/currencies/en.json',
+      'main/en/numbers/currencies',
+    ).cast<String, Map<String, dynamic>>().map(
+      (key, value) => MapEntry(key, value.cast<String, String>()),
+    );
 
 String updateCurrenciesModel(String file) {
   var entries = <MapEntry<String, String>>[];
 
-  entries.add(MapEntry(_reference['XXX']!['displayName']!.toLowerCamelCase(),
-      _reference['XXX']!['displayName']!));
+  entries.add(
+    MapEntry(
+      _reference['XXX']!['displayName']!.toLowerCamelCase(),
+      _reference['XXX']!['displayName']!,
+    ),
+  );
 
   entries.addAll(
-      _reference.entries.map((e) => MapEntry(e.key, e.value['displayName']!)));
+    _reference.entries.map((e) => MapEntry(e.key, e.value['displayName']!)),
+  );
 
   return updateModelFlexible(file, 'Currency', entries);
 }
 
 String? generateCurrencies(String locale) {
   return generateInheritedClass(
-      locale,
-      _reference.map((key, value) => MapEntry(key, value['displayName']!)),
-      r'tool/data/numbers/currencies/$locale.json',
-      r'main/$locale/numbers/currencies',
-      'Currency',
-      'Currencies',
-      'XXX',
-      generateCurrencyCode);
+    locale,
+    _reference.map((key, value) => MapEntry(key, value['displayName']!)),
+    r'tool/data/numbers/currencies/$locale.json',
+    r'main/$locale/numbers/currencies',
+    'Currency',
+    'Currencies',
+    'XXX',
+    generateCurrencyCode,
+  );
 }
 
-String? generateCurrencyCode(String currencyCode,
-    Map<String, Map<String, dynamic>> translatedCurrencies) {
+String? generateCurrencyCode(
+  String currencyCode,
+  Map<String, Map<String, dynamic>> translatedCurrencies,
+) {
   var output = StringBuffer();
   var currency = translatedCurrencies[currencyCode]?.cast<String, String>();
   if (currency == null) return null;
 
   output.writeln(
-      'Currency(_cld, ${escapeDartString(currencyCode)}, ${escapeDartString(currency['displayName'] ?? currencyCode)}');
+    'Currency(_cld, ${escapeDartString(currencyCode)}, ${escapeDartString(currency['displayName'] ?? currencyCode)}',
+  );
 
   var fields = {
     'displayName': null,
@@ -65,8 +77,9 @@ String? generateCurrencyCode(String currencyCode,
     }
   }
 
-  var remaining =
-      currency.keys.toList().toSet().difference(fields.keys.toSet());
+  var remaining = currency.keys.toList().toSet().difference(
+    fields.keys.toSet(),
+  );
 
   if (remaining.isNotEmpty) {
     throw Exception('Unknown field in currency: $remaining');

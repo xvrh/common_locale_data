@@ -30,11 +30,13 @@ class TimeZonesNeIN extends TimeZonesNe {
 
   @override
   Map<String, MetaZone> get metaZoneNames => Map.unmodifiable({
-        ...TimeZonesNe.staticMetaZoneNames,
-        ...const {
-          'India': MetaZone('India',
-              long: TimeZoneName(standard: 'भारतीय मानक समय'),
-              short: TimeZoneName(standard: 'IST')),
-        }
-      });
+    ...TimeZonesNe.staticMetaZoneNames,
+    ...const {
+      'India': MetaZone(
+        'India',
+        long: TimeZoneName(standard: 'भारतीय मानक समय'),
+        short: TimeZoneName(standard: 'IST'),
+      ),
+    },
+  });
 }

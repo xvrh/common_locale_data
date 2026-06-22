@@ -28,21 +28,23 @@ class CommonLocaleDataHrBA extends CommonLocaleDataHr {
 class CurrenciesHrBA extends CurrenciesHr {
   const CurrenciesHrBA(super.cld);
 
-  static const _bam = Currency(_cld, 'BAM', 'konvertibilna marka',
-      one: 'konvertibilna marka',
-      few: 'konvertibilne marke',
-      other: 'konvertibilnih maraka',
-      symbol: 'KM',
-      symbolNarrow: 'KM');
+  static const _bam = Currency(
+    _cld,
+    'BAM',
+    'konvertibilna marka',
+    one: 'konvertibilna marka',
+    few: 'konvertibilne marke',
+    other: 'konvertibilnih maraka',
+    symbol: 'KM',
+    symbolNarrow: 'KM',
+  );
 
   @override
   Currency get bam => _bam;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesHr.staticCurrencies,
-        ...const {
-          'BAM': _bam,
-        }
-      });
+    ...CurrenciesHr.staticCurrencies,
+    ...const {'BAM': _bam},
+  });
 }

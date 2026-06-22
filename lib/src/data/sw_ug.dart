@@ -28,17 +28,21 @@ class CommonLocaleDataSwUG extends CommonLocaleDataSw {
 class CurrenciesSwUG extends CurrenciesSw {
   const CurrenciesSwUG(super.cld);
 
-  static const _ugx = Currency(_cld, 'UGX', 'Shilingi ya Uganda',
-      one: 'shilingi ya Uganda', other: 'shilingi za Uganda', symbol: 'USh');
+  static const _ugx = Currency(
+    _cld,
+    'UGX',
+    'Shilingi ya Uganda',
+    one: 'shilingi ya Uganda',
+    other: 'shilingi za Uganda',
+    symbol: 'USh',
+  );
 
   @override
   Currency get ugx => _ugx;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesSw.staticCurrencies,
-        ...const {
-          'UGX': _ugx,
-        }
-      });
+    ...CurrenciesSw.staticCurrencies,
+    ...const {'UGX': _ugx},
+  });
 }

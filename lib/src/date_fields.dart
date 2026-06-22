@@ -125,8 +125,11 @@ class MultiLengthRelativeTime {
     required this.narrow,
   });
 
-  String format(num howMany,
-      {NumberFormat? numberFormat, String? placeholder}) {
+  String format(
+    num howMany, {
+    NumberFormat? numberFormat,
+    String? placeholder,
+  }) {
     return call(howMany, numberFormat: numberFormat, placeholder: placeholder);
   }
 
@@ -152,8 +155,11 @@ class RelativeTime {
     this.many,
   });
 
-  String format(num howMany,
-      {NumberFormat? numberFormat, String? placeholder}) {
+  String format(
+    num howMany, {
+    NumberFormat? numberFormat,
+    String? placeholder,
+  }) {
     return call(howMany, numberFormat: numberFormat, placeholder: placeholder);
   }
 

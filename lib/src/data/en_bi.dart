@@ -28,17 +28,21 @@ class CommonLocaleDataEnBI extends CommonLocaleDataEn {
 class CurrenciesEnBI extends CurrenciesEn {
   const CurrenciesEnBI(super.cld);
 
-  static const _bif = Currency(_cld, 'BIF', 'Burundian Franc',
-      one: 'Burundian franc', other: 'Burundian francs', symbol: 'FBu');
+  static const _bif = Currency(
+    _cld,
+    'BIF',
+    'Burundian Franc',
+    one: 'Burundian franc',
+    other: 'Burundian francs',
+    symbol: 'FBu',
+  );
 
   @override
   Currency get bif => _bif;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesEn.staticCurrencies,
-        ...const {
-          'BIF': _bif,
-        }
-      });
+    ...CurrenciesEn.staticCurrencies,
+    ...const {'BIF': _bif},
+  });
 }

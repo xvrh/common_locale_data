@@ -65,5201 +65,4315 @@ class UnitsMk extends Units {
 
   @override
   UnitPrefix get pattern10pMinus1 => const UnitPrefix(
-        long: UnitPrefixPattern('деци{0}'),
-        short: UnitPrefixPattern('d{0}'),
-        narrow: UnitPrefixPattern('d{0}'),
-      );
+    long: UnitPrefixPattern('деци{0}'),
+    short: UnitPrefixPattern('d{0}'),
+    narrow: UnitPrefixPattern('d{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus2 => const UnitPrefix(
-        long: UnitPrefixPattern('санти{0}'),
-        short: UnitPrefixPattern('c{0}'),
-        narrow: UnitPrefixPattern('c{0}'),
-      );
+    long: UnitPrefixPattern('санти{0}'),
+    short: UnitPrefixPattern('c{0}'),
+    narrow: UnitPrefixPattern('c{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus3 => const UnitPrefix(
-        long: UnitPrefixPattern('мили{0}'),
-        short: UnitPrefixPattern('m{0}'),
-        narrow: UnitPrefixPattern('m{0}'),
-      );
+    long: UnitPrefixPattern('мили{0}'),
+    short: UnitPrefixPattern('m{0}'),
+    narrow: UnitPrefixPattern('m{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus6 => const UnitPrefix(
-        long: UnitPrefixPattern('микро{0}'),
-        short: UnitPrefixPattern('μ{0}'),
-        narrow: UnitPrefixPattern('μ{0}'),
-      );
+    long: UnitPrefixPattern('микро{0}'),
+    short: UnitPrefixPattern('μ{0}'),
+    narrow: UnitPrefixPattern('μ{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus9 => const UnitPrefix(
-        long: UnitPrefixPattern('нано{0}'),
-        short: UnitPrefixPattern('n{0}'),
-        narrow: UnitPrefixPattern('n{0}'),
-      );
+    long: UnitPrefixPattern('нано{0}'),
+    short: UnitPrefixPattern('n{0}'),
+    narrow: UnitPrefixPattern('n{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus12 => const UnitPrefix(
-        long: UnitPrefixPattern('пико{0}'),
-        short: UnitPrefixPattern('p{0}'),
-        narrow: UnitPrefixPattern('p{0}'),
-      );
+    long: UnitPrefixPattern('пико{0}'),
+    short: UnitPrefixPattern('p{0}'),
+    narrow: UnitPrefixPattern('p{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus15 => const UnitPrefix(
-        long: UnitPrefixPattern('фемто{0}'),
-        short: UnitPrefixPattern('f{0}'),
-        narrow: UnitPrefixPattern('f{0}'),
-      );
+    long: UnitPrefixPattern('фемто{0}'),
+    short: UnitPrefixPattern('f{0}'),
+    narrow: UnitPrefixPattern('f{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus18 => const UnitPrefix(
-        long: UnitPrefixPattern('ато{0}'),
-        short: UnitPrefixPattern('a{0}'),
-        narrow: UnitPrefixPattern('a{0}'),
-      );
+    long: UnitPrefixPattern('ато{0}'),
+    short: UnitPrefixPattern('a{0}'),
+    narrow: UnitPrefixPattern('a{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus21 => const UnitPrefix(
-        long: UnitPrefixPattern('зепто{0}'),
-        short: UnitPrefixPattern('z{0}'),
-        narrow: UnitPrefixPattern('z{0}'),
-      );
+    long: UnitPrefixPattern('зепто{0}'),
+    short: UnitPrefixPattern('z{0}'),
+    narrow: UnitPrefixPattern('z{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus24 => const UnitPrefix(
-        long: UnitPrefixPattern('јокто{0}'),
-        short: UnitPrefixPattern('y{0}'),
-        narrow: UnitPrefixPattern('y{0}'),
-      );
+    long: UnitPrefixPattern('јокто{0}'),
+    short: UnitPrefixPattern('y{0}'),
+    narrow: UnitPrefixPattern('y{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus27 => const UnitPrefix(
-        long: UnitPrefixPattern('ронто{0}'),
-        short: UnitPrefixPattern('r{0}'),
-        narrow: UnitPrefixPattern('r{0}'),
-      );
+    long: UnitPrefixPattern('ронто{0}'),
+    short: UnitPrefixPattern('r{0}'),
+    narrow: UnitPrefixPattern('r{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus30 => const UnitPrefix(
-        long: UnitPrefixPattern('квекто{0}'),
-        short: UnitPrefixPattern('q{0}'),
-        narrow: UnitPrefixPattern('q{0}'),
-      );
+    long: UnitPrefixPattern('квекто{0}'),
+    short: UnitPrefixPattern('q{0}'),
+    narrow: UnitPrefixPattern('q{0}'),
+  );
   @override
   UnitPrefix get pattern10p1 => const UnitPrefix(
-        long: UnitPrefixPattern('дека{0}'),
-        short: UnitPrefixPattern('da{0}'),
-        narrow: UnitPrefixPattern('da{0}'),
-      );
+    long: UnitPrefixPattern('дека{0}'),
+    short: UnitPrefixPattern('da{0}'),
+    narrow: UnitPrefixPattern('da{0}'),
+  );
   @override
   UnitPrefix get pattern10p2 => const UnitPrefix(
-        long: UnitPrefixPattern('хекто{0}'),
-        short: UnitPrefixPattern('h{0}'),
-        narrow: UnitPrefixPattern('h{0}'),
-      );
+    long: UnitPrefixPattern('хекто{0}'),
+    short: UnitPrefixPattern('h{0}'),
+    narrow: UnitPrefixPattern('h{0}'),
+  );
   @override
   UnitPrefix get pattern10p3 => const UnitPrefix(
-        long: UnitPrefixPattern('кило{0}'),
-        short: UnitPrefixPattern('k{0}'),
-        narrow: UnitPrefixPattern('k{0}'),
-      );
+    long: UnitPrefixPattern('кило{0}'),
+    short: UnitPrefixPattern('k{0}'),
+    narrow: UnitPrefixPattern('k{0}'),
+  );
   @override
   UnitPrefix get pattern10p6 => const UnitPrefix(
-        long: UnitPrefixPattern('мега{0}'),
-        short: UnitPrefixPattern('M{0}'),
-        narrow: UnitPrefixPattern('M{0}'),
-      );
+    long: UnitPrefixPattern('мега{0}'),
+    short: UnitPrefixPattern('M{0}'),
+    narrow: UnitPrefixPattern('M{0}'),
+  );
   @override
   UnitPrefix get pattern10p9 => const UnitPrefix(
-        long: UnitPrefixPattern('гига{0}'),
-        short: UnitPrefixPattern('G{0}'),
-        narrow: UnitPrefixPattern('G{0}'),
-      );
+    long: UnitPrefixPattern('гига{0}'),
+    short: UnitPrefixPattern('G{0}'),
+    narrow: UnitPrefixPattern('G{0}'),
+  );
   @override
   UnitPrefix get pattern10p12 => const UnitPrefix(
-        long: UnitPrefixPattern('тера{0}'),
-        short: UnitPrefixPattern('T{0}'),
-        narrow: UnitPrefixPattern('T{0}'),
-      );
+    long: UnitPrefixPattern('тера{0}'),
+    short: UnitPrefixPattern('T{0}'),
+    narrow: UnitPrefixPattern('T{0}'),
+  );
   @override
   UnitPrefix get pattern10p15 => const UnitPrefix(
-        long: UnitPrefixPattern('пета{0}'),
-        short: UnitPrefixPattern('P{0}'),
-        narrow: UnitPrefixPattern('P{0}'),
-      );
+    long: UnitPrefixPattern('пета{0}'),
+    short: UnitPrefixPattern('P{0}'),
+    narrow: UnitPrefixPattern('P{0}'),
+  );
   @override
   UnitPrefix get pattern10p18 => const UnitPrefix(
-        long: UnitPrefixPattern('екса{0}'),
-        short: UnitPrefixPattern('E{0}'),
-        narrow: UnitPrefixPattern('E{0}'),
-      );
+    long: UnitPrefixPattern('екса{0}'),
+    short: UnitPrefixPattern('E{0}'),
+    narrow: UnitPrefixPattern('E{0}'),
+  );
   @override
   UnitPrefix get pattern10p21 => const UnitPrefix(
-        long: UnitPrefixPattern('зета{0}'),
-        short: UnitPrefixPattern('Z{0}'),
-        narrow: UnitPrefixPattern('Z{0}'),
-      );
+    long: UnitPrefixPattern('зета{0}'),
+    short: UnitPrefixPattern('Z{0}'),
+    narrow: UnitPrefixPattern('Z{0}'),
+  );
   @override
   UnitPrefix get pattern10p24 => const UnitPrefix(
-        long: UnitPrefixPattern('јота{0}'),
-        short: UnitPrefixPattern('Y{0}'),
-        narrow: UnitPrefixPattern('Y{0}'),
-      );
+    long: UnitPrefixPattern('јота{0}'),
+    short: UnitPrefixPattern('Y{0}'),
+    narrow: UnitPrefixPattern('Y{0}'),
+  );
   @override
   UnitPrefix get pattern10p27 => const UnitPrefix(
-        long: UnitPrefixPattern('рона{0}'),
-        short: UnitPrefixPattern('R{0}'),
-        narrow: UnitPrefixPattern('R{0}'),
-      );
+    long: UnitPrefixPattern('рона{0}'),
+    short: UnitPrefixPattern('R{0}'),
+    narrow: UnitPrefixPattern('R{0}'),
+  );
   @override
   UnitPrefix get pattern10p30 => const UnitPrefix(
-        long: UnitPrefixPattern('квета{0}'),
-        short: UnitPrefixPattern('Q{0}'),
-        narrow: UnitPrefixPattern('Q{0}'),
-      );
+    long: UnitPrefixPattern('квета{0}'),
+    short: UnitPrefixPattern('Q{0}'),
+    narrow: UnitPrefixPattern('Q{0}'),
+  );
   @override
   UnitPrefix get pattern1024p1 => const UnitPrefix(
-        long: UnitPrefixPattern('киби{0}'),
-        short: UnitPrefixPattern('Ki{0}'),
-        narrow: UnitPrefixPattern('Ki{0}'),
-      );
+    long: UnitPrefixPattern('киби{0}'),
+    short: UnitPrefixPattern('Ki{0}'),
+    narrow: UnitPrefixPattern('Ki{0}'),
+  );
   @override
   UnitPrefix get pattern1024p2 => const UnitPrefix(
-        long: UnitPrefixPattern('меби{0}'),
-        short: UnitPrefixPattern('Mi{0}'),
-        narrow: UnitPrefixPattern('Mi{0}'),
-      );
+    long: UnitPrefixPattern('меби{0}'),
+    short: UnitPrefixPattern('Mi{0}'),
+    narrow: UnitPrefixPattern('Mi{0}'),
+  );
   @override
   UnitPrefix get pattern1024p3 => const UnitPrefix(
-        long: UnitPrefixPattern('гиби{0}'),
-        short: UnitPrefixPattern('Gi{0}'),
-        narrow: UnitPrefixPattern('Gi{0}'),
-      );
+    long: UnitPrefixPattern('гиби{0}'),
+    short: UnitPrefixPattern('Gi{0}'),
+    narrow: UnitPrefixPattern('Gi{0}'),
+  );
   @override
   UnitPrefix get pattern1024p4 => const UnitPrefix(
-        long: UnitPrefixPattern('теби{0}'),
-        short: UnitPrefixPattern('Ti{0}'),
-        narrow: UnitPrefixPattern('Ti{0}'),
-      );
+    long: UnitPrefixPattern('теби{0}'),
+    short: UnitPrefixPattern('Ti{0}'),
+    narrow: UnitPrefixPattern('Ti{0}'),
+  );
   @override
   UnitPrefix get pattern1024p5 => const UnitPrefix(
-        long: UnitPrefixPattern('пеби{0}'),
-        short: UnitPrefixPattern('Pi{0}'),
-        narrow: UnitPrefixPattern('Pi{0}'),
-      );
+    long: UnitPrefixPattern('пеби{0}'),
+    short: UnitPrefixPattern('Pi{0}'),
+    narrow: UnitPrefixPattern('Pi{0}'),
+  );
   @override
   UnitPrefix get pattern1024p6 => const UnitPrefix(
-        long: UnitPrefixPattern('ексби{0}'),
-        short: UnitPrefixPattern('Ei{0}'),
-        narrow: UnitPrefixPattern('Ei{0}'),
-      );
+    long: UnitPrefixPattern('ексби{0}'),
+    short: UnitPrefixPattern('Ei{0}'),
+    narrow: UnitPrefixPattern('Ei{0}'),
+  );
   @override
   UnitPrefix get pattern1024p7 => const UnitPrefix(
-        long: UnitPrefixPattern('зеби{0}'),
-        short: UnitPrefixPattern('Zi{0}'),
-        narrow: UnitPrefixPattern('Zi{0}'),
-      );
+    long: UnitPrefixPattern('зеби{0}'),
+    short: UnitPrefixPattern('Zi{0}'),
+    narrow: UnitPrefixPattern('Zi{0}'),
+  );
   @override
   UnitPrefix get pattern1024p8 => const UnitPrefix(
-        long: UnitPrefixPattern('јобе{0}'),
-        short: UnitPrefixPattern('Yi{0}'),
-        narrow: UnitPrefixPattern('Yi{0}'),
-      );
+    long: UnitPrefixPattern('јобе{0}'),
+    short: UnitPrefixPattern('Yi{0}'),
+    narrow: UnitPrefixPattern('Yi{0}'),
+  );
   @override
   CompoundUnit get per => const CompoundUnit(
-        long: CompoundUnitPattern('{0} на {1}'),
-        short: CompoundUnitPattern('{0}/{1}'),
-        narrow: CompoundUnitPattern('{0}/{1}'),
-      );
+    long: CompoundUnitPattern('{0} на {1}'),
+    short: CompoundUnitPattern('{0}/{1}'),
+    narrow: CompoundUnitPattern('{0}/{1}'),
+  );
   @override
   CompoundUnit get times => const CompoundUnit(
-        long: CompoundUnitPattern('{0}⋅{1}'),
-        short: CompoundUnitPattern('{0}⋅{1}'),
-        narrow: CompoundUnitPattern('{0}⋅{1}'),
-      );
+    long: CompoundUnitPattern('{0}⋅{1}'),
+    short: CompoundUnitPattern('{0}⋅{1}'),
+    narrow: CompoundUnitPattern('{0}⋅{1}'),
+  );
   @override
   Unit get accelerationGForce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'гравитациска сила',
-          one: '{0} гравитациска сила',
-          other: '{0} гравитациска сила',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'гравитациска сила',
-          one: '{0} гравитациска сила',
-          other: '{0} G',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'гравитациска сила',
-          one: '{0} гравитациска сила',
-          other: '{0} G',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'гравитациска сила',
+      one: '{0} гравитациска сила',
+      other: '{0} гравитациска сила',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'гравитациска сила',
+      one: '{0} гравитациска сила',
+      other: '{0} G',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'гравитациска сила',
+      one: '{0} гравитациска сила',
+      other: '{0} G',
+    ),
+  );
 
   @override
   Unit get accelerationMeterPerSquareSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'метри во секунда на квадрат',
-          one: '{0} метар во секунда на квадрат',
-          other: '{0} метри во секунда на квадрат',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'метри/сек²',
-          one: '{0} метар во секунда на квадрат',
-          other: '{0} m/s²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'm/s²',
-          one: '{0} метар во секунда на квадрат',
-          other: '{0} m/s²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'метри во секунда на квадрат',
+      one: '{0} метар во секунда на квадрат',
+      other: '{0} метри во секунда на квадрат',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'метри/сек²',
+      one: '{0} метар во секунда на квадрат',
+      other: '{0} m/s²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'm/s²',
+      one: '{0} метар во секунда на квадрат',
+      other: '{0} m/s²',
+    ),
+  );
 
   @override
   Unit get angleRevolution => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'револуција',
-          one: '{0} револуција',
-          other: '{0} револуции',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'rev',
-          one: '{0} револуција',
-          other: '{0} rev',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'rev',
-          one: '{0} револуција',
-          other: '{0} rev',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'револуција',
+      one: '{0} револуција',
+      other: '{0} револуции',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'rev',
+      one: '{0} револуција',
+      other: '{0} rev',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'rev',
+      one: '{0} револуција',
+      other: '{0} rev',
+    ),
+  );
 
   @override
   Unit get angleRadian => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'радијани',
-          one: '{0} радијан',
-          other: '{0} радијани',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'rad',
-          one: '{0} радијан',
-          other: '{0} rad',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'rad',
-          one: '{0} радијан',
-          other: '{0} rad',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'радијани',
+      one: '{0} радијан',
+      other: '{0} радијани',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'rad',
+      one: '{0} радијан',
+      other: '{0} rad',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'rad',
+      one: '{0} радијан',
+      other: '{0} rad',
+    ),
+  );
 
   @override
   Unit get angleDegree => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'степени',
-          one: '{0} степен',
-          other: '{0} степени',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'степени',
-          one: '{0} deg',
-          other: '{0} deg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'deg',
-          one: '{0} deg',
-          other: '{0} deg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'степени',
+      one: '{0} степен',
+      other: '{0} степени',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'степени',
+      one: '{0} deg',
+      other: '{0} deg',
+    ),
+    narrow: UnitCountPattern(_locale, 'deg', one: '{0} deg', other: '{0} deg'),
+  );
 
   @override
   Unit get angleArcMinute => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'аголни минути',
-          one: '{0} аголна минута',
-          other: '{0} аголни минути',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'arcmins',
-          one: '{0} arcmin',
-          other: '{0} arcmins',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'arcmin',
-          one: '{0}′',
-          other: '{0}′',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'аголни минути',
+      one: '{0} аголна минута',
+      other: '{0} аголни минути',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'arcmins',
+      one: '{0} arcmin',
+      other: '{0} arcmins',
+    ),
+    narrow: UnitCountPattern(_locale, 'arcmin', one: '{0}′', other: '{0}′'),
+  );
 
   @override
   Unit get angleArcSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'аголни секунди',
-          one: '{0} аголна секунда',
-          other: '{0} аголни секунди',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'arcsecs',
-          one: '{0} arcsec',
-          other: '{0} arcsecs',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'arcsec',
-          one: '{0}″',
-          other: '{0}″',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'аголни секунди',
+      one: '{0} аголна секунда',
+      other: '{0} аголни секунди',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'arcsecs',
+      one: '{0} arcsec',
+      other: '{0} arcsecs',
+    ),
+    narrow: UnitCountPattern(_locale, 'arcsec', one: '{0}″', other: '{0}″'),
+  );
 
   @override
   Unit get areaSquareKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'квадратни километри',
-          one: '{0} квадратен километар',
-          other: '{0} квадратни километри',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'km²',
-          one: '{0} квадратен километар',
-          other: '{0} km²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'km²',
-          one: '{0} квадратен километар',
-          other: '{0} km²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'квадратни километри',
+      one: '{0} квадратен километар',
+      other: '{0} квадратни километри',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'km²',
+      one: '{0} квадратен километар',
+      other: '{0} km²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'km²',
+      one: '{0} квадратен километар',
+      other: '{0} km²',
+    ),
+  );
 
   @override
   Unit get areaHectare => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'хектари',
-          one: '{0} хектар',
-          other: '{0} хектари',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'хектари',
-          one: '{0} хектар',
-          other: '{0} ha',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'хектар',
-          one: '{0} хектар',
-          other: '{0} ha',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'хектари',
+      one: '{0} хектар',
+      other: '{0} хектари',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'хектари',
+      one: '{0} хектар',
+      other: '{0} ha',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'хектар',
+      one: '{0} хектар',
+      other: '{0} ha',
+    ),
+  );
 
   @override
   Unit get areaSquareMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'квадратни метри',
-          one: '{0} квадратен метар',
-          other: '{0} квадратни метри',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'метри²',
-          one: '{0} квадратен метар',
-          other: '{0} m²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'метри²',
-          one: '{0} квадратен метар',
-          other: '{0} m²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'квадратни метри',
+      one: '{0} квадратен метар',
+      other: '{0} квадратни метри',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'метри²',
+      one: '{0} квадратен метар',
+      other: '{0} m²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'метри²',
+      one: '{0} квадратен метар',
+      other: '{0} m²',
+    ),
+  );
 
   @override
   Unit get areaSquareCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'квадратни сантиметри',
-          one: '{0} квадратен сантиметар',
-          other: '{0} квадратни сантиметри',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cm²',
-          one: '{0} квадратен сантиметар',
-          other: '{0} cm²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cm²',
-          one: '{0} квадратен сантиметар',
-          other: '{0} cm²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'квадратни сантиметри',
+      one: '{0} квадратен сантиметар',
+      other: '{0} квадратни сантиметри',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cm²',
+      one: '{0} квадратен сантиметар',
+      other: '{0} cm²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cm²',
+      one: '{0} квадратен сантиметар',
+      other: '{0} cm²',
+    ),
+  );
 
   @override
   Unit get areaSquareMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'квадратни милји',
-          one: '{0} квадратна милја',
-          other: '{0} квадратни милји',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'кв. милји',
-          one: '{0} sq mi',
-          other: '{0} sq mi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mi²',
-          one: '{0} mi²',
-          other: '{0} mi²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'квадратни милји',
+      one: '{0} квадратна милја',
+      other: '{0} квадратни милји',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'кв. милји',
+      one: '{0} sq mi',
+      other: '{0} sq mi',
+    ),
+    narrow: UnitCountPattern(_locale, 'mi²', one: '{0} mi²', other: '{0} mi²'),
+  );
 
   @override
   Unit get areaAcre => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'акри',
-          one: '{0} акр',
-          other: '{0} акри',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'акри',
-          one: '{0} акр',
-          other: '{0} ac',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'акр',
-          one: '{0} акр',
-          other: '{0} ac',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'акри', one: '{0} акр', other: '{0} акри'),
+    short: UnitCountPattern(_locale, 'акри', one: '{0} акр', other: '{0} ac'),
+    narrow: UnitCountPattern(_locale, 'акр', one: '{0} акр', other: '{0} ac'),
+  );
 
   @override
   Unit get areaSquareYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'квадратни јарди',
-          one: '{0} квадратен јард',
-          other: '{0} квадратни јарди',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'јарди²',
-          one: '{0} квадратен јард',
-          other: '{0} yd²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'yd²',
-          one: '{0} квадратен јард',
-          other: '{0} yd²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'квадратни јарди',
+      one: '{0} квадратен јард',
+      other: '{0} квадратни јарди',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'јарди²',
+      one: '{0} квадратен јард',
+      other: '{0} yd²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'yd²',
+      one: '{0} квадратен јард',
+      other: '{0} yd²',
+    ),
+  );
 
   @override
   Unit get areaSquareFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'квадратни стапки',
-          one: '{0} квадратна стапка',
-          other: '{0} квадратни стапки',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'квадратни стапки',
-          one: '{0} sq ft',
-          other: '{0} sq ft',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ft²',
-          one: '{0} ft²',
-          other: '{0} ft²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'квадратни стапки',
+      one: '{0} квадратна стапка',
+      other: '{0} квадратни стапки',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'квадратни стапки',
+      one: '{0} sq ft',
+      other: '{0} sq ft',
+    ),
+    narrow: UnitCountPattern(_locale, 'ft²', one: '{0} ft²', other: '{0} ft²'),
+  );
 
   @override
   Unit get areaSquareInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'квадратни инчи',
-          one: '{0} квадратен инч',
-          other: '{0} квадратни инчи',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'in²',
-          one: '{0} квадратен инч',
-          other: '{0} in²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'in²',
-          one: '{0} квадратен инч',
-          other: '{0} in²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'квадратни инчи',
+      one: '{0} квадратен инч',
+      other: '{0} квадратни инчи',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'in²',
+      one: '{0} квадратен инч',
+      other: '{0} in²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'in²',
+      one: '{0} квадратен инч',
+      other: '{0} in²',
+    ),
+  );
 
   @override
   Unit get areaDunam => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'дунами',
-          one: '{0} дунам',
-          other: '{0} дунами',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'дунами',
-          one: '{0} дунам',
-          other: '{0} dunam',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'дунам',
-          one: '{0} дунам',
-          other: '{0} dunam',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'дунами',
+      one: '{0} дунам',
+      other: '{0} дунами',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'дунами',
+      one: '{0} дунам',
+      other: '{0} dunam',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'дунам',
+      one: '{0} дунам',
+      other: '{0} dunam',
+    ),
+  );
 
   @override
   Unit get concentrKarat => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'карати',
-          one: '{0} карат',
-          other: '{0} карати',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kt',
-          one: '{0} карат',
-          other: '{0} kt',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kt',
-          one: '{0} карат',
-          other: '{0} kt',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'карати',
+      one: '{0} карат',
+      other: '{0} карати',
+    ),
+    short: UnitCountPattern(_locale, 'kt', one: '{0} карат', other: '{0} kt'),
+    narrow: UnitCountPattern(_locale, 'kt', one: '{0} карат', other: '{0} kt'),
+  );
 
   @override
   Unit get concentrMilligramOfglucosePerDeciliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'милиграми на децилитар',
-          one: '{0} милиграм на децилитар',
-          other: '{0} милиграми на децилитар',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mg/dL',
-          one: '{0} милиграм на децилитар',
-          other: '{0} mg/dL',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mg/dL',
-          one: '{0} милиграм на децилитар',
-          other: '{0} mg/dL',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'милиграми на децилитар',
+      one: '{0} милиграм на децилитар',
+      other: '{0} милиграми на децилитар',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mg/dL',
+      one: '{0} милиграм на децилитар',
+      other: '{0} mg/dL',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mg/dL',
+      one: '{0} милиграм на децилитар',
+      other: '{0} mg/dL',
+    ),
+  );
 
   @override
   Unit get concentrMillimolePerLiter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'милимоли на литар',
-          one: '{0} милимол на литар',
-          other: '{0} милимоли на литар',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mmol/L',
-          one: '{0} милимол на литар',
-          other: '{0} mmol/L',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mmol/L',
-          one: '{0} милимол на литар',
-          other: '{0} mmol/L',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'милимоли на литар',
+      one: '{0} милимол на литар',
+      other: '{0} милимоли на литар',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mmol/L',
+      one: '{0} милимол на литар',
+      other: '{0} mmol/L',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mmol/L',
+      one: '{0} милимол на литар',
+      other: '{0} mmol/L',
+    ),
+  );
 
   @override
   Unit get concentrItem => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ставки',
-          one: '{0} ставка',
-          other: '{0} ставки',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ставка',
-          one: '{0} ставка',
-          other: '{0} ставки',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ставка',
-          one: '{0} ставка',
-          other: '{0} ставки',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ставки',
+      one: '{0} ставка',
+      other: '{0} ставки',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ставка',
+      one: '{0} ставка',
+      other: '{0} ставки',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ставка',
+      one: '{0} ставка',
+      other: '{0} ставки',
+    ),
+  );
 
   @override
   Unit get concentrPermillion => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'делови на милион',
-          one: '{0} дел на милион',
-          other: '{0} дела на милион',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ppm',
-          one: '{0} дел на милион',
-          other: '{0} ppm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ppm',
-          one: '{0} дел на милион',
-          other: '{0} ppm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'делови на милион',
+      one: '{0} дел на милион',
+      other: '{0} дела на милион',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ppm',
+      one: '{0} дел на милион',
+      other: '{0} ppm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ppm',
+      one: '{0} дел на милион',
+      other: '{0} ppm',
+    ),
+  );
 
   @override
   Unit get concentrPercent => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'процент',
-          one: '{0} процент',
-          other: '{0} проценти',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '%',
-          one: '{0} %',
-          other: '{0} %',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '%',
-          one: '{0} %',
-          other: '{0} %',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'процент',
+      one: '{0} процент',
+      other: '{0} проценти',
+    ),
+    short: UnitCountPattern(_locale, '%', one: '{0} %', other: '{0} %'),
+    narrow: UnitCountPattern(_locale, '%', one: '{0} %', other: '{0} %'),
+  );
 
   @override
   Unit get concentrPermille => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'промил',
-          one: '{0} промили',
-          other: '{0} промили',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '‰',
-          one: '{0} ‰',
-          other: '{0} ‰',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '‰',
-          one: '{0} ‰',
-          other: '{0} ‰',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'промил',
+      one: '{0} промили',
+      other: '{0} промили',
+    ),
+    short: UnitCountPattern(_locale, '‰', one: '{0} ‰', other: '{0} ‰'),
+    narrow: UnitCountPattern(_locale, '‰', one: '{0} ‰', other: '{0} ‰'),
+  );
 
   @override
   Unit get concentrPermyriad => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'десетилјадити дел',
-          one: '{0} десетилјадити дел',
-          other: '{0} десетилјадити делови',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '‱',
-          one: '{0} десетилјадити дел',
-          other: '{0}‱',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '‱',
-          one: '{0} ‱',
-          other: '{0} ‱',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'десетилјадити дел',
+      one: '{0} десетилјадити дел',
+      other: '{0} десетилјадити делови',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '‱',
+      one: '{0} десетилјадити дел',
+      other: '{0}‱',
+    ),
+    narrow: UnitCountPattern(_locale, '‱', one: '{0} ‱', other: '{0} ‱'),
+  );
 
   @override
   Unit get concentrMole => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'молови',
-          one: '{0} мол',
-          other: '{0} мола',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mol',
-          one: '{0} мол',
-          other: '{0} mol',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mol',
-          one: '{0} мол',
-          other: '{0} mol',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'молови',
+      one: '{0} мол',
+      other: '{0} мола',
+    ),
+    short: UnitCountPattern(_locale, 'mol', one: '{0} мол', other: '{0} mol'),
+    narrow: UnitCountPattern(_locale, 'mol', one: '{0} мол', other: '{0} mol'),
+  );
 
   @override
   Unit get consumptionLiterPerKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'литри на километар',
-          one: '{0} литар на километар',
-          other: '{0} литри на километар',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'L/km',
-          one: '{0} литар на километар',
-          other: '{0} L/km',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'L/km',
-          one: '{0} литар на километар',
-          other: '{0} L/km',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'литри на километар',
+      one: '{0} литар на километар',
+      other: '{0} литри на километар',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'L/km',
+      one: '{0} литар на километар',
+      other: '{0} L/km',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'L/km',
+      one: '{0} литар на километар',
+      other: '{0} L/km',
+    ),
+  );
 
   @override
   Unit get consumptionLiterPer100Kilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'литри на 100 километри',
-          one: '{0} литар на 100 километри',
-          other: '{0} литри на 100 километри',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'L/100km',
-          one: '{0} литар на 100 километри',
-          other: '{0} L/100km',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'L/100km',
-          one: '{0} литар на 100 километри',
-          other: '{0} L/100km',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'литри на 100 километри',
+      one: '{0} литар на 100 километри',
+      other: '{0} литри на 100 километри',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'L/100km',
+      one: '{0} литар на 100 километри',
+      other: '{0} L/100km',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'L/100km',
+      one: '{0} литар на 100 километри',
+      other: '{0} L/100km',
+    ),
+  );
 
   @override
   Unit get consumptionMilePerGallon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'милји на галон',
-          one: '{0} милја на галон',
-          other: '{0} милји на галон',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mpg',
-          one: '{0} mpg',
-          other: '{0} mpg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mpg',
-          one: '{0} mpg',
-          other: '{0} mpg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'милји на галон',
+      one: '{0} милја на галон',
+      other: '{0} милји на галон',
+    ),
+    short: UnitCountPattern(_locale, 'mpg', one: '{0} mpg', other: '{0} mpg'),
+    narrow: UnitCountPattern(_locale, 'mpg', one: '{0} mpg', other: '{0} mpg'),
+  );
 
   @override
   Unit get consumptionMilePerGallonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mpg Imp.',
-          one: '{0} mile per Imp. gallon',
-          other: '{0} mpg Imp.',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mpg Imp.',
-          one: '{0} mpg Imp.',
-          other: '{0} mpg Imp.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mpg UK',
-          one: '{0} m/gUK',
-          other: '{0} m/gUK',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mpg Imp.',
+      one: '{0} mile per Imp. gallon',
+      other: '{0} mpg Imp.',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mpg Imp.',
+      one: '{0} mpg Imp.',
+      other: '{0} mpg Imp.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mpg UK',
+      one: '{0} m/gUK',
+      other: '{0} m/gUK',
+    ),
+  );
 
   @override
   Unit get digitalPetabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'петабајти',
-          one: '{0} петабајт',
-          other: '{0} петабајти',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'PB',
-          one: '{0} петабајт',
-          other: '{0} PB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'PB',
-          one: '{0} петабајт',
-          other: '{0} PB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'петабајти',
+      one: '{0} петабајт',
+      other: '{0} петабајти',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'PB',
+      one: '{0} петабајт',
+      other: '{0} PB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'PB',
+      one: '{0} петабајт',
+      other: '{0} PB',
+    ),
+  );
 
   @override
   Unit get digitalTerabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'терабајти',
-          one: '{0} терабајт',
-          other: '{0} терабајти',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'TByte',
-          one: '{0} терабајт',
-          other: '{0} TB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'TB',
-          one: '{0} терабајт',
-          other: '{0} TB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'терабајти',
+      one: '{0} терабајт',
+      other: '{0} терабајти',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'TByte',
+      one: '{0} терабајт',
+      other: '{0} TB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'TB',
+      one: '{0} терабајт',
+      other: '{0} TB',
+    ),
+  );
 
   @override
   Unit get digitalTerabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'терабита',
-          one: '{0} терабит',
-          other: '{0} терабита',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Tbit',
-          one: '{0} терабит',
-          other: '{0} Tb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Tb',
-          one: '{0} терабит',
-          other: '{0} Tb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'терабита',
+      one: '{0} терабит',
+      other: '{0} терабита',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Tbit',
+      one: '{0} терабит',
+      other: '{0} Tb',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Tb',
+      one: '{0} терабит',
+      other: '{0} Tb',
+    ),
+  );
 
   @override
   Unit get digitalGigabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'гигабајти',
-          one: '{0} гигабајт',
-          other: '{0} гигабајти',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'GB',
-          one: '{0} гигабајт',
-          other: '{0} GB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'GB',
-          one: '{0} гигабајт',
-          other: '{0} GB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'гигабајти',
+      one: '{0} гигабајт',
+      other: '{0} гигабајти',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'GB',
+      one: '{0} гигабајт',
+      other: '{0} GB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'GB',
+      one: '{0} гигабајт',
+      other: '{0} GB',
+    ),
+  );
 
   @override
   Unit get digitalGigabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'гигабита',
-          one: '{0} гигабит',
-          other: '{0} гигабита',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Gb',
-          one: '{0} гигабит',
-          other: '{0} Gb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Gb',
-          one: '{0} гигабит',
-          other: '{0} Gb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'гигабита',
+      one: '{0} гигабит',
+      other: '{0} гигабита',
+    ),
+    short: UnitCountPattern(_locale, 'Gb', one: '{0} гигабит', other: '{0} Gb'),
+    narrow: UnitCountPattern(
+      _locale,
+      'Gb',
+      one: '{0} гигабит',
+      other: '{0} Gb',
+    ),
+  );
 
   @override
   Unit get digitalMegabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'мегабајти',
-          one: '{0} мегабајт',
-          other: '{0} мегабајти',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'MByte',
-          one: '{0} мегабајт',
-          other: '{0} MB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MB',
-          one: '{0} мегабајт',
-          other: '{0} MB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'мегабајти',
+      one: '{0} мегабајт',
+      other: '{0} мегабајти',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'MByte',
+      one: '{0} мегабајт',
+      other: '{0} MB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'MB',
+      one: '{0} мегабајт',
+      other: '{0} MB',
+    ),
+  );
 
   @override
   Unit get digitalMegabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'мегабита',
-          one: '{0} мегабит',
-          other: '{0} мегабита',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Mbit',
-          one: '{0} мегабит',
-          other: '{0} Mb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Mb',
-          one: '{0} мегабит',
-          other: '{0} Mb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'мегабита',
+      one: '{0} мегабит',
+      other: '{0} мегабита',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Mbit',
+      one: '{0} мегабит',
+      other: '{0} Mb',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Mb',
+      one: '{0} мегабит',
+      other: '{0} Mb',
+    ),
+  );
 
   @override
   Unit get digitalKilobyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'килобајти',
-          one: '{0} килобајт',
-          other: '{0} килобајти',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kB',
-          one: '{0} килобајт',
-          other: '{0} kB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kB',
-          one: '{0} килобајт',
-          other: '{0} kB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'килобајти',
+      one: '{0} килобајт',
+      other: '{0} килобајти',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kB',
+      one: '{0} килобајт',
+      other: '{0} kB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kB',
+      one: '{0} килобајт',
+      other: '{0} kB',
+    ),
+  );
 
   @override
   Unit get digitalKilobit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'килобита',
-          one: '{0} килобит',
-          other: '{0} килобита',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kbit',
-          one: '{0} килобит',
-          other: '{0} kb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kb',
-          one: '{0} килобит',
-          other: '{0} kb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'килобита',
+      one: '{0} килобит',
+      other: '{0} килобита',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kbit',
+      one: '{0} килобит',
+      other: '{0} kb',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kb',
+      one: '{0} килобит',
+      other: '{0} kb',
+    ),
+  );
 
   @override
   Unit get digitalByte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'бајти',
-          one: '{0} бајт',
-          other: '{0} бајти',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'бајт',
-          one: '{0} бајт',
-          other: '{0} бајти',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'B',
-          one: '{0} B',
-          other: '{0} B',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'бајти',
+      one: '{0} бајт',
+      other: '{0} бајти',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'бајт',
+      one: '{0} бајт',
+      other: '{0} бајти',
+    ),
+    narrow: UnitCountPattern(_locale, 'B', one: '{0} B', other: '{0} B'),
+  );
 
   @override
   Unit get digitalBit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'бита',
-          one: '{0} бит',
-          other: '{0} бита',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'bit',
-          one: '{0} бит',
-          other: '{0} bit',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'bit',
-          one: '{0} бит',
-          other: '{0} bit',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'бита', one: '{0} бит', other: '{0} бита'),
+    short: UnitCountPattern(_locale, 'bit', one: '{0} бит', other: '{0} bit'),
+    narrow: UnitCountPattern(_locale, 'bit', one: '{0} бит', other: '{0} bit'),
+  );
 
   @override
   Unit get durationCentury => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'векови',
-          one: '{0} век',
-          other: '{0} векови',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'в.',
-          one: '{0} в.',
-          other: '{0} в.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'в.',
-          one: '{0} в.',
-          other: '{0} в.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'векови',
+      one: '{0} век',
+      other: '{0} векови',
+    ),
+    short: UnitCountPattern(_locale, 'в.', one: '{0} в.', other: '{0} в.'),
+    narrow: UnitCountPattern(_locale, 'в.', one: '{0} в.', other: '{0} в.'),
+  );
 
   @override
   Unit get durationDecade => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'децении',
-          one: '{0} деценија',
-          other: '{0} децении',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'дец.',
-          one: '{0} дец.',
-          other: '{0} дец.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'дец.',
-          one: '{0} дец.',
-          other: '{0} дец.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'децении',
+      one: '{0} деценија',
+      other: '{0} децении',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'дец.',
+      one: '{0} дец.',
+      other: '{0} дец.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'дец.',
+      one: '{0} дец.',
+      other: '{0} дец.',
+    ),
+  );
 
   @override
   Unit get durationYear => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'години',
-          one: '{0} година',
-          other: '{0} години',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'години',
-          one: '{0} год.',
-          other: '{0} год.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'г.',
-          one: '{0} г.',
-          other: '{0} г.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'години',
+      one: '{0} година',
+      other: '{0} години',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'години',
+      one: '{0} год.',
+      other: '{0} год.',
+    ),
+    narrow: UnitCountPattern(_locale, 'г.', one: '{0} г.', other: '{0} г.'),
+  );
 
   @override
   Unit get durationQuarter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'тримесечја',
-          one: '{0} тримесечје',
-          other: '{0} тримесечја',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'тримесечја',
-          one: '{0} тримес.',
-          other: '{0} тримес.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'т.',
-          one: '{0} т.',
-          other: '{0} т.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'тримесечја',
+      one: '{0} тримесечје',
+      other: '{0} тримесечја',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'тримесечја',
+      one: '{0} тримес.',
+      other: '{0} тримес.',
+    ),
+    narrow: UnitCountPattern(_locale, 'т.', one: '{0} т.', other: '{0} т.'),
+  );
 
   @override
   Unit get durationMonth => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'месеци',
-          one: '{0} месец',
-          other: '{0} месеци',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'месеци',
-          one: '{0} мес.',
-          other: '{0} мес.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'месец',
-          one: '{0} м.',
-          other: '{0} м.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'месеци',
+      one: '{0} месец',
+      other: '{0} месеци',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'месеци',
+      one: '{0} мес.',
+      other: '{0} мес.',
+    ),
+    narrow: UnitCountPattern(_locale, 'месец', one: '{0} м.', other: '{0} м.'),
+  );
 
   @override
   Unit get durationWeek => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'седмици',
-          one: '{0} седмица',
-          other: '{0} седмици',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'седмици',
-          one: '{0} сед.',
-          other: '{0} сед.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'сед.',
-          one: '{0} с.',
-          other: '{0} с.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'седмици',
+      one: '{0} седмица',
+      other: '{0} седмици',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'седмици',
+      one: '{0} сед.',
+      other: '{0} сед.',
+    ),
+    narrow: UnitCountPattern(_locale, 'сед.', one: '{0} с.', other: '{0} с.'),
+  );
 
   @override
   Unit get durationDay => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'дена',
-          one: '{0} ден',
-          other: '{0} дена',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'дена',
-          one: '{0} ден',
-          other: '{0} дена',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ден',
-          one: '{0} д.',
-          other: '{0} д.',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'дена', one: '{0} ден', other: '{0} дена'),
+    short: UnitCountPattern(_locale, 'дена', one: '{0} ден', other: '{0} дена'),
+    narrow: UnitCountPattern(_locale, 'ден', one: '{0} д.', other: '{0} д.'),
+  );
 
   @override
   Unit get durationHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'часа',
-          one: '{0} час',
-          other: '{0} часа',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'часа',
-          one: '{0} ч.',
-          other: '{0} ч.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'час',
-          one: '{0} ч.',
-          other: '{0} ч.',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'часа', one: '{0} час', other: '{0} часа'),
+    short: UnitCountPattern(_locale, 'часа', one: '{0} ч.', other: '{0} ч.'),
+    narrow: UnitCountPattern(_locale, 'час', one: '{0} ч.', other: '{0} ч.'),
+  );
 
   @override
   Unit get durationMinute => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'минути',
-          one: '{0} минута',
-          other: '{0} минути',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'мин.',
-          one: '{0} мин.',
-          other: '{0} мин.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'мин',
-          one: '{0} м.',
-          other: '{0} м.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'минути',
+      one: '{0} минута',
+      other: '{0} минути',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'мин.',
+      one: '{0} мин.',
+      other: '{0} мин.',
+    ),
+    narrow: UnitCountPattern(_locale, 'мин', one: '{0} м.', other: '{0} м.'),
+  );
 
   @override
   Unit get durationSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'секунди',
-          one: '{0} секунда',
-          other: '{0} секунди',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'сек.',
-          one: '{0} сек.',
-          other: '{0} сек.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'сек.',
-          one: '{0} с.',
-          other: '{0} с.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'секунди',
+      one: '{0} секунда',
+      other: '{0} секунди',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'сек.',
+      one: '{0} сек.',
+      other: '{0} сек.',
+    ),
+    narrow: UnitCountPattern(_locale, 'сек.', one: '{0} с.', other: '{0} с.'),
+  );
 
   @override
   Unit get durationMillisecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'милисекунди',
-          one: '{0} милисекунда',
-          other: '{0} милисекунди',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'мс',
-          one: '{0} мс',
-          other: '{0} мс',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'мс',
-          one: '{0} мс',
-          other: '{0} мс',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'милисекунди',
+      one: '{0} милисекунда',
+      other: '{0} милисекунди',
+    ),
+    short: UnitCountPattern(_locale, 'мс', one: '{0} мс', other: '{0} мс'),
+    narrow: UnitCountPattern(_locale, 'мс', one: '{0} мс', other: '{0} мс'),
+  );
 
   @override
   Unit get durationMicrosecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'микросекунди',
-          one: '{0} микросекунда',
-          other: '{0} микросекунди',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μs',
-          one: '{0} микросекунда',
-          other: '{0} μs',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μс',
-          one: '{0}μс',
-          other: '{0}μс',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'микросекунди',
+      one: '{0} микросекунда',
+      other: '{0} микросекунди',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μs',
+      one: '{0} микросекунда',
+      other: '{0} μs',
+    ),
+    narrow: UnitCountPattern(_locale, 'μс', one: '{0}μс', other: '{0}μс'),
+  );
 
   @override
   Unit get durationNanosecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'наносекунди',
-          one: '{0} наносекунда',
-          other: '{0} наносекунди',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'наносек',
-          one: '{0} нс',
-          other: '{0} нс',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'наносек',
-          one: '{0} нс',
-          other: '{0} нс',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'наносекунди',
+      one: '{0} наносекунда',
+      other: '{0} наносекунди',
+    ),
+    short: UnitCountPattern(_locale, 'наносек', one: '{0} нс', other: '{0} нс'),
+    narrow: UnitCountPattern(
+      _locale,
+      'наносек',
+      one: '{0} нс',
+      other: '{0} нс',
+    ),
+  );
 
   @override
   Unit get electricAmpere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ампери',
-          one: '{0} ампер',
-          other: '{0} ампери',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'amp',
-          one: '{0} ампер',
-          other: '{0} A',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'amp',
-          one: '{0} ампер',
-          other: '{0} A',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ампери',
+      one: '{0} ампер',
+      other: '{0} ампери',
+    ),
+    short: UnitCountPattern(_locale, 'amp', one: '{0} ампер', other: '{0} A'),
+    narrow: UnitCountPattern(_locale, 'amp', one: '{0} ампер', other: '{0} A'),
+  );
 
   @override
   Unit get electricMilliampere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'милиампери',
-          one: '{0} милиампер',
-          other: '{0} милиампери',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mA',
-          one: '{0} милиампер',
-          other: '{0} mA',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mA',
-          one: '{0} милиампер',
-          other: '{0} mA',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'милиампери',
+      one: '{0} милиампер',
+      other: '{0} милиампери',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mA',
+      one: '{0} милиампер',
+      other: '{0} mA',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mA',
+      one: '{0} милиампер',
+      other: '{0} mA',
+    ),
+  );
 
   @override
   Unit get electricOhm => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'оми',
-          one: '{0} ом',
-          other: '{0} оми',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'оми',
-          one: '{0} ом',
-          other: '{0} Ω',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ohm',
-          one: '{0} ом',
-          other: '{0} Ω',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'оми', one: '{0} ом', other: '{0} оми'),
+    short: UnitCountPattern(_locale, 'оми', one: '{0} ом', other: '{0} Ω'),
+    narrow: UnitCountPattern(_locale, 'ohm', one: '{0} ом', other: '{0} Ω'),
+  );
 
   @override
   Unit get electricVolt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'волти',
-          one: '{0} волт',
-          other: '{0} волти',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'V',
-          one: '{0} волт',
-          other: '{0} V',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'V',
-          one: '{0} волт',
-          other: '{0} V',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'волти',
+      one: '{0} волт',
+      other: '{0} волти',
+    ),
+    short: UnitCountPattern(_locale, 'V', one: '{0} волт', other: '{0} V'),
+    narrow: UnitCountPattern(_locale, 'V', one: '{0} волт', other: '{0} V'),
+  );
 
   @override
   Unit get energyKilocalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'килокалории',
-          one: '{0} килокалорија',
-          other: '{0} килокалории',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kcal',
-          one: '{0} килокалорија',
-          other: '{0} kcal',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kcal',
-          one: '{0} килокалорија',
-          other: '{0} kcal',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'килокалории',
+      one: '{0} килокалорија',
+      other: '{0} килокалории',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kcal',
+      one: '{0} килокалорија',
+      other: '{0} kcal',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kcal',
+      one: '{0} килокалорија',
+      other: '{0} kcal',
+    ),
+  );
 
   @override
   Unit get energyCalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'калории',
-          one: '{0} калорија',
-          other: '{0} калории',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cal',
-          one: '{0} калорија',
-          other: '{0} cal',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cal',
-          one: '{0} калорија',
-          other: '{0} cal',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'калории',
+      one: '{0} калорија',
+      other: '{0} калории',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cal',
+      one: '{0} калорија',
+      other: '{0} cal',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cal',
+      one: '{0} калорија',
+      other: '{0} cal',
+    ),
+  );
 
   @override
   Unit get energyFoodcalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'калории',
-          one: '{0} калорија',
-          other: '{0} калории',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Cal',
-          one: '{0} Cal',
-          other: '{0} Cal',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Cal',
-          one: '{0} Cal',
-          other: '{0} Cal',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'калории',
+      one: '{0} калорија',
+      other: '{0} калории',
+    ),
+    short: UnitCountPattern(_locale, 'Cal', one: '{0} Cal', other: '{0} Cal'),
+    narrow: UnitCountPattern(_locale, 'Cal', one: '{0} Cal', other: '{0} Cal'),
+  );
 
   @override
   Unit get energyKilojoule => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'килоџули',
-          one: '{0} килоџул',
-          other: '{0} килоџули',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kJ',
-          one: '{0} килоџул',
-          other: '{0} kJ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kJ',
-          one: '{0} килоџул',
-          other: '{0} kJ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'килоџули',
+      one: '{0} килоџул',
+      other: '{0} килоџули',
+    ),
+    short: UnitCountPattern(_locale, 'kJ', one: '{0} килоџул', other: '{0} kJ'),
+    narrow: UnitCountPattern(
+      _locale,
+      'kJ',
+      one: '{0} килоџул',
+      other: '{0} kJ',
+    ),
+  );
 
   @override
   Unit get energyJoule => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'џули',
-          one: '{0} џул',
-          other: '{0} џули',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'J',
-          one: '{0} џул',
-          other: '{0} J',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'J',
-          one: '{0} џул',
-          other: '{0} J',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'џули', one: '{0} џул', other: '{0} џули'),
+    short: UnitCountPattern(_locale, 'J', one: '{0} џул', other: '{0} J'),
+    narrow: UnitCountPattern(_locale, 'J', one: '{0} џул', other: '{0} J'),
+  );
 
   @override
   Unit get energyKilowattHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'киловат-часови',
-          one: '{0} киловат-час',
-          other: '{0} киловат-часа',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kWh',
-          one: '{0} киловат-час',
-          other: '{0} kWh',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kWh',
-          one: '{0} киловат-час',
-          other: '{0} kWh',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'киловат-часови',
+      one: '{0} киловат-час',
+      other: '{0} киловат-часа',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kWh',
+      one: '{0} киловат-час',
+      other: '{0} kWh',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kWh',
+      one: '{0} киловат-час',
+      other: '{0} kWh',
+    ),
+  );
 
   @override
   Unit get energyElectronvolt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'електронволти',
-          one: '{0} електронволт',
-          other: '{0} електронволти',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'eV',
-          one: '{0} електронволт',
-          other: '{0} eV',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'eV',
-          one: '{0} електронволт',
-          other: '{0} eV',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'електронволти',
+      one: '{0} електронволт',
+      other: '{0} електронволти',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'eV',
+      one: '{0} електронволт',
+      other: '{0} eV',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'eV',
+      one: '{0} електронволт',
+      other: '{0} eV',
+    ),
+  );
 
   @override
   Unit get energyBritishThermalUnit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'британски термални единици',
-          one: '{0} британска термална единица',
-          other: '{0} британски термални единици',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'BTU',
-          one: '{0} британска термална единица',
-          other: '{0} Btu',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'BTU',
-          one: '{0} британска термална единица',
-          other: '{0} Btu',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'британски термални единици',
+      one: '{0} британска термална единица',
+      other: '{0} британски термални единици',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'BTU',
+      one: '{0} британска термална единица',
+      other: '{0} Btu',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'BTU',
+      one: '{0} британска термална единица',
+      other: '{0} Btu',
+    ),
+  );
 
   @override
   Unit get energyThermUs => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'US терми',
-          one: '{0} US терм',
-          other: '{0} US терми',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'US терм',
-          one: '{0} US терм',
-          other: '{0} US терми',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'US терм',
-          one: '{0} US therm',
-          other: '{0} US therms',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'US терми',
+      one: '{0} US терм',
+      other: '{0} US терми',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'US терм',
+      one: '{0} US терм',
+      other: '{0} US терми',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'US терм',
+      one: '{0} US therm',
+      other: '{0} US therms',
+    ),
+  );
 
   @override
   Unit get forcePoundForce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'фунти сила',
-          one: '{0} фунта сила',
-          other: '{0} фунти сила',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lbf',
-          one: '{0} фунта сила',
-          other: '{0} lbf',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lbf',
-          one: '{0} фунта сила',
-          other: '{0} lbf',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'фунти сила',
+      one: '{0} фунта сила',
+      other: '{0} фунти сила',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'lbf',
+      one: '{0} фунта сила',
+      other: '{0} lbf',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'lbf',
+      one: '{0} фунта сила',
+      other: '{0} lbf',
+    ),
+  );
 
   @override
   Unit get forceNewton => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'њутни',
-          one: '{0} њутн',
-          other: '{0} њутни',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'N',
-          one: '{0} њутн',
-          other: '{0} N',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'N',
-          one: '{0} њутн',
-          other: '{0} N',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'њутни',
+      one: '{0} њутн',
+      other: '{0} њутни',
+    ),
+    short: UnitCountPattern(_locale, 'N', one: '{0} њутн', other: '{0} N'),
+    narrow: UnitCountPattern(_locale, 'N', one: '{0} њутн', other: '{0} N'),
+  );
 
   @override
   Unit get forceKilowattHourPer100Kilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'киловат-час на 100 километри',
-          one: '{0} киловат-час на 100 километри',
-          other: '{0} киловат-часа на 100 километри',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kWh/100km',
-          one: '{0} киловат-час на 100 километри',
-          other: '{0} kWh/100km',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kWh/100km',
-          one: '{0} киловат-час на 100 километри',
-          other: '{0} kWh/100km',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'киловат-час на 100 километри',
+      one: '{0} киловат-час на 100 километри',
+      other: '{0} киловат-часа на 100 километри',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kWh/100km',
+      one: '{0} киловат-час на 100 километри',
+      other: '{0} kWh/100km',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kWh/100km',
+      one: '{0} киловат-час на 100 километри',
+      other: '{0} kWh/100km',
+    ),
+  );
 
   @override
   Unit get frequencyGigahertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'гигахерци',
-          one: '{0} гигахерц',
-          other: '{0} гигахерци',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'GHz',
-          one: '{0} гигахерц',
-          other: '{0} GHz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'GHz',
-          one: '{0} гигахерц',
-          other: '{0} GHz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'гигахерци',
+      one: '{0} гигахерц',
+      other: '{0} гигахерци',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'GHz',
+      one: '{0} гигахерц',
+      other: '{0} GHz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'GHz',
+      one: '{0} гигахерц',
+      other: '{0} GHz',
+    ),
+  );
 
   @override
   Unit get frequencyMegahertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'мегахерци',
-          one: '{0} мегахерц',
-          other: '{0} мегахерци',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'MHz',
-          one: '{0} мегахерц',
-          other: '{0} MHz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MHz',
-          one: '{0} мегахерц',
-          other: '{0} MHz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'мегахерци',
+      one: '{0} мегахерц',
+      other: '{0} мегахерци',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'MHz',
+      one: '{0} мегахерц',
+      other: '{0} MHz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'MHz',
+      one: '{0} мегахерц',
+      other: '{0} MHz',
+    ),
+  );
 
   @override
   Unit get frequencyKilohertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'килохерци',
-          one: '{0} килохерц',
-          other: '{0} килохерци',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kHz',
-          one: '{0} килохерц',
-          other: '{0} kHz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kHz',
-          one: '{0} килохерц',
-          other: '{0} kHz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'килохерци',
+      one: '{0} килохерц',
+      other: '{0} килохерци',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kHz',
+      one: '{0} килохерц',
+      other: '{0} kHz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kHz',
+      one: '{0} килохерц',
+      other: '{0} kHz',
+    ),
+  );
 
   @override
   Unit get frequencyHertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'херци',
-          one: '{0} херц',
-          other: '{0} херца',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Hz',
-          one: '{0} херц',
-          other: '{0} Hz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Hz',
-          one: '{0} херц',
-          other: '{0} Hz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'херци',
+      one: '{0} херц',
+      other: '{0} херца',
+    ),
+    short: UnitCountPattern(_locale, 'Hz', one: '{0} херц', other: '{0} Hz'),
+    narrow: UnitCountPattern(_locale, 'Hz', one: '{0} херц', other: '{0} Hz'),
+  );
 
   @override
   Unit get graphicsEm => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'типографски еми',
-          one: '{0} ем',
-          other: '{0} еми',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'em',
-          one: '{0} ем',
-          other: '{0} em',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'em',
-          one: '{0} ем',
-          other: '{0} em',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'типографски еми',
+      one: '{0} ем',
+      other: '{0} еми',
+    ),
+    short: UnitCountPattern(_locale, 'em', one: '{0} ем', other: '{0} em'),
+    narrow: UnitCountPattern(_locale, 'em', one: '{0} ем', other: '{0} em'),
+  );
 
   @override
   Unit get graphicsPixel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'пиксели',
-          one: '{0} пиксел',
-          other: '{0} пиксели',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'px',
-          one: '{0} пиксел',
-          other: '{0} px',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'px',
-          one: '{0} пиксел',
-          other: '{0} px',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'пиксели',
+      one: '{0} пиксел',
+      other: '{0} пиксели',
+    ),
+    short: UnitCountPattern(_locale, 'px', one: '{0} пиксел', other: '{0} px'),
+    narrow: UnitCountPattern(_locale, 'px', one: '{0} пиксел', other: '{0} px'),
+  );
 
   @override
   Unit get graphicsMegapixel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'мегапиксели',
-          one: '{0} мегапиксел',
-          other: '{0} мегапиксели',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'MP',
-          one: '{0} мегапиксел',
-          other: '{0} MP',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MP',
-          one: '{0} мегапиксел',
-          other: '{0} MP',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'мегапиксели',
+      one: '{0} мегапиксел',
+      other: '{0} мегапиксели',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'MP',
+      one: '{0} мегапиксел',
+      other: '{0} MP',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'MP',
+      one: '{0} мегапиксел',
+      other: '{0} MP',
+    ),
+  );
 
   @override
   Unit get graphicsPixelPerCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'пиксели на сантиметар',
-          one: '{0} пиксел на сантиметар',
-          other: '{0} пиксели на сантиметар',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ppcm',
-          one: '{0} пиксел на сантиметар',
-          other: '{0} ppcm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ppcm',
-          one: '{0} пиксел на сантиметар',
-          other: '{0} ppcm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'пиксели на сантиметар',
+      one: '{0} пиксел на сантиметар',
+      other: '{0} пиксели на сантиметар',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ppcm',
+      one: '{0} пиксел на сантиметар',
+      other: '{0} ppcm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ppcm',
+      one: '{0} пиксел на сантиметар',
+      other: '{0} ppcm',
+    ),
+  );
 
   @override
   Unit get graphicsPixelPerInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'пиксели на инч',
-          one: '{0} пиксел на инч',
-          other: '{0} пиксели на инч',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ppi',
-          one: '{0} пиксел на инч',
-          other: '{0} ppi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ppi',
-          one: '{0} пиксел на инч',
-          other: '{0} ppi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'пиксели на инч',
+      one: '{0} пиксел на инч',
+      other: '{0} пиксели на инч',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ppi',
+      one: '{0} пиксел на инч',
+      other: '{0} ppi',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ppi',
+      one: '{0} пиксел на инч',
+      other: '{0} ppi',
+    ),
+  );
 
   @override
   Unit get graphicsDotPerCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'точки на сантиметар',
-          one: '{0} точка на сантиметар',
-          other: '{0} точки на сантиметар',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dpcm',
-          one: '{0} dpcm',
-          other: '{0} dpcm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dpcm',
-          one: '{0} dpcm',
-          other: '{0} dpcm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'точки на сантиметар',
+      one: '{0} точка на сантиметар',
+      other: '{0} точки на сантиметар',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dpcm',
+      one: '{0} dpcm',
+      other: '{0} dpcm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'dpcm',
+      one: '{0} dpcm',
+      other: '{0} dpcm',
+    ),
+  );
 
   @override
   Unit get graphicsDotPerInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'точки на инч',
-          one: '{0} точка на инч',
-          other: '{0} точки на инч',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dpi',
-          one: '{0} dpi',
-          other: '{0} dpi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dpi',
-          one: '{0} dpi',
-          other: '{0} dpi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'точки на инч',
+      one: '{0} точка на инч',
+      other: '{0} точки на инч',
+    ),
+    short: UnitCountPattern(_locale, 'dpi', one: '{0} dpi', other: '{0} dpi'),
+    narrow: UnitCountPattern(_locale, 'dpi', one: '{0} dpi', other: '{0} dpi'),
+  );
 
   @override
   Unit get graphicsDot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'точки',
-          one: '{0} точка',
-          other: '{0} точки',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dots',
-          one: '{0} dot',
-          other: '{0} dots',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dot',
-          one: '{0} dot',
-          other: '{0} dot',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'точки',
+      one: '{0} точка',
+      other: '{0} точки',
+    ),
+    short: UnitCountPattern(_locale, 'dots', one: '{0} dot', other: '{0} dots'),
+    narrow: UnitCountPattern(_locale, 'dot', one: '{0} dot', other: '{0} dot'),
+  );
 
   @override
   Unit get lengthEarthRadius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'земјен радиус',
-          one: '{0} земјен радиус',
-          other: '{0} земјени радиуси',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'R⊕',
-          one: '{0} земјен радиус',
-          other: '{0} R⊕',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'R⊕',
-          one: '{0} земјен радиус',
-          other: '{0} R⊕',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'земјен радиус',
+      one: '{0} земјен радиус',
+      other: '{0} земјени радиуси',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'R⊕',
+      one: '{0} земјен радиус',
+      other: '{0} R⊕',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'R⊕',
+      one: '{0} земјен радиус',
+      other: '{0} R⊕',
+    ),
+  );
 
   @override
   Unit get lengthKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'километри',
-          one: '{0} километар',
-          other: '{0} километри',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'km',
-          one: '{0} километар',
-          other: '{0} km',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'km',
-          one: '{0} километар',
-          other: '{0} km',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'километри',
+      one: '{0} километар',
+      other: '{0} километри',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'km',
+      one: '{0} километар',
+      other: '{0} km',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'km',
+      one: '{0} километар',
+      other: '{0} km',
+    ),
+  );
 
   @override
   Unit get lengthMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'метри',
-          one: '{0} метар',
-          other: '{0} метри',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'метри',
-          one: '{0} метар',
-          other: '{0} m',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'm',
-          one: '{0} метар',
-          other: '{0} m',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'метри',
+      one: '{0} метар',
+      other: '{0} метри',
+    ),
+    short: UnitCountPattern(_locale, 'метри', one: '{0} метар', other: '{0} m'),
+    narrow: UnitCountPattern(_locale, 'm', one: '{0} метар', other: '{0} m'),
+  );
 
   @override
   Unit get lengthDecimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'дециметри',
-          one: '{0} дециметар',
-          other: '{0} дециметри',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dm',
-          one: '{0} дециметар',
-          other: '{0} dm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dm',
-          one: '{0} дециметар',
-          other: '{0} dm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'дециметри',
+      one: '{0} дециметар',
+      other: '{0} дециметри',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dm',
+      one: '{0} дециметар',
+      other: '{0} dm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'dm',
+      one: '{0} дециметар',
+      other: '{0} dm',
+    ),
+  );
 
   @override
   Unit get lengthCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'сантиметри',
-          one: '{0} сантиметар',
-          other: '{0} сантиметри',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cm',
-          one: '{0} сантиметар',
-          other: '{0} cm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cm',
-          one: '{0} сантиметар',
-          other: '{0} cm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'сантиметри',
+      one: '{0} сантиметар',
+      other: '{0} сантиметри',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cm',
+      one: '{0} сантиметар',
+      other: '{0} cm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cm',
+      one: '{0} сантиметар',
+      other: '{0} cm',
+    ),
+  );
 
   @override
   Unit get lengthMillimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'милиметри',
-          one: '{0} милиметар',
-          other: '{0} милиметри',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mm',
-          one: '{0} милиметар',
-          other: '{0} mm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mm',
-          one: '{0} милиметар',
-          other: '{0} mm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'милиметри',
+      one: '{0} милиметар',
+      other: '{0} милиметри',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mm',
+      one: '{0} милиметар',
+      other: '{0} mm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mm',
+      one: '{0} милиметар',
+      other: '{0} mm',
+    ),
+  );
 
   @override
   Unit get lengthMicrometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'микрометри',
-          one: '{0} микрометар',
-          other: '{0} микрометри',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μm',
-          one: '{0} микрометар',
-          other: '{0} μm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μm',
-          one: '{0} микрометар',
-          other: '{0} μm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'микрометри',
+      one: '{0} микрометар',
+      other: '{0} микрометри',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μm',
+      one: '{0} микрометар',
+      other: '{0} μm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'μm',
+      one: '{0} микрометар',
+      other: '{0} μm',
+    ),
+  );
 
   @override
   Unit get lengthNanometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'нанометри',
-          one: '{0} нанометар',
-          other: '{0} нанометри',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'nm',
-          one: '{0} нанометар',
-          other: '{0} nm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'nm',
-          one: '{0} нанометар',
-          other: '{0} nm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'нанометри',
+      one: '{0} нанометар',
+      other: '{0} нанометри',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'nm',
+      one: '{0} нанометар',
+      other: '{0} nm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'nm',
+      one: '{0} нанометар',
+      other: '{0} nm',
+    ),
+  );
 
   @override
   Unit get lengthPicometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'пикометри',
-          one: '{0} пикометар',
-          other: '{0} пикометри',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'pm',
-          one: '{0} пикометар',
-          other: '{0} pm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pm',
-          one: '{0} пикометар',
-          other: '{0} pm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'пикометри',
+      one: '{0} пикометар',
+      other: '{0} пикометри',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'pm',
+      one: '{0} пикометар',
+      other: '{0} pm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'pm',
+      one: '{0} пикометар',
+      other: '{0} pm',
+    ),
+  );
 
   @override
   Unit get lengthMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'милји',
-          one: '{0} милја',
-          other: '{0} милји',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'милји',
-          one: '{0} милја',
-          other: '{0} mi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mi',
-          one: '{0} милја',
-          other: '{0} mi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'милји',
+      one: '{0} милја',
+      other: '{0} милји',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'милји',
+      one: '{0} милја',
+      other: '{0} mi',
+    ),
+    narrow: UnitCountPattern(_locale, 'mi', one: '{0} милја', other: '{0} mi'),
+  );
 
   @override
   Unit get lengthYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'јарди',
-          one: '{0} јард',
-          other: '{0} јарди',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'јарди',
-          one: '{0} јард',
-          other: '{0} yd',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'yd',
-          one: '{0} јард',
-          other: '{0} yd',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'јарди',
+      one: '{0} јард',
+      other: '{0} јарди',
+    ),
+    short: UnitCountPattern(_locale, 'јарди', one: '{0} јард', other: '{0} yd'),
+    narrow: UnitCountPattern(_locale, 'yd', one: '{0} јард', other: '{0} yd'),
+  );
 
   @override
   Unit get lengthFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'стапки',
-          one: '{0} стапка',
-          other: '{0} стапки',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'стапки',
-          one: '{0} стапка',
-          other: '{0} ft',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ft',
-          one: '{0} стапка',
-          other: '{0} ft',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'стапки',
+      one: '{0} стапка',
+      other: '{0} стапки',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'стапки',
+      one: '{0} стапка',
+      other: '{0} ft',
+    ),
+    narrow: UnitCountPattern(_locale, 'ft', one: '{0} стапка', other: '{0} ft'),
+  );
 
   @override
   Unit get lengthInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'инчи',
-          one: '{0} инч',
-          other: '{0} инчи',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'инчи',
-          one: '{0} инч',
-          other: '{0} in',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'in',
-          one: '{0} инч',
-          other: '{0} in',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'инчи', one: '{0} инч', other: '{0} инчи'),
+    short: UnitCountPattern(_locale, 'инчи', one: '{0} инч', other: '{0} in'),
+    narrow: UnitCountPattern(_locale, 'in', one: '{0} инч', other: '{0} in'),
+  );
 
   @override
   Unit get lengthParsec => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'парсеци',
-          one: '{0} парсек',
-          other: '{0} парсеци',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'парсеци',
-          one: '{0} парсек',
-          other: '{0} pc',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'parsec',
-          one: '{0} парсек',
-          other: '{0} pc',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'парсеци',
+      one: '{0} парсек',
+      other: '{0} парсеци',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'парсеци',
+      one: '{0} парсек',
+      other: '{0} pc',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'parsec',
+      one: '{0} парсек',
+      other: '{0} pc',
+    ),
+  );
 
   @override
   Unit get lengthLightYear => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'светлосни години',
-          one: '{0} светлосна година',
-          other: '{0} светлосни години',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'свет. год.',
-          one: '{0} светлосна година',
-          other: '{0} ly',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ly',
-          one: '{0} светлосна година',
-          other: '{0} ly',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'светлосни години',
+      one: '{0} светлосна година',
+      other: '{0} светлосни години',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'свет. год.',
+      one: '{0} светлосна година',
+      other: '{0} ly',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ly',
+      one: '{0} светлосна година',
+      other: '{0} ly',
+    ),
+  );
 
   @override
   Unit get lengthAstronomicalUnit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'астрономски единици',
-          one: '{0} астрономска единица',
-          other: '{0} астрономски единици',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'au',
-          one: '{0} астрономска единица',
-          other: '{0} au',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'au',
-          one: '{0} астрономска единица',
-          other: '{0} au',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'астрономски единици',
+      one: '{0} астрономска единица',
+      other: '{0} астрономски единици',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'au',
+      one: '{0} астрономска единица',
+      other: '{0} au',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'au',
+      one: '{0} астрономска единица',
+      other: '{0} au',
+    ),
+  );
 
   @override
   Unit get lengthFurlong => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'фурлонзи',
-          one: '{0} фурлонг',
-          other: '{0} фурлонзи',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'фурлонзи',
-          one: '{0} фурлонг',
-          other: '{0} fur',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'furlong',
-          one: '{0} фурлонг',
-          other: '{0} fur',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'фурлонзи',
+      one: '{0} фурлонг',
+      other: '{0} фурлонзи',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'фурлонзи',
+      one: '{0} фурлонг',
+      other: '{0} fur',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'furlong',
+      one: '{0} фурлонг',
+      other: '{0} fur',
+    ),
+  );
 
   @override
   Unit get lengthFathom => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'фатоми',
-          one: '{0} фатом',
-          other: '{0} фатоми',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'фатоми',
-          one: '{0} фатом',
-          other: '{0} fth',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'fathom',
-          one: '{0} фатом',
-          other: '{0} fth',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'фатоми',
+      one: '{0} фатом',
+      other: '{0} фатоми',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'фатоми',
+      one: '{0} фатом',
+      other: '{0} fth',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'fathom',
+      one: '{0} фатом',
+      other: '{0} fth',
+    ),
+  );
 
   @override
   Unit get lengthNauticalMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'наутички милји',
-          one: '{0} наутичка милја',
-          other: '{0} наутички милји',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'nmi',
-          one: '{0} наутичка милја',
-          other: '{0} nmi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'nmi',
-          one: '{0} наутичка милја',
-          other: '{0} nmi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'наутички милји',
+      one: '{0} наутичка милја',
+      other: '{0} наутички милји',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'nmi',
+      one: '{0} наутичка милја',
+      other: '{0} nmi',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'nmi',
+      one: '{0} наутичка милја',
+      other: '{0} nmi',
+    ),
+  );
 
   @override
   Unit get lengthMileScandinavian => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'скандинавска милја',
-          one: '{0} скандинавска милја',
-          other: '{0} скандинавски милји',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'smi',
-          one: '{0} скандинавска милја',
-          other: '{0} smi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'smi',
-          one: '{0} скандинавска милја',
-          other: '{0} smi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'скандинавска милја',
+      one: '{0} скандинавска милја',
+      other: '{0} скандинавски милји',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'smi',
+      one: '{0} скандинавска милја',
+      other: '{0} smi',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'smi',
+      one: '{0} скандинавска милја',
+      other: '{0} smi',
+    ),
+  );
 
   @override
   Unit get lengthPoint => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pt',
-          one: '{0} point',
-          other: '{0} pt',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'pt',
-          one: '{0} pt',
-          other: '{0} pt',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pt',
-          one: '{0}pt',
-          other: '{0} pt',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'pt', one: '{0} point', other: '{0} pt'),
+    short: UnitCountPattern(_locale, 'pt', one: '{0} pt', other: '{0} pt'),
+    narrow: UnitCountPattern(_locale, 'pt', one: '{0}pt', other: '{0} pt'),
+  );
 
   @override
   Unit get lengthSolarRadius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'сончеви радиуси',
-          one: '{0} сончев радиус',
-          other: '{0} сончеви радиуси',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'R☉',
-          one: '{0} сончев радиус',
-          other: '{0} R☉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'R☉',
-          one: '{0} сончев радиус',
-          other: '{0} R☉',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'сончеви радиуси',
+      one: '{0} сончев радиус',
+      other: '{0} сончеви радиуси',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'R☉',
+      one: '{0} сончев радиус',
+      other: '{0} R☉',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'R☉',
+      one: '{0} сончев радиус',
+      other: '{0} R☉',
+    ),
+  );
 
   @override
   Unit get lightLux => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'лукс',
-          one: '{0} лукс',
-          other: '{0} лукса',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lx',
-          one: '{0} лукс',
-          other: '{0} lx',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lx',
-          one: '{0} лукс',
-          other: '{0} lx',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'лукс',
+      one: '{0} лукс',
+      other: '{0} лукса',
+    ),
+    short: UnitCountPattern(_locale, 'lx', one: '{0} лукс', other: '{0} lx'),
+    narrow: UnitCountPattern(_locale, 'lx', one: '{0} лукс', other: '{0} lx'),
+  );
 
   @override
   Unit get lightCandela => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'кандела',
-          one: '{0} кандела',
-          other: '{0} кандели',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cd',
-          one: '{0} кандела',
-          other: '{0} cd',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cd',
-          one: '{0} кандела',
-          other: '{0} cd',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'кандела',
+      one: '{0} кандела',
+      other: '{0} кандели',
+    ),
+    short: UnitCountPattern(_locale, 'cd', one: '{0} кандела', other: '{0} cd'),
+    narrow: UnitCountPattern(
+      _locale,
+      'cd',
+      one: '{0} кандела',
+      other: '{0} cd',
+    ),
+  );
 
   @override
   Unit get lightLumen => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'лумен',
-          one: '{0} лумен',
-          other: '{0} лумени',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lm',
-          one: '{0} лумен',
-          other: '{0} lm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lm',
-          one: '{0} лумен',
-          other: '{0} lm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'лумен',
+      one: '{0} лумен',
+      other: '{0} лумени',
+    ),
+    short: UnitCountPattern(_locale, 'lm', one: '{0} лумен', other: '{0} lm'),
+    narrow: UnitCountPattern(_locale, 'lm', one: '{0} лумен', other: '{0} lm'),
+  );
 
   @override
   Unit get lightSolarLuminosity => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'сончеви сјајности',
-          one: '{0} сончева сјајност',
-          other: '{0} сончеви сјајности',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'L☉',
-          one: '{0} сончева сјајност',
-          other: '{0} L☉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'L☉',
-          one: '{0} сончева сјајност',
-          other: '{0} L☉',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'сончеви сјајности',
+      one: '{0} сончева сјајност',
+      other: '{0} сончеви сјајности',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'L☉',
+      one: '{0} сончева сјајност',
+      other: '{0} L☉',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'L☉',
+      one: '{0} сончева сјајност',
+      other: '{0} L☉',
+    ),
+  );
 
   @override
   Unit get massTonne => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'тони',
-          one: '{0} тон',
-          other: '{0} тона',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          't',
-          one: '{0} тон',
-          other: '{0} t',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          't',
-          one: '{0} тон',
-          other: '{0} t',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'тони', one: '{0} тон', other: '{0} тона'),
+    short: UnitCountPattern(_locale, 't', one: '{0} тон', other: '{0} t'),
+    narrow: UnitCountPattern(_locale, 't', one: '{0} тон', other: '{0} t'),
+  );
 
   @override
   Unit get massKilogram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'килограми',
-          one: '{0} килограм',
-          other: '{0} килограми',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kg',
-          one: '{0} килограм',
-          other: '{0} kg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kg',
-          one: '{0} килограм',
-          other: '{0} kg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'килограми',
+      one: '{0} килограм',
+      other: '{0} килограми',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kg',
+      one: '{0} килограм',
+      other: '{0} kg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kg',
+      one: '{0} килограм',
+      other: '{0} kg',
+    ),
+  );
 
   @override
   Unit get massGram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'грамови',
-          one: '{0} грам',
-          other: '{0} грама',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'g',
-          one: '{0} грам',
-          other: '{0} g',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'g',
-          one: '{0} грам',
-          other: '{0} g',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'грамови',
+      one: '{0} грам',
+      other: '{0} грама',
+    ),
+    short: UnitCountPattern(_locale, 'g', one: '{0} грам', other: '{0} g'),
+    narrow: UnitCountPattern(_locale, 'g', one: '{0} грам', other: '{0} g'),
+  );
 
   @override
   Unit get massMilligram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'милиграми',
-          one: '{0} милиграм',
-          other: '{0} милиграми',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mg',
-          one: '{0} милиграм',
-          other: '{0} mg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mg',
-          one: '{0} милиграм',
-          other: '{0} mg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'милиграми',
+      one: '{0} милиграм',
+      other: '{0} милиграми',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mg',
+      one: '{0} милиграм',
+      other: '{0} mg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mg',
+      one: '{0} милиграм',
+      other: '{0} mg',
+    ),
+  );
 
   @override
   Unit get massMicrogram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'микрограми',
-          one: '{0} микрограм',
-          other: '{0} микрограми',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μg',
-          one: '{0} микрограм',
-          other: '{0} μg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μg',
-          one: '{0} микрограм',
-          other: '{0} μg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'микрограми',
+      one: '{0} микрограм',
+      other: '{0} микрограми',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μg',
+      one: '{0} микрограм',
+      other: '{0} μg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'μg',
+      one: '{0} микрограм',
+      other: '{0} μg',
+    ),
+  );
 
   @override
   Unit get massTon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'американски тони',
-          one: '{0} американски тон',
-          other: '{0} американски тони',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'американски тони',
-          one: '{0} американски тон',
-          other: '{0} tn',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'американски тон',
-          one: '{0} американски тон',
-          other: '{0} tn',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'американски тони',
+      one: '{0} американски тон',
+      other: '{0} американски тони',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'американски тони',
+      one: '{0} американски тон',
+      other: '{0} tn',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'американски тон',
+      one: '{0} американски тон',
+      other: '{0} tn',
+    ),
+  );
 
   @override
   Unit get massStone => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'стоуни',
-          one: '{0} стоун',
-          other: '{0} стоуни',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'стоуни',
-          one: '{0} стоун',
-          other: '{0} st',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'стоун',
-          one: '{0} стоун',
-          other: '{0} st',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'стоуни',
+      one: '{0} стоун',
+      other: '{0} стоуни',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'стоуни',
+      one: '{0} стоун',
+      other: '{0} st',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'стоун',
+      one: '{0} стоун',
+      other: '{0} st',
+    ),
+  );
 
   @override
   Unit get massPound => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'фунти',
-          one: '{0} фунта',
-          other: '{0} фунти',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'фунти',
-          one: '{0} фунта',
-          other: '{0} lb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lb',
-          one: '{0} фунта',
-          other: '{0} lb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'фунти',
+      one: '{0} фунта',
+      other: '{0} фунти',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'фунти',
+      one: '{0} фунта',
+      other: '{0} lb',
+    ),
+    narrow: UnitCountPattern(_locale, 'lb', one: '{0} фунта', other: '{0} lb'),
+  );
 
   @override
   Unit get massOunce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'унци',
-          one: '{0} унца',
-          other: '{0} унци',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'oz',
-          one: '{0} унца',
-          other: '{0} oz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'oz',
-          one: '{0} унца',
-          other: '{0} oz',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'унци', one: '{0} унца', other: '{0} унци'),
+    short: UnitCountPattern(_locale, 'oz', one: '{0} унца', other: '{0} oz'),
+    narrow: UnitCountPattern(_locale, 'oz', one: '{0} унца', other: '{0} oz'),
+  );
 
   @override
   Unit get massOunceTroy => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'тројски унци',
-          one: '{0} тројска унца',
-          other: '{0} тројски унци',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'тројска унца',
-          one: '{0} тројска унца',
-          other: '{0} oz t',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'oz t',
-          one: '{0} тројска унца',
-          other: '{0} oz t',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'тројски унци',
+      one: '{0} тројска унца',
+      other: '{0} тројски унци',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'тројска унца',
+      one: '{0} тројска унца',
+      other: '{0} oz t',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'oz t',
+      one: '{0} тројска унца',
+      other: '{0} oz t',
+    ),
+  );
 
   @override
   Unit get massCarat => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'карати',
-          one: '{0} карат',
-          other: '{0} карати',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'карати',
-          one: '{0} карат',
-          other: '{0} CD',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'карати',
-          one: '{0} карат',
-          other: '{0} CD',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'карати',
+      one: '{0} карат',
+      other: '{0} карати',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'карати',
+      one: '{0} карат',
+      other: '{0} CD',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'карати',
+      one: '{0} карат',
+      other: '{0} CD',
+    ),
+  );
 
   @override
   Unit get massDalton => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'далтони',
-          one: '{0} далтон',
-          other: '{0} далтони',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Da',
-          one: '{0} далтон',
-          other: '{0} Da',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Da',
-          one: '{0} далтон',
-          other: '{0} Da',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'далтони',
+      one: '{0} далтон',
+      other: '{0} далтони',
+    ),
+    short: UnitCountPattern(_locale, 'Da', one: '{0} далтон', other: '{0} Da'),
+    narrow: UnitCountPattern(_locale, 'Da', one: '{0} далтон', other: '{0} Da'),
+  );
 
   @override
   Unit get massEarthMass => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'земјини маси',
-          one: '{0} земјина маса',
-          other: '{0} земјини маси',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'M⊕',
-          one: '{0} земјина маса',
-          other: '{0} M⊕',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'M⊕',
-          one: '{0} земјина маса',
-          other: '{0} M⊕',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'земјини маси',
+      one: '{0} земјина маса',
+      other: '{0} земјини маси',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'M⊕',
+      one: '{0} земјина маса',
+      other: '{0} M⊕',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'M⊕',
+      one: '{0} земјина маса',
+      other: '{0} M⊕',
+    ),
+  );
 
   @override
   Unit get massSolarMass => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'сончеви маси',
-          one: '{0} сончева маса',
-          other: '{0} сончеви маси',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'M☉',
-          one: '{0} сончева маса',
-          other: '{0} M☉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'M☉',
-          one: '{0} сончева маса',
-          other: '{0} M☉',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'сончеви маси',
+      one: '{0} сончева маса',
+      other: '{0} сончеви маси',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'M☉',
+      one: '{0} сончева маса',
+      other: '{0} M☉',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'M☉',
+      one: '{0} сончева маса',
+      other: '{0} M☉',
+    ),
+  );
 
   @override
   Unit get massGrain => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'грејни',
-          one: '{0} грејн',
-          other: '{0} грејни',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'грејн',
-          one: '{0} грејн',
-          other: '{0} grain',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'gr',
-          one: '{0} gr',
-          other: '{0} gr',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'грејни',
+      one: '{0} грејн',
+      other: '{0} грејни',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'грејн',
+      one: '{0} грејн',
+      other: '{0} grain',
+    ),
+    narrow: UnitCountPattern(_locale, 'gr', one: '{0} gr', other: '{0} gr'),
+  );
 
   @override
   Unit get powerGigawatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'гигавати',
-          one: '{0} гигават',
-          other: '{0} гигавати',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'GW',
-          one: '{0} гигават',
-          other: '{0} GW',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'GW',
-          one: '{0} гигават',
-          other: '{0} GW',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'гигавати',
+      one: '{0} гигават',
+      other: '{0} гигавати',
+    ),
+    short: UnitCountPattern(_locale, 'GW', one: '{0} гигават', other: '{0} GW'),
+    narrow: UnitCountPattern(
+      _locale,
+      'GW',
+      one: '{0} гигават',
+      other: '{0} GW',
+    ),
+  );
 
   @override
   Unit get powerMegawatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'мегавати',
-          one: '{0} мегават',
-          other: '{0} мегавати',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'MW',
-          one: '{0} мегават',
-          other: '{0} MW',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MW',
-          one: '{0} мегават',
-          other: '{0} MW',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'мегавати',
+      one: '{0} мегават',
+      other: '{0} мегавати',
+    ),
+    short: UnitCountPattern(_locale, 'MW', one: '{0} мегават', other: '{0} MW'),
+    narrow: UnitCountPattern(
+      _locale,
+      'MW',
+      one: '{0} мегават',
+      other: '{0} MW',
+    ),
+  );
 
   @override
   Unit get powerKilowatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'киловати',
-          one: '{0} киловат',
-          other: '{0} киловати',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kW',
-          one: '{0} киловат',
-          other: '{0} kW',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kW',
-          one: '{0} киловат',
-          other: '{0} kW',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'киловати',
+      one: '{0} киловат',
+      other: '{0} киловати',
+    ),
+    short: UnitCountPattern(_locale, 'kW', one: '{0} киловат', other: '{0} kW'),
+    narrow: UnitCountPattern(
+      _locale,
+      'kW',
+      one: '{0} киловат',
+      other: '{0} kW',
+    ),
+  );
 
   @override
   Unit get powerWatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'вати',
-          one: '{0} ват',
-          other: '{0} вати',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'W',
-          one: '{0} ват',
-          other: '{0} W',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'W',
-          one: '{0} ват',
-          other: '{0} W',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'вати', one: '{0} ват', other: '{0} вати'),
+    short: UnitCountPattern(_locale, 'W', one: '{0} ват', other: '{0} W'),
+    narrow: UnitCountPattern(_locale, 'W', one: '{0} ват', other: '{0} W'),
+  );
 
   @override
   Unit get powerMilliwatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'миливати',
-          one: '{0} миливат',
-          other: '{0} миливати',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mW',
-          one: '{0} миливат',
-          other: '{0} mW',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mW',
-          one: '{0} миливат',
-          other: '{0} mW',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'миливати',
+      one: '{0} миливат',
+      other: '{0} миливати',
+    ),
+    short: UnitCountPattern(_locale, 'mW', one: '{0} миливат', other: '{0} mW'),
+    narrow: UnitCountPattern(
+      _locale,
+      'mW',
+      one: '{0} миливат',
+      other: '{0} mW',
+    ),
+  );
 
   @override
   Unit get powerHorsepower => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'коњски сили',
-          one: '{0} коњска сила',
-          other: '{0} коњски сили',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'hp',
-          one: '{0} коњска сила',
-          other: '{0} hp',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'hp',
-          one: '{0} коњска сила',
-          other: '{0} hp',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'коњски сили',
+      one: '{0} коњска сила',
+      other: '{0} коњски сили',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'hp',
+      one: '{0} коњска сила',
+      other: '{0} hp',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'hp',
+      one: '{0} коњска сила',
+      other: '{0} hp',
+    ),
+  );
 
   @override
   Unit get pressureMillimeterOfhg => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'милиметри жива',
-          one: '{0} милиметар жива',
-          other: '{0} милиметри жива',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mmHg',
-          one: '{0} mmHg',
-          other: '{0} mmHg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mmHg',
-          one: '{0} mmHg',
-          other: '{0} mmHg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'милиметри жива',
+      one: '{0} милиметар жива',
+      other: '{0} милиметри жива',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mmHg',
+      one: '{0} mmHg',
+      other: '{0} mmHg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mmHg',
+      one: '{0} mmHg',
+      other: '{0} mmHg',
+    ),
+  );
 
   @override
   Unit get pressurePoundForcePerSquareInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'фунти на квадратен инч',
-          one: '{0} фунта на квадратен инч',
-          other: '{0} фунти на квадратен инч',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'psi',
-          one: '{0} фунта на квадратен инч',
-          other: '{0} psi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'psi',
-          one: '{0} фунта на квадратен инч',
-          other: '{0} psi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'фунти на квадратен инч',
+      one: '{0} фунта на квадратен инч',
+      other: '{0} фунти на квадратен инч',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'psi',
+      one: '{0} фунта на квадратен инч',
+      other: '{0} psi',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'psi',
+      one: '{0} фунта на квадратен инч',
+      other: '{0} psi',
+    ),
+  );
 
   @override
   Unit get pressureInchOfhg => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'инчи жива',
-          one: '{0} инч жива',
-          other: '{0} инчи жива',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'inHg',
-          one: '{0} инч жива',
-          other: '{0} inHg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'inHg',
-          one: '{0} инч жива',
-          other: '{0} inHg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'инчи жива',
+      one: '{0} инч жива',
+      other: '{0} инчи жива',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'inHg',
+      one: '{0} инч жива',
+      other: '{0} inHg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'inHg',
+      one: '{0} инч жива',
+      other: '{0} inHg',
+    ),
+  );
 
   @override
   Unit get pressureBar => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'бари',
-          one: '{0} бар',
-          other: '{0} бари',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'bar',
-          one: '{0} бар',
-          other: '{0} bar',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'bar',
-          one: '{0} бар',
-          other: '{0} bar',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'бари', one: '{0} бар', other: '{0} бари'),
+    short: UnitCountPattern(_locale, 'bar', one: '{0} бар', other: '{0} bar'),
+    narrow: UnitCountPattern(_locale, 'bar', one: '{0} бар', other: '{0} bar'),
+  );
 
   @override
   Unit get pressureMillibar => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'милибари',
-          one: '{0} милибар',
-          other: '{0} милибари',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mbar',
-          one: '{0} милибар',
-          other: '{0} mbar',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mbar',
-          one: '{0} милибар',
-          other: '{0} mbar',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'милибари',
+      one: '{0} милибар',
+      other: '{0} милибари',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mbar',
+      one: '{0} милибар',
+      other: '{0} mbar',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mbar',
+      one: '{0} милибар',
+      other: '{0} mbar',
+    ),
+  );
 
   @override
   Unit get pressureAtmosphere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'атмосфери',
-          one: '{0} атмосфера',
-          other: '{0} атмосфери',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'atm',
-          one: '{0} атмосфера',
-          other: '{0} atm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'atm',
-          one: '{0} атмосфера',
-          other: '{0} atm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'атмосфери',
+      one: '{0} атмосфера',
+      other: '{0} атмосфери',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'atm',
+      one: '{0} атмосфера',
+      other: '{0} atm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'atm',
+      one: '{0} атмосфера',
+      other: '{0} atm',
+    ),
+  );
 
   @override
   Unit get pressurePascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'паскали',
-          one: '{0} паскал',
-          other: '{0} паскали',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Pa',
-          one: '{0} паскал',
-          other: '{0} Pa',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Pa',
-          one: '{0} паскал',
-          other: '{0} Pa',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'паскали',
+      one: '{0} паскал',
+      other: '{0} паскали',
+    ),
+    short: UnitCountPattern(_locale, 'Pa', one: '{0} паскал', other: '{0} Pa'),
+    narrow: UnitCountPattern(_locale, 'Pa', one: '{0} паскал', other: '{0} Pa'),
+  );
 
   @override
   Unit get pressureHectopascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'хектопаскали',
-          one: '{0} хектопаскал',
-          other: '{0} хектопаскали',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'hPa',
-          one: '{0} хектопаскал',
-          other: '{0} hPa',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'hPa',
-          one: '{0} хектопаскал',
-          other: '{0} hPa',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'хектопаскали',
+      one: '{0} хектопаскал',
+      other: '{0} хектопаскали',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'hPa',
+      one: '{0} хектопаскал',
+      other: '{0} hPa',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'hPa',
+      one: '{0} хектопаскал',
+      other: '{0} hPa',
+    ),
+  );
 
   @override
   Unit get pressureKilopascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'килопаскали',
-          one: '{0} килопаскал',
-          other: '{0} килопаскали',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kPa',
-          one: '{0} килопаскал',
-          other: '{0} kPa',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kPa',
-          one: '{0} килопаскал',
-          other: '{0} kPa',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'килопаскали',
+      one: '{0} килопаскал',
+      other: '{0} килопаскали',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kPa',
+      one: '{0} килопаскал',
+      other: '{0} kPa',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kPa',
+      one: '{0} килопаскал',
+      other: '{0} kPa',
+    ),
+  );
 
   @override
   Unit get pressureMegapascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'мегапаскали',
-          one: '{0} мегапаскал',
-          other: '{0} мегапаскали',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'MPa',
-          one: '{0} мегапаскал',
-          other: '{0} MPa',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MPa',
-          one: '{0} мегапаскал',
-          other: '{0} MPa',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'мегапаскали',
+      one: '{0} мегапаскал',
+      other: '{0} мегапаскали',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'MPa',
+      one: '{0} мегапаскал',
+      other: '{0} MPa',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'MPa',
+      one: '{0} мегапаскал',
+      other: '{0} MPa',
+    ),
+  );
 
   @override
   Unit get speedKilometerPerHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'километри на час',
-          one: '{0} километар на час',
-          other: '{0} километри на час',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'км/час',
-          one: '{0} километар на час',
-          other: '{0} km/h',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'km/hr',
-          one: '{0} километар на час',
-          other: '{0} km/h',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'километри на час',
+      one: '{0} километар на час',
+      other: '{0} километри на час',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'км/час',
+      one: '{0} километар на час',
+      other: '{0} km/h',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'km/hr',
+      one: '{0} километар на час',
+      other: '{0} km/h',
+    ),
+  );
 
   @override
   Unit get speedMeterPerSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'метри во секунда',
-          one: '{0} метар во секунда',
-          other: '{0} метри во секунда',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'метри/сек',
-          one: '{0} метар во секунда',
-          other: '{0} m/s',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'm/s',
-          one: '{0} метар во секунда',
-          other: '{0} m/s',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'метри во секунда',
+      one: '{0} метар во секунда',
+      other: '{0} метри во секунда',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'метри/сек',
+      one: '{0} метар во секунда',
+      other: '{0} m/s',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'm/s',
+      one: '{0} метар во секунда',
+      other: '{0} m/s',
+    ),
+  );
 
   @override
   Unit get speedMilePerHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'милји на час',
-          one: '{0} милја на час',
-          other: '{0} милји на час',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'милји/час',
-          one: '{0} mph',
-          other: '{0} mph',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mi/hr',
-          one: '{0} mph',
-          other: '{0} mph',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'милји на час',
+      one: '{0} милја на час',
+      other: '{0} милји на час',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'милји/час',
+      one: '{0} mph',
+      other: '{0} mph',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mi/hr',
+      one: '{0} mph',
+      other: '{0} mph',
+    ),
+  );
 
   @override
   Unit get speedKnot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'јазли',
-          one: '{0} јазол',
-          other: '{0} јазли',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kn',
-          one: '{0} јазол',
-          other: '{0} kn',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kn',
-          one: '{0} јазол',
-          other: '{0} kn',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'јазли',
+      one: '{0} јазол',
+      other: '{0} јазли',
+    ),
+    short: UnitCountPattern(_locale, 'kn', one: '{0} јазол', other: '{0} kn'),
+    narrow: UnitCountPattern(_locale, 'kn', one: '{0} јазол', other: '{0} kn'),
+  );
 
   @override
   Unit get speedBeaufort => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'бофори',
-          one: '{0} бофор',
-          other: '{0} бофори',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Bft',
-          one: '{0} B',
-          other: '{0} B',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Bft',
-          one: '{0} B',
-          other: '{0} B',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'бофори',
+      one: '{0} бофор',
+      other: '{0} бофори',
+    ),
+    short: UnitCountPattern(_locale, 'Bft', one: '{0} B', other: '{0} B'),
+    narrow: UnitCountPattern(_locale, 'Bft', one: '{0} B', other: '{0} B'),
+  );
 
   @override
   Unit get temperatureGeneric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0} degree temperature',
-          other: '{0}°',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0}°',
-          other: '{0}°',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0}°',
-          other: '{0}°',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '°',
+      one: '{0} degree temperature',
+      other: '{0}°',
+    ),
+    short: UnitCountPattern(_locale, '°', one: '{0}°', other: '{0}°'),
+    narrow: UnitCountPattern(_locale, '°', one: '{0}°', other: '{0}°'),
+  );
 
   @override
   Unit get temperatureCelsius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'целзиусови степени',
-          one: '{0} целзиусов степен',
-          other: '{0} целзиусови степени',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'целзиусови степени',
-          one: '{0} °C',
-          other: '{0} °C',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°C',
-          one: '{0} °C',
-          other: '{0} °C',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'целзиусови степени',
+      one: '{0} целзиусов степен',
+      other: '{0} целзиусови степени',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'целзиусови степени',
+      one: '{0} °C',
+      other: '{0} °C',
+    ),
+    narrow: UnitCountPattern(_locale, '°C', one: '{0} °C', other: '{0} °C'),
+  );
 
   @override
   Unit get temperatureFahrenheit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'фаренхајтови степени',
-          one: '{0} фаренхајтов степен',
-          other: '{0} фаренхајтови степени',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '°F',
-          one: '{0} °F',
-          other: '{0} °F',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°F',
-          one: '{0} °F',
-          other: '{0} °F',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'фаренхајтови степени',
+      one: '{0} фаренхајтов степен',
+      other: '{0} фаренхајтови степени',
+    ),
+    short: UnitCountPattern(_locale, '°F', one: '{0} °F', other: '{0} °F'),
+    narrow: UnitCountPattern(_locale, '°F', one: '{0} °F', other: '{0} °F'),
+  );
 
   @override
   Unit get temperatureKelvin => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'келвини',
-          one: '{0} келвин',
-          other: '{0} келвини',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'K',
-          one: '{0} келвин',
-          other: '{0} K',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'K',
-          one: '{0} келвин',
-          other: '{0} K',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'келвини',
+      one: '{0} келвин',
+      other: '{0} келвини',
+    ),
+    short: UnitCountPattern(_locale, 'K', one: '{0} келвин', other: '{0} K'),
+    narrow: UnitCountPattern(_locale, 'K', one: '{0} келвин', other: '{0} K'),
+  );
 
   @override
   Unit get torquePoundForceFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'стапки фунти',
-          one: '{0} стапка фунта',
-          other: '{0} стапки фунти',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lbf⋅ft',
-          one: '{0} стапка фунта',
-          other: '{0} lbf⋅ft',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lbf⋅ft',
-          one: '{0} стапка фунта',
-          other: '{0} lbf⋅ft',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'стапки фунти',
+      one: '{0} стапка фунта',
+      other: '{0} стапки фунти',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'lbf⋅ft',
+      one: '{0} стапка фунта',
+      other: '{0} lbf⋅ft',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'lbf⋅ft',
+      one: '{0} стапка фунта',
+      other: '{0} lbf⋅ft',
+    ),
+  );
 
   @override
   Unit get torqueNewtonMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'њутнметри',
-          one: '{0} њутнметар',
-          other: '{0} њутнметри',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'N⋅m',
-          one: '{0} њутнметар',
-          other: '{0} N⋅m',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'N⋅m',
-          one: '{0} њутнметар',
-          other: '{0} N⋅m',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'њутнметри',
+      one: '{0} њутнметар',
+      other: '{0} њутнметри',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'N⋅m',
+      one: '{0} њутнметар',
+      other: '{0} N⋅m',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'N⋅m',
+      one: '{0} њутнметар',
+      other: '{0} N⋅m',
+    ),
+  );
 
   @override
   Unit get volumeCubicKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'кубни километри',
-          one: '{0} кубен километар',
-          other: '{0} кубни километри',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'km³',
-          one: '{0} кубен километар',
-          other: '{0} km³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'km³',
-          one: '{0} кубен километар',
-          other: '{0} km³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'кубни километри',
+      one: '{0} кубен километар',
+      other: '{0} кубни километри',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'km³',
+      one: '{0} кубен километар',
+      other: '{0} km³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'km³',
+      one: '{0} кубен километар',
+      other: '{0} km³',
+    ),
+  );
 
   @override
   Unit get volumeCubicMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'кубни метри',
-          one: '{0} кубен метар',
-          other: '{0} кубни метри',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'm³',
-          one: '{0} кубен метар',
-          other: '{0} m³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'm³',
-          one: '{0} кубен метар',
-          other: '{0} m³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'кубни метри',
+      one: '{0} кубен метар',
+      other: '{0} кубни метри',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'm³',
+      one: '{0} кубен метар',
+      other: '{0} m³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'm³',
+      one: '{0} кубен метар',
+      other: '{0} m³',
+    ),
+  );
 
   @override
   Unit get volumeCubicCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'кубни сантиметри',
-          one: '{0} кубен сантиметар',
-          other: '{0} кубни сантиметри',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cm³',
-          one: '{0} кубен сантиметар',
-          other: '{0} cm³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cm³',
-          one: '{0} кубен сантиметар',
-          other: '{0} cm³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'кубни сантиметри',
+      one: '{0} кубен сантиметар',
+      other: '{0} кубни сантиметри',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cm³',
+      one: '{0} кубен сантиметар',
+      other: '{0} cm³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cm³',
+      one: '{0} кубен сантиметар',
+      other: '{0} cm³',
+    ),
+  );
 
   @override
   Unit get volumeCubicMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'кубни милји',
-          one: '{0} кубна милја',
-          other: '{0} кубни милји',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mi³',
-          one: '{0} кубна милја',
-          other: '{0} mi³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mi³',
-          one: '{0} кубна милја',
-          other: '{0} mi³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'кубни милји',
+      one: '{0} кубна милја',
+      other: '{0} кубни милји',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mi³',
+      one: '{0} кубна милја',
+      other: '{0} mi³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mi³',
+      one: '{0} кубна милја',
+      other: '{0} mi³',
+    ),
+  );
 
   @override
   Unit get volumeCubicYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'кубни јарди',
-          one: '{0} кубен јард',
-          other: '{0} кубни јарди',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'јарди³',
-          one: '{0} кубен јард',
-          other: '{0} yd³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'yd³',
-          one: '{0} кубен јард',
-          other: '{0} yd³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'кубни јарди',
+      one: '{0} кубен јард',
+      other: '{0} кубни јарди',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'јарди³',
+      one: '{0} кубен јард',
+      other: '{0} yd³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'yd³',
+      one: '{0} кубен јард',
+      other: '{0} yd³',
+    ),
+  );
 
   @override
   Unit get volumeCubicFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'кубни стапки',
-          one: '{0} кубна стапка',
-          other: '{0} кубни стапки',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'стапки³',
-          one: '{0} кубна стапка',
-          other: '{0} ft³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ft³',
-          one: '{0} кубна стапка',
-          other: '{0} ft³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'кубни стапки',
+      one: '{0} кубна стапка',
+      other: '{0} кубни стапки',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'стапки³',
+      one: '{0} кубна стапка',
+      other: '{0} ft³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ft³',
+      one: '{0} кубна стапка',
+      other: '{0} ft³',
+    ),
+  );
 
   @override
   Unit get volumeCubicInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'кубни инчи',
-          one: '{0} кубен инч',
-          other: '{0} кубни инчи',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'инчи³',
-          one: '{0} кубен инч',
-          other: '{0} in³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'in³',
-          one: '{0} кубен инч',
-          other: '{0} in³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'кубни инчи',
+      one: '{0} кубен инч',
+      other: '{0} кубни инчи',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'инчи³',
+      one: '{0} кубен инч',
+      other: '{0} in³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'in³',
+      one: '{0} кубен инч',
+      other: '{0} in³',
+    ),
+  );
 
   @override
   Unit get volumeMegaliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'мегалитри',
-          one: '{0} мегалитар',
-          other: '{0} мегалитри',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ML',
-          one: '{0} мегалитар',
-          other: '{0} ML',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ML',
-          one: '{0} мегалитар',
-          other: '{0} ML',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'мегалитри',
+      one: '{0} мегалитар',
+      other: '{0} мегалитри',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ML',
+      one: '{0} мегалитар',
+      other: '{0} ML',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ML',
+      one: '{0} мегалитар',
+      other: '{0} ML',
+    ),
+  );
 
   @override
   Unit get volumeHectoliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'хектолитри',
-          one: '{0} хектолитар',
-          other: '{0} хектолитри',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'hL',
-          one: '{0} хектолитар',
-          other: '{0} hL',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'hL',
-          one: '{0} хектолитар',
-          other: '{0} hL',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'хектолитри',
+      one: '{0} хектолитар',
+      other: '{0} хектолитри',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'hL',
+      one: '{0} хектолитар',
+      other: '{0} hL',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'hL',
+      one: '{0} хектолитар',
+      other: '{0} hL',
+    ),
+  );
 
   @override
   Unit get volumeLiter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'литри',
-          one: '{0} литар',
-          other: '{0} литри',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'литри',
-          one: '{0} L',
-          other: '{0} L',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'литар',
-          one: '{0} L',
-          other: '{0} L',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'литри',
+      one: '{0} литар',
+      other: '{0} литри',
+    ),
+    short: UnitCountPattern(_locale, 'литри', one: '{0} L', other: '{0} L'),
+    narrow: UnitCountPattern(_locale, 'литар', one: '{0} L', other: '{0} L'),
+  );
 
   @override
   Unit get volumeDeciliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'децилитри',
-          one: '{0} децилитар',
-          other: '{0} децилитри',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dL',
-          one: '{0} децилитар',
-          other: '{0} dL',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dL',
-          one: '{0} децилитар',
-          other: '{0} dL',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'децилитри',
+      one: '{0} децилитар',
+      other: '{0} децилитри',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dL',
+      one: '{0} децилитар',
+      other: '{0} dL',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'dL',
+      one: '{0} децилитар',
+      other: '{0} dL',
+    ),
+  );
 
   @override
   Unit get volumeCentiliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'центилитри',
-          one: '{0} центилитар',
-          other: '{0} центилитри',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cL',
-          one: '{0} центилитар',
-          other: '{0} cL',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cL',
-          one: '{0} центилитар',
-          other: '{0} cL',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'центилитри',
+      one: '{0} центилитар',
+      other: '{0} центилитри',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cL',
+      one: '{0} центилитар',
+      other: '{0} cL',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cL',
+      one: '{0} центилитар',
+      other: '{0} cL',
+    ),
+  );
 
   @override
   Unit get volumeMilliliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'милилитри',
-          one: '{0} милилитар',
-          other: '{0} милилитри',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mL',
-          one: '{0} милилитар',
-          other: '{0} mL',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mL',
-          one: '{0} милилитар',
-          other: '{0} mL',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'милилитри',
+      one: '{0} милилитар',
+      other: '{0} милилитри',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mL',
+      one: '{0} милилитар',
+      other: '{0} mL',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mL',
+      one: '{0} милилитар',
+      other: '{0} mL',
+    ),
+  );
 
   @override
   Unit get volumePintMetric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'метрички пинти',
-          one: '{0} метричка пинта',
-          other: '{0} метрички пинти',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mpt',
-          one: '{0} метричка пинта',
-          other: '{0} mpt',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pt',
-          one: '{0} метричка пинта',
-          other: '{0} mpt',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'метрички пинти',
+      one: '{0} метричка пинта',
+      other: '{0} метрички пинти',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mpt',
+      one: '{0} метричка пинта',
+      other: '{0} mpt',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'pt',
+      one: '{0} метричка пинта',
+      other: '{0} mpt',
+    ),
+  );
 
   @override
   Unit get volumeCupMetric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'метрички чаши',
-          one: '{0} метричка чаша',
-          other: '{0} метрички чаши',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mcup',
-          one: '{0} метричка чаша',
-          other: '{0} mc',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mcup',
-          one: '{0} метричка чаша',
-          other: '{0} mc',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'метрички чаши',
+      one: '{0} метричка чаша',
+      other: '{0} метрички чаши',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mcup',
+      one: '{0} метричка чаша',
+      other: '{0} mc',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mcup',
+      one: '{0} метричка чаша',
+      other: '{0} mc',
+    ),
+  );
 
   @override
   Unit get volumeAcreFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'акр-стапка',
-          one: '{0} акр-стапка',
-          other: '{0} акр-стапки',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'acre ft',
-          one: '{0} акр-стапка',
-          other: '{0} ac ft',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'acre ft',
-          one: '{0} акр-стапка',
-          other: '{0} ac ft',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'акр-стапка',
+      one: '{0} акр-стапка',
+      other: '{0} акр-стапки',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'acre ft',
+      one: '{0} акр-стапка',
+      other: '{0} ac ft',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'acre ft',
+      one: '{0} акр-стапка',
+      other: '{0} ac ft',
+    ),
+  );
 
   @override
   Unit get volumeBushel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'бушели',
-          one: '{0} бушел',
-          other: '{0} бушели',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'бушели',
-          one: '{0} бушел',
-          other: '{0} bu',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'бушел',
-          one: '{0} бушел',
-          other: '{0} bu',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'бушели',
+      one: '{0} бушел',
+      other: '{0} бушели',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'бушели',
+      one: '{0} бушел',
+      other: '{0} bu',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'бушел',
+      one: '{0} бушел',
+      other: '{0} bu',
+    ),
+  );
 
   @override
   Unit get volumeGallon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'галони',
-          one: '{0} галон',
-          other: '{0} галони',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'gal',
-          one: '{0} gal',
-          other: '{0} gal',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'gal',
-          one: '{0} gal',
-          other: '{0} gal',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'галони',
+      one: '{0} галон',
+      other: '{0} галони',
+    ),
+    short: UnitCountPattern(_locale, 'gal', one: '{0} gal', other: '{0} gal'),
+    narrow: UnitCountPattern(_locale, 'gal', one: '{0} gal', other: '{0} gal'),
+  );
 
   @override
   Unit get volumeGallonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'имп. галони',
-          one: '{0} имп. галон',
-          other: '{0} имп. галони',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Imp. gal',
-          one: '{0} имп. галон',
-          other: '{0} gal Imp.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Imp gal',
-          one: '{0} galIm',
-          other: '{0} galIm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'имп. галони',
+      one: '{0} имп. галон',
+      other: '{0} имп. галони',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Imp. gal',
+      one: '{0} имп. галон',
+      other: '{0} gal Imp.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Imp gal',
+      one: '{0} galIm',
+      other: '{0} galIm',
+    ),
+  );
 
   @override
   Unit get volumeQuart => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'кварти',
-          one: '{0} кварт',
-          other: '{0} кварти',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'qt',
-          one: '{0} кварт',
-          other: '{0} qt',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'qt',
-          one: '{0} кварт',
-          other: '{0} qt',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'кварти',
+      one: '{0} кварт',
+      other: '{0} кварти',
+    ),
+    short: UnitCountPattern(_locale, 'qt', one: '{0} кварт', other: '{0} qt'),
+    narrow: UnitCountPattern(_locale, 'qt', one: '{0} кварт', other: '{0} qt'),
+  );
 
   @override
   Unit get volumePint => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'пинти',
-          one: '{0} пинта',
-          other: '{0} пинти',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'пинти',
-          one: '{0} пинта',
-          other: '{0} pt',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pt',
-          one: '{0} пинта',
-          other: '{0} pt',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'пинти',
+      one: '{0} пинта',
+      other: '{0} пинти',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'пинти',
+      one: '{0} пинта',
+      other: '{0} pt',
+    ),
+    narrow: UnitCountPattern(_locale, 'pt', one: '{0} пинта', other: '{0} pt'),
+  );
 
   @override
   Unit get volumeCup => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'чаши',
-          one: '{0} чаша',
-          other: '{0} чаши',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'чаши',
-          one: '{0} чаша',
-          other: '{0} c',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'чаша',
-          one: '{0} чаша',
-          other: '{0} c',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'чаши', one: '{0} чаша', other: '{0} чаши'),
+    short: UnitCountPattern(_locale, 'чаши', one: '{0} чаша', other: '{0} c'),
+    narrow: UnitCountPattern(_locale, 'чаша', one: '{0} чаша', other: '{0} c'),
+  );
 
   @override
   Unit get volumeFluidOunce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'унци течност',
-          one: '{0} унца течност',
-          other: '{0} унци течност',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'fl oz',
-          one: '{0} fl oz',
-          other: '{0} fl oz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'fl oz',
-          one: '{0} fl oz',
-          other: '{0} fl oz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'унци течност',
+      one: '{0} унца течност',
+      other: '{0} унци течност',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'fl oz',
+      one: '{0} fl oz',
+      other: '{0} fl oz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'fl oz',
+      one: '{0} fl oz',
+      other: '{0} fl oz',
+    ),
+  );
 
   @override
   Unit get volumeFluidOunceImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'имп. унци течност',
-          one: '{0} имп. унца течност',
-          other: '{0} имп. унци течност',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Imp. fl oz',
-          one: '{0} имп. унца течност',
-          other: '{0} fl oz Imp.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Imp fl oz',
-          one: '{0} fl oz Im',
-          other: '{0} fl oz Im',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'имп. унци течност',
+      one: '{0} имп. унца течност',
+      other: '{0} имп. унци течност',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Imp. fl oz',
+      one: '{0} имп. унца течност',
+      other: '{0} fl oz Imp.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Imp fl oz',
+      one: '{0} fl oz Im',
+      other: '{0} fl oz Im',
+    ),
+  );
 
   @override
   Unit get volumeTablespoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'супени лажици',
-          one: '{0} супена лажица',
-          other: '{0} супени лажици',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'tbsp',
-          one: '{0} супена лажица',
-          other: '{0} tbsp',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'tbsp',
-          one: '{0} супена лажица',
-          other: '{0} tbsp',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'супени лажици',
+      one: '{0} супена лажица',
+      other: '{0} супени лажици',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'tbsp',
+      one: '{0} супена лажица',
+      other: '{0} tbsp',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'tbsp',
+      one: '{0} супена лажица',
+      other: '{0} tbsp',
+    ),
+  );
 
   @override
   Unit get volumeTeaspoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'кафени лажици',
-          one: '{0} кафена лажица',
-          other: '{0} кафени лажици',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'tsp',
-          one: '{0} кафена лажица',
-          other: '{0} tsp',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'tsp',
-          one: '{0} кафена лажица',
-          other: '{0} tsp',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'кафени лажици',
+      one: '{0} кафена лажица',
+      other: '{0} кафени лажици',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'tsp',
+      one: '{0} кафена лажица',
+      other: '{0} tsp',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'tsp',
+      one: '{0} кафена лажица',
+      other: '{0} tsp',
+    ),
+  );
 
   @override
   Unit get volumeBarrel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'барели',
-          one: '{0} барел',
-          other: '{0} барели',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'bbl',
-          one: '{0} барел',
-          other: '{0} bbl',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'bbl',
-          one: '{0} барел',
-          other: '{0} bbl',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'барели',
+      one: '{0} барел',
+      other: '{0} барели',
+    ),
+    short: UnitCountPattern(_locale, 'bbl', one: '{0} барел', other: '{0} bbl'),
+    narrow: UnitCountPattern(
+      _locale,
+      'bbl',
+      one: '{0} барел',
+      other: '{0} bbl',
+    ),
+  );
 
   @override
   Unit get volumeDessertSpoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'лажица за десерт',
-          one: '{0} лажица за десерт',
-          other: '{0} лажици за десерт',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dstspn',
-          one: '{0} лажица за десерт',
-          other: '{0} dstspn',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dsp',
-          one: '{0} dsp',
-          other: '{0} dsp',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'лажица за десерт',
+      one: '{0} лажица за десерт',
+      other: '{0} лажици за десерт',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dstspn',
+      one: '{0} лажица за десерт',
+      other: '{0} dstspn',
+    ),
+    narrow: UnitCountPattern(_locale, 'dsp', one: '{0} dsp', other: '{0} dsp'),
+  );
 
   @override
   Unit get volumeDessertSpoonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'имп. лажица за десерт',
-          one: '{0} имп. лажица за десерт',
-          other: '{0} имп. лажици за десерт',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dstspn Imp',
-          one: '{0} имп. лажица за десерт',
-          other: '{0} dstspn Imp',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dsp Imp',
-          one: '{0} dsp-Imp',
-          other: '{0} dsp-Imp',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'имп. лажица за десерт',
+      one: '{0} имп. лажица за десерт',
+      other: '{0} имп. лажици за десерт',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dstspn Imp',
+      one: '{0} имп. лажица за десерт',
+      other: '{0} dstspn Imp',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'dsp Imp',
+      one: '{0} dsp-Imp',
+      other: '{0} dsp-Imp',
+    ),
+  );
 
   @override
   Unit get volumeDrop => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'капка',
-          one: '{0} капка',
-          other: '{0} капки',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'капка',
-          one: '{0} капка',
-          other: '{0} drop',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dr',
-          one: '{0} dr',
-          other: '{0} dr',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'капка',
+      one: '{0} капка',
+      other: '{0} капки',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'капка',
+      one: '{0} капка',
+      other: '{0} drop',
+    ),
+    narrow: UnitCountPattern(_locale, 'dr', one: '{0} dr', other: '{0} dr'),
+  );
 
   @override
   Unit get volumeDram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'драм',
-          one: '{0} драм',
-          other: '{0} драмови',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'драм течност',
-          one: '{0} драм',
-          other: '{0} dram fl',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'fl.dr.',
-          one: '{0} fl.dr.',
-          other: '{0} fl.dr.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'драм',
+      one: '{0} драм',
+      other: '{0} драмови',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'драм течност',
+      one: '{0} драм',
+      other: '{0} dram fl',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'fl.dr.',
+      one: '{0} fl.dr.',
+      other: '{0} fl.dr.',
+    ),
+  );
 
   @override
   Unit get volumeJigger => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'џигер',
-          one: '{0} џигер',
-          other: '{0} џигери',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'џигер',
-          one: '{0} џигер',
-          other: '{0} jigger',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'џигер',
-          one: '{0} џигер',
-          other: '{0} jigger',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'џигер',
+      one: '{0} џигер',
+      other: '{0} џигери',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'џигер',
+      one: '{0} џигер',
+      other: '{0} jigger',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'џигер',
+      one: '{0} џигер',
+      other: '{0} jigger',
+    ),
+  );
 
   @override
   Unit get volumePinch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'прстофат',
-          one: '{0} прстофат',
-          other: '{0} прстофати',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'pinch',
-          one: '{0} прстофат',
-          other: '{0} pinch',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pn',
-          one: '{0} pn',
-          other: '{0} pn',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'прстофат',
+      one: '{0} прстофат',
+      other: '{0} прстофати',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'pinch',
+      one: '{0} прстофат',
+      other: '{0} pinch',
+    ),
+    narrow: UnitCountPattern(_locale, 'pn', one: '{0} pn', other: '{0} pn'),
+  );
 
   @override
   Unit get volumeQuartImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'имп. четвртина',
-          one: '{0} имп. четвртина',
-          other: '{0} имп. четвртини',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'qt Imp',
-          one: '{0} имп. четвртина',
-          other: '{0} qt Imp.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'qt Imp',
-          one: '{0} qt-Imp.',
-          other: '{0} qt-Imp.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'имп. четвртина',
+      one: '{0} имп. четвртина',
+      other: '{0} имп. четвртини',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'qt Imp',
+      one: '{0} имп. четвртина',
+      other: '{0} qt Imp.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'qt Imp',
+      one: '{0} qt-Imp.',
+      other: '{0} qt-Imp.',
+    ),
+  );
 
   @override
   Unit get pressureGasolineEnergyDensity => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'of gasoline equivalent',
-          one: '{0} of gasoline equivalent',
-          other: '{0} of gasoline equivalent',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'gas-equiv',
-          one: '{0} gas-equiv',
-          other: '{0} gas-equiv',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'gas-equiv',
-          one: '{0}gas-equiv',
-          other: '{0}gas-equiv',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'of gasoline equivalent',
+      one: '{0} of gasoline equivalent',
+      other: '{0} of gasoline equivalent',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'gas-equiv',
+      one: '{0} gas-equiv',
+      other: '{0} gas-equiv',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'gas-equiv',
+      one: '{0}gas-equiv',
+      other: '{0}gas-equiv',
+    ),
+  );
 
   @override
   Unit get speedLightSpeed => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'светлина',
-          one: '{0} светлина',
-          other: '{0} светлини',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'светлина',
-          one: '{0} светлина',
-          other: '{0} светлини',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'светлина',
-          one: '{0} светлина',
-          other: '{0} светлини',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'светлина',
+      one: '{0} светлина',
+      other: '{0} светлини',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'светлина',
+      one: '{0} светлина',
+      other: '{0} светлини',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'светлина',
+      one: '{0} светлина',
+      other: '{0} светлини',
+    ),
+  );
 
   @override
   Unit get concentrPortionPer1e9 => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'делови на милијарда',
-          one: '{0} дел на милијарда',
-          other: '{0} дела на милијарда',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ppb',
-          one: '{0} дел на милијарда',
-          other: '{0} ppb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ppb',
-          one: '{0} дел на милијарда',
-          other: '{0} ppb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'делови на милијарда',
+      one: '{0} дел на милијарда',
+      other: '{0} дела на милијарда',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ppb',
+      one: '{0} дел на милијарда',
+      other: '{0} ppb',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ppb',
+      one: '{0} дел на милијарда',
+      other: '{0} ppb',
+    ),
+  );
 
   @override
   Unit get durationNight => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ноќи',
-          one: '{0} ноќ',
-          other: '{0} ноќи',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ноќи',
-          one: '{0} ноќ',
-          other: '{0} ноќи',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ноќи',
-          one: '{0} н.',
-          other: '{0} н.',
-        ),
-      );
+    long: UnitCountPattern(_locale, 'ноќи', one: '{0} ноќ', other: '{0} ноќи'),
+    short: UnitCountPattern(_locale, 'ноќи', one: '{0} ноќ', other: '{0} ноќи'),
+    narrow: UnitCountPattern(_locale, 'ноќи', one: '{0} н.', other: '{0} н.'),
+  );
 }
 
 class DateFieldsMk extends DateFields {
   const DateFieldsMk(super.cld);
 
   @override
-  MultiLength get era => const MultiLength(
-        long: 'ера',
-        short: 'ера',
-        narrow: 'ера',
-      );
+  MultiLength get era =>
+      const MultiLength(long: 'ера', short: 'ера', narrow: 'ера');
 
   @override
   DateFieldFullData get year => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'година',
-          short: 'год.',
-          narrow: 'год.',
-        ),
-        previous: MultiLength(
-          long: 'лани',
-          short: 'минатата год.',
-          narrow: 'минатата год.',
-        ),
-        now: MultiLength(
-          long: 'оваа година',
-          short: 'оваа год.',
-          narrow: 'оваа год.',
-        ),
-        next: MultiLength(
-          long: 'догодина',
-          short: 'следната год.',
-          narrow: 'следната год.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'пред {0} година',
-            other: 'пред {0} години',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'пред {0} год.',
-            other: 'пред {0} год.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'пред {0} год.',
-            other: 'пред {0} год.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'за {0} година',
-            other: 'за {0} години',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'за {0} год.',
-            other: 'за {0} год.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'за {0} год.',
-            other: 'за {0} год.',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'година', short: 'год.', narrow: 'год.'),
+    previous: MultiLength(
+      long: 'лани',
+      short: 'минатата год.',
+      narrow: 'минатата год.',
+    ),
+    now: MultiLength(
+      long: 'оваа година',
+      short: 'оваа год.',
+      narrow: 'оваа год.',
+    ),
+    next: MultiLength(
+      long: 'догодина',
+      short: 'следната год.',
+      narrow: 'следната год.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'пред {0} година',
+        other: 'пред {0} години',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'пред {0} год.',
+        other: 'пред {0} год.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'пред {0} год.',
+        other: 'пред {0} год.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'за {0} година', other: 'за {0} години'),
+      short: RelativeTime(_locale, one: 'за {0} год.', other: 'за {0} год.'),
+      narrow: RelativeTime(_locale, one: 'за {0} год.', other: 'за {0} год.'),
+    ),
+  );
 
   @override
   DateFieldFullData get quarter => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'тромесечје',
-          short: 'тромес.',
-          narrow: 'тромес.',
-        ),
-        previous: MultiLength(
-          long: 'последното тромесечје',
-          short: 'последното тромесечје',
-          narrow: 'последното тромесечје',
-        ),
-        now: MultiLength(
-          long: 'ова тромесечје',
-          short: 'ова тромесечје',
-          narrow: 'ова тромесечје',
-        ),
-        next: MultiLength(
-          long: 'следното тромесечје',
-          short: 'следното тромесечје',
-          narrow: 'следното тромесечје',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'пред {0} тромесечје',
-            other: 'пред {0} тромесечја',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'пред {0} тромес.',
-            other: 'пред {0} тромес.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'пред {0} тромес.',
-            other: 'пред {0} тромес.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'за {0} тромесечје',
-            other: 'за {0} тромесечја',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'за {0} тромес.',
-            other: 'за {0} тромес.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'за {0} тромес.',
-            other: 'за {0} тромес.',
-          ),
-        ),
-      );
+    displayName: MultiLength(
+      long: 'тромесечје',
+      short: 'тромес.',
+      narrow: 'тромес.',
+    ),
+    previous: MultiLength(
+      long: 'последното тромесечје',
+      short: 'последното тромесечје',
+      narrow: 'последното тромесечје',
+    ),
+    now: MultiLength(
+      long: 'ова тромесечје',
+      short: 'ова тромесечје',
+      narrow: 'ова тромесечје',
+    ),
+    next: MultiLength(
+      long: 'следното тромесечје',
+      short: 'следното тромесечје',
+      narrow: 'следното тромесечје',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'пред {0} тромесечје',
+        other: 'пред {0} тромесечја',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'пред {0} тромес.',
+        other: 'пред {0} тромес.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'пред {0} тромес.',
+        other: 'пред {0} тромес.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'за {0} тромесечје',
+        other: 'за {0} тромесечја',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'за {0} тромес.',
+        other: 'за {0} тромес.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'за {0} тромес.',
+        other: 'за {0} тромес.',
+      ),
+    ),
+  );
 
   @override
   DateFieldFullData get month => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'месец',
-          short: 'мес.',
-          narrow: 'мес.',
-        ),
-        previous: MultiLength(
-          long: 'минатиот месец',
-          short: 'минатиот месец',
-          narrow: 'минатиот месец',
-        ),
-        now: MultiLength(
-          long: 'овој месец',
-          short: 'овој месец',
-          narrow: 'овој месец',
-        ),
-        next: MultiLength(
-          long: 'следниот месец',
-          short: 'следниот месец',
-          narrow: 'следниот месец',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'пред {0} месец',
-            other: 'пред {0} месеци',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'пред {0} месец',
-            other: 'пред {0} месеци',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'пред {0} месец',
-            other: 'пред {0} месеци',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'за {0} месец',
-            other: 'за {0} месеци',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'за {0} месец',
-            other: 'за {0} месеци',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'за {0} месец',
-            other: 'за {0} месеци',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'месец', short: 'мес.', narrow: 'мес.'),
+    previous: MultiLength(
+      long: 'минатиот месец',
+      short: 'минатиот месец',
+      narrow: 'минатиот месец',
+    ),
+    now: MultiLength(
+      long: 'овој месец',
+      short: 'овој месец',
+      narrow: 'овој месец',
+    ),
+    next: MultiLength(
+      long: 'следниот месец',
+      short: 'следниот месец',
+      narrow: 'следниот месец',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'пред {0} месец',
+        other: 'пред {0} месеци',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'пред {0} месец',
+        other: 'пред {0} месеци',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'пред {0} месец',
+        other: 'пред {0} месеци',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'за {0} месец', other: 'за {0} месеци'),
+      short: RelativeTime(_locale, one: 'за {0} месец', other: 'за {0} месеци'),
+      narrow: RelativeTime(
+        _locale,
+        one: 'за {0} месец',
+        other: 'за {0} месеци',
+      ),
+    ),
+  );
 
   @override
   DateFieldFullData get week => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'седмица',
-          short: 'сед.',
-          narrow: 'сед.',
-        ),
-        previous: MultiLength(
-          long: 'минатата седмица',
-          short: 'минатата седмица',
-          narrow: 'минатата седмица',
-        ),
-        now: MultiLength(
-          long: 'оваа седмица',
-          short: 'оваа седмица',
-          narrow: 'оваа седмица',
-        ),
-        next: MultiLength(
-          long: 'следната седмица',
-          short: 'следната седмица',
-          narrow: 'следната седмица',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'пред {0} седмица',
-            other: 'пред {0} седмици',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'пред {0} седмица',
-            other: 'пред {0} седмици',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'пред {0} седмица',
-            other: 'пред {0} седмици',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'за {0} седмица',
-            other: 'за {0} седмици',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'за {0} седмица',
-            other: 'за {0} седмици',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'за {0} седмица',
-            other: 'за {0} седмици',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'седмица', short: 'сед.', narrow: 'сед.'),
+    previous: MultiLength(
+      long: 'минатата седмица',
+      short: 'минатата седмица',
+      narrow: 'минатата седмица',
+    ),
+    now: MultiLength(
+      long: 'оваа седмица',
+      short: 'оваа седмица',
+      narrow: 'оваа седмица',
+    ),
+    next: MultiLength(
+      long: 'следната седмица',
+      short: 'следната седмица',
+      narrow: 'следната седмица',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'пред {0} седмица',
+        other: 'пред {0} седмици',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'пред {0} седмица',
+        other: 'пред {0} седмици',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'пред {0} седмица',
+        other: 'пред {0} седмици',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'за {0} седмица',
+        other: 'за {0} седмици',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'за {0} седмица',
+        other: 'за {0} седмици',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'за {0} седмица',
+        other: 'за {0} седмици',
+      ),
+    ),
+  );
 
   @override
   MultiLength get weekOfMonth => const MultiLength(
-        long: 'седмица од месецот',
-        short: 'седмица од месецот',
-        narrow: 'седмица од месецот',
-      );
+    long: 'седмица од месецот',
+    short: 'седмица од месецот',
+    narrow: 'седмица од месецот',
+  );
 
   @override
   DateFieldFullData get day => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'ден',
-          short: 'ден',
-          narrow: 'ден',
-        ),
-        previous: MultiLength(
-          long: 'вчера',
-          short: 'вчера',
-          narrow: 'вчера',
-        ),
-        now: MultiLength(
-          long: 'денес',
-          short: 'денес',
-          narrow: 'денес',
-        ),
-        next: MultiLength(
-          long: 'утре',
-          short: 'утре',
-          narrow: 'утре',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'пред {0} ден',
-            other: 'пред {0} дена',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'пред {0} ден',
-            other: 'пред {0} дена',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'пред {0} ден',
-            other: 'пред {0} дена',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'за {0} ден',
-            other: 'за {0} дена',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'за {0} ден',
-            other: 'за {0} дена',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'за {0} ден',
-            other: 'за {0} дена',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'ден', short: 'ден', narrow: 'ден'),
+    previous: MultiLength(long: 'вчера', short: 'вчера', narrow: 'вчера'),
+    now: MultiLength(long: 'денес', short: 'денес', narrow: 'денес'),
+    next: MultiLength(long: 'утре', short: 'утре', narrow: 'утре'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'пред {0} ден', other: 'пред {0} дена'),
+      short: RelativeTime(_locale, one: 'пред {0} ден', other: 'пред {0} дена'),
+      narrow: RelativeTime(
+        _locale,
+        one: 'пред {0} ден',
+        other: 'пред {0} дена',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'за {0} ден', other: 'за {0} дена'),
+      short: RelativeTime(_locale, one: 'за {0} ден', other: 'за {0} дена'),
+      narrow: RelativeTime(_locale, one: 'за {0} ден', other: 'за {0} дена'),
+    ),
+  );
 
   @override
   MultiLength get dayOfYear => const MultiLength(
-        long: 'ден од годината',
-        short: 'ден од год.',
-        narrow: 'ден од год.',
-      );
+    long: 'ден од годината',
+    short: 'ден од год.',
+    narrow: 'ден од год.',
+  );
 
   @override
   MultiLength get weekday => const MultiLength(
-        long: 'ден од неделата',
-        short: 'ден во неделата',
-        narrow: 'ден во неделата',
-      );
+    long: 'ден од неделата',
+    short: 'ден во неделата',
+    narrow: 'ден во неделата',
+  );
 
   @override
   MultiLength get weekdayOfMonth => const MultiLength(
-        long: 'ден од месецот',
-        short: 'ден од мес.',
-        narrow: 'ден од мес.',
-      );
+    long: 'ден од месецот',
+    short: 'ден од мес.',
+    narrow: 'ден од мес.',
+  );
 
   @override
   DateFieldDataWithRelative get sunday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'минатата недела',
-          short: 'минатата нед.',
-          narrow: 'минатата нед.',
-        ),
-        now: MultiLength(
-          long: 'оваа недела',
-          short: 'оваа нед.',
-          narrow: 'оваа нед.',
-        ),
-        next: MultiLength(
-          long: 'следната недела',
-          short: 'следната нед.',
-          narrow: 'следната нед.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'пред {0} недела',
-            other: 'пред {0} недели',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'пред {0} нед.',
-            other: 'пред {0} нед.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'пред {0} нед.',
-            other: 'пред {0} нед.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'за {0} недела',
-            other: 'за {0} недели',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'за {0} нед.',
-            other: 'за {0} нед.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'за {0} нед.',
-            other: 'за {0} нед.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'минатата недела',
+      short: 'минатата нед.',
+      narrow: 'минатата нед.',
+    ),
+    now: MultiLength(
+      long: 'оваа недела',
+      short: 'оваа нед.',
+      narrow: 'оваа нед.',
+    ),
+    next: MultiLength(
+      long: 'следната недела',
+      short: 'следната нед.',
+      narrow: 'следната нед.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'пред {0} недела',
+        other: 'пред {0} недели',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'пред {0} нед.',
+        other: 'пред {0} нед.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'пред {0} нед.',
+        other: 'пред {0} нед.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'за {0} недела', other: 'за {0} недели'),
+      short: RelativeTime(_locale, one: 'за {0} нед.', other: 'за {0} нед.'),
+      narrow: RelativeTime(_locale, one: 'за {0} нед.', other: 'за {0} нед.'),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get monday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'минатиот понеделник',
-          short: 'минатиот пон.',
-          narrow: 'минатиот пон.',
-        ),
-        now: MultiLength(
-          long: 'овој понеделник',
-          short: 'овој пон.',
-          narrow: 'овој пон.',
-        ),
-        next: MultiLength(
-          long: 'следниот понеделник',
-          short: 'следниот пон.',
-          narrow: 'следниот пон.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'пред {0} понеделник',
-            other: 'пред {0} понеделници',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'пред {0} пон.',
-            other: 'пред {0} пон.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'пред {0} пон.',
-            other: 'пред {0} пон.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'за {0} понеделник',
-            other: 'за {0} понеделници',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'за {0} пон.',
-            other: 'за {0} пон.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'за {0} пон.',
-            other: 'за {0} пон.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'минатиот понеделник',
+      short: 'минатиот пон.',
+      narrow: 'минатиот пон.',
+    ),
+    now: MultiLength(
+      long: 'овој понеделник',
+      short: 'овој пон.',
+      narrow: 'овој пон.',
+    ),
+    next: MultiLength(
+      long: 'следниот понеделник',
+      short: 'следниот пон.',
+      narrow: 'следниот пон.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'пред {0} понеделник',
+        other: 'пред {0} понеделници',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'пред {0} пон.',
+        other: 'пред {0} пон.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'пред {0} пон.',
+        other: 'пред {0} пон.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'за {0} понеделник',
+        other: 'за {0} понеделници',
+      ),
+      short: RelativeTime(_locale, one: 'за {0} пон.', other: 'за {0} пон.'),
+      narrow: RelativeTime(_locale, one: 'за {0} пон.', other: 'за {0} пон.'),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get tuesday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'минатиот вторник',
-          short: 'минатиот вто.',
-          narrow: 'минатиот вто.',
-        ),
-        now: MultiLength(
-          long: 'овој вторник',
-          short: 'овој вто.',
-          narrow: 'овој вто.',
-        ),
-        next: MultiLength(
-          long: 'следниот вторник',
-          short: 'следниот вто.',
-          narrow: 'следниот вто.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'пред {0} вторник',
-            other: 'пред {0} вторници',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'пред {0} вто.',
-            other: 'пред {0} вто.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'пред {0} вто.',
-            other: 'пред {0} вто.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'за {0} вторник',
-            other: 'за {0} вторници',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'за {0} вто.',
-            other: 'за {0} вто.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'за {0} вто.',
-            other: 'за {0} вто.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'минатиот вторник',
+      short: 'минатиот вто.',
+      narrow: 'минатиот вто.',
+    ),
+    now: MultiLength(
+      long: 'овој вторник',
+      short: 'овој вто.',
+      narrow: 'овој вто.',
+    ),
+    next: MultiLength(
+      long: 'следниот вторник',
+      short: 'следниот вто.',
+      narrow: 'следниот вто.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'пред {0} вторник',
+        other: 'пред {0} вторници',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'пред {0} вто.',
+        other: 'пред {0} вто.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'пред {0} вто.',
+        other: 'пред {0} вто.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'за {0} вторник',
+        other: 'за {0} вторници',
+      ),
+      short: RelativeTime(_locale, one: 'за {0} вто.', other: 'за {0} вто.'),
+      narrow: RelativeTime(_locale, one: 'за {0} вто.', other: 'за {0} вто.'),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get wednesday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'минатата среда',
-          short: 'минатата сре.',
-          narrow: 'минатата сре.',
-        ),
-        now: MultiLength(
-          long: 'оваа среда',
-          short: 'оваа сре.',
-          narrow: 'оваа сре.',
-        ),
-        next: MultiLength(
-          long: 'следната среда',
-          short: 'следната сре.',
-          narrow: 'следната сре.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'пред {0} среда',
-            other: 'пред {0} среди',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'пред {0} сре.',
-            other: 'пред {0} сре.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'пред {0} сре.',
-            other: 'пред {0} сре.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'за {0} среда',
-            other: 'за {0} среди',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'за {0} сре.',
-            other: 'за {0} сре.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'за {0} сре.',
-            other: 'за {0} сре.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'минатата среда',
+      short: 'минатата сре.',
+      narrow: 'минатата сре.',
+    ),
+    now: MultiLength(
+      long: 'оваа среда',
+      short: 'оваа сре.',
+      narrow: 'оваа сре.',
+    ),
+    next: MultiLength(
+      long: 'следната среда',
+      short: 'следната сре.',
+      narrow: 'следната сре.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'пред {0} среда',
+        other: 'пред {0} среди',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'пред {0} сре.',
+        other: 'пред {0} сре.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'пред {0} сре.',
+        other: 'пред {0} сре.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'за {0} среда', other: 'за {0} среди'),
+      short: RelativeTime(_locale, one: 'за {0} сре.', other: 'за {0} сре.'),
+      narrow: RelativeTime(_locale, one: 'за {0} сре.', other: 'за {0} сре.'),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get thursday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'минатиот четврток',
-          short: 'минатиот чет.',
-          narrow: 'минатиот чет.',
-        ),
-        now: MultiLength(
-          long: 'овој четврток',
-          short: 'овој чет.',
-          narrow: 'овој чет.',
-        ),
-        next: MultiLength(
-          long: 'следниот четврток',
-          short: 'следниот чет.',
-          narrow: 'следниот чет.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'пред {0} четврток',
-            other: 'пред {0} четвртоци',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'пред {0} чет.',
-            other: 'пред {0} чет.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'пред {0} чет.',
-            other: 'пред {0} чет.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'за {0} четврток',
-            other: 'за {0} четвртоци',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'за {0} чет.',
-            other: 'за {0} чет.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'за {0} чет.',
-            other: 'за {0} чет.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'минатиот четврток',
+      short: 'минатиот чет.',
+      narrow: 'минатиот чет.',
+    ),
+    now: MultiLength(
+      long: 'овој четврток',
+      short: 'овој чет.',
+      narrow: 'овој чет.',
+    ),
+    next: MultiLength(
+      long: 'следниот четврток',
+      short: 'следниот чет.',
+      narrow: 'следниот чет.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'пред {0} четврток',
+        other: 'пред {0} четвртоци',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'пред {0} чет.',
+        other: 'пред {0} чет.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'пред {0} чет.',
+        other: 'пред {0} чет.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'за {0} четврток',
+        other: 'за {0} четвртоци',
+      ),
+      short: RelativeTime(_locale, one: 'за {0} чет.', other: 'за {0} чет.'),
+      narrow: RelativeTime(_locale, one: 'за {0} чет.', other: 'за {0} чет.'),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get friday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'минатиот петок',
-          short: 'минатиот пет.',
-          narrow: 'минатиот пет.',
-        ),
-        now: MultiLength(
-          long: 'овој петок',
-          short: 'овој пет.',
-          narrow: 'овој пет.',
-        ),
-        next: MultiLength(
-          long: 'следниот петок',
-          short: 'следниот пет.',
-          narrow: 'следниот пет.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'пред {0} петок',
-            other: 'пред {0} петоци',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'пред {0} пет.',
-            other: 'пред {0} пет.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'пред {0} пет.',
-            other: 'пред {0} пет.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'за {0} петок',
-            other: 'за {0} петоци',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'за {0} пет.',
-            other: 'за {0} пет.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'за {0} пет.',
-            other: 'за {0} пет.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'минатиот петок',
+      short: 'минатиот пет.',
+      narrow: 'минатиот пет.',
+    ),
+    now: MultiLength(
+      long: 'овој петок',
+      short: 'овој пет.',
+      narrow: 'овој пет.',
+    ),
+    next: MultiLength(
+      long: 'следниот петок',
+      short: 'следниот пет.',
+      narrow: 'следниот пет.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'пред {0} петок',
+        other: 'пред {0} петоци',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'пред {0} пет.',
+        other: 'пред {0} пет.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'пред {0} пет.',
+        other: 'пред {0} пет.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'за {0} петок', other: 'за {0} петоци'),
+      short: RelativeTime(_locale, one: 'за {0} пет.', other: 'за {0} пет.'),
+      narrow: RelativeTime(_locale, one: 'за {0} пет.', other: 'за {0} пет.'),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get saturday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'минатата сабота',
-          short: 'минатата саб.',
-          narrow: 'минатата саб.',
-        ),
-        now: MultiLength(
-          long: 'оваа сабота',
-          short: 'оваа саб.',
-          narrow: 'оваа саб.',
-        ),
-        next: MultiLength(
-          long: 'следната сабота',
-          short: 'следната саб.',
-          narrow: 'следната саб.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'пред {0} сабота',
-            other: 'пред {0} саботи',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'пред {0} саб.',
-            other: 'пред {0} саб.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'пред {0} саб.',
-            other: 'пред {0} саб.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'за {0} сабота',
-            other: 'за {0} саботи',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'за {0} саб.',
-            other: 'за {0} саб.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'за {0} саб.',
-            other: 'за {0} саб.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'минатата сабота',
+      short: 'минатата саб.',
+      narrow: 'минатата саб.',
+    ),
+    now: MultiLength(
+      long: 'оваа сабота',
+      short: 'оваа саб.',
+      narrow: 'оваа саб.',
+    ),
+    next: MultiLength(
+      long: 'следната сабота',
+      short: 'следната саб.',
+      narrow: 'следната саб.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'пред {0} сабота',
+        other: 'пред {0} саботи',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'пред {0} саб.',
+        other: 'пред {0} саб.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'пред {0} саб.',
+        other: 'пред {0} саб.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'за {0} сабота', other: 'за {0} саботи'),
+      short: RelativeTime(_locale, one: 'за {0} саб.', other: 'за {0} саб.'),
+      narrow: RelativeTime(_locale, one: 'за {0} саб.', other: 'за {0} саб.'),
+    ),
+  );
 
   @override
   MultiLength get dayperiod => const MultiLength(
-        long: 'претпладне/попладне',
-        short: 'претпладне/попладне',
-        narrow: 'претпладне/попладне',
-      );
+    long: 'претпладне/попладне',
+    short: 'претпладне/попладне',
+    narrow: 'претпладне/попладне',
+  );
 
   @override
   DateFieldDataTime get hour => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: 'час',
-          short: 'ч.',
-          narrow: 'ч.',
-        ),
-        now: MultiLength(
-          long: 'часов',
-          short: 'часов',
-          narrow: 'часов',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'пред {0} час',
-            other: 'пред {0} часа',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'пред {0} час',
-            other: 'пред {0} часа',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'пред {0} час',
-            other: 'пред {0} часа',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'за {0} час',
-            other: 'за {0} часа',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'за {0} час',
-            other: 'за {0} часа',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'за {0} час',
-            other: 'за {0} часа',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'час', short: 'ч.', narrow: 'ч.'),
+    now: MultiLength(long: 'часов', short: 'часов', narrow: 'часов'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'пред {0} час', other: 'пред {0} часа'),
+      short: RelativeTime(_locale, one: 'пред {0} час', other: 'пред {0} часа'),
+      narrow: RelativeTime(
+        _locale,
+        one: 'пред {0} час',
+        other: 'пред {0} часа',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'за {0} час', other: 'за {0} часа'),
+      short: RelativeTime(_locale, one: 'за {0} час', other: 'за {0} часа'),
+      narrow: RelativeTime(_locale, one: 'за {0} час', other: 'за {0} часа'),
+    ),
+  );
 
   @override
   DateFieldDataTime get minute => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: 'минута',
-          short: 'мин.',
-          narrow: 'мин.',
-        ),
-        now: MultiLength(
-          long: 'оваа минута',
-          short: 'оваа минута',
-          narrow: 'оваа минута',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'пред {0} минута',
-            other: 'пред {0} минути',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'пред {0} мин.',
-            other: 'пред {0} мин.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'пред {0} мин.',
-            other: 'пред {0} мин.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'за {0} минута',
-            other: 'за {0} минути',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'за {0} мин.',
-            other: 'за {0} мин.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'за {0} мин.',
-            other: 'за {0} мин.',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'минута', short: 'мин.', narrow: 'мин.'),
+    now: MultiLength(
+      long: 'оваа минута',
+      short: 'оваа минута',
+      narrow: 'оваа минута',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'пред {0} минута',
+        other: 'пред {0} минути',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'пред {0} мин.',
+        other: 'пред {0} мин.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'пред {0} мин.',
+        other: 'пред {0} мин.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(_locale, one: 'за {0} минута', other: 'за {0} минути'),
+      short: RelativeTime(_locale, one: 'за {0} мин.', other: 'за {0} мин.'),
+      narrow: RelativeTime(_locale, one: 'за {0} мин.', other: 'за {0} мин.'),
+    ),
+  );
 
   @override
   DateFieldDataTime get second => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: 'секунда',
-          short: 'сек.',
-          narrow: 'сек.',
-        ),
-        now: MultiLength(
-          long: 'сега',
-          short: 'сега',
-          narrow: 'сега',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'пред {0} секунда',
-            other: 'пред {0} секунди',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'пред {0} сек.',
-            other: 'пред {0} сек.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'пред {0} сек.',
-            other: 'пред {0} сек.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'за {0} секунда',
-            other: 'за {0} секунди',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'за {0} сек.',
-            other: 'за {0} сек.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'за {0} сек.',
-            other: 'за {0} сек.',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'секунда', short: 'сек.', narrow: 'сек.'),
+    now: MultiLength(long: 'сега', short: 'сега', narrow: 'сега'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'пред {0} секунда',
+        other: 'пред {0} секунди',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'пред {0} сек.',
+        other: 'пред {0} сек.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'пред {0} сек.',
+        other: 'пред {0} сек.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'за {0} секунда',
+        other: 'за {0} секунди',
+      ),
+      short: RelativeTime(_locale, one: 'за {0} сек.', other: 'за {0} сек.'),
+      narrow: RelativeTime(_locale, one: 'за {0} сек.', other: 'за {0} сек.'),
+    ),
+  );
 
   @override
-  MultiLength get zone => const MultiLength(
-        long: 'временска зона',
-        short: 'зона',
-        narrow: 'зона',
-      );
+  MultiLength get zone =>
+      const MultiLength(long: 'временска зона', short: 'зона', narrow: 'зона');
 }
 
 class LanguagesMk extends Languages {
@@ -5370,8 +4484,12 @@ class LanguagesMk extends Languages {
   static const _chp = Language('chp', 'чипевјански');
   static const _chr = Language('chr', 'чероки');
   static const _chy = Language('chy', 'чејенски');
-  static const _ckb = Language('ckb', 'централнокурдски',
-      variant: 'курдски, сорани', menu: 'курдски, централен');
+  static const _ckb = Language(
+    'ckb',
+    'централнокурдски',
+    variant: 'курдски, сорани',
+    menu: 'курдски, централен',
+  );
   static const _clc = Language('clc', 'чилкотински');
   static const _co = Language('co', 'корзикански');
   static const _cop = Language('cop', 'коптски');
@@ -5424,10 +4542,16 @@ class LanguagesMk extends Languages {
   static const _en = Language('en', 'англиски');
   static const _enAU = Language('en-AU', 'австралиски англиски');
   static const _enCA = Language('en-CA', 'канадски англиски');
-  static const _enGB =
-      Language('en-GB', 'британски англиски', short: 'англиски (ОК)');
-  static const _enUS =
-      Language('en-US', 'американски англиски', short: 'англиски (САД)');
+  static const _enGB = Language(
+    'en-GB',
+    'британски англиски',
+    short: 'англиски (ОК)',
+  );
+  static const _enUS = Language(
+    'en-US',
+    'американски англиски',
+    short: 'англиски (САД)',
+  );
   static const _enm = Language('enm', 'средноанглиски');
   static const _eo = Language('eo', 'есперанто');
   static const _es = Language('es', 'шпански');
@@ -7961,10 +7085,16 @@ class ScriptsMk extends Scripts {
   static const _hang = Script('Hang', 'хангул');
   static const _hani = Script('Hani', 'ханско писмо');
   static const _hano = Script('Hano', 'хануноовско');
-  static const _hans =
-      Script('Hans', 'поедноставено', standAlone: 'поедноставено ханско писмо');
-  static const _hant =
-      Script('Hant', 'традиционално', standAlone: 'традиционално ханско');
+  static const _hans = Script(
+    'Hans',
+    'поедноставено',
+    standAlone: 'поедноставено ханско писмо',
+  );
+  static const _hant = Script(
+    'Hant',
+    'традиционално',
+    standAlone: 'традиционално ханско',
+  );
   static const _hebr = Script('Hebr', 'хебрејско писмо');
   static const _hira = Script('Hira', 'хирагана');
   static const _hluw = Script('Hluw', 'анадолски хиероглифи');
@@ -8757,14 +7887,23 @@ class TerritoriesMk extends Territories {
   static const _bz = Territory('BZ', 'Белизе');
   static const _ca = Territory('CA', 'Канада');
   static const _cc = Territory('CC', 'Кокосови (Килиншки) Острови');
-  static const _cd = Territory('CD', 'Конго - Киншаса',
-      variant: 'Конго (Демократска Република Конго)');
+  static const _cd = Territory(
+    'CD',
+    'Конго - Киншаса',
+    variant: 'Конго (Демократска Република Конго)',
+  );
   static const _cf = Territory('CF', 'Централноафриканска Република');
-  static const _cg =
-      Territory('CG', 'Конго - Бразавил', variant: 'Конго (Република)');
+  static const _cg = Territory(
+    'CG',
+    'Конго - Бразавил',
+    variant: 'Конго (Република)',
+  );
   static const _ch = Territory('CH', 'Швајцарија');
-  static const _ci = Territory('CI', 'Брегот на Слоновата Коска',
-      variant: 'Брег на Слоновата Коска');
+  static const _ci = Territory(
+    'CI',
+    'Брегот на Слоновата Коска',
+    variant: 'Брег на Слоновата Коска',
+  );
   static const _ck = Territory('CK', 'Кукови Острови');
   static const _cl = Territory('CL', 'Чиле');
   static const _cm = Territory('CM', 'Камерун');
@@ -8797,8 +7936,11 @@ class TerritoriesMk extends Territories {
   static const _ez = Territory('EZ', 'Еврозона');
   static const _fi = Territory('FI', 'Финска');
   static const _fj = Territory('FJ', 'Фиџи');
-  static const _fk = Territory('FK', 'Фолкландски Острови',
-      variant: 'Фолкландски Острови (Малвински Острови)');
+  static const _fk = Territory(
+    'FK',
+    'Фолкландски Острови',
+    variant: 'Фолкландски Острови (Малвински Острови)',
+  );
   static const _fm = Territory('FM', 'Микронезија');
   static const _fo = Territory('FO', 'Фарски Острови');
   static const _fr = Territory('FR', 'Франција');
@@ -8898,8 +8040,11 @@ class TerritoriesMk extends Territories {
   static const _np = Territory('NP', 'Непал');
   static const _nr = Territory('NR', 'Науру');
   static const _nu = Territory('NU', 'Ниује');
-  static const _nz =
-      Territory('NZ', 'Нов Зеланд', variant: 'Аотеароа (Нов Зеланд)');
+  static const _nz = Territory(
+    'NZ',
+    'Нов Зеланд',
+    variant: 'Аотеароа (Нов Зеланд)',
+  );
   static const _om = Territory('OM', 'Оман');
   static const _pa = Territory('PA', 'Панама');
   static const _pe = Territory('PE', 'Перу');
@@ -8911,8 +8056,11 @@ class TerritoriesMk extends Territories {
   static const _pm = Territory('PM', 'Сент Пјер и Микелан');
   static const _pn = Territory('PN', 'Питкернски Острови');
   static const _pr = Territory('PR', 'Порторико');
-  static const _ps =
-      Territory('PS', 'Палестински Територии', short: 'Палестина');
+  static const _ps = Territory(
+    'PS',
+    'Палестински Територии',
+    short: 'Палестина',
+  );
   static const _pt = Territory('PT', 'Португалија');
   static const _pw = Territory('PW', 'Палау');
   static const _py = Territory('PY', 'Парагвај');
@@ -8965,8 +8113,11 @@ class TerritoriesMk extends Territories {
   static const _ug = Territory('UG', 'Уганда');
   static const _um = Territory('UM', 'Американски територии во Пацификот');
   static const _un = Territory('UN', 'Обединети нации', short: 'ОН');
-  static const _us =
-      Territory('US', 'Соединети Американски Држави', short: 'САД');
+  static const _us = Territory(
+    'US',
+    'Соединети Американски Држави',
+    short: 'САД',
+  );
   static const _uy = Territory('UY', 'Уругвај');
   static const _uz = Territory('UZ', 'Узбекистан');
   static const _va = Territory('VA', 'Ватикан');
@@ -12359,504 +11510,1292 @@ class CurrenciesMk extends Currencies {
 
   static const _adp = Currency(_cld, 'ADP', 'Андорска Пезета');
   static const _aed = Currency(
-      _cld, 'AED', 'Дирхам на Обединети Арапски Емирати',
-      one: 'Дирхам на Обединети Арапски Емирати',
-      other: 'Дирхами на Обединети Арапски Емирати');
+    _cld,
+    'AED',
+    'Дирхам на Обединети Арапски Емирати',
+    one: 'Дирхам на Обединети Арапски Емирати',
+    other: 'Дирхами на Обединети Арапски Емирати',
+  );
   static const _afa = Currency(_cld, 'AFA', 'Авгани (1927–2002)');
-  static const _afn = Currency(_cld, 'AFN', 'Авганистански авгани',
-      one: 'Авгани', other: 'Авгани', symbolNarrow: '؋');
-  static const _all = Currency(_cld, 'ALL', 'Албански лек',
-      one: 'Албански лек', other: 'Албански леки');
-  static const _amd = Currency(_cld, 'AMD', 'Ерменски драм',
-      one: 'Ерменски драм', other: 'Ерменски драми', symbolNarrow: '֏');
-  static const _ang = Currency(_cld, 'ANG', 'Холандски антилски гилдер',
-      one: 'Холандски антилски гилдер', other: 'Холандски антилски гилдери');
-  static const _aoa = Currency(_cld, 'AOA', 'Анголска кванза',
-      one: 'Анголска кванза', other: 'Анголски кванзи', symbolNarrow: 'Kz');
+  static const _afn = Currency(
+    _cld,
+    'AFN',
+    'Авганистански авгани',
+    one: 'Авгани',
+    other: 'Авгани',
+    symbolNarrow: '؋',
+  );
+  static const _all = Currency(
+    _cld,
+    'ALL',
+    'Албански лек',
+    one: 'Албански лек',
+    other: 'Албански леки',
+  );
+  static const _amd = Currency(
+    _cld,
+    'AMD',
+    'Ерменски драм',
+    one: 'Ерменски драм',
+    other: 'Ерменски драми',
+    symbolNarrow: '֏',
+  );
+  static const _ang = Currency(
+    _cld,
+    'ANG',
+    'Холандски антилски гилдер',
+    one: 'Холандски антилски гилдер',
+    other: 'Холандски антилски гилдери',
+  );
+  static const _aoa = Currency(
+    _cld,
+    'AOA',
+    'Анголска кванза',
+    one: 'Анголска кванза',
+    other: 'Анголски кванзи',
+    symbolNarrow: 'Kz',
+  );
   static const _aok = Currency(_cld, 'AOK', 'Анголска Кванза (1977–1990)');
   static const _aon = Currency(_cld, 'AON', 'Анголска нова Кванза (1990–2000)');
   static const _arp = Currency(_cld, 'ARP', 'Аргентински Пезос (1983–1985)');
-  static const _ars = Currency(_cld, 'ARS', 'Аргентински пезос',
-      one: 'Аргентински пезос',
-      other: 'Аргентински пезоси',
-      symbolNarrow: r'$');
+  static const _ars = Currency(
+    _cld,
+    'ARS',
+    'Аргентински пезос',
+    one: 'Аргентински пезос',
+    other: 'Аргентински пезоси',
+    symbolNarrow: r'$',
+  );
   static const _ats = Currency(_cld, 'ATS', 'Австралиски Шилинг');
-  static const _aud = Currency(_cld, 'AUD', 'Австралиски долар',
-      one: 'Австралиски долар',
-      other: 'Австралиски долари',
-      symbol: 'AUD',
-      symbolNarrow: r'$');
-  static const _awg = Currency(_cld, 'AWG', 'Арубиски флорин',
-      one: 'Арубиски флорин', other: 'Арубиски флорини');
-  static const _azn = Currency(_cld, 'AZN', 'Азербејџански манат',
-      one: 'Азербејџански манат',
-      other: 'Азербејџански манати',
-      symbolNarrow: '₼');
+  static const _aud = Currency(
+    _cld,
+    'AUD',
+    'Австралиски долар',
+    one: 'Австралиски долар',
+    other: 'Австралиски долари',
+    symbol: 'AUD',
+    symbolNarrow: r'$',
+  );
+  static const _awg = Currency(
+    _cld,
+    'AWG',
+    'Арубиски флорин',
+    one: 'Арубиски флорин',
+    other: 'Арубиски флорини',
+  );
+  static const _azn = Currency(
+    _cld,
+    'AZN',
+    'Азербејџански манат',
+    one: 'Азербејџански манат',
+    other: 'Азербејџански манати',
+    symbolNarrow: '₼',
+  );
   static const _bad = Currency(_cld, 'BAD', 'Босанско-Херцеговски Динар');
   static const _bam = Currency(
-      _cld, 'BAM', 'Босанско-херцеговска конвертибилна марка',
-      one: 'Босанско-херцеговска конвертибилна марка',
-      other: 'Босанско-херцеговски конвертибилни марки',
-      symbolNarrow: 'KM');
-  static const _bbd = Currency(_cld, 'BBD', 'Барбадоски долар',
-      one: 'Барбадоски долар', other: 'Барбадоски долари', symbolNarrow: r'$');
-  static const _bdt = Currency(_cld, 'BDT', 'Бангладешка така',
-      one: 'Бангладешка така', other: 'Бангладешки таки', symbolNarrow: '৳');
+    _cld,
+    'BAM',
+    'Босанско-херцеговска конвертибилна марка',
+    one: 'Босанско-херцеговска конвертибилна марка',
+    other: 'Босанско-херцеговски конвертибилни марки',
+    symbolNarrow: 'KM',
+  );
+  static const _bbd = Currency(
+    _cld,
+    'BBD',
+    'Барбадоски долар',
+    one: 'Барбадоски долар',
+    other: 'Барбадоски долари',
+    symbolNarrow: r'$',
+  );
+  static const _bdt = Currency(
+    _cld,
+    'BDT',
+    'Бангладешка така',
+    one: 'Бангладешка така',
+    other: 'Бангладешки таки',
+    symbolNarrow: '৳',
+  );
   static const _bec = Currency(_cld, 'BEC', 'Белгиски Франк (конвертибилен)');
   static const _bef = Currency(_cld, 'BEF', 'Белгиски Франк');
   static const _bel = Currency(_cld, 'BEL', 'Белгиски Франк (финансиски)');
   static const _bgl = Currency(_cld, 'BGL', 'Бугарски цврст лев');
-  static const _bgn = Currency(_cld, 'BGN', 'Бугарски лев',
-      one: 'Бугарски лев', other: 'Бугарски левови');
-  static const _bhd = Currency(_cld, 'BHD', 'Бахреински динар',
-      one: 'Бахреински динар', other: 'Бахреински динари');
-  static const _bif = Currency(_cld, 'BIF', 'Бурундиски франк',
-      one: 'Бурундиски франк', other: 'Бурундиски франци');
-  static const _bmd = Currency(_cld, 'BMD', 'Бермудски долар',
-      one: 'Бермудски долар', other: 'Бермудски долари', symbolNarrow: r'$');
-  static const _bnd = Currency(_cld, 'BND', 'Брунејски долар',
-      one: 'Брунејски долар', other: 'Брунејски долари', symbolNarrow: r'$');
-  static const _bob = Currency(_cld, 'BOB', 'Боливиски боливиано',
-      one: 'Боливиски боливиано',
-      other: 'Боливиски боливиани',
-      symbolNarrow: 'Bs');
-  static const _brl = Currency(_cld, 'BRL', 'Бразилски реал',
-      one: 'Бразилски реал',
-      other: 'Бразилски реали',
-      symbol: r'R$',
-      symbolNarrow: r'R$');
-  static const _bsd = Currency(_cld, 'BSD', 'Бахамски долар',
-      one: 'Бахамски долар', other: 'Бахамски долари', symbolNarrow: r'$');
-  static const _btn = Currency(_cld, 'BTN', 'Бутански нгултрум',
-      one: 'Бутански нгултрум', other: 'Бутански нгултруми');
-  static const _bwp = Currency(_cld, 'BWP', 'Боцванска пула',
-      one: 'Боцванска пула', other: 'Боцвански пули', symbolNarrow: 'P');
+  static const _bgn = Currency(
+    _cld,
+    'BGN',
+    'Бугарски лев',
+    one: 'Бугарски лев',
+    other: 'Бугарски левови',
+  );
+  static const _bhd = Currency(
+    _cld,
+    'BHD',
+    'Бахреински динар',
+    one: 'Бахреински динар',
+    other: 'Бахреински динари',
+  );
+  static const _bif = Currency(
+    _cld,
+    'BIF',
+    'Бурундиски франк',
+    one: 'Бурундиски франк',
+    other: 'Бурундиски франци',
+  );
+  static const _bmd = Currency(
+    _cld,
+    'BMD',
+    'Бермудски долар',
+    one: 'Бермудски долар',
+    other: 'Бермудски долари',
+    symbolNarrow: r'$',
+  );
+  static const _bnd = Currency(
+    _cld,
+    'BND',
+    'Брунејски долар',
+    one: 'Брунејски долар',
+    other: 'Брунејски долари',
+    symbolNarrow: r'$',
+  );
+  static const _bob = Currency(
+    _cld,
+    'BOB',
+    'Боливиски боливиано',
+    one: 'Боливиски боливиано',
+    other: 'Боливиски боливиани',
+    symbolNarrow: 'Bs',
+  );
+  static const _brl = Currency(
+    _cld,
+    'BRL',
+    'Бразилски реал',
+    one: 'Бразилски реал',
+    other: 'Бразилски реали',
+    symbol: r'R$',
+    symbolNarrow: r'R$',
+  );
+  static const _bsd = Currency(
+    _cld,
+    'BSD',
+    'Бахамски долар',
+    one: 'Бахамски долар',
+    other: 'Бахамски долари',
+    symbolNarrow: r'$',
+  );
+  static const _btn = Currency(
+    _cld,
+    'BTN',
+    'Бутански нгултрум',
+    one: 'Бутански нгултрум',
+    other: 'Бутански нгултруми',
+  );
+  static const _bwp = Currency(
+    _cld,
+    'BWP',
+    'Боцванска пула',
+    one: 'Боцванска пула',
+    other: 'Боцвански пули',
+    symbolNarrow: 'P',
+  );
   static const _byb = Currency(_cld, 'BYB', 'Белоруска нова рубља (1994–1999)');
-  static const _byn = Currency(_cld, 'BYN', 'Белоруска рубља',
-      one: 'Белоруска рубља', other: 'Белоруски рубљи', symbolNarrow: 'р.');
-  static const _byr = Currency(_cld, 'BYR', 'Белоруска рубља (2000–2016)',
-      one: 'Белоруска рубља (2000–2016)', other: 'Белоруски рубљи (2000–2016)');
-  static const _bzd = Currency(_cld, 'BZD', 'Белизиски долар',
-      one: 'Белизиски долар', other: 'Белизиски долари', symbolNarrow: r'$');
-  static const _cad = Currency(_cld, 'CAD', 'Канадски долар',
-      one: 'Канадски долар',
-      other: 'Канадски долари',
-      symbol: r'CA$',
-      symbolNarrow: r'$');
-  static const _cdf = Currency(_cld, 'CDF', 'Конголски франк',
-      one: 'Конголски франк', other: 'Конголски франци');
-  static const _chf = Currency(_cld, 'CHF', 'Швајцарски франк',
-      one: 'Швајцарски франк', other: 'Швајцарски франци');
-  static const _clp = Currency(_cld, 'CLP', 'Чилеански пезос',
-      one: 'Чилеански пезос', other: 'Чилеански пезоси', symbolNarrow: r'$');
+  static const _byn = Currency(
+    _cld,
+    'BYN',
+    'Белоруска рубља',
+    one: 'Белоруска рубља',
+    other: 'Белоруски рубљи',
+    symbolNarrow: 'р.',
+  );
+  static const _byr = Currency(
+    _cld,
+    'BYR',
+    'Белоруска рубља (2000–2016)',
+    one: 'Белоруска рубља (2000–2016)',
+    other: 'Белоруски рубљи (2000–2016)',
+  );
+  static const _bzd = Currency(
+    _cld,
+    'BZD',
+    'Белизиски долар',
+    one: 'Белизиски долар',
+    other: 'Белизиски долари',
+    symbolNarrow: r'$',
+  );
+  static const _cad = Currency(
+    _cld,
+    'CAD',
+    'Канадски долар',
+    one: 'Канадски долар',
+    other: 'Канадски долари',
+    symbol: r'CA$',
+    symbolNarrow: r'$',
+  );
+  static const _cdf = Currency(
+    _cld,
+    'CDF',
+    'Конголски франк',
+    one: 'Конголски франк',
+    other: 'Конголски франци',
+  );
+  static const _chf = Currency(
+    _cld,
+    'CHF',
+    'Швајцарски франк',
+    one: 'Швајцарски франк',
+    other: 'Швајцарски франци',
+  );
+  static const _clp = Currency(
+    _cld,
+    'CLP',
+    'Чилеански пезос',
+    one: 'Чилеански пезос',
+    other: 'Чилеански пезоси',
+    symbolNarrow: r'$',
+  );
   static const _cnh = Currency(_cld, 'CNH', 'Кинески јуан (офшор)');
-  static const _cny = Currency(_cld, 'CNY', 'Кинески јуан',
-      one: 'Кинески јуан',
-      other: 'Кинески јуани',
-      symbol: 'CNY',
-      symbolNarrow: '¥');
-  static const _cop = Currency(_cld, 'COP', 'Колумбиски пезос',
-      one: 'Колумбиски пезос', other: 'Колумбиски пезоси', symbolNarrow: r'$');
-  static const _crc = Currency(_cld, 'CRC', 'Костарикански колон',
-      one: 'Костарикански колон',
-      other: 'Костарикански колони',
-      symbolNarrow: '₡');
+  static const _cny = Currency(
+    _cld,
+    'CNY',
+    'Кинески јуан',
+    one: 'Кинески јуан',
+    other: 'Кинески јуани',
+    symbol: 'CNY',
+    symbolNarrow: '¥',
+  );
+  static const _cop = Currency(
+    _cld,
+    'COP',
+    'Колумбиски пезос',
+    one: 'Колумбиски пезос',
+    other: 'Колумбиски пезоси',
+    symbolNarrow: r'$',
+  );
+  static const _crc = Currency(
+    _cld,
+    'CRC',
+    'Костарикански колон',
+    one: 'Костарикански колон',
+    other: 'Костарикански колони',
+    symbolNarrow: '₡',
+  );
   static const _csk = Currency(_cld, 'CSK', 'Чехословачка цврста корона');
-  static const _cuc = Currency(_cld, 'CUC', 'Кубански конвертибилен пезос',
-      one: 'Кубански конвертибилен пезос',
-      other: 'Кубански конвертибилни пезоси',
-      symbolNarrow: r'$');
-  static const _cup = Currency(_cld, 'CUP', 'Кубански пезос',
-      one: 'Кубански пезос', other: 'Кубански пезоси', symbolNarrow: r'$');
-  static const _cve = Currency(_cld, 'CVE', 'Зелено’ртски ескудо',
-      one: 'Зелено’ртски ескудо', other: 'Зелено’ртски ескуди');
+  static const _cuc = Currency(
+    _cld,
+    'CUC',
+    'Кубански конвертибилен пезос',
+    one: 'Кубански конвертибилен пезос',
+    other: 'Кубански конвертибилни пезоси',
+    symbolNarrow: r'$',
+  );
+  static const _cup = Currency(
+    _cld,
+    'CUP',
+    'Кубански пезос',
+    one: 'Кубански пезос',
+    other: 'Кубански пезоси',
+    symbolNarrow: r'$',
+  );
+  static const _cve = Currency(
+    _cld,
+    'CVE',
+    'Зелено’ртски ескудо',
+    one: 'Зелено’ртски ескудо',
+    other: 'Зелено’ртски ескуди',
+  );
   static const _cyp = Currency(_cld, 'CYP', 'Кипарска фунта');
-  static const _czk = Currency(_cld, 'CZK', 'Чешка круна',
-      one: 'Чешка круна', other: 'Чешки круни', symbolNarrow: 'Kč');
+  static const _czk = Currency(
+    _cld,
+    'CZK',
+    'Чешка круна',
+    one: 'Чешка круна',
+    other: 'Чешки круни',
+    symbolNarrow: 'Kč',
+  );
   static const _dem = Currency(_cld, 'DEM', 'Германска Марка');
-  static const _djf = Currency(_cld, 'DJF', 'Џибутски франк',
-      one: 'Џибутски франк', other: 'Џибутски франци');
-  static const _dkk = Currency(_cld, 'DKK', 'Данска круна',
-      one: 'Данска круна', other: 'Дански круни', symbolNarrow: 'kr');
-  static const _dop = Currency(_cld, 'DOP', 'Доминикански пезос',
-      one: 'Доминикански пезос',
-      other: 'Доминикански пезоси',
-      symbolNarrow: r'$');
-  static const _dzd = Currency(_cld, 'DZD', 'Алжирски динар',
-      one: 'Алжирски динар', other: 'Алжирски динари');
-  static const _egp = Currency(_cld, 'EGP', 'Египетска фунта',
-      one: 'Египетска фунта', other: 'Египетски фунти', symbolNarrow: 'E£');
-  static const _ern = Currency(_cld, 'ERN', 'Еритрејска накфа',
-      one: 'Еритрејска накфа', other: 'Еритрејски накфи');
-  static const _esp =
-      Currency(_cld, 'ESP', 'Шпанска Пезета', symbolNarrow: '₧');
-  static const _etb = Currency(_cld, 'ETB', 'Етиописки бир',
-      one: 'Етиописки бир', other: 'Етиописки бири');
-  static const _eur = Currency(_cld, 'EUR', 'Евро',
-      one: 'евро', other: 'евра', symbol: '€', symbolNarrow: '€');
+  static const _djf = Currency(
+    _cld,
+    'DJF',
+    'Џибутски франк',
+    one: 'Џибутски франк',
+    other: 'Џибутски франци',
+  );
+  static const _dkk = Currency(
+    _cld,
+    'DKK',
+    'Данска круна',
+    one: 'Данска круна',
+    other: 'Дански круни',
+    symbolNarrow: 'kr',
+  );
+  static const _dop = Currency(
+    _cld,
+    'DOP',
+    'Доминикански пезос',
+    one: 'Доминикански пезос',
+    other: 'Доминикански пезоси',
+    symbolNarrow: r'$',
+  );
+  static const _dzd = Currency(
+    _cld,
+    'DZD',
+    'Алжирски динар',
+    one: 'Алжирски динар',
+    other: 'Алжирски динари',
+  );
+  static const _egp = Currency(
+    _cld,
+    'EGP',
+    'Египетска фунта',
+    one: 'Египетска фунта',
+    other: 'Египетски фунти',
+    symbolNarrow: 'E£',
+  );
+  static const _ern = Currency(
+    _cld,
+    'ERN',
+    'Еритрејска накфа',
+    one: 'Еритрејска накфа',
+    other: 'Еритрејски накфи',
+  );
+  static const _esp = Currency(
+    _cld,
+    'ESP',
+    'Шпанска Пезета',
+    symbolNarrow: '₧',
+  );
+  static const _etb = Currency(
+    _cld,
+    'ETB',
+    'Етиописки бир',
+    one: 'Етиописки бир',
+    other: 'Етиописки бири',
+  );
+  static const _eur = Currency(
+    _cld,
+    'EUR',
+    'Евро',
+    one: 'евро',
+    other: 'евра',
+    symbol: '€',
+    symbolNarrow: '€',
+  );
   static const _fim = Currency(_cld, 'FIM', 'Финска марка');
-  static const _fjd = Currency(_cld, 'FJD', 'Фиџиски долар',
-      one: 'Фиџиски долар', other: 'Фиџиски долари', symbolNarrow: r'$');
-  static const _fkp = Currency(_cld, 'FKP', 'Фолкландска фунта',
-      one: 'Фолкландска фунта', other: 'Фолкландски фунти', symbolNarrow: '£');
+  static const _fjd = Currency(
+    _cld,
+    'FJD',
+    'Фиџиски долар',
+    one: 'Фиџиски долар',
+    other: 'Фиџиски долари',
+    symbolNarrow: r'$',
+  );
+  static const _fkp = Currency(
+    _cld,
+    'FKP',
+    'Фолкландска фунта',
+    one: 'Фолкландска фунта',
+    other: 'Фолкландски фунти',
+    symbolNarrow: '£',
+  );
   static const _frf = Currency(_cld, 'FRF', 'Француски франк');
-  static const _gbp = Currency(_cld, 'GBP', 'Британска фунта',
-      one: 'Британска фунта',
-      other: 'Британски фунти',
-      symbol: 'GBP',
-      symbolNarrow: '£');
+  static const _gbp = Currency(
+    _cld,
+    'GBP',
+    'Британска фунта',
+    one: 'Британска фунта',
+    other: 'Британски фунти',
+    symbol: 'GBP',
+    symbolNarrow: '£',
+  );
   static const _gel = Currency(_cld, 'GEL', 'Грузиски лари', symbolNarrow: '₾');
   static const _ghc = Currency(_cld, 'GHC', 'Ганајски Седи');
   static const _ghs = Currency(_cld, 'GHS', 'Гански седи', symbolNarrow: 'GH₵');
-  static const _gip = Currency(_cld, 'GIP', 'Гибралтарска фунта',
-      one: 'Гибралтарска фунта',
-      other: 'Гибралтарски фунти',
-      symbolNarrow: '£');
-  static const _gmd = Currency(_cld, 'GMD', 'Гамбиски даласи',
-      one: 'Гамбиски Даласи', other: 'Гамбиски Даласи');
-  static const _gnf = Currency(_cld, 'GNF', 'Гвинејски франк',
-      one: 'Гвинејски франк', other: 'Гвинејски франци', symbolNarrow: 'FG');
+  static const _gip = Currency(
+    _cld,
+    'GIP',
+    'Гибралтарска фунта',
+    one: 'Гибралтарска фунта',
+    other: 'Гибралтарски фунти',
+    symbolNarrow: '£',
+  );
+  static const _gmd = Currency(
+    _cld,
+    'GMD',
+    'Гамбиски даласи',
+    one: 'Гамбиски Даласи',
+    other: 'Гамбиски Даласи',
+  );
+  static const _gnf = Currency(
+    _cld,
+    'GNF',
+    'Гвинејски франк',
+    one: 'Гвинејски франк',
+    other: 'Гвинејски франци',
+    symbolNarrow: 'FG',
+  );
   static const _grd = Currency(_cld, 'GRD', 'Грчка драхма');
-  static const _gtq = Currency(_cld, 'GTQ', 'Гватемалски кветцал',
-      one: 'Гватемалски кветцал',
-      other: 'Гватемалски кветцали',
-      symbolNarrow: 'Q');
+  static const _gtq = Currency(
+    _cld,
+    'GTQ',
+    'Гватемалски кветцал',
+    one: 'Гватемалски кветцал',
+    other: 'Гватемалски кветцали',
+    symbolNarrow: 'Q',
+  );
   static const _gwp = Currency(_cld, 'GWP', 'Гвинејски Бисау пезос');
-  static const _gyd = Currency(_cld, 'GYD', 'Гвајански долар',
-      one: 'Гвајански долар', other: 'Гвајански долари', symbolNarrow: r'$');
-  static const _hkd = Currency(_cld, 'HKD', 'Хонгконшки долар',
-      one: 'Хонгконшки долар',
-      other: 'Хонгконшки долари',
-      symbol: 'HKD',
-      symbolNarrow: r'$');
-  static const _hnl = Currency(_cld, 'HNL', 'Хондурска лемпира',
-      one: 'Хондурска лемпира', other: 'Хондурски лемпири', symbolNarrow: 'L');
+  static const _gyd = Currency(
+    _cld,
+    'GYD',
+    'Гвајански долар',
+    one: 'Гвајански долар',
+    other: 'Гвајански долари',
+    symbolNarrow: r'$',
+  );
+  static const _hkd = Currency(
+    _cld,
+    'HKD',
+    'Хонгконшки долар',
+    one: 'Хонгконшки долар',
+    other: 'Хонгконшки долари',
+    symbol: 'HKD',
+    symbolNarrow: r'$',
+  );
+  static const _hnl = Currency(
+    _cld,
+    'HNL',
+    'Хондурска лемпира',
+    one: 'Хондурска лемпира',
+    other: 'Хондурски лемпири',
+    symbolNarrow: 'L',
+  );
   static const _hrd = Currency(_cld, 'HRD', 'Хрватски динар');
-  static const _hrk = Currency(_cld, 'HRK', 'Хрватска куна',
-      one: 'Хрватска куна', other: 'Хрватски куни', symbolNarrow: 'kn');
-  static const _htg = Currency(_cld, 'HTG', 'Хаитски гурд',
-      one: 'Хаитски гурд', other: 'Хаитски гурди');
-  static const _huf = Currency(_cld, 'HUF', 'Унгарска форинта',
-      one: 'Унгарска форинта', other: 'Унгарски форинти', symbolNarrow: 'Ft');
-  static const _idr = Currency(_cld, 'IDR', 'Индонезиска рупија',
-      one: 'Индонезиска рупија',
-      other: 'Индонезиски рупии',
-      symbolNarrow: 'Rp');
+  static const _hrk = Currency(
+    _cld,
+    'HRK',
+    'Хрватска куна',
+    one: 'Хрватска куна',
+    other: 'Хрватски куни',
+    symbolNarrow: 'kn',
+  );
+  static const _htg = Currency(
+    _cld,
+    'HTG',
+    'Хаитски гурд',
+    one: 'Хаитски гурд',
+    other: 'Хаитски гурди',
+  );
+  static const _huf = Currency(
+    _cld,
+    'HUF',
+    'Унгарска форинта',
+    one: 'Унгарска форинта',
+    other: 'Унгарски форинти',
+    symbolNarrow: 'Ft',
+  );
+  static const _idr = Currency(
+    _cld,
+    'IDR',
+    'Индонезиска рупија',
+    one: 'Индонезиска рупија',
+    other: 'Индонезиски рупии',
+    symbolNarrow: 'Rp',
+  );
   static const _iep = Currency(_cld, 'IEP', 'Ирска фунта');
   static const _ilp = Currency(_cld, 'ILP', 'Изрелска фунта');
-  static const _ils = Currency(_cld, 'ILS', 'Израелски нов шекел',
-      one: 'Израелски нов шекел',
-      other: 'Израелски нови шекели',
-      symbol: 'ILS',
-      symbolNarrow: '₪');
-  static const _inr = Currency(_cld, 'INR', 'Индиска рупија',
-      one: 'Индиска рупија',
-      other: 'Индиски рупии',
-      symbol: 'INR',
-      symbolNarrow: '₹');
-  static const _iqd = Currency(_cld, 'IQD', 'Ирачки динар',
-      one: 'Ирачки динар', other: 'Ирачки динари');
-  static const _irr = Currency(_cld, 'IRR', 'Ирански риал',
-      one: 'Ирански риал', other: 'Ирански риали');
-  static const _isk = Currency(_cld, 'ISK', 'Исландска крона',
-      one: 'Исландска крона', other: 'Исландски крони', symbolNarrow: 'kr');
+  static const _ils = Currency(
+    _cld,
+    'ILS',
+    'Израелски нов шекел',
+    one: 'Израелски нов шекел',
+    other: 'Израелски нови шекели',
+    symbol: 'ILS',
+    symbolNarrow: '₪',
+  );
+  static const _inr = Currency(
+    _cld,
+    'INR',
+    'Индиска рупија',
+    one: 'Индиска рупија',
+    other: 'Индиски рупии',
+    symbol: 'INR',
+    symbolNarrow: '₹',
+  );
+  static const _iqd = Currency(
+    _cld,
+    'IQD',
+    'Ирачки динар',
+    one: 'Ирачки динар',
+    other: 'Ирачки динари',
+  );
+  static const _irr = Currency(
+    _cld,
+    'IRR',
+    'Ирански риал',
+    one: 'Ирански риал',
+    other: 'Ирански риали',
+  );
+  static const _isk = Currency(
+    _cld,
+    'ISK',
+    'Исландска крона',
+    one: 'Исландска крона',
+    other: 'Исландски крони',
+    symbolNarrow: 'kr',
+  );
   static const _itl = Currency(_cld, 'ITL', 'Италијанска лира');
-  static const _jmd = Currency(_cld, 'JMD', 'Јамајкански долар',
-      one: 'Јамајкански долар',
-      other: 'Јамајкански долари',
-      symbolNarrow: r'$');
-  static const _jod = Currency(_cld, 'JOD', 'Јордански динар',
-      one: 'Јордански динар', other: 'Јордански динари');
-  static const _jpy = Currency(_cld, 'JPY', 'Јапонски јен',
-      one: 'Јапонски јен',
-      other: 'Јапонски јени',
-      symbol: 'JPY',
-      symbolNarrow: '¥');
-  static const _kes = Currency(_cld, 'KES', 'Кениски шилинг',
-      one: 'Кениски шилинг', other: 'Кениски шилинзи');
-  static const _kgs = Currency(_cld, 'KGS', 'Киргистански сом',
-      one: 'Киргистански сом', other: 'Киргистански соми', symbolNarrow: '⃀');
-  static const _khr = Currency(_cld, 'KHR', 'Камбоџиски рел',
-      one: 'Камбоџиски рел', other: 'Камбоџиски рели', symbolNarrow: '៛');
-  static const _kmf = Currency(_cld, 'KMF', 'Коморски франк',
-      one: 'Коморски франк', other: 'Коморски франци', symbolNarrow: 'CF');
-  static const _kpw = Currency(_cld, 'KPW', 'Северно корејски вон',
-      one: 'Северно корејски вон',
-      other: 'Северно корејски вони',
-      symbolNarrow: '₩');
-  static const _krw = Currency(_cld, 'KRW', 'Јужно корејски вон',
-      one: 'Јужно корејски вон',
-      other: 'Јужно корејски вони',
-      symbol: 'KRW',
-      symbolNarrow: '₩');
-  static const _kwd = Currency(_cld, 'KWD', 'Кувајтски динар',
-      one: 'Кувајтски динар', other: 'Кувајтски динари');
-  static const _kyd = Currency(_cld, 'KYD', 'Кајмански долар',
-      one: 'Кајмански долар', other: 'Кајмански долари', symbolNarrow: r'$');
-  static const _kzt = Currency(_cld, 'KZT', 'Казахстанска тенга',
-      one: 'Казахстанска тенга',
-      other: 'Казахстански тенги',
-      symbolNarrow: '₸');
-  static const _lak = Currency(_cld, 'LAK', 'Лаоски кип',
-      one: 'Лаоски кип', other: 'Лаоски кипови', symbolNarrow: '₭');
-  static const _lbp = Currency(_cld, 'LBP', 'Либанска фунта',
-      one: 'Либанска фунта', other: 'Либански фунти', symbolNarrow: 'L£');
-  static const _lkr = Currency(_cld, 'LKR', 'Шриланканска рупија',
-      one: 'Шриланканска рупија',
-      other: 'Шриланкански рупии',
-      symbolNarrow: 'Rs');
-  static const _lrd = Currency(_cld, 'LRD', 'Либериски долар',
-      one: 'Либериски долар', other: 'Либериски долари', symbolNarrow: r'$');
-  static const _lsl = Currency(_cld, 'LSL', 'Лесотско лоти',
-      one: 'Лесотски лоти', other: 'Лесотски лоти');
-  static const _ltl =
-      Currency(_cld, 'LTL', 'Литваниска лита', symbolNarrow: 'Lt');
+  static const _jmd = Currency(
+    _cld,
+    'JMD',
+    'Јамајкански долар',
+    one: 'Јамајкански долар',
+    other: 'Јамајкански долари',
+    symbolNarrow: r'$',
+  );
+  static const _jod = Currency(
+    _cld,
+    'JOD',
+    'Јордански динар',
+    one: 'Јордански динар',
+    other: 'Јордански динари',
+  );
+  static const _jpy = Currency(
+    _cld,
+    'JPY',
+    'Јапонски јен',
+    one: 'Јапонски јен',
+    other: 'Јапонски јени',
+    symbol: 'JPY',
+    symbolNarrow: '¥',
+  );
+  static const _kes = Currency(
+    _cld,
+    'KES',
+    'Кениски шилинг',
+    one: 'Кениски шилинг',
+    other: 'Кениски шилинзи',
+  );
+  static const _kgs = Currency(
+    _cld,
+    'KGS',
+    'Киргистански сом',
+    one: 'Киргистански сом',
+    other: 'Киргистански соми',
+    symbolNarrow: '⃀',
+  );
+  static const _khr = Currency(
+    _cld,
+    'KHR',
+    'Камбоџиски рел',
+    one: 'Камбоџиски рел',
+    other: 'Камбоџиски рели',
+    symbolNarrow: '៛',
+  );
+  static const _kmf = Currency(
+    _cld,
+    'KMF',
+    'Коморски франк',
+    one: 'Коморски франк',
+    other: 'Коморски франци',
+    symbolNarrow: 'CF',
+  );
+  static const _kpw = Currency(
+    _cld,
+    'KPW',
+    'Северно корејски вон',
+    one: 'Северно корејски вон',
+    other: 'Северно корејски вони',
+    symbolNarrow: '₩',
+  );
+  static const _krw = Currency(
+    _cld,
+    'KRW',
+    'Јужно корејски вон',
+    one: 'Јужно корејски вон',
+    other: 'Јужно корејски вони',
+    symbol: 'KRW',
+    symbolNarrow: '₩',
+  );
+  static const _kwd = Currency(
+    _cld,
+    'KWD',
+    'Кувајтски динар',
+    one: 'Кувајтски динар',
+    other: 'Кувајтски динари',
+  );
+  static const _kyd = Currency(
+    _cld,
+    'KYD',
+    'Кајмански долар',
+    one: 'Кајмански долар',
+    other: 'Кајмански долари',
+    symbolNarrow: r'$',
+  );
+  static const _kzt = Currency(
+    _cld,
+    'KZT',
+    'Казахстанска тенга',
+    one: 'Казахстанска тенга',
+    other: 'Казахстански тенги',
+    symbolNarrow: '₸',
+  );
+  static const _lak = Currency(
+    _cld,
+    'LAK',
+    'Лаоски кип',
+    one: 'Лаоски кип',
+    other: 'Лаоски кипови',
+    symbolNarrow: '₭',
+  );
+  static const _lbp = Currency(
+    _cld,
+    'LBP',
+    'Либанска фунта',
+    one: 'Либанска фунта',
+    other: 'Либански фунти',
+    symbolNarrow: 'L£',
+  );
+  static const _lkr = Currency(
+    _cld,
+    'LKR',
+    'Шриланканска рупија',
+    one: 'Шриланканска рупија',
+    other: 'Шриланкански рупии',
+    symbolNarrow: 'Rs',
+  );
+  static const _lrd = Currency(
+    _cld,
+    'LRD',
+    'Либериски долар',
+    one: 'Либериски долар',
+    other: 'Либериски долари',
+    symbolNarrow: r'$',
+  );
+  static const _lsl = Currency(
+    _cld,
+    'LSL',
+    'Лесотско лоти',
+    one: 'Лесотски лоти',
+    other: 'Лесотски лоти',
+  );
+  static const _ltl = Currency(
+    _cld,
+    'LTL',
+    'Литваниска лита',
+    symbolNarrow: 'Lt',
+  );
   static const _ltt = Currency(_cld, 'LTT', 'Литваниски литаз');
   static const _luf = Currency(_cld, 'LUF', 'Луксембуршки франк');
-  static const _lvl =
-      Currency(_cld, 'LVL', 'Латвијски лат', symbolNarrow: 'Ls');
+  static const _lvl = Currency(
+    _cld,
+    'LVL',
+    'Латвијски лат',
+    symbolNarrow: 'Ls',
+  );
   static const _lvr = Currency(_cld, 'LVR', 'Латвијска рубља');
-  static const _lyd = Currency(_cld, 'LYD', 'Либијски динар',
-      one: 'Либијски динар', other: 'Либијски динари');
-  static const _mad = Currency(_cld, 'MAD', 'Марокански дирхам',
-      one: 'Марокански дирхам', other: 'Марокански дирхами');
+  static const _lyd = Currency(
+    _cld,
+    'LYD',
+    'Либијски динар',
+    one: 'Либијски динар',
+    other: 'Либијски динари',
+  );
+  static const _mad = Currency(
+    _cld,
+    'MAD',
+    'Марокански дирхам',
+    one: 'Марокански дирхам',
+    other: 'Марокански дирхами',
+  );
   static const _maf = Currency(_cld, 'MAF', 'Марокански франк');
   static const _mdl = Currency(_cld, 'MDL', 'Молдавски леу');
-  static const _mga =
-      Currency(_cld, 'MGA', 'Малагасиски ариари', symbolNarrow: 'Ar');
-  static const _mkd = Currency(_cld, 'MKD', 'Македонски денар',
-      one: 'Македонски денар', other: 'Македонски денари', symbol: 'ден.');
+  static const _mga = Currency(
+    _cld,
+    'MGA',
+    'Малагасиски ариари',
+    symbolNarrow: 'Ar',
+  );
+  static const _mkd = Currency(
+    _cld,
+    'MKD',
+    'Македонски денар',
+    one: 'Македонски денар',
+    other: 'Македонски денари',
+    symbol: 'ден.',
+  );
   static const _mlf = Currency(_cld, 'MLF', 'Малски франк');
-  static const _mmk = Currency(_cld, 'MMK', 'Мјанмарски киат',
-      one: 'Мјанмарски киат', other: 'Мјанмарски киати', symbolNarrow: 'K');
-  static const _mnt = Currency(_cld, 'MNT', 'Монголиски тугрик',
-      one: 'Монголиски тугрик', other: 'Монголиски тугрици', symbolNarrow: '₮');
-  static const _mop = Currency(_cld, 'MOP', 'Макао патака',
-      one: 'Макао патака', other: 'Макао патаки');
-  static const _mro = Currency(_cld, 'MRO', 'Мавританска угија (1973–2017)',
-      one: 'Мавританска угија (1973–2017)',
-      other: 'Мавритански угии (1973–2017)');
-  static const _mru = Currency(_cld, 'MRU', 'Мавританска угија',
-      one: 'Мавританска угија', other: 'Мавритански угии');
+  static const _mmk = Currency(
+    _cld,
+    'MMK',
+    'Мјанмарски киат',
+    one: 'Мјанмарски киат',
+    other: 'Мјанмарски киати',
+    symbolNarrow: 'K',
+  );
+  static const _mnt = Currency(
+    _cld,
+    'MNT',
+    'Монголиски тугрик',
+    one: 'Монголиски тугрик',
+    other: 'Монголиски тугрици',
+    symbolNarrow: '₮',
+  );
+  static const _mop = Currency(
+    _cld,
+    'MOP',
+    'Макао патака',
+    one: 'Макао патака',
+    other: 'Макао патаки',
+  );
+  static const _mro = Currency(
+    _cld,
+    'MRO',
+    'Мавританска угија (1973–2017)',
+    one: 'Мавританска угија (1973–2017)',
+    other: 'Мавритански угии (1973–2017)',
+  );
+  static const _mru = Currency(
+    _cld,
+    'MRU',
+    'Мавританска угија',
+    one: 'Мавританска угија',
+    other: 'Мавритански угии',
+  );
   static const _mtl = Currency(_cld, 'MTL', 'Малтешка лира');
   static const _mtp = Currency(_cld, 'MTP', 'Малтешка фунта');
-  static const _mur = Currency(_cld, 'MUR', 'Мавританска рупија',
-      one: 'Мавританска рупија',
-      other: 'Мавритански рупии',
-      symbolNarrow: 'Rs');
-  static const _mvr = Currency(_cld, 'MVR', 'Малдивска руфија',
-      one: 'Малдивска руфија', other: 'Малдивски руфии');
-  static const _mwk = Currency(_cld, 'MWK', 'Малависка квача',
-      one: 'Малависка квача', other: 'Малависки квачи');
-  static const _mxn = Currency(_cld, 'MXN', 'Мексикански пезос',
-      one: 'Мексикански пезос',
-      other: 'Мексикански пезоси',
-      symbol: r'MX$',
-      symbolNarrow: r'$');
-  static const _mxp =
-      Currency(_cld, 'MXP', 'Мексикански сребрен пезос (1861–1992)');
-  static const _myr = Currency(_cld, 'MYR', 'Малезиски рингит',
-      one: 'Малезиски рингит', other: 'Малезиски рингити', symbolNarrow: 'RM');
+  static const _mur = Currency(
+    _cld,
+    'MUR',
+    'Мавританска рупија',
+    one: 'Мавританска рупија',
+    other: 'Мавритански рупии',
+    symbolNarrow: 'Rs',
+  );
+  static const _mvr = Currency(
+    _cld,
+    'MVR',
+    'Малдивска руфија',
+    one: 'Малдивска руфија',
+    other: 'Малдивски руфии',
+  );
+  static const _mwk = Currency(
+    _cld,
+    'MWK',
+    'Малависка квача',
+    one: 'Малависка квача',
+    other: 'Малависки квачи',
+  );
+  static const _mxn = Currency(
+    _cld,
+    'MXN',
+    'Мексикански пезос',
+    one: 'Мексикански пезос',
+    other: 'Мексикански пезоси',
+    symbol: r'MX$',
+    symbolNarrow: r'$',
+  );
+  static const _mxp = Currency(
+    _cld,
+    'MXP',
+    'Мексикански сребрен пезос (1861–1992)',
+  );
+  static const _myr = Currency(
+    _cld,
+    'MYR',
+    'Малезиски рингит',
+    one: 'Малезиски рингит',
+    other: 'Малезиски рингити',
+    symbolNarrow: 'RM',
+  );
   static const _mze = Currency(_cld, 'MZE', 'Мозамбиско ескудо');
   static const _mzm = Currency(_cld, 'MZM', 'Стар мозамбиски метикал');
-  static const _mzn = Currency(_cld, 'MZN', 'Мозамбиски метикал',
-      one: 'Мозамбиски метикал', other: 'Мозамбиски метикали');
-  static const _nad = Currency(_cld, 'NAD', 'Намибиски долар',
-      one: 'Намибиски долар', other: 'Намибиски долари', symbolNarrow: r'$');
-  static const _ngn = Currency(_cld, 'NGN', 'Нигериска наира',
-      one: 'Нигериска наира', other: 'Нигериски наири', symbolNarrow: '₦');
-  static const _nic = Currency(_cld, 'NIC', 'Никарагванска кордоба (1988–1991)',
-      one: 'Никарагванска кордоба (1988–1991)',
-      other: 'Никарагвански кордоби (1988–1991)');
-  static const _nio = Currency(_cld, 'NIO', 'Никарагванска кордоба',
-      one: 'Никарагванска кордоба',
-      other: 'Никарагвански кордоби',
-      symbolNarrow: r'C$');
+  static const _mzn = Currency(
+    _cld,
+    'MZN',
+    'Мозамбиски метикал',
+    one: 'Мозамбиски метикал',
+    other: 'Мозамбиски метикали',
+  );
+  static const _nad = Currency(
+    _cld,
+    'NAD',
+    'Намибиски долар',
+    one: 'Намибиски долар',
+    other: 'Намибиски долари',
+    symbolNarrow: r'$',
+  );
+  static const _ngn = Currency(
+    _cld,
+    'NGN',
+    'Нигериска наира',
+    one: 'Нигериска наира',
+    other: 'Нигериски наири',
+    symbolNarrow: '₦',
+  );
+  static const _nic = Currency(
+    _cld,
+    'NIC',
+    'Никарагванска кордоба (1988–1991)',
+    one: 'Никарагванска кордоба (1988–1991)',
+    other: 'Никарагвански кордоби (1988–1991)',
+  );
+  static const _nio = Currency(
+    _cld,
+    'NIO',
+    'Никарагванска кордоба',
+    one: 'Никарагванска кордоба',
+    other: 'Никарагвански кордоби',
+    symbolNarrow: r'C$',
+  );
   static const _nlg = Currency(_cld, 'NLG', 'Холандски гилдер');
-  static const _nok = Currency(_cld, 'NOK', 'Норвешка круна',
-      one: 'Норвешка круна', other: 'Норвешки круни', symbolNarrow: 'kr');
-  static const _npr = Currency(_cld, 'NPR', 'Непалска рупија',
-      one: 'Непалска рупија', other: 'Непалски рупии', symbolNarrow: 'Rs');
-  static const _nzd = Currency(_cld, 'NZD', 'Новозеландски долар',
-      one: 'Новозеландски долар',
-      other: 'Новозеландски долари',
-      symbol: 'NZD',
-      symbolNarrow: r'$');
-  static const _omr = Currency(_cld, 'OMR', 'Омански риал',
-      one: 'Омански риал', other: 'Омански риали');
-  static const _pab = Currency(_cld, 'PAB', 'Панамска балбоа',
-      one: 'Панамска балбоа', other: 'Панамски балбои');
-  static const _pen = Currency(_cld, 'PEN', 'Перуански сол',
-      one: 'Перуански сол', other: 'Перуански соли');
+  static const _nok = Currency(
+    _cld,
+    'NOK',
+    'Норвешка круна',
+    one: 'Норвешка круна',
+    other: 'Норвешки круни',
+    symbolNarrow: 'kr',
+  );
+  static const _npr = Currency(
+    _cld,
+    'NPR',
+    'Непалска рупија',
+    one: 'Непалска рупија',
+    other: 'Непалски рупии',
+    symbolNarrow: 'Rs',
+  );
+  static const _nzd = Currency(
+    _cld,
+    'NZD',
+    'Новозеландски долар',
+    one: 'Новозеландски долар',
+    other: 'Новозеландски долари',
+    symbol: 'NZD',
+    symbolNarrow: r'$',
+  );
+  static const _omr = Currency(
+    _cld,
+    'OMR',
+    'Омански риал',
+    one: 'Омански риал',
+    other: 'Омански риали',
+  );
+  static const _pab = Currency(
+    _cld,
+    'PAB',
+    'Панамска балбоа',
+    one: 'Панамска балбоа',
+    other: 'Панамски балбои',
+  );
+  static const _pen = Currency(
+    _cld,
+    'PEN',
+    'Перуански сол',
+    one: 'Перуански сол',
+    other: 'Перуански соли',
+  );
   static const _pes = Currency(_cld, 'PES', 'Перуански сол (1863–1965)');
   static const _pgk = Currency(_cld, 'PGK', 'Папуа новогвинејска кина');
-  static const _php = Currency(_cld, 'PHP', 'Филипински пезос',
-      one: 'Филипински пезос',
-      other: 'Филипински пезоси',
-      symbol: 'PHP',
-      symbolNarrow: '₱');
-  static const _pkr = Currency(_cld, 'PKR', 'Пакистанска рупија',
-      one: 'Пакистанска рупија',
-      other: 'Пакистански рупии',
-      symbolNarrow: 'Rs');
-  static const _pln = Currency(_cld, 'PLN', 'Полска злота',
-      one: 'Полска злота', other: 'Полски злоти', symbolNarrow: 'zł');
+  static const _php = Currency(
+    _cld,
+    'PHP',
+    'Филипински пезос',
+    one: 'Филипински пезос',
+    other: 'Филипински пезоси',
+    symbol: 'PHP',
+    symbolNarrow: '₱',
+  );
+  static const _pkr = Currency(
+    _cld,
+    'PKR',
+    'Пакистанска рупија',
+    one: 'Пакистанска рупија',
+    other: 'Пакистански рупии',
+    symbolNarrow: 'Rs',
+  );
+  static const _pln = Currency(
+    _cld,
+    'PLN',
+    'Полска злота',
+    one: 'Полска злота',
+    other: 'Полски злоти',
+    symbolNarrow: 'zł',
+  );
   static const _plz = Currency(_cld, 'PLZ', 'Полска злота (1950–1995)');
   static const _pte = Currency(_cld, 'PTE', 'Португалско ескудо');
-  static const _pyg = Currency(_cld, 'PYG', 'Парагвајска гуарана',
-      one: 'Парагвајска гуарана',
-      other: 'Парагвајски гуарани',
-      symbolNarrow: '₲');
-  static const _qar = Currency(_cld, 'QAR', 'Катарски риал',
-      one: 'Катарски риал', other: 'Катарски риали');
+  static const _pyg = Currency(
+    _cld,
+    'PYG',
+    'Парагвајска гуарана',
+    one: 'Парагвајска гуарана',
+    other: 'Парагвајски гуарани',
+    symbolNarrow: '₲',
+  );
+  static const _qar = Currency(
+    _cld,
+    'QAR',
+    'Катарски риал',
+    one: 'Катарски риал',
+    other: 'Катарски риали',
+  );
   static const _rol = Currency(_cld, 'ROL', 'Романска леи (1952–2006)');
-  static const _ron = Currency(_cld, 'RON', 'Романски леу',
-      one: 'Романски леу', other: 'Романски леи', symbolNarrow: 'lei');
-  static const _rsd = Currency(_cld, 'RSD', 'Српски динар',
-      one: 'Српски динар', other: 'Српски динари');
-  static const _rub = Currency(_cld, 'RUB', 'Руска рубља',
-      one: 'Руска рубља', other: 'Руски рубљи', symbolNarrow: '₽');
+  static const _ron = Currency(
+    _cld,
+    'RON',
+    'Романски леу',
+    one: 'Романски леу',
+    other: 'Романски леи',
+    symbolNarrow: 'lei',
+  );
+  static const _rsd = Currency(
+    _cld,
+    'RSD',
+    'Српски динар',
+    one: 'Српски динар',
+    other: 'Српски динари',
+  );
+  static const _rub = Currency(
+    _cld,
+    'RUB',
+    'Руска рубља',
+    one: 'Руска рубља',
+    other: 'Руски рубљи',
+    symbolNarrow: '₽',
+  );
   static const _rur = Currency(_cld, 'RUR', 'Руска рубља (1991–1998)');
-  static const _rwf = Currency(_cld, 'RWF', 'Руандски франк',
-      one: 'Руандски франк', other: 'Руандски франци', symbolNarrow: 'RF');
-  static const _sar = Currency(_cld, 'SAR', 'Саудиски ријал',
-      one: 'Саудиски ријал', other: 'Саудиски ријали');
-  static const _sbd = Currency(_cld, 'SBD', 'Соломонски долар',
-      one: 'Соломонски долар', other: 'Соломонски долари', symbolNarrow: r'$');
-  static const _scr = Currency(_cld, 'SCR', 'Сејшелска рупија',
-      one: 'Сејшелска рупија', other: 'Сејшелски рупии');
+  static const _rwf = Currency(
+    _cld,
+    'RWF',
+    'Руандски франк',
+    one: 'Руандски франк',
+    other: 'Руандски франци',
+    symbolNarrow: 'RF',
+  );
+  static const _sar = Currency(
+    _cld,
+    'SAR',
+    'Саудиски ријал',
+    one: 'Саудиски ријал',
+    other: 'Саудиски ријали',
+  );
+  static const _sbd = Currency(
+    _cld,
+    'SBD',
+    'Соломонски долар',
+    one: 'Соломонски долар',
+    other: 'Соломонски долари',
+    symbolNarrow: r'$',
+  );
+  static const _scr = Currency(
+    _cld,
+    'SCR',
+    'Сејшелска рупија',
+    one: 'Сејшелска рупија',
+    other: 'Сејшелски рупии',
+  );
   static const _sdd = Currency(_cld, 'SDD', 'Стар судански динар');
-  static const _sdg = Currency(_cld, 'SDG', 'Суданска фунта',
-      one: 'Суданска фунта', other: 'Судански фунти');
+  static const _sdg = Currency(
+    _cld,
+    'SDG',
+    'Суданска фунта',
+    one: 'Суданска фунта',
+    other: 'Судански фунти',
+  );
   static const _sdp = Currency(_cld, 'SDP', 'Стара суданска фунта');
-  static const _sek = Currency(_cld, 'SEK', 'Шведска круна',
-      one: 'Шведска круна', other: 'Шведски круни', symbolNarrow: 'kr');
-  static const _sgd = Currency(_cld, 'SGD', 'Сингапурски долар',
-      one: 'Сингапурски долар',
-      other: 'Сингапурски долари',
-      symbolNarrow: r'$');
-  static const _shp = Currency(_cld, 'SHP', 'Фунта на Света Елена',
-      one: 'Фунта на Света Елена',
-      other: 'Фунти на Света Елена',
-      symbolNarrow: '£');
+  static const _sek = Currency(
+    _cld,
+    'SEK',
+    'Шведска круна',
+    one: 'Шведска круна',
+    other: 'Шведски круни',
+    symbolNarrow: 'kr',
+  );
+  static const _sgd = Currency(
+    _cld,
+    'SGD',
+    'Сингапурски долар',
+    one: 'Сингапурски долар',
+    other: 'Сингапурски долари',
+    symbolNarrow: r'$',
+  );
+  static const _shp = Currency(
+    _cld,
+    'SHP',
+    'Фунта на Света Елена',
+    one: 'Фунта на Света Елена',
+    other: 'Фунти на Света Елена',
+    symbolNarrow: '£',
+  );
   static const _sit = Currency(_cld, 'SIT', 'Словенечки толар');
   static const _skk = Currency(_cld, 'SKK', 'Словачка круна');
-  static const _sle = Currency(_cld, 'SLE', 'Сиералеонско леоне',
-      one: 'Сиералеонско леоне', other: 'Сиералеонски леони');
-  static const _sll = Currency(_cld, 'SLL', 'Сиералеонско леоне (1964 – 2022)',
-      one: 'Сиералеонско леоне (1964 – 2022)',
-      other: 'Сиералеонски леони (1964 – 2022)');
-  static const _sos = Currency(_cld, 'SOS', 'Сомалијски шилинг',
-      one: 'Сомалијски шилинг', other: 'Сомалијски шилинзи');
-  static const _srd = Currency(_cld, 'SRD', 'Суринамски долар',
-      one: 'Суринамски долар', other: 'Суринамски долари', symbolNarrow: r'$');
+  static const _sle = Currency(
+    _cld,
+    'SLE',
+    'Сиералеонско леоне',
+    one: 'Сиералеонско леоне',
+    other: 'Сиералеонски леони',
+  );
+  static const _sll = Currency(
+    _cld,
+    'SLL',
+    'Сиералеонско леоне (1964 – 2022)',
+    one: 'Сиералеонско леоне (1964 – 2022)',
+    other: 'Сиералеонски леони (1964 – 2022)',
+  );
+  static const _sos = Currency(
+    _cld,
+    'SOS',
+    'Сомалијски шилинг',
+    one: 'Сомалијски шилинг',
+    other: 'Сомалијски шилинзи',
+  );
+  static const _srd = Currency(
+    _cld,
+    'SRD',
+    'Суринамски долар',
+    one: 'Суринамски долар',
+    other: 'Суринамски долари',
+    symbolNarrow: r'$',
+  );
   static const _srg = Currency(_cld, 'SRG', 'Суринамски гилдер');
-  static const _ssp = Currency(_cld, 'SSP', 'Јужносуданска фунта',
-      one: 'Јужносуданска фунта',
-      other: 'Јужносудански фунти',
-      symbolNarrow: '£');
+  static const _ssp = Currency(
+    _cld,
+    'SSP',
+    'Јужносуданска фунта',
+    one: 'Јужносуданска фунта',
+    other: 'Јужносудански фунти',
+    symbolNarrow: '£',
+  );
   static const _std = Currency(
-      _cld, 'STD', 'Добра на Саун Томе и Принсип (1977–2017)',
-      one: 'Добра на Саун Томе и Принсип (1977–2017)',
-      other: 'Добри на Саун Томе и Принсип (1977–2017)');
-  static const _stn = Currency(_cld, 'STN', 'Добра на Сао Томе и Принсипе',
-      one: 'Добра на Сао Томе и Принсипе',
-      other: 'Добри на Сао Томе и Принсипе',
-      symbolNarrow: 'Db');
+    _cld,
+    'STD',
+    'Добра на Саун Томе и Принсип (1977–2017)',
+    one: 'Добра на Саун Томе и Принсип (1977–2017)',
+    other: 'Добри на Саун Томе и Принсип (1977–2017)',
+  );
+  static const _stn = Currency(
+    _cld,
+    'STN',
+    'Добра на Сао Томе и Принсипе',
+    one: 'Добра на Сао Томе и Принсипе',
+    other: 'Добри на Сао Томе и Принсипе',
+    symbolNarrow: 'Db',
+  );
   static const _sur = Currency(_cld, 'SUR', 'Советска рубља');
   static const _svc = Currency(_cld, 'SVC', 'Салвадорски колон');
-  static const _syp = Currency(_cld, 'SYP', 'Сиријска фунта',
-      one: 'Сиријска фунта', other: 'Сиријски фунти', symbolNarrow: '£');
-  static const _szl = Currency(_cld, 'SZL', 'Свазилендски лиланген',
-      one: 'Свазилендски лиланген', other: 'Свазилендски лилангени');
+  static const _syp = Currency(
+    _cld,
+    'SYP',
+    'Сиријска фунта',
+    one: 'Сиријска фунта',
+    other: 'Сиријски фунти',
+    symbolNarrow: '£',
+  );
+  static const _szl = Currency(
+    _cld,
+    'SZL',
+    'Свазилендски лиланген',
+    one: 'Свазилендски лиланген',
+    other: 'Свазилендски лилангени',
+  );
   static const _thb = Currency(_cld, 'THB', 'Таи бат', symbolNarrow: '฿');
   static const _tjr = Currency(_cld, 'TJR', 'Таџикистанска рубља');
   static const _tjs = Currency(_cld, 'TJS', 'Таџикистански сомони');
   static const _tmm = Currency(_cld, 'TMM', 'Туркменистански манат');
-  static const _tmt = Currency(_cld, 'TMT', 'Туркменист. манат',
-      one: 'Туркменистански манати', other: 'Туркменистански манати');
-  static const _tnd = Currency(_cld, 'TND', 'Тунизиски динар',
-      one: 'Тунизиски динар', other: 'Тунизиски динари');
-  static const _top =
-      Currency(_cld, 'TOP', 'Тонганска панга', symbolNarrow: r'T$');
+  static const _tmt = Currency(
+    _cld,
+    'TMT',
+    'Туркменист. манат',
+    one: 'Туркменистански манати',
+    other: 'Туркменистански манати',
+  );
+  static const _tnd = Currency(
+    _cld,
+    'TND',
+    'Тунизиски динар',
+    one: 'Тунизиски динар',
+    other: 'Тунизиски динари',
+  );
+  static const _top = Currency(
+    _cld,
+    'TOP',
+    'Тонганска панга',
+    symbolNarrow: r'T$',
+  );
   static const _tpe = Currency(_cld, 'TPE', 'Тиморски ескудо');
   static const _trl = Currency(_cld, 'TRL', 'Турска лира (1922–2005)');
-  static const _$try = Currency(_cld, 'TRY', 'Турска лира',
-      one: 'Турска лира',
-      other: 'Турски лири',
-      symbolNarrow: '₺',
-      symbolVariant: 'TL');
-  static const _ttd = Currency(_cld, 'TTD', 'Долар на Тринидад и Тобаго',
-      one: 'Долар на Тринидад и Тобаго',
-      other: 'Долари на Тринидад и Тобаго',
-      symbolNarrow: r'$');
-  static const _twd = Currency(_cld, 'TWD', 'Тајвански нов долар',
-      one: 'Тајвански нов долар',
-      other: 'Тајвански нови долари',
-      symbol: 'TWD',
-      symbolNarrow: r'NT$');
-  static const _tzs = Currency(_cld, 'TZS', 'Танзаниски шилинг',
-      one: 'Танзаниски шилинг', other: 'Танзаниски шилинзи');
-  static const _uah = Currency(_cld, 'UAH', 'Украинска хривнија',
-      one: 'Украинска хривнија', other: 'Украински хривнии', symbolNarrow: '₴');
+  static const _$try = Currency(
+    _cld,
+    'TRY',
+    'Турска лира',
+    one: 'Турска лира',
+    other: 'Турски лири',
+    symbolNarrow: '₺',
+    symbolVariant: 'TL',
+  );
+  static const _ttd = Currency(
+    _cld,
+    'TTD',
+    'Долар на Тринидад и Тобаго',
+    one: 'Долар на Тринидад и Тобаго',
+    other: 'Долари на Тринидад и Тобаго',
+    symbolNarrow: r'$',
+  );
+  static const _twd = Currency(
+    _cld,
+    'TWD',
+    'Тајвански нов долар',
+    one: 'Тајвански нов долар',
+    other: 'Тајвански нови долари',
+    symbol: 'TWD',
+    symbolNarrow: r'NT$',
+  );
+  static const _tzs = Currency(
+    _cld,
+    'TZS',
+    'Танзаниски шилинг',
+    one: 'Танзаниски шилинг',
+    other: 'Танзаниски шилинзи',
+  );
+  static const _uah = Currency(
+    _cld,
+    'UAH',
+    'Украинска хривнија',
+    one: 'Украинска хривнија',
+    other: 'Украински хривнии',
+    symbolNarrow: '₴',
+  );
   static const _ugs = Currency(_cld, 'UGS', 'Угандиски шилинг (1966–1987)');
-  static const _ugx = Currency(_cld, 'UGX', 'Угандиски шилинг',
-      one: 'Угандиски шилинг', other: 'Угандиски шилинзи');
-  static const _usd = Currency(_cld, 'USD', 'Американски долар',
-      one: 'Американски долар',
-      other: 'Американски долари',
-      symbol: r'US$',
-      symbolNarrow: r'$');
+  static const _ugx = Currency(
+    _cld,
+    'UGX',
+    'Угандиски шилинг',
+    one: 'Угандиски шилинг',
+    other: 'Угандиски шилинзи',
+  );
+  static const _usd = Currency(
+    _cld,
+    'USD',
+    'Американски долар',
+    one: 'Американски долар',
+    other: 'Американски долари',
+    symbol: r'US$',
+    symbolNarrow: r'$',
+  );
   static const _usn = Currency(_cld, 'USN', 'САД долар (Next day)');
   static const _uss = Currency(_cld, 'USS', 'САД долар (Same day)');
   static const _uyp = Currency(_cld, 'UYP', 'Уругвајски пезос (1975–1993)');
-  static const _uyu = Currency(_cld, 'UYU', 'Уругвајски пезос',
-      one: 'Уругвајски пезос', other: 'Уругвајски пезоси', symbolNarrow: r'$');
-  static const _uzs = Currency(_cld, 'UZS', 'Узбекистански сом',
-      one: 'Узбекистански сом', other: 'Узбекистански соми');
+  static const _uyu = Currency(
+    _cld,
+    'UYU',
+    'Уругвајски пезос',
+    one: 'Уругвајски пезос',
+    other: 'Уругвајски пезоси',
+    symbolNarrow: r'$',
+  );
+  static const _uzs = Currency(
+    _cld,
+    'UZS',
+    'Узбекистански сом',
+    one: 'Узбекистански сом',
+    other: 'Узбекистански соми',
+  );
   static const _veb = Currency(_cld, 'VEB', 'Венецуелски боливар (1871–2008)');
-  static const _vef = Currency(_cld, 'VEF', 'Венецуелски боливар (2008–2018)',
-      one: 'Венецуелски боливар (2008–2018)',
-      other: 'Венецуелски боливари (2008–2018)',
-      symbolNarrow: 'Bs');
-  static const _ves = Currency(_cld, 'VES', 'Венецуелски боливар',
-      one: 'Венецуелски боливар', other: 'Венецуелски боливари');
-  static const _vnd = Currency(_cld, 'VND', 'Виетнамски донг',
-      symbol: 'VND', symbolNarrow: '₫');
-  static const _vuv = Currency(_cld, 'VUV', 'Ванатски вату',
-      one: 'Ванатски вату', other: 'Ванатски ватуи');
+  static const _vef = Currency(
+    _cld,
+    'VEF',
+    'Венецуелски боливар (2008–2018)',
+    one: 'Венецуелски боливар (2008–2018)',
+    other: 'Венецуелски боливари (2008–2018)',
+    symbolNarrow: 'Bs',
+  );
+  static const _ves = Currency(
+    _cld,
+    'VES',
+    'Венецуелски боливар',
+    one: 'Венецуелски боливар',
+    other: 'Венецуелски боливари',
+  );
+  static const _vnd = Currency(
+    _cld,
+    'VND',
+    'Виетнамски донг',
+    symbol: 'VND',
+    symbolNarrow: '₫',
+  );
+  static const _vuv = Currency(
+    _cld,
+    'VUV',
+    'Ванатски вату',
+    one: 'Ванатски вату',
+    other: 'Ванатски ватуи',
+  );
   static const _wst = Currency(_cld, 'WST', 'Самоанска тала');
-  static const _xaf = Currency(_cld, 'XAF', 'Централноафрикански франк',
-      one: 'Централноафрикански франк',
-      other: 'Централноафрикански франци',
-      symbol: 'FCFA');
-  static const _xcd = Currency(_cld, 'XCD', 'Источнокарипски долар',
-      one: 'Источнокарипски долар',
-      other: 'Источнокарипски долари',
-      symbol: r'EC$',
-      symbolNarrow: r'$');
+  static const _xaf = Currency(
+    _cld,
+    'XAF',
+    'Централноафрикански франк',
+    one: 'Централноафрикански франк',
+    other: 'Централноафрикански франци',
+    symbol: 'FCFA',
+  );
+  static const _xcd = Currency(
+    _cld,
+    'XCD',
+    'Источнокарипски долар',
+    one: 'Источнокарипски долар',
+    other: 'Источнокарипски долари',
+    symbol: r'EC$',
+    symbolNarrow: r'$',
+  );
   static const _xcg = Currency(_cld, 'XCG', 'XCG', symbol: 'Cg.');
-  static const _xof = Currency(_cld, 'XOF', 'Западноафрикански франк',
-      one: 'Западноафрикански франк',
-      other: 'Западноафрикански франци',
-      symbol: 'F CFA');
-  static const _xpf = Currency(_cld, 'XPF', 'ЦФП франк',
-      one: 'ЦФП франк', other: 'ЦФП франци', symbol: 'CFPF');
+  static const _xof = Currency(
+    _cld,
+    'XOF',
+    'Западноафрикански франк',
+    one: 'Западноафрикански франк',
+    other: 'Западноафрикански франци',
+    symbol: 'F CFA',
+  );
+  static const _xpf = Currency(
+    _cld,
+    'XPF',
+    'ЦФП франк',
+    one: 'ЦФП франк',
+    other: 'ЦФП франци',
+    symbol: 'CFPF',
+  );
   static const _xxx = Currency(_cld, 'XXX', 'Непозната валута', symbol: '¤');
   static const _ydd = Currency(_cld, 'YDD', 'Јеменски динар');
-  static const _yer = Currency(_cld, 'YER', 'Јеменски риал',
-      one: 'Јеменски риал', other: 'Јеменски риали');
+  static const _yer = Currency(
+    _cld,
+    'YER',
+    'Јеменски риал',
+    one: 'Јеменски риал',
+    other: 'Јеменски риали',
+  );
   static const _yud = Currency(_cld, 'YUD', 'Југословенски динар');
-  static const _yun =
-      Currency(_cld, 'YUN', 'Југословенски конвертибилен динар');
+  static const _yun = Currency(
+    _cld,
+    'YUN',
+    'Југословенски конвертибилен динар',
+  );
   static const _zal = Currency(_cld, 'ZAL', 'Јужно афрички ранд(финансиски)');
-  static const _zar = Currency(_cld, 'ZAR', 'Јужноафрикански ранд',
-      one: 'Јужноафрикански ранд',
-      other: 'Јужноафрикански ранди',
-      symbolNarrow: 'R');
+  static const _zar = Currency(
+    _cld,
+    'ZAR',
+    'Јужноафрикански ранд',
+    one: 'Јужноафрикански ранд',
+    other: 'Јужноафрикански ранди',
+    symbolNarrow: 'R',
+  );
   static const _zmk = Currency(_cld, 'ZMK', 'Замбијска квача (1968–2012)');
-  static const _zmw = Currency(_cld, 'ZMW', 'Замбијска квача',
-      one: 'Замбијска квача', other: 'Замбијски квачи', symbolNarrow: 'ZK');
+  static const _zmw = Currency(
+    _cld,
+    'ZMW',
+    'Замбијска квача',
+    one: 'Замбијска квача',
+    other: 'Замбијски квачи',
+    symbolNarrow: 'ZK',
+  );
   static const _zrn = Currency(_cld, 'ZRN', 'Заирско новозаире');
   static const _zrz = Currency(_cld, 'ZRZ', 'Заирско заире');
   static const _zwd = Currency(_cld, 'ZWD', 'Зимбабвиски долар');
@@ -13753,8 +13692,9 @@ class TimeZonesMk extends TimeZones {
     'America/Anguilla': TimeZoneNames(exemplarCity: 'Ангвила'),
     'America/Antigua': TimeZoneNames(exemplarCity: 'Антига'),
     'America/Araguaina': TimeZoneNames(exemplarCity: 'Арагвајана'),
-    'America/Argentina/Rio_Gallegos':
-        TimeZoneNames(exemplarCity: 'Рио Галегос'),
+    'America/Argentina/Rio_Gallegos': TimeZoneNames(
+      exemplarCity: 'Рио Галегос',
+    ),
     'America/Argentina/San_Juan': TimeZoneNames(exemplarCity: 'Сан Хуан'),
     'America/Argentina/Ushuaia': TimeZoneNames(exemplarCity: 'Ушуаја'),
     'America/Argentina/La_Rioja': TimeZoneNames(exemplarCity: 'Ла Риоха'),
@@ -13812,12 +13752,15 @@ class TimeZonesMk extends TimeZones {
     'America/Halifax': TimeZoneNames(exemplarCity: 'Халифакс'),
     'America/Havana': TimeZoneNames(exemplarCity: 'Хавана'),
     'America/Hermosillo': TimeZoneNames(exemplarCity: 'Ермосиљо'),
-    'America/Indiana/Vincennes':
-        TimeZoneNames(exemplarCity: 'Венсен, Индијана'),
-    'America/Indiana/Petersburg':
-        TimeZoneNames(exemplarCity: 'Питерсбург, Индијана'),
-    'America/Indiana/Tell_City':
-        TimeZoneNames(exemplarCity: 'Тел Сити, Индијана'),
+    'America/Indiana/Vincennes': TimeZoneNames(
+      exemplarCity: 'Венсен, Индијана',
+    ),
+    'America/Indiana/Petersburg': TimeZoneNames(
+      exemplarCity: 'Питерсбург, Индијана',
+    ),
+    'America/Indiana/Tell_City': TimeZoneNames(
+      exemplarCity: 'Тел Сити, Индијана',
+    ),
     'America/Indiana/Knox': TimeZoneNames(exemplarCity: 'Нокс, Индијана'),
     'America/Indiana/Winamac': TimeZoneNames(exemplarCity: 'Винамак, Индијана'),
     'America/Indiana/Marengo': TimeZoneNames(exemplarCity: 'Маренго, Индијана'),
@@ -13828,8 +13771,9 @@ class TimeZonesMk extends TimeZones {
     'America/Jamaica': TimeZoneNames(exemplarCity: 'Јамајка'),
     'America/Jujuy': TimeZoneNames(exemplarCity: 'Хухуј'),
     'America/Juneau': TimeZoneNames(exemplarCity: 'Џуно'),
-    'America/Kentucky/Monticello':
-        TimeZoneNames(exemplarCity: 'Монтичело, Кентаки'),
+    'America/Kentucky/Monticello': TimeZoneNames(
+      exemplarCity: 'Монтичело, Кентаки',
+    ),
     'America/Kralendijk': TimeZoneNames(exemplarCity: 'Кралендајк'),
     'America/La_Paz': TimeZoneNames(exemplarCity: 'Ла Паз'),
     'America/Lima': TimeZoneNames(exemplarCity: 'Лима'),
@@ -13857,12 +13801,15 @@ class TimeZonesMk extends TimeZones {
     'America/New_York': TimeZoneNames(exemplarCity: 'Њујорк'),
     'America/Nome': TimeZoneNames(exemplarCity: 'Ном'),
     'America/Noronha': TimeZoneNames(exemplarCity: 'Нороња'),
-    'America/North_Dakota/Beulah':
-        TimeZoneNames(exemplarCity: 'Бјула, Северна Дакота'),
-    'America/North_Dakota/New_Salem':
-        TimeZoneNames(exemplarCity: 'Њу Салем, Северна Дакота'),
-    'America/North_Dakota/Center':
-        TimeZoneNames(exemplarCity: 'Центар, Северна Дакота'),
+    'America/North_Dakota/Beulah': TimeZoneNames(
+      exemplarCity: 'Бјула, Северна Дакота',
+    ),
+    'America/North_Dakota/New_Salem': TimeZoneNames(
+      exemplarCity: 'Њу Салем, Северна Дакота',
+    ),
+    'America/North_Dakota/Center': TimeZoneNames(
+      exemplarCity: 'Центар, Северна Дакота',
+    ),
     'America/Ojinaga': TimeZoneNames(exemplarCity: 'Охинага'),
     'America/Panama': TimeZoneNames(exemplarCity: 'Панама'),
     'America/Paramaribo': TimeZoneNames(exemplarCity: 'Парамарибо'),
@@ -13923,8 +13870,9 @@ class TimeZonesMk extends TimeZones {
     'Europe/Chisinau': TimeZoneNames(exemplarCity: 'Кишинау'),
     'Europe/Copenhagen': TimeZoneNames(exemplarCity: 'Копенхаген'),
     'Europe/Dublin': TimeZoneNames(
-        exemplarCity: 'Даблин',
-        long: TimeZoneName(daylight: 'Ирско стандардно време')),
+      exemplarCity: 'Даблин',
+      long: TimeZoneName(daylight: 'Ирско стандардно време'),
+    ),
     'Europe/Gibraltar': TimeZoneNames(exemplarCity: 'Гибралтар'),
     'Europe/Guernsey': TimeZoneNames(exemplarCity: 'Гернзи'),
     'Europe/Helsinki': TimeZoneNames(exemplarCity: 'Хелсинки'),
@@ -13937,8 +13885,9 @@ class TimeZonesMk extends TimeZones {
     'Europe/Lisbon': TimeZoneNames(exemplarCity: 'Лисабон'),
     'Europe/Ljubljana': TimeZoneNames(exemplarCity: 'Љубљана'),
     'Europe/London': TimeZoneNames(
-        exemplarCity: 'Лондон',
-        long: TimeZoneName(daylight: 'Британско летно време')),
+      exemplarCity: 'Лондон',
+      long: TimeZoneName(daylight: 'Британско летно време'),
+    ),
     'Europe/Luxembourg': TimeZoneNames(exemplarCity: 'Луксембург'),
     'Europe/Madrid': TimeZoneNames(exemplarCity: 'Мадрид'),
     'Europe/Malta': TimeZoneNames(exemplarCity: 'Малта'),
@@ -14179,8 +14128,9 @@ class TimeZonesMk extends TimeZones {
     'Antarctica/Troll': TimeZoneNames(exemplarCity: 'Трол'),
     'Antarctica/Vostok': TimeZoneNames(exemplarCity: 'Восток'),
     'Etc/UTC': TimeZoneNames(
-        long: TimeZoneName(standard: 'Координирано универзално време'),
-        short: TimeZoneName(standard: 'UTC')),
+      long: TimeZoneName(standard: 'Координирано универзално време'),
+      short: TimeZoneName(standard: 'UTC'),
+    ),
     'Etc/Unknown': TimeZoneNames(exemplarCity: 'Непознат град'),
   };
 
@@ -14188,531 +14138,885 @@ class TimeZonesMk extends TimeZones {
   Map<String, MetaZone> get metaZoneNames => staticMetaZoneNames;
 
   static const staticMetaZoneNames = <String, MetaZone>{
-    'Acre': MetaZone('Acre',
-        long: TimeZoneName(
-            generic: 'Акре време',
-            standard: 'Акре стандардно време',
-            daylight: 'Акре летно сметање на времето')),
-    'Afghanistan': MetaZone('Afghanistan',
-        long: TimeZoneName(standard: 'Време во Авганистан')),
-    'Africa_Central': MetaZone('Africa_Central',
-        long: TimeZoneName(standard: 'Средноафриканско време')),
-    'Africa_Eastern': MetaZone('Africa_Eastern',
-        long: TimeZoneName(standard: 'Источноафриканско време')),
-    'Africa_Southern': MetaZone('Africa_Southern',
-        long: TimeZoneName(standard: 'Време во Јужноафриканска Република')),
-    'Africa_Western': MetaZone('Africa_Western',
-        long: TimeZoneName(
-            generic: 'Западноафриканско време',
-            standard: 'Западноафриканско стандардно време',
-            daylight: 'Западноафриканско летно сметање на времето')),
-    'Alaska': MetaZone('Alaska',
-        long: TimeZoneName(
-            generic: 'Време во Алјаска',
-            standard: 'Стандардно време во Алјаска',
-            daylight: 'Летно сметање на времето во Алјаска')),
-    'Amazon': MetaZone('Amazon',
-        long: TimeZoneName(
-            generic: 'Време во Амазон',
-            standard: 'Стандардно време во Амазон',
-            daylight: 'Летно сметање на времето во Амазон')),
-    'America_Central': MetaZone('America_Central',
-        long: TimeZoneName(
-            generic: 'Централно време во Северна Америка',
-            standard: 'Централно стандардно време во Северна Америка',
-            daylight: 'Централно летно сметање на времето во Северна Америка')),
-    'America_Eastern': MetaZone('America_Eastern',
-        long: TimeZoneName(
-            generic: 'Источно време во Северна Америка',
-            standard: 'Источно стандардно време во Северна Америка',
-            daylight: 'Источно летно сметање на времето во Северна Америка')),
-    'America_Mountain': MetaZone('America_Mountain',
-        long: TimeZoneName(
-            generic: 'Планинско време во Северна Америка',
-            standard: 'Планинско стандардно време во Северна Америка',
-            daylight: 'Планинско летно сметање на времето во Северна Америка')),
-    'America_Pacific': MetaZone('America_Pacific',
-        long: TimeZoneName(
-            generic: 'Пацифичко време во Северна Америка',
-            standard: 'Пацифичко стандардно време во Северна Америка',
-            daylight: 'Пацифичко летно сметање на времето во Северна Америка')),
-    'Anadyr': MetaZone('Anadyr',
-        long: TimeZoneName(
-            generic: 'Анадирско време',
-            standard: 'Анадирско стандардно време',
-            daylight: 'Анадирско летно време')),
-    'Apia': MetaZone('Apia',
-        long: TimeZoneName(
-            generic: 'Време во Апија',
-            standard: 'Стандардно време во Апија',
-            daylight: 'Летно време во Апија')),
-    'Arabian': MetaZone('Arabian',
-        long: TimeZoneName(
-            generic: 'Арапско време',
-            standard: 'Стандардно арапско време',
-            daylight: 'Арапско летно сметање на времето')),
-    'Argentina': MetaZone('Argentina',
-        long: TimeZoneName(
-            generic: 'Време во Аргентина',
-            standard: 'Стандардно време во Аргентина',
-            daylight: 'Летно сметање на времето во Аргентина')),
-    'Argentina_Western': MetaZone('Argentina_Western',
-        long: TimeZoneName(
-            generic: 'Време во западна Аргентина',
-            standard: 'Стандардно време во западна Аргентина',
-            daylight: 'Летно сметање на времето во западна Аргентина')),
-    'Armenia': MetaZone('Armenia',
-        long: TimeZoneName(
-            generic: 'Време во Ерменија',
-            standard: 'Стандардно време во Ерменија',
-            daylight: 'Летно време во Ерменија')),
-    'Atlantic': MetaZone('Atlantic',
-        long: TimeZoneName(
-            generic: 'Атлантско време',
-            standard: 'Атлантско стандардно време',
-            daylight: 'Атлантско летно сметање на времето')),
-    'Australia_Central': MetaZone('Australia_Central',
-        long: TimeZoneName(
-            generic: 'Време во Централна Австралија',
-            standard: 'Стандардно време во Централна Австралија',
-            daylight: 'Летно сметање на времето во Централна Австралија')),
-    'Australia_CentralWestern': MetaZone('Australia_CentralWestern',
-        long: TimeZoneName(
-            generic: 'Време во Централна и Западна Австралија',
-            standard: 'Стандардно време во Централна и Западна Австралија',
-            daylight:
-                'Летно сметање на времето во Централна и Западна Австралија')),
-    'Australia_Eastern': MetaZone('Australia_Eastern',
-        long: TimeZoneName(
-            generic: 'Време во Источна Австралија',
-            standard: 'Стандардно време во Источна Австралија',
-            daylight: 'Летно сметање на времето во Источна Австралија')),
-    'Australia_Western': MetaZone('Australia_Western',
-        long: TimeZoneName(
-            generic: 'Време во Западна Австралија',
-            standard: 'Стандардно време во Западна Австралија',
-            daylight: 'Летно сметање на времето во Западна Австралија')),
-    'Azerbaijan': MetaZone('Azerbaijan',
-        long: TimeZoneName(
-            generic: 'Време во Азербејџан',
-            standard: 'Стандардно време во Азербејџан',
-            daylight: 'Летно време во Азербејџан')),
-    'Azores': MetaZone('Azores',
-        long: TimeZoneName(
-            generic: 'Време во Азорски Острови',
-            standard: 'Стандардно време во Азорски Острови',
-            daylight: 'Летно време во Азорски Острови')),
-    'Bangladesh': MetaZone('Bangladesh',
-        long: TimeZoneName(
-            generic: 'Време во Бангладеш',
-            standard: 'Стандардно време во Бангладеш',
-            daylight: 'Летно време во Бангладеш')),
-    'Bhutan':
-        MetaZone('Bhutan', long: TimeZoneName(standard: 'Време во Бутан')),
-    'Bolivia':
-        MetaZone('Bolivia', long: TimeZoneName(standard: 'Време во Боливија')),
-    'Brasilia': MetaZone('Brasilia',
-        long: TimeZoneName(
-            generic: 'Време во Бразилија',
-            standard: 'Стандардно време во Бразилија',
-            daylight: 'Летно сметање на времето во Бразилија')),
-    'Brunei': MetaZone('Brunei',
-        long: TimeZoneName(standard: 'Време во Брунеј Дарусалам')),
-    'Cape_Verde': MetaZone('Cape_Verde',
-        long: TimeZoneName(
-            generic: 'Време во Кабо Верде',
-            standard: 'Стандардно време во Кабо Верде',
-            daylight: 'Летно сметање на времето во Кабо Верде')),
-    'Chamorro':
-        MetaZone('Chamorro', long: TimeZoneName(standard: 'Време во Чаморо')),
-    'Chatham': MetaZone('Chatham',
-        long: TimeZoneName(
-            generic: 'Време во Чатам',
-            standard: 'Стандардно време во Чатам',
-            daylight: 'Летно сметање на времето во Чатам')),
-    'Chile': MetaZone('Chile',
-        long: TimeZoneName(
-            generic: 'Време во Чиле',
-            standard: 'Стандардно време во Чиле',
-            daylight: 'Летно сметање на времето во Чиле')),
-    'China': MetaZone('China',
-        long: TimeZoneName(
-            generic: 'Време во Кина',
-            standard: 'Стандардно време во Кина',
-            daylight: 'Летно сметање на времето во Кина')),
-    'Christmas': MetaZone('Christmas',
-        long: TimeZoneName(standard: 'Време во Божиќен Остров')),
-    'Cocos': MetaZone('Cocos',
-        long: TimeZoneName(standard: 'Време во Кокосови Острови')),
-    'Colombia': MetaZone('Colombia',
-        long: TimeZoneName(
-            generic: 'Време во Колумбија',
-            standard: 'Стандардно време во Колумбија',
-            daylight: 'Летно сметање на времето во Колумбија')),
-    'Cook': MetaZone('Cook',
-        long: TimeZoneName(
-            generic: 'Време во Кукови Острови',
-            standard: 'Стандардно време во Кукови Острови',
-            daylight: 'Летно време во Кукови Острови')),
-    'Cuba': MetaZone('Cuba',
-        long: TimeZoneName(
-            generic: 'Време во Куба',
-            standard: 'Стандардно време во Куба',
-            daylight: 'Летно сметање на времето во Куба')),
+    'Acre': MetaZone(
+      'Acre',
+      long: TimeZoneName(
+        generic: 'Акре време',
+        standard: 'Акре стандардно време',
+        daylight: 'Акре летно сметање на времето',
+      ),
+    ),
+    'Afghanistan': MetaZone(
+      'Afghanistan',
+      long: TimeZoneName(standard: 'Време во Авганистан'),
+    ),
+    'Africa_Central': MetaZone(
+      'Africa_Central',
+      long: TimeZoneName(standard: 'Средноафриканско време'),
+    ),
+    'Africa_Eastern': MetaZone(
+      'Africa_Eastern',
+      long: TimeZoneName(standard: 'Источноафриканско време'),
+    ),
+    'Africa_Southern': MetaZone(
+      'Africa_Southern',
+      long: TimeZoneName(standard: 'Време во Јужноафриканска Република'),
+    ),
+    'Africa_Western': MetaZone(
+      'Africa_Western',
+      long: TimeZoneName(
+        generic: 'Западноафриканско време',
+        standard: 'Западноафриканско стандардно време',
+        daylight: 'Западноафриканско летно сметање на времето',
+      ),
+    ),
+    'Alaska': MetaZone(
+      'Alaska',
+      long: TimeZoneName(
+        generic: 'Време во Алјаска',
+        standard: 'Стандардно време во Алјаска',
+        daylight: 'Летно сметање на времето во Алјаска',
+      ),
+    ),
+    'Amazon': MetaZone(
+      'Amazon',
+      long: TimeZoneName(
+        generic: 'Време во Амазон',
+        standard: 'Стандардно време во Амазон',
+        daylight: 'Летно сметање на времето во Амазон',
+      ),
+    ),
+    'America_Central': MetaZone(
+      'America_Central',
+      long: TimeZoneName(
+        generic: 'Централно време во Северна Америка',
+        standard: 'Централно стандардно време во Северна Америка',
+        daylight: 'Централно летно сметање на времето во Северна Америка',
+      ),
+    ),
+    'America_Eastern': MetaZone(
+      'America_Eastern',
+      long: TimeZoneName(
+        generic: 'Источно време во Северна Америка',
+        standard: 'Источно стандардно време во Северна Америка',
+        daylight: 'Источно летно сметање на времето во Северна Америка',
+      ),
+    ),
+    'America_Mountain': MetaZone(
+      'America_Mountain',
+      long: TimeZoneName(
+        generic: 'Планинско време во Северна Америка',
+        standard: 'Планинско стандардно време во Северна Америка',
+        daylight: 'Планинско летно сметање на времето во Северна Америка',
+      ),
+    ),
+    'America_Pacific': MetaZone(
+      'America_Pacific',
+      long: TimeZoneName(
+        generic: 'Пацифичко време во Северна Америка',
+        standard: 'Пацифичко стандардно време во Северна Америка',
+        daylight: 'Пацифичко летно сметање на времето во Северна Америка',
+      ),
+    ),
+    'Anadyr': MetaZone(
+      'Anadyr',
+      long: TimeZoneName(
+        generic: 'Анадирско време',
+        standard: 'Анадирско стандардно време',
+        daylight: 'Анадирско летно време',
+      ),
+    ),
+    'Apia': MetaZone(
+      'Apia',
+      long: TimeZoneName(
+        generic: 'Време во Апија',
+        standard: 'Стандардно време во Апија',
+        daylight: 'Летно време во Апија',
+      ),
+    ),
+    'Arabian': MetaZone(
+      'Arabian',
+      long: TimeZoneName(
+        generic: 'Арапско време',
+        standard: 'Стандардно арапско време',
+        daylight: 'Арапско летно сметање на времето',
+      ),
+    ),
+    'Argentina': MetaZone(
+      'Argentina',
+      long: TimeZoneName(
+        generic: 'Време во Аргентина',
+        standard: 'Стандардно време во Аргентина',
+        daylight: 'Летно сметање на времето во Аргентина',
+      ),
+    ),
+    'Argentina_Western': MetaZone(
+      'Argentina_Western',
+      long: TimeZoneName(
+        generic: 'Време во западна Аргентина',
+        standard: 'Стандардно време во западна Аргентина',
+        daylight: 'Летно сметање на времето во западна Аргентина',
+      ),
+    ),
+    'Armenia': MetaZone(
+      'Armenia',
+      long: TimeZoneName(
+        generic: 'Време во Ерменија',
+        standard: 'Стандардно време во Ерменија',
+        daylight: 'Летно време во Ерменија',
+      ),
+    ),
+    'Atlantic': MetaZone(
+      'Atlantic',
+      long: TimeZoneName(
+        generic: 'Атлантско време',
+        standard: 'Атлантско стандардно време',
+        daylight: 'Атлантско летно сметање на времето',
+      ),
+    ),
+    'Australia_Central': MetaZone(
+      'Australia_Central',
+      long: TimeZoneName(
+        generic: 'Време во Централна Австралија',
+        standard: 'Стандардно време во Централна Австралија',
+        daylight: 'Летно сметање на времето во Централна Австралија',
+      ),
+    ),
+    'Australia_CentralWestern': MetaZone(
+      'Australia_CentralWestern',
+      long: TimeZoneName(
+        generic: 'Време во Централна и Западна Австралија',
+        standard: 'Стандардно време во Централна и Западна Австралија',
+        daylight: 'Летно сметање на времето во Централна и Западна Австралија',
+      ),
+    ),
+    'Australia_Eastern': MetaZone(
+      'Australia_Eastern',
+      long: TimeZoneName(
+        generic: 'Време во Источна Австралија',
+        standard: 'Стандардно време во Источна Австралија',
+        daylight: 'Летно сметање на времето во Источна Австралија',
+      ),
+    ),
+    'Australia_Western': MetaZone(
+      'Australia_Western',
+      long: TimeZoneName(
+        generic: 'Време во Западна Австралија',
+        standard: 'Стандардно време во Западна Австралија',
+        daylight: 'Летно сметање на времето во Западна Австралија',
+      ),
+    ),
+    'Azerbaijan': MetaZone(
+      'Azerbaijan',
+      long: TimeZoneName(
+        generic: 'Време во Азербејџан',
+        standard: 'Стандардно време во Азербејџан',
+        daylight: 'Летно време во Азербејџан',
+      ),
+    ),
+    'Azores': MetaZone(
+      'Azores',
+      long: TimeZoneName(
+        generic: 'Време во Азорски Острови',
+        standard: 'Стандардно време во Азорски Острови',
+        daylight: 'Летно време во Азорски Острови',
+      ),
+    ),
+    'Bangladesh': MetaZone(
+      'Bangladesh',
+      long: TimeZoneName(
+        generic: 'Време во Бангладеш',
+        standard: 'Стандардно време во Бангладеш',
+        daylight: 'Летно време во Бангладеш',
+      ),
+    ),
+    'Bhutan': MetaZone(
+      'Bhutan',
+      long: TimeZoneName(standard: 'Време во Бутан'),
+    ),
+    'Bolivia': MetaZone(
+      'Bolivia',
+      long: TimeZoneName(standard: 'Време во Боливија'),
+    ),
+    'Brasilia': MetaZone(
+      'Brasilia',
+      long: TimeZoneName(
+        generic: 'Време во Бразилија',
+        standard: 'Стандардно време во Бразилија',
+        daylight: 'Летно сметање на времето во Бразилија',
+      ),
+    ),
+    'Brunei': MetaZone(
+      'Brunei',
+      long: TimeZoneName(standard: 'Време во Брунеј Дарусалам'),
+    ),
+    'Cape_Verde': MetaZone(
+      'Cape_Verde',
+      long: TimeZoneName(
+        generic: 'Време во Кабо Верде',
+        standard: 'Стандардно време во Кабо Верде',
+        daylight: 'Летно сметање на времето во Кабо Верде',
+      ),
+    ),
+    'Chamorro': MetaZone(
+      'Chamorro',
+      long: TimeZoneName(standard: 'Време во Чаморо'),
+    ),
+    'Chatham': MetaZone(
+      'Chatham',
+      long: TimeZoneName(
+        generic: 'Време во Чатам',
+        standard: 'Стандардно време во Чатам',
+        daylight: 'Летно сметање на времето во Чатам',
+      ),
+    ),
+    'Chile': MetaZone(
+      'Chile',
+      long: TimeZoneName(
+        generic: 'Време во Чиле',
+        standard: 'Стандардно време во Чиле',
+        daylight: 'Летно сметање на времето во Чиле',
+      ),
+    ),
+    'China': MetaZone(
+      'China',
+      long: TimeZoneName(
+        generic: 'Време во Кина',
+        standard: 'Стандардно време во Кина',
+        daylight: 'Летно сметање на времето во Кина',
+      ),
+    ),
+    'Christmas': MetaZone(
+      'Christmas',
+      long: TimeZoneName(standard: 'Време во Божиќен Остров'),
+    ),
+    'Cocos': MetaZone(
+      'Cocos',
+      long: TimeZoneName(standard: 'Време во Кокосови Острови'),
+    ),
+    'Colombia': MetaZone(
+      'Colombia',
+      long: TimeZoneName(
+        generic: 'Време во Колумбија',
+        standard: 'Стандардно време во Колумбија',
+        daylight: 'Летно сметање на времето во Колумбија',
+      ),
+    ),
+    'Cook': MetaZone(
+      'Cook',
+      long: TimeZoneName(
+        generic: 'Време во Кукови Острови',
+        standard: 'Стандардно време во Кукови Острови',
+        daylight: 'Летно време во Кукови Острови',
+      ),
+    ),
+    'Cuba': MetaZone(
+      'Cuba',
+      long: TimeZoneName(
+        generic: 'Време во Куба',
+        standard: 'Стандардно време во Куба',
+        daylight: 'Летно сметање на времето во Куба',
+      ),
+    ),
     'Davis': MetaZone('Davis', long: TimeZoneName(standard: 'Време во Дејвис')),
-    'DumontDUrville': MetaZone('DumontDUrville',
-        long: TimeZoneName(standard: 'Време во Димон Дирвил')),
-    'East_Timor': MetaZone('East_Timor',
-        long: TimeZoneName(standard: 'Време во Источен Тимор')),
-    'Easter': MetaZone('Easter',
-        long: TimeZoneName(
-            generic: 'Време во Велигденски Остров',
-            standard: 'Стандардно време во Велигденски Остров',
-            daylight: 'Летно време во Велигденски Остров')),
-    'Ecuador':
-        MetaZone('Ecuador', long: TimeZoneName(standard: 'Време во Еквадор')),
-    'Europe_Central': MetaZone('Europe_Central',
-        long: TimeZoneName(
-            generic: 'Средноевропско време',
-            standard: 'Средноевропско стандардно време',
-            daylight: 'Средноевропско летно време'),
-        short: TimeZoneName(generic: 'CET', standard: 'CET', daylight: 'CEST')),
-    'Europe_Eastern': MetaZone('Europe_Eastern',
-        long: TimeZoneName(
-            generic: 'Источноевропско време',
-            standard: 'Источноевропско стандардно време',
-            daylight: 'Источноевропско летно време'),
-        short: TimeZoneName(generic: 'EET', standard: 'EET', daylight: 'EEST')),
-    'Europe_Further_Eastern': MetaZone('Europe_Further_Eastern',
-        long: TimeZoneName(standard: 'Калининградско време')),
-    'Europe_Western': MetaZone('Europe_Western',
-        long: TimeZoneName(
-            generic: 'Западноевропско време',
-            standard: 'Западноевропско стандардно време',
-            daylight: 'Западноевропско летно време'),
-        short: TimeZoneName(generic: 'WET', standard: 'WET', daylight: 'WEST')),
-    'Falkland': MetaZone('Falkland',
-        long: TimeZoneName(
-            generic: 'Време во Фолкландски Острови',
-            standard: 'Стандардно време во Фолкландски Острови',
-            daylight: 'Летно сметање на времето во Фолкландски Острови')),
-    'Fiji': MetaZone('Fiji',
-        long: TimeZoneName(
-            generic: 'Време во Фиџи',
-            standard: 'Стандардно време во Фиџи',
-            daylight: 'Летно време во Фиџи')),
-    'French_Guiana': MetaZone('French_Guiana',
-        long: TimeZoneName(standard: 'Време во Француска Гвајана')),
-    'French_Southern': MetaZone('French_Southern',
-        long: TimeZoneName(standard: 'Француско јужно и антарктичко време')),
-    'Galapagos': MetaZone('Galapagos',
-        long: TimeZoneName(standard: 'Време во Галапагос')),
-    'Gambier':
-        MetaZone('Gambier', long: TimeZoneName(standard: 'Време во Гамбе')),
-    'Georgia': MetaZone('Georgia',
-        long: TimeZoneName(
-            generic: 'Време во Грузија',
-            standard: 'Стандардно време во Грузија',
-            daylight: 'Летно време во Грузија')),
-    'Gilbert_Islands': MetaZone('Gilbert_Islands',
-        long: TimeZoneName(standard: 'Време во Гилбертови Острови')),
-    'GMT':
-        MetaZone('GMT', long: TimeZoneName(standard: 'Средно време по Гринич')),
-    'Greenland_Eastern': MetaZone('Greenland_Eastern',
-        long: TimeZoneName(
-            generic: 'Време во Источен Гренланд',
-            standard: 'Стандардно време во Источен Гренланд',
-            daylight: 'Летно сметање на времето во Источен Гренланд')),
-    'Greenland_Western': MetaZone('Greenland_Western',
-        long: TimeZoneName(
-            generic: 'Време во Западен Гренланд',
-            standard: 'Стандардно време во Западен Гренланд',
-            daylight: 'Летно сметање на времето во Западен Гренланд')),
-    'Gulf': MetaZone('Gulf',
-        long: TimeZoneName(standard: 'Време во Персиски Залив')),
-    'Guyana':
-        MetaZone('Guyana', long: TimeZoneName(standard: 'Време во Гвајана')),
-    'Hawaii_Aleutian': MetaZone('Hawaii_Aleutian',
-        long: TimeZoneName(
-            generic: 'Време во Хаваи - Алеутски острови',
-            standard: 'Стандардно време во Хаваи - Алеутски острови',
-            daylight: 'Летно сметање на времето во Хаваи - Алеутски острови')),
-    'Hong_Kong': MetaZone('Hong_Kong',
-        long: TimeZoneName(
-            generic: 'Време во Хонг Конг',
-            standard: 'Стандардно време во Хонг Конг',
-            daylight: 'Летно време во Хонг Конг')),
-    'Hovd': MetaZone('Hovd',
-        long: TimeZoneName(
-            generic: 'Време во Ховд',
-            standard: 'Стандардно време во Ховд',
-            daylight: 'Летно време во Ховд')),
+    'DumontDUrville': MetaZone(
+      'DumontDUrville',
+      long: TimeZoneName(standard: 'Време во Димон Дирвил'),
+    ),
+    'East_Timor': MetaZone(
+      'East_Timor',
+      long: TimeZoneName(standard: 'Време во Источен Тимор'),
+    ),
+    'Easter': MetaZone(
+      'Easter',
+      long: TimeZoneName(
+        generic: 'Време во Велигденски Остров',
+        standard: 'Стандардно време во Велигденски Остров',
+        daylight: 'Летно време во Велигденски Остров',
+      ),
+    ),
+    'Ecuador': MetaZone(
+      'Ecuador',
+      long: TimeZoneName(standard: 'Време во Еквадор'),
+    ),
+    'Europe_Central': MetaZone(
+      'Europe_Central',
+      long: TimeZoneName(
+        generic: 'Средноевропско време',
+        standard: 'Средноевропско стандардно време',
+        daylight: 'Средноевропско летно време',
+      ),
+      short: TimeZoneName(generic: 'CET', standard: 'CET', daylight: 'CEST'),
+    ),
+    'Europe_Eastern': MetaZone(
+      'Europe_Eastern',
+      long: TimeZoneName(
+        generic: 'Источноевропско време',
+        standard: 'Источноевропско стандардно време',
+        daylight: 'Источноевропско летно време',
+      ),
+      short: TimeZoneName(generic: 'EET', standard: 'EET', daylight: 'EEST'),
+    ),
+    'Europe_Further_Eastern': MetaZone(
+      'Europe_Further_Eastern',
+      long: TimeZoneName(standard: 'Калининградско време'),
+    ),
+    'Europe_Western': MetaZone(
+      'Europe_Western',
+      long: TimeZoneName(
+        generic: 'Западноевропско време',
+        standard: 'Западноевропско стандардно време',
+        daylight: 'Западноевропско летно време',
+      ),
+      short: TimeZoneName(generic: 'WET', standard: 'WET', daylight: 'WEST'),
+    ),
+    'Falkland': MetaZone(
+      'Falkland',
+      long: TimeZoneName(
+        generic: 'Време во Фолкландски Острови',
+        standard: 'Стандардно време во Фолкландски Острови',
+        daylight: 'Летно сметање на времето во Фолкландски Острови',
+      ),
+    ),
+    'Fiji': MetaZone(
+      'Fiji',
+      long: TimeZoneName(
+        generic: 'Време во Фиџи',
+        standard: 'Стандардно време во Фиџи',
+        daylight: 'Летно време во Фиџи',
+      ),
+    ),
+    'French_Guiana': MetaZone(
+      'French_Guiana',
+      long: TimeZoneName(standard: 'Време во Француска Гвајана'),
+    ),
+    'French_Southern': MetaZone(
+      'French_Southern',
+      long: TimeZoneName(standard: 'Француско јужно и антарктичко време'),
+    ),
+    'Galapagos': MetaZone(
+      'Galapagos',
+      long: TimeZoneName(standard: 'Време во Галапагос'),
+    ),
+    'Gambier': MetaZone(
+      'Gambier',
+      long: TimeZoneName(standard: 'Време во Гамбе'),
+    ),
+    'Georgia': MetaZone(
+      'Georgia',
+      long: TimeZoneName(
+        generic: 'Време во Грузија',
+        standard: 'Стандардно време во Грузија',
+        daylight: 'Летно време во Грузија',
+      ),
+    ),
+    'Gilbert_Islands': MetaZone(
+      'Gilbert_Islands',
+      long: TimeZoneName(standard: 'Време во Гилбертови Острови'),
+    ),
+    'GMT': MetaZone(
+      'GMT',
+      long: TimeZoneName(standard: 'Средно време по Гринич'),
+    ),
+    'Greenland_Eastern': MetaZone(
+      'Greenland_Eastern',
+      long: TimeZoneName(
+        generic: 'Време во Источен Гренланд',
+        standard: 'Стандардно време во Источен Гренланд',
+        daylight: 'Летно сметање на времето во Источен Гренланд',
+      ),
+    ),
+    'Greenland_Western': MetaZone(
+      'Greenland_Western',
+      long: TimeZoneName(
+        generic: 'Време во Западен Гренланд',
+        standard: 'Стандардно време во Западен Гренланд',
+        daylight: 'Летно сметање на времето во Западен Гренланд',
+      ),
+    ),
+    'Gulf': MetaZone(
+      'Gulf',
+      long: TimeZoneName(standard: 'Време во Персиски Залив'),
+    ),
+    'Guyana': MetaZone(
+      'Guyana',
+      long: TimeZoneName(standard: 'Време во Гвајана'),
+    ),
+    'Hawaii_Aleutian': MetaZone(
+      'Hawaii_Aleutian',
+      long: TimeZoneName(
+        generic: 'Време во Хаваи - Алеутски острови',
+        standard: 'Стандардно време во Хаваи - Алеутски острови',
+        daylight: 'Летно сметање на времето во Хаваи - Алеутски острови',
+      ),
+    ),
+    'Hong_Kong': MetaZone(
+      'Hong_Kong',
+      long: TimeZoneName(
+        generic: 'Време во Хонг Конг',
+        standard: 'Стандардно време во Хонг Конг',
+        daylight: 'Летно време во Хонг Конг',
+      ),
+    ),
+    'Hovd': MetaZone(
+      'Hovd',
+      long: TimeZoneName(
+        generic: 'Време во Ховд',
+        standard: 'Стандардно време во Ховд',
+        daylight: 'Летно време во Ховд',
+      ),
+    ),
     'India': MetaZone('India', long: TimeZoneName(standard: 'Време во Индија')),
-    'Indian_Ocean': MetaZone('Indian_Ocean',
-        long: TimeZoneName(standard: 'Време во Индиски океан')),
-    'Indochina': MetaZone('Indochina',
-        long: TimeZoneName(standard: 'Време во Индокина')),
-    'Indonesia_Central': MetaZone('Indonesia_Central',
-        long: TimeZoneName(standard: 'Време во Централна Индонезија')),
-    'Indonesia_Eastern': MetaZone('Indonesia_Eastern',
-        long: TimeZoneName(standard: 'Време во Источна Индонезија')),
-    'Indonesia_Western': MetaZone('Indonesia_Western',
-        long: TimeZoneName(standard: 'Време во Западна Индонезија')),
-    'Iran': MetaZone('Iran',
-        long: TimeZoneName(
-            generic: 'Време во Иран',
-            standard: 'Стандардно време во Иран',
-            daylight: 'Летно сметање на времето во Иран')),
-    'Irkutsk': MetaZone('Irkutsk',
-        long: TimeZoneName(
-            generic: 'Време во Иркутск',
-            standard: 'Стандардно време во Иркутск',
-            daylight: 'Летно време во Иркутск')),
-    'Israel': MetaZone('Israel',
-        long: TimeZoneName(
-            generic: 'Време во Израел',
-            standard: 'Стандардно време во Израел',
-            daylight: 'Летно сметање на времето во Израел')),
-    'Japan': MetaZone('Japan',
-        long: TimeZoneName(
-            generic: 'Време во Јапонија',
-            standard: 'Стандардно време во Јапонија',
-            daylight: 'Летно сметање на времето во Јапонија')),
-    'Kazakhstan': MetaZone('Kazakhstan',
-        long: TimeZoneName(standard: 'Време во Казахстан')),
-    'Kazakhstan_Eastern': MetaZone('Kazakhstan_Eastern',
-        long: TimeZoneName(standard: 'Време во Источен Казахстан')),
-    'Kazakhstan_Western': MetaZone('Kazakhstan_Western',
-        long: TimeZoneName(standard: 'Време во Западен Казахстан')),
-    'Korea': MetaZone('Korea',
-        long: TimeZoneName(
-            generic: 'Време во Кореја',
-            standard: 'Стандардно време во Кореја',
-            daylight: 'Летно сметање на времето во Кореја')),
-    'Kosrae':
-        MetaZone('Kosrae', long: TimeZoneName(standard: 'Време во Косра')),
-    'Krasnoyarsk': MetaZone('Krasnoyarsk',
-        long: TimeZoneName(
-            generic: 'Време во Краснојарск',
-            standard: 'Стандардно време во Краснојарск',
-            daylight: 'Летно време во Краснојарск')),
-    'Kyrgystan': MetaZone('Kyrgystan',
-        long: TimeZoneName(standard: 'Време во Киргистан')),
-    'Line_Islands': MetaZone('Line_Islands',
-        long: TimeZoneName(standard: 'Време во Линиски Острови')),
-    'Lord_Howe': MetaZone('Lord_Howe',
-        long: TimeZoneName(
-            generic: 'Време во Лорд Хау',
-            standard: 'Стандардно време во Лорд Хау',
-            daylight: 'Летно сметање на времето во Лорд Хау')),
-    'Magadan': MetaZone('Magadan',
-        long: TimeZoneName(
-            generic: 'Време во Магадан',
-            standard: 'Стандардно време во Магадан',
-            daylight: 'Летно време во Магадан')),
-    'Malaysia':
-        MetaZone('Malaysia', long: TimeZoneName(standard: 'Време во Малезија')),
-    'Maldives':
-        MetaZone('Maldives', long: TimeZoneName(standard: 'Време во Малдиви')),
-    'Marquesas': MetaZone('Marquesas',
-        long: TimeZoneName(standard: 'Време во Маркесас')),
-    'Marshall_Islands': MetaZone('Marshall_Islands',
-        long: TimeZoneName(standard: 'Време во Маршалски Острови')),
-    'Mauritius': MetaZone('Mauritius',
-        long: TimeZoneName(
-            generic: 'Време во Маврициус',
-            standard: 'Стандардно време во Маврициус',
-            daylight: 'Летно сметање на времето во Маврициус')),
-    'Mawson':
-        MetaZone('Mawson', long: TimeZoneName(standard: 'Време во Мосон')),
-    'Mexico_Pacific': MetaZone('Mexico_Pacific',
-        long: TimeZoneName(
-            generic: 'Пацифичко време во Мексико',
-            standard: 'Стандардно пацифичко време во Мексико',
-            daylight: 'Летно пацифичко време во Мексико')),
-    'Mongolia': MetaZone('Mongolia',
-        long: TimeZoneName(
-            generic: 'Време во Улан Батор',
-            standard: 'Стандардно време во Улан Батор',
-            daylight: 'Летно време во Улан Батор')),
-    'Moscow': MetaZone('Moscow',
-        long: TimeZoneName(
-            generic: 'Време во Москва',
-            standard: 'Стандардно време во Москва',
-            daylight: 'Летно сметање на времето во Москва')),
-    'Myanmar':
-        MetaZone('Myanmar', long: TimeZoneName(standard: 'Време во Мјанмар')),
+    'Indian_Ocean': MetaZone(
+      'Indian_Ocean',
+      long: TimeZoneName(standard: 'Време во Индиски океан'),
+    ),
+    'Indochina': MetaZone(
+      'Indochina',
+      long: TimeZoneName(standard: 'Време во Индокина'),
+    ),
+    'Indonesia_Central': MetaZone(
+      'Indonesia_Central',
+      long: TimeZoneName(standard: 'Време во Централна Индонезија'),
+    ),
+    'Indonesia_Eastern': MetaZone(
+      'Indonesia_Eastern',
+      long: TimeZoneName(standard: 'Време во Источна Индонезија'),
+    ),
+    'Indonesia_Western': MetaZone(
+      'Indonesia_Western',
+      long: TimeZoneName(standard: 'Време во Западна Индонезија'),
+    ),
+    'Iran': MetaZone(
+      'Iran',
+      long: TimeZoneName(
+        generic: 'Време во Иран',
+        standard: 'Стандардно време во Иран',
+        daylight: 'Летно сметање на времето во Иран',
+      ),
+    ),
+    'Irkutsk': MetaZone(
+      'Irkutsk',
+      long: TimeZoneName(
+        generic: 'Време во Иркутск',
+        standard: 'Стандардно време во Иркутск',
+        daylight: 'Летно време во Иркутск',
+      ),
+    ),
+    'Israel': MetaZone(
+      'Israel',
+      long: TimeZoneName(
+        generic: 'Време во Израел',
+        standard: 'Стандардно време во Израел',
+        daylight: 'Летно сметање на времето во Израел',
+      ),
+    ),
+    'Japan': MetaZone(
+      'Japan',
+      long: TimeZoneName(
+        generic: 'Време во Јапонија',
+        standard: 'Стандардно време во Јапонија',
+        daylight: 'Летно сметање на времето во Јапонија',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      'Kazakhstan',
+      long: TimeZoneName(standard: 'Време во Казахстан'),
+    ),
+    'Kazakhstan_Eastern': MetaZone(
+      'Kazakhstan_Eastern',
+      long: TimeZoneName(standard: 'Време во Источен Казахстан'),
+    ),
+    'Kazakhstan_Western': MetaZone(
+      'Kazakhstan_Western',
+      long: TimeZoneName(standard: 'Време во Западен Казахстан'),
+    ),
+    'Korea': MetaZone(
+      'Korea',
+      long: TimeZoneName(
+        generic: 'Време во Кореја',
+        standard: 'Стандардно време во Кореја',
+        daylight: 'Летно сметање на времето во Кореја',
+      ),
+    ),
+    'Kosrae': MetaZone(
+      'Kosrae',
+      long: TimeZoneName(standard: 'Време во Косра'),
+    ),
+    'Krasnoyarsk': MetaZone(
+      'Krasnoyarsk',
+      long: TimeZoneName(
+        generic: 'Време во Краснојарск',
+        standard: 'Стандардно време во Краснојарск',
+        daylight: 'Летно време во Краснојарск',
+      ),
+    ),
+    'Kyrgystan': MetaZone(
+      'Kyrgystan',
+      long: TimeZoneName(standard: 'Време во Киргистан'),
+    ),
+    'Line_Islands': MetaZone(
+      'Line_Islands',
+      long: TimeZoneName(standard: 'Време во Линиски Острови'),
+    ),
+    'Lord_Howe': MetaZone(
+      'Lord_Howe',
+      long: TimeZoneName(
+        generic: 'Време во Лорд Хау',
+        standard: 'Стандардно време во Лорд Хау',
+        daylight: 'Летно сметање на времето во Лорд Хау',
+      ),
+    ),
+    'Magadan': MetaZone(
+      'Magadan',
+      long: TimeZoneName(
+        generic: 'Време во Магадан',
+        standard: 'Стандардно време во Магадан',
+        daylight: 'Летно време во Магадан',
+      ),
+    ),
+    'Malaysia': MetaZone(
+      'Malaysia',
+      long: TimeZoneName(standard: 'Време во Малезија'),
+    ),
+    'Maldives': MetaZone(
+      'Maldives',
+      long: TimeZoneName(standard: 'Време во Малдиви'),
+    ),
+    'Marquesas': MetaZone(
+      'Marquesas',
+      long: TimeZoneName(standard: 'Време во Маркесас'),
+    ),
+    'Marshall_Islands': MetaZone(
+      'Marshall_Islands',
+      long: TimeZoneName(standard: 'Време во Маршалски Острови'),
+    ),
+    'Mauritius': MetaZone(
+      'Mauritius',
+      long: TimeZoneName(
+        generic: 'Време во Маврициус',
+        standard: 'Стандардно време во Маврициус',
+        daylight: 'Летно сметање на времето во Маврициус',
+      ),
+    ),
+    'Mawson': MetaZone(
+      'Mawson',
+      long: TimeZoneName(standard: 'Време во Мосон'),
+    ),
+    'Mexico_Pacific': MetaZone(
+      'Mexico_Pacific',
+      long: TimeZoneName(
+        generic: 'Пацифичко време во Мексико',
+        standard: 'Стандардно пацифичко време во Мексико',
+        daylight: 'Летно пацифичко време во Мексико',
+      ),
+    ),
+    'Mongolia': MetaZone(
+      'Mongolia',
+      long: TimeZoneName(
+        generic: 'Време во Улан Батор',
+        standard: 'Стандардно време во Улан Батор',
+        daylight: 'Летно време во Улан Батор',
+      ),
+    ),
+    'Moscow': MetaZone(
+      'Moscow',
+      long: TimeZoneName(
+        generic: 'Време во Москва',
+        standard: 'Стандардно време во Москва',
+        daylight: 'Летно сметање на времето во Москва',
+      ),
+    ),
+    'Myanmar': MetaZone(
+      'Myanmar',
+      long: TimeZoneName(standard: 'Време во Мјанмар'),
+    ),
     'Nauru': MetaZone('Nauru', long: TimeZoneName(standard: 'Време во Науру')),
     'Nepal': MetaZone('Nepal', long: TimeZoneName(standard: 'Време во Непал')),
-    'New_Caledonia': MetaZone('New_Caledonia',
-        long: TimeZoneName(
-            generic: 'Време во Нова Каледонија',
-            standard: 'Стандардно време во Нова Каледонија',
-            daylight: 'Летно време во Нова Каледонија')),
-    'New_Zealand': MetaZone('New_Zealand',
-        long: TimeZoneName(
-            generic: 'Време во Нов Зеланд',
-            standard: 'Стандардно време во Нов Зеланд',
-            daylight: 'Летно сметање на времето во Нов Зеланд')),
-    'Newfoundland': MetaZone('Newfoundland',
-        long: TimeZoneName(
-            generic: 'Време во Њуфаундленд',
-            standard: 'Стандардно време во Њуфаундленд',
-            daylight: 'Летно сметање на времето во Њуфаундленд')),
+    'New_Caledonia': MetaZone(
+      'New_Caledonia',
+      long: TimeZoneName(
+        generic: 'Време во Нова Каледонија',
+        standard: 'Стандардно време во Нова Каледонија',
+        daylight: 'Летно време во Нова Каледонија',
+      ),
+    ),
+    'New_Zealand': MetaZone(
+      'New_Zealand',
+      long: TimeZoneName(
+        generic: 'Време во Нов Зеланд',
+        standard: 'Стандардно време во Нов Зеланд',
+        daylight: 'Летно сметање на времето во Нов Зеланд',
+      ),
+    ),
+    'Newfoundland': MetaZone(
+      'Newfoundland',
+      long: TimeZoneName(
+        generic: 'Време во Њуфаундленд',
+        standard: 'Стандардно време во Њуфаундленд',
+        daylight: 'Летно сметање на времето во Њуфаундленд',
+      ),
+    ),
     'Niue': MetaZone('Niue', long: TimeZoneName(standard: 'Време во Ниуе')),
-    'Norfolk': MetaZone('Norfolk',
-        long: TimeZoneName(
-            generic: 'Време во Норфолшки Остров',
-            standard: 'Стандардно време во Норфолшки Остров',
-            daylight: 'Летно сметање на времето во Норфолшки Остров')),
-    'Noronha': MetaZone('Noronha',
-        long: TimeZoneName(
-            generic: 'Време во Фернандо де Нороња',
-            standard: 'Стандардно време во Фернандо де Нороња',
-            daylight: 'Летно сметање на времето во Фернандо де Нороња')),
-    'Novosibirsk': MetaZone('Novosibirsk',
-        long: TimeZoneName(
-            generic: 'Време во Новосибирск',
-            standard: 'Стандардно време во Новосибирск',
-            daylight: 'Летно време во Новосибирск')),
-    'Omsk': MetaZone('Omsk',
-        long: TimeZoneName(
-            generic: 'Време во Омск',
-            standard: 'Стандардно време во Омск',
-            daylight: 'Летно време во Омск')),
-    'Pakistan': MetaZone('Pakistan',
-        long: TimeZoneName(
-            generic: 'Време во Пакистан',
-            standard: 'Стандардно време во Пакистан',
-            daylight: 'Летно време во Пакистан')),
+    'Norfolk': MetaZone(
+      'Norfolk',
+      long: TimeZoneName(
+        generic: 'Време во Норфолшки Остров',
+        standard: 'Стандардно време во Норфолшки Остров',
+        daylight: 'Летно сметање на времето во Норфолшки Остров',
+      ),
+    ),
+    'Noronha': MetaZone(
+      'Noronha',
+      long: TimeZoneName(
+        generic: 'Време во Фернандо де Нороња',
+        standard: 'Стандардно време во Фернандо де Нороња',
+        daylight: 'Летно сметање на времето во Фернандо де Нороња',
+      ),
+    ),
+    'Novosibirsk': MetaZone(
+      'Novosibirsk',
+      long: TimeZoneName(
+        generic: 'Време во Новосибирск',
+        standard: 'Стандардно време во Новосибирск',
+        daylight: 'Летно време во Новосибирск',
+      ),
+    ),
+    'Omsk': MetaZone(
+      'Omsk',
+      long: TimeZoneName(
+        generic: 'Време во Омск',
+        standard: 'Стандардно време во Омск',
+        daylight: 'Летно време во Омск',
+      ),
+    ),
+    'Pakistan': MetaZone(
+      'Pakistan',
+      long: TimeZoneName(
+        generic: 'Време во Пакистан',
+        standard: 'Стандардно време во Пакистан',
+        daylight: 'Летно време во Пакистан',
+      ),
+    ),
     'Palau': MetaZone('Palau', long: TimeZoneName(standard: 'Време во Палау')),
-    'Papua_New_Guinea': MetaZone('Papua_New_Guinea',
-        long: TimeZoneName(standard: 'Време во Папуа Нова Гвинеја')),
-    'Paraguay': MetaZone('Paraguay',
-        long: TimeZoneName(
-            generic: 'Време во Парагвај',
-            standard: 'Стандардно време во Парагвај',
-            daylight: 'Летно сметање на времето во Парагвај')),
-    'Peru': MetaZone('Peru',
-        long: TimeZoneName(
-            generic: 'Време во Перу',
-            standard: 'Стандардно време во Перу',
-            daylight: 'Летно сметање на времето во Перу')),
-    'Philippines': MetaZone('Philippines',
-        long: TimeZoneName(
-            generic: 'Време во Филипини',
-            standard: 'Стандардно време во Филипини',
-            daylight: 'Летно време во Филипини')),
-    'Phoenix_Islands': MetaZone('Phoenix_Islands',
-        long: TimeZoneName(standard: 'Време во Островите Феникс')),
-    'Pierre_Miquelon': MetaZone('Pierre_Miquelon',
-        long: TimeZoneName(
-            generic: 'Време во Сент Пјер и Микелан',
-            standard: 'Стандардно време во Сент Пјер и Микелан',
-            daylight: 'Летно сметање на времето во Сент Пјер и Микелан')),
-    'Pitcairn':
-        MetaZone('Pitcairn', long: TimeZoneName(standard: 'Време во Питкерн')),
-    'Ponape':
-        MetaZone('Ponape', long: TimeZoneName(standard: 'Време во Понапе')),
-    'Pyongyang': MetaZone('Pyongyang',
-        long: TimeZoneName(standard: 'Време во Пјонгјанг')),
-    'Reunion':
-        MetaZone('Reunion', long: TimeZoneName(standard: 'Време во Рејунион')),
-    'Rothera':
-        MetaZone('Rothera', long: TimeZoneName(standard: 'Време во Ротера')),
-    'Sakhalin': MetaZone('Sakhalin',
-        long: TimeZoneName(
-            generic: 'Време во Сакалин',
-            standard: 'Стандардно време во Сакалин',
-            daylight: 'Летно време во Сакалин')),
-    'Samara': MetaZone('Samara',
-        long: TimeZoneName(
-            generic: 'Самара време',
-            standard: 'Самара стандардно време',
-            daylight: 'Самара летно сметање на времето')),
-    'Samoa': MetaZone('Samoa',
-        long: TimeZoneName(
-            generic: 'Време во Самоа',
-            standard: 'Стандардно време во Самоа',
-            daylight: 'Летно време во Самоа')),
-    'Seychelles': MetaZone('Seychelles',
-        long: TimeZoneName(standard: 'Време во Сејшели')),
-    'Singapore': MetaZone('Singapore',
-        long: TimeZoneName(standard: 'Време во Сингапур')),
-    'Solomon': MetaZone('Solomon',
-        long: TimeZoneName(standard: 'Време во Соломонски Острови')),
-    'South_Georgia': MetaZone('South_Georgia',
-        long: TimeZoneName(standard: 'Време во Јужна Грузија')),
-    'Suriname':
-        MetaZone('Suriname', long: TimeZoneName(standard: 'Време во Суринам')),
+    'Papua_New_Guinea': MetaZone(
+      'Papua_New_Guinea',
+      long: TimeZoneName(standard: 'Време во Папуа Нова Гвинеја'),
+    ),
+    'Paraguay': MetaZone(
+      'Paraguay',
+      long: TimeZoneName(
+        generic: 'Време во Парагвај',
+        standard: 'Стандардно време во Парагвај',
+        daylight: 'Летно сметање на времето во Парагвај',
+      ),
+    ),
+    'Peru': MetaZone(
+      'Peru',
+      long: TimeZoneName(
+        generic: 'Време во Перу',
+        standard: 'Стандардно време во Перу',
+        daylight: 'Летно сметање на времето во Перу',
+      ),
+    ),
+    'Philippines': MetaZone(
+      'Philippines',
+      long: TimeZoneName(
+        generic: 'Време во Филипини',
+        standard: 'Стандардно време во Филипини',
+        daylight: 'Летно време во Филипини',
+      ),
+    ),
+    'Phoenix_Islands': MetaZone(
+      'Phoenix_Islands',
+      long: TimeZoneName(standard: 'Време во Островите Феникс'),
+    ),
+    'Pierre_Miquelon': MetaZone(
+      'Pierre_Miquelon',
+      long: TimeZoneName(
+        generic: 'Време во Сент Пјер и Микелан',
+        standard: 'Стандардно време во Сент Пјер и Микелан',
+        daylight: 'Летно сметање на времето во Сент Пјер и Микелан',
+      ),
+    ),
+    'Pitcairn': MetaZone(
+      'Pitcairn',
+      long: TimeZoneName(standard: 'Време во Питкерн'),
+    ),
+    'Ponape': MetaZone(
+      'Ponape',
+      long: TimeZoneName(standard: 'Време во Понапе'),
+    ),
+    'Pyongyang': MetaZone(
+      'Pyongyang',
+      long: TimeZoneName(standard: 'Време во Пјонгјанг'),
+    ),
+    'Reunion': MetaZone(
+      'Reunion',
+      long: TimeZoneName(standard: 'Време во Рејунион'),
+    ),
+    'Rothera': MetaZone(
+      'Rothera',
+      long: TimeZoneName(standard: 'Време во Ротера'),
+    ),
+    'Sakhalin': MetaZone(
+      'Sakhalin',
+      long: TimeZoneName(
+        generic: 'Време во Сакалин',
+        standard: 'Стандардно време во Сакалин',
+        daylight: 'Летно време во Сакалин',
+      ),
+    ),
+    'Samara': MetaZone(
+      'Samara',
+      long: TimeZoneName(
+        generic: 'Самара време',
+        standard: 'Самара стандардно време',
+        daylight: 'Самара летно сметање на времето',
+      ),
+    ),
+    'Samoa': MetaZone(
+      'Samoa',
+      long: TimeZoneName(
+        generic: 'Време во Самоа',
+        standard: 'Стандардно време во Самоа',
+        daylight: 'Летно време во Самоа',
+      ),
+    ),
+    'Seychelles': MetaZone(
+      'Seychelles',
+      long: TimeZoneName(standard: 'Време во Сејшели'),
+    ),
+    'Singapore': MetaZone(
+      'Singapore',
+      long: TimeZoneName(standard: 'Време во Сингапур'),
+    ),
+    'Solomon': MetaZone(
+      'Solomon',
+      long: TimeZoneName(standard: 'Време во Соломонски Острови'),
+    ),
+    'South_Georgia': MetaZone(
+      'South_Georgia',
+      long: TimeZoneName(standard: 'Време во Јужна Грузија'),
+    ),
+    'Suriname': MetaZone(
+      'Suriname',
+      long: TimeZoneName(standard: 'Време во Суринам'),
+    ),
     'Syowa': MetaZone('Syowa', long: TimeZoneName(standard: 'Време во Сајова')),
-    'Tahiti':
-        MetaZone('Tahiti', long: TimeZoneName(standard: 'Време во Тахити')),
-    'Taipei': MetaZone('Taipei',
-        long: TimeZoneName(
-            generic: 'Време во Тајпеј',
-            standard: 'Стандардно време во Тајпеј',
-            daylight: 'Летно сметање на времето во Тајпеј')),
-    'Tajikistan': MetaZone('Tajikistan',
-        long: TimeZoneName(standard: 'Време во Таџикистан')),
-    'Tokelau':
-        MetaZone('Tokelau', long: TimeZoneName(standard: 'Време во Токелау')),
-    'Tonga': MetaZone('Tonga',
-        long: TimeZoneName(
-            generic: 'Време во Тонга',
-            standard: 'Стандардно време во Тонга',
-            daylight: 'Летно време во Тонга')),
+    'Tahiti': MetaZone(
+      'Tahiti',
+      long: TimeZoneName(standard: 'Време во Тахити'),
+    ),
+    'Taipei': MetaZone(
+      'Taipei',
+      long: TimeZoneName(
+        generic: 'Време во Тајпеј',
+        standard: 'Стандардно време во Тајпеј',
+        daylight: 'Летно сметање на времето во Тајпеј',
+      ),
+    ),
+    'Tajikistan': MetaZone(
+      'Tajikistan',
+      long: TimeZoneName(standard: 'Време во Таџикистан'),
+    ),
+    'Tokelau': MetaZone(
+      'Tokelau',
+      long: TimeZoneName(standard: 'Време во Токелау'),
+    ),
+    'Tonga': MetaZone(
+      'Tonga',
+      long: TimeZoneName(
+        generic: 'Време во Тонга',
+        standard: 'Стандардно време во Тонга',
+        daylight: 'Летно време во Тонга',
+      ),
+    ),
     'Truk': MetaZone('Truk', long: TimeZoneName(standard: 'Време во Чуук')),
-    'Turkmenistan': MetaZone('Turkmenistan',
-        long: TimeZoneName(
-            generic: 'Време во Туркменистан',
-            standard: 'Стандардно време во Туркменистан',
-            daylight: 'Летно време во Туркменистан')),
-    'Tuvalu':
-        MetaZone('Tuvalu', long: TimeZoneName(standard: 'Време во Тувалу')),
-    'Uruguay': MetaZone('Uruguay',
-        long: TimeZoneName(
-            generic: 'Време во Уругвај',
-            standard: 'Стандардно време во Уругвај',
-            daylight: 'Летно сметање на времето во Уругвај')),
-    'Uzbekistan': MetaZone('Uzbekistan',
-        long: TimeZoneName(
-            generic: 'Време во Узбекистан',
-            standard: 'Стандардно време во Узбекистан',
-            daylight: 'Летно време во Узбекистан')),
-    'Vanuatu': MetaZone('Vanuatu',
-        long: TimeZoneName(
-            generic: 'Време во Вануату',
-            standard: 'Стандардно време во Вануату',
-            daylight: 'Летно време во Вануату')),
-    'Venezuela': MetaZone('Venezuela',
-        long: TimeZoneName(standard: 'Време во Венецуела')),
-    'Vladivostok': MetaZone('Vladivostok',
-        long: TimeZoneName(
-            generic: 'Време во Владивосток',
-            standard: 'Стандардно време во Владивосток',
-            daylight: 'Летно време во Владивосток')),
-    'Volgograd': MetaZone('Volgograd',
-        long: TimeZoneName(
-            generic: 'Време во Волгоград',
-            standard: 'Стандардно време во Волгоград',
-            daylight: 'Летно сметање на времето во Волгоград')),
-    'Vostok':
-        MetaZone('Vostok', long: TimeZoneName(standard: 'Време во Восток')),
-    'Wake': MetaZone('Wake',
-        long: TimeZoneName(standard: 'Време во Островот Вејк')),
-    'Wallis': MetaZone('Wallis',
-        long: TimeZoneName(standard: 'Време во Валис и Футуна')),
-    'Yakutsk': MetaZone('Yakutsk',
-        long: TimeZoneName(
-            generic: 'Време во Јакутск',
-            standard: 'Стандардно време во Јакутск',
-            daylight: 'Летно време во Јакутск')),
-    'Yekaterinburg': MetaZone('Yekaterinburg',
-        long: TimeZoneName(
-            generic: 'Време во Екатеринбург',
-            standard: 'Стандардно време во Екатеринбург',
-            daylight: 'Летно време во Екатеринбург')),
+    'Turkmenistan': MetaZone(
+      'Turkmenistan',
+      long: TimeZoneName(
+        generic: 'Време во Туркменистан',
+        standard: 'Стандардно време во Туркменистан',
+        daylight: 'Летно време во Туркменистан',
+      ),
+    ),
+    'Tuvalu': MetaZone(
+      'Tuvalu',
+      long: TimeZoneName(standard: 'Време во Тувалу'),
+    ),
+    'Uruguay': MetaZone(
+      'Uruguay',
+      long: TimeZoneName(
+        generic: 'Време во Уругвај',
+        standard: 'Стандардно време во Уругвај',
+        daylight: 'Летно сметање на времето во Уругвај',
+      ),
+    ),
+    'Uzbekistan': MetaZone(
+      'Uzbekistan',
+      long: TimeZoneName(
+        generic: 'Време во Узбекистан',
+        standard: 'Стандардно време во Узбекистан',
+        daylight: 'Летно време во Узбекистан',
+      ),
+    ),
+    'Vanuatu': MetaZone(
+      'Vanuatu',
+      long: TimeZoneName(
+        generic: 'Време во Вануату',
+        standard: 'Стандардно време во Вануату',
+        daylight: 'Летно време во Вануату',
+      ),
+    ),
+    'Venezuela': MetaZone(
+      'Venezuela',
+      long: TimeZoneName(standard: 'Време во Венецуела'),
+    ),
+    'Vladivostok': MetaZone(
+      'Vladivostok',
+      long: TimeZoneName(
+        generic: 'Време во Владивосток',
+        standard: 'Стандардно време во Владивосток',
+        daylight: 'Летно време во Владивосток',
+      ),
+    ),
+    'Volgograd': MetaZone(
+      'Volgograd',
+      long: TimeZoneName(
+        generic: 'Време во Волгоград',
+        standard: 'Стандардно време во Волгоград',
+        daylight: 'Летно сметање на времето во Волгоград',
+      ),
+    ),
+    'Vostok': MetaZone(
+      'Vostok',
+      long: TimeZoneName(standard: 'Време во Восток'),
+    ),
+    'Wake': MetaZone(
+      'Wake',
+      long: TimeZoneName(standard: 'Време во Островот Вејк'),
+    ),
+    'Wallis': MetaZone(
+      'Wallis',
+      long: TimeZoneName(standard: 'Време во Валис и Футуна'),
+    ),
+    'Yakutsk': MetaZone(
+      'Yakutsk',
+      long: TimeZoneName(
+        generic: 'Време во Јакутск',
+        standard: 'Стандардно време во Јакутск',
+        daylight: 'Летно време во Јакутск',
+      ),
+    ),
+    'Yekaterinburg': MetaZone(
+      'Yekaterinburg',
+      long: TimeZoneName(
+        generic: 'Време во Екатеринбург',
+        standard: 'Стандардно време во Екатеринбург',
+        daylight: 'Летно време во Екатеринбург',
+      ),
+    ),
     'Yukon': MetaZone('Yukon', long: TimeZoneName(standard: 'Време во Јукон')),
   };
 }

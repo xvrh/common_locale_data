@@ -28,17 +28,21 @@ class CommonLocaleDataSoDJ extends CommonLocaleDataSo {
 class CurrenciesSoDJ extends CurrenciesSo {
   const CurrenciesSoDJ(super.cld);
 
-  static const _djf = Currency(_cld, 'DJF', 'Faran Jabuuti',
-      one: 'faranka Jabuuti', other: 'faranka Jabuuti', symbol: 'Fdj');
+  static const _djf = Currency(
+    _cld,
+    'DJF',
+    'Faran Jabuuti',
+    one: 'faranka Jabuuti',
+    other: 'faranka Jabuuti',
+    symbol: 'Fdj',
+  );
 
   @override
   Currency get djf => _djf;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesSo.staticCurrencies,
-        ...const {
-          'DJF': _djf,
-        }
-      });
+    ...CurrenciesSo.staticCurrencies,
+    ...const {'DJF': _djf},
+  });
 }

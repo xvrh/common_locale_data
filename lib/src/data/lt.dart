@@ -65,6449 +65,6327 @@ class UnitsLt extends Units {
 
   @override
   UnitPrefix get pattern10pMinus1 => const UnitPrefix(
-        long: UnitPrefixPattern('deci{0}'),
-        short: UnitPrefixPattern('d{0}'),
-        narrow: UnitPrefixPattern('d{0}'),
-      );
+    long: UnitPrefixPattern('deci{0}'),
+    short: UnitPrefixPattern('d{0}'),
+    narrow: UnitPrefixPattern('d{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus2 => const UnitPrefix(
-        long: UnitPrefixPattern('centi{0}'),
-        short: UnitPrefixPattern('c{0}'),
-        narrow: UnitPrefixPattern('c{0}'),
-      );
+    long: UnitPrefixPattern('centi{0}'),
+    short: UnitPrefixPattern('c{0}'),
+    narrow: UnitPrefixPattern('c{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus3 => const UnitPrefix(
-        long: UnitPrefixPattern('mili{0}'),
-        short: UnitPrefixPattern('m{0}'),
-        narrow: UnitPrefixPattern('m{0}'),
-      );
+    long: UnitPrefixPattern('mili{0}'),
+    short: UnitPrefixPattern('m{0}'),
+    narrow: UnitPrefixPattern('m{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus6 => const UnitPrefix(
-        long: UnitPrefixPattern('mikro{0}'),
-        short: UnitPrefixPattern('μ{0}'),
-        narrow: UnitPrefixPattern('μ{0}'),
-      );
+    long: UnitPrefixPattern('mikro{0}'),
+    short: UnitPrefixPattern('μ{0}'),
+    narrow: UnitPrefixPattern('μ{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus9 => const UnitPrefix(
-        long: UnitPrefixPattern('nano{0}'),
-        short: UnitPrefixPattern('n{0}'),
-        narrow: UnitPrefixPattern('n{0}'),
-      );
+    long: UnitPrefixPattern('nano{0}'),
+    short: UnitPrefixPattern('n{0}'),
+    narrow: UnitPrefixPattern('n{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus12 => const UnitPrefix(
-        long: UnitPrefixPattern('piko{0}'),
-        short: UnitPrefixPattern('p{0}'),
-        narrow: UnitPrefixPattern('p{0}'),
-      );
+    long: UnitPrefixPattern('piko{0}'),
+    short: UnitPrefixPattern('p{0}'),
+    narrow: UnitPrefixPattern('p{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus15 => const UnitPrefix(
-        long: UnitPrefixPattern('femto{0}'),
-        short: UnitPrefixPattern('f{0}'),
-        narrow: UnitPrefixPattern('f{0}'),
-      );
+    long: UnitPrefixPattern('femto{0}'),
+    short: UnitPrefixPattern('f{0}'),
+    narrow: UnitPrefixPattern('f{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus18 => const UnitPrefix(
-        long: UnitPrefixPattern('ato{0}'),
-        short: UnitPrefixPattern('a{0}'),
-        narrow: UnitPrefixPattern('a{0}'),
-      );
+    long: UnitPrefixPattern('ato{0}'),
+    short: UnitPrefixPattern('a{0}'),
+    narrow: UnitPrefixPattern('a{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus21 => const UnitPrefix(
-        long: UnitPrefixPattern('zepto{0}'),
-        short: UnitPrefixPattern('z{0}'),
-        narrow: UnitPrefixPattern('z{0}'),
-      );
+    long: UnitPrefixPattern('zepto{0}'),
+    short: UnitPrefixPattern('z{0}'),
+    narrow: UnitPrefixPattern('z{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus24 => const UnitPrefix(
-        long: UnitPrefixPattern('jokto{0}'),
-        short: UnitPrefixPattern('y{0}'),
-        narrow: UnitPrefixPattern('y{0}'),
-      );
+    long: UnitPrefixPattern('jokto{0}'),
+    short: UnitPrefixPattern('y{0}'),
+    narrow: UnitPrefixPattern('y{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus27 => const UnitPrefix(
-        long: UnitPrefixPattern('ronto{0}'),
-        short: UnitPrefixPattern('r{0}'),
-        narrow: UnitPrefixPattern('r{0}'),
-      );
+    long: UnitPrefixPattern('ronto{0}'),
+    short: UnitPrefixPattern('r{0}'),
+    narrow: UnitPrefixPattern('r{0}'),
+  );
   @override
   UnitPrefix get pattern10pMinus30 => const UnitPrefix(
-        long: UnitPrefixPattern('kvekto{0}'),
-        short: UnitPrefixPattern('q{0}'),
-        narrow: UnitPrefixPattern('q{0}'),
-      );
+    long: UnitPrefixPattern('kvekto{0}'),
+    short: UnitPrefixPattern('q{0}'),
+    narrow: UnitPrefixPattern('q{0}'),
+  );
   @override
   UnitPrefix get pattern10p1 => const UnitPrefix(
-        long: UnitPrefixPattern('deka{0}'),
-        short: UnitPrefixPattern('da{0}'),
-        narrow: UnitPrefixPattern('da{0}'),
-      );
+    long: UnitPrefixPattern('deka{0}'),
+    short: UnitPrefixPattern('da{0}'),
+    narrow: UnitPrefixPattern('da{0}'),
+  );
   @override
   UnitPrefix get pattern10p2 => const UnitPrefix(
-        long: UnitPrefixPattern('hekto{0}'),
-        short: UnitPrefixPattern('h{0}'),
-        narrow: UnitPrefixPattern('h{0}'),
-      );
+    long: UnitPrefixPattern('hekto{0}'),
+    short: UnitPrefixPattern('h{0}'),
+    narrow: UnitPrefixPattern('h{0}'),
+  );
   @override
   UnitPrefix get pattern10p3 => const UnitPrefix(
-        long: UnitPrefixPattern('kilo{0}'),
-        short: UnitPrefixPattern('k{0}'),
-        narrow: UnitPrefixPattern('k{0}'),
-      );
+    long: UnitPrefixPattern('kilo{0}'),
+    short: UnitPrefixPattern('k{0}'),
+    narrow: UnitPrefixPattern('k{0}'),
+  );
   @override
   UnitPrefix get pattern10p6 => const UnitPrefix(
-        long: UnitPrefixPattern('mega{0}'),
-        short: UnitPrefixPattern('M{0}'),
-        narrow: UnitPrefixPattern('M{0}'),
-      );
+    long: UnitPrefixPattern('mega{0}'),
+    short: UnitPrefixPattern('M{0}'),
+    narrow: UnitPrefixPattern('M{0}'),
+  );
   @override
   UnitPrefix get pattern10p9 => const UnitPrefix(
-        long: UnitPrefixPattern('giga{0}'),
-        short: UnitPrefixPattern('G{0}'),
-        narrow: UnitPrefixPattern('G{0}'),
-      );
+    long: UnitPrefixPattern('giga{0}'),
+    short: UnitPrefixPattern('G{0}'),
+    narrow: UnitPrefixPattern('G{0}'),
+  );
   @override
   UnitPrefix get pattern10p12 => const UnitPrefix(
-        long: UnitPrefixPattern('tera{0}'),
-        short: UnitPrefixPattern('T{0}'),
-        narrow: UnitPrefixPattern('T{0}'),
-      );
+    long: UnitPrefixPattern('tera{0}'),
+    short: UnitPrefixPattern('T{0}'),
+    narrow: UnitPrefixPattern('T{0}'),
+  );
   @override
   UnitPrefix get pattern10p15 => const UnitPrefix(
-        long: UnitPrefixPattern('peta{0}'),
-        short: UnitPrefixPattern('P{0}'),
-        narrow: UnitPrefixPattern('P{0}'),
-      );
+    long: UnitPrefixPattern('peta{0}'),
+    short: UnitPrefixPattern('P{0}'),
+    narrow: UnitPrefixPattern('P{0}'),
+  );
   @override
   UnitPrefix get pattern10p18 => const UnitPrefix(
-        long: UnitPrefixPattern('eksa{0}'),
-        short: UnitPrefixPattern('E{0}'),
-        narrow: UnitPrefixPattern('E{0}'),
-      );
+    long: UnitPrefixPattern('eksa{0}'),
+    short: UnitPrefixPattern('E{0}'),
+    narrow: UnitPrefixPattern('E{0}'),
+  );
   @override
   UnitPrefix get pattern10p21 => const UnitPrefix(
-        long: UnitPrefixPattern('zeta{0}'),
-        short: UnitPrefixPattern('Z{0}'),
-        narrow: UnitPrefixPattern('Z{0}'),
-      );
+    long: UnitPrefixPattern('zeta{0}'),
+    short: UnitPrefixPattern('Z{0}'),
+    narrow: UnitPrefixPattern('Z{0}'),
+  );
   @override
   UnitPrefix get pattern10p24 => const UnitPrefix(
-        long: UnitPrefixPattern('jota{0}'),
-        short: UnitPrefixPattern('Y{0}'),
-        narrow: UnitPrefixPattern('Y{0}'),
-      );
+    long: UnitPrefixPattern('jota{0}'),
+    short: UnitPrefixPattern('Y{0}'),
+    narrow: UnitPrefixPattern('Y{0}'),
+  );
   @override
   UnitPrefix get pattern10p27 => const UnitPrefix(
-        long: UnitPrefixPattern('rona{0}'),
-        short: UnitPrefixPattern('R{0}'),
-        narrow: UnitPrefixPattern('R{0}'),
-      );
+    long: UnitPrefixPattern('rona{0}'),
+    short: UnitPrefixPattern('R{0}'),
+    narrow: UnitPrefixPattern('R{0}'),
+  );
   @override
   UnitPrefix get pattern10p30 => const UnitPrefix(
-        long: UnitPrefixPattern('geta{0}'),
-        short: UnitPrefixPattern('Q{0}'),
-        narrow: UnitPrefixPattern('Q{0}'),
-      );
+    long: UnitPrefixPattern('geta{0}'),
+    short: UnitPrefixPattern('Q{0}'),
+    narrow: UnitPrefixPattern('Q{0}'),
+  );
   @override
   UnitPrefix get pattern1024p1 => const UnitPrefix(
-        long: UnitPrefixPattern('kibi{0}'),
-        short: UnitPrefixPattern('Ki{0}'),
-        narrow: UnitPrefixPattern('Ki{0}'),
-      );
+    long: UnitPrefixPattern('kibi{0}'),
+    short: UnitPrefixPattern('Ki{0}'),
+    narrow: UnitPrefixPattern('Ki{0}'),
+  );
   @override
   UnitPrefix get pattern1024p2 => const UnitPrefix(
-        long: UnitPrefixPattern('mebi{0}'),
-        short: UnitPrefixPattern('Mi{0}'),
-        narrow: UnitPrefixPattern('Mi{0}'),
-      );
+    long: UnitPrefixPattern('mebi{0}'),
+    short: UnitPrefixPattern('Mi{0}'),
+    narrow: UnitPrefixPattern('Mi{0}'),
+  );
   @override
   UnitPrefix get pattern1024p3 => const UnitPrefix(
-        long: UnitPrefixPattern('gibi{0}'),
-        short: UnitPrefixPattern('Gi{0}'),
-        narrow: UnitPrefixPattern('Gi{0}'),
-      );
+    long: UnitPrefixPattern('gibi{0}'),
+    short: UnitPrefixPattern('Gi{0}'),
+    narrow: UnitPrefixPattern('Gi{0}'),
+  );
   @override
   UnitPrefix get pattern1024p4 => const UnitPrefix(
-        long: UnitPrefixPattern('tebi{0}'),
-        short: UnitPrefixPattern('Ti{0}'),
-        narrow: UnitPrefixPattern('Ti{0}'),
-      );
+    long: UnitPrefixPattern('tebi{0}'),
+    short: UnitPrefixPattern('Ti{0}'),
+    narrow: UnitPrefixPattern('Ti{0}'),
+  );
   @override
   UnitPrefix get pattern1024p5 => const UnitPrefix(
-        long: UnitPrefixPattern('pebi{0}'),
-        short: UnitPrefixPattern('Pi{0}'),
-        narrow: UnitPrefixPattern('Pi{0}'),
-      );
+    long: UnitPrefixPattern('pebi{0}'),
+    short: UnitPrefixPattern('Pi{0}'),
+    narrow: UnitPrefixPattern('Pi{0}'),
+  );
   @override
   UnitPrefix get pattern1024p6 => const UnitPrefix(
-        long: UnitPrefixPattern('exbi{0}'),
-        short: UnitPrefixPattern('Ei{0}'),
-        narrow: UnitPrefixPattern('Ei{0}'),
-      );
+    long: UnitPrefixPattern('exbi{0}'),
+    short: UnitPrefixPattern('Ei{0}'),
+    narrow: UnitPrefixPattern('Ei{0}'),
+  );
   @override
   UnitPrefix get pattern1024p7 => const UnitPrefix(
-        long: UnitPrefixPattern('zebi{0}'),
-        short: UnitPrefixPattern('Zi{0}'),
-        narrow: UnitPrefixPattern('Zi{0}'),
-      );
+    long: UnitPrefixPattern('zebi{0}'),
+    short: UnitPrefixPattern('Zi{0}'),
+    narrow: UnitPrefixPattern('Zi{0}'),
+  );
   @override
   UnitPrefix get pattern1024p8 => const UnitPrefix(
-        long: UnitPrefixPattern('yobe{0}'),
-        short: UnitPrefixPattern('Yi{0}'),
-        narrow: UnitPrefixPattern('Yi{0}'),
-      );
+    long: UnitPrefixPattern('yobe{0}'),
+    short: UnitPrefixPattern('Yi{0}'),
+    narrow: UnitPrefixPattern('Yi{0}'),
+  );
   @override
   CompoundUnit get per => const CompoundUnit(
-        long: CompoundUnitPattern('{0}/{1}'),
-        short: CompoundUnitPattern('{0}/{1}'),
-        narrow: CompoundUnitPattern('{0}/{1}'),
-      );
+    long: CompoundUnitPattern('{0}/{1}'),
+    short: CompoundUnitPattern('{0}/{1}'),
+    narrow: CompoundUnitPattern('{0}/{1}'),
+  );
   @override
   CompoundUnit get times => const CompoundUnit(
-        long: CompoundUnitPattern('{0}⋅{1}'),
-        short: CompoundUnitPattern('{0}⋅{1}'),
-        narrow: CompoundUnitPattern('{0}⋅{1}'),
-      );
+    long: CompoundUnitPattern('{0}⋅{1}'),
+    short: CompoundUnitPattern('{0}⋅{1}'),
+    narrow: CompoundUnitPattern('{0}⋅{1}'),
+  );
   @override
   Unit get accelerationGForce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'laisvojo kritimo pagreičiai',
-          one: '{0} laisvojo kritimo pagreitis',
-          few: '{0} laisvojo kritimo pagreičiai',
-          many: '{0} laisvojo kritimo pagreičio',
-          other: '{0} laisvojo kritimo pagreičių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'G',
-          one: '{0} laisvojo kritimo pagreitis',
-          few: '{0} laisvojo kritimo pagreičiai',
-          many: '{0} laisvojo kritimo pagreičio',
-          other: '{0} G',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'G',
-          one: '{0} laisvojo kritimo pagreitis',
-          few: '{0} laisvojo kritimo pagreičiai',
-          many: '{0} laisvojo kritimo pagreičio',
-          other: '{0} G',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'laisvojo kritimo pagreičiai',
+      one: '{0} laisvojo kritimo pagreitis',
+      few: '{0} laisvojo kritimo pagreičiai',
+      many: '{0} laisvojo kritimo pagreičio',
+      other: '{0} laisvojo kritimo pagreičių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'G',
+      one: '{0} laisvojo kritimo pagreitis',
+      few: '{0} laisvojo kritimo pagreičiai',
+      many: '{0} laisvojo kritimo pagreičio',
+      other: '{0} G',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'G',
+      one: '{0} laisvojo kritimo pagreitis',
+      few: '{0} laisvojo kritimo pagreičiai',
+      many: '{0} laisvojo kritimo pagreičio',
+      other: '{0} G',
+    ),
+  );
 
   @override
   Unit get accelerationMeterPerSquareSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'metrai per kvadratinę sekundę',
-          one: '{0} metras per kvadratinę sekundę',
-          few: '{0} m/s²',
-          many: '{0} m/s²',
-          other: '{0} metrų per kvadratinę sekundę',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'm/s²',
-          one: '{0} metras per kvadratinę sekundę',
-          few: '{0} m/s²',
-          many: '{0} m/s²',
-          other: '{0} m/s²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'm/s²',
-          one: '{0} metras per kvadratinę sekundę',
-          few: '{0} m/s²',
-          many: '{0} m/s²',
-          other: '{0} m/s²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'metrai per kvadratinę sekundę',
+      one: '{0} metras per kvadratinę sekundę',
+      few: '{0} m/s²',
+      many: '{0} m/s²',
+      other: '{0} metrų per kvadratinę sekundę',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'm/s²',
+      one: '{0} metras per kvadratinę sekundę',
+      few: '{0} m/s²',
+      many: '{0} m/s²',
+      other: '{0} m/s²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'm/s²',
+      one: '{0} metras per kvadratinę sekundę',
+      few: '{0} m/s²',
+      many: '{0} m/s²',
+      other: '{0} m/s²',
+    ),
+  );
 
   @override
   Unit get angleRevolution => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pilnas apsisukimas',
-          one: '{0} pilnas apsisukimas',
-          few: '{0} pilni apsisukimai',
-          many: '{0} pilno apsisukimo',
-          other: '{0} pilnų apsisukimų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'apsisuk.',
-          one: '{0} apsisuk.',
-          few: '{0} apsisuk.',
-          many: '{0} apsisuk.',
-          other: '{0} apsisuk.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'apsisuk.',
-          one: '{0} apsisuk.',
-          few: '{0} apsisuk.',
-          many: '{0} apsisuk.',
-          other: '{0} apsisuk.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'pilnas apsisukimas',
+      one: '{0} pilnas apsisukimas',
+      few: '{0} pilni apsisukimai',
+      many: '{0} pilno apsisukimo',
+      other: '{0} pilnų apsisukimų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'apsisuk.',
+      one: '{0} apsisuk.',
+      few: '{0} apsisuk.',
+      many: '{0} apsisuk.',
+      other: '{0} apsisuk.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'apsisuk.',
+      one: '{0} apsisuk.',
+      few: '{0} apsisuk.',
+      many: '{0} apsisuk.',
+      other: '{0} apsisuk.',
+    ),
+  );
 
   @override
   Unit get angleRadian => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'radianai',
-          one: '{0} radianas',
-          few: '{0} radianai',
-          many: '{0} radiano',
-          other: '{0} radianų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'rad',
-          one: '{0} radianas',
-          few: '{0} radianai',
-          many: '{0} radiano',
-          other: '{0} rad',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'rad',
-          one: '{0} radianas',
-          few: '{0} radianai',
-          many: '{0} radiano',
-          other: '{0} rad',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'radianai',
+      one: '{0} radianas',
+      few: '{0} radianai',
+      many: '{0} radiano',
+      other: '{0} radianų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'rad',
+      one: '{0} radianas',
+      few: '{0} radianai',
+      many: '{0} radiano',
+      other: '{0} rad',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'rad',
+      one: '{0} radianas',
+      few: '{0} radianai',
+      many: '{0} radiano',
+      other: '{0} rad',
+    ),
+  );
 
   @override
   Unit get angleDegree => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'laipsniai',
-          one: '{0} laipsnis',
-          few: '{0} laipsniai',
-          many: '{0} laipsnio',
-          other: '{0} laipsnių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'laipsniai',
-          one: '{0} laipsnis',
-          few: '{0} laipsniai',
-          many: '{0} laipsnio',
-          other: '{0}°',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'laipsniai',
-          one: '{0} laipsnis',
-          few: '{0} laipsniai',
-          many: '{0} laipsnio',
-          other: '{0}°',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'laipsniai',
+      one: '{0} laipsnis',
+      few: '{0} laipsniai',
+      many: '{0} laipsnio',
+      other: '{0} laipsnių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'laipsniai',
+      one: '{0} laipsnis',
+      few: '{0} laipsniai',
+      many: '{0} laipsnio',
+      other: '{0}°',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'laipsniai',
+      one: '{0} laipsnis',
+      few: '{0} laipsniai',
+      many: '{0} laipsnio',
+      other: '{0}°',
+    ),
+  );
 
   @override
   Unit get angleArcMinute => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kampo minutės',
-          one: '{0} kampo minutė',
-          few: '{0} kampo minutės',
-          many: '{0} kampo minutės',
-          other: '{0} kampo minučių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kampo minutės',
-          one: '{0} kampo minutė',
-          few: '{0} kampo minutės',
-          many: '{0} kampo minutės',
-          other: '{0}′',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kampo minutės',
-          one: '{0} kampo minutė',
-          few: '{0} kampo minutės',
-          many: '{0} kampo minutės',
-          other: '{0}′',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kampo minutės',
+      one: '{0} kampo minutė',
+      few: '{0} kampo minutės',
+      many: '{0} kampo minutės',
+      other: '{0} kampo minučių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kampo minutės',
+      one: '{0} kampo minutė',
+      few: '{0} kampo minutės',
+      many: '{0} kampo minutės',
+      other: '{0}′',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kampo minutės',
+      one: '{0} kampo minutė',
+      few: '{0} kampo minutės',
+      many: '{0} kampo minutės',
+      other: '{0}′',
+    ),
+  );
 
   @override
   Unit get angleArcSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kampo sekundės',
-          one: '{0} kampo sekundė',
-          few: '{0} kampo sekundės',
-          many: '{0} kampo sekundės',
-          other: '{0} kampo sekundžių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kampo sekundės',
-          one: '{0} kampo sekundė',
-          few: '{0} kampo sekundės',
-          many: '{0} kampo sekundės',
-          other: '{0}″',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kampo sekundės',
-          one: '{0} kampo sekundė',
-          few: '{0} kampo sekundės',
-          many: '{0} kampo sekundės',
-          other: '{0}″',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kampo sekundės',
+      one: '{0} kampo sekundė',
+      few: '{0} kampo sekundės',
+      many: '{0} kampo sekundės',
+      other: '{0} kampo sekundžių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kampo sekundės',
+      one: '{0} kampo sekundė',
+      few: '{0} kampo sekundės',
+      many: '{0} kampo sekundės',
+      other: '{0}″',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kampo sekundės',
+      one: '{0} kampo sekundė',
+      few: '{0} kampo sekundės',
+      many: '{0} kampo sekundės',
+      other: '{0}″',
+    ),
+  );
 
   @override
   Unit get areaSquareKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kvadratiniai kilometrai',
-          one: '{0} kvadratinis kilometras',
-          few: '{0} kvadratiniai kilometrai',
-          many: '{0} kvadratinio kilometro',
-          other: '{0} kvadratinių kilometrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kv. km',
-          one: '{0} kv. km',
-          few: '{0} kv. km',
-          many: '{0} kv. km',
-          other: '{0} kv. km',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kv. km',
-          one: '{0} km²',
-          few: '{0} km²',
-          many: '{0} km²',
-          other: '{0} km²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kvadratiniai kilometrai',
+      one: '{0} kvadratinis kilometras',
+      few: '{0} kvadratiniai kilometrai',
+      many: '{0} kvadratinio kilometro',
+      other: '{0} kvadratinių kilometrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kv. km',
+      one: '{0} kv. km',
+      few: '{0} kv. km',
+      many: '{0} kv. km',
+      other: '{0} kv. km',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kv. km',
+      one: '{0} km²',
+      few: '{0} km²',
+      many: '{0} km²',
+      other: '{0} km²',
+    ),
+  );
 
   @override
   Unit get areaHectare => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'hektarai',
-          one: '{0} hektaras',
-          few: '{0} hektarai',
-          many: '{0} hektaro',
-          other: '{0} hektarų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'hektarai',
-          one: '{0} hektaras',
-          few: '{0} hektarai',
-          many: '{0} hektaro',
-          other: '{0} ha',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'hektarai',
-          one: '{0} hektaras',
-          few: '{0} hektarai',
-          many: '{0} hektaro',
-          other: '{0} ha',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'hektarai',
+      one: '{0} hektaras',
+      few: '{0} hektarai',
+      many: '{0} hektaro',
+      other: '{0} hektarų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'hektarai',
+      one: '{0} hektaras',
+      few: '{0} hektarai',
+      many: '{0} hektaro',
+      other: '{0} ha',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'hektarai',
+      one: '{0} hektaras',
+      few: '{0} hektarai',
+      many: '{0} hektaro',
+      other: '{0} ha',
+    ),
+  );
 
   @override
   Unit get areaSquareMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kvadratiniai metrai',
-          one: '{0} kvadratinis metras',
-          few: '{0} kvadratiniai metrai',
-          many: '{0} kvadratinio metro',
-          other: '{0} kvadratinių metrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kv. m',
-          one: '{0} kv. m',
-          few: '{0} kv. m',
-          many: '{0} kv. m',
-          other: '{0} kv. m',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kv. m',
-          one: '{0} m²',
-          few: '{0} m²',
-          many: '{0} m²',
-          other: '{0} m²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kvadratiniai metrai',
+      one: '{0} kvadratinis metras',
+      few: '{0} kvadratiniai metrai',
+      many: '{0} kvadratinio metro',
+      other: '{0} kvadratinių metrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kv. m',
+      one: '{0} kv. m',
+      few: '{0} kv. m',
+      many: '{0} kv. m',
+      other: '{0} kv. m',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kv. m',
+      one: '{0} m²',
+      few: '{0} m²',
+      many: '{0} m²',
+      other: '{0} m²',
+    ),
+  );
 
   @override
   Unit get areaSquareCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kvadratiniai centimetrai',
-          one: '{0} kvadratinis centimetras',
-          few: '{0} kvadratiniai centimetrai',
-          many: '{0} kvadratinio centimetro',
-          other: '{0} kvadratinių centimetrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cm²',
-          one: '{0} kvadratinis centimetras',
-          few: '{0} kvadratiniai centimetrai',
-          many: '{0} kvadratinio centimetro',
-          other: '{0} cm²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cm²',
-          one: '{0} kvadratinis centimetras',
-          few: '{0} kvadratiniai centimetrai',
-          many: '{0} kvadratinio centimetro',
-          other: '{0} cm²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kvadratiniai centimetrai',
+      one: '{0} kvadratinis centimetras',
+      few: '{0} kvadratiniai centimetrai',
+      many: '{0} kvadratinio centimetro',
+      other: '{0} kvadratinių centimetrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cm²',
+      one: '{0} kvadratinis centimetras',
+      few: '{0} kvadratiniai centimetrai',
+      many: '{0} kvadratinio centimetro',
+      other: '{0} cm²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cm²',
+      one: '{0} kvadratinis centimetras',
+      few: '{0} kvadratiniai centimetrai',
+      many: '{0} kvadratinio centimetro',
+      other: '{0} cm²',
+    ),
+  );
 
   @override
   Unit get areaSquareMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kvadratinės mylios',
-          one: '{0} kvadratinė mylia',
-          few: '{0} kvadratinės mylios',
-          many: '{0} kvadratinės mylios',
-          other: '{0} kvadratinių mylių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kv. mylios',
-          one: '{0} kv. my',
-          few: '{0} kv. my',
-          many: '{0} kv. my',
-          other: '{0} kv. my',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kv. mylios',
-          one: '{0} my²',
-          few: '{0} my²',
-          many: '{0} my²',
-          other: '{0} my²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kvadratinės mylios',
+      one: '{0} kvadratinė mylia',
+      few: '{0} kvadratinės mylios',
+      many: '{0} kvadratinės mylios',
+      other: '{0} kvadratinių mylių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kv. mylios',
+      one: '{0} kv. my',
+      few: '{0} kv. my',
+      many: '{0} kv. my',
+      other: '{0} kv. my',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kv. mylios',
+      one: '{0} my²',
+      few: '{0} my²',
+      many: '{0} my²',
+      other: '{0} my²',
+    ),
+  );
 
   @override
   Unit get areaAcre => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'akrai',
-          one: '{0} akras',
-          few: '{0} akrai',
-          many: '{0} akro',
-          other: '{0} akrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'akrai',
-          one: '{0} akr.',
-          few: '{0} akr.',
-          many: '{0} akr.',
-          other: '{0} akr.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'akras',
-          one: '{0} ak',
-          few: '{0} ak',
-          many: '{0} ak',
-          other: '{0} ak',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'akrai',
+      one: '{0} akras',
+      few: '{0} akrai',
+      many: '{0} akro',
+      other: '{0} akrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'akrai',
+      one: '{0} akr.',
+      few: '{0} akr.',
+      many: '{0} akr.',
+      other: '{0} akr.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'akras',
+      one: '{0} ak',
+      few: '{0} ak',
+      many: '{0} ak',
+      other: '{0} ak',
+    ),
+  );
 
   @override
   Unit get areaSquareYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kvadratiniai jardai',
-          one: '{0} kvadratinis jardas',
-          few: '{0} kvadratiniai jardai',
-          many: '{0} kvadratinio jardo',
-          other: '{0} yd²',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'yd²',
-          one: '{0} kvadratinis jardas',
-          few: '{0} kvadratiniai jardai',
-          many: '{0} kvadratinio jardo',
-          other: '{0} yd²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'yd²',
-          one: '{0} kvadratinis jardas',
-          few: '{0} kvadratiniai jardai',
-          many: '{0} kvadratinio jardo',
-          other: '{0} yd²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kvadratiniai jardai',
+      one: '{0} kvadratinis jardas',
+      few: '{0} kvadratiniai jardai',
+      many: '{0} kvadratinio jardo',
+      other: '{0} yd²',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'yd²',
+      one: '{0} kvadratinis jardas',
+      few: '{0} kvadratiniai jardai',
+      many: '{0} kvadratinio jardo',
+      other: '{0} yd²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'yd²',
+      one: '{0} kvadratinis jardas',
+      few: '{0} kvadratiniai jardai',
+      many: '{0} kvadratinio jardo',
+      other: '{0} yd²',
+    ),
+  );
 
   @override
   Unit get areaSquareFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kvadratinės pėdos',
-          one: '{0} kvadratinė pėda',
-          few: '{0} kvadratinės pėdos',
-          many: '{0} kvadratinės pėdos',
-          other: '{0} kvadratinių pėdų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kv. pėda',
-          one: '{0} kv. pėda',
-          few: '{0} kv. pėdos',
-          many: '{0} kv. pėdos',
-          other: '{0} kv. pėdų',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kv. pėda',
-          one: '{0} ft²',
-          few: '{0} ft²',
-          many: '{0} ft²',
-          other: '{0} ft²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kvadratinės pėdos',
+      one: '{0} kvadratinė pėda',
+      few: '{0} kvadratinės pėdos',
+      many: '{0} kvadratinės pėdos',
+      other: '{0} kvadratinių pėdų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kv. pėda',
+      one: '{0} kv. pėda',
+      few: '{0} kv. pėdos',
+      many: '{0} kv. pėdos',
+      other: '{0} kv. pėdų',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kv. pėda',
+      one: '{0} ft²',
+      few: '{0} ft²',
+      many: '{0} ft²',
+      other: '{0} ft²',
+    ),
+  );
 
   @override
   Unit get areaSquareInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kvadratiniai coliai',
-          one: '{0} kvadratinis colis',
-          few: '{0} kvadratiniai coliai',
-          many: '{0} kvadratinio colio',
-          other: '{0} kvadratinių colių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'in²',
-          one: '{0} kvadratinis colis',
-          few: '{0} kvadratiniai coliai',
-          many: '{0} kvadratinio colio',
-          other: '{0} in²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'in²',
-          one: '{0} kvadratinis colis',
-          few: '{0} kvadratiniai coliai',
-          many: '{0} kvadratinio colio',
-          other: '{0} in²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kvadratiniai coliai',
+      one: '{0} kvadratinis colis',
+      few: '{0} kvadratiniai coliai',
+      many: '{0} kvadratinio colio',
+      other: '{0} kvadratinių colių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'in²',
+      one: '{0} kvadratinis colis',
+      few: '{0} kvadratiniai coliai',
+      many: '{0} kvadratinio colio',
+      other: '{0} in²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'in²',
+      one: '{0} kvadratinis colis',
+      few: '{0} kvadratiniai coliai',
+      many: '{0} kvadratinio colio',
+      other: '{0} in²',
+    ),
+  );
 
   @override
   Unit get areaDunam => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'dunamai',
-          one: '{0} dunamas',
-          few: '{0} dunamai',
-          many: '{0} dunamo',
-          other: '{0} dunamų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dunamai',
-          one: '{0} dunamas',
-          few: '{0} dunamai',
-          many: '{0} dunamo',
-          other: '{0} dunamų',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dunamai',
-          one: '{0} dunamas',
-          few: '{0} dunamai',
-          many: '{0} dunamo',
-          other: '{0} dunamų',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'dunamai',
+      one: '{0} dunamas',
+      few: '{0} dunamai',
+      many: '{0} dunamo',
+      other: '{0} dunamų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dunamai',
+      one: '{0} dunamas',
+      few: '{0} dunamai',
+      many: '{0} dunamo',
+      other: '{0} dunamų',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'dunamai',
+      one: '{0} dunamas',
+      few: '{0} dunamai',
+      many: '{0} dunamo',
+      other: '{0} dunamų',
+    ),
+  );
 
   @override
   Unit get concentrKarat => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'karatai',
-          one: '{0} karatas',
-          few: '{0} karatai',
-          many: '{0} karato',
-          other: '{0} karatų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kt',
-          one: '{0} karatas',
-          few: '{0} karatai',
-          many: '{0} karato',
-          other: '{0} kt',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kt',
-          one: '{0} karatas',
-          few: '{0} karatai',
-          many: '{0} karato',
-          other: '{0} kt',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'karatai',
+      one: '{0} karatas',
+      few: '{0} karatai',
+      many: '{0} karato',
+      other: '{0} karatų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kt',
+      one: '{0} karatas',
+      few: '{0} karatai',
+      many: '{0} karato',
+      other: '{0} kt',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kt',
+      one: '{0} karatas',
+      few: '{0} karatai',
+      many: '{0} karato',
+      other: '{0} kt',
+    ),
+  );
 
   @override
   Unit get concentrMilligramOfglucosePerDeciliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'miligramai decilitre',
-          one: '{0} miligramas decilitre',
-          few: '{0} miligramai decilitre',
-          many: '{0} miligramo decilitre',
-          other: '{0} miligramų decilitre',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mg/dl',
-          one: '{0} mg/dl',
-          few: '{0} mg/dl',
-          many: '{0} mg/dl',
-          other: '{0} mg/dl',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mg/dl',
-          one: '{0} mg/dl',
-          few: '{0} mg/dl',
-          many: '{0} mg/dl',
-          other: '{0} mg/dl',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'miligramai decilitre',
+      one: '{0} miligramas decilitre',
+      few: '{0} miligramai decilitre',
+      many: '{0} miligramo decilitre',
+      other: '{0} miligramų decilitre',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mg/dl',
+      one: '{0} mg/dl',
+      few: '{0} mg/dl',
+      many: '{0} mg/dl',
+      other: '{0} mg/dl',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mg/dl',
+      one: '{0} mg/dl',
+      few: '{0} mg/dl',
+      many: '{0} mg/dl',
+      other: '{0} mg/dl',
+    ),
+  );
 
   @override
   Unit get concentrMillimolePerLiter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'milimoliai litre',
-          one: '{0} milimolis litre',
-          few: '{0} milimoliai litre',
-          many: '{0} milimoliai litre',
-          other: '{0} milimolių litre',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mmol/l',
-          one: '{0} mmol/l',
-          few: '{0} mmol/l',
-          many: '{0} mmol/l',
-          other: '{0} mmol/l',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mmol/l',
-          one: '{0} mmol/l',
-          few: '{0} mmol/l',
-          many: '{0} mmol/l',
-          other: '{0} mmol/l',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'milimoliai litre',
+      one: '{0} milimolis litre',
+      few: '{0} milimoliai litre',
+      many: '{0} milimoliai litre',
+      other: '{0} milimolių litre',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mmol/l',
+      one: '{0} mmol/l',
+      few: '{0} mmol/l',
+      many: '{0} mmol/l',
+      other: '{0} mmol/l',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mmol/l',
+      one: '{0} mmol/l',
+      few: '{0} mmol/l',
+      many: '{0} mmol/l',
+      other: '{0} mmol/l',
+    ),
+  );
 
   @override
   Unit get concentrItem => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'elementas',
-          one: '{0} elementas',
-          few: '{0} elementai',
-          many: '{0} elemento',
-          other: '{0} elementų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'elementas',
-          one: '{0} elem.',
-          few: '{0} elem.',
-          many: '{0} elem.',
-          other: '{0} elem.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'elementas',
-          one: '{0} elem.',
-          few: '{0} elem.',
-          many: '{0} elem.',
-          other: '{0} elem.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'elementas',
+      one: '{0} elementas',
+      few: '{0} elementai',
+      many: '{0} elemento',
+      other: '{0} elementų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'elementas',
+      one: '{0} elem.',
+      few: '{0} elem.',
+      many: '{0} elem.',
+      other: '{0} elem.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'elementas',
+      one: '{0} elem.',
+      few: '{0} elem.',
+      many: '{0} elem.',
+      other: '{0} elem.',
+    ),
+  );
 
   @override
   Unit get concentrPermillion => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'milijoninės dalys',
-          one: '{0} milijoninė dalis',
-          few: '{0} milijoninės dalys',
-          many: '{0} milijoninės dalies',
-          other: '{0} milijoninių dalių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ppm',
-          one: '{0} milijoninė dalis',
-          few: '{0} milijoninės dalys',
-          many: '{0} milijoninės dalies',
-          other: '{0} ppm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ppm',
-          one: '{0} milijoninė dalis',
-          few: '{0} milijoninės dalys',
-          many: '{0} milijoninės dalies',
-          other: '{0} ppm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'milijoninės dalys',
+      one: '{0} milijoninė dalis',
+      few: '{0} milijoninės dalys',
+      many: '{0} milijoninės dalies',
+      other: '{0} milijoninių dalių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ppm',
+      one: '{0} milijoninė dalis',
+      few: '{0} milijoninės dalys',
+      many: '{0} milijoninės dalies',
+      other: '{0} ppm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ppm',
+      one: '{0} milijoninė dalis',
+      few: '{0} milijoninės dalys',
+      many: '{0} milijoninės dalies',
+      other: '{0} ppm',
+    ),
+  );
 
   @override
   Unit get concentrPercent => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'procentas',
-          one: '{0} procentas',
-          few: '{0} procentai',
-          many: '{0} procento',
-          other: '{0} procentas',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'procentas',
-          one: '{0} %',
-          few: '{0} %',
-          many: '{0} %',
-          other: '{0} %',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '%',
-          one: '{0} %',
-          few: '{0} %',
-          many: '{0} %',
-          other: '{0} %',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'procentas',
+      one: '{0} procentas',
+      few: '{0} procentai',
+      many: '{0} procento',
+      other: '{0} procentas',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'procentas',
+      one: '{0} %',
+      few: '{0} %',
+      many: '{0} %',
+      other: '{0} %',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '%',
+      one: '{0} %',
+      few: '{0} %',
+      many: '{0} %',
+      other: '{0} %',
+    ),
+  );
 
   @override
   Unit get concentrPermille => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'promilė',
-          one: '{0} promilė',
-          few: '{0} promilės',
-          many: '{0} promilės',
-          other: '{0} promilių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'promilė',
-          one: '{0} ‰',
-          few: '{0} ‰',
-          many: '{0} ‰',
-          other: '{0} ‰',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'promilė',
-          one: '{0} ‰',
-          few: '{0} ‰',
-          many: '{0} ‰',
-          other: '{0} ‰',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'promilė',
+      one: '{0} promilė',
+      few: '{0} promilės',
+      many: '{0} promilės',
+      other: '{0} promilių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'promilė',
+      one: '{0} ‰',
+      few: '{0} ‰',
+      many: '{0} ‰',
+      other: '{0} ‰',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'promilė',
+      one: '{0} ‰',
+      few: '{0} ‰',
+      many: '{0} ‰',
+      other: '{0} ‰',
+    ),
+  );
 
   @override
   Unit get concentrPermyriad => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '‱',
-          one: '{0} permyriad',
-          other: '{0}‱',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '‱',
-          one: '{0}‱',
-          other: '{0}‱',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '‱',
-          one: '{0}‱',
-          other: '{0}‱',
-        ),
-      );
+    long: UnitCountPattern(_locale, '‱', one: '{0} permyriad', other: '{0}‱'),
+    short: UnitCountPattern(_locale, '‱', one: '{0}‱', other: '{0}‱'),
+    narrow: UnitCountPattern(_locale, '‱', one: '{0}‱', other: '{0}‱'),
+  );
 
   @override
   Unit get concentrMole => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'moliai',
-          one: '{0} molis',
-          few: '{0} moliai',
-          many: '{0} molio',
-          other: '{0} molių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mol',
-          one: '{0} molis',
-          few: '{0} moliai',
-          many: '{0} molio',
-          other: '{0} mol',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mol',
-          one: '{0} molis',
-          few: '{0} moliai',
-          many: '{0} molio',
-          other: '{0} mol',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'moliai',
+      one: '{0} molis',
+      few: '{0} moliai',
+      many: '{0} molio',
+      other: '{0} molių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mol',
+      one: '{0} molis',
+      few: '{0} moliai',
+      many: '{0} molio',
+      other: '{0} mol',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mol',
+      one: '{0} molis',
+      few: '{0} moliai',
+      many: '{0} molio',
+      other: '{0} mol',
+    ),
+  );
 
   @override
   Unit get consumptionLiterPerKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'litrai kilometrui',
-          one: '{0} litras kilometrui',
-          few: '{0} litrai kilometrui',
-          many: '{0} litro kilometrui',
-          other: '{0} litrų kilometrui',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'l/km',
-          one: '{0} l/km',
-          few: '{0} l/km',
-          many: '{0} l/km',
-          other: '{0} l/km',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'l/km',
-          one: '{0} l/km',
-          few: '{0} l/km',
-          many: '{0} l/km',
-          other: '{0} l/km',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'litrai kilometrui',
+      one: '{0} litras kilometrui',
+      few: '{0} litrai kilometrui',
+      many: '{0} litro kilometrui',
+      other: '{0} litrų kilometrui',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'l/km',
+      one: '{0} l/km',
+      few: '{0} l/km',
+      many: '{0} l/km',
+      other: '{0} l/km',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'l/km',
+      one: '{0} l/km',
+      few: '{0} l/km',
+      many: '{0} l/km',
+      other: '{0} l/km',
+    ),
+  );
 
   @override
   Unit get consumptionLiterPer100Kilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'litrai 100 kilometrų',
-          one: '{0} litras 100 kilometrų',
-          few: '{0} litrai 100 kilometrų',
-          many: '{0} litro 100 kilometrų',
-          other: '{0} litrų 100 kilometrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'l/100 km',
-          one: '{0} l/100 km',
-          few: '{0} l/100 km',
-          many: '{0} l/100 km',
-          other: '{0} l/100 km',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'l/100 km',
-          one: '{0} l/100 km',
-          few: '{0} l/100 km',
-          many: '{0} l/100 km',
-          other: '{0} l/100 km',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'litrai 100 kilometrų',
+      one: '{0} litras 100 kilometrų',
+      few: '{0} litrai 100 kilometrų',
+      many: '{0} litro 100 kilometrų',
+      other: '{0} litrų 100 kilometrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'l/100 km',
+      one: '{0} l/100 km',
+      few: '{0} l/100 km',
+      many: '{0} l/100 km',
+      other: '{0} l/100 km',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'l/100 km',
+      one: '{0} l/100 km',
+      few: '{0} l/100 km',
+      many: '{0} l/100 km',
+      other: '{0} l/100 km',
+    ),
+  );
 
   @override
   Unit get consumptionMilePerGallon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mylios už galoną',
-          one: '{0} mylia už galoną',
-          few: '{0} mylios už galoną',
-          many: '{0} mylios už galoną',
-          other: '{0} mylių už galoną',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'my/gal',
-          one: '{0} my/gal',
-          few: '{0} my/gal',
-          many: '{0} my/gal',
-          other: '{0} my/gal',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'my/gal',
-          one: '{0} mi/gal',
-          few: '{0} mi/gal',
-          many: '{0} mi/gal',
-          other: '{0} mi/gal',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mylios už galoną',
+      one: '{0} mylia už galoną',
+      few: '{0} mylios už galoną',
+      many: '{0} mylios už galoną',
+      other: '{0} mylių už galoną',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'my/gal',
+      one: '{0} my/gal',
+      few: '{0} my/gal',
+      many: '{0} my/gal',
+      other: '{0} my/gal',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'my/gal',
+      one: '{0} mi/gal',
+      few: '{0} mi/gal',
+      many: '{0} mi/gal',
+      other: '{0} mi/gal',
+    ),
+  );
 
   @override
   Unit get consumptionMilePerGallonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mylios už imperinį galoną',
-          one: '{0} mylia už imperinį galoną',
-          few: '{0} mylios už imperinį galoną',
-          many: '{0} mylios už imperinį galoną',
-          other: '{0} mylių už imperinį galoną',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'my/imp. g',
-          one: '{0} my/imp. g',
-          few: '{0} my/imp. g',
-          many: '{0} my/imp. g',
-          other: '{0} my/imp. g',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'my/imp. g',
-          one: '{0} my/imp. g',
-          few: '{0} my/imp. g',
-          many: '{0} my/imp. g',
-          other: '{0} my/imp. g',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mylios už imperinį galoną',
+      one: '{0} mylia už imperinį galoną',
+      few: '{0} mylios už imperinį galoną',
+      many: '{0} mylios už imperinį galoną',
+      other: '{0} mylių už imperinį galoną',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'my/imp. g',
+      one: '{0} my/imp. g',
+      few: '{0} my/imp. g',
+      many: '{0} my/imp. g',
+      other: '{0} my/imp. g',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'my/imp. g',
+      one: '{0} my/imp. g',
+      few: '{0} my/imp. g',
+      many: '{0} my/imp. g',
+      other: '{0} my/imp. g',
+    ),
+  );
 
   @override
   Unit get digitalPetabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pentabaitai',
-          one: '{0} pentabaitas',
-          few: '{0} PB',
-          many: '{0} PB',
-          other: '{0} pentabaitų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Petabaitas',
-          one: '{0} pentabaitas',
-          few: '{0} PB',
-          many: '{0} PB',
-          other: '{0} PB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Petabaitas',
-          one: '{0} pentabaitas',
-          few: '{0} PB',
-          many: '{0} PB',
-          other: '{0} PB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'pentabaitai',
+      one: '{0} pentabaitas',
+      few: '{0} PB',
+      many: '{0} PB',
+      other: '{0} pentabaitų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Petabaitas',
+      one: '{0} pentabaitas',
+      few: '{0} PB',
+      many: '{0} PB',
+      other: '{0} PB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Petabaitas',
+      one: '{0} pentabaitas',
+      few: '{0} PB',
+      many: '{0} PB',
+      other: '{0} PB',
+    ),
+  );
 
   @override
   Unit get digitalTerabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'terabaitai',
-          one: '{0} terabaitas',
-          few: '{0} terabaitai',
-          many: '{0} terabaito',
-          other: '{0} terabaitų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'TB',
-          one: '{0} terabaitas',
-          few: '{0} terabaitai',
-          many: '{0} terabaito',
-          other: '{0} TB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'TB',
-          one: '{0} terabaitas',
-          few: '{0} terabaitai',
-          many: '{0} terabaito',
-          other: '{0} TB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'terabaitai',
+      one: '{0} terabaitas',
+      few: '{0} terabaitai',
+      many: '{0} terabaito',
+      other: '{0} terabaitų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'TB',
+      one: '{0} terabaitas',
+      few: '{0} terabaitai',
+      many: '{0} terabaito',
+      other: '{0} TB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'TB',
+      one: '{0} terabaitas',
+      few: '{0} terabaitai',
+      many: '{0} terabaito',
+      other: '{0} TB',
+    ),
+  );
 
   @override
   Unit get digitalTerabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'terabitai',
-          one: '{0} terabitas',
-          few: '{0} terabitai',
-          many: '{0} terabito',
-          other: '{0} terabitų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Tb',
-          one: '{0} terabitas',
-          few: '{0} terabitai',
-          many: '{0} terabito',
-          other: '{0} Tb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Tb',
-          one: '{0} terabitas',
-          few: '{0} terabitai',
-          many: '{0} terabito',
-          other: '{0} Tb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'terabitai',
+      one: '{0} terabitas',
+      few: '{0} terabitai',
+      many: '{0} terabito',
+      other: '{0} terabitų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Tb',
+      one: '{0} terabitas',
+      few: '{0} terabitai',
+      many: '{0} terabito',
+      other: '{0} Tb',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Tb',
+      one: '{0} terabitas',
+      few: '{0} terabitai',
+      many: '{0} terabito',
+      other: '{0} Tb',
+    ),
+  );
 
   @override
   Unit get digitalGigabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'gigabaitai',
-          one: '{0} gigabaitas',
-          few: '{0} gigabaitai',
-          many: '{0} gigabaito',
-          other: '{0} gigabaitų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'GB',
-          one: '{0} gigabaitas',
-          few: '{0} gigabaitai',
-          many: '{0} gigabaito',
-          other: '{0} GB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'GB',
-          one: '{0} gigabaitas',
-          few: '{0} gigabaitai',
-          many: '{0} gigabaito',
-          other: '{0} GB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'gigabaitai',
+      one: '{0} gigabaitas',
+      few: '{0} gigabaitai',
+      many: '{0} gigabaito',
+      other: '{0} gigabaitų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'GB',
+      one: '{0} gigabaitas',
+      few: '{0} gigabaitai',
+      many: '{0} gigabaito',
+      other: '{0} GB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'GB',
+      one: '{0} gigabaitas',
+      few: '{0} gigabaitai',
+      many: '{0} gigabaito',
+      other: '{0} GB',
+    ),
+  );
 
   @override
   Unit get digitalGigabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'gigabitai',
-          one: '{0} gigabitas',
-          few: '{0} gigabitai',
-          many: '{0} gigabito',
-          other: '{0} gigabitų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Gb',
-          one: '{0} gigabitas',
-          few: '{0} gigabitai',
-          many: '{0} gigabito',
-          other: '{0} Gb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Gb',
-          one: '{0} gigabitas',
-          few: '{0} gigabitai',
-          many: '{0} gigabito',
-          other: '{0} Gb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'gigabitai',
+      one: '{0} gigabitas',
+      few: '{0} gigabitai',
+      many: '{0} gigabito',
+      other: '{0} gigabitų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Gb',
+      one: '{0} gigabitas',
+      few: '{0} gigabitai',
+      many: '{0} gigabito',
+      other: '{0} Gb',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Gb',
+      one: '{0} gigabitas',
+      few: '{0} gigabitai',
+      many: '{0} gigabito',
+      other: '{0} Gb',
+    ),
+  );
 
   @override
   Unit get digitalMegabyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'megabaitai',
-          one: '{0} megabaitas',
-          few: '{0} megabaitai',
-          many: '{0} megabaito',
-          other: '{0} megabaitų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'MB',
-          one: '{0} megabaitas',
-          few: '{0} megabaitai',
-          many: '{0} megabaito',
-          other: '{0} MB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MB',
-          one: '{0} megabaitas',
-          few: '{0} megabaitai',
-          many: '{0} megabaito',
-          other: '{0} MB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'megabaitai',
+      one: '{0} megabaitas',
+      few: '{0} megabaitai',
+      many: '{0} megabaito',
+      other: '{0} megabaitų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'MB',
+      one: '{0} megabaitas',
+      few: '{0} megabaitai',
+      many: '{0} megabaito',
+      other: '{0} MB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'MB',
+      one: '{0} megabaitas',
+      few: '{0} megabaitai',
+      many: '{0} megabaito',
+      other: '{0} MB',
+    ),
+  );
 
   @override
   Unit get digitalMegabit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'megabitai',
-          one: '{0} megabitas',
-          few: '{0} megabitai',
-          many: '{0} megabito',
-          other: '{0} megabitų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Mb',
-          one: '{0} megabitas',
-          few: '{0} megabitai',
-          many: '{0} megabito',
-          other: '{0} Mb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Mb',
-          one: '{0} megabitas',
-          few: '{0} megabitai',
-          many: '{0} megabito',
-          other: '{0} Mb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'megabitai',
+      one: '{0} megabitas',
+      few: '{0} megabitai',
+      many: '{0} megabito',
+      other: '{0} megabitų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Mb',
+      one: '{0} megabitas',
+      few: '{0} megabitai',
+      many: '{0} megabito',
+      other: '{0} Mb',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Mb',
+      one: '{0} megabitas',
+      few: '{0} megabitai',
+      many: '{0} megabito',
+      other: '{0} Mb',
+    ),
+  );
 
   @override
   Unit get digitalKilobyte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kilobaitai',
-          one: '{0} kilobaitas',
-          few: '{0} kilobaitai',
-          many: '{0} kilobaito',
-          other: '{0} kilobaitų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kB',
-          one: '{0} kilobaitas',
-          few: '{0} kilobaitai',
-          many: '{0} kilobaito',
-          other: '{0} kB',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kB',
-          one: '{0} kilobaitas',
-          few: '{0} kilobaitai',
-          many: '{0} kilobaito',
-          other: '{0} kB',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kilobaitai',
+      one: '{0} kilobaitas',
+      few: '{0} kilobaitai',
+      many: '{0} kilobaito',
+      other: '{0} kilobaitų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kB',
+      one: '{0} kilobaitas',
+      few: '{0} kilobaitai',
+      many: '{0} kilobaito',
+      other: '{0} kB',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kB',
+      one: '{0} kilobaitas',
+      few: '{0} kilobaitai',
+      many: '{0} kilobaito',
+      other: '{0} kB',
+    ),
+  );
 
   @override
   Unit get digitalKilobit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kilobitai',
-          one: '{0} kilobitas',
-          few: '{0} kilobitai',
-          many: '{0} kilobito',
-          other: '{0} kilobitų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kb',
-          one: '{0} kilobitas',
-          few: '{0} kilobitai',
-          many: '{0} kilobito',
-          other: '{0} kb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kb',
-          one: '{0} kilobitas',
-          few: '{0} kilobitai',
-          many: '{0} kilobito',
-          other: '{0} kb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kilobitai',
+      one: '{0} kilobitas',
+      few: '{0} kilobitai',
+      many: '{0} kilobito',
+      other: '{0} kilobitų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kb',
+      one: '{0} kilobitas',
+      few: '{0} kilobitai',
+      many: '{0} kilobito',
+      other: '{0} kb',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kb',
+      one: '{0} kilobitas',
+      few: '{0} kilobitai',
+      many: '{0} kilobito',
+      other: '{0} kb',
+    ),
+  );
 
   @override
   Unit get digitalByte => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'baitai',
-          one: '{0} baitas',
-          few: '{0} baitai',
-          many: '{0} baito',
-          other: '{0} baitų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'B',
-          one: '{0} B',
-          few: '{0} B',
-          many: '{0} B',
-          other: '{0} B',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'B',
-          one: '{0} B',
-          few: '{0} B',
-          many: '{0} B',
-          other: '{0} B',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'baitai',
+      one: '{0} baitas',
+      few: '{0} baitai',
+      many: '{0} baito',
+      other: '{0} baitų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'B',
+      one: '{0} B',
+      few: '{0} B',
+      many: '{0} B',
+      other: '{0} B',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'B',
+      one: '{0} B',
+      few: '{0} B',
+      many: '{0} B',
+      other: '{0} B',
+    ),
+  );
 
   @override
   Unit get digitalBit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'bitai',
-          one: '{0} bitas',
-          few: '{0} bitai',
-          many: '{0} bito',
-          other: '{0} bitų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'bitai',
-          one: '{0} b',
-          few: '{0} b',
-          many: '{0} b',
-          other: '{0} b',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'bitai',
-          one: '{0} b',
-          few: '{0} b',
-          many: '{0} b',
-          other: '{0} b',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'bitai',
+      one: '{0} bitas',
+      few: '{0} bitai',
+      many: '{0} bito',
+      other: '{0} bitų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'bitai',
+      one: '{0} b',
+      few: '{0} b',
+      many: '{0} b',
+      other: '{0} b',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'bitai',
+      one: '{0} b',
+      few: '{0} b',
+      many: '{0} b',
+      other: '{0} b',
+    ),
+  );
 
   @override
   Unit get durationCentury => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'amžiai',
-          one: '{0} amžius',
-          few: '{0} amžiai',
-          many: '{0} amžiaus',
-          other: '{0} amžių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'a.',
-          one: '{0} a.',
-          few: '{0} a.',
-          many: '{0} a.',
-          other: '{0} a.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'a.',
-          one: '{0} a.',
-          few: '{0} a.',
-          many: '{0} a.',
-          other: '{0} a.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'amžiai',
+      one: '{0} amžius',
+      few: '{0} amžiai',
+      many: '{0} amžiaus',
+      other: '{0} amžių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'a.',
+      one: '{0} a.',
+      few: '{0} a.',
+      many: '{0} a.',
+      other: '{0} a.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'a.',
+      one: '{0} a.',
+      few: '{0} a.',
+      many: '{0} a.',
+      other: '{0} a.',
+    ),
+  );
 
   @override
   Unit get durationDecade => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'dekados',
-          one: '{0} dekada',
-          few: '{0} dekados',
-          many: '{0} dekados',
-          other: '{0} dekadų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dekados',
-          one: '{0} dek.',
-          few: '{0} dek.',
-          many: '{0} dek.',
-          other: '{0} dek.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dekados',
-          one: '{0} dek.',
-          few: '{0} dek.',
-          many: '{0} dek.',
-          other: '{0} dek.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'dekados',
+      one: '{0} dekada',
+      few: '{0} dekados',
+      many: '{0} dekados',
+      other: '{0} dekadų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dekados',
+      one: '{0} dek.',
+      few: '{0} dek.',
+      many: '{0} dek.',
+      other: '{0} dek.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'dekados',
+      one: '{0} dek.',
+      few: '{0} dek.',
+      many: '{0} dek.',
+      other: '{0} dek.',
+    ),
+  );
 
   @override
   Unit get durationYear => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'metai',
-          one: '{0} metai',
-          few: '{0} metai',
-          many: '{0} metų',
-          other: '{0} metų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'metai',
-          one: '{0} m.',
-          few: '{0} m.',
-          many: '{0} m.',
-          other: '{0} m.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'metai',
-          one: '{0} m.',
-          few: '{0} m.',
-          many: '{0} m.',
-          other: '{0} m.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'metai',
+      one: '{0} metai',
+      few: '{0} metai',
+      many: '{0} metų',
+      other: '{0} metų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'metai',
+      one: '{0} m.',
+      few: '{0} m.',
+      many: '{0} m.',
+      other: '{0} m.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'metai',
+      one: '{0} m.',
+      few: '{0} m.',
+      many: '{0} m.',
+      other: '{0} m.',
+    ),
+  );
 
   @override
   Unit get durationQuarter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ketvirtis',
-          one: '{0} ketvirtis',
-          few: '{0} ketvirčiai',
-          many: '{0} ketvirčio',
-          other: '{0} ketvirčių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ketv.',
-          one: '{0} ketv.',
-          few: '{0} ketv.',
-          many: '{0} ketv.',
-          other: '{0} ketv.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ketv.',
-          one: '{0} ketv.',
-          few: '{0} ketv.',
-          many: '{0} ketv.',
-          other: '{0} ketv.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ketvirtis',
+      one: '{0} ketvirtis',
+      few: '{0} ketvirčiai',
+      many: '{0} ketvirčio',
+      other: '{0} ketvirčių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ketv.',
+      one: '{0} ketv.',
+      few: '{0} ketv.',
+      many: '{0} ketv.',
+      other: '{0} ketv.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ketv.',
+      one: '{0} ketv.',
+      few: '{0} ketv.',
+      many: '{0} ketv.',
+      other: '{0} ketv.',
+    ),
+  );
 
   @override
   Unit get durationMonth => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mėnesiai',
-          one: '{0} mėnuo',
-          few: '{0} mėnesiai',
-          many: '{0} mėnesio',
-          other: '{0} mėnesių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mėnesiai',
-          one: '{0} mėn.',
-          few: '{0} mėn.',
-          many: '{0} mėn.',
-          other: '{0} mėn.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mėnuo',
-          one: '{0} mėn.',
-          few: '{0} mėn.',
-          many: '{0} mėn.',
-          other: '{0} mėn.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mėnesiai',
+      one: '{0} mėnuo',
+      few: '{0} mėnesiai',
+      many: '{0} mėnesio',
+      other: '{0} mėnesių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mėnesiai',
+      one: '{0} mėn.',
+      few: '{0} mėn.',
+      many: '{0} mėn.',
+      other: '{0} mėn.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mėnuo',
+      one: '{0} mėn.',
+      few: '{0} mėn.',
+      many: '{0} mėn.',
+      other: '{0} mėn.',
+    ),
+  );
 
   @override
   Unit get durationWeek => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'savaitės',
-          one: '{0} savaitė',
-          few: '{0} savaitės',
-          many: '{0} savaitės',
-          other: '{0} savaičių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'savaitės',
-          one: '{0} sav.',
-          few: '{0} sav.',
-          many: '{0} sav.',
-          other: '{0} sav.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'sav.',
-          one: '{0} sav.',
-          few: '{0} sav.',
-          many: '{0} sav.',
-          other: '{0} sav.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'savaitės',
+      one: '{0} savaitė',
+      few: '{0} savaitės',
+      many: '{0} savaitės',
+      other: '{0} savaičių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'savaitės',
+      one: '{0} sav.',
+      few: '{0} sav.',
+      many: '{0} sav.',
+      other: '{0} sav.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'sav.',
+      one: '{0} sav.',
+      few: '{0} sav.',
+      many: '{0} sav.',
+      other: '{0} sav.',
+    ),
+  );
 
   @override
   Unit get durationDay => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'dienos',
-          one: '{0} diena',
-          few: '{0} dienos',
-          many: '{0} dienos',
-          other: '{0} dienų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dienos',
-          one: '{0} d.',
-          few: '{0} d.',
-          many: '{0} d.',
-          other: '{0} d.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'diena',
-          one: '{0} d.',
-          few: '{0} d.',
-          many: '{0} d.',
-          other: '{0} d.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'dienos',
+      one: '{0} diena',
+      few: '{0} dienos',
+      many: '{0} dienos',
+      other: '{0} dienų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dienos',
+      one: '{0} d.',
+      few: '{0} d.',
+      many: '{0} d.',
+      other: '{0} d.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'diena',
+      one: '{0} d.',
+      few: '{0} d.',
+      many: '{0} d.',
+      other: '{0} d.',
+    ),
+  );
 
   @override
   Unit get durationHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'valandos',
-          one: '{0} valanda',
-          few: '{0} valandos',
-          many: '{0} valandos',
-          other: '{0} valandų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'valandos',
-          one: '{0} val.',
-          few: '{0} val.',
-          many: '{0} val.',
-          other: '{0} val.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'valanda',
-          one: '{0} h',
-          few: '{0} h',
-          many: '{0} h',
-          other: '{0} h',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'valandos',
+      one: '{0} valanda',
+      few: '{0} valandos',
+      many: '{0} valandos',
+      other: '{0} valandų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'valandos',
+      one: '{0} val.',
+      few: '{0} val.',
+      many: '{0} val.',
+      other: '{0} val.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'valanda',
+      one: '{0} h',
+      few: '{0} h',
+      many: '{0} h',
+      other: '{0} h',
+    ),
+  );
 
   @override
   Unit get durationMinute => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'minutės',
-          one: '{0} minutė',
-          few: '{0} minutės',
-          many: '{0} minutės',
-          other: '{0} minučių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'min.',
-          one: '{0} min.',
-          few: '{0} min.',
-          many: '{0} min.',
-          other: '{0} min.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'min.',
-          one: '{0} min.',
-          few: '{0} min.',
-          many: '{0} min.',
-          other: '{0} min.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'minutės',
+      one: '{0} minutė',
+      few: '{0} minutės',
+      many: '{0} minutės',
+      other: '{0} minučių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'min.',
+      one: '{0} min.',
+      few: '{0} min.',
+      many: '{0} min.',
+      other: '{0} min.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'min.',
+      one: '{0} min.',
+      few: '{0} min.',
+      many: '{0} min.',
+      other: '{0} min.',
+    ),
+  );
 
   @override
   Unit get durationSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'sekundės',
-          one: '{0} sekundė',
-          few: '{0} sekundės',
-          many: '{0} sekundės',
-          other: '{0} sekundžių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'sek.',
-          one: '{0} sek.',
-          few: '{0} sek.',
-          many: '{0} sek.',
-          other: '{0} sek.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'sek.',
-          one: '{0} s',
-          few: '{0} s',
-          many: '{0} s',
-          other: '{0} s',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'sekundės',
+      one: '{0} sekundė',
+      few: '{0} sekundės',
+      many: '{0} sekundės',
+      other: '{0} sekundžių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'sek.',
+      one: '{0} sek.',
+      few: '{0} sek.',
+      many: '{0} sek.',
+      other: '{0} sek.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'sek.',
+      one: '{0} s',
+      few: '{0} s',
+      many: '{0} s',
+      other: '{0} s',
+    ),
+  );
 
   @override
   Unit get durationMillisecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'milisekundės',
-          one: '{0} milisekundė',
-          few: '{0} milisekundės',
-          many: '{0} milisekundės',
-          other: '{0} milisekundžių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'milisek.',
-          one: '{0} milisekundė',
-          few: '{0} milisekundės',
-          many: '{0} milisekundės',
-          other: '{0} ms',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'milisek.',
-          one: '{0} milisekundė',
-          few: '{0} milisekundės',
-          many: '{0} milisekundės',
-          other: '{0} ms',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'milisekundės',
+      one: '{0} milisekundė',
+      few: '{0} milisekundės',
+      many: '{0} milisekundės',
+      other: '{0} milisekundžių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'milisek.',
+      one: '{0} milisekundė',
+      few: '{0} milisekundės',
+      many: '{0} milisekundės',
+      other: '{0} ms',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'milisek.',
+      one: '{0} milisekundė',
+      few: '{0} milisekundės',
+      many: '{0} milisekundės',
+      other: '{0} ms',
+    ),
+  );
 
   @override
   Unit get durationMicrosecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mikrosekundės',
-          one: '{0} mikrosekundė',
-          few: '{0} mikrosekundės',
-          many: '{0} mikrosekundės',
-          other: '{0} mikrosekundžių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μs',
-          one: '{0} mikrosekundė',
-          few: '{0} mikrosekundės',
-          many: '{0} mikrosekundės',
-          other: '{0} μs',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μs',
-          one: '{0} mikrosekundė',
-          few: '{0} mikrosekundės',
-          many: '{0} mikrosekundės',
-          other: '{0} μs',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mikrosekundės',
+      one: '{0} mikrosekundė',
+      few: '{0} mikrosekundės',
+      many: '{0} mikrosekundės',
+      other: '{0} mikrosekundžių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μs',
+      one: '{0} mikrosekundė',
+      few: '{0} mikrosekundės',
+      many: '{0} mikrosekundės',
+      other: '{0} μs',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'μs',
+      one: '{0} mikrosekundė',
+      few: '{0} mikrosekundės',
+      many: '{0} mikrosekundės',
+      other: '{0} μs',
+    ),
+  );
 
   @override
   Unit get durationNanosecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'nanosekundės',
-          one: '{0} nanosekundė',
-          few: '{0} nanosekundės',
-          many: '{0} nanosekundės',
-          other: '{0} nanosekundžių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'nanosek.',
-          one: '{0} nanosekundė',
-          few: '{0} nanosekundės',
-          many: '{0} nanosekundės',
-          other: '{0} ns',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'nanosek.',
-          one: '{0} nanosekundė',
-          few: '{0} nanosekundės',
-          many: '{0} nanosekundės',
-          other: '{0} ns',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'nanosekundės',
+      one: '{0} nanosekundė',
+      few: '{0} nanosekundės',
+      many: '{0} nanosekundės',
+      other: '{0} nanosekundžių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'nanosek.',
+      one: '{0} nanosekundė',
+      few: '{0} nanosekundės',
+      many: '{0} nanosekundės',
+      other: '{0} ns',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'nanosek.',
+      one: '{0} nanosekundė',
+      few: '{0} nanosekundės',
+      many: '{0} nanosekundės',
+      other: '{0} ns',
+    ),
+  );
 
   @override
   Unit get electricAmpere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'amperai',
-          one: '{0} amperas',
-          few: '{0} amperai',
-          many: '{0} ampero',
-          other: '{0} amperų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'A',
-          one: '{0} amperas',
-          few: '{0} amperai',
-          many: '{0} ampero',
-          other: '{0} A',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'A',
-          one: '{0} amperas',
-          few: '{0} amperai',
-          many: '{0} ampero',
-          other: '{0} A',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'amperai',
+      one: '{0} amperas',
+      few: '{0} amperai',
+      many: '{0} ampero',
+      other: '{0} amperų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'A',
+      one: '{0} amperas',
+      few: '{0} amperai',
+      many: '{0} ampero',
+      other: '{0} A',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'A',
+      one: '{0} amperas',
+      few: '{0} amperai',
+      many: '{0} ampero',
+      other: '{0} A',
+    ),
+  );
 
   @override
   Unit get electricMilliampere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'miliamperai',
-          one: '{0} miliamperas',
-          few: '{0} miliamperai',
-          many: '{0} miliampero',
-          other: '{0} miliamperų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mA',
-          one: '{0} miliamperas',
-          few: '{0} miliamperai',
-          many: '{0} miliampero',
-          other: '{0} mA',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mA',
-          one: '{0} miliamperas',
-          few: '{0} miliamperai',
-          many: '{0} miliampero',
-          other: '{0} mA',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'miliamperai',
+      one: '{0} miliamperas',
+      few: '{0} miliamperai',
+      many: '{0} miliampero',
+      other: '{0} miliamperų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mA',
+      one: '{0} miliamperas',
+      few: '{0} miliamperai',
+      many: '{0} miliampero',
+      other: '{0} mA',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mA',
+      one: '{0} miliamperas',
+      few: '{0} miliamperai',
+      many: '{0} miliampero',
+      other: '{0} mA',
+    ),
+  );
 
   @override
   Unit get electricOhm => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'omai',
-          one: '{0} omas',
-          few: '{0} omai',
-          many: '{0} omo',
-          other: '{0} omų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Ω',
-          one: '{0} omas',
-          few: '{0} omai',
-          many: '{0} omo',
-          other: '{0} Ω',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Ω',
-          one: '{0} omas',
-          few: '{0} omai',
-          many: '{0} omo',
-          other: '{0} Ω',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'omai',
+      one: '{0} omas',
+      few: '{0} omai',
+      many: '{0} omo',
+      other: '{0} omų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Ω',
+      one: '{0} omas',
+      few: '{0} omai',
+      many: '{0} omo',
+      other: '{0} Ω',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Ω',
+      one: '{0} omas',
+      few: '{0} omai',
+      many: '{0} omo',
+      other: '{0} Ω',
+    ),
+  );
 
   @override
   Unit get electricVolt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'voltai',
-          one: '{0} voltas',
-          few: '{0} voltai',
-          many: '{0} volto',
-          other: '{0} voltų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'V',
-          one: '{0} voltas',
-          few: '{0} voltai',
-          many: '{0} volto',
-          other: '{0} V',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'V',
-          one: '{0} voltas',
-          few: '{0} voltai',
-          many: '{0} volto',
-          other: '{0} V',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'voltai',
+      one: '{0} voltas',
+      few: '{0} voltai',
+      many: '{0} volto',
+      other: '{0} voltų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'V',
+      one: '{0} voltas',
+      few: '{0} voltai',
+      many: '{0} volto',
+      other: '{0} V',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'V',
+      one: '{0} voltas',
+      few: '{0} voltai',
+      many: '{0} volto',
+      other: '{0} V',
+    ),
+  );
 
   @override
   Unit get energyKilocalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kilokalorijos',
-          one: '{0} kilokalorija',
-          few: '{0} kilokalorijos',
-          many: '{0} kilokalorijos',
-          other: '{0} kilokalorijų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kcal',
-          one: '{0} kilokalorija',
-          few: '{0} kilokalorijos',
-          many: '{0} kilokalorijos',
-          other: '{0} kcal',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kcal',
-          one: '{0} kilokalorija',
-          few: '{0} kilokalorijos',
-          many: '{0} kilokalorijos',
-          other: '{0} kcal',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kilokalorijos',
+      one: '{0} kilokalorija',
+      few: '{0} kilokalorijos',
+      many: '{0} kilokalorijos',
+      other: '{0} kilokalorijų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kcal',
+      one: '{0} kilokalorija',
+      few: '{0} kilokalorijos',
+      many: '{0} kilokalorijos',
+      other: '{0} kcal',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kcal',
+      one: '{0} kilokalorija',
+      few: '{0} kilokalorijos',
+      many: '{0} kilokalorijos',
+      other: '{0} kcal',
+    ),
+  );
 
   @override
   Unit get energyCalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kalorijos',
-          one: '{0} kalorija',
-          few: '{0} kalorijos',
-          many: '{0} kalorijos',
-          other: '{0} kalorijų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cal',
-          one: '{0} kalorija',
-          few: '{0} kalorijos',
-          many: '{0} kalorijos',
-          other: '{0} cal',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cal',
-          one: '{0} kalorija',
-          few: '{0} kalorijos',
-          many: '{0} kalorijos',
-          other: '{0} cal',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kalorijos',
+      one: '{0} kalorija',
+      few: '{0} kalorijos',
+      many: '{0} kalorijos',
+      other: '{0} kalorijų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cal',
+      one: '{0} kalorija',
+      few: '{0} kalorijos',
+      many: '{0} kalorijos',
+      other: '{0} cal',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cal',
+      one: '{0} kalorija',
+      few: '{0} kalorijos',
+      many: '{0} kalorijos',
+      other: '{0} cal',
+    ),
+  );
 
   @override
   Unit get energyFoodcalorie => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kalorijos',
-          one: '{0} kalorija',
-          few: '{0} kalorijos',
-          many: '{0} kalorijos',
-          other: '{0} kalorijų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cal',
-          one: '{0} cal',
-          few: '{0} cal',
-          many: '{0} cal',
-          other: '{0} cal',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cal',
-          one: '{0} cal',
-          few: '{0} cal',
-          many: '{0} cal',
-          other: '{0} cal',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kalorijos',
+      one: '{0} kalorija',
+      few: '{0} kalorijos',
+      many: '{0} kalorijos',
+      other: '{0} kalorijų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cal',
+      one: '{0} cal',
+      few: '{0} cal',
+      many: '{0} cal',
+      other: '{0} cal',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cal',
+      one: '{0} cal',
+      few: '{0} cal',
+      many: '{0} cal',
+      other: '{0} cal',
+    ),
+  );
 
   @override
   Unit get energyKilojoule => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kilodžauliai',
-          one: '{0} kilodžaulis',
-          few: '{0} kilodžauliai',
-          many: '{0} kilodžaulio',
-          other: '{0} kilodžaulių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kJ',
-          one: '{0} kilodžaulis',
-          few: '{0} kilodžauliai',
-          many: '{0} kilodžaulio',
-          other: '{0} kJ',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kJ',
-          one: '{0} kilodžaulis',
-          few: '{0} kilodžauliai',
-          many: '{0} kilodžaulio',
-          other: '{0} kJ',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kilodžauliai',
+      one: '{0} kilodžaulis',
+      few: '{0} kilodžauliai',
+      many: '{0} kilodžaulio',
+      other: '{0} kilodžaulių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kJ',
+      one: '{0} kilodžaulis',
+      few: '{0} kilodžauliai',
+      many: '{0} kilodžaulio',
+      other: '{0} kJ',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kJ',
+      one: '{0} kilodžaulis',
+      few: '{0} kilodžauliai',
+      many: '{0} kilodžaulio',
+      other: '{0} kJ',
+    ),
+  );
 
   @override
   Unit get energyJoule => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'džauliai',
-          one: '{0} džaulis',
-          few: '{0} džauliai',
-          many: '{0} džaulio',
-          other: '{0} džaulių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'J',
-          one: '{0} džaulis',
-          few: '{0} džauliai',
-          many: '{0} džaulio',
-          other: '{0} J',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'J',
-          one: '{0} džaulis',
-          few: '{0} džauliai',
-          many: '{0} džaulio',
-          other: '{0} J',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'džauliai',
+      one: '{0} džaulis',
+      few: '{0} džauliai',
+      many: '{0} džaulio',
+      other: '{0} džaulių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'J',
+      one: '{0} džaulis',
+      few: '{0} džauliai',
+      many: '{0} džaulio',
+      other: '{0} J',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'J',
+      one: '{0} džaulis',
+      few: '{0} džauliai',
+      many: '{0} džaulio',
+      other: '{0} J',
+    ),
+  );
 
   @override
   Unit get energyKilowattHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kilovatvalandės',
-          one: '{0} kilovatvalandė',
-          few: '{0} kilovatvalandės',
-          many: '{0} kilovatvalandės',
-          other: '{0} kilovatvalandžių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kWh',
-          one: '{0} kilovatvalandė',
-          few: '{0} kilovatvalandės',
-          many: '{0} kilovatvalandės',
-          other: '{0} kWh',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kWh',
-          one: '{0} kilovatvalandė',
-          few: '{0} kilovatvalandės',
-          many: '{0} kilovatvalandės',
-          other: '{0} kWh',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kilovatvalandės',
+      one: '{0} kilovatvalandė',
+      few: '{0} kilovatvalandės',
+      many: '{0} kilovatvalandės',
+      other: '{0} kilovatvalandžių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kWh',
+      one: '{0} kilovatvalandė',
+      few: '{0} kilovatvalandės',
+      many: '{0} kilovatvalandės',
+      other: '{0} kWh',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kWh',
+      one: '{0} kilovatvalandė',
+      few: '{0} kilovatvalandės',
+      many: '{0} kilovatvalandės',
+      other: '{0} kWh',
+    ),
+  );
 
   @override
   Unit get energyElectronvolt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'elektronvoltai',
-          one: '{0} elektronvoltas',
-          few: '{0} elektronvoltai',
-          many: '{0} elektronvolto',
-          other: '{0} elektronvoltų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'eV',
-          one: '{0} elektronvoltas',
-          few: '{0} elektronvoltai',
-          many: '{0} elektronvolto',
-          other: '{0} eV',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'eV',
-          one: '{0} elektronvoltas',
-          few: '{0} elektronvoltai',
-          many: '{0} elektronvolto',
-          other: '{0} eV',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'elektronvoltai',
+      one: '{0} elektronvoltas',
+      few: '{0} elektronvoltai',
+      many: '{0} elektronvolto',
+      other: '{0} elektronvoltų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'eV',
+      one: '{0} elektronvoltas',
+      few: '{0} elektronvoltai',
+      many: '{0} elektronvolto',
+      other: '{0} eV',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'eV',
+      one: '{0} elektronvoltas',
+      few: '{0} elektronvoltai',
+      many: '{0} elektronvolto',
+      other: '{0} eV',
+    ),
+  );
 
   @override
   Unit get energyBritishThermalUnit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'britiškieji šilumos vienetai',
-          one: '{0} British thermal unit',
-          other: '{0} Btu',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Btu',
-          one: '{0} Btu',
-          other: '{0} Btu',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Btu',
-          one: '{0}Btu',
-          other: '{0} Btu',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'britiškieji šilumos vienetai',
+      one: '{0} British thermal unit',
+      other: '{0} Btu',
+    ),
+    short: UnitCountPattern(_locale, 'Btu', one: '{0} Btu', other: '{0} Btu'),
+    narrow: UnitCountPattern(_locale, 'Btu', one: '{0}Btu', other: '{0} Btu'),
+  );
 
   @override
   Unit get energyThermUs => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'JAV termos',
-          one: '{0} JAV terma',
-          few: '{0} JAV termos',
-          many: '{0} JAV termos',
-          other: '{0} JAV termų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'JAV terma',
-          one: '{0} JAV terma',
-          few: '{0} JAV termos',
-          many: '{0} JAV termos',
-          other: '{0} JAV termų',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'JAV terma',
-          one: '{0} JAV terma',
-          few: '{0} JAV termos',
-          many: '{0} JAV termos',
-          other: '{0} JAV termų',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'JAV termos',
+      one: '{0} JAV terma',
+      few: '{0} JAV termos',
+      many: '{0} JAV termos',
+      other: '{0} JAV termų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'JAV terma',
+      one: '{0} JAV terma',
+      few: '{0} JAV termos',
+      many: '{0} JAV termos',
+      other: '{0} JAV termų',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'JAV terma',
+      one: '{0} JAV terma',
+      few: '{0} JAV termos',
+      many: '{0} JAV termos',
+      other: '{0} JAV termų',
+    ),
+  );
 
   @override
   Unit get forcePoundForce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'jėgos svarai',
-          one: '{0} jėgos svaras',
-          few: '{0} jėgos svarai',
-          many: '{0} jėgos svaro',
-          other: '{0} jėgos svarų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lbf',
-          one: '{0} jėgos svaras',
-          few: '{0} jėgos svarai',
-          many: '{0} jėgos svaro',
-          other: '{0} lbf',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lbf',
-          one: '{0} jėgos svaras',
-          few: '{0} jėgos svarai',
-          many: '{0} jėgos svaro',
-          other: '{0} lbf',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'jėgos svarai',
+      one: '{0} jėgos svaras',
+      few: '{0} jėgos svarai',
+      many: '{0} jėgos svaro',
+      other: '{0} jėgos svarų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'lbf',
+      one: '{0} jėgos svaras',
+      few: '{0} jėgos svarai',
+      many: '{0} jėgos svaro',
+      other: '{0} lbf',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'lbf',
+      one: '{0} jėgos svaras',
+      few: '{0} jėgos svarai',
+      many: '{0} jėgos svaro',
+      other: '{0} lbf',
+    ),
+  );
 
   @override
   Unit get forceNewton => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'niutonai',
-          one: '{0} niutonas',
-          few: '{0} niutonai',
-          many: '{0} niutono',
-          other: '{0} niutonų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'N',
-          one: '{0} niutonas',
-          few: '{0} niutonai',
-          many: '{0} niutono',
-          other: '{0} N',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'N',
-          one: '{0} niutonas',
-          few: '{0} niutonai',
-          many: '{0} niutono',
-          other: '{0} N',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'niutonai',
+      one: '{0} niutonas',
+      few: '{0} niutonai',
+      many: '{0} niutono',
+      other: '{0} niutonų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'N',
+      one: '{0} niutonas',
+      few: '{0} niutonai',
+      many: '{0} niutono',
+      other: '{0} N',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'N',
+      one: '{0} niutonas',
+      few: '{0} niutonai',
+      many: '{0} niutono',
+      other: '{0} N',
+    ),
+  );
 
   @override
   Unit get forceKilowattHourPer100Kilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kilovatvalandės šimtui kilometrų',
-          one: '{0} kilovatvalandė šimtui kilometrų',
-          few: '{0} kilovatvalandės šimtui kilometrų',
-          many: '{0} kilovatvalandės šimtui kilometrų',
-          other: '{0} kilovatvalandžių šimtui kilometrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kWh/100km',
-          one: '{0} kilovatvalandė šimtui kilometrų',
-          few: '{0} kilovatvalandės šimtui kilometrų',
-          many: '{0} kilovatvalandės šimtui kilometrų',
-          other: '{0} kWh/100km',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kWh/100km',
-          one: '{0} kilovatvalandė šimtui kilometrų',
-          few: '{0} kilovatvalandės šimtui kilometrų',
-          many: '{0} kilovatvalandės šimtui kilometrų',
-          other: '{0} kWh/100km',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kilovatvalandės šimtui kilometrų',
+      one: '{0} kilovatvalandė šimtui kilometrų',
+      few: '{0} kilovatvalandės šimtui kilometrų',
+      many: '{0} kilovatvalandės šimtui kilometrų',
+      other: '{0} kilovatvalandžių šimtui kilometrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kWh/100km',
+      one: '{0} kilovatvalandė šimtui kilometrų',
+      few: '{0} kilovatvalandės šimtui kilometrų',
+      many: '{0} kilovatvalandės šimtui kilometrų',
+      other: '{0} kWh/100km',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kWh/100km',
+      one: '{0} kilovatvalandė šimtui kilometrų',
+      few: '{0} kilovatvalandės šimtui kilometrų',
+      many: '{0} kilovatvalandės šimtui kilometrų',
+      other: '{0} kWh/100km',
+    ),
+  );
 
   @override
   Unit get frequencyGigahertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'gigahercai',
-          one: '{0} gigahercas',
-          few: '{0} gigahercai',
-          many: '{0} gigaherco',
-          other: '{0} gigahercų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'GHz',
-          one: '{0} gigahercas',
-          few: '{0} gigahercai',
-          many: '{0} gigaherco',
-          other: '{0} GHz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'GHz',
-          one: '{0} gigahercas',
-          few: '{0} gigahercai',
-          many: '{0} gigaherco',
-          other: '{0} GHz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'gigahercai',
+      one: '{0} gigahercas',
+      few: '{0} gigahercai',
+      many: '{0} gigaherco',
+      other: '{0} gigahercų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'GHz',
+      one: '{0} gigahercas',
+      few: '{0} gigahercai',
+      many: '{0} gigaherco',
+      other: '{0} GHz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'GHz',
+      one: '{0} gigahercas',
+      few: '{0} gigahercai',
+      many: '{0} gigaherco',
+      other: '{0} GHz',
+    ),
+  );
 
   @override
   Unit get frequencyMegahertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'megahercai',
-          one: '{0} megahercas',
-          few: '{0} megahercai',
-          many: '{0} megaherco',
-          other: '{0} megahercų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'MHz',
-          one: '{0} megahercas',
-          few: '{0} megahercai',
-          many: '{0} megaherco',
-          other: '{0} MHz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MHz',
-          one: '{0} megahercas',
-          few: '{0} megahercai',
-          many: '{0} megaherco',
-          other: '{0} MHz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'megahercai',
+      one: '{0} megahercas',
+      few: '{0} megahercai',
+      many: '{0} megaherco',
+      other: '{0} megahercų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'MHz',
+      one: '{0} megahercas',
+      few: '{0} megahercai',
+      many: '{0} megaherco',
+      other: '{0} MHz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'MHz',
+      one: '{0} megahercas',
+      few: '{0} megahercai',
+      many: '{0} megaherco',
+      other: '{0} MHz',
+    ),
+  );
 
   @override
   Unit get frequencyKilohertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kilohercai',
-          one: '{0} kilohercas',
-          few: '{0} kilohercai',
-          many: '{0} kiloherco',
-          other: '{0} kilohercų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kHz',
-          one: '{0} kilohercas',
-          few: '{0} kilohercai',
-          many: '{0} kiloherco',
-          other: '{0} kHz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kHz',
-          one: '{0} kilohercas',
-          few: '{0} kilohercai',
-          many: '{0} kiloherco',
-          other: '{0} kHz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kilohercai',
+      one: '{0} kilohercas',
+      few: '{0} kilohercai',
+      many: '{0} kiloherco',
+      other: '{0} kilohercų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kHz',
+      one: '{0} kilohercas',
+      few: '{0} kilohercai',
+      many: '{0} kiloherco',
+      other: '{0} kHz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kHz',
+      one: '{0} kilohercas',
+      few: '{0} kilohercai',
+      many: '{0} kiloherco',
+      other: '{0} kHz',
+    ),
+  );
 
   @override
   Unit get frequencyHertz => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'hercai',
-          one: '{0} hercas',
-          few: '{0} hercai',
-          many: '{0} herco',
-          other: '{0} hercų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Hz',
-          one: '{0} hercas',
-          few: '{0} hercai',
-          many: '{0} herco',
-          other: '{0} Hz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Hz',
-          one: '{0} hercas',
-          few: '{0} hercai',
-          many: '{0} herco',
-          other: '{0} Hz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'hercai',
+      one: '{0} hercas',
+      few: '{0} hercai',
+      many: '{0} herco',
+      other: '{0} hercų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Hz',
+      one: '{0} hercas',
+      few: '{0} hercai',
+      many: '{0} herco',
+      other: '{0} Hz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Hz',
+      one: '{0} hercas',
+      few: '{0} hercai',
+      many: '{0} herco',
+      other: '{0} Hz',
+    ),
+  );
 
   @override
   Unit get graphicsEm => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'tipografinis emas',
-          one: '{0} tipografinis emas',
-          few: '{0} tipografiniai emai',
-          many: '{0} tipografinio emo',
-          other: '{0} tipografinių emų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'tipografinis emas',
-          one: '{0} tipografinis emas',
-          few: '{0} tipografiniai emai',
-          many: '{0} tipografinio emo',
-          other: '{0} em',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'tipografinis emas',
-          one: '{0} tipografinis emas',
-          few: '{0} tipografiniai emai',
-          many: '{0} tipografinio emo',
-          other: '{0} em',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'tipografinis emas',
+      one: '{0} tipografinis emas',
+      few: '{0} tipografiniai emai',
+      many: '{0} tipografinio emo',
+      other: '{0} tipografinių emų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'tipografinis emas',
+      one: '{0} tipografinis emas',
+      few: '{0} tipografiniai emai',
+      many: '{0} tipografinio emo',
+      other: '{0} em',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'tipografinis emas',
+      one: '{0} tipografinis emas',
+      few: '{0} tipografiniai emai',
+      many: '{0} tipografinio emo',
+      other: '{0} em',
+    ),
+  );
 
   @override
   Unit get graphicsPixel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pikseliai',
-          one: '{0} pikselis',
-          few: '{0} pikseliai',
-          many: '{0} pikselio',
-          other: '{0} pikselių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'pikseliai',
-          one: '{0} p',
-          few: '{0} p',
-          many: '{0} p',
-          other: '{0} p',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pikseliai',
-          one: '{0} p',
-          few: '{0} p',
-          many: '{0} p',
-          other: '{0} p',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'pikseliai',
+      one: '{0} pikselis',
+      few: '{0} pikseliai',
+      many: '{0} pikselio',
+      other: '{0} pikselių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'pikseliai',
+      one: '{0} p',
+      few: '{0} p',
+      many: '{0} p',
+      other: '{0} p',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'pikseliai',
+      one: '{0} p',
+      few: '{0} p',
+      many: '{0} p',
+      other: '{0} p',
+    ),
+  );
 
   @override
   Unit get graphicsMegapixel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'megapikseliai',
-          one: '{0} megapikselis',
-          few: '{0} megapikseliai',
-          many: '{0} megapikselio',
-          other: '{0} megapikselių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'megapikseliai',
-          one: '{0} megapikselis',
-          few: '{0} megapikseliai',
-          many: '{0} megapikselio',
-          other: '{0} MP',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'megapikseliai',
-          one: '{0} megapikselis',
-          few: '{0} megapikseliai',
-          many: '{0} megapikselio',
-          other: '{0} MP',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'megapikseliai',
+      one: '{0} megapikselis',
+      few: '{0} megapikseliai',
+      many: '{0} megapikselio',
+      other: '{0} megapikselių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'megapikseliai',
+      one: '{0} megapikselis',
+      few: '{0} megapikseliai',
+      many: '{0} megapikselio',
+      other: '{0} MP',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'megapikseliai',
+      one: '{0} megapikselis',
+      few: '{0} megapikseliai',
+      many: '{0} megapikselio',
+      other: '{0} MP',
+    ),
+  );
 
   @override
   Unit get graphicsPixelPerCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pikseliai centimetre',
-          one: '{0} pikselis centimetre',
-          few: '{0} pikseliai centimetre',
-          many: '{0} pikselio centimetre',
-          other: '{0} pikselių centimetre',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'pikseliai centimetre',
-          one: '{0} p/cm',
-          few: '{0} p/cm',
-          many: '{0} p/cm',
-          other: '{0} p/cm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pikseliai centimetre',
-          one: '{0} p/cm',
-          few: '{0} p/cm',
-          many: '{0} p/cm',
-          other: '{0} p/cm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'pikseliai centimetre',
+      one: '{0} pikselis centimetre',
+      few: '{0} pikseliai centimetre',
+      many: '{0} pikselio centimetre',
+      other: '{0} pikselių centimetre',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'pikseliai centimetre',
+      one: '{0} p/cm',
+      few: '{0} p/cm',
+      many: '{0} p/cm',
+      other: '{0} p/cm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'pikseliai centimetre',
+      one: '{0} p/cm',
+      few: '{0} p/cm',
+      many: '{0} p/cm',
+      other: '{0} p/cm',
+    ),
+  );
 
   @override
   Unit get graphicsPixelPerInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pikseliai colyje',
-          one: '{0} pikselis colyje',
-          few: '{0} pikseliai colyje',
-          many: '{0} pikselio colyje',
-          other: '{0} pikselių colyje',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'pikseliai colyje',
-          one: '{0} pikselis colyje',
-          few: '{0} pikseliai colyje',
-          many: '{0} pikselio colyje',
-          other: '{0} ppi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pikseliai colyje',
-          one: '{0} pikselis colyje',
-          few: '{0} pikseliai colyje',
-          many: '{0} pikselio colyje',
-          other: '{0} ppi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'pikseliai colyje',
+      one: '{0} pikselis colyje',
+      few: '{0} pikseliai colyje',
+      many: '{0} pikselio colyje',
+      other: '{0} pikselių colyje',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'pikseliai colyje',
+      one: '{0} pikselis colyje',
+      few: '{0} pikseliai colyje',
+      many: '{0} pikselio colyje',
+      other: '{0} ppi',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'pikseliai colyje',
+      one: '{0} pikselis colyje',
+      few: '{0} pikseliai colyje',
+      many: '{0} pikselio colyje',
+      other: '{0} ppi',
+    ),
+  );
 
   @override
   Unit get graphicsDotPerCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'taškai centimetre',
-          one: '{0} taškas centimetre',
-          few: '{0} taškai centimetre',
-          many: '{0} taško centimetre',
-          other: '{0} taškų centimetre',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'taškai centimetre',
-          one: '{0} tšk./cm',
-          few: '{0} tšk./cm',
-          many: '{0} tšk./cm',
-          other: '{0} tšk./cm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'taškai centimetre',
-          one: '{0} tšk./cm',
-          few: '{0} tšk./cm',
-          many: '{0} tšk./cm',
-          other: '{0} tšk./cm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'taškai centimetre',
+      one: '{0} taškas centimetre',
+      few: '{0} taškai centimetre',
+      many: '{0} taško centimetre',
+      other: '{0} taškų centimetre',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'taškai centimetre',
+      one: '{0} tšk./cm',
+      few: '{0} tšk./cm',
+      many: '{0} tšk./cm',
+      other: '{0} tšk./cm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'taškai centimetre',
+      one: '{0} tšk./cm',
+      few: '{0} tšk./cm',
+      many: '{0} tšk./cm',
+      other: '{0} tšk./cm',
+    ),
+  );
 
   @override
   Unit get graphicsDotPerInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'taškai colyje',
-          one: '{0} taškas colyje',
-          few: '{0} taškai colyje',
-          many: '{0} taško colyje',
-          other: '{0} taškų colyje',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'taškai colyje',
-          one: '{0} tšk./in',
-          few: '{0} tšk./in',
-          many: '{0} tšk./in',
-          other: '{0} tšk./in',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'taškai colyje',
-          one: '{0} tšk./in',
-          few: '{0} tšk./in',
-          many: '{0} tšk./in',
-          other: '{0} tšk./in',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'taškai colyje',
+      one: '{0} taškas colyje',
+      few: '{0} taškai colyje',
+      many: '{0} taško colyje',
+      other: '{0} taškų colyje',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'taškai colyje',
+      one: '{0} tšk./in',
+      few: '{0} tšk./in',
+      many: '{0} tšk./in',
+      other: '{0} tšk./in',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'taškai colyje',
+      one: '{0} tšk./in',
+      few: '{0} tšk./in',
+      many: '{0} tšk./in',
+      other: '{0} tšk./in',
+    ),
+  );
 
   @override
   Unit get graphicsDot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'taškas',
-          one: '{0} taškas',
-          few: '{0} taškai',
-          many: '{0} taško',
-          other: '{0} taškų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'tšk.',
-          one: '{0} tšk.',
-          few: '{0} tšk.',
-          many: '{0} tšk.',
-          other: '{0} tšk.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'tšk.',
-          one: '{0} tšk.',
-          few: '{0} tšk.',
-          many: '{0} tšk.',
-          other: '{0} tšk.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'taškas',
+      one: '{0} taškas',
+      few: '{0} taškai',
+      many: '{0} taško',
+      other: '{0} taškų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'tšk.',
+      one: '{0} tšk.',
+      few: '{0} tšk.',
+      many: '{0} tšk.',
+      other: '{0} tšk.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'tšk.',
+      one: '{0} tšk.',
+      few: '{0} tšk.',
+      many: '{0} tšk.',
+      other: '{0} tšk.',
+    ),
+  );
 
   @override
   Unit get lengthEarthRadius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'žemės spindulys',
-          one: '{0} žemės spindulys',
-          few: '{0} R⊕',
-          many: '{0} R⊕',
-          other: '{0} žemės spindulių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'R⊕',
-          one: '{0} žemės spindulys',
-          few: '{0} R⊕',
-          many: '{0} R⊕',
-          other: '{0} R⊕',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'R⊕',
-          one: '{0} žemės spindulys',
-          few: '{0} R⊕',
-          many: '{0} R⊕',
-          other: '{0} R⊕',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'žemės spindulys',
+      one: '{0} žemės spindulys',
+      few: '{0} R⊕',
+      many: '{0} R⊕',
+      other: '{0} žemės spindulių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'R⊕',
+      one: '{0} žemės spindulys',
+      few: '{0} R⊕',
+      many: '{0} R⊕',
+      other: '{0} R⊕',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'R⊕',
+      one: '{0} žemės spindulys',
+      few: '{0} R⊕',
+      many: '{0} R⊕',
+      other: '{0} R⊕',
+    ),
+  );
 
   @override
   Unit get lengthKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kilometrai',
-          one: '{0} kilometras',
-          few: '{0} kilometrai',
-          many: '{0} kilometro',
-          other: '{0} kilometrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'km',
-          one: '{0} kilometras',
-          few: '{0} kilometrai',
-          many: '{0} kilometro',
-          other: '{0} km',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'km',
-          one: '{0} kilometras',
-          few: '{0} kilometrai',
-          many: '{0} kilometro',
-          other: '{0} km',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kilometrai',
+      one: '{0} kilometras',
+      few: '{0} kilometrai',
+      many: '{0} kilometro',
+      other: '{0} kilometrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'km',
+      one: '{0} kilometras',
+      few: '{0} kilometrai',
+      many: '{0} kilometro',
+      other: '{0} km',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'km',
+      one: '{0} kilometras',
+      few: '{0} kilometrai',
+      many: '{0} kilometro',
+      other: '{0} km',
+    ),
+  );
 
   @override
   Unit get lengthMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'metrai',
-          one: '{0} metras',
-          few: '{0} metrai',
-          many: '{0} metro',
-          other: '{0} metrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'm',
-          one: '{0} metras',
-          few: '{0} metrai',
-          many: '{0} metro',
-          other: '{0} m',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'm',
-          one: '{0} metras',
-          few: '{0} metrai',
-          many: '{0} metro',
-          other: '{0} m',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'metrai',
+      one: '{0} metras',
+      few: '{0} metrai',
+      many: '{0} metro',
+      other: '{0} metrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'm',
+      one: '{0} metras',
+      few: '{0} metrai',
+      many: '{0} metro',
+      other: '{0} m',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'm',
+      one: '{0} metras',
+      few: '{0} metrai',
+      many: '{0} metro',
+      other: '{0} m',
+    ),
+  );
 
   @override
   Unit get lengthDecimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'decimetrai',
-          one: '{0} decimetras',
-          few: '{0} decimetrai',
-          many: '{0} decimetro',
-          other: '{0} decimetrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dm',
-          one: '{0} decimetras',
-          few: '{0} decimetrai',
-          many: '{0} decimetro',
-          other: '{0} dm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dm',
-          one: '{0} decimetras',
-          few: '{0} decimetrai',
-          many: '{0} decimetro',
-          other: '{0} dm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'decimetrai',
+      one: '{0} decimetras',
+      few: '{0} decimetrai',
+      many: '{0} decimetro',
+      other: '{0} decimetrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dm',
+      one: '{0} decimetras',
+      few: '{0} decimetrai',
+      many: '{0} decimetro',
+      other: '{0} dm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'dm',
+      one: '{0} decimetras',
+      few: '{0} decimetrai',
+      many: '{0} decimetro',
+      other: '{0} dm',
+    ),
+  );
 
   @override
   Unit get lengthCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'centimetrai',
-          one: '{0} centimetras',
-          few: '{0} centimetrai',
-          many: '{0} centimetro',
-          other: '{0} centimetrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cm',
-          one: '{0} centimetras',
-          few: '{0} centimetrai',
-          many: '{0} centimetro',
-          other: '{0} cm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cm',
-          one: '{0} centimetras',
-          few: '{0} centimetrai',
-          many: '{0} centimetro',
-          other: '{0} cm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'centimetrai',
+      one: '{0} centimetras',
+      few: '{0} centimetrai',
+      many: '{0} centimetro',
+      other: '{0} centimetrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cm',
+      one: '{0} centimetras',
+      few: '{0} centimetrai',
+      many: '{0} centimetro',
+      other: '{0} cm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cm',
+      one: '{0} centimetras',
+      few: '{0} centimetrai',
+      many: '{0} centimetro',
+      other: '{0} cm',
+    ),
+  );
 
   @override
   Unit get lengthMillimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'milimetrai',
-          one: '{0} milimetras',
-          few: '{0} milimetrai',
-          many: '{0} milimetro',
-          other: '{0} milimetrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mm',
-          one: '{0} milimetras',
-          few: '{0} milimetrai',
-          many: '{0} milimetro',
-          other: '{0} mm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mm',
-          one: '{0} milimetras',
-          few: '{0} milimetrai',
-          many: '{0} milimetro',
-          other: '{0} mm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'milimetrai',
+      one: '{0} milimetras',
+      few: '{0} milimetrai',
+      many: '{0} milimetro',
+      other: '{0} milimetrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mm',
+      one: '{0} milimetras',
+      few: '{0} milimetrai',
+      many: '{0} milimetro',
+      other: '{0} mm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mm',
+      one: '{0} milimetras',
+      few: '{0} milimetrai',
+      many: '{0} milimetro',
+      other: '{0} mm',
+    ),
+  );
 
   @override
   Unit get lengthMicrometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mikrometrai',
-          one: '{0} mikrometras',
-          few: '{0} mikrometrai',
-          many: '{0} mikrometro',
-          other: '{0} mikrometrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μm',
-          one: '{0} mikrometras',
-          few: '{0} mikrometrai',
-          many: '{0} mikrometro',
-          other: '{0} μm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μm',
-          one: '{0} mikrometras',
-          few: '{0} mikrometrai',
-          many: '{0} mikrometro',
-          other: '{0} μm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mikrometrai',
+      one: '{0} mikrometras',
+      few: '{0} mikrometrai',
+      many: '{0} mikrometro',
+      other: '{0} mikrometrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μm',
+      one: '{0} mikrometras',
+      few: '{0} mikrometrai',
+      many: '{0} mikrometro',
+      other: '{0} μm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'μm',
+      one: '{0} mikrometras',
+      few: '{0} mikrometrai',
+      many: '{0} mikrometro',
+      other: '{0} μm',
+    ),
+  );
 
   @override
   Unit get lengthNanometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'nanometrai',
-          one: '{0} nanometras',
-          few: '{0} nanometrai',
-          many: '{0} nanometro',
-          other: '{0} nanometrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'nm',
-          one: '{0} nanometras',
-          few: '{0} nanometrai',
-          many: '{0} nanometro',
-          other: '{0} nm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'nm',
-          one: '{0} nanometras',
-          few: '{0} nanometrai',
-          many: '{0} nanometro',
-          other: '{0} nm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'nanometrai',
+      one: '{0} nanometras',
+      few: '{0} nanometrai',
+      many: '{0} nanometro',
+      other: '{0} nanometrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'nm',
+      one: '{0} nanometras',
+      few: '{0} nanometrai',
+      many: '{0} nanometro',
+      other: '{0} nm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'nm',
+      one: '{0} nanometras',
+      few: '{0} nanometrai',
+      many: '{0} nanometro',
+      other: '{0} nm',
+    ),
+  );
 
   @override
   Unit get lengthPicometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pikometrai',
-          one: '{0} pikometras',
-          few: '{0} pikometrai',
-          many: '{0} pikometro',
-          other: '{0} pikometrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'pm',
-          one: '{0} pikometras',
-          few: '{0} pikometrai',
-          many: '{0} pikometro',
-          other: '{0} pm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pm',
-          one: '{0} pikometras',
-          few: '{0} pikometrai',
-          many: '{0} pikometro',
-          other: '{0} pm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'pikometrai',
+      one: '{0} pikometras',
+      few: '{0} pikometrai',
+      many: '{0} pikometro',
+      other: '{0} pikometrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'pm',
+      one: '{0} pikometras',
+      few: '{0} pikometrai',
+      many: '{0} pikometro',
+      other: '{0} pm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'pm',
+      one: '{0} pikometras',
+      few: '{0} pikometrai',
+      many: '{0} pikometro',
+      other: '{0} pm',
+    ),
+  );
 
   @override
   Unit get lengthMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mylios',
-          one: '{0} mylia',
-          few: '{0} mylios',
-          many: '{0} mylios',
-          other: '{0} mylių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mi',
-          one: '{0} mylia',
-          few: '{0} mylios',
-          many: '{0} mylios',
-          other: '{0} mi',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mi',
-          one: '{0} mylia',
-          few: '{0} mylios',
-          many: '{0} mylios',
-          other: '{0} mi',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mylios',
+      one: '{0} mylia',
+      few: '{0} mylios',
+      many: '{0} mylios',
+      other: '{0} mylių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mi',
+      one: '{0} mylia',
+      few: '{0} mylios',
+      many: '{0} mylios',
+      other: '{0} mi',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mi',
+      one: '{0} mylia',
+      few: '{0} mylios',
+      many: '{0} mylios',
+      other: '{0} mi',
+    ),
+  );
 
   @override
   Unit get lengthYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'jardai',
-          one: '{0} jardas',
-          few: '{0} jardai',
-          many: '{0} jardo',
-          other: '{0} jardų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'yd',
-          one: '{0} jardas',
-          few: '{0} jardai',
-          many: '{0} jardo',
-          other: '{0} yd',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'yd',
-          one: '{0} jardas',
-          few: '{0} jardai',
-          many: '{0} jardo',
-          other: '{0} yd',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'jardai',
+      one: '{0} jardas',
+      few: '{0} jardai',
+      many: '{0} jardo',
+      other: '{0} jardų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'yd',
+      one: '{0} jardas',
+      few: '{0} jardai',
+      many: '{0} jardo',
+      other: '{0} yd',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'yd',
+      one: '{0} jardas',
+      few: '{0} jardai',
+      many: '{0} jardo',
+      other: '{0} yd',
+    ),
+  );
 
   @override
   Unit get lengthFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pėdos',
-          one: '{0} pėda',
-          few: '{0} pėdos',
-          many: '{0} pėdos',
-          other: '{0} pėdų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'pėda',
-          one: '{0} pėda',
-          few: '{0} pėdos',
-          many: '{0} pėdos',
-          other: '{0} ft',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pėda',
-          one: '{0} pėda',
-          few: '{0} pėdos',
-          many: '{0} pėdos',
-          other: '{0} ft',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'pėdos',
+      one: '{0} pėda',
+      few: '{0} pėdos',
+      many: '{0} pėdos',
+      other: '{0} pėdų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'pėda',
+      one: '{0} pėda',
+      few: '{0} pėdos',
+      many: '{0} pėdos',
+      other: '{0} ft',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'pėda',
+      one: '{0} pėda',
+      few: '{0} pėdos',
+      many: '{0} pėdos',
+      other: '{0} ft',
+    ),
+  );
 
   @override
   Unit get lengthInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'coliai',
-          one: '{0} colis',
-          few: '{0} coliai',
-          many: '{0} colio',
-          other: '{0} colių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'coliai',
-          one: '{0} colis',
-          few: '{0} coliai',
-          many: '{0} colio',
-          other: '{0} in',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'coliai',
-          one: '{0} colis',
-          few: '{0} coliai',
-          many: '{0} colio',
-          other: '{0} in',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'coliai',
+      one: '{0} colis',
+      few: '{0} coliai',
+      many: '{0} colio',
+      other: '{0} colių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'coliai',
+      one: '{0} colis',
+      few: '{0} coliai',
+      many: '{0} colio',
+      other: '{0} in',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'coliai',
+      one: '{0} colis',
+      few: '{0} coliai',
+      many: '{0} colio',
+      other: '{0} in',
+    ),
+  );
 
   @override
   Unit get lengthParsec => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'parsekas',
-          one: '{0} parsekas',
-          few: '{0} parsekai',
-          many: '{0} parseko',
-          other: '{0} parsekų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'pc',
-          one: '{0} parsekas',
-          few: '{0} parsekai',
-          many: '{0} parseko',
-          other: '{0} pc',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pc',
-          one: '{0} parsekas',
-          few: '{0} parsekai',
-          many: '{0} parseko',
-          other: '{0} pc',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'parsekas',
+      one: '{0} parsekas',
+      few: '{0} parsekai',
+      many: '{0} parseko',
+      other: '{0} parsekų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'pc',
+      one: '{0} parsekas',
+      few: '{0} parsekai',
+      many: '{0} parseko',
+      other: '{0} pc',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'pc',
+      one: '{0} parsekas',
+      few: '{0} parsekai',
+      many: '{0} parseko',
+      other: '{0} pc',
+    ),
+  );
 
   @override
   Unit get lengthLightYear => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'šviesmečiai',
-          one: '{0} šviesmetis',
-          few: '{0} šviesmečiai',
-          many: '{0} šviesmečio',
-          other: '{0} šviesmečių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'šviesmečiai',
-          one: '{0} šm.',
-          few: '{0} šm.',
-          many: '{0} šm.',
-          other: '{0} šm.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'šviesmečiai',
-          one: '{0} šm.',
-          few: '{0} šm.',
-          many: '{0} šm.',
-          other: '{0} šm.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'šviesmečiai',
+      one: '{0} šviesmetis',
+      few: '{0} šviesmečiai',
+      many: '{0} šviesmečio',
+      other: '{0} šviesmečių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'šviesmečiai',
+      one: '{0} šm.',
+      few: '{0} šm.',
+      many: '{0} šm.',
+      other: '{0} šm.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'šviesmečiai',
+      one: '{0} šm.',
+      few: '{0} šm.',
+      many: '{0} šm.',
+      other: '{0} šm.',
+    ),
+  );
 
   @override
   Unit get lengthAstronomicalUnit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'astronominiai vienetai',
-          one: '{0} astronominis vienetas',
-          few: '{0} astronominiai vienetai',
-          many: '{0} astronominio vieneto',
-          other: '{0} astronominių vienetų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'AV',
-          one: '{0} AV',
-          few: '{0} AV',
-          many: '{0} AV',
-          other: '{0} AV',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'AV',
-          one: '{0} AV',
-          few: '{0} AV',
-          many: '{0} AV',
-          other: '{0} AV',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'astronominiai vienetai',
+      one: '{0} astronominis vienetas',
+      few: '{0} astronominiai vienetai',
+      many: '{0} astronominio vieneto',
+      other: '{0} astronominių vienetų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'AV',
+      one: '{0} AV',
+      few: '{0} AV',
+      many: '{0} AV',
+      other: '{0} AV',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'AV',
+      one: '{0} AV',
+      few: '{0} AV',
+      many: '{0} AV',
+      other: '{0} AV',
+    ),
+  );
 
   @override
   Unit get lengthFurlong => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'furlongai',
-          one: '{0} furlongas',
-          few: '{0} furlongai',
-          many: '{0} furlongo',
-          other: '{0} furlongų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'fur',
-          one: '{0} furlongas',
-          few: '{0} furlongai',
-          many: '{0} furlongo',
-          other: '{0} fur',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'fur',
-          one: '{0} furlongas',
-          few: '{0} furlongai',
-          many: '{0} furlongo',
-          other: '{0} fur',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'furlongai',
+      one: '{0} furlongas',
+      few: '{0} furlongai',
+      many: '{0} furlongo',
+      other: '{0} furlongų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'fur',
+      one: '{0} furlongas',
+      few: '{0} furlongai',
+      many: '{0} furlongo',
+      other: '{0} fur',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'fur',
+      one: '{0} furlongas',
+      few: '{0} furlongai',
+      many: '{0} furlongo',
+      other: '{0} fur',
+    ),
+  );
 
   @override
   Unit get lengthFathom => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'fadomai',
-          one: '{0} fadomas',
-          few: '{0} fadomai',
-          many: '{0} fadomo',
-          other: '{0} fth',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'fth',
-          one: '{0} fadomas',
-          few: '{0} fadomai',
-          many: '{0} fadomo',
-          other: '{0} fth',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'fth',
-          one: '{0} fadomas',
-          few: '{0} fadomai',
-          many: '{0} fadomo',
-          other: '{0} fth',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'fadomai',
+      one: '{0} fadomas',
+      few: '{0} fadomai',
+      many: '{0} fadomo',
+      other: '{0} fth',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'fth',
+      one: '{0} fadomas',
+      few: '{0} fadomai',
+      many: '{0} fadomo',
+      other: '{0} fth',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'fth',
+      one: '{0} fadomas',
+      few: '{0} fadomai',
+      many: '{0} fadomo',
+      other: '{0} fth',
+    ),
+  );
 
   @override
   Unit get lengthNauticalMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'jūrmylės',
-          one: '{0} jūrmylė',
-          few: '{0} jūrmylės',
-          many: '{0} jūrmylės',
-          other: '{0} jūrmylių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'M',
-          one: '{0} M',
-          few: '{0} M',
-          many: '{0} M',
-          other: '{0} M',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'M',
-          one: '{0} M',
-          few: '{0} M',
-          many: '{0} M',
-          other: '{0} M',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'jūrmylės',
+      one: '{0} jūrmylė',
+      few: '{0} jūrmylės',
+      many: '{0} jūrmylės',
+      other: '{0} jūrmylių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'M',
+      one: '{0} M',
+      few: '{0} M',
+      many: '{0} M',
+      other: '{0} M',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'M',
+      one: '{0} M',
+      few: '{0} M',
+      many: '{0} M',
+      other: '{0} M',
+    ),
+  );
 
   @override
   Unit get lengthMileScandinavian => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'ilgoji mylia',
-          one: '{0} ilgoji mylia',
-          few: '{0} ilgosios mylios',
-          many: '{0} ilgosios mylios',
-          other: '{0} ilgųjų mylių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'IM',
-          one: '{0} IM',
-          few: '{0} IM',
-          many: '{0} IM',
-          other: '{0} IM',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'IM',
-          one: '{0} IM',
-          few: '{0} IM',
-          many: '{0} IM',
-          other: '{0} IM',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'ilgoji mylia',
+      one: '{0} ilgoji mylia',
+      few: '{0} ilgosios mylios',
+      many: '{0} ilgosios mylios',
+      other: '{0} ilgųjų mylių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'IM',
+      one: '{0} IM',
+      few: '{0} IM',
+      many: '{0} IM',
+      other: '{0} IM',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'IM',
+      one: '{0} IM',
+      few: '{0} IM',
+      many: '{0} IM',
+      other: '{0} IM',
+    ),
+  );
 
   @override
   Unit get lengthPoint => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'punktai',
-          one: '{0} punktas',
-          few: '{0} punktai',
-          many: '{0} punkto',
-          other: '{0} punktų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'pt',
-          one: '{0} punktas',
-          few: '{0} punktai',
-          many: '{0} punkto',
-          other: '{0} pt',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pt',
-          one: '{0} punktas',
-          few: '{0} punktai',
-          many: '{0} punkto',
-          other: '{0} pt',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'punktai',
+      one: '{0} punktas',
+      few: '{0} punktai',
+      many: '{0} punkto',
+      other: '{0} punktų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'pt',
+      one: '{0} punktas',
+      few: '{0} punktai',
+      many: '{0} punkto',
+      other: '{0} pt',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'pt',
+      one: '{0} punktas',
+      few: '{0} punktai',
+      many: '{0} punkto',
+      other: '{0} pt',
+    ),
+  );
 
   @override
   Unit get lengthSolarRadius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'saulės spinduliuotė',
-          one: '{0} solar radius',
-          other: '{0} R☉',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'R☉',
-          one: '{0} R☉',
-          other: '{0} R☉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'R☉',
-          one: '{0}R☉',
-          other: '{0} R☉',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'saulės spinduliuotė',
+      one: '{0} solar radius',
+      other: '{0} R☉',
+    ),
+    short: UnitCountPattern(_locale, 'R☉', one: '{0} R☉', other: '{0} R☉'),
+    narrow: UnitCountPattern(_locale, 'R☉', one: '{0}R☉', other: '{0} R☉'),
+  );
 
   @override
   Unit get lightLux => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'liuksai',
-          one: '{0} liuksas',
-          few: '{0} liuksai',
-          many: '{0} liukso',
-          other: '{0} liuksų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lx',
-          one: '{0} liuksas',
-          few: '{0} liuksai',
-          many: '{0} liukso',
-          other: '{0} lx',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lx',
-          one: '{0} liuksas',
-          few: '{0} liuksai',
-          many: '{0} liukso',
-          other: '{0} lx',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'liuksai',
+      one: '{0} liuksas',
+      few: '{0} liuksai',
+      many: '{0} liukso',
+      other: '{0} liuksų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'lx',
+      one: '{0} liuksas',
+      few: '{0} liuksai',
+      many: '{0} liukso',
+      other: '{0} lx',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'lx',
+      one: '{0} liuksas',
+      few: '{0} liuksai',
+      many: '{0} liukso',
+      other: '{0} lx',
+    ),
+  );
 
   @override
   Unit get lightCandela => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kandela',
-          one: '{0} kandela',
-          few: '{0} cd',
-          many: '{0} cd',
-          other: '{0} kandelų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cd',
-          one: '{0} kandela',
-          few: '{0} cd',
-          many: '{0} cd',
-          other: '{0} cd',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cd',
-          one: '{0} kandela',
-          few: '{0} cd',
-          many: '{0} cd',
-          other: '{0} cd',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kandela',
+      one: '{0} kandela',
+      few: '{0} cd',
+      many: '{0} cd',
+      other: '{0} kandelų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cd',
+      one: '{0} kandela',
+      few: '{0} cd',
+      many: '{0} cd',
+      other: '{0} cd',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cd',
+      one: '{0} kandela',
+      few: '{0} cd',
+      many: '{0} cd',
+      other: '{0} cd',
+    ),
+  );
 
   @override
   Unit get lightLumen => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'liumenas',
-          one: '{0} liumenas',
-          few: '{0} lm',
-          many: '{0} lm',
-          other: '{0} liumenų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lm',
-          one: '{0} liumenas',
-          few: '{0} lm',
-          many: '{0} lm',
-          other: '{0} lm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lm',
-          one: '{0} liumenas',
-          few: '{0} lm',
-          many: '{0} lm',
-          other: '{0} lm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'liumenas',
+      one: '{0} liumenas',
+      few: '{0} lm',
+      many: '{0} lm',
+      other: '{0} liumenų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'lm',
+      one: '{0} liumenas',
+      few: '{0} lm',
+      many: '{0} lm',
+      other: '{0} lm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'lm',
+      one: '{0} liumenas',
+      few: '{0} lm',
+      many: '{0} lm',
+      other: '{0} lm',
+    ),
+  );
 
   @override
   Unit get lightSolarLuminosity => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'saulės šviesis',
-          one: '{0} solar luminosity',
-          other: '{0} L☉',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'L☉',
-          one: '{0} L☉',
-          other: '{0} L☉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'L☉',
-          one: '{0}L☉',
-          other: '{0} L☉',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'saulės šviesis',
+      one: '{0} solar luminosity',
+      other: '{0} L☉',
+    ),
+    short: UnitCountPattern(_locale, 'L☉', one: '{0} L☉', other: '{0} L☉'),
+    narrow: UnitCountPattern(_locale, 'L☉', one: '{0}L☉', other: '{0} L☉'),
+  );
 
   @override
   Unit get massTonne => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'metrinės tonos',
-          one: '{0} metrinė tona',
-          few: '{0} metrinės tonos',
-          many: '{0} metrinės tonos',
-          other: '{0} metrinių tonų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mt',
-          one: '{0} mt',
-          few: '{0} mt',
-          many: '{0} mt',
-          other: '{0} mt',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mt',
-          one: '{0} mt',
-          few: '{0} mt',
-          many: '{0} mt',
-          other: '{0} mt',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'metrinės tonos',
+      one: '{0} metrinė tona',
+      few: '{0} metrinės tonos',
+      many: '{0} metrinės tonos',
+      other: '{0} metrinių tonų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mt',
+      one: '{0} mt',
+      few: '{0} mt',
+      many: '{0} mt',
+      other: '{0} mt',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mt',
+      one: '{0} mt',
+      few: '{0} mt',
+      many: '{0} mt',
+      other: '{0} mt',
+    ),
+  );
 
   @override
   Unit get massKilogram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kilogramai',
-          one: '{0} kilogramas',
-          few: '{0} kilogramai',
-          many: '{0} kilogramo',
-          other: '{0} kilogramų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kg',
-          one: '{0} kilogramas',
-          few: '{0} kilogramai',
-          many: '{0} kilogramo',
-          other: '{0} kg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kg',
-          one: '{0} kilogramas',
-          few: '{0} kilogramai',
-          many: '{0} kilogramo',
-          other: '{0} kg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kilogramai',
+      one: '{0} kilogramas',
+      few: '{0} kilogramai',
+      many: '{0} kilogramo',
+      other: '{0} kilogramų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kg',
+      one: '{0} kilogramas',
+      few: '{0} kilogramai',
+      many: '{0} kilogramo',
+      other: '{0} kg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kg',
+      one: '{0} kilogramas',
+      few: '{0} kilogramai',
+      many: '{0} kilogramo',
+      other: '{0} kg',
+    ),
+  );
 
   @override
   Unit get massGram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'gramai',
-          one: '{0} gramas',
-          few: '{0} gramai',
-          many: '{0} gramo',
-          other: '{0} gramų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'g',
-          one: '{0} gramas',
-          few: '{0} gramai',
-          many: '{0} gramo',
-          other: '{0} g',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'g',
-          one: '{0} gramas',
-          few: '{0} gramai',
-          many: '{0} gramo',
-          other: '{0} g',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'gramai',
+      one: '{0} gramas',
+      few: '{0} gramai',
+      many: '{0} gramo',
+      other: '{0} gramų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'g',
+      one: '{0} gramas',
+      few: '{0} gramai',
+      many: '{0} gramo',
+      other: '{0} g',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'g',
+      one: '{0} gramas',
+      few: '{0} gramai',
+      many: '{0} gramo',
+      other: '{0} g',
+    ),
+  );
 
   @override
   Unit get massMilligram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'miligramai',
-          one: '{0} miligramas',
-          few: '{0} miligramai',
-          many: '{0} miligramo',
-          other: '{0} miligramų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mg',
-          one: '{0} miligramas',
-          few: '{0} miligramai',
-          many: '{0} miligramo',
-          other: '{0} mg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mg',
-          one: '{0} miligramas',
-          few: '{0} miligramai',
-          many: '{0} miligramo',
-          other: '{0} mg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'miligramai',
+      one: '{0} miligramas',
+      few: '{0} miligramai',
+      many: '{0} miligramo',
+      other: '{0} miligramų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mg',
+      one: '{0} miligramas',
+      few: '{0} miligramai',
+      many: '{0} miligramo',
+      other: '{0} mg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mg',
+      one: '{0} miligramas',
+      few: '{0} miligramai',
+      many: '{0} miligramo',
+      other: '{0} mg',
+    ),
+  );
 
   @override
   Unit get massMicrogram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mikrogramai',
-          one: '{0} mikrogramas',
-          few: '{0} mikrogramai',
-          many: '{0} mikrogramo',
-          other: '{0} mikrogramų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'μg',
-          one: '{0} mikrogramas',
-          few: '{0} mikrogramai',
-          many: '{0} mikrogramo',
-          other: '{0} μg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'μg',
-          one: '{0} mikrogramas',
-          few: '{0} mikrogramai',
-          many: '{0} mikrogramo',
-          other: '{0} μg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mikrogramai',
+      one: '{0} mikrogramas',
+      few: '{0} mikrogramai',
+      many: '{0} mikrogramo',
+      other: '{0} mikrogramų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'μg',
+      one: '{0} mikrogramas',
+      few: '{0} mikrogramai',
+      many: '{0} mikrogramo',
+      other: '{0} μg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'μg',
+      one: '{0} mikrogramas',
+      few: '{0} mikrogramai',
+      many: '{0} mikrogramo',
+      other: '{0} μg',
+    ),
+  );
 
   @override
   Unit get massTon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'tonos',
-          one: '{0} tona',
-          few: '{0} tonos',
-          many: '{0} tonos',
-          other: '{0} tonų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          't',
-          one: '{0} t',
-          few: '{0} t',
-          many: '{0} t',
-          other: '{0} t',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          't',
-          one: '{0} t',
-          few: '{0} t',
-          many: '{0} t',
-          other: '{0} t',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'tonos',
+      one: '{0} tona',
+      few: '{0} tonos',
+      many: '{0} tonos',
+      other: '{0} tonų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      't',
+      one: '{0} t',
+      few: '{0} t',
+      many: '{0} t',
+      other: '{0} t',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      't',
+      one: '{0} t',
+      few: '{0} t',
+      many: '{0} t',
+      other: '{0} t',
+    ),
+  );
 
   @override
   Unit get massStone => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'stonai',
-          one: '{0} stonas',
-          few: '{0} stonai',
-          many: '{0} stono',
-          other: '{0} stonų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'st',
-          one: '{0} stonas',
-          few: '{0} stonai',
-          many: '{0} stono',
-          other: '{0} st',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'st',
-          one: '{0} stonas',
-          few: '{0} stonai',
-          many: '{0} stono',
-          other: '{0} st',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'stonai',
+      one: '{0} stonas',
+      few: '{0} stonai',
+      many: '{0} stono',
+      other: '{0} stonų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'st',
+      one: '{0} stonas',
+      few: '{0} stonai',
+      many: '{0} stono',
+      other: '{0} st',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'st',
+      one: '{0} stonas',
+      few: '{0} stonai',
+      many: '{0} stono',
+      other: '{0} st',
+    ),
+  );
 
   @override
   Unit get massPound => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'svarai',
-          one: '{0} svaras',
-          few: '{0} svarai',
-          many: '{0} svaro',
-          other: '{0} svarų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lb',
-          one: '{0} svaras',
-          few: '{0} svarai',
-          many: '{0} svaro',
-          other: '{0} lb',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lb',
-          one: '{0} svaras',
-          few: '{0} svarai',
-          many: '{0} svaro',
-          other: '{0} lb',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'svarai',
+      one: '{0} svaras',
+      few: '{0} svarai',
+      many: '{0} svaro',
+      other: '{0} svarų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'lb',
+      one: '{0} svaras',
+      few: '{0} svarai',
+      many: '{0} svaro',
+      other: '{0} lb',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'lb',
+      one: '{0} svaras',
+      few: '{0} svarai',
+      many: '{0} svaro',
+      other: '{0} lb',
+    ),
+  );
 
   @override
   Unit get massOunce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'uncijos',
-          one: '{0} uncija',
-          few: '{0} uncijos',
-          many: '{0} uncijos',
-          other: '{0} uncijų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'oz',
-          one: '{0} uncija',
-          few: '{0} uncijos',
-          many: '{0} uncijos',
-          other: '{0} oz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'oz',
-          one: '{0} uncija',
-          few: '{0} uncijos',
-          many: '{0} uncijos',
-          other: '{0} oz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'uncijos',
+      one: '{0} uncija',
+      few: '{0} uncijos',
+      many: '{0} uncijos',
+      other: '{0} uncijų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'oz',
+      one: '{0} uncija',
+      few: '{0} uncijos',
+      many: '{0} uncijos',
+      other: '{0} oz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'oz',
+      one: '{0} uncija',
+      few: '{0} uncijos',
+      many: '{0} uncijos',
+      other: '{0} oz',
+    ),
+  );
 
   @override
   Unit get massOunceTroy => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'Trojos uncijos',
-          one: '{0} Trojos uncija',
-          few: '{0} Trojos uncijos',
-          many: '{0} Trojos uncijos',
-          other: '{0} Trojos uncijų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ozt',
-          one: '{0} ozt',
-          few: '{0} ozt',
-          many: '{0} ozt',
-          other: '{0} ozt',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ozt',
-          one: '{0} ozt',
-          few: '{0} ozt',
-          many: '{0} ozt',
-          other: '{0} ozt',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'Trojos uncijos',
+      one: '{0} Trojos uncija',
+      few: '{0} Trojos uncijos',
+      many: '{0} Trojos uncijos',
+      other: '{0} Trojos uncijų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ozt',
+      one: '{0} ozt',
+      few: '{0} ozt',
+      many: '{0} ozt',
+      other: '{0} ozt',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ozt',
+      one: '{0} ozt',
+      few: '{0} ozt',
+      many: '{0} ozt',
+      other: '{0} ozt',
+    ),
+  );
 
   @override
   Unit get massCarat => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'karatai',
-          one: '{0} karatas',
-          few: '{0} karatai',
-          many: '{0} karato',
-          other: '{0} karatų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ct',
-          one: '{0} ct',
-          few: '{0} ct',
-          many: '{0} ct',
-          other: '{0} ct',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ct',
-          one: '{0} ct',
-          few: '{0} ct',
-          many: '{0} ct',
-          other: '{0} ct',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'karatai',
+      one: '{0} karatas',
+      few: '{0} karatai',
+      many: '{0} karato',
+      other: '{0} karatų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ct',
+      one: '{0} ct',
+      few: '{0} ct',
+      many: '{0} ct',
+      other: '{0} ct',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ct',
+      one: '{0} ct',
+      few: '{0} ct',
+      many: '{0} ct',
+      other: '{0} ct',
+    ),
+  );
 
   @override
   Unit get massDalton => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'daltonai',
-          one: '{0} daltonas',
-          few: '{0} daltonai',
-          many: '{0} daltono',
-          other: '{0} daltonų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Da',
-          one: '{0} daltonas',
-          few: '{0} daltonai',
-          many: '{0} daltono',
-          other: '{0} Da',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Da',
-          one: '{0} daltonas',
-          few: '{0} daltonai',
-          many: '{0} daltono',
-          other: '{0} Da',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'daltonai',
+      one: '{0} daltonas',
+      few: '{0} daltonai',
+      many: '{0} daltono',
+      other: '{0} daltonų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Da',
+      one: '{0} daltonas',
+      few: '{0} daltonai',
+      many: '{0} daltono',
+      other: '{0} Da',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Da',
+      one: '{0} daltonas',
+      few: '{0} daltonai',
+      many: '{0} daltono',
+      other: '{0} Da',
+    ),
+  );
 
   @override
   Unit get massEarthMass => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'žemės masė',
-          one: '{0} Earth mass',
-          other: '{0} M⊕',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'M⊕',
-          one: '{0} M⊕',
-          other: '{0} M⊕',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'M⊕',
-          one: '{0}M⊕',
-          other: '{0} M⊕',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'žemės masė',
+      one: '{0} Earth mass',
+      other: '{0} M⊕',
+    ),
+    short: UnitCountPattern(_locale, 'M⊕', one: '{0} M⊕', other: '{0} M⊕'),
+    narrow: UnitCountPattern(_locale, 'M⊕', one: '{0}M⊕', other: '{0} M⊕'),
+  );
 
   @override
   Unit get massSolarMass => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'saulės masė',
-          one: '{0} solar mass',
-          other: '{0} M☉',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'M☉',
-          one: '{0} M☉',
-          other: '{0} M☉',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'M☉',
-          one: '{0}M☉',
-          other: '{0} M☉',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'saulės masė',
+      one: '{0} solar mass',
+      other: '{0} M☉',
+    ),
+    short: UnitCountPattern(_locale, 'M☉', one: '{0} M☉', other: '{0} M☉'),
+    narrow: UnitCountPattern(_locale, 'M☉', one: '{0}M☉', other: '{0} M☉'),
+  );
 
   @override
   Unit get massGrain => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'grūdas',
-          one: '{0} grūdas',
-          few: '{0} grūdai',
-          many: '{0} grūdo',
-          other: '{0} grūdų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'grūdas',
-          one: '{0} grūdas',
-          few: '{0} grūdai',
-          many: '{0} grūdo',
-          other: '{0} grūdų',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'grūdas',
-          one: '{0} grūdas',
-          few: '{0} grūdai',
-          many: '{0} grūdo',
-          other: '{0} grūdų',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'grūdas',
+      one: '{0} grūdas',
+      few: '{0} grūdai',
+      many: '{0} grūdo',
+      other: '{0} grūdų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'grūdas',
+      one: '{0} grūdas',
+      few: '{0} grūdai',
+      many: '{0} grūdo',
+      other: '{0} grūdų',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'grūdas',
+      one: '{0} grūdas',
+      few: '{0} grūdai',
+      many: '{0} grūdo',
+      other: '{0} grūdų',
+    ),
+  );
 
   @override
   Unit get powerGigawatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'gigavatai',
-          one: '{0} gigavatas',
-          few: '{0} gigavatai',
-          many: '{0} gigavato',
-          other: '{0} gigavatų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'GW',
-          one: '{0} gigavatas',
-          few: '{0} gigavatai',
-          many: '{0} gigavato',
-          other: '{0} GW',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'GW',
-          one: '{0} gigavatas',
-          few: '{0} gigavatai',
-          many: '{0} gigavato',
-          other: '{0} GW',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'gigavatai',
+      one: '{0} gigavatas',
+      few: '{0} gigavatai',
+      many: '{0} gigavato',
+      other: '{0} gigavatų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'GW',
+      one: '{0} gigavatas',
+      few: '{0} gigavatai',
+      many: '{0} gigavato',
+      other: '{0} GW',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'GW',
+      one: '{0} gigavatas',
+      few: '{0} gigavatai',
+      many: '{0} gigavato',
+      other: '{0} GW',
+    ),
+  );
 
   @override
   Unit get powerMegawatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'megavatai',
-          one: '{0} megavatas',
-          few: '{0} megavatai',
-          many: '{0} megavato',
-          other: '{0} megavatų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'MW',
-          one: '{0} megavatas',
-          few: '{0} megavatai',
-          many: '{0} megavato',
-          other: '{0} MW',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MW',
-          one: '{0} megavatas',
-          few: '{0} megavatai',
-          many: '{0} megavato',
-          other: '{0} MW',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'megavatai',
+      one: '{0} megavatas',
+      few: '{0} megavatai',
+      many: '{0} megavato',
+      other: '{0} megavatų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'MW',
+      one: '{0} megavatas',
+      few: '{0} megavatai',
+      many: '{0} megavato',
+      other: '{0} MW',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'MW',
+      one: '{0} megavatas',
+      few: '{0} megavatai',
+      many: '{0} megavato',
+      other: '{0} MW',
+    ),
+  );
 
   @override
   Unit get powerKilowatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kilovatai',
-          one: '{0} kilovatas',
-          few: '{0} kilovatai',
-          many: '{0} kilovato',
-          other: '{0} kilovatų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kW',
-          one: '{0} kilovatas',
-          few: '{0} kilovatai',
-          many: '{0} kilovato',
-          other: '{0} kW',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kW',
-          one: '{0} kilovatas',
-          few: '{0} kilovatai',
-          many: '{0} kilovato',
-          other: '{0} kW',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kilovatai',
+      one: '{0} kilovatas',
+      few: '{0} kilovatai',
+      many: '{0} kilovato',
+      other: '{0} kilovatų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kW',
+      one: '{0} kilovatas',
+      few: '{0} kilovatai',
+      many: '{0} kilovato',
+      other: '{0} kW',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kW',
+      one: '{0} kilovatas',
+      few: '{0} kilovatai',
+      many: '{0} kilovato',
+      other: '{0} kW',
+    ),
+  );
 
   @override
   Unit get powerWatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'vatai',
-          one: '{0} vatas',
-          few: '{0} vatai',
-          many: '{0} vato',
-          other: '{0} vatų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'W',
-          one: '{0} vatas',
-          few: '{0} vatai',
-          many: '{0} vato',
-          other: '{0} W',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'W',
-          one: '{0} vatas',
-          few: '{0} vatai',
-          many: '{0} vato',
-          other: '{0} W',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'vatai',
+      one: '{0} vatas',
+      few: '{0} vatai',
+      many: '{0} vato',
+      other: '{0} vatų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'W',
+      one: '{0} vatas',
+      few: '{0} vatai',
+      many: '{0} vato',
+      other: '{0} W',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'W',
+      one: '{0} vatas',
+      few: '{0} vatai',
+      many: '{0} vato',
+      other: '{0} W',
+    ),
+  );
 
   @override
   Unit get powerMilliwatt => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'milivatai',
-          one: '{0} milivatas',
-          few: '{0} milivatai',
-          many: '{0} milivato',
-          other: '{0} milivatų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mW',
-          one: '{0} milivatas',
-          few: '{0} milivatai',
-          many: '{0} milivato',
-          other: '{0} mW',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mW',
-          one: '{0} milivatas',
-          few: '{0} milivatai',
-          many: '{0} milivato',
-          other: '{0} mW',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'milivatai',
+      one: '{0} milivatas',
+      few: '{0} milivatai',
+      many: '{0} milivato',
+      other: '{0} milivatų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mW',
+      one: '{0} milivatas',
+      few: '{0} milivatai',
+      many: '{0} milivato',
+      other: '{0} mW',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mW',
+      one: '{0} milivatas',
+      few: '{0} milivatai',
+      many: '{0} milivato',
+      other: '{0} mW',
+    ),
+  );
 
   @override
   Unit get powerHorsepower => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'arklio galios',
-          one: '{0} arklio galia',
-          few: '{0} arklio galios',
-          many: '{0} arklio galios',
-          other: '{0} arklio galių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'AG',
-          one: '{0} AG',
-          few: '{0} AG',
-          many: '{0} AG',
-          other: '{0} AG',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'AG',
-          one: '{0} AG',
-          few: '{0} AG',
-          many: '{0} AG',
-          other: '{0} AG',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'arklio galios',
+      one: '{0} arklio galia',
+      few: '{0} arklio galios',
+      many: '{0} arklio galios',
+      other: '{0} arklio galių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'AG',
+      one: '{0} AG',
+      few: '{0} AG',
+      many: '{0} AG',
+      other: '{0} AG',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'AG',
+      one: '{0} AG',
+      few: '{0} AG',
+      many: '{0} AG',
+      other: '{0} AG',
+    ),
+  );
 
   @override
   Unit get pressureMillimeterOfhg => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'gysidabrio stulpelio milimetrai',
-          one: '{0} gysidabrio stulpelio milimetras',
-          few: '{0} gysidabrio stulpelio milimetrai',
-          many: '{0} gysidabrio stulpelio milimetro',
-          other: '{0} gysidabrio stulpelio milimetrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mm Hg',
-          one: '{0} gysidabrio stulpelio milimetras',
-          few: '{0} gysidabrio stulpelio milimetrai',
-          many: '{0} gysidabrio stulpelio milimetro',
-          other: '{0} mm Hg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mm Hg',
-          one: '{0} gysidabrio stulpelio milimetras',
-          few: '{0} gysidabrio stulpelio milimetrai',
-          many: '{0} gysidabrio stulpelio milimetro',
-          other: '{0} mm Hg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'gysidabrio stulpelio milimetrai',
+      one: '{0} gysidabrio stulpelio milimetras',
+      few: '{0} gysidabrio stulpelio milimetrai',
+      many: '{0} gysidabrio stulpelio milimetro',
+      other: '{0} gysidabrio stulpelio milimetrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mm Hg',
+      one: '{0} gysidabrio stulpelio milimetras',
+      few: '{0} gysidabrio stulpelio milimetrai',
+      many: '{0} gysidabrio stulpelio milimetro',
+      other: '{0} mm Hg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mm Hg',
+      one: '{0} gysidabrio stulpelio milimetras',
+      few: '{0} gysidabrio stulpelio milimetrai',
+      many: '{0} gysidabrio stulpelio milimetro',
+      other: '{0} mm Hg',
+    ),
+  );
 
   @override
   Unit get pressurePoundForcePerSquareInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'svarai kv. colyje',
-          one: '{0} svaras kv. colyje',
-          few: '{0} svarai kv. colyje',
-          many: '{0} svaro kv. colyje',
-          other: '{0} svarų kv. colyje',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lb in²',
-          one: '{0} lb in²',
-          few: '{0} lb in²',
-          many: '{0} lb in²',
-          other: '{0} lb in²',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lb in²',
-          one: '{0} lb in²',
-          few: '{0} lb in²',
-          many: '{0} lb in²',
-          other: '{0} lb in²',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'svarai kv. colyje',
+      one: '{0} svaras kv. colyje',
+      few: '{0} svarai kv. colyje',
+      many: '{0} svaro kv. colyje',
+      other: '{0} svarų kv. colyje',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'lb in²',
+      one: '{0} lb in²',
+      few: '{0} lb in²',
+      many: '{0} lb in²',
+      other: '{0} lb in²',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'lb in²',
+      one: '{0} lb in²',
+      few: '{0} lb in²',
+      many: '{0} lb in²',
+      other: '{0} lb in²',
+    ),
+  );
 
   @override
   Unit get pressureInchOfhg => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'gyvsidabrio stulpelio coliai',
-          one: '{0} gyvsidabrio stulpelio colis',
-          few: '{0} gyvsidabrio stulpelio coliai',
-          many: '{0} gyvsidabrio stulpelio colio',
-          other: '{0} gyvsidabrio stulpelio colių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'inHg',
-          one: '{0} gyvsidabrio stulpelio colis',
-          few: '{0} gyvsidabrio stulpelio coliai',
-          many: '{0} gyvsidabrio stulpelio colio',
-          other: '{0} inHg',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'inHg',
-          one: '{0} gyvsidabrio stulpelio colis',
-          few: '{0} gyvsidabrio stulpelio coliai',
-          many: '{0} gyvsidabrio stulpelio colio',
-          other: '{0} inHg',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'gyvsidabrio stulpelio coliai',
+      one: '{0} gyvsidabrio stulpelio colis',
+      few: '{0} gyvsidabrio stulpelio coliai',
+      many: '{0} gyvsidabrio stulpelio colio',
+      other: '{0} gyvsidabrio stulpelio colių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'inHg',
+      one: '{0} gyvsidabrio stulpelio colis',
+      few: '{0} gyvsidabrio stulpelio coliai',
+      many: '{0} gyvsidabrio stulpelio colio',
+      other: '{0} inHg',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'inHg',
+      one: '{0} gyvsidabrio stulpelio colis',
+      few: '{0} gyvsidabrio stulpelio coliai',
+      many: '{0} gyvsidabrio stulpelio colio',
+      other: '{0} inHg',
+    ),
+  );
 
   @override
   Unit get pressureBar => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'baras',
-          one: '{0} baras',
-          few: '{0} barai',
-          many: '{0} baro',
-          other: '{0} barų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'baras',
-          one: '{0} ba',
-          few: '{0} ba',
-          many: '{0} ba',
-          other: '{0} ba',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'baras',
-          one: '{0} ba',
-          few: '{0} ba',
-          many: '{0} ba',
-          other: '{0} ba',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'baras',
+      one: '{0} baras',
+      few: '{0} barai',
+      many: '{0} baro',
+      other: '{0} barų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'baras',
+      one: '{0} ba',
+      few: '{0} ba',
+      many: '{0} ba',
+      other: '{0} ba',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'baras',
+      one: '{0} ba',
+      few: '{0} ba',
+      many: '{0} ba',
+      other: '{0} ba',
+    ),
+  );
 
   @override
   Unit get pressureMillibar => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'milibarai',
-          one: '{0} milibaras',
-          few: '{0} milibarai',
-          many: '{0} milibaro',
-          other: '{0} milibarų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mbar',
-          one: '{0} milibaras',
-          few: '{0} milibarai',
-          many: '{0} milibaro',
-          other: '{0} mbar',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mbar',
-          one: '{0} milibaras',
-          few: '{0} milibarai',
-          many: '{0} milibaro',
-          other: '{0} mbar',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'milibarai',
+      one: '{0} milibaras',
+      few: '{0} milibarai',
+      many: '{0} milibaro',
+      other: '{0} milibarų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mbar',
+      one: '{0} milibaras',
+      few: '{0} milibarai',
+      many: '{0} milibaro',
+      other: '{0} mbar',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mbar',
+      one: '{0} milibaras',
+      few: '{0} milibarai',
+      many: '{0} milibaro',
+      other: '{0} mbar',
+    ),
+  );
 
   @override
   Unit get pressureAtmosphere => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'atmosferos',
-          one: '{0} atmosfera',
-          few: '{0} atmosferos',
-          many: '{0} atmosferos',
-          other: '{0} atmosferų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'atm',
-          one: '{0} atmosfera',
-          few: '{0} atmosferos',
-          many: '{0} atmosferos',
-          other: '{0} atm',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'atm',
-          one: '{0} atmosfera',
-          few: '{0} atmosferos',
-          many: '{0} atmosferos',
-          other: '{0} atm',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'atmosferos',
+      one: '{0} atmosfera',
+      few: '{0} atmosferos',
+      many: '{0} atmosferos',
+      other: '{0} atmosferų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'atm',
+      one: '{0} atmosfera',
+      few: '{0} atmosferos',
+      many: '{0} atmosferos',
+      other: '{0} atm',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'atm',
+      one: '{0} atmosfera',
+      few: '{0} atmosferos',
+      many: '{0} atmosferos',
+      other: '{0} atm',
+    ),
+  );
 
   @override
   Unit get pressurePascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'paskaliai',
-          one: '{0} paskalis',
-          few: '{0} paskaliai',
-          many: '{0} paskalio',
-          other: '{0} paskalių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'paskaliai',
-          one: '{0} paskalis',
-          few: '{0} paskaliai',
-          many: '{0} paskalio',
-          other: '{0} Pa',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'paskaliai',
-          one: '{0} paskalis',
-          few: '{0} paskaliai',
-          many: '{0} paskalio',
-          other: '{0} Pa',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'paskaliai',
+      one: '{0} paskalis',
+      few: '{0} paskaliai',
+      many: '{0} paskalio',
+      other: '{0} paskalių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'paskaliai',
+      one: '{0} paskalis',
+      few: '{0} paskaliai',
+      many: '{0} paskalio',
+      other: '{0} Pa',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'paskaliai',
+      one: '{0} paskalis',
+      few: '{0} paskaliai',
+      many: '{0} paskalio',
+      other: '{0} Pa',
+    ),
+  );
 
   @override
   Unit get pressureHectopascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'hektopaskaliai',
-          one: '{0} hektopaskalis',
-          few: '{0} hektopaskaliai',
-          many: '{0} hektopaskalio',
-          other: '{0} hektopaskalių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'hPa',
-          one: '{0} hektopaskalis',
-          few: '{0} hektopaskaliai',
-          many: '{0} hektopaskalio',
-          other: '{0} hPa',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'hPa',
-          one: '{0} hektopaskalis',
-          few: '{0} hektopaskaliai',
-          many: '{0} hektopaskalio',
-          other: '{0} hPa',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'hektopaskaliai',
+      one: '{0} hektopaskalis',
+      few: '{0} hektopaskaliai',
+      many: '{0} hektopaskalio',
+      other: '{0} hektopaskalių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'hPa',
+      one: '{0} hektopaskalis',
+      few: '{0} hektopaskaliai',
+      many: '{0} hektopaskalio',
+      other: '{0} hPa',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'hPa',
+      one: '{0} hektopaskalis',
+      few: '{0} hektopaskaliai',
+      many: '{0} hektopaskalio',
+      other: '{0} hPa',
+    ),
+  );
 
   @override
   Unit get pressureKilopascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kilopaskaliai',
-          one: '{0} kilopaskalis',
-          few: '{0} kilopaskaliai',
-          many: '{0} kilopaskalio',
-          other: '{0} kilopaskalių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kPa',
-          one: '{0} kilopaskalis',
-          few: '{0} kilopaskaliai',
-          many: '{0} kilopaskalio',
-          other: '{0} kPa',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kPa',
-          one: '{0} kilopaskalis',
-          few: '{0} kilopaskaliai',
-          many: '{0} kilopaskalio',
-          other: '{0} kPa',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kilopaskaliai',
+      one: '{0} kilopaskalis',
+      few: '{0} kilopaskaliai',
+      many: '{0} kilopaskalio',
+      other: '{0} kilopaskalių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kPa',
+      one: '{0} kilopaskalis',
+      few: '{0} kilopaskaliai',
+      many: '{0} kilopaskalio',
+      other: '{0} kPa',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kPa',
+      one: '{0} kilopaskalis',
+      few: '{0} kilopaskaliai',
+      many: '{0} kilopaskalio',
+      other: '{0} kPa',
+    ),
+  );
 
   @override
   Unit get pressureMegapascal => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'megapaskaliai',
-          one: '{0} megapaskalis',
-          few: '{0} megapaskaliai',
-          many: '{0} megapaskalio',
-          other: '{0} megapaskalių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'MPa',
-          one: '{0} megapaskalis',
-          few: '{0} megapaskaliai',
-          many: '{0} megapaskalio',
-          other: '{0} MPa',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'MPa',
-          one: '{0} megapaskalis',
-          few: '{0} megapaskaliai',
-          many: '{0} megapaskalio',
-          other: '{0} MPa',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'megapaskaliai',
+      one: '{0} megapaskalis',
+      few: '{0} megapaskaliai',
+      many: '{0} megapaskalio',
+      other: '{0} megapaskalių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'MPa',
+      one: '{0} megapaskalis',
+      few: '{0} megapaskaliai',
+      many: '{0} megapaskalio',
+      other: '{0} MPa',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'MPa',
+      one: '{0} megapaskalis',
+      few: '{0} megapaskaliai',
+      many: '{0} megapaskalio',
+      other: '{0} MPa',
+    ),
+  );
 
   @override
   Unit get speedKilometerPerHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kilometrai per valandą',
-          one: '{0} kilometras per valandą',
-          few: '{0} kilometrai per valandą',
-          many: '{0} kilometro per valandą',
-          other: '{0} kilometrų per valandą',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'km/val.',
-          one: '{0} km/val.',
-          few: '{0} km/val.',
-          many: '{0} km/val.',
-          other: '{0} km/val.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'km/h',
-          one: '{0} km/h',
-          few: '{0} km/h',
-          many: '{0} km/h',
-          other: '{0} km/h',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kilometrai per valandą',
+      one: '{0} kilometras per valandą',
+      few: '{0} kilometrai per valandą',
+      many: '{0} kilometro per valandą',
+      other: '{0} kilometrų per valandą',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'km/val.',
+      one: '{0} km/val.',
+      few: '{0} km/val.',
+      many: '{0} km/val.',
+      other: '{0} km/val.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'km/h',
+      one: '{0} km/h',
+      few: '{0} km/h',
+      many: '{0} km/h',
+      other: '{0} km/h',
+    ),
+  );
 
   @override
   Unit get speedMeterPerSecond => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'metrai per sekundę',
-          one: '{0} metras per sekundę',
-          few: '{0} metrai per sekundę',
-          many: '{0} metro per sekundę',
-          other: '{0} metrų per sekundę',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'm/sek.',
-          one: '{0} m/sek.',
-          few: '{0} m/sek.',
-          many: '{0} m/sek.',
-          other: '{0} m/sek.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'm/s',
-          one: '{0} m/s',
-          few: '{0} m/s',
-          many: '{0} m/s',
-          other: '{0} m/s',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'metrai per sekundę',
+      one: '{0} metras per sekundę',
+      few: '{0} metrai per sekundę',
+      many: '{0} metro per sekundę',
+      other: '{0} metrų per sekundę',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'm/sek.',
+      one: '{0} m/sek.',
+      few: '{0} m/sek.',
+      many: '{0} m/sek.',
+      other: '{0} m/sek.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'm/s',
+      one: '{0} m/s',
+      few: '{0} m/s',
+      many: '{0} m/s',
+      other: '{0} m/s',
+    ),
+  );
 
   @override
   Unit get speedMilePerHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mylios per valandą',
-          one: '{0} mylia per valandą',
-          few: '{0} mylios per valandą',
-          many: '{0} mylios per valandą',
-          other: '{0} mylių per valandą',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mi/h',
-          one: '{0} mylia per valandą',
-          few: '{0} mylios per valandą',
-          many: '{0} mylios per valandą',
-          other: '{0} mi/h',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mi/h',
-          one: '{0} mylia per valandą',
-          few: '{0} mylios per valandą',
-          many: '{0} mylios per valandą',
-          other: '{0} mi/h',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mylios per valandą',
+      one: '{0} mylia per valandą',
+      few: '{0} mylios per valandą',
+      many: '{0} mylios per valandą',
+      other: '{0} mylių per valandą',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mi/h',
+      one: '{0} mylia per valandą',
+      few: '{0} mylios per valandą',
+      many: '{0} mylios per valandą',
+      other: '{0} mi/h',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mi/h',
+      one: '{0} mylia per valandą',
+      few: '{0} mylios per valandą',
+      many: '{0} mylios per valandą',
+      other: '{0} mi/h',
+    ),
+  );
 
   @override
   Unit get speedKnot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mazgas',
-          one: '{0} mazgas',
-          few: '{0} mazgai',
-          many: '{0} mazgo',
-          other: '{0} mazgų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mazgas',
-          one: '{0} KN',
-          few: '{0} KN',
-          many: '{0} KN',
-          other: '{0} KN',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mazgas',
-          one: '{0} KN',
-          few: '{0} KN',
-          many: '{0} KN',
-          other: '{0} KN',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mazgas',
+      one: '{0} mazgas',
+      few: '{0} mazgai',
+      many: '{0} mazgo',
+      other: '{0} mazgų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mazgas',
+      one: '{0} KN',
+      few: '{0} KN',
+      many: '{0} KN',
+      other: '{0} KN',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mazgas',
+      one: '{0} KN',
+      few: '{0} KN',
+      many: '{0} KN',
+      other: '{0} KN',
+    ),
+  );
 
   @override
   Unit get speedBeaufort => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'Bofortas',
-          one: 'Boforto {0}',
-          few: 'Boforto {0}',
-          many: 'Boforto {0}',
-          other: 'Boforto {0}',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Bofortas',
-          one: 'Boforto {0}',
-          few: 'Boforto {0}',
-          many: 'Boforto {0}',
-          other: 'B {0}',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Bofortas',
-          one: 'Boforto {0}',
-          few: 'Boforto {0}',
-          many: 'Boforto {0}',
-          other: 'B {0}',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'Bofortas',
+      one: 'Boforto {0}',
+      few: 'Boforto {0}',
+      many: 'Boforto {0}',
+      other: 'Boforto {0}',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Bofortas',
+      one: 'Boforto {0}',
+      few: 'Boforto {0}',
+      many: 'Boforto {0}',
+      other: 'B {0}',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Bofortas',
+      one: 'Boforto {0}',
+      few: 'Boforto {0}',
+      many: 'Boforto {0}',
+      other: 'B {0}',
+    ),
+  );
 
   @override
   Unit get temperatureGeneric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0} degree temperature',
-          other: '{0}°',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0}°',
-          other: '{0}°',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°',
-          one: '{0}°',
-          other: '{0}°',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      '°',
+      one: '{0} degree temperature',
+      other: '{0}°',
+    ),
+    short: UnitCountPattern(_locale, '°', one: '{0}°', other: '{0}°'),
+    narrow: UnitCountPattern(_locale, '°', one: '{0}°', other: '{0}°'),
+  );
 
   @override
   Unit get temperatureCelsius => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'Celsijaus laipsniai',
-          one: '{0} Celsijaus laipsnis',
-          few: '{0} Celsijaus laipsniai',
-          many: '{0} Celsijaus laipsnio',
-          other: '{0} Celsijaus laipsnių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '°C',
-          one: '{0} Celsijaus laipsnis',
-          few: '{0} Celsijaus laipsniai',
-          many: '{0} Celsijaus laipsnio',
-          other: '{0}°C',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°C',
-          one: '{0}°',
-          few: '{0}°',
-          many: '{0}°',
-          other: '{0}°',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'Celsijaus laipsniai',
+      one: '{0} Celsijaus laipsnis',
+      few: '{0} Celsijaus laipsniai',
+      many: '{0} Celsijaus laipsnio',
+      other: '{0} Celsijaus laipsnių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '°C',
+      one: '{0} Celsijaus laipsnis',
+      few: '{0} Celsijaus laipsniai',
+      many: '{0} Celsijaus laipsnio',
+      other: '{0}°C',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '°C',
+      one: '{0}°',
+      few: '{0}°',
+      many: '{0}°',
+      other: '{0}°',
+    ),
+  );
 
   @override
   Unit get temperatureFahrenheit => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'Farenheito laipsniai',
-          one: '{0} Farenheito laipsnis',
-          few: '{0} Farenheito laipsniai',
-          many: '{0} Farenheito laipsnio',
-          other: '{0} Farenheito laipsnių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          '°F',
-          one: '{0} Farenheito laipsnis',
-          few: '{0} Farenheito laipsniai',
-          many: '{0} Farenheito laipsnio',
-          other: '{0}°F',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          '°F',
-          one: '{0} Farenheito laipsnis',
-          few: '{0} Farenheito laipsniai',
-          many: '{0} Farenheito laipsnio',
-          other: '{0}°F',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'Farenheito laipsniai',
+      one: '{0} Farenheito laipsnis',
+      few: '{0} Farenheito laipsniai',
+      many: '{0} Farenheito laipsnio',
+      other: '{0} Farenheito laipsnių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      '°F',
+      one: '{0} Farenheito laipsnis',
+      few: '{0} Farenheito laipsniai',
+      many: '{0} Farenheito laipsnio',
+      other: '{0}°F',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      '°F',
+      one: '{0} Farenheito laipsnis',
+      few: '{0} Farenheito laipsniai',
+      many: '{0} Farenheito laipsnio',
+      other: '{0}°F',
+    ),
+  );
 
   @override
   Unit get temperatureKelvin => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kelvinai',
-          one: '{0} kelvinas',
-          few: '{0} kelvinai',
-          many: '{0} kelvino',
-          other: '{0} kelvinų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'K',
-          one: '{0} kelvinas',
-          few: '{0} kelvinai',
-          many: '{0} kelvino',
-          other: '{0} K',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'K',
-          one: '{0} kelvinas',
-          few: '{0} kelvinai',
-          many: '{0} kelvino',
-          other: '{0} K',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kelvinai',
+      one: '{0} kelvinas',
+      few: '{0} kelvinai',
+      many: '{0} kelvino',
+      other: '{0} kelvinų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'K',
+      one: '{0} kelvinas',
+      few: '{0} kelvinai',
+      many: '{0} kelvino',
+      other: '{0} K',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'K',
+      one: '{0} kelvinas',
+      few: '{0} kelvinai',
+      many: '{0} kelvino',
+      other: '{0} K',
+    ),
+  );
 
   @override
   Unit get torquePoundForceFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'svarų pėdos',
-          one: '{0} pound-force-foot',
-          other: '{0} lbf⋅ft',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'lbf⋅ft',
-          one: '{0} lbf⋅ft',
-          other: '{0} lbf⋅ft',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'lbf⋅ft',
-          one: '{0}lbf⋅ft',
-          other: '{0} lbf⋅ft',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'svarų pėdos',
+      one: '{0} pound-force-foot',
+      other: '{0} lbf⋅ft',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'lbf⋅ft',
+      one: '{0} lbf⋅ft',
+      other: '{0} lbf⋅ft',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'lbf⋅ft',
+      one: '{0}lbf⋅ft',
+      other: '{0} lbf⋅ft',
+    ),
+  );
 
   @override
   Unit get torqueNewtonMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'niutonmetrai',
-          one: '{0} niutonmetras',
-          few: '{0} niutonmetrai',
-          many: '{0} niutonmetro',
-          other: '{0} niutonmetrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'N-m',
-          one: '{0} N-m',
-          few: '{0} N-m',
-          many: '{0} N-m',
-          other: '{0} N-m',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'N-m',
-          one: '{0} N-m',
-          few: '{0} N-m',
-          many: '{0} N-m',
-          other: '{0} N-m',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'niutonmetrai',
+      one: '{0} niutonmetras',
+      few: '{0} niutonmetrai',
+      many: '{0} niutonmetro',
+      other: '{0} niutonmetrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'N-m',
+      one: '{0} N-m',
+      few: '{0} N-m',
+      many: '{0} N-m',
+      other: '{0} N-m',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'N-m',
+      one: '{0} N-m',
+      few: '{0} N-m',
+      many: '{0} N-m',
+      other: '{0} N-m',
+    ),
+  );
 
   @override
   Unit get volumeCubicKilometer => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kubiniai kilometrai',
-          one: '{0} kubinis kilometras',
-          few: '{0} kubiniai kilimetrai',
-          many: '{0} kubinio kilometro',
-          other: '{0} kubinių kilometrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'km³',
-          one: '{0} kubinis kilometras',
-          few: '{0} kubiniai kilimetrai',
-          many: '{0} kubinio kilometro',
-          other: '{0} km³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'km³',
-          one: '{0} kubinis kilometras',
-          few: '{0} kubiniai kilimetrai',
-          many: '{0} kubinio kilometro',
-          other: '{0} km³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kubiniai kilometrai',
+      one: '{0} kubinis kilometras',
+      few: '{0} kubiniai kilimetrai',
+      many: '{0} kubinio kilometro',
+      other: '{0} kubinių kilometrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'km³',
+      one: '{0} kubinis kilometras',
+      few: '{0} kubiniai kilimetrai',
+      many: '{0} kubinio kilometro',
+      other: '{0} km³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'km³',
+      one: '{0} kubinis kilometras',
+      few: '{0} kubiniai kilimetrai',
+      many: '{0} kubinio kilometro',
+      other: '{0} km³',
+    ),
+  );
 
   @override
   Unit get volumeCubicMeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kubiniai metrai',
-          one: '{0} kubinis metras',
-          few: '{0} kubiniai metrai',
-          many: '{0} kubinio metro',
-          other: '{0} kubinių metrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'm³',
-          one: '{0} kubinis metras',
-          few: '{0} kubiniai metrai',
-          many: '{0} kubinio metro',
-          other: '{0} m³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'm³',
-          one: '{0} kubinis metras',
-          few: '{0} kubiniai metrai',
-          many: '{0} kubinio metro',
-          other: '{0} m³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kubiniai metrai',
+      one: '{0} kubinis metras',
+      few: '{0} kubiniai metrai',
+      many: '{0} kubinio metro',
+      other: '{0} kubinių metrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'm³',
+      one: '{0} kubinis metras',
+      few: '{0} kubiniai metrai',
+      many: '{0} kubinio metro',
+      other: '{0} m³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'm³',
+      one: '{0} kubinis metras',
+      few: '{0} kubiniai metrai',
+      many: '{0} kubinio metro',
+      other: '{0} m³',
+    ),
+  );
 
   @override
   Unit get volumeCubicCentimeter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kubiniai centimetrai',
-          one: '{0} kubinis centimetras',
-          few: '{0} kubiniai centimetrai',
-          many: '{0} kubinio centimetro',
-          other: '{0} kubinių centimetrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cm³',
-          one: '{0} kubinis centimetras',
-          few: '{0} kubiniai centimetrai',
-          many: '{0} kubinio centimetro',
-          other: '{0} cm³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cm³',
-          one: '{0} kubinis centimetras',
-          few: '{0} kubiniai centimetrai',
-          many: '{0} kubinio centimetro',
-          other: '{0} cm³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kubiniai centimetrai',
+      one: '{0} kubinis centimetras',
+      few: '{0} kubiniai centimetrai',
+      many: '{0} kubinio centimetro',
+      other: '{0} kubinių centimetrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cm³',
+      one: '{0} kubinis centimetras',
+      few: '{0} kubiniai centimetrai',
+      many: '{0} kubinio centimetro',
+      other: '{0} cm³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cm³',
+      one: '{0} kubinis centimetras',
+      few: '{0} kubiniai centimetrai',
+      many: '{0} kubinio centimetro',
+      other: '{0} cm³',
+    ),
+  );
 
   @override
   Unit get volumeCubicMile => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kubinės mylios',
-          one: '{0} kubinė mylia',
-          few: '{0} kubinės mylios',
-          many: '{0} kubinės mylios',
-          other: '{0} kubinių mylių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mi³',
-          one: '{0} kubinė mylia',
-          few: '{0} kubinės mylios',
-          many: '{0} kubinės mylios',
-          other: '{0} mi³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mi³',
-          one: '{0} kubinė mylia',
-          few: '{0} kubinės mylios',
-          many: '{0} kubinės mylios',
-          other: '{0} mi³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kubinės mylios',
+      one: '{0} kubinė mylia',
+      few: '{0} kubinės mylios',
+      many: '{0} kubinės mylios',
+      other: '{0} kubinių mylių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mi³',
+      one: '{0} kubinė mylia',
+      few: '{0} kubinės mylios',
+      many: '{0} kubinės mylios',
+      other: '{0} mi³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mi³',
+      one: '{0} kubinė mylia',
+      few: '{0} kubinės mylios',
+      many: '{0} kubinės mylios',
+      other: '{0} mi³',
+    ),
+  );
 
   @override
   Unit get volumeCubicYard => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kubiniai jardai',
-          one: '{0} kubinis jardas',
-          few: '{0} kubiniai jardai',
-          many: '{0} kubinio jardo',
-          other: '{0} kubinių jardų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'yd³',
-          one: '{0} kubinis jardas',
-          few: '{0} kubiniai jardai',
-          many: '{0} kubinio jardo',
-          other: '{0} yd³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'yd³',
-          one: '{0} kubinis jardas',
-          few: '{0} kubiniai jardai',
-          many: '{0} kubinio jardo',
-          other: '{0} yd³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kubiniai jardai',
+      one: '{0} kubinis jardas',
+      few: '{0} kubiniai jardai',
+      many: '{0} kubinio jardo',
+      other: '{0} kubinių jardų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'yd³',
+      one: '{0} kubinis jardas',
+      few: '{0} kubiniai jardai',
+      many: '{0} kubinio jardo',
+      other: '{0} yd³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'yd³',
+      one: '{0} kubinis jardas',
+      few: '{0} kubiniai jardai',
+      many: '{0} kubinio jardo',
+      other: '{0} yd³',
+    ),
+  );
 
   @override
   Unit get volumeCubicFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kubinės pėdos',
-          one: '{0} kubinė pėda',
-          few: '{0} kubinės pėdos',
-          many: '{0} kubinės pėdos',
-          other: '{0} kubinių pėdų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ft³',
-          one: '{0} kubinė pėda',
-          few: '{0} kubinės pėdos',
-          many: '{0} kubinės pėdos',
-          other: '{0} ft³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ft³',
-          one: '{0} kubinė pėda',
-          few: '{0} kubinės pėdos',
-          many: '{0} kubinės pėdos',
-          other: '{0} ft³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kubinės pėdos',
+      one: '{0} kubinė pėda',
+      few: '{0} kubinės pėdos',
+      many: '{0} kubinės pėdos',
+      other: '{0} kubinių pėdų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ft³',
+      one: '{0} kubinė pėda',
+      few: '{0} kubinės pėdos',
+      many: '{0} kubinės pėdos',
+      other: '{0} ft³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ft³',
+      one: '{0} kubinė pėda',
+      few: '{0} kubinės pėdos',
+      many: '{0} kubinės pėdos',
+      other: '{0} ft³',
+    ),
+  );
 
   @override
   Unit get volumeCubicInch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kubiniai coliai',
-          one: '{0} kubinis colis',
-          few: '{0} kubiniai coliai',
-          many: '{0} kubinio colio',
-          other: '{0} kubinių colių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'in³',
-          one: '{0} kubinis colis',
-          few: '{0} kubiniai coliai',
-          many: '{0} kubinio colio',
-          other: '{0} in³',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'in³',
-          one: '{0} kubinis colis',
-          few: '{0} kubiniai coliai',
-          many: '{0} kubinio colio',
-          other: '{0} in³',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kubiniai coliai',
+      one: '{0} kubinis colis',
+      few: '{0} kubiniai coliai',
+      many: '{0} kubinio colio',
+      other: '{0} kubinių colių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'in³',
+      one: '{0} kubinis colis',
+      few: '{0} kubiniai coliai',
+      many: '{0} kubinio colio',
+      other: '{0} in³',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'in³',
+      one: '{0} kubinis colis',
+      few: '{0} kubiniai coliai',
+      many: '{0} kubinio colio',
+      other: '{0} in³',
+    ),
+  );
 
   @override
   Unit get volumeMegaliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'megalitrai',
-          one: '{0} megalitras',
-          few: '{0} megalitrai',
-          many: '{0} megalitro',
-          other: '{0} megalitrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'Ml',
-          one: '{0} Ml',
-          few: '{0} Ml',
-          many: '{0} Ml',
-          other: '{0} Ml',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'Ml',
-          one: '{0} Ml',
-          few: '{0} Ml',
-          many: '{0} Ml',
-          other: '{0} Ml',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'megalitrai',
+      one: '{0} megalitras',
+      few: '{0} megalitrai',
+      many: '{0} megalitro',
+      other: '{0} megalitrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'Ml',
+      one: '{0} Ml',
+      few: '{0} Ml',
+      many: '{0} Ml',
+      other: '{0} Ml',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'Ml',
+      one: '{0} Ml',
+      few: '{0} Ml',
+      many: '{0} Ml',
+      other: '{0} Ml',
+    ),
+  );
 
   @override
   Unit get volumeHectoliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'hektolitrai',
-          one: '{0} hektolitras',
-          few: '{0} hektolitrai',
-          many: '{0} hektolitro',
-          other: '{0} hektolitrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'hl',
-          one: '{0} hl',
-          few: '{0} hl',
-          many: '{0} hl',
-          other: '{0} hl',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'hl',
-          one: '{0} hl',
-          few: '{0} hl',
-          many: '{0} hl',
-          other: '{0} hl',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'hektolitrai',
+      one: '{0} hektolitras',
+      few: '{0} hektolitrai',
+      many: '{0} hektolitro',
+      other: '{0} hektolitrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'hl',
+      one: '{0} hl',
+      few: '{0} hl',
+      many: '{0} hl',
+      other: '{0} hl',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'hl',
+      one: '{0} hl',
+      few: '{0} hl',
+      many: '{0} hl',
+      other: '{0} hl',
+    ),
+  );
 
   @override
   Unit get volumeLiter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'litrai',
-          one: '{0} litras',
-          few: '{0} litrai',
-          many: '{0} litro',
-          other: '{0} litrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'litrai',
-          one: '{0} litras',
-          few: '{0} litrai',
-          many: '{0} litro',
-          other: '{0} l',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'litrai',
-          one: '{0} litras',
-          few: '{0} litrai',
-          many: '{0} litro',
-          other: '{0} l',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'litrai',
+      one: '{0} litras',
+      few: '{0} litrai',
+      many: '{0} litro',
+      other: '{0} litrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'litrai',
+      one: '{0} litras',
+      few: '{0} litrai',
+      many: '{0} litro',
+      other: '{0} l',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'litrai',
+      one: '{0} litras',
+      few: '{0} litrai',
+      many: '{0} litro',
+      other: '{0} l',
+    ),
+  );
 
   @override
   Unit get volumeDeciliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'decilitrai',
-          one: '{0} decilitras',
-          few: '{0} decilitrai',
-          many: '{0} decilitro',
-          other: '{0} decilitrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dl',
-          one: '{0} dl',
-          few: '{0} dl',
-          many: '{0} dl',
-          other: '{0} dl',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dl',
-          one: '{0} dl',
-          few: '{0} dl',
-          many: '{0} dl',
-          other: '{0} dl',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'decilitrai',
+      one: '{0} decilitras',
+      few: '{0} decilitrai',
+      many: '{0} decilitro',
+      other: '{0} decilitrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dl',
+      one: '{0} dl',
+      few: '{0} dl',
+      many: '{0} dl',
+      other: '{0} dl',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'dl',
+      one: '{0} dl',
+      few: '{0} dl',
+      many: '{0} dl',
+      other: '{0} dl',
+    ),
+  );
 
   @override
   Unit get volumeCentiliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'centilitrai',
-          one: '{0} centilitras',
-          few: '{0} centilitrai',
-          many: '{0} centilitro',
-          other: '{0} centilitrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'cl',
-          one: '{0} cl',
-          few: '{0} cl',
-          many: '{0} cl',
-          other: '{0} cl',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'cl',
-          one: '{0} cl',
-          few: '{0} cl',
-          many: '{0} cl',
-          other: '{0} cl',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'centilitrai',
+      one: '{0} centilitras',
+      few: '{0} centilitrai',
+      many: '{0} centilitro',
+      other: '{0} centilitrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'cl',
+      one: '{0} cl',
+      few: '{0} cl',
+      many: '{0} cl',
+      other: '{0} cl',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'cl',
+      one: '{0} cl',
+      few: '{0} cl',
+      many: '{0} cl',
+      other: '{0} cl',
+    ),
+  );
 
   @override
   Unit get volumeMilliliter => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'mililitrai',
-          one: '{0} mililitras',
-          few: '{0} mililitrai',
-          many: '{0} mililitro',
-          other: '{0} mililitrų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'ml',
-          one: '{0} ml',
-          few: '{0} ml',
-          many: '{0} ml',
-          other: '{0} ml',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ml',
-          one: '{0} ml',
-          few: '{0} ml',
-          many: '{0} ml',
-          other: '{0} ml',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'mililitrai',
+      one: '{0} mililitras',
+      few: '{0} mililitrai',
+      many: '{0} mililitro',
+      other: '{0} mililitrų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'ml',
+      one: '{0} ml',
+      few: '{0} ml',
+      many: '{0} ml',
+      other: '{0} ml',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ml',
+      one: '{0} ml',
+      few: '{0} ml',
+      many: '{0} ml',
+      other: '{0} ml',
+    ),
+  );
 
   @override
   Unit get volumePintMetric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'metrinės pintos',
-          one: '{0} metrinė pinta',
-          few: '{0} metrinės pintos',
-          many: '{0} metrinės pintos',
-          other: '{0} metrinių pintų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mpt',
-          one: '{0} metrinė pinta',
-          few: '{0} metrinės pintos',
-          many: '{0} metrinės pintos',
-          other: '{0} mpt',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mpt',
-          one: '{0} metrinė pinta',
-          few: '{0} metrinės pintos',
-          many: '{0} metrinės pintos',
-          other: '{0} mpt',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'metrinės pintos',
+      one: '{0} metrinė pinta',
+      few: '{0} metrinės pintos',
+      many: '{0} metrinės pintos',
+      other: '{0} metrinių pintų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mpt',
+      one: '{0} metrinė pinta',
+      few: '{0} metrinės pintos',
+      many: '{0} metrinės pintos',
+      other: '{0} mpt',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mpt',
+      one: '{0} metrinė pinta',
+      few: '{0} metrinės pintos',
+      many: '{0} metrinės pintos',
+      other: '{0} mpt',
+    ),
+  );
 
   @override
   Unit get volumeCupMetric => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'matavimo puodeliai',
-          one: '{0} matavimo puodelis',
-          few: '{0} matavimo puodeliai',
-          many: '{0} matavimo puodelio',
-          other: '{0} matavimo puodelių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'mat. puodelis',
-          one: '{0} mat. puodelis',
-          few: '{0} mat. puodeliai',
-          many: '{0} mat. puodelio',
-          other: '{0} mat. puodelių',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'mat. puodelis',
-          one: '{0} mat. puodelis',
-          few: '{0} mat. puodeliai',
-          many: '{0} mat. puodelio',
-          other: '{0} mat. puodelių',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'matavimo puodeliai',
+      one: '{0} matavimo puodelis',
+      few: '{0} matavimo puodeliai',
+      many: '{0} matavimo puodelio',
+      other: '{0} matavimo puodelių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'mat. puodelis',
+      one: '{0} mat. puodelis',
+      few: '{0} mat. puodeliai',
+      many: '{0} mat. puodelio',
+      other: '{0} mat. puodelių',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'mat. puodelis',
+      one: '{0} mat. puodelis',
+      few: '{0} mat. puodeliai',
+      many: '{0} mat. puodelio',
+      other: '{0} mat. puodelių',
+    ),
+  );
 
   @override
   Unit get volumeAcreFoot => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pėdos akre',
-          one: '{0} pėda akre',
-          few: '{0} pėdos akre',
-          many: '{0} pėdos akre',
-          other: '{0} pėdų akre',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'pėda akre',
-          one: '{0} ft akre',
-          few: '{0} ft akre',
-          many: '{0} ft akre',
-          other: '{0} ft akre',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'ft akre',
-          one: '{0} ft akre',
-          few: '{0} ft akre',
-          many: '{0} ft akre',
-          other: '{0} ft akre',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'pėdos akre',
+      one: '{0} pėda akre',
+      few: '{0} pėdos akre',
+      many: '{0} pėdos akre',
+      other: '{0} pėdų akre',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'pėda akre',
+      one: '{0} ft akre',
+      few: '{0} ft akre',
+      many: '{0} ft akre',
+      other: '{0} ft akre',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'ft akre',
+      one: '{0} ft akre',
+      few: '{0} ft akre',
+      many: '{0} ft akre',
+      other: '{0} ft akre',
+    ),
+  );
 
   @override
   Unit get volumeBushel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'bušeliai',
-          one: '{0} bušelis',
-          few: '{0} bušeliai',
-          many: '{0} bušelio',
-          other: '{0} bušelių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'bu',
-          one: '{0} bušelis',
-          few: '{0} bušeliai',
-          many: '{0} bušelio',
-          other: '{0} bu',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'bu',
-          one: '{0} bušelis',
-          few: '{0} bušeliai',
-          many: '{0} bušelio',
-          other: '{0} bu',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'bušeliai',
+      one: '{0} bušelis',
+      few: '{0} bušeliai',
+      many: '{0} bušelio',
+      other: '{0} bušelių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'bu',
+      one: '{0} bušelis',
+      few: '{0} bušeliai',
+      many: '{0} bušelio',
+      other: '{0} bu',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'bu',
+      one: '{0} bušelis',
+      few: '{0} bušeliai',
+      many: '{0} bušelio',
+      other: '{0} bu',
+    ),
+  );
 
   @override
   Unit get volumeGallon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'galonai',
-          one: '{0} galonas',
-          few: '{0} galonai',
-          many: '{0} galono',
-          other: '{0} galonų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'gal',
-          one: '{0} gal',
-          few: '{0} gal',
-          many: '{0} gal',
-          other: '{0} gal',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'gal',
-          one: '{0} gal',
-          few: '{0} gal',
-          many: '{0} gal',
-          other: '{0} gal',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'galonai',
+      one: '{0} galonas',
+      few: '{0} galonai',
+      many: '{0} galono',
+      other: '{0} galonų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'gal',
+      one: '{0} gal',
+      few: '{0} gal',
+      many: '{0} gal',
+      other: '{0} gal',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'gal',
+      one: '{0} gal',
+      few: '{0} gal',
+      many: '{0} gal',
+      other: '{0} gal',
+    ),
+  );
 
   @override
   Unit get volumeGallonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'imperinis galonas',
-          one: '{0} imperinis galonas',
-          few: '{0} imperiniai galonai',
-          many: '{0} imperinio galono',
-          other: '{0} imperinių galonų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'imp. galonas',
-          one: '{0} imp. galonas',
-          few: '{0} imp. galonai',
-          many: '{0} imp. galono',
-          other: '{0} imp. galonų',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'imp. galonas',
-          one: '{0} imp. galonas',
-          few: '{0} imp. galonai',
-          many: '{0} imp. galono',
-          other: '{0} imp. galonų',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'imperinis galonas',
+      one: '{0} imperinis galonas',
+      few: '{0} imperiniai galonai',
+      many: '{0} imperinio galono',
+      other: '{0} imperinių galonų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'imp. galonas',
+      one: '{0} imp. galonas',
+      few: '{0} imp. galonai',
+      many: '{0} imp. galono',
+      other: '{0} imp. galonų',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'imp. galonas',
+      one: '{0} imp. galonas',
+      few: '{0} imp. galonai',
+      many: '{0} imp. galono',
+      other: '{0} imp. galonų',
+    ),
+  );
 
   @override
   Unit get volumeQuart => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kvortos',
-          one: '{0} kvorta',
-          few: '{0} kvortos',
-          many: '{0} kvortos',
-          other: '{0} kvortų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'kvortos',
-          one: '{0} kvorta',
-          few: '{0} kvortos',
-          many: '{0} kvortos',
-          other: '{0} kvortų',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'kvortos',
-          one: '{0} kvorta',
-          few: '{0} kvortos',
-          many: '{0} kvortos',
-          other: '{0} kvortų',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kvortos',
+      one: '{0} kvorta',
+      few: '{0} kvortos',
+      many: '{0} kvortos',
+      other: '{0} kvortų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'kvortos',
+      one: '{0} kvorta',
+      few: '{0} kvortos',
+      many: '{0} kvortos',
+      other: '{0} kvortų',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'kvortos',
+      one: '{0} kvorta',
+      few: '{0} kvortos',
+      many: '{0} kvortos',
+      other: '{0} kvortų',
+    ),
+  );
 
   @override
   Unit get volumePint => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'pintos',
-          one: '{0} pinta',
-          few: '{0} pintos',
-          many: '{0} pintos',
-          other: '{0} pintų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'pintos',
-          one: '{0} pinta',
-          few: '{0} pintos',
-          many: '{0} pintos',
-          other: '{0} pt',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'pintos',
-          one: '{0} pinta',
-          few: '{0} pintos',
-          many: '{0} pintos',
-          other: '{0} pt',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'pintos',
+      one: '{0} pinta',
+      few: '{0} pintos',
+      many: '{0} pintos',
+      other: '{0} pintų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'pintos',
+      one: '{0} pinta',
+      few: '{0} pintos',
+      many: '{0} pintos',
+      other: '{0} pt',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'pintos',
+      one: '{0} pinta',
+      few: '{0} pintos',
+      many: '{0} pintos',
+      other: '{0} pt',
+    ),
+  );
 
   @override
   Unit get volumeCup => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'stiklinės',
-          one: '{0} stiklinė',
-          few: '{0} stiklinės',
-          many: '{0} stiklinės',
-          other: '{0} stiklinių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'stikl.',
-          one: '{0} stikl.',
-          few: '{0} stikl.',
-          many: '{0} stikl.',
-          other: '{0} stikl.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'stikl.',
-          one: '{0} stikl.',
-          few: '{0} stikl.',
-          many: '{0} stikl.',
-          other: '{0} stikl.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'stiklinės',
+      one: '{0} stiklinė',
+      few: '{0} stiklinės',
+      many: '{0} stiklinės',
+      other: '{0} stiklinių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'stikl.',
+      one: '{0} stikl.',
+      few: '{0} stikl.',
+      many: '{0} stikl.',
+      other: '{0} stikl.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'stikl.',
+      one: '{0} stikl.',
+      few: '{0} stikl.',
+      many: '{0} stikl.',
+      other: '{0} stikl.',
+    ),
+  );
 
   @override
   Unit get volumeFluidOunce => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'skysčio uncijos',
-          one: '{0} skysčio uncija',
-          few: '{0} skysčio uncijos',
-          many: '{0} skysčio uncijos',
-          other: '{0} skysčio uncijų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'skysčio oz',
-          one: '{0} skysčio oz',
-          few: '{0} skysčio oz',
-          many: '{0} skysčio oz',
-          other: '{0} skysčio oz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'skysčio oz',
-          one: '{0} fl oz',
-          few: '{0} fl oz',
-          many: '{0} fl oz',
-          other: '{0} fl oz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'skysčio uncijos',
+      one: '{0} skysčio uncija',
+      few: '{0} skysčio uncijos',
+      many: '{0} skysčio uncijos',
+      other: '{0} skysčio uncijų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'skysčio oz',
+      one: '{0} skysčio oz',
+      few: '{0} skysčio oz',
+      many: '{0} skysčio oz',
+      other: '{0} skysčio oz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'skysčio oz',
+      one: '{0} fl oz',
+      few: '{0} fl oz',
+      many: '{0} fl oz',
+      other: '{0} fl oz',
+    ),
+  );
 
   @override
   Unit get volumeFluidOunceImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'imperatoriškosios skysčio uncijos',
-          one: '{0} imp. skysčio uncija',
-          few: '{0} imp. skysčio uncijos',
-          many: '{0} imp. skysčio uncijos',
-          other: '{0} imp. skysčio uncijų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'imp. skysčio uncija',
-          one: '{0} imp. fl oz',
-          few: '{0} imp. fl oz',
-          many: '{0} imp. fl oz',
-          other: '{0} imp. fl oz',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'imp. skysčio uncija',
-          one: '{0} imp. fl oz',
-          few: '{0} imp. fl oz',
-          many: '{0} imp. fl oz',
-          other: '{0} imp. fl oz',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'imperatoriškosios skysčio uncijos',
+      one: '{0} imp. skysčio uncija',
+      few: '{0} imp. skysčio uncijos',
+      many: '{0} imp. skysčio uncijos',
+      other: '{0} imp. skysčio uncijų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'imp. skysčio uncija',
+      one: '{0} imp. fl oz',
+      few: '{0} imp. fl oz',
+      many: '{0} imp. fl oz',
+      other: '{0} imp. fl oz',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'imp. skysčio uncija',
+      one: '{0} imp. fl oz',
+      few: '{0} imp. fl oz',
+      many: '{0} imp. fl oz',
+      other: '{0} imp. fl oz',
+    ),
+  );
 
   @override
   Unit get volumeTablespoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'valgomieji šaukštai',
-          one: '{0} valgomasis šaukštas',
-          few: '{0} valgomieji šaukštai',
-          many: '{0} valgomojo šaukšto',
-          other: '{0} valgomųjų šaukštų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'v. š.',
-          one: '{0} v. š.',
-          few: '{0} v. š.',
-          many: '{0} v. š.',
-          other: '{0} v. š.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'v. š.',
-          one: '{0} v. š.',
-          few: '{0} v. š.',
-          many: '{0} v. š.',
-          other: '{0} v. š.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'valgomieji šaukštai',
+      one: '{0} valgomasis šaukštas',
+      few: '{0} valgomieji šaukštai',
+      many: '{0} valgomojo šaukšto',
+      other: '{0} valgomųjų šaukštų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'v. š.',
+      one: '{0} v. š.',
+      few: '{0} v. š.',
+      many: '{0} v. š.',
+      other: '{0} v. š.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'v. š.',
+      one: '{0} v. š.',
+      few: '{0} v. š.',
+      many: '{0} v. š.',
+      other: '{0} v. š.',
+    ),
+  );
 
   @override
   Unit get volumeTeaspoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'arbatiniai šaukšteliai',
-          one: '{0} arbatinis šaukštelis',
-          few: '{0} arbatiniai šaukšteliai',
-          many: '{0} arbatinio šaukštelio',
-          other: '{0} arbatinių šaukštelių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'a. š.',
-          one: '{0} a. š.',
-          few: '{0} a. š.',
-          many: '{0} a. š.',
-          other: '{0} a. š.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'a. š.',
-          one: '{0} a. š.',
-          few: '{0} a. š.',
-          many: '{0} a. š.',
-          other: '{0} a. š.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'arbatiniai šaukšteliai',
+      one: '{0} arbatinis šaukštelis',
+      few: '{0} arbatiniai šaukšteliai',
+      many: '{0} arbatinio šaukštelio',
+      other: '{0} arbatinių šaukštelių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'a. š.',
+      one: '{0} a. š.',
+      few: '{0} a. š.',
+      many: '{0} a. š.',
+      other: '{0} a. š.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'a. š.',
+      one: '{0} a. š.',
+      few: '{0} a. š.',
+      many: '{0} a. š.',
+      other: '{0} a. š.',
+    ),
+  );
 
   @override
   Unit get volumeBarrel => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'bareliai',
-          one: '{0} barelis',
-          few: '{0} bareliai',
-          many: '{0} barelio',
-          other: '{0} barelių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'bbl',
-          one: '{0} barelis',
-          few: '{0} bareliai',
-          many: '{0} barelio',
-          other: '{0} bbl',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'bbl',
-          one: '{0} barelis',
-          few: '{0} bareliai',
-          many: '{0} barelio',
-          other: '{0} bbl',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'bareliai',
+      one: '{0} barelis',
+      few: '{0} bareliai',
+      many: '{0} barelio',
+      other: '{0} barelių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'bbl',
+      one: '{0} barelis',
+      few: '{0} bareliai',
+      many: '{0} barelio',
+      other: '{0} bbl',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'bbl',
+      one: '{0} barelis',
+      few: '{0} bareliai',
+      many: '{0} barelio',
+      other: '{0} bbl',
+    ),
+  );
 
   @override
   Unit get volumeDessertSpoon => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'desertinis šaukštelis',
-          one: '{0} desertinis šaukštelis',
-          few: '{0} desertiniai šaukšteliai',
-          many: '{0} desertinio šaukštelio',
-          other: '{0} desertinių šaukštelių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'des. š.',
-          one: '{0} des. š.',
-          few: '{0} des. š.',
-          many: '{0} des. š.',
-          other: '{0} des. š.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'des. š.',
-          one: '{0} des. š.',
-          few: '{0} des. š.',
-          many: '{0} des. š.',
-          other: '{0} des. š.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'desertinis šaukštelis',
+      one: '{0} desertinis šaukštelis',
+      few: '{0} desertiniai šaukšteliai',
+      many: '{0} desertinio šaukštelio',
+      other: '{0} desertinių šaukštelių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'des. š.',
+      one: '{0} des. š.',
+      few: '{0} des. š.',
+      many: '{0} des. š.',
+      other: '{0} des. š.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'des. š.',
+      one: '{0} des. š.',
+      few: '{0} des. š.',
+      many: '{0} des. š.',
+      other: '{0} des. š.',
+    ),
+  );
 
   @override
   Unit get volumeDessertSpoonImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'imp. desertinis šaukštelis',
-          one: '{0} imp. desertinis šaukštelis',
-          few: '{0} imp. desertiniai šaukšteliai',
-          many: '{0} imp. desertinio šaukštelio',
-          other: '{0} imp. desertinių šaukštelių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'imp. des. š.',
-          one: '{0} imp. des. š.',
-          few: '{0} imp. des. š.',
-          many: '{0} imp. des. š.',
-          other: '{0} imp. des. š.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'imp. des. š.',
-          one: '{0} imp. des. š.',
-          few: '{0} imp. des. š.',
-          many: '{0} imp. des. š.',
-          other: '{0} imp. des. š.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'imp. desertinis šaukštelis',
+      one: '{0} imp. desertinis šaukštelis',
+      few: '{0} imp. desertiniai šaukšteliai',
+      many: '{0} imp. desertinio šaukštelio',
+      other: '{0} imp. desertinių šaukštelių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'imp. des. š.',
+      one: '{0} imp. des. š.',
+      few: '{0} imp. des. š.',
+      many: '{0} imp. des. š.',
+      other: '{0} imp. des. š.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'imp. des. š.',
+      one: '{0} imp. des. š.',
+      few: '{0} imp. des. š.',
+      many: '{0} imp. des. š.',
+      other: '{0} imp. des. š.',
+    ),
+  );
 
   @override
   Unit get volumeDrop => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'lašas',
-          one: '{0} lašas',
-          few: '{0} lašai',
-          many: '{0} lašo',
-          other: '{0} lašų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'laš.',
-          one: '{0} laš.',
-          few: '{0} laš.',
-          many: '{0} laš.',
-          other: '{0} laš.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'laš.',
-          one: '{0} laš.',
-          few: '{0} laš.',
-          many: '{0} laš.',
-          other: '{0} laš.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'lašas',
+      one: '{0} lašas',
+      few: '{0} lašai',
+      many: '{0} lašo',
+      other: '{0} lašų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'laš.',
+      one: '{0} laš.',
+      few: '{0} laš.',
+      many: '{0} laš.',
+      other: '{0} laš.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'laš.',
+      one: '{0} laš.',
+      few: '{0} laš.',
+      many: '{0} laš.',
+      other: '{0} laš.',
+    ),
+  );
 
   @override
   Unit get volumeDram => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'skysčio drachma',
-          one: '{0} skysčio drachma',
-          few: '{0} skysčio drachmos',
-          many: '{0} skysčio drachmos',
-          other: '{0} skysčio drachmų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'sk. drach.',
-          one: '{0} sk. drach.',
-          few: '{0} sk. drach.',
-          many: '{0} sk. drach.',
-          other: '{0} sk. drach.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'sk. drach.',
-          one: '{0} sk. drach.',
-          few: '{0} sk. drach.',
-          many: '{0} sk. drach.',
-          other: '{0} sk. drach.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'skysčio drachma',
+      one: '{0} skysčio drachma',
+      few: '{0} skysčio drachmos',
+      many: '{0} skysčio drachmos',
+      other: '{0} skysčio drachmų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'sk. drach.',
+      one: '{0} sk. drach.',
+      few: '{0} sk. drach.',
+      many: '{0} sk. drach.',
+      other: '{0} sk. drach.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'sk. drach.',
+      one: '{0} sk. drach.',
+      few: '{0} sk. drach.',
+      many: '{0} sk. drach.',
+      other: '{0} sk. drach.',
+    ),
+  );
 
   @override
   Unit get volumeJigger => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'džigeris',
-          one: '{0} džigeris',
-          few: '{0} džigeriai',
-          many: '{0} džigerio',
-          other: '{0} džigerio',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'džigeris',
-          one: '{0} džigeris',
-          few: '{0} džigeriai',
-          many: '{0} džigerio',
-          other: '{0} džigerio',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'džigeris',
-          one: '{0} džigeris',
-          few: '{0} džigeriai',
-          many: '{0} džigerio',
-          other: '{0} džigerio',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'džigeris',
+      one: '{0} džigeris',
+      few: '{0} džigeriai',
+      many: '{0} džigerio',
+      other: '{0} džigerio',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'džigeris',
+      one: '{0} džigeris',
+      few: '{0} džigeriai',
+      many: '{0} džigerio',
+      other: '{0} džigerio',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'džigeris',
+      one: '{0} džigeris',
+      few: '{0} džigeriai',
+      many: '{0} džigerio',
+      other: '{0} džigerio',
+    ),
+  );
 
   @override
   Unit get volumePinch => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'žiupsnelis',
-          one: '{0} žiupsnelių',
-          few: '{0} žiupsneliai',
-          many: '{0} žiupsnelio',
-          other: '{0} žiupsnelis',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'žiupsn.',
-          one: '{0} žiupsn.',
-          few: '{0} žiupsn.',
-          many: '{0} žiupsn.',
-          other: '{0} žiupsn.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'žiupsn.',
-          one: '{0} žiupsn.',
-          few: '{0} žiupsn.',
-          many: '{0} žiupsn.',
-          other: '{0} žiupsn.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'žiupsnelis',
+      one: '{0} žiupsnelių',
+      few: '{0} žiupsneliai',
+      many: '{0} žiupsnelio',
+      other: '{0} žiupsnelis',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'žiupsn.',
+      one: '{0} žiupsn.',
+      few: '{0} žiupsn.',
+      many: '{0} žiupsn.',
+      other: '{0} žiupsn.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'žiupsn.',
+      one: '{0} žiupsn.',
+      few: '{0} žiupsn.',
+      many: '{0} žiupsn.',
+      other: '{0} žiupsn.',
+    ),
+  );
 
   @override
   Unit get volumeQuartImperial => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'imp. kvorta',
-          one: '{0} imp. kvorta',
-          few: '{0} imp. kvortos',
-          many: '{0} imp. kvortos',
-          other: '{0} imp. kvortų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'imp. kv.',
-          one: '{0} imp. kv.',
-          few: '{0} imp. kv.',
-          many: '{0} imp. kv.',
-          other: '{0} imp. kv.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'imp. kv.',
-          one: '{0} imp. kv.',
-          few: '{0} imp. kv.',
-          many: '{0} imp. kv.',
-          other: '{0} imp. kv.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'imp. kvorta',
+      one: '{0} imp. kvorta',
+      few: '{0} imp. kvortos',
+      many: '{0} imp. kvortos',
+      other: '{0} imp. kvortų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'imp. kv.',
+      one: '{0} imp. kv.',
+      few: '{0} imp. kv.',
+      many: '{0} imp. kv.',
+      other: '{0} imp. kv.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'imp. kv.',
+      one: '{0} imp. kv.',
+      few: '{0} imp. kv.',
+      many: '{0} imp. kv.',
+      other: '{0} imp. kv.',
+    ),
+  );
 
   @override
   Unit get pressureGasolineEnergyDensity => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'of gasoline equivalent',
-          one: '{0} of gasoline equivalent',
-          other: '{0} of gasoline equivalent',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'gas-equiv',
-          one: '{0} gas-equiv',
-          other: '{0} gas-equiv',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'gas-equiv',
-          one: '{0}gas-equiv',
-          other: '{0}gas-equiv',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'of gasoline equivalent',
+      one: '{0} of gasoline equivalent',
+      other: '{0} of gasoline equivalent',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'gas-equiv',
+      one: '{0} gas-equiv',
+      other: '{0} gas-equiv',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'gas-equiv',
+      one: '{0}gas-equiv',
+      other: '{0}gas-equiv',
+    ),
+  );
 
   @override
   Unit get speedLightSpeed => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'light',
-          one: '{0} light',
-          other: '{0} light',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'light',
-          one: '{0} light',
-          other: '{0} light',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'light',
-          one: '{0}light',
-          other: '{0} light',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'light',
+      one: '{0} light',
+      other: '{0} light',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'light',
+      one: '{0} light',
+      other: '{0} light',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'light',
+      one: '{0}light',
+      other: '{0} light',
+    ),
+  );
 
   @override
   Unit get concentrPortionPer1e9 => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'milijoninės dalelytės',
-          one: '{0} milijoninė dalelytė',
-          few: '{0} milijoninės dalelytės',
-          many: '{0} milijoninės dalelytės',
-          other: '{0} milijoninių dalelyčių',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'dalelytė/mln.',
-          one: '{0} dalelytė/mln.',
-          few: '{0} dalelytės/mln.',
-          many: '{0} dalelytės/mln.',
-          other: '{0} dalelyčių/mln.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'dalelytė/mln.',
-          one: '{0} dalelytė/mln.',
-          few: '{0} dalelytės/mln.',
-          many: '{0} dalelytės/mln.',
-          other: '{0} dalelyčių/mln.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'milijoninės dalelytės',
+      one: '{0} milijoninė dalelytė',
+      few: '{0} milijoninės dalelytės',
+      many: '{0} milijoninės dalelytės',
+      other: '{0} milijoninių dalelyčių',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'dalelytė/mln.',
+      one: '{0} dalelytė/mln.',
+      few: '{0} dalelytės/mln.',
+      many: '{0} dalelytės/mln.',
+      other: '{0} dalelyčių/mln.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'dalelytė/mln.',
+      one: '{0} dalelytė/mln.',
+      few: '{0} dalelytės/mln.',
+      many: '{0} dalelytės/mln.',
+      other: '{0} dalelyčių/mln.',
+    ),
+  );
 
   @override
   Unit get durationNight => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'naktis',
-          one: '{0} naktis',
-          few: '{0} naktys',
-          many: '{0} nakties',
-          other: '{0} naktų',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'nakt.',
-          one: '{0} nakt.',
-          few: '{0} nakt.',
-          many: '{0} nakt.',
-          other: '{0} nakt.',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'nakt.',
-          one: '{0} nakt.',
-          few: '{0} nakt.',
-          many: '{0} nakt.',
-          other: '{0} nakt.',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'naktis',
+      one: '{0} naktis',
+      few: '{0} naktys',
+      many: '{0} nakties',
+      other: '{0} naktų',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'nakt.',
+      one: '{0} nakt.',
+      few: '{0} nakt.',
+      many: '{0} nakt.',
+      other: '{0} nakt.',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'nakt.',
+      one: '{0} nakt.',
+      few: '{0} nakt.',
+      many: '{0} nakt.',
+      other: '{0} nakt.',
+    ),
+  );
 }
 
 class DateFieldsLt extends DateFields {
   const DateFieldsLt(super.cld);
 
   @override
-  MultiLength get era => const MultiLength(
-        long: 'era',
-        short: 'era',
-        narrow: 'era',
-      );
+  MultiLength get era =>
+      const MultiLength(long: 'era', short: 'era', narrow: 'era');
 
   @override
   DateFieldFullData get year => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'metai',
-          short: 'm.',
-          narrow: 'm.',
-        ),
-        previous: MultiLength(
-          long: 'praėjusiais metais',
-          short: 'praėjusiais metais',
-          narrow: 'praėjusiais metais',
-        ),
-        now: MultiLength(
-          long: 'šiais metais',
-          short: 'šiais metais',
-          narrow: 'šiais metais',
-        ),
-        next: MultiLength(
-          long: 'kitais metais',
-          short: 'kitais metais',
-          narrow: 'kitais metais',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'prieš {0} metus',
-            few: 'prieš {0} metus',
-            many: 'prieš {0} metų',
-            other: 'prieš {0} metų',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'prieš {0} m.',
-            few: 'prieš {0} m.',
-            many: 'prieš {0} m.',
-            other: 'prieš {0} m.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'prieš {0} m.',
-            few: 'prieš {0} m.',
-            many: 'prieš {0} m.',
-            other: 'prieš {0} m.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'po {0} metų',
-            few: 'po {0} metų',
-            many: 'po {0} metų',
-            other: 'po {0} metų',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'po {0} m.',
-            few: 'po {0} m.',
-            many: 'po {0} m.',
-            other: 'po {0} m.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'po {0} m.',
-            few: 'po {0} m.',
-            many: 'po {0} m.',
-            other: 'po {0} m.',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'metai', short: 'm.', narrow: 'm.'),
+    previous: MultiLength(
+      long: 'praėjusiais metais',
+      short: 'praėjusiais metais',
+      narrow: 'praėjusiais metais',
+    ),
+    now: MultiLength(
+      long: 'šiais metais',
+      short: 'šiais metais',
+      narrow: 'šiais metais',
+    ),
+    next: MultiLength(
+      long: 'kitais metais',
+      short: 'kitais metais',
+      narrow: 'kitais metais',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'prieš {0} metus',
+        few: 'prieš {0} metus',
+        many: 'prieš {0} metų',
+        other: 'prieš {0} metų',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'prieš {0} m.',
+        few: 'prieš {0} m.',
+        many: 'prieš {0} m.',
+        other: 'prieš {0} m.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'prieš {0} m.',
+        few: 'prieš {0} m.',
+        many: 'prieš {0} m.',
+        other: 'prieš {0} m.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'po {0} metų',
+        few: 'po {0} metų',
+        many: 'po {0} metų',
+        other: 'po {0} metų',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'po {0} m.',
+        few: 'po {0} m.',
+        many: 'po {0} m.',
+        other: 'po {0} m.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'po {0} m.',
+        few: 'po {0} m.',
+        many: 'po {0} m.',
+        other: 'po {0} m.',
+      ),
+    ),
+  );
 
   @override
   DateFieldFullData get quarter => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'ketvirtis',
-          short: 'ketv.',
-          narrow: 'ketv.',
-        ),
-        previous: MultiLength(
-          long: 'praėjęs ketvirtis',
-          short: 'praėjęs ketvirtis',
-          narrow: 'praėjęs ketvirtis',
-        ),
-        now: MultiLength(
-          long: 'šis ketvirtis',
-          short: 'šis ketvirtis',
-          narrow: 'šis ketvirtis',
-        ),
-        next: MultiLength(
-          long: 'kitas ketvirtis',
-          short: 'kitas ketvirtis',
-          narrow: 'kitas ketvirtis',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'prieš {0} ketvirtį',
-            few: 'prieš {0} ketvirčius',
-            many: 'prieš {0} ketvirčio',
-            other: 'prieš {0} ketvirčių',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'prieš {0} ketv.',
-            few: 'prieš {0} ketv.',
-            many: 'prieš {0} ketv.',
-            other: 'prieš {0} ketv.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'prieš {0} ketv.',
-            few: 'prieš {0} ketv.',
-            many: 'prieš {0} ketv.',
-            other: 'prieš {0} ketv.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'po {0} ketvirčio',
-            few: 'po {0} ketvirčių',
-            many: 'po {0} ketvirčio',
-            other: 'po {0} ketvirčių',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'po {0} ketv.',
-            few: 'po {0} ketv.',
-            many: 'po {0} ketv.',
-            other: 'po {0} ketv.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'po {0} ketv.',
-            few: 'po {0} ketv.',
-            many: 'po {0} ketv.',
-            other: 'po {0} ketv.',
-          ),
-        ),
-      );
+    displayName: MultiLength(
+      long: 'ketvirtis',
+      short: 'ketv.',
+      narrow: 'ketv.',
+    ),
+    previous: MultiLength(
+      long: 'praėjęs ketvirtis',
+      short: 'praėjęs ketvirtis',
+      narrow: 'praėjęs ketvirtis',
+    ),
+    now: MultiLength(
+      long: 'šis ketvirtis',
+      short: 'šis ketvirtis',
+      narrow: 'šis ketvirtis',
+    ),
+    next: MultiLength(
+      long: 'kitas ketvirtis',
+      short: 'kitas ketvirtis',
+      narrow: 'kitas ketvirtis',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'prieš {0} ketvirtį',
+        few: 'prieš {0} ketvirčius',
+        many: 'prieš {0} ketvirčio',
+        other: 'prieš {0} ketvirčių',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'prieš {0} ketv.',
+        few: 'prieš {0} ketv.',
+        many: 'prieš {0} ketv.',
+        other: 'prieš {0} ketv.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'prieš {0} ketv.',
+        few: 'prieš {0} ketv.',
+        many: 'prieš {0} ketv.',
+        other: 'prieš {0} ketv.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'po {0} ketvirčio',
+        few: 'po {0} ketvirčių',
+        many: 'po {0} ketvirčio',
+        other: 'po {0} ketvirčių',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'po {0} ketv.',
+        few: 'po {0} ketv.',
+        many: 'po {0} ketv.',
+        other: 'po {0} ketv.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'po {0} ketv.',
+        few: 'po {0} ketv.',
+        many: 'po {0} ketv.',
+        other: 'po {0} ketv.',
+      ),
+    ),
+  );
 
   @override
   DateFieldFullData get month => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'mėnuo',
-          short: 'mėn.',
-          narrow: 'mėn.',
-        ),
-        previous: MultiLength(
-          long: 'praėjusį mėnesį',
-          short: 'praėjusį mėnesį',
-          narrow: 'praėjusį mėnesį',
-        ),
-        now: MultiLength(
-          long: 'šį mėnesį',
-          short: 'šį mėnesį',
-          narrow: 'šį mėnesį',
-        ),
-        next: MultiLength(
-          long: 'kitą mėnesį',
-          short: 'kitą mėnesį',
-          narrow: 'kitą mėnesį',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'prieš {0} mėnesį',
-            few: 'prieš {0} mėnesius',
-            many: 'prieš {0} mėnesio',
-            other: 'prieš {0} mėnesių',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'prieš {0} mėn.',
-            few: 'prieš {0} mėn.',
-            many: 'prieš {0} mėn.',
-            other: 'prieš {0} mėn.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'prieš {0} mėn.',
-            few: 'prieš {0} mėn.',
-            many: 'prieš {0} mėn.',
-            other: 'prieš {0} mėn.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'po {0} mėnesio',
-            few: 'po {0} mėnesių',
-            many: 'po {0} mėnesio',
-            other: 'po {0} mėnesių',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'po {0} mėn.',
-            few: 'po {0} mėn.',
-            many: 'po {0} mėn.',
-            other: 'po {0} mėn.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'po {0} mėn.',
-            few: 'po {0} mėn.',
-            many: 'po {0} mėn.',
-            other: 'po {0} mėn.',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'mėnuo', short: 'mėn.', narrow: 'mėn.'),
+    previous: MultiLength(
+      long: 'praėjusį mėnesį',
+      short: 'praėjusį mėnesį',
+      narrow: 'praėjusį mėnesį',
+    ),
+    now: MultiLength(
+      long: 'šį mėnesį',
+      short: 'šį mėnesį',
+      narrow: 'šį mėnesį',
+    ),
+    next: MultiLength(
+      long: 'kitą mėnesį',
+      short: 'kitą mėnesį',
+      narrow: 'kitą mėnesį',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'prieš {0} mėnesį',
+        few: 'prieš {0} mėnesius',
+        many: 'prieš {0} mėnesio',
+        other: 'prieš {0} mėnesių',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'prieš {0} mėn.',
+        few: 'prieš {0} mėn.',
+        many: 'prieš {0} mėn.',
+        other: 'prieš {0} mėn.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'prieš {0} mėn.',
+        few: 'prieš {0} mėn.',
+        many: 'prieš {0} mėn.',
+        other: 'prieš {0} mėn.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'po {0} mėnesio',
+        few: 'po {0} mėnesių',
+        many: 'po {0} mėnesio',
+        other: 'po {0} mėnesių',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'po {0} mėn.',
+        few: 'po {0} mėn.',
+        many: 'po {0} mėn.',
+        other: 'po {0} mėn.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'po {0} mėn.',
+        few: 'po {0} mėn.',
+        many: 'po {0} mėn.',
+        other: 'po {0} mėn.',
+      ),
+    ),
+  );
 
   @override
   DateFieldFullData get week => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'savaitė',
-          short: 'sav.',
-          narrow: 'sav.',
-        ),
-        previous: MultiLength(
-          long: 'praėjusią savaitę',
-          short: 'praėjusią savaitę',
-          narrow: 'praėjusią savaitę',
-        ),
-        now: MultiLength(
-          long: 'šią savaitę',
-          short: 'šią savaitę',
-          narrow: 'šią savaitę',
-        ),
-        next: MultiLength(
-          long: 'kitą savaitę',
-          short: 'kitą savaitę',
-          narrow: 'kitą savaitę',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'prieš {0} savaitę',
-            few: 'prieš {0} savaites',
-            many: 'prieš {0} savaitės',
-            other: 'prieš {0} savaičių',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'prieš {0} sav.',
-            few: 'prieš {0} sav.',
-            many: 'prieš {0} sav.',
-            other: 'prieš {0} sav.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'prieš {0} sav.',
-            few: 'prieš {0} sav.',
-            many: 'prieš {0} sav.',
-            other: 'prieš {0} sav.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'po {0} savaitės',
-            few: 'po {0} savaičių',
-            many: 'po {0} savaitės',
-            other: 'po {0} savaičių',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'po {0} sav.',
-            few: 'po {0} sav.',
-            many: 'po {0} sav.',
-            other: 'po {0} sav.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'po {0} sav.',
-            few: 'po {0} sav.',
-            many: 'po {0} sav.',
-            other: 'po {0} sav.',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'savaitė', short: 'sav.', narrow: 'sav.'),
+    previous: MultiLength(
+      long: 'praėjusią savaitę',
+      short: 'praėjusią savaitę',
+      narrow: 'praėjusią savaitę',
+    ),
+    now: MultiLength(
+      long: 'šią savaitę',
+      short: 'šią savaitę',
+      narrow: 'šią savaitę',
+    ),
+    next: MultiLength(
+      long: 'kitą savaitę',
+      short: 'kitą savaitę',
+      narrow: 'kitą savaitę',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'prieš {0} savaitę',
+        few: 'prieš {0} savaites',
+        many: 'prieš {0} savaitės',
+        other: 'prieš {0} savaičių',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'prieš {0} sav.',
+        few: 'prieš {0} sav.',
+        many: 'prieš {0} sav.',
+        other: 'prieš {0} sav.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'prieš {0} sav.',
+        few: 'prieš {0} sav.',
+        many: 'prieš {0} sav.',
+        other: 'prieš {0} sav.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'po {0} savaitės',
+        few: 'po {0} savaičių',
+        many: 'po {0} savaitės',
+        other: 'po {0} savaičių',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'po {0} sav.',
+        few: 'po {0} sav.',
+        many: 'po {0} sav.',
+        other: 'po {0} sav.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'po {0} sav.',
+        few: 'po {0} sav.',
+        many: 'po {0} sav.',
+        other: 'po {0} sav.',
+      ),
+    ),
+  );
 
   @override
   MultiLength get weekOfMonth => const MultiLength(
-        long: 'mėnesio savaitė',
-        short: 'mėnesio savaitė',
-        narrow: 'mėnesio savaitė',
-      );
+    long: 'mėnesio savaitė',
+    short: 'mėnesio savaitė',
+    narrow: 'mėnesio savaitė',
+  );
 
   @override
   DateFieldFullData get day => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'diena',
-          short: 'd.',
-          narrow: 'd.',
-        ),
-        previous: MultiLength(
-          long: 'vakar',
-          short: 'vakar',
-          narrow: 'vakar',
-        ),
-        now: MultiLength(
-          long: 'šiandien',
-          short: 'šiandien',
-          narrow: 'šiandien',
-        ),
-        next: MultiLength(
-          long: 'rytoj',
-          short: 'rytoj',
-          narrow: 'rytoj',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'prieš {0} dieną',
-            few: 'prieš {0} dienas',
-            many: 'prieš {0} dienos',
-            other: 'prieš {0} dienų',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'prieš {0} d.',
-            few: 'prieš {0} d.',
-            many: 'prieš {0} d.',
-            other: 'prieš {0} d.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'prieš {0} d.',
-            few: 'prieš {0} d.',
-            many: 'prieš {0} d.',
-            other: 'prieš {0} d.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'po {0} dienos',
-            few: 'po {0} dienų',
-            many: 'po {0} dienos',
-            other: 'po {0} dienų',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'po {0} d.',
-            few: 'po {0} d.',
-            many: 'po {0} d.',
-            other: 'po {0} d.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'po {0} d.',
-            few: 'po {0} d.',
-            many: 'po {0} d.',
-            other: 'po {0} d.',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'diena', short: 'd.', narrow: 'd.'),
+    previous: MultiLength(long: 'vakar', short: 'vakar', narrow: 'vakar'),
+    now: MultiLength(long: 'šiandien', short: 'šiandien', narrow: 'šiandien'),
+    next: MultiLength(long: 'rytoj', short: 'rytoj', narrow: 'rytoj'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'prieš {0} dieną',
+        few: 'prieš {0} dienas',
+        many: 'prieš {0} dienos',
+        other: 'prieš {0} dienų',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'prieš {0} d.',
+        few: 'prieš {0} d.',
+        many: 'prieš {0} d.',
+        other: 'prieš {0} d.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'prieš {0} d.',
+        few: 'prieš {0} d.',
+        many: 'prieš {0} d.',
+        other: 'prieš {0} d.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'po {0} dienos',
+        few: 'po {0} dienų',
+        many: 'po {0} dienos',
+        other: 'po {0} dienų',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'po {0} d.',
+        few: 'po {0} d.',
+        many: 'po {0} d.',
+        other: 'po {0} d.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'po {0} d.',
+        few: 'po {0} d.',
+        many: 'po {0} d.',
+        other: 'po {0} d.',
+      ),
+    ),
+  );
 
   @override
   MultiLength get dayOfYear => const MultiLength(
-        long: 'metų diena',
-        short: 'metų diena',
-        narrow: 'metų diena',
-      );
+    long: 'metų diena',
+    short: 'metų diena',
+    narrow: 'metų diena',
+  );
 
   @override
   MultiLength get weekday => const MultiLength(
-        long: 'savaitės diena',
-        short: 'savaitės diena',
-        narrow: 'savaitės diena',
-      );
+    long: 'savaitės diena',
+    short: 'savaitės diena',
+    narrow: 'savaitės diena',
+  );
 
   @override
   MultiLength get weekdayOfMonth => const MultiLength(
-        long: 'mėnesio šiokiadienis',
-        short: 'mėnesio šiokiadienis',
-        narrow: 'mėnesio šiokiadienis',
-      );
+    long: 'mėnesio šiokiadienis',
+    short: 'mėnesio šiokiadienis',
+    narrow: 'mėnesio šiokiadienis',
+  );
 
   @override
   DateFieldDataWithRelative get sunday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'praėjusį sekmadienį',
-          short: 'praėjusį sekm.',
-          narrow: 'praėjusį sekm.',
-        ),
-        now: MultiLength(
-          long: 'šį sekmadienį',
-          short: 'šį sekm.',
-          narrow: 'šį sekm.',
-        ),
-        next: MultiLength(
-          long: 'kitą sekmadienį',
-          short: 'kitą sekm.',
-          narrow: 'kitą sekm.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'prieš {0} sekmadienį',
-            few: 'prieš {0} sekmadienius',
-            many: 'prieš {0} sekmadienio',
-            other: 'prieš {0} sekmadienių',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'prieš {0} sekm.',
-            few: 'prieš {0} sekm.',
-            many: 'prieš {0} sekm.',
-            other: 'prieš {0} sekm.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'prieš {0} sekm.',
-            few: 'prieš {0} sekm.',
-            many: 'prieš {0} sekm.',
-            other: 'prieš {0} sekm.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'po {0} sekmadienio',
-            few: 'po {0} sekmadienių',
-            many: 'po {0} sekmadienio',
-            other: 'po {0} sekmadienių',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'po {0} sekm.',
-            few: 'po {0} sekm.',
-            many: 'po {0} sekm.',
-            other: 'po {0} sekm.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'po {0} sekm.',
-            few: 'po {0} sekm.',
-            many: 'po {0} sekm.',
-            other: 'po {0} sekm.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'praėjusį sekmadienį',
+      short: 'praėjusį sekm.',
+      narrow: 'praėjusį sekm.',
+    ),
+    now: MultiLength(
+      long: 'šį sekmadienį',
+      short: 'šį sekm.',
+      narrow: 'šį sekm.',
+    ),
+    next: MultiLength(
+      long: 'kitą sekmadienį',
+      short: 'kitą sekm.',
+      narrow: 'kitą sekm.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'prieš {0} sekmadienį',
+        few: 'prieš {0} sekmadienius',
+        many: 'prieš {0} sekmadienio',
+        other: 'prieš {0} sekmadienių',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'prieš {0} sekm.',
+        few: 'prieš {0} sekm.',
+        many: 'prieš {0} sekm.',
+        other: 'prieš {0} sekm.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'prieš {0} sekm.',
+        few: 'prieš {0} sekm.',
+        many: 'prieš {0} sekm.',
+        other: 'prieš {0} sekm.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'po {0} sekmadienio',
+        few: 'po {0} sekmadienių',
+        many: 'po {0} sekmadienio',
+        other: 'po {0} sekmadienių',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'po {0} sekm.',
+        few: 'po {0} sekm.',
+        many: 'po {0} sekm.',
+        other: 'po {0} sekm.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'po {0} sekm.',
+        few: 'po {0} sekm.',
+        many: 'po {0} sekm.',
+        other: 'po {0} sekm.',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get monday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'praėjusį pirmadienį',
-          short: 'praėjusį pirm.',
-          narrow: 'praėjusį pirm.',
-        ),
-        now: MultiLength(
-          long: 'šį pirmadienį',
-          short: 'šį pirm.',
-          narrow: 'šį pirm.',
-        ),
-        next: MultiLength(
-          long: 'kitą pirmadienį',
-          short: 'kitą pirm.',
-          narrow: 'kitą pirm.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'prieš {0} pirmadienį',
-            few: 'prieš {0} pirmadienius',
-            many: 'prieš {0} pirmadienio',
-            other: 'prieš {0} pirmadienių',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'prieš {0} pirm.',
-            few: 'prieš {0} pirm.',
-            many: 'prieš {0} pirm.',
-            other: 'prieš {0} pirm.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'prieš {0} pirm.',
-            few: 'prieš {0} pirm.',
-            many: 'prieš {0} pirm.',
-            other: 'prieš {0} pirm.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'po {0} pirmadienio',
-            few: 'po {0} pirmadienių',
-            many: 'po {0} pirmadienio',
-            other: 'po {0} pirmadienių',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'po {0} pirm.',
-            few: 'po {0} pirm.',
-            many: 'po {0} pirm.',
-            other: 'po {0} pirm.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'po {0} pirm.',
-            few: 'po {0} pirm.',
-            many: 'po {0} pirm.',
-            other: 'po {0} pirm.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'praėjusį pirmadienį',
+      short: 'praėjusį pirm.',
+      narrow: 'praėjusį pirm.',
+    ),
+    now: MultiLength(
+      long: 'šį pirmadienį',
+      short: 'šį pirm.',
+      narrow: 'šį pirm.',
+    ),
+    next: MultiLength(
+      long: 'kitą pirmadienį',
+      short: 'kitą pirm.',
+      narrow: 'kitą pirm.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'prieš {0} pirmadienį',
+        few: 'prieš {0} pirmadienius',
+        many: 'prieš {0} pirmadienio',
+        other: 'prieš {0} pirmadienių',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'prieš {0} pirm.',
+        few: 'prieš {0} pirm.',
+        many: 'prieš {0} pirm.',
+        other: 'prieš {0} pirm.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'prieš {0} pirm.',
+        few: 'prieš {0} pirm.',
+        many: 'prieš {0} pirm.',
+        other: 'prieš {0} pirm.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'po {0} pirmadienio',
+        few: 'po {0} pirmadienių',
+        many: 'po {0} pirmadienio',
+        other: 'po {0} pirmadienių',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'po {0} pirm.',
+        few: 'po {0} pirm.',
+        many: 'po {0} pirm.',
+        other: 'po {0} pirm.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'po {0} pirm.',
+        few: 'po {0} pirm.',
+        many: 'po {0} pirm.',
+        other: 'po {0} pirm.',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get tuesday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'praėjusį antradienį',
-          short: 'praėjusį antr.',
-          narrow: 'praėjusį antr.',
-        ),
-        now: MultiLength(
-          long: 'šį antradienį',
-          short: 'šį antr.',
-          narrow: 'šį antr.',
-        ),
-        next: MultiLength(
-          long: 'kitą antradienį',
-          short: 'kitą antr.',
-          narrow: 'kitą antr.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'prieš {0} antradienį',
-            few: 'prieš {0} antradienius',
-            many: 'prieš {0} antradienio',
-            other: 'prieš {0} antradienių',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'prieš {0} antr.',
-            few: 'prieš {0} antr.',
-            many: 'prieš {0} antr.',
-            other: 'prieš {0} antr.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'prieš {0} antr.',
-            few: 'prieš {0} antr.',
-            many: 'prieš {0} antr.',
-            other: 'prieš {0} antr.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'po {0} antradienio',
-            few: 'po {0} antradienių',
-            many: 'po {0} antradienio',
-            other: 'po {0} antradienių',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'po {0} antr.',
-            few: 'po {0} antr.',
-            many: 'po {0} antr.',
-            other: 'po {0} antr.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'po {0} antr.',
-            few: 'po {0} antr.',
-            many: 'po {0} antr.',
-            other: 'po {0} antr.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'praėjusį antradienį',
+      short: 'praėjusį antr.',
+      narrow: 'praėjusį antr.',
+    ),
+    now: MultiLength(
+      long: 'šį antradienį',
+      short: 'šį antr.',
+      narrow: 'šį antr.',
+    ),
+    next: MultiLength(
+      long: 'kitą antradienį',
+      short: 'kitą antr.',
+      narrow: 'kitą antr.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'prieš {0} antradienį',
+        few: 'prieš {0} antradienius',
+        many: 'prieš {0} antradienio',
+        other: 'prieš {0} antradienių',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'prieš {0} antr.',
+        few: 'prieš {0} antr.',
+        many: 'prieš {0} antr.',
+        other: 'prieš {0} antr.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'prieš {0} antr.',
+        few: 'prieš {0} antr.',
+        many: 'prieš {0} antr.',
+        other: 'prieš {0} antr.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'po {0} antradienio',
+        few: 'po {0} antradienių',
+        many: 'po {0} antradienio',
+        other: 'po {0} antradienių',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'po {0} antr.',
+        few: 'po {0} antr.',
+        many: 'po {0} antr.',
+        other: 'po {0} antr.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'po {0} antr.',
+        few: 'po {0} antr.',
+        many: 'po {0} antr.',
+        other: 'po {0} antr.',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get wednesday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'praėjusį trečiadienį',
-          short: 'praėjusį treč.',
-          narrow: 'praėjusį treč.',
-        ),
-        now: MultiLength(
-          long: 'šį trečiadienį',
-          short: 'šį treč.',
-          narrow: 'šį treč.',
-        ),
-        next: MultiLength(
-          long: 'kitą trečiadienį',
-          short: 'kitą treč.',
-          narrow: 'kitą treč.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'prieš {0} trečiadienį',
-            few: 'prieš {0} trečiadienius',
-            many: 'prieš {0} trečiadienio',
-            other: 'prieš {0} trečiadienių',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'prieš {0} treč.',
-            few: 'prieš {0} treč.',
-            many: 'prieš {0} treč.',
-            other: 'prieš {0} treč.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'prieš {0} treč.',
-            few: 'prieš {0} treč.',
-            many: 'prieš {0} treč.',
-            other: 'prieš {0} treč.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'po {0} trečiadienio',
-            few: 'po {0} trečiadienių',
-            many: 'po {0} trečiadienio',
-            other: 'po {0} trečiadienių',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'po {0} treč.',
-            few: 'po {0} treč.',
-            many: 'po {0} treč.',
-            other: 'po {0} treč.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'po {0} treč.',
-            few: 'po {0} treč.',
-            many: 'po {0} treč.',
-            other: 'po {0} treč.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'praėjusį trečiadienį',
+      short: 'praėjusį treč.',
+      narrow: 'praėjusį treč.',
+    ),
+    now: MultiLength(
+      long: 'šį trečiadienį',
+      short: 'šį treč.',
+      narrow: 'šį treč.',
+    ),
+    next: MultiLength(
+      long: 'kitą trečiadienį',
+      short: 'kitą treč.',
+      narrow: 'kitą treč.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'prieš {0} trečiadienį',
+        few: 'prieš {0} trečiadienius',
+        many: 'prieš {0} trečiadienio',
+        other: 'prieš {0} trečiadienių',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'prieš {0} treč.',
+        few: 'prieš {0} treč.',
+        many: 'prieš {0} treč.',
+        other: 'prieš {0} treč.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'prieš {0} treč.',
+        few: 'prieš {0} treč.',
+        many: 'prieš {0} treč.',
+        other: 'prieš {0} treč.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'po {0} trečiadienio',
+        few: 'po {0} trečiadienių',
+        many: 'po {0} trečiadienio',
+        other: 'po {0} trečiadienių',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'po {0} treč.',
+        few: 'po {0} treč.',
+        many: 'po {0} treč.',
+        other: 'po {0} treč.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'po {0} treč.',
+        few: 'po {0} treč.',
+        many: 'po {0} treč.',
+        other: 'po {0} treč.',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get thursday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'praėjusį ketvirtadienį',
-          short: 'praėjusį ketv.',
-          narrow: 'praėjusį ketv.',
-        ),
-        now: MultiLength(
-          long: 'šį ketvirtadienį',
-          short: 'šį ketv.',
-          narrow: 'šį ketv.',
-        ),
-        next: MultiLength(
-          long: 'kitą ketvirtadienį',
-          short: 'kitą ketv.',
-          narrow: 'kitą ketv.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'prieš {0} ketvirtadienį',
-            few: 'prieš {0} ketvirtadienius',
-            many: 'prieš {0} ketvirtadienio',
-            other: 'prieš {0} ketvirtadienių',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'prieš {0} ketv.',
-            few: 'prieš {0} ketv.',
-            many: 'prieš {0} ketv.',
-            other: 'prieš {0} ketv.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'prieš {0} ketv.',
-            few: 'prieš {0} ketv.',
-            many: 'prieš {0} ketv.',
-            other: 'prieš {0} ketv.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'po {0} ketvirtadienio',
-            few: 'po {0} ketvirtadienių',
-            many: 'po {0} ketvirtadienio',
-            other: 'po {0} ketvirtadienių',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'po {0} ketv.',
-            few: 'po {0} ketv.',
-            many: 'po {0} ketv.',
-            other: 'po {0} ketv.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'po {0} ketv.',
-            few: 'po {0} ketv.',
-            many: 'po {0} ketv.',
-            other: 'po {0} ketv.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'praėjusį ketvirtadienį',
+      short: 'praėjusį ketv.',
+      narrow: 'praėjusį ketv.',
+    ),
+    now: MultiLength(
+      long: 'šį ketvirtadienį',
+      short: 'šį ketv.',
+      narrow: 'šį ketv.',
+    ),
+    next: MultiLength(
+      long: 'kitą ketvirtadienį',
+      short: 'kitą ketv.',
+      narrow: 'kitą ketv.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'prieš {0} ketvirtadienį',
+        few: 'prieš {0} ketvirtadienius',
+        many: 'prieš {0} ketvirtadienio',
+        other: 'prieš {0} ketvirtadienių',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'prieš {0} ketv.',
+        few: 'prieš {0} ketv.',
+        many: 'prieš {0} ketv.',
+        other: 'prieš {0} ketv.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'prieš {0} ketv.',
+        few: 'prieš {0} ketv.',
+        many: 'prieš {0} ketv.',
+        other: 'prieš {0} ketv.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'po {0} ketvirtadienio',
+        few: 'po {0} ketvirtadienių',
+        many: 'po {0} ketvirtadienio',
+        other: 'po {0} ketvirtadienių',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'po {0} ketv.',
+        few: 'po {0} ketv.',
+        many: 'po {0} ketv.',
+        other: 'po {0} ketv.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'po {0} ketv.',
+        few: 'po {0} ketv.',
+        many: 'po {0} ketv.',
+        other: 'po {0} ketv.',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get friday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'praėjusį penktadienį',
-          short: 'praėjusį penkt.',
-          narrow: 'praėjusį penkt.',
-        ),
-        now: MultiLength(
-          long: 'šį penktadienį',
-          short: 'šį penkt.',
-          narrow: 'šį penkt.',
-        ),
-        next: MultiLength(
-          long: 'kitą penktadienį',
-          short: 'kitą penkt.',
-          narrow: 'kitą penkt.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'prieš {0} penktadienį',
-            few: 'prieš {0} penktadienius',
-            many: 'prieš {0} penktadienio',
-            other: 'prieš {0} penktadienių',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'prieš {0} penkt.',
-            few: 'prieš {0} penkt.',
-            many: 'prieš {0} penkt.',
-            other: 'prieš {0} penkt.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'prieš {0} penkt.',
-            few: 'prieš {0} penkt.',
-            many: 'prieš {0} penkt.',
-            other: 'prieš {0} penkt.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'po {0} penktadienio',
-            few: 'po {0} penktadienių',
-            many: 'po {0} penktadienio',
-            other: 'po {0} penktadienių',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'po {0} penkt.',
-            few: 'po {0} penkt.',
-            many: 'po {0} penkt.',
-            other: 'po {0} penkt.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'po {0} penkt.',
-            few: 'po {0} penkt.',
-            many: 'po {0} penkt.',
-            other: 'po {0} penkt.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'praėjusį penktadienį',
+      short: 'praėjusį penkt.',
+      narrow: 'praėjusį penkt.',
+    ),
+    now: MultiLength(
+      long: 'šį penktadienį',
+      short: 'šį penkt.',
+      narrow: 'šį penkt.',
+    ),
+    next: MultiLength(
+      long: 'kitą penktadienį',
+      short: 'kitą penkt.',
+      narrow: 'kitą penkt.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'prieš {0} penktadienį',
+        few: 'prieš {0} penktadienius',
+        many: 'prieš {0} penktadienio',
+        other: 'prieš {0} penktadienių',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'prieš {0} penkt.',
+        few: 'prieš {0} penkt.',
+        many: 'prieš {0} penkt.',
+        other: 'prieš {0} penkt.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'prieš {0} penkt.',
+        few: 'prieš {0} penkt.',
+        many: 'prieš {0} penkt.',
+        other: 'prieš {0} penkt.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'po {0} penktadienio',
+        few: 'po {0} penktadienių',
+        many: 'po {0} penktadienio',
+        other: 'po {0} penktadienių',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'po {0} penkt.',
+        few: 'po {0} penkt.',
+        many: 'po {0} penkt.',
+        other: 'po {0} penkt.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'po {0} penkt.',
+        few: 'po {0} penkt.',
+        many: 'po {0} penkt.',
+        other: 'po {0} penkt.',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataWithRelative get saturday => const DateFieldDataWithRelative(
-        previous: MultiLength(
-          long: 'praėjusį šeštadienį',
-          short: 'praėjusį šešt.',
-          narrow: 'praėjusį šešt.',
-        ),
-        now: MultiLength(
-          long: 'šį šeštadienį',
-          short: 'šį šešt.',
-          narrow: 'šį šešt.',
-        ),
-        next: MultiLength(
-          long: 'kitą šeštadienį',
-          short: 'kitą šešt.',
-          narrow: 'kitą šešt.',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'prieš {0} šeštadienį',
-            few: 'prieš {0} šeštadienius',
-            many: 'prieš {0} šeštadienio',
-            other: 'prieš {0} šeštadienių',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'prieš {0} šešt.',
-            few: 'prieš {0} šešt.',
-            many: 'prieš {0} šešt.',
-            other: 'prieš {0} šešt.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'prieš {0} šešt.',
-            few: 'prieš {0} šešt.',
-            many: 'prieš {0} šešt.',
-            other: 'prieš {0} šešt.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'po {0} šeštadienio',
-            few: 'po {0} šeštadienių',
-            many: 'po {0} šeštadienio',
-            other: 'po {0} šeštadienių',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'po {0} šešt.',
-            few: 'po {0} šešt.',
-            many: 'po {0} šešt.',
-            other: 'po {0} šešt.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'po {0} šeštadienio',
-            few: 'po {0} šešt.',
-            many: 'po {0} šešt.',
-            other: 'po {0} šešt.',
-          ),
-        ),
-      );
+    previous: MultiLength(
+      long: 'praėjusį šeštadienį',
+      short: 'praėjusį šešt.',
+      narrow: 'praėjusį šešt.',
+    ),
+    now: MultiLength(
+      long: 'šį šeštadienį',
+      short: 'šį šešt.',
+      narrow: 'šį šešt.',
+    ),
+    next: MultiLength(
+      long: 'kitą šeštadienį',
+      short: 'kitą šešt.',
+      narrow: 'kitą šešt.',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'prieš {0} šeštadienį',
+        few: 'prieš {0} šeštadienius',
+        many: 'prieš {0} šeštadienio',
+        other: 'prieš {0} šeštadienių',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'prieš {0} šešt.',
+        few: 'prieš {0} šešt.',
+        many: 'prieš {0} šešt.',
+        other: 'prieš {0} šešt.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'prieš {0} šešt.',
+        few: 'prieš {0} šešt.',
+        many: 'prieš {0} šešt.',
+        other: 'prieš {0} šešt.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'po {0} šeštadienio',
+        few: 'po {0} šeštadienių',
+        many: 'po {0} šeštadienio',
+        other: 'po {0} šeštadienių',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'po {0} šešt.',
+        few: 'po {0} šešt.',
+        many: 'po {0} šešt.',
+        other: 'po {0} šešt.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'po {0} šeštadienio',
+        few: 'po {0} šešt.',
+        many: 'po {0} šešt.',
+        other: 'po {0} šešt.',
+      ),
+    ),
+  );
 
   @override
   MultiLength get dayperiod => const MultiLength(
-        long: 'iki pietų / po pietų',
-        short: 'iki pietų / po pietų',
-        narrow: 'iki pietų / po pietų',
-      );
+    long: 'iki pietų / po pietų',
+    short: 'iki pietų / po pietų',
+    narrow: 'iki pietų / po pietų',
+  );
 
   @override
   DateFieldDataTime get hour => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: 'valanda',
-          short: 'val.',
-          narrow: 'h',
-        ),
-        now: MultiLength(
-          long: 'šią valandą',
-          short: 'šią valandą',
-          narrow: 'šią valandą',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'prieš {0} valandą',
-            few: 'prieš {0} valandas',
-            many: 'prieš {0} valandos',
-            other: 'prieš {0} valandų',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'prieš {0} val.',
-            few: 'prieš {0} val.',
-            many: 'prieš {0} val.',
-            other: 'prieš {0} val.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'prieš {0} val.',
-            few: 'prieš {0} val.',
-            many: 'prieš {0} val.',
-            other: 'prieš {0} val.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'po {0} valandos',
-            few: 'po {0} valandų',
-            many: 'po {0} valandos',
-            other: 'po {0} valandų',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'po {0} val.',
-            few: 'po {0} val.',
-            many: 'po {0} val.',
-            other: 'po {0} val.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'po {0} val.',
-            few: 'po {0} val.',
-            many: 'po {0} val.',
-            other: 'po {0} val.',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'valanda', short: 'val.', narrow: 'h'),
+    now: MultiLength(
+      long: 'šią valandą',
+      short: 'šią valandą',
+      narrow: 'šią valandą',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'prieš {0} valandą',
+        few: 'prieš {0} valandas',
+        many: 'prieš {0} valandos',
+        other: 'prieš {0} valandų',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'prieš {0} val.',
+        few: 'prieš {0} val.',
+        many: 'prieš {0} val.',
+        other: 'prieš {0} val.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'prieš {0} val.',
+        few: 'prieš {0} val.',
+        many: 'prieš {0} val.',
+        other: 'prieš {0} val.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'po {0} valandos',
+        few: 'po {0} valandų',
+        many: 'po {0} valandos',
+        other: 'po {0} valandų',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'po {0} val.',
+        few: 'po {0} val.',
+        many: 'po {0} val.',
+        other: 'po {0} val.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'po {0} val.',
+        few: 'po {0} val.',
+        many: 'po {0} val.',
+        other: 'po {0} val.',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataTime get minute => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: 'minutė',
-          short: 'min.',
-          narrow: 'min.',
-        ),
-        now: MultiLength(
-          long: 'šią minutę',
-          short: 'šią minutę',
-          narrow: 'šią minutę',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'prieš {0} minutę',
-            few: 'prieš {0} minutes',
-            many: 'prieš {0} minutės',
-            other: 'prieš {0} minučių',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'prieš {0} min.',
-            few: 'prieš {0} min.',
-            many: 'prieš {0} min.',
-            other: 'prieš {0} min.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'prieš {0} min.',
-            few: 'prieš {0} min.',
-            many: 'prieš {0} min.',
-            other: 'prieš {0} min.',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'po {0} minutės',
-            few: 'po {0} minučių',
-            many: 'po {0} minutės',
-            other: 'po {0} minučių',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'po {0} min.',
-            few: 'po {0} min.',
-            many: 'po {0} min.',
-            other: 'po {0} min.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'po {0} min.',
-            few: 'po {0} min.',
-            many: 'po {0} min.',
-            other: 'po {0} min.',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'minutė', short: 'min.', narrow: 'min.'),
+    now: MultiLength(
+      long: 'šią minutę',
+      short: 'šią minutę',
+      narrow: 'šią minutę',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'prieš {0} minutę',
+        few: 'prieš {0} minutes',
+        many: 'prieš {0} minutės',
+        other: 'prieš {0} minučių',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'prieš {0} min.',
+        few: 'prieš {0} min.',
+        many: 'prieš {0} min.',
+        other: 'prieš {0} min.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'prieš {0} min.',
+        few: 'prieš {0} min.',
+        many: 'prieš {0} min.',
+        other: 'prieš {0} min.',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'po {0} minutės',
+        few: 'po {0} minučių',
+        many: 'po {0} minutės',
+        other: 'po {0} minučių',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'po {0} min.',
+        few: 'po {0} min.',
+        many: 'po {0} min.',
+        other: 'po {0} min.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'po {0} min.',
+        few: 'po {0} min.',
+        many: 'po {0} min.',
+        other: 'po {0} min.',
+      ),
+    ),
+  );
 
   @override
   DateFieldDataTime get second => const DateFieldDataTime(
-        displayName: MultiLength(
-          long: 'sekundė',
-          short: 'sek.',
-          narrow: 's',
-        ),
-        now: MultiLength(
-          long: 'dabar',
-          short: 'dabar',
-          narrow: 'dabar',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'prieš {0} sekundę',
-            few: 'prieš {0} sekundes',
-            many: 'prieš {0} sekundės',
-            other: 'prieš {0} sekundžių',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'prieš {0} sek.',
-            few: 'prieš {0} sek.',
-            many: 'prieš {0} sek.',
-            other: 'prieš {0} sek.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'prieš {0} s',
-            few: 'prieš {0} s',
-            many: 'prieš {0} s',
-            other: 'prieš {0} s',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            one: 'po {0} sekundės',
-            few: 'po {0} sekundžių',
-            many: 'po {0} sekundės',
-            other: 'po {0} sekundžių',
-          ),
-          short: RelativeTime(
-            _locale,
-            one: 'po {0} sek.',
-            few: 'po {0} sek.',
-            many: 'po {0} sek.',
-            other: 'po {0} sek.',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            one: 'po {0} s',
-            few: 'po {0} s',
-            many: 'po {0} s',
-            other: 'po {0} s',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'sekundė', short: 'sek.', narrow: 's'),
+    now: MultiLength(long: 'dabar', short: 'dabar', narrow: 'dabar'),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'prieš {0} sekundę',
+        few: 'prieš {0} sekundes',
+        many: 'prieš {0} sekundės',
+        other: 'prieš {0} sekundžių',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'prieš {0} sek.',
+        few: 'prieš {0} sek.',
+        many: 'prieš {0} sek.',
+        other: 'prieš {0} sek.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'prieš {0} s',
+        few: 'prieš {0} s',
+        many: 'prieš {0} s',
+        other: 'prieš {0} s',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        one: 'po {0} sekundės',
+        few: 'po {0} sekundžių',
+        many: 'po {0} sekundės',
+        other: 'po {0} sekundžių',
+      ),
+      short: RelativeTime(
+        _locale,
+        one: 'po {0} sek.',
+        few: 'po {0} sek.',
+        many: 'po {0} sek.',
+        other: 'po {0} sek.',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        one: 'po {0} s',
+        few: 'po {0} s',
+        many: 'po {0} s',
+        other: 'po {0} s',
+      ),
+    ),
+  );
 
   @override
   MultiLength get zone => const MultiLength(
-        long: 'laiko juosta',
-        short: 'laiko juosta',
-        narrow: 'laiko juosta',
-      );
+    long: 'laiko juosta',
+    short: 'laiko juosta',
+    narrow: 'laiko juosta',
+  );
 }
 
 class LanguagesLt extends Languages {
@@ -6618,8 +6496,12 @@ class LanguagesLt extends Languages {
   static const _chp = Language('chp', 'čipvėjų');
   static const _chr = Language('chr', 'čerokių');
   static const _chy = Language('chy', 'čajenų');
-  static const _ckb = Language('ckb', 'soranių kurdų',
-      variant: 'soranių kurdų', menu: 'soranių kurdų');
+  static const _ckb = Language(
+    'ckb',
+    'soranių kurdų',
+    variant: 'soranių kurdų',
+    menu: 'soranių kurdų',
+  );
   static const _clc = Language('clc', 'čilkotinų');
   static const _co = Language('co', 'korsikiečių');
   static const _cop = Language('cop', 'koptų');
@@ -6672,10 +6554,16 @@ class LanguagesLt extends Languages {
   static const _en = Language('en', 'anglų');
   static const _enAU = Language('en-AU', 'Australijos anglų');
   static const _enCA = Language('en-CA', 'Kanados anglų');
-  static const _enGB =
-      Language('en-GB', 'Didžiosios Britanijos anglų', short: 'anglų (JK)');
-  static const _enUS =
-      Language('en-US', 'Jungtinių Valstijų anglų', short: 'anglų (JAV)');
+  static const _enGB = Language(
+    'en-GB',
+    'Didžiosios Britanijos anglų',
+    short: 'anglų (JK)',
+  );
+  static const _enUS = Language(
+    'en-US',
+    'Jungtinių Valstijų anglų',
+    short: 'anglų (JAV)',
+  );
   static const _enm = Language('enm', 'Vidurio Anglijos');
   static const _eo = Language('eo', 'esperanto');
   static const _es = Language('es', 'ispanų');
@@ -6914,8 +6802,10 @@ class LanguagesLt extends Languages {
   static const _nb = Language('nb', 'norvegų bukmolas');
   static const _nd = Language('nd', 'šiaurės ndebelų');
   static const _nds = Language('nds', 'Žemutinės Vokietijos');
-  static const _ndsNL =
-      Language('nds-NL', 'Žemutinės Saksonijos (Nyderlandai)');
+  static const _ndsNL = Language(
+    'nds-NL',
+    'Žemutinės Saksonijos (Nyderlandai)',
+  );
   static const _ne = Language('ne', 'nepaliečių');
   static const _$new = Language('new', 'nevari');
   static const _ng = Language('ng', 'ndongų');
@@ -7148,8 +7038,11 @@ class LanguagesLt extends Languages {
   static const _yi = Language('yi', 'jidiš');
   static const _yo = Language('yo', 'jorubų');
   static const _yrl = Language('yrl', 'njengatu');
-  static const _yue = Language('yue', 'kinų kalbos Kantono tarmė',
-      menu: 'kinų kalbos Kantono tarmė');
+  static const _yue = Language(
+    'yue',
+    'kinų kalbos Kantono tarmė',
+    menu: 'kinų kalbos Kantono tarmė',
+  );
   static const _za = Language('za', 'chuang');
   static const _zap = Language('zap', 'zapotekų');
   static const _zbl = Language('zbl', 'BLISS simbolių');
@@ -9168,8 +9061,10 @@ class ScriptsLt extends Scripts {
   static const _bugi = Script('Bugi', 'buginezų');
   static const _buhd = Script('Buhd', 'buhid');
   static const _cakm = Script('Cakm', 'čakma');
-  static const _cans =
-      Script('Cans', 'suvienodinti Kanados aborigenų silabiniai');
+  static const _cans = Script(
+    'Cans',
+    'suvienodinti Kanados aborigenų silabiniai',
+  );
   static const _cari = Script('Cari', 'karių');
   static const _cham = Script('Cham', 'čam');
   static const _cher = Script('Cher', 'čerokių');
@@ -9198,10 +9093,16 @@ class ScriptsLt extends Scripts {
   static const _hang = Script('Hang', 'hangul');
   static const _hani = Script('Hani', 'han');
   static const _hano = Script('Hano', 'hanuno');
-  static const _hans =
-      Script('Hans', 'supaprastinti', standAlone: 'supaprastinti han');
-  static const _hant =
-      Script('Hant', 'tradiciniai', standAlone: 'tradiciniai han');
+  static const _hans = Script(
+    'Hans',
+    'supaprastinti',
+    standAlone: 'supaprastinti han',
+  );
+  static const _hant = Script(
+    'Hant',
+    'tradiciniai',
+    standAlone: 'tradiciniai han',
+  );
   static const _hebr = Script('Hebr', 'hebrajų');
   static const _hira = Script('Hira', 'hiragana');
   static const _hluw = Script('Hluw', 'Anatolijaus hieroglifai');
@@ -9992,14 +9893,23 @@ class TerritoriesLt extends Territories {
   static const _bz = Territory('BZ', 'Belizas');
   static const _ca = Territory('CA', 'Kanada');
   static const _cc = Territory('CC', 'Kokosų (Kilingo) Salos');
-  static const _cd = Territory('CD', 'Kongas-Kinšasa',
-      variant: 'Kongo Demokratinė Respublika');
+  static const _cd = Territory(
+    'CD',
+    'Kongas-Kinšasa',
+    variant: 'Kongo Demokratinė Respublika',
+  );
   static const _cf = Territory('CF', 'Centrinės Afrikos Respublika');
-  static const _cg =
-      Territory('CG', 'Kongas-Brazavilis', variant: 'Kongo Respublika');
+  static const _cg = Territory(
+    'CG',
+    'Kongas-Brazavilis',
+    variant: 'Kongo Respublika',
+  );
   static const _ch = Territory('CH', 'Šveicarija');
-  static const _ci = Territory('CI', 'Dramblio Kaulo Krantas',
-      variant: 'Dramblio Kaulo Kranto Respublika');
+  static const _ci = Territory(
+    'CI',
+    'Dramblio Kaulo Krantas',
+    variant: 'Dramblio Kaulo Kranto Respublika',
+  );
   static const _ck = Territory('CK', 'Kuko Salos');
   static const _cl = Territory('CL', 'Čilė');
   static const _cm = Territory('CM', 'Kamerūnas');
@@ -10032,8 +9942,11 @@ class TerritoriesLt extends Territories {
   static const _ez = Territory('EZ', 'euro zona');
   static const _fi = Territory('FI', 'Suomija');
   static const _fj = Territory('FJ', 'Fidžis');
-  static const _fk =
-      Territory('FK', 'Folklando Salos', variant: 'Folklando (Malvinų) Salos');
+  static const _fk = Territory(
+    'FK',
+    'Folklando Salos',
+    variant: 'Folklando (Malvinų) Salos',
+  );
   static const _fm = Territory('FM', 'Mikronezija');
   static const _fo = Territory('FO', 'Farerų Salos');
   static const _fr = Territory('FR', 'Prancūzija');
@@ -10057,8 +9970,10 @@ class TerritoriesLt extends Territories {
   static const _gw = Territory('GW', 'Bisau Gvinėja');
   static const _gy = Territory('GY', 'Gajana');
   static const _hk = Territory(
-      'HK', 'Ypatingasis Administracinis Kinijos Regionas Honkongas',
-      short: 'Honkongas');
+    'HK',
+    'Ypatingasis Administracinis Kinijos Regionas Honkongas',
+    short: 'Honkongas',
+  );
   static const _hm = Territory('HM', 'Herdo ir Makdonaldo Salos');
   static const _hn = Territory('HN', 'Hondūras');
   static const _hr = Territory('HR', 'Kroatija');
@@ -10113,8 +10028,10 @@ class TerritoriesLt extends Territories {
   static const _mm = Territory('MM', 'Mianmaras (Birma)');
   static const _mn = Territory('MN', 'Mongolija');
   static const _mo = Territory(
-      'MO', 'Ypatingasis Administracinis Kinijos Regionas Makao',
-      short: 'Makao');
+    'MO',
+    'Ypatingasis Administracinis Kinijos Regionas Makao',
+    short: 'Makao',
+  );
   static const _mp = Territory('MP', 'Marianos Šiaurinės Salos');
   static const _mq = Territory('MQ', 'Martinika');
   static const _mr = Territory('MR', 'Mauritanija');
@@ -10137,8 +10054,11 @@ class TerritoriesLt extends Territories {
   static const _np = Territory('NP', 'Nepalas');
   static const _nr = Territory('NR', 'Nauru');
   static const _nu = Territory('NU', 'Niujė');
-  static const _nz =
-      Territory('NZ', 'Naujoji Zelandija', variant: 'Naujoji Zelandija');
+  static const _nz = Territory(
+    'NZ',
+    'Naujoji Zelandija',
+    variant: 'Naujoji Zelandija',
+  );
   static const _om = Territory('OM', 'Omanas');
   static const _pa = Territory('PA', 'Panama');
   static const _pe = Territory('PE', 'Peru');
@@ -10150,8 +10070,11 @@ class TerritoriesLt extends Territories {
   static const _pm = Territory('PM', 'Sen Pjeras ir Mikelonas');
   static const _pn = Territory('PN', 'Pitkerno salos');
   static const _pr = Territory('PR', 'Puerto Rikas');
-  static const _ps =
-      Territory('PS', 'Palestinos teritorija', short: 'Palestina');
+  static const _ps = Territory(
+    'PS',
+    'Palestinos teritorija',
+    short: 'Palestina',
+  );
   static const _pt = Territory('PT', 'Portugalija');
   static const _pw = Territory('PW', 'Palau');
   static const _py = Territory('PY', 'Paragvajus');
@@ -10202,8 +10125,10 @@ class TerritoriesLt extends Territories {
   static const _tz = Territory('TZ', 'Tanzanija');
   static const _ua = Territory('UA', 'Ukraina');
   static const _ug = Territory('UG', 'Uganda');
-  static const _um =
-      Territory('UM', 'Jungtinių Valstijų Mažosios Tolimosios Salos');
+  static const _um = Territory(
+    'UM',
+    'Jungtinių Valstijų Mažosios Tolimosios Salos',
+  );
   static const _un = Territory('UN', 'Jungtinės Tautos', short: 'JT');
   static const _us = Territory('US', 'Jungtinės Valstijos', short: 'JAV');
   static const _uy = Territory('UY', 'Urugvajus');
@@ -11201,28 +11126,38 @@ class VariantsLt extends Variants {
   static const _$1901 = Variant('1901', 'Įprasta vokiečių rašyba');
   static const _$1994 = Variant('1994', 'Sunorminta Resian rašyba');
   static const _$1996 = Variant('1996', '1996 -ųjų metų vokiečių rašyba');
-  static const _$1606NICT =
-      Variant('1606NICT', '1606 -ųjų metų prancūzų kalba');
-  static const _$1694ACAD =
-      Variant('1694ACAD', 'Ankstyvasis Prancūzijos modernizmas');
+  static const _$1606NICT = Variant(
+    '1606NICT',
+    '1606 -ųjų metų prancūzų kalba',
+  );
+  static const _$1694ACAD = Variant(
+    '1694ACAD',
+    'Ankstyvasis Prancūzijos modernizmas',
+  );
   static const _$1959ACAD = Variant('1959ACAD', 'Akademinis');
   static const _arevela = Variant('AREVELA', 'Rytų armėnai');
   static const _arevmda = Variant('AREVMDA', 'Vakarų armėnai');
-  static const _baku1926 =
-      Variant('BAKU1926', 'Suvienodinta turkų kalbos lotyniška abėcėlė');
+  static const _baku1926 = Variant(
+    'BAKU1926',
+    'Suvienodinta turkų kalbos lotyniška abėcėlė',
+  );
   static const _biske = Variant('BISKE', 'San Giorgio / Bila tarmė');
   static const _boont = Variant('BOONT', 'Boontling');
   static const _fonipa = Variant('FONIPA', 'Tarptautinės abėcėlės fonetika');
   static const _fonupa = Variant('FONUPA', 'UPA fonetika');
   static const _kkcor = Variant('KKCOR', 'Įprasta rašyba');
-  static const _lipaw =
-      Variant('LIPAW', 'Resian tarmei priklausanti Lipovaz tarmė');
+  static const _lipaw = Variant(
+    'LIPAW',
+    'Resian tarmei priklausanti Lipovaz tarmė',
+  );
   static const _monoton = Variant('MONOTON', 'Vienodas');
   static const _nedis = Variant('NEDIS', 'Natisone tarmė');
   static const _njiva = Variant('NJIVA', 'Gniva / Njiva tarmė');
   static const _osojs = Variant('OSOJS', 'Oseacco / Osojane tarmė');
-  static const _pinyin =
-      Variant('PINYIN', 'Kinų hieroglifų vertimo sistema Romanization');
+  static const _pinyin = Variant(
+    'PINYIN',
+    'Kinų hieroglifų vertimo sistema Romanization',
+  );
   static const _polyton = Variant('POLYTON', 'Polytonic');
   static const _posix = Variant('POSIX', 'Kompiuteris');
   static const _revised = Variant('REVISED', 'Ištaisyta rašyba');
@@ -15814,1612 +15749,2760 @@ class SubdivisionsLt extends Subdivisions {
 class CurrenciesLt extends Currencies {
   const CurrenciesLt(super.cld);
 
-  static const _adp = Currency(_cld, 'ADP', 'Andoros peseta',
-      one: 'Andoros peseta',
-      few: 'Andoros pesetos',
-      many: 'Andoros pesetos',
-      other: 'Andoros pesetos');
-  static const _aed = Currency(_cld, 'AED', 'Jungtinių Arabų Emyratų dirhamas',
-      one: 'JAE dirhamas',
-      few: 'JAE dirhamai',
-      many: 'JAE dirhamo',
-      other: 'JAE dirhamų');
-  static const _afa = Currency(_cld, 'AFA', 'Afganistano afganis (1927–2002)',
-      one: 'Afganistano afganis (1927–2002)',
-      few: 'Afganistano afganiai (1927–2002)',
-      many: 'Afganistano afganio (1927–2002)',
-      other: 'Afganistano afganių (1927–2002)');
-  static const _afn = Currency(_cld, 'AFN', 'Afganistano afganis',
-      one: 'Afganistano afganis',
-      few: 'Afganistano afganiai',
-      many: 'Afganistano afganio',
-      other: 'Afganistano afganių',
-      symbolNarrow: '؋');
-  static const _alk = Currency(_cld, 'ALK', 'Albanijos lekas (1946–1965)',
-      one: 'Albanijos lekas (1946–1965)',
-      few: 'Albanijos lekai (1946–1965)',
-      many: 'Albanijos leko (1946–1965)',
-      other: 'Albanijos lekų (1946–1965)');
-  static const _all = Currency(_cld, 'ALL', 'Albanijos lekas',
-      one: 'Albanijos lekas',
-      few: 'Albanijos lekai',
-      many: 'Albanijos leko',
-      other: 'Albanijos lekų');
-  static const _amd = Currency(_cld, 'AMD', 'Armėnijos dramas',
-      one: 'Armėnijos dramas',
-      few: 'Armėnijos dramai',
-      many: 'Armėnijos dramo',
-      other: 'Armėnijos dramų',
-      symbolNarrow: '֏');
-  static const _ang = Currency(_cld, 'ANG', 'Olandijos Antilų guldenas',
-      one: 'Olandijos Antilų guldenas',
-      few: 'Olandijos Antilų guldenai',
-      many: 'Olandijos Antilų guldeno',
-      other: 'Olandijos Antilų guldenų');
-  static const _aoa = Currency(_cld, 'AOA', 'Angolos kvanza',
-      one: 'Angolos kvanza',
-      few: 'Angolos kvanzos',
-      many: 'Angolos kvanzos',
-      other: 'Angolos kvanzų',
-      symbolNarrow: 'Kz');
-  static const _aok = Currency(_cld, 'AOK', 'Angolos kvanza (1977–1990)',
-      one: 'Angolos kvanza (1977–1990)',
-      few: 'Angolos kvanzos (1977–1990)',
-      many: 'Angolos kvanzos (1977–1990)',
-      other: 'Angolos kvanzų (1977–1990)');
+  static const _adp = Currency(
+    _cld,
+    'ADP',
+    'Andoros peseta',
+    one: 'Andoros peseta',
+    few: 'Andoros pesetos',
+    many: 'Andoros pesetos',
+    other: 'Andoros pesetos',
+  );
+  static const _aed = Currency(
+    _cld,
+    'AED',
+    'Jungtinių Arabų Emyratų dirhamas',
+    one: 'JAE dirhamas',
+    few: 'JAE dirhamai',
+    many: 'JAE dirhamo',
+    other: 'JAE dirhamų',
+  );
+  static const _afa = Currency(
+    _cld,
+    'AFA',
+    'Afganistano afganis (1927–2002)',
+    one: 'Afganistano afganis (1927–2002)',
+    few: 'Afganistano afganiai (1927–2002)',
+    many: 'Afganistano afganio (1927–2002)',
+    other: 'Afganistano afganių (1927–2002)',
+  );
+  static const _afn = Currency(
+    _cld,
+    'AFN',
+    'Afganistano afganis',
+    one: 'Afganistano afganis',
+    few: 'Afganistano afganiai',
+    many: 'Afganistano afganio',
+    other: 'Afganistano afganių',
+    symbolNarrow: '؋',
+  );
+  static const _alk = Currency(
+    _cld,
+    'ALK',
+    'Albanijos lekas (1946–1965)',
+    one: 'Albanijos lekas (1946–1965)',
+    few: 'Albanijos lekai (1946–1965)',
+    many: 'Albanijos leko (1946–1965)',
+    other: 'Albanijos lekų (1946–1965)',
+  );
+  static const _all = Currency(
+    _cld,
+    'ALL',
+    'Albanijos lekas',
+    one: 'Albanijos lekas',
+    few: 'Albanijos lekai',
+    many: 'Albanijos leko',
+    other: 'Albanijos lekų',
+  );
+  static const _amd = Currency(
+    _cld,
+    'AMD',
+    'Armėnijos dramas',
+    one: 'Armėnijos dramas',
+    few: 'Armėnijos dramai',
+    many: 'Armėnijos dramo',
+    other: 'Armėnijos dramų',
+    symbolNarrow: '֏',
+  );
+  static const _ang = Currency(
+    _cld,
+    'ANG',
+    'Olandijos Antilų guldenas',
+    one: 'Olandijos Antilų guldenas',
+    few: 'Olandijos Antilų guldenai',
+    many: 'Olandijos Antilų guldeno',
+    other: 'Olandijos Antilų guldenų',
+  );
+  static const _aoa = Currency(
+    _cld,
+    'AOA',
+    'Angolos kvanza',
+    one: 'Angolos kvanza',
+    few: 'Angolos kvanzos',
+    many: 'Angolos kvanzos',
+    other: 'Angolos kvanzų',
+    symbolNarrow: 'Kz',
+  );
+  static const _aok = Currency(
+    _cld,
+    'AOK',
+    'Angolos kvanza (1977–1990)',
+    one: 'Angolos kvanza (1977–1990)',
+    few: 'Angolos kvanzos (1977–1990)',
+    many: 'Angolos kvanzos (1977–1990)',
+    other: 'Angolos kvanzų (1977–1990)',
+  );
   static const _aon = Currency(
-      _cld, 'AON', 'Angolos naujoji kvanza (1990–2000)',
-      one: 'Angolos naujoji kvanza (1990–2000)',
-      few: 'Angolos naujosios kvanzos (1990–2000)',
-      many: 'Angolos naujosios kvanzos (1990–2000)',
-      other: 'Angolos naujųjų kvanzų (1990–2000)');
+    _cld,
+    'AON',
+    'Angolos naujoji kvanza (1990–2000)',
+    one: 'Angolos naujoji kvanza (1990–2000)',
+    few: 'Angolos naujosios kvanzos (1990–2000)',
+    many: 'Angolos naujosios kvanzos (1990–2000)',
+    other: 'Angolos naujųjų kvanzų (1990–2000)',
+  );
   static const _aor = Currency(
-      _cld, 'AOR', 'Angolos patikslinta kvanza (1995–1999)',
-      one: 'Angolos patikslinta kvanza (1995–1999)',
-      few: 'Angolos patikslintos kvanzos (1995–1999)',
-      many: 'Angolos patikslintos kvanzos (1995–1999)',
-      other: 'Angolos patikslintų kvanzų (1995–1999)');
-  static const _ara = Currency(_cld, 'ARA', 'Argentinos australs',
-      one: 'Argentinos austral',
-      few: 'Argentinos australs',
-      many: 'Argentinos australs',
-      other: 'Argentinos australs');
+    _cld,
+    'AOR',
+    'Angolos patikslinta kvanza (1995–1999)',
+    one: 'Angolos patikslinta kvanza (1995–1999)',
+    few: 'Angolos patikslintos kvanzos (1995–1999)',
+    many: 'Angolos patikslintos kvanzos (1995–1999)',
+    other: 'Angolos patikslintų kvanzų (1995–1999)',
+  );
+  static const _ara = Currency(
+    _cld,
+    'ARA',
+    'Argentinos australs',
+    one: 'Argentinos austral',
+    few: 'Argentinos australs',
+    many: 'Argentinos australs',
+    other: 'Argentinos australs',
+  );
   static const _arl = Currency(_cld, 'ARL', 'Argentinos pesos ley (1970–1983)');
-  static const _arm = Currency(_cld, 'ARM', 'Argentinos pesai (1881–1970)',
-      one: 'Argentinos pesas (1881–1970)',
-      few: 'Argentinos pesai (1881–1970)',
-      many: 'Argentinos peso (1881–1970)',
-      other: 'Argentinos pesų (1881–1970)');
-  static const _arp = Currency(_cld, 'ARP', 'Argentinos pesas (1983–1985)',
-      one: 'Argentinos pesas (1983–1985)',
-      few: 'Argentinos pesai (1983–1985)',
-      many: 'Argentinos pesai (1983–1985)',
-      other: 'Argentinos pesai (1983–1985)');
-  static const _ars = Currency(_cld, 'ARS', 'Argentinos pesas',
-      one: 'Argentinos pesas',
-      few: 'Argentinos pesai',
-      many: 'Argentinos peso',
-      other: 'Argentinos pesų',
-      symbolNarrow: r'$');
-  static const _ats = Currency(_cld, 'ATS', 'Austrijos šilingas',
-      one: 'Austrijos šilingas',
-      few: 'Austrijos šilingai',
-      many: 'Austrijos šilingo',
-      other: 'Austrijos šilingų');
-  static const _aud = Currency(_cld, 'AUD', 'Australijos doleris',
-      one: 'Australijos doleris',
-      few: 'Australijos doleriai',
-      many: 'Australijos dolerio',
-      other: 'Australijos dolerių',
-      symbol: 'AUD',
-      symbolNarrow: r'$');
-  static const _awg = Currency(_cld, 'AWG', 'Arubos guldenas',
-      one: 'Arubos guldenas',
-      few: 'Arubos guldenai',
-      many: 'Arubos guldeno',
-      other: 'Arubos guldenų');
-  static const _azm = Currency(_cld, 'AZM', 'Azerbaidžano manatas (1993–2006)',
-      one: 'Azerbaidžano manatas (1993–2006)',
-      few: 'Azerbaidžano manatai (1993–2006)',
-      many: 'Azerbaidžano manato (1993–2006)',
-      other: 'Azerbaidžano manatų (1993–2006)');
-  static const _azn = Currency(_cld, 'AZN', 'Azerbaidžano manatas',
-      one: 'Azerbaidžano manatas',
-      few: 'Azerbaidžano manatai',
-      many: 'Azerbaidžano manato',
-      other: 'Azerbaidžano manatų',
-      symbolNarrow: '₼');
+  static const _arm = Currency(
+    _cld,
+    'ARM',
+    'Argentinos pesai (1881–1970)',
+    one: 'Argentinos pesas (1881–1970)',
+    few: 'Argentinos pesai (1881–1970)',
+    many: 'Argentinos peso (1881–1970)',
+    other: 'Argentinos pesų (1881–1970)',
+  );
+  static const _arp = Currency(
+    _cld,
+    'ARP',
+    'Argentinos pesas (1983–1985)',
+    one: 'Argentinos pesas (1983–1985)',
+    few: 'Argentinos pesai (1983–1985)',
+    many: 'Argentinos pesai (1983–1985)',
+    other: 'Argentinos pesai (1983–1985)',
+  );
+  static const _ars = Currency(
+    _cld,
+    'ARS',
+    'Argentinos pesas',
+    one: 'Argentinos pesas',
+    few: 'Argentinos pesai',
+    many: 'Argentinos peso',
+    other: 'Argentinos pesų',
+    symbolNarrow: r'$',
+  );
+  static const _ats = Currency(
+    _cld,
+    'ATS',
+    'Austrijos šilingas',
+    one: 'Austrijos šilingas',
+    few: 'Austrijos šilingai',
+    many: 'Austrijos šilingo',
+    other: 'Austrijos šilingų',
+  );
+  static const _aud = Currency(
+    _cld,
+    'AUD',
+    'Australijos doleris',
+    one: 'Australijos doleris',
+    few: 'Australijos doleriai',
+    many: 'Australijos dolerio',
+    other: 'Australijos dolerių',
+    symbol: 'AUD',
+    symbolNarrow: r'$',
+  );
+  static const _awg = Currency(
+    _cld,
+    'AWG',
+    'Arubos guldenas',
+    one: 'Arubos guldenas',
+    few: 'Arubos guldenai',
+    many: 'Arubos guldeno',
+    other: 'Arubos guldenų',
+  );
+  static const _azm = Currency(
+    _cld,
+    'AZM',
+    'Azerbaidžano manatas (1993–2006)',
+    one: 'Azerbaidžano manatas (1993–2006)',
+    few: 'Azerbaidžano manatai (1993–2006)',
+    many: 'Azerbaidžano manato (1993–2006)',
+    other: 'Azerbaidžano manatų (1993–2006)',
+  );
+  static const _azn = Currency(
+    _cld,
+    'AZN',
+    'Azerbaidžano manatas',
+    one: 'Azerbaidžano manatas',
+    few: 'Azerbaidžano manatai',
+    many: 'Azerbaidžano manato',
+    other: 'Azerbaidžano manatų',
+    symbolNarrow: '₼',
+  );
   static const _bad = Currency(
-      _cld, 'BAD', 'Bosnijos ir Hercegovinos dinaras (1992–1994)',
-      one: 'Bosnijos ir Hercegovinos dinaras (1992–1994)',
-      few: 'Bosnijos ir Hercegovinos dinarai (1992–1994)',
-      many: 'Bosnijos ir Hercegovinos dinaro (1992–1994)',
-      other: 'Bosnijos ir Hercegovinos dinarų (1992–1994)');
+    _cld,
+    'BAD',
+    'Bosnijos ir Hercegovinos dinaras (1992–1994)',
+    one: 'Bosnijos ir Hercegovinos dinaras (1992–1994)',
+    few: 'Bosnijos ir Hercegovinos dinarai (1992–1994)',
+    many: 'Bosnijos ir Hercegovinos dinaro (1992–1994)',
+    other: 'Bosnijos ir Hercegovinos dinarų (1992–1994)',
+  );
   static const _bam = Currency(
-      _cld, 'BAM', 'Bosnijos ir Hercegovinos konvertuojamoji markė',
-      one: 'Bosnijos ir Hercegovinos konvertuojamoji markė',
-      few: 'Bosnijos ir Hercegovinos konvertuojamosios markės',
-      many: 'Bosnijos ir Hercegovinos konvertuojamosios markės',
-      other: 'Bosnijos ir Hercegovinos konvertuojamųjų markių',
-      symbolNarrow: 'KM');
+    _cld,
+    'BAM',
+    'Bosnijos ir Hercegovinos konvertuojamoji markė',
+    one: 'Bosnijos ir Hercegovinos konvertuojamoji markė',
+    few: 'Bosnijos ir Hercegovinos konvertuojamosios markės',
+    many: 'Bosnijos ir Hercegovinos konvertuojamosios markės',
+    other: 'Bosnijos ir Hercegovinos konvertuojamųjų markių',
+    symbolNarrow: 'KM',
+  );
   static const _ban = Currency(
-      _cld, 'BAN', 'Bosnijos ir Hercegovinos naujasis dinaras (1994–1997)',
-      one: 'Bosnijos ir Hercegovinos naujasis dinaras (1994–1997)',
-      few: 'Bosnijos ir Hercegovinos naujieji dinarai (1994–1997)',
-      many: 'Bosnijos ir Hercegovinos naujojo dinaro (1994–1997)',
-      other: 'Bosnijos ir Hercegovinos naujųjų dinarų (1994–1997)');
-  static const _bbd = Currency(_cld, 'BBD', 'Barbadoso doleris',
-      one: 'Barbadoso doleris',
-      few: 'Barbadoso doleriai',
-      many: 'Barbadoso dolerio',
-      other: 'Barbadoso dolerių',
-      symbolNarrow: r'$');
-  static const _bdt = Currency(_cld, 'BDT', 'Bangladešo taka',
-      one: 'Bangladešo taka',
-      few: 'Bangladešo takos',
-      many: 'Bangladešo takos',
-      other: 'Bangladešo takų',
-      symbolNarrow: 'BDT');
-  static const _bec = Currency(_cld, 'BEC', 'Belgijos frankas (konvertuojamas)',
-      one: 'Belgijos frankas (konvertuojamas)',
-      few: 'Belgijos frankai (konvertuojami)',
-      many: 'Belgijos franko (konvertuojamo)',
-      other: 'Belgijos frankų (konvertuojamų)');
-  static const _bef = Currency(_cld, 'BEF', 'Belgijos frankas',
-      one: 'Belgijos frankas',
-      few: 'Belgijos frankai',
-      many: 'Belgijos franko',
-      other: 'Belgijos frankų');
-  static const _bel = Currency(_cld, 'BEL', 'Belgijos frankas (finansinis)',
-      one: 'Belgijos frankas (finansinis)',
-      few: 'Belgijos frankai (finansiniai)',
-      many: 'Belgijos franko (finansinio)',
-      other: 'Belgijos frankų (finansinių)');
-  static const _bgl = Currency(_cld, 'BGL', 'Bulgarijos levas (1962–1999)',
-      one: 'Bulgarijos levas (1962–1999)',
-      few: 'Bulgarijos levai (1962–1999)',
-      many: 'Bulgarijos levo (1962–1999)',
-      other: 'Bulgarijos levų (1962–1999)');
-  static const _bgm = Currency(_cld, 'BGM', 'Bulgarų socialistų leva',
-      one: 'Bulgarų socialistų lev',
-      few: 'Bulgarų socialistų leva',
-      many: 'Bulgarų socialistų leva',
-      other: 'Bulgarų socialistų leva');
-  static const _bgn = Currency(_cld, 'BGN', 'Bulgarijos levas',
-      one: 'Bulgarijos levas',
-      few: 'Bulgarijos levai',
-      many: 'Bulgarijos levo',
-      other: 'Bulgarijos levų');
-  static const _bgo = Currency(_cld, 'BGO', 'Bulgarijos levas (1879–1952)',
-      one: 'Bulgarijos levas (1879–1952)',
-      few: 'Bulgarijos levai (1879–1952)',
-      many: 'Bulgarijos levo (1879–1952)',
-      other: 'Bulgarijos levų (1879–1952)');
-  static const _bhd = Currency(_cld, 'BHD', 'Bahreino dinaras',
-      one: 'Bahreino dinaras',
-      few: 'Bahreino dinarai',
-      many: 'Bahreino dinaro',
-      other: 'Bahreino dinarų');
-  static const _bif = Currency(_cld, 'BIF', 'Burundžio frankas',
-      one: 'Burundžio frankas',
-      few: 'Burundžio frankai',
-      many: 'Burundžio franko',
-      other: 'Burundžio frankų');
-  static const _bmd = Currency(_cld, 'BMD', 'Bermudos doleris',
-      one: 'Bermudos doleris',
-      few: 'Bermudos doleriai',
-      many: 'Bermudos dolerio',
-      other: 'Bermudos dolerių',
-      symbolNarrow: r'$');
-  static const _bnd = Currency(_cld, 'BND', 'Brunėjaus doleris',
-      one: 'Brunėjaus doleris',
-      few: 'Brunėjaus doleriai',
-      many: 'Brunėjaus dolerio',
-      other: 'Brunėjaus dolerių',
-      symbolNarrow: r'$');
-  static const _bob = Currency(_cld, 'BOB', 'Bolivijos bolivijanas',
-      one: 'Bolivijos bolivijanas',
-      few: 'Bolivijos bolivijanai',
-      many: 'Bolivijos bolivijano',
-      other: 'Bolivijos bolivijanų',
-      symbolNarrow: 'Bs');
-  static const _bol = Currency(_cld, 'BOL', 'Bolivijos bolivijanas (1863–1963)',
-      one: 'Bolivijos bolivijanas (1863–1963)',
-      few: 'Bolivijos bolivijanai (1863–1963)',
-      many: 'Bolivijos bolivijano (1863–1963)',
-      other: 'Bolivijos bolivijanų (1863–1963)');
-  static const _bop = Currency(_cld, 'BOP', 'Bolivijos pesas',
-      one: 'Bolivijos pesas',
-      few: 'Bolivijos pesai',
-      many: 'Bolivijos peso',
-      other: 'Bolivijos pesų');
-  static const _bov = Currency(_cld, 'BOV', 'Bolivijos mvdol',
-      one: 'Bolivijos mvdol',
-      few: 'Boliviečių mvdols',
-      many: 'Bolivijos mvdol',
-      other: 'Bolivijos mvdol');
+    _cld,
+    'BAN',
+    'Bosnijos ir Hercegovinos naujasis dinaras (1994–1997)',
+    one: 'Bosnijos ir Hercegovinos naujasis dinaras (1994–1997)',
+    few: 'Bosnijos ir Hercegovinos naujieji dinarai (1994–1997)',
+    many: 'Bosnijos ir Hercegovinos naujojo dinaro (1994–1997)',
+    other: 'Bosnijos ir Hercegovinos naujųjų dinarų (1994–1997)',
+  );
+  static const _bbd = Currency(
+    _cld,
+    'BBD',
+    'Barbadoso doleris',
+    one: 'Barbadoso doleris',
+    few: 'Barbadoso doleriai',
+    many: 'Barbadoso dolerio',
+    other: 'Barbadoso dolerių',
+    symbolNarrow: r'$',
+  );
+  static const _bdt = Currency(
+    _cld,
+    'BDT',
+    'Bangladešo taka',
+    one: 'Bangladešo taka',
+    few: 'Bangladešo takos',
+    many: 'Bangladešo takos',
+    other: 'Bangladešo takų',
+    symbolNarrow: 'BDT',
+  );
+  static const _bec = Currency(
+    _cld,
+    'BEC',
+    'Belgijos frankas (konvertuojamas)',
+    one: 'Belgijos frankas (konvertuojamas)',
+    few: 'Belgijos frankai (konvertuojami)',
+    many: 'Belgijos franko (konvertuojamo)',
+    other: 'Belgijos frankų (konvertuojamų)',
+  );
+  static const _bef = Currency(
+    _cld,
+    'BEF',
+    'Belgijos frankas',
+    one: 'Belgijos frankas',
+    few: 'Belgijos frankai',
+    many: 'Belgijos franko',
+    other: 'Belgijos frankų',
+  );
+  static const _bel = Currency(
+    _cld,
+    'BEL',
+    'Belgijos frankas (finansinis)',
+    one: 'Belgijos frankas (finansinis)',
+    few: 'Belgijos frankai (finansiniai)',
+    many: 'Belgijos franko (finansinio)',
+    other: 'Belgijos frankų (finansinių)',
+  );
+  static const _bgl = Currency(
+    _cld,
+    'BGL',
+    'Bulgarijos levas (1962–1999)',
+    one: 'Bulgarijos levas (1962–1999)',
+    few: 'Bulgarijos levai (1962–1999)',
+    many: 'Bulgarijos levo (1962–1999)',
+    other: 'Bulgarijos levų (1962–1999)',
+  );
+  static const _bgm = Currency(
+    _cld,
+    'BGM',
+    'Bulgarų socialistų leva',
+    one: 'Bulgarų socialistų lev',
+    few: 'Bulgarų socialistų leva',
+    many: 'Bulgarų socialistų leva',
+    other: 'Bulgarų socialistų leva',
+  );
+  static const _bgn = Currency(
+    _cld,
+    'BGN',
+    'Bulgarijos levas',
+    one: 'Bulgarijos levas',
+    few: 'Bulgarijos levai',
+    many: 'Bulgarijos levo',
+    other: 'Bulgarijos levų',
+  );
+  static const _bgo = Currency(
+    _cld,
+    'BGO',
+    'Bulgarijos levas (1879–1952)',
+    one: 'Bulgarijos levas (1879–1952)',
+    few: 'Bulgarijos levai (1879–1952)',
+    many: 'Bulgarijos levo (1879–1952)',
+    other: 'Bulgarijos levų (1879–1952)',
+  );
+  static const _bhd = Currency(
+    _cld,
+    'BHD',
+    'Bahreino dinaras',
+    one: 'Bahreino dinaras',
+    few: 'Bahreino dinarai',
+    many: 'Bahreino dinaro',
+    other: 'Bahreino dinarų',
+  );
+  static const _bif = Currency(
+    _cld,
+    'BIF',
+    'Burundžio frankas',
+    one: 'Burundžio frankas',
+    few: 'Burundžio frankai',
+    many: 'Burundžio franko',
+    other: 'Burundžio frankų',
+  );
+  static const _bmd = Currency(
+    _cld,
+    'BMD',
+    'Bermudos doleris',
+    one: 'Bermudos doleris',
+    few: 'Bermudos doleriai',
+    many: 'Bermudos dolerio',
+    other: 'Bermudos dolerių',
+    symbolNarrow: r'$',
+  );
+  static const _bnd = Currency(
+    _cld,
+    'BND',
+    'Brunėjaus doleris',
+    one: 'Brunėjaus doleris',
+    few: 'Brunėjaus doleriai',
+    many: 'Brunėjaus dolerio',
+    other: 'Brunėjaus dolerių',
+    symbolNarrow: r'$',
+  );
+  static const _bob = Currency(
+    _cld,
+    'BOB',
+    'Bolivijos bolivijanas',
+    one: 'Bolivijos bolivijanas',
+    few: 'Bolivijos bolivijanai',
+    many: 'Bolivijos bolivijano',
+    other: 'Bolivijos bolivijanų',
+    symbolNarrow: 'Bs',
+  );
+  static const _bol = Currency(
+    _cld,
+    'BOL',
+    'Bolivijos bolivijanas (1863–1963)',
+    one: 'Bolivijos bolivijanas (1863–1963)',
+    few: 'Bolivijos bolivijanai (1863–1963)',
+    many: 'Bolivijos bolivijano (1863–1963)',
+    other: 'Bolivijos bolivijanų (1863–1963)',
+  );
+  static const _bop = Currency(
+    _cld,
+    'BOP',
+    'Bolivijos pesas',
+    one: 'Bolivijos pesas',
+    few: 'Bolivijos pesai',
+    many: 'Bolivijos peso',
+    other: 'Bolivijos pesų',
+  );
+  static const _bov = Currency(
+    _cld,
+    'BOV',
+    'Bolivijos mvdol',
+    one: 'Bolivijos mvdol',
+    few: 'Boliviečių mvdols',
+    many: 'Bolivijos mvdol',
+    other: 'Bolivijos mvdol',
+  );
   static const _brb = Currency(
-      _cld, 'BRB', 'Brazilijos naujieji kruzeirai (1967–1986)',
-      one: 'Brazilijos naujasis kruzeiras (1967–1986)',
-      few: 'Brazilijos naujieji kruzeirai (1967–1986)',
-      many: 'Brazilijos naujasis kruzeiro (1967–1986)',
-      other: 'Brazilijos naujųjų kruzeirų (1967–1986)');
-  static const _brc = Currency(_cld, 'BRC', 'Brazilijos kruzadai (1986–1989)',
-      one: 'Brazilijos kruzadas (1986–1989)',
-      few: 'Brazilijos kruzadai (1986–1989)',
-      many: 'Brazilijos kruzado (1986–1989)',
-      other: 'Brazilijos kruzadų (1986–1989)');
-  static const _bre = Currency(_cld, 'BRE', 'Brazilijos kruzeiras (1990–1993)',
-      one: 'Brazilijos kruzeiras (1990–1993)',
-      few: 'Brazilijos kruzeirai (1990–1993)',
-      many: 'Brazilijos kruzeirai (1990–1993)',
-      other: 'Brazilijos kruzeirai (1990–1993)');
-  static const _brl = Currency(_cld, 'BRL', 'Brazilijos realas',
-      one: 'Brazilijos realas',
-      few: 'Brazilijos realai',
-      many: 'Brazilijos realo',
-      other: 'Brazilijos realų',
-      symbol: 'BRL',
-      symbolNarrow: r'R$');
+    _cld,
+    'BRB',
+    'Brazilijos naujieji kruzeirai (1967–1986)',
+    one: 'Brazilijos naujasis kruzeiras (1967–1986)',
+    few: 'Brazilijos naujieji kruzeirai (1967–1986)',
+    many: 'Brazilijos naujasis kruzeiro (1967–1986)',
+    other: 'Brazilijos naujųjų kruzeirų (1967–1986)',
+  );
+  static const _brc = Currency(
+    _cld,
+    'BRC',
+    'Brazilijos kruzadai (1986–1989)',
+    one: 'Brazilijos kruzadas (1986–1989)',
+    few: 'Brazilijos kruzadai (1986–1989)',
+    many: 'Brazilijos kruzado (1986–1989)',
+    other: 'Brazilijos kruzadų (1986–1989)',
+  );
+  static const _bre = Currency(
+    _cld,
+    'BRE',
+    'Brazilijos kruzeiras (1990–1993)',
+    one: 'Brazilijos kruzeiras (1990–1993)',
+    few: 'Brazilijos kruzeirai (1990–1993)',
+    many: 'Brazilijos kruzeirai (1990–1993)',
+    other: 'Brazilijos kruzeirai (1990–1993)',
+  );
+  static const _brl = Currency(
+    _cld,
+    'BRL',
+    'Brazilijos realas',
+    one: 'Brazilijos realas',
+    few: 'Brazilijos realai',
+    many: 'Brazilijos realo',
+    other: 'Brazilijos realų',
+    symbol: 'BRL',
+    symbolNarrow: r'R$',
+  );
   static const _brn = Currency(
-      _cld, 'BRN', 'Brazilijos naujiejis kruzadai (1989–1990)',
-      one: 'Brazilijos naujasis kruzadas (1989–1990)',
-      few: 'Brazilijos naujieji kruzadai (1989–1990)',
-      many: 'Brazilijos naujojo kruzado (1989–1990)',
-      other: 'Brazilijos naujųjų kruzadų (1989–1990)');
-  static const _brr = Currency(_cld, 'BRR', 'Brazilijos kruzeiras (1993–1994)',
-      one: 'Brazilijos kruzeiras (1993–1994)',
-      few: 'Brazilijos kruzeirai (1993–1994)',
-      many: 'Brazilijos kruzeiro (1993–1994)',
-      other: 'Brazilijos kruzeirų (1993–1994)');
-  static const _brz = Currency(_cld, 'BRZ', 'Brazilijos kruzeirai (1942–1967)',
-      one: 'Brazilijos kruzeiras (1942–1967)',
-      few: 'Brazilijos kruzeirai (1942–1967)',
-      many: 'Brazilijos kruzeiro (1942–1967)',
-      other: 'Brazilijos kruzeirų (1942–1967)');
-  static const _bsd = Currency(_cld, 'BSD', 'Bahamų doleris',
-      one: 'Bahamų doleris',
-      few: 'Bahamų doleriai',
-      many: 'Bahamų dolerio',
-      other: 'Bahamų dolerių',
-      symbolNarrow: r'$');
-  static const _btn = Currency(_cld, 'BTN', 'Butano ngultrumas',
-      one: 'Butano ngultrumas',
-      few: 'Butano ngultrumai',
-      many: 'Butano ngultrumo',
-      other: 'Butano ngultrumų');
-  static const _buk = Currency(_cld, 'BUK', 'Birmos kijatas',
-      one: 'Birmos kijatas',
-      few: 'Birmos kijatai',
-      many: 'Birmos kijato',
-      other: 'Birmos kijatų');
-  static const _bwp = Currency(_cld, 'BWP', 'Botsvanos pula',
-      one: 'Botsvanos pula',
-      few: 'Botsvanos pulos',
-      many: 'Botsvanos pulos',
-      other: 'Botsvanos pulų',
-      symbolNarrow: 'P');
+    _cld,
+    'BRN',
+    'Brazilijos naujiejis kruzadai (1989–1990)',
+    one: 'Brazilijos naujasis kruzadas (1989–1990)',
+    few: 'Brazilijos naujieji kruzadai (1989–1990)',
+    many: 'Brazilijos naujojo kruzado (1989–1990)',
+    other: 'Brazilijos naujųjų kruzadų (1989–1990)',
+  );
+  static const _brr = Currency(
+    _cld,
+    'BRR',
+    'Brazilijos kruzeiras (1993–1994)',
+    one: 'Brazilijos kruzeiras (1993–1994)',
+    few: 'Brazilijos kruzeirai (1993–1994)',
+    many: 'Brazilijos kruzeiro (1993–1994)',
+    other: 'Brazilijos kruzeirų (1993–1994)',
+  );
+  static const _brz = Currency(
+    _cld,
+    'BRZ',
+    'Brazilijos kruzeirai (1942–1967)',
+    one: 'Brazilijos kruzeiras (1942–1967)',
+    few: 'Brazilijos kruzeirai (1942–1967)',
+    many: 'Brazilijos kruzeiro (1942–1967)',
+    other: 'Brazilijos kruzeirų (1942–1967)',
+  );
+  static const _bsd = Currency(
+    _cld,
+    'BSD',
+    'Bahamų doleris',
+    one: 'Bahamų doleris',
+    few: 'Bahamų doleriai',
+    many: 'Bahamų dolerio',
+    other: 'Bahamų dolerių',
+    symbolNarrow: r'$',
+  );
+  static const _btn = Currency(
+    _cld,
+    'BTN',
+    'Butano ngultrumas',
+    one: 'Butano ngultrumas',
+    few: 'Butano ngultrumai',
+    many: 'Butano ngultrumo',
+    other: 'Butano ngultrumų',
+  );
+  static const _buk = Currency(
+    _cld,
+    'BUK',
+    'Birmos kijatas',
+    one: 'Birmos kijatas',
+    few: 'Birmos kijatai',
+    many: 'Birmos kijato',
+    other: 'Birmos kijatų',
+  );
+  static const _bwp = Currency(
+    _cld,
+    'BWP',
+    'Botsvanos pula',
+    one: 'Botsvanos pula',
+    few: 'Botsvanos pulos',
+    many: 'Botsvanos pulos',
+    other: 'Botsvanos pulų',
+    symbolNarrow: 'P',
+  );
   static const _byb = Currency(
-      _cld, 'BYB', 'Baltarusijos naujasis rublis (1994–1999)',
-      one: 'Baltarusijos naujasis rublis (1994–1999)',
-      few: 'Baltarusijos naujieji rubliai (1994–1999)',
-      many: 'Baltarusijos naujojo rublio (1994–1999)',
-      other: 'Baltarusijos naujųjų rublių');
-  static const _byn = Currency(_cld, 'BYN', 'Baltarusijos rublis',
-      one: 'Baltarusijos rublis',
-      few: 'Baltarusijos rubliai',
-      many: 'Baltarusijos rublio',
-      other: 'Baltarusijos rublių',
-      symbolNarrow: 'Br');
-  static const _byr = Currency(_cld, 'BYR', 'Baltarusijos rublis (2000–2016)',
-      one: 'Baltarusijos rublis (2000–2016)',
-      few: 'Baltarusijos rubliai (2000–2016)',
-      many: 'Baltarusijos rublio (2000–2016)',
-      other: 'Baltarusijos rublių (2000–2016)');
-  static const _bzd = Currency(_cld, 'BZD', 'Belizo doleris',
-      one: 'Belizo doleris',
-      few: 'Belizo doleriai',
-      many: 'Belizo dolerio',
-      other: 'Belizo dolerių',
-      symbolNarrow: r'$');
-  static const _cad = Currency(_cld, 'CAD', 'Kanados doleris',
-      one: 'Kanados doleris',
-      few: 'Kanados doleriai',
-      many: 'Kanados dolerio',
-      other: 'Kanados dolerių',
-      symbol: 'CAD',
-      symbolNarrow: r'$');
-  static const _cdf = Currency(_cld, 'CDF', 'Kongo frankas',
-      one: 'Kongo frankas',
-      few: 'Kongo frankai',
-      many: 'Kongo franko',
-      other: 'Kongo frankų');
-  static const _che = Currency(_cld, 'CHE', 'WIR eurai',
-      one: 'WIR euras', few: 'WIR eurai', many: 'WIR euro', other: 'WIR eurų');
-  static const _chf = Currency(_cld, 'CHF', 'Šveicarijos frankas',
-      one: 'Šveicarijos frankas',
-      few: 'Šveicarijos frankai',
-      many: 'Šveicarijos franko',
-      other: 'Šveicarijos frankų');
-  static const _chw = Currency(_cld, 'CHW', 'WIR frankas',
-      one: 'WIR frankas',
-      few: 'WIR frankai',
-      many: 'WIR franko',
-      other: 'WIR frankų');
-  static const _cle = Currency(_cld, 'CLE', 'Čilės eskudai',
-      one: 'Čilės eskudas',
-      few: 'Čilės eskudai',
-      many: 'Čilės eskudo',
-      other: 'Čilės eskudų');
+    _cld,
+    'BYB',
+    'Baltarusijos naujasis rublis (1994–1999)',
+    one: 'Baltarusijos naujasis rublis (1994–1999)',
+    few: 'Baltarusijos naujieji rubliai (1994–1999)',
+    many: 'Baltarusijos naujojo rublio (1994–1999)',
+    other: 'Baltarusijos naujųjų rublių',
+  );
+  static const _byn = Currency(
+    _cld,
+    'BYN',
+    'Baltarusijos rublis',
+    one: 'Baltarusijos rublis',
+    few: 'Baltarusijos rubliai',
+    many: 'Baltarusijos rublio',
+    other: 'Baltarusijos rublių',
+    symbolNarrow: 'Br',
+  );
+  static const _byr = Currency(
+    _cld,
+    'BYR',
+    'Baltarusijos rublis (2000–2016)',
+    one: 'Baltarusijos rublis (2000–2016)',
+    few: 'Baltarusijos rubliai (2000–2016)',
+    many: 'Baltarusijos rublio (2000–2016)',
+    other: 'Baltarusijos rublių (2000–2016)',
+  );
+  static const _bzd = Currency(
+    _cld,
+    'BZD',
+    'Belizo doleris',
+    one: 'Belizo doleris',
+    few: 'Belizo doleriai',
+    many: 'Belizo dolerio',
+    other: 'Belizo dolerių',
+    symbolNarrow: r'$',
+  );
+  static const _cad = Currency(
+    _cld,
+    'CAD',
+    'Kanados doleris',
+    one: 'Kanados doleris',
+    few: 'Kanados doleriai',
+    many: 'Kanados dolerio',
+    other: 'Kanados dolerių',
+    symbol: 'CAD',
+    symbolNarrow: r'$',
+  );
+  static const _cdf = Currency(
+    _cld,
+    'CDF',
+    'Kongo frankas',
+    one: 'Kongo frankas',
+    few: 'Kongo frankai',
+    many: 'Kongo franko',
+    other: 'Kongo frankų',
+  );
+  static const _che = Currency(
+    _cld,
+    'CHE',
+    'WIR eurai',
+    one: 'WIR euras',
+    few: 'WIR eurai',
+    many: 'WIR euro',
+    other: 'WIR eurų',
+  );
+  static const _chf = Currency(
+    _cld,
+    'CHF',
+    'Šveicarijos frankas',
+    one: 'Šveicarijos frankas',
+    few: 'Šveicarijos frankai',
+    many: 'Šveicarijos franko',
+    other: 'Šveicarijos frankų',
+  );
+  static const _chw = Currency(
+    _cld,
+    'CHW',
+    'WIR frankas',
+    one: 'WIR frankas',
+    few: 'WIR frankai',
+    many: 'WIR franko',
+    other: 'WIR frankų',
+  );
+  static const _cle = Currency(
+    _cld,
+    'CLE',
+    'Čilės eskudai',
+    one: 'Čilės eskudas',
+    few: 'Čilės eskudai',
+    many: 'Čilės eskudo',
+    other: 'Čilės eskudų',
+  );
   static const _clf = Currency(_cld, 'CLF', 'Čiliečių unidades de fomentos');
-  static const _clp = Currency(_cld, 'CLP', 'Čilės pesas',
-      one: 'Čilės pesas',
-      few: 'Čilės pesai',
-      many: 'Čilės peso',
-      other: 'Čilės pesų',
-      symbolNarrow: r'$');
-  static const _cnh = Currency(_cld, 'CNH', 'Kinijos Užsienio juanis',
-      one: 'Kinijos Užsienio juanis',
-      few: 'Kinijos Užsienio juaniai',
-      many: 'Kinijos Užsienio juanio',
-      other: 'Kinijos Užsienio juanių');
-  static const _cnx = Currency(_cld, 'CNX', 'Kinijos "People" banko doleris',
-      one: 'Kinijos "People" banko doleris',
-      few: 'Kinijos "People" banko doleriai',
-      many: 'Kinijos "People" banko dolerio',
-      other: 'Kinijos "People" banko dolerių');
-  static const _cny = Currency(_cld, 'CNY', 'Kinijos ženminbi juanis',
-      one: 'Kinijos ženminbi juanis',
-      few: 'Kinijos ženminbi juaniai',
-      many: 'Kinijos ženminbi juanio',
-      other: 'Kinijos ženminbi juanių',
-      symbol: 'CNY',
-      symbolNarrow: '¥');
-  static const _cop = Currency(_cld, 'COP', 'Kolumbijos pesas',
-      one: 'Kolumbijos pesas',
-      few: 'Kolumbijos pesai',
-      many: 'Kolumbijos peso',
-      other: 'Kolumbijos pesų',
-      symbolNarrow: r'$');
-  static const _cou = Currency(_cld, 'COU', 'unidad de valor realai',
-      one: 'unidad de valor realas',
-      few: 'unidad de valor realai',
-      many: 'unidad de valor realai',
-      other: 'unidad de valor realai');
-  static const _crc = Currency(_cld, 'CRC', 'Kosta Rikos kolonas',
-      one: 'Kosta Rikos kolonas',
-      few: 'Kosta Rikos kolonai',
-      many: 'Kosta Rikos kolono',
-      other: 'Kosta Rikos kolonų',
-      symbolNarrow: '₡');
-  static const _csd = Currency(_cld, 'CSD', 'Serbijos dinaras (2002–2006)',
-      one: 'Serbijos dinaras (2002–2006)',
-      few: 'Serbijos dinarai (2002–2006)',
-      many: 'Serbijos dinaro (2002–2006)',
-      other: 'Serbijos dinarų (2002–2006)');
-  static const _csk = Currency(_cld, 'CSK', 'Čekoslovakų sunkusis korunas',
-      one: 'Čekoslovakų sunkusis korunas',
-      few: 'Čekoslovakų sunkieji korunai',
-      many: 'Čekoslovakų sunkiejio koruno',
-      other: 'Čekoslovakų sunkiejių korunų');
-  static const _cuc = Currency(_cld, 'CUC', 'Kubos konvertuojamasis pesas',
-      one: 'Kubos konvertuojamasis pesas',
-      few: 'Kubos konvertuojamieji pesai',
-      many: 'Kubos konvertuojamojo peso',
-      other: 'Kubos konvertuojamųjų pesų',
-      symbolNarrow: r'$');
-  static const _cup = Currency(_cld, 'CUP', 'Kubos pesas',
-      one: 'Kubos pesas',
-      few: 'Kubos pesai',
-      many: 'Kubos peso',
-      other: 'Kubos pesų',
-      symbolNarrow: r'$');
-  static const _cve = Currency(_cld, 'CVE', 'Žaliojo Kyšulio eskudas',
-      one: 'Žaliojo Kyšulio eskudas',
-      few: 'Žaliojo Kyšulio eskudai',
-      many: 'Žaliojo Kyšulio eskudo',
-      other: 'Žaliojo Kyšulio eskudų');
-  static const _cyp = Currency(_cld, 'CYP', 'Kipro svaras',
-      one: 'Kipro svaras',
-      few: 'Kipro svarai',
-      many: 'Kipro svaro',
-      other: 'Kipro svarų');
-  static const _czk = Currency(_cld, 'CZK', 'Čekijos krona',
-      one: 'Čekijos krona',
-      few: 'Čekijos kronos',
-      many: 'Čekijos kronos',
-      other: 'Čekijos kronų',
-      symbolNarrow: 'Kč');
-  static const _ddm = Currency(_cld, 'DDM', 'Rytų Vokietijos markė',
-      one: 'Rytų Vokietijos markė',
-      few: 'Rytų Vokietijos markės',
-      many: 'Rytų Vokietijos markės',
-      other: 'Rytų Vokietijos markės');
-  static const _dem = Currency(_cld, 'DEM', 'Vokietijos markė',
-      one: 'Vokietijos markė',
-      few: 'Vokietijos markės',
-      many: 'Vokietijos markės',
-      other: 'Vokietijos markės');
-  static const _djf = Currency(_cld, 'DJF', 'Džibučio frankas',
-      one: 'Džibučio frankas',
-      few: 'Džibučio frankai',
-      many: 'Džibučio franko',
-      other: 'Džibučio frankų');
-  static const _dkk = Currency(_cld, 'DKK', 'Danijos krona',
-      one: 'Danijos krona',
-      few: 'Danijos kronos',
-      many: 'Danijos kronos',
-      other: 'Danijos kronų',
-      symbolNarrow: 'kr');
-  static const _dop = Currency(_cld, 'DOP', 'Dominikos pesas',
-      one: 'Dominikos pesas',
-      few: 'Dominikos pesai',
-      many: 'Dominikos peso',
-      other: 'Dominikos pesų',
-      symbolNarrow: r'$');
-  static const _dzd = Currency(_cld, 'DZD', 'Alžyro dinaras',
-      one: 'Alžyro dinaras',
-      few: 'Alžyro dinarai',
-      many: 'Alžyro dinaro',
-      other: 'Alžyro dinarų');
-  static const _ecs = Currency(_cld, 'ECS', 'Ekvadoro sukrė',
-      one: 'Ekvadoro sucre',
-      few: 'Ekvadoro sucres',
-      many: 'Ekvadoro sucres',
-      other: 'Ekvadoro sucres');
-  static const _ecv = Currency(_cld, 'ECV', 'Ekvadoro constante (UVC)',
-      one: 'Ekvadoro unidads de narsa Constante (UVC)',
-      few: 'Ekvadoro unidads de narsa Constante (UVC)',
-      many: 'Ekvadoro unidads de narsa Constante (UVC)',
-      other: 'Ekvadoro unidads de narsa Constante (UVC)');
-  static const _eek = Currency(_cld, 'EEK', 'Estijos krona',
-      one: 'Estijos krona',
-      few: 'Estijos kronos',
-      many: 'Estijos kronos',
-      other: 'Estijos kronų');
-  static const _egp = Currency(_cld, 'EGP', 'Egipto svaras',
-      one: 'Egipto svaras',
-      few: 'Egipto svarai',
-      many: 'Egipto svaro',
-      other: 'Egipto svarų',
-      symbolNarrow: 'E£');
-  static const _ern = Currency(_cld, 'ERN', 'Eritrėjos nakfa',
-      one: 'Eritrėjos nakfa',
-      few: 'Eritrėjos nakfos',
-      many: 'Eritrėjos nakfos',
-      other: 'Eritrėjos nakfų');
-  static const _esa = Currency(_cld, 'ESA', 'Ispanų pesetai (A sąskaita)',
-      one: 'Ispanų pesetas (A sąskaita)',
-      few: 'Ispanų pesetai (A sąskaita)',
-      many: 'Ispanų pesetai (A sąskaita)',
-      other: 'Ispanų pesetai (A sąskaita)');
+  static const _clp = Currency(
+    _cld,
+    'CLP',
+    'Čilės pesas',
+    one: 'Čilės pesas',
+    few: 'Čilės pesai',
+    many: 'Čilės peso',
+    other: 'Čilės pesų',
+    symbolNarrow: r'$',
+  );
+  static const _cnh = Currency(
+    _cld,
+    'CNH',
+    'Kinijos Užsienio juanis',
+    one: 'Kinijos Užsienio juanis',
+    few: 'Kinijos Užsienio juaniai',
+    many: 'Kinijos Užsienio juanio',
+    other: 'Kinijos Užsienio juanių',
+  );
+  static const _cnx = Currency(
+    _cld,
+    'CNX',
+    'Kinijos "People" banko doleris',
+    one: 'Kinijos "People" banko doleris',
+    few: 'Kinijos "People" banko doleriai',
+    many: 'Kinijos "People" banko dolerio',
+    other: 'Kinijos "People" banko dolerių',
+  );
+  static const _cny = Currency(
+    _cld,
+    'CNY',
+    'Kinijos ženminbi juanis',
+    one: 'Kinijos ženminbi juanis',
+    few: 'Kinijos ženminbi juaniai',
+    many: 'Kinijos ženminbi juanio',
+    other: 'Kinijos ženminbi juanių',
+    symbol: 'CNY',
+    symbolNarrow: '¥',
+  );
+  static const _cop = Currency(
+    _cld,
+    'COP',
+    'Kolumbijos pesas',
+    one: 'Kolumbijos pesas',
+    few: 'Kolumbijos pesai',
+    many: 'Kolumbijos peso',
+    other: 'Kolumbijos pesų',
+    symbolNarrow: r'$',
+  );
+  static const _cou = Currency(
+    _cld,
+    'COU',
+    'unidad de valor realai',
+    one: 'unidad de valor realas',
+    few: 'unidad de valor realai',
+    many: 'unidad de valor realai',
+    other: 'unidad de valor realai',
+  );
+  static const _crc = Currency(
+    _cld,
+    'CRC',
+    'Kosta Rikos kolonas',
+    one: 'Kosta Rikos kolonas',
+    few: 'Kosta Rikos kolonai',
+    many: 'Kosta Rikos kolono',
+    other: 'Kosta Rikos kolonų',
+    symbolNarrow: '₡',
+  );
+  static const _csd = Currency(
+    _cld,
+    'CSD',
+    'Serbijos dinaras (2002–2006)',
+    one: 'Serbijos dinaras (2002–2006)',
+    few: 'Serbijos dinarai (2002–2006)',
+    many: 'Serbijos dinaro (2002–2006)',
+    other: 'Serbijos dinarų (2002–2006)',
+  );
+  static const _csk = Currency(
+    _cld,
+    'CSK',
+    'Čekoslovakų sunkusis korunas',
+    one: 'Čekoslovakų sunkusis korunas',
+    few: 'Čekoslovakų sunkieji korunai',
+    many: 'Čekoslovakų sunkiejio koruno',
+    other: 'Čekoslovakų sunkiejių korunų',
+  );
+  static const _cuc = Currency(
+    _cld,
+    'CUC',
+    'Kubos konvertuojamasis pesas',
+    one: 'Kubos konvertuojamasis pesas',
+    few: 'Kubos konvertuojamieji pesai',
+    many: 'Kubos konvertuojamojo peso',
+    other: 'Kubos konvertuojamųjų pesų',
+    symbolNarrow: r'$',
+  );
+  static const _cup = Currency(
+    _cld,
+    'CUP',
+    'Kubos pesas',
+    one: 'Kubos pesas',
+    few: 'Kubos pesai',
+    many: 'Kubos peso',
+    other: 'Kubos pesų',
+    symbolNarrow: r'$',
+  );
+  static const _cve = Currency(
+    _cld,
+    'CVE',
+    'Žaliojo Kyšulio eskudas',
+    one: 'Žaliojo Kyšulio eskudas',
+    few: 'Žaliojo Kyšulio eskudai',
+    many: 'Žaliojo Kyšulio eskudo',
+    other: 'Žaliojo Kyšulio eskudų',
+  );
+  static const _cyp = Currency(
+    _cld,
+    'CYP',
+    'Kipro svaras',
+    one: 'Kipro svaras',
+    few: 'Kipro svarai',
+    many: 'Kipro svaro',
+    other: 'Kipro svarų',
+  );
+  static const _czk = Currency(
+    _cld,
+    'CZK',
+    'Čekijos krona',
+    one: 'Čekijos krona',
+    few: 'Čekijos kronos',
+    many: 'Čekijos kronos',
+    other: 'Čekijos kronų',
+    symbolNarrow: 'Kč',
+  );
+  static const _ddm = Currency(
+    _cld,
+    'DDM',
+    'Rytų Vokietijos markė',
+    one: 'Rytų Vokietijos markė',
+    few: 'Rytų Vokietijos markės',
+    many: 'Rytų Vokietijos markės',
+    other: 'Rytų Vokietijos markės',
+  );
+  static const _dem = Currency(
+    _cld,
+    'DEM',
+    'Vokietijos markė',
+    one: 'Vokietijos markė',
+    few: 'Vokietijos markės',
+    many: 'Vokietijos markės',
+    other: 'Vokietijos markės',
+  );
+  static const _djf = Currency(
+    _cld,
+    'DJF',
+    'Džibučio frankas',
+    one: 'Džibučio frankas',
+    few: 'Džibučio frankai',
+    many: 'Džibučio franko',
+    other: 'Džibučio frankų',
+  );
+  static const _dkk = Currency(
+    _cld,
+    'DKK',
+    'Danijos krona',
+    one: 'Danijos krona',
+    few: 'Danijos kronos',
+    many: 'Danijos kronos',
+    other: 'Danijos kronų',
+    symbolNarrow: 'kr',
+  );
+  static const _dop = Currency(
+    _cld,
+    'DOP',
+    'Dominikos pesas',
+    one: 'Dominikos pesas',
+    few: 'Dominikos pesai',
+    many: 'Dominikos peso',
+    other: 'Dominikos pesų',
+    symbolNarrow: r'$',
+  );
+  static const _dzd = Currency(
+    _cld,
+    'DZD',
+    'Alžyro dinaras',
+    one: 'Alžyro dinaras',
+    few: 'Alžyro dinarai',
+    many: 'Alžyro dinaro',
+    other: 'Alžyro dinarų',
+  );
+  static const _ecs = Currency(
+    _cld,
+    'ECS',
+    'Ekvadoro sukrė',
+    one: 'Ekvadoro sucre',
+    few: 'Ekvadoro sucres',
+    many: 'Ekvadoro sucres',
+    other: 'Ekvadoro sucres',
+  );
+  static const _ecv = Currency(
+    _cld,
+    'ECV',
+    'Ekvadoro constante (UVC)',
+    one: 'Ekvadoro unidads de narsa Constante (UVC)',
+    few: 'Ekvadoro unidads de narsa Constante (UVC)',
+    many: 'Ekvadoro unidads de narsa Constante (UVC)',
+    other: 'Ekvadoro unidads de narsa Constante (UVC)',
+  );
+  static const _eek = Currency(
+    _cld,
+    'EEK',
+    'Estijos krona',
+    one: 'Estijos krona',
+    few: 'Estijos kronos',
+    many: 'Estijos kronos',
+    other: 'Estijos kronų',
+  );
+  static const _egp = Currency(
+    _cld,
+    'EGP',
+    'Egipto svaras',
+    one: 'Egipto svaras',
+    few: 'Egipto svarai',
+    many: 'Egipto svaro',
+    other: 'Egipto svarų',
+    symbolNarrow: 'E£',
+  );
+  static const _ern = Currency(
+    _cld,
+    'ERN',
+    'Eritrėjos nakfa',
+    one: 'Eritrėjos nakfa',
+    few: 'Eritrėjos nakfos',
+    many: 'Eritrėjos nakfos',
+    other: 'Eritrėjos nakfų',
+  );
+  static const _esa = Currency(
+    _cld,
+    'ESA',
+    'Ispanų pesetai (A sąskaita)',
+    one: 'Ispanų pesetas (A sąskaita)',
+    few: 'Ispanų pesetai (A sąskaita)',
+    many: 'Ispanų pesetai (A sąskaita)',
+    other: 'Ispanų pesetai (A sąskaita)',
+  );
   static const _esb = Currency(
-      _cld, 'ESB', 'Ispanų pesetai (konvertuojama sąskaita)',
-      one: 'Ispanų pesetas (konvertuojama sąskaita)',
-      few: 'Ispanų pesetai (konvertuojama sąskaita)',
-      many: 'Ispanų pesetai (konvertuojama sąskaita)',
-      other: 'Ispanų pesetai (konvertuojama sąskaita)');
-  static const _esp = Currency(_cld, 'ESP', 'Ispanijos peseta',
-      one: 'Ispanų pesetas',
-      few: 'Ispanų pesetai',
-      many: 'Ispanų pesetai',
-      other: 'Ispanų pesetai',
-      symbolNarrow: '₧');
-  static const _etb = Currency(_cld, 'ETB', 'Etiopijos biras',
-      one: 'Etiopijos biras',
-      few: 'Etiopijos birai',
-      many: 'Etiopijos biro',
-      other: 'Etiopijos birų');
-  static const _eur = Currency(_cld, 'EUR', 'Euras',
-      one: 'euras',
-      few: 'eurai',
-      many: 'euro',
-      other: 'eurų',
-      symbol: '€',
-      symbolNarrow: '€');
-  static const _fim = Currency(_cld, 'FIM', 'Suomijos markė',
-      one: 'Suomijos markė',
-      few: 'Suomijos markės',
-      many: 'Suomijos markės',
-      other: 'Suomijos markės');
-  static const _fjd = Currency(_cld, 'FJD', 'Fidžio doleris',
-      one: 'Fidžio doleris',
-      few: 'Fidžio doleriai',
-      many: 'Fidžio dolerio',
-      other: 'Fidžio dolerių',
-      symbolNarrow: r'$');
-  static const _fkp = Currency(_cld, 'FKP', 'Falklando salų svaras',
-      one: 'Falklando salų svaras',
-      few: 'Falklando salų svarai',
-      many: 'Falklando salų svaro',
-      other: 'Falklando salų svarų',
-      symbolNarrow: '£');
-  static const _frf = Currency(_cld, 'FRF', 'Prancūzijos frankas',
-      one: 'Prancūzijos frankas',
-      few: 'Prancūzijos frankai',
-      many: 'Prancūzijos franko',
-      other: 'Prancūzijos frankų');
-  static const _gbp = Currency(_cld, 'GBP', 'Didžiosios Britanijos svaras',
-      one: 'Didžiosios Britanijos svaras',
-      few: 'Didžiosios Britanijos svarai',
-      many: 'Didžiosios Britanijos svaro',
-      other: 'Didžiosios Britanijos svarų',
-      symbol: 'GBP',
-      symbolNarrow: '£');
-  static const _gek = Currency(_cld, 'GEK', 'Gruzinų kupon larits',
-      one: 'Gruzinų kupon larit',
-      few: 'Gruzinų kupon larits',
-      many: 'Gruzinų kupon larits',
-      other: 'Gruzinų kupon larits');
-  static const _gel = Currency(_cld, 'GEL', 'Gruzijos laris',
-      one: 'Gruzijos laris',
-      few: 'Gruzijos lariai',
-      many: 'Gruzijos lario',
-      other: 'Gruzijos larių',
-      symbolNarrow: '₾');
-  static const _ghc = Currency(_cld, 'GHC', 'Ganos sedis (1979–2007)',
-      one: 'Ganos sedis (1979–2007)',
-      few: 'Ganos sedžiai (1979–2007)',
-      many: 'Ganos sedžio (1979–2007)',
-      other: 'Ganos sedžių (1979–2007)');
-  static const _ghs = Currency(_cld, 'GHS', 'Ganos sedis',
-      one: 'Ganos sedis',
-      few: 'Ganos sedžiai',
-      many: 'Ganos sedžio',
-      other: 'Ganos sedžių',
-      symbolNarrow: 'GH₵');
-  static const _gip = Currency(_cld, 'GIP', 'Gibraltaro svaras',
-      one: 'Gibraltaro svaras',
-      few: 'Gibraltaro svarai',
-      many: 'Gibraltaro svaro',
-      other: 'Gibraltaro svarų',
-      symbolNarrow: '£');
-  static const _gmd = Currency(_cld, 'GMD', 'Gambijos dalasis',
-      one: 'Gambijos dalasis',
-      few: 'Gambijos dalasiai',
-      many: 'Gambijos dalasio',
-      other: 'Gambijos dalasių');
-  static const _gnf = Currency(_cld, 'GNF', 'Gvinėjos frankas',
-      one: 'Gvinėjos frankas',
-      few: 'Gvinėjos frankai',
-      many: 'Gvinėjos franko',
-      other: 'Gvinėjos frankų',
-      symbolNarrow: 'FG');
-  static const _gns = Currency(_cld, 'GNS', 'Guinean sylis',
-      one: 'Gvinėjos sylis',
-      few: 'Gvinėjos syliai',
-      many: 'Gvinėjos sylio',
-      other: 'Gvinėjos sylio');
+    _cld,
+    'ESB',
+    'Ispanų pesetai (konvertuojama sąskaita)',
+    one: 'Ispanų pesetas (konvertuojama sąskaita)',
+    few: 'Ispanų pesetai (konvertuojama sąskaita)',
+    many: 'Ispanų pesetai (konvertuojama sąskaita)',
+    other: 'Ispanų pesetai (konvertuojama sąskaita)',
+  );
+  static const _esp = Currency(
+    _cld,
+    'ESP',
+    'Ispanijos peseta',
+    one: 'Ispanų pesetas',
+    few: 'Ispanų pesetai',
+    many: 'Ispanų pesetai',
+    other: 'Ispanų pesetai',
+    symbolNarrow: '₧',
+  );
+  static const _etb = Currency(
+    _cld,
+    'ETB',
+    'Etiopijos biras',
+    one: 'Etiopijos biras',
+    few: 'Etiopijos birai',
+    many: 'Etiopijos biro',
+    other: 'Etiopijos birų',
+  );
+  static const _eur = Currency(
+    _cld,
+    'EUR',
+    'Euras',
+    one: 'euras',
+    few: 'eurai',
+    many: 'euro',
+    other: 'eurų',
+    symbol: '€',
+    symbolNarrow: '€',
+  );
+  static const _fim = Currency(
+    _cld,
+    'FIM',
+    'Suomijos markė',
+    one: 'Suomijos markė',
+    few: 'Suomijos markės',
+    many: 'Suomijos markės',
+    other: 'Suomijos markės',
+  );
+  static const _fjd = Currency(
+    _cld,
+    'FJD',
+    'Fidžio doleris',
+    one: 'Fidžio doleris',
+    few: 'Fidžio doleriai',
+    many: 'Fidžio dolerio',
+    other: 'Fidžio dolerių',
+    symbolNarrow: r'$',
+  );
+  static const _fkp = Currency(
+    _cld,
+    'FKP',
+    'Falklando salų svaras',
+    one: 'Falklando salų svaras',
+    few: 'Falklando salų svarai',
+    many: 'Falklando salų svaro',
+    other: 'Falklando salų svarų',
+    symbolNarrow: '£',
+  );
+  static const _frf = Currency(
+    _cld,
+    'FRF',
+    'Prancūzijos frankas',
+    one: 'Prancūzijos frankas',
+    few: 'Prancūzijos frankai',
+    many: 'Prancūzijos franko',
+    other: 'Prancūzijos frankų',
+  );
+  static const _gbp = Currency(
+    _cld,
+    'GBP',
+    'Didžiosios Britanijos svaras',
+    one: 'Didžiosios Britanijos svaras',
+    few: 'Didžiosios Britanijos svarai',
+    many: 'Didžiosios Britanijos svaro',
+    other: 'Didžiosios Britanijos svarų',
+    symbol: 'GBP',
+    symbolNarrow: '£',
+  );
+  static const _gek = Currency(
+    _cld,
+    'GEK',
+    'Gruzinų kupon larits',
+    one: 'Gruzinų kupon larit',
+    few: 'Gruzinų kupon larits',
+    many: 'Gruzinų kupon larits',
+    other: 'Gruzinų kupon larits',
+  );
+  static const _gel = Currency(
+    _cld,
+    'GEL',
+    'Gruzijos laris',
+    one: 'Gruzijos laris',
+    few: 'Gruzijos lariai',
+    many: 'Gruzijos lario',
+    other: 'Gruzijos larių',
+    symbolNarrow: '₾',
+  );
+  static const _ghc = Currency(
+    _cld,
+    'GHC',
+    'Ganos sedis (1979–2007)',
+    one: 'Ganos sedis (1979–2007)',
+    few: 'Ganos sedžiai (1979–2007)',
+    many: 'Ganos sedžio (1979–2007)',
+    other: 'Ganos sedžių (1979–2007)',
+  );
+  static const _ghs = Currency(
+    _cld,
+    'GHS',
+    'Ganos sedis',
+    one: 'Ganos sedis',
+    few: 'Ganos sedžiai',
+    many: 'Ganos sedžio',
+    other: 'Ganos sedžių',
+    symbolNarrow: 'GH₵',
+  );
+  static const _gip = Currency(
+    _cld,
+    'GIP',
+    'Gibraltaro svaras',
+    one: 'Gibraltaro svaras',
+    few: 'Gibraltaro svarai',
+    many: 'Gibraltaro svaro',
+    other: 'Gibraltaro svarų',
+    symbolNarrow: '£',
+  );
+  static const _gmd = Currency(
+    _cld,
+    'GMD',
+    'Gambijos dalasis',
+    one: 'Gambijos dalasis',
+    few: 'Gambijos dalasiai',
+    many: 'Gambijos dalasio',
+    other: 'Gambijos dalasių',
+  );
+  static const _gnf = Currency(
+    _cld,
+    'GNF',
+    'Gvinėjos frankas',
+    one: 'Gvinėjos frankas',
+    few: 'Gvinėjos frankai',
+    many: 'Gvinėjos franko',
+    other: 'Gvinėjos frankų',
+    symbolNarrow: 'FG',
+  );
+  static const _gns = Currency(
+    _cld,
+    'GNS',
+    'Guinean sylis',
+    one: 'Gvinėjos sylis',
+    few: 'Gvinėjos syliai',
+    many: 'Gvinėjos sylio',
+    other: 'Gvinėjos sylio',
+  );
   static const _gqe = Currency(_cld, 'GQE', 'Pusiaujo Guinean ekwele');
-  static const _grd = Currency(_cld, 'GRD', 'Graikijos drachma',
-      one: 'Graikijos drachma',
-      few: 'Graikijos drachmos',
-      many: 'Graikijos drachmos',
-      other: 'Graikijos drachmos');
-  static const _gtq = Currency(_cld, 'GTQ', 'Gvatemalos ketcalis',
-      one: 'Gvatemalos ketcalis',
-      few: 'Gvatemalos ketcaliai',
-      many: 'Gvatemalos ketcalio',
-      other: 'Gvatemalos ketcalių',
-      symbolNarrow: 'Q');
-  static const _gwe = Currency(_cld, 'GWE', 'Portugalų Gvinėjos eskudas',
-      one: 'Portugalijos Gvinėjos eskudas',
-      few: 'Portugalijos Gvinėjos eskudai',
-      many: 'Portugalijos Gvinėjos eskudo',
-      other: 'Portugalijos Gvinėjos eskudų');
-  static const _gwp = Currency(_cld, 'GWP', 'Gvinėjos-Bisau pesas',
-      one: 'Bisau Gvinėjos pesas',
-      few: 'Bisau Gvinėjos pesai',
-      many: 'Bisau Gvinėjos peso',
-      other: 'Bisau Gvinėjos pesai');
-  static const _gyd = Currency(_cld, 'GYD', 'Gajanos doleris',
-      one: 'Gajanos doleris',
-      few: 'Gajanos doleriai',
-      many: 'Gajanos dolerio',
-      other: 'Gajanos dolerių',
-      symbolNarrow: r'$');
-  static const _hkd = Currency(_cld, 'HKD', 'Honkongo doleris',
-      one: 'Honkongo doleris',
-      few: 'Honkongo doleriai',
-      many: 'Honkongo dolerio',
-      other: 'Honkongo dolerių',
-      symbol: 'HKD',
-      symbolNarrow: r'$');
-  static const _hnl = Currency(_cld, 'HNL', 'Hondūro lempira',
-      one: 'Hondūro lempira',
-      few: 'Hondūro lempiros',
-      many: 'Hondūro lempiros',
-      other: 'Hondūro lempirų',
-      symbolNarrow: 'L');
-  static const _hrd = Currency(_cld, 'HRD', 'Kroatijos dinaras',
-      one: 'Kroatijos dinaras',
-      few: 'Krotaijos dinarai',
-      many: 'Kroatijos dinaro',
-      other: 'Kroatijos dinarų');
-  static const _hrk = Currency(_cld, 'HRK', 'Kroatijos kuna',
-      one: 'Kroatijos kuna',
-      few: 'Kroatijos kunos',
-      many: 'Kroatijos kunos',
-      other: 'Kroatijos kunų',
-      symbolNarrow: 'kn');
-  static const _htg = Currency(_cld, 'HTG', 'Haičio gurdas',
-      one: 'Haičio gurdas',
-      few: 'Haičio gurdai',
-      many: 'Haičio gurdo',
-      other: 'Haičio gurdų');
-  static const _huf = Currency(_cld, 'HUF', 'Vengrijos forintas',
-      one: 'Vengrijos forintas',
-      few: 'Vengrijos forintai',
-      many: 'Vengrijos forinto',
-      other: 'Vengrijos forintų',
-      symbolNarrow: 'Ft');
-  static const _idr = Currency(_cld, 'IDR', 'Indonezijos rupija',
-      one: 'Indonezijos rupija',
-      few: 'Indonezijos rupijos',
-      many: 'Indonezijos rupijos',
-      other: 'Indonezijos rupijų',
-      symbolNarrow: 'Rp');
-  static const _iep = Currency(_cld, 'IEP', 'Airijos svaras',
-      one: 'Airijos svaras',
-      few: 'Airijos svarai',
-      many: 'Airijos svaro',
-      other: 'Airijos svarų');
-  static const _ilp = Currency(_cld, 'ILP', 'Izraelio svaras',
-      one: 'Izraelio svaras',
-      few: 'Izraelio svarai',
-      many: 'Izraelio svaro',
-      other: 'Izraelio svarų');
-  static const _ilr = Currency(_cld, 'ILR', 'Izraelio šekelis (1980–1985)',
-      one: 'Izraelio šekelis (1980–1985)',
-      few: 'Izraelio šekeliai (1980–1985)',
-      many: 'Izraelio šekelio (1980–1985)',
-      other: 'Izraelio šekelių (1980–1985)');
-  static const _ils = Currency(_cld, 'ILS', 'Izraelio naujasis šekelis',
-      one: 'Izraelio naujasis šekelis',
-      few: 'Izraelio naujieji šekeliai',
-      many: 'Izraelio naujojo šekelio',
-      other: 'Izraelio naujųjų šekelių',
-      symbol: 'ILS',
-      symbolNarrow: 'ILS');
-  static const _inr = Currency(_cld, 'INR', 'Indijos rupija',
-      one: 'Indijos rupija',
-      few: 'Indijos rupijos',
-      many: 'Indijos rupijos',
-      other: 'Indijos rupijų',
-      symbol: 'INR',
-      symbolNarrow: 'INR');
-  static const _iqd = Currency(_cld, 'IQD', 'Irako dinaras',
-      one: 'Irako dinaras',
-      few: 'Irako dinarai',
-      many: 'Irako dinaro',
-      other: 'Irako dinarų');
-  static const _irr = Currency(_cld, 'IRR', 'Irano rialas',
-      one: 'Irano rialas',
-      few: 'Irano rialai',
-      many: 'Irano rialo',
-      other: 'Irano rialų');
-  static const _isj = Currency(_cld, 'ISJ', 'Islandijos krona (1918–1981)',
-      one: 'Islandijos krona (1918–1981)',
-      few: 'Islandijos kronos (1918–1981)',
-      many: 'Islandijos kronos (1918–1981)',
-      other: 'Islandijos kronų (1918–1981)');
-  static const _isk = Currency(_cld, 'ISK', 'Islandijos krona',
-      one: 'Islandijos krona',
-      few: 'Islandijos kronos',
-      many: 'Islandijos kronos',
-      other: 'Islandijos kronų',
-      symbolNarrow: 'kr');
-  static const _itl = Currency(_cld, 'ITL', 'Italijos lira',
-      one: 'Italijos lira',
-      few: 'Italijos liros',
-      many: 'Italijos liros',
-      other: 'Italijos lirų');
-  static const _jmd = Currency(_cld, 'JMD', 'Jamaikos doleris',
-      one: 'Jamaikos doleris',
-      few: 'Jamaikos doleriai',
-      many: 'Jamaikos dolerio',
-      other: 'Jamaikos dolerių',
-      symbolNarrow: r'$');
-  static const _jod = Currency(_cld, 'JOD', 'Jordanijos dinaras',
-      one: 'Jordanijos dinaras',
-      few: 'Jordanijos dinarai',
-      many: 'Jordanijos dinaro',
-      other: 'Jordanijos dinarų');
-  static const _jpy = Currency(_cld, 'JPY', 'Japonijos jena',
-      one: 'Japonijos jena',
-      few: 'Japonijos jenos',
-      many: 'Japonijos jenos',
-      other: 'Japonijos jenų',
-      symbol: 'JPY',
-      symbolNarrow: '¥');
-  static const _kes = Currency(_cld, 'KES', 'Kenijos šilingas',
-      one: 'Kenijos šilingas',
-      few: 'Kenijos šilingai',
-      many: 'Kenijos šilingo',
-      other: 'Kenijos šilingų');
-  static const _kgs = Currency(_cld, 'KGS', 'Kirgizijos somas',
-      one: 'Kirgizijos somas',
-      few: 'Kirgizijos somai',
-      many: 'Kirgizijos somo',
-      other: 'Kirgizijos somų',
-      symbolNarrow: '⃀');
-  static const _khr = Currency(_cld, 'KHR', 'Kambodžos rielis',
-      one: 'Kambodžos rielis',
-      few: 'Kambodžos rieliai',
-      many: 'Kambodžos rielio',
-      other: 'Kambodžos rielių',
-      symbolNarrow: 'KHR');
-  static const _kmf = Currency(_cld, 'KMF', 'Komoro frankas',
-      one: 'Komoro frankas',
-      few: 'Komoro frankai',
-      many: 'Komoro franko',
-      other: 'Komoro frankų',
-      symbolNarrow: 'CF');
-  static const _kpw = Currency(_cld, 'KPW', 'Šiaurės Korėjos vonas',
-      one: 'Šiaurės Korėjos vonas',
-      few: 'Šiaurės Korėjos vonai',
-      many: 'Šiaurės Korėjos vono',
-      other: 'Šiaurės Korėjos vonų',
-      symbolNarrow: '₩');
-  static const _krh = Currency(_cld, 'KRH', 'Pietų Korėjos hwanas (1953–1962)',
-      one: 'Pietų Korėjos hwanas (1953–1962)',
-      few: 'Pietų Korėjos hwanai (1953–1962)',
-      many: 'Pietų Korėjos hwano (1953–1962)',
-      other: 'Pietų Korėjos hwanų (1953–1962)');
-  static const _kro = Currency(_cld, 'KRO', 'Pietų Korėjos vonas (1945–1953)',
-      one: 'Pietų Korėjos vonas (1945–1953)',
-      few: 'Pietų Korėjos vonai (1945–1953)',
-      many: 'Pietų Korėjos vono (1945–1953)',
-      other: 'Pietų Korėjos vonų (1945–1953)');
-  static const _krw = Currency(_cld, 'KRW', 'Pietų Korėjos vonas',
-      one: 'Pietų Korėjos vonas',
-      few: 'Pietų Korėjos vonai',
-      many: 'Pietų Korėjos vono',
-      other: 'Pietų Korėjos vonų',
-      symbol: 'KRW',
-      symbolNarrow: '₩');
-  static const _kwd = Currency(_cld, 'KWD', 'Kuveito dinaras',
-      one: 'Kuveito dinaras',
-      few: 'Kuveito dinarai',
-      many: 'Kuveito dinaro',
-      other: 'Kuveito dinarų');
-  static const _kyd = Currency(_cld, 'KYD', 'Kaimanų salų doleris',
-      one: 'Kaimanų salų doleris',
-      few: 'Kaimanų salų doleriai',
-      many: 'Kaimanų salų dolerio',
-      other: 'Kaimanų salų dolerių',
-      symbolNarrow: r'$');
-  static const _kzt = Currency(_cld, 'KZT', 'Kazachstano tengė',
-      one: 'Kazachstano tengė',
-      few: 'Kazachstano tengės',
-      many: 'Kazachstano tengės',
-      other: 'Kazachstano tengių',
-      symbolNarrow: '₸');
-  static const _lak = Currency(_cld, 'LAK', 'Laoso kipas',
-      one: 'Laoso kipas',
-      few: 'Laoso kipai',
-      many: 'Laoso kipo',
-      other: 'Laoso kipų',
-      symbolNarrow: 'LAK');
-  static const _lbp = Currency(_cld, 'LBP', 'Libano svaras',
-      one: 'Libano svaras',
-      few: 'Libano svarai',
-      many: 'Libano svaro',
-      other: 'Libano svarų',
-      symbolNarrow: 'L£');
-  static const _lkr = Currency(_cld, 'LKR', 'Šri Lankos rupija',
-      one: 'Šri Lankos rupija',
-      few: 'Šri Lankos rupijos',
-      many: 'Šri Lankos rupijos',
-      other: 'Šri Lankos rupijų',
-      symbolNarrow: 'Rs');
-  static const _lrd = Currency(_cld, 'LRD', 'Liberijos doleris',
-      one: 'Liberijos doleris',
-      few: 'Liberijos doleriai',
-      many: 'Liberijos dolerio',
-      other: 'Liberijos dolerių',
-      symbolNarrow: r'$');
+  static const _grd = Currency(
+    _cld,
+    'GRD',
+    'Graikijos drachma',
+    one: 'Graikijos drachma',
+    few: 'Graikijos drachmos',
+    many: 'Graikijos drachmos',
+    other: 'Graikijos drachmos',
+  );
+  static const _gtq = Currency(
+    _cld,
+    'GTQ',
+    'Gvatemalos ketcalis',
+    one: 'Gvatemalos ketcalis',
+    few: 'Gvatemalos ketcaliai',
+    many: 'Gvatemalos ketcalio',
+    other: 'Gvatemalos ketcalių',
+    symbolNarrow: 'Q',
+  );
+  static const _gwe = Currency(
+    _cld,
+    'GWE',
+    'Portugalų Gvinėjos eskudas',
+    one: 'Portugalijos Gvinėjos eskudas',
+    few: 'Portugalijos Gvinėjos eskudai',
+    many: 'Portugalijos Gvinėjos eskudo',
+    other: 'Portugalijos Gvinėjos eskudų',
+  );
+  static const _gwp = Currency(
+    _cld,
+    'GWP',
+    'Gvinėjos-Bisau pesas',
+    one: 'Bisau Gvinėjos pesas',
+    few: 'Bisau Gvinėjos pesai',
+    many: 'Bisau Gvinėjos peso',
+    other: 'Bisau Gvinėjos pesai',
+  );
+  static const _gyd = Currency(
+    _cld,
+    'GYD',
+    'Gajanos doleris',
+    one: 'Gajanos doleris',
+    few: 'Gajanos doleriai',
+    many: 'Gajanos dolerio',
+    other: 'Gajanos dolerių',
+    symbolNarrow: r'$',
+  );
+  static const _hkd = Currency(
+    _cld,
+    'HKD',
+    'Honkongo doleris',
+    one: 'Honkongo doleris',
+    few: 'Honkongo doleriai',
+    many: 'Honkongo dolerio',
+    other: 'Honkongo dolerių',
+    symbol: 'HKD',
+    symbolNarrow: r'$',
+  );
+  static const _hnl = Currency(
+    _cld,
+    'HNL',
+    'Hondūro lempira',
+    one: 'Hondūro lempira',
+    few: 'Hondūro lempiros',
+    many: 'Hondūro lempiros',
+    other: 'Hondūro lempirų',
+    symbolNarrow: 'L',
+  );
+  static const _hrd = Currency(
+    _cld,
+    'HRD',
+    'Kroatijos dinaras',
+    one: 'Kroatijos dinaras',
+    few: 'Krotaijos dinarai',
+    many: 'Kroatijos dinaro',
+    other: 'Kroatijos dinarų',
+  );
+  static const _hrk = Currency(
+    _cld,
+    'HRK',
+    'Kroatijos kuna',
+    one: 'Kroatijos kuna',
+    few: 'Kroatijos kunos',
+    many: 'Kroatijos kunos',
+    other: 'Kroatijos kunų',
+    symbolNarrow: 'kn',
+  );
+  static const _htg = Currency(
+    _cld,
+    'HTG',
+    'Haičio gurdas',
+    one: 'Haičio gurdas',
+    few: 'Haičio gurdai',
+    many: 'Haičio gurdo',
+    other: 'Haičio gurdų',
+  );
+  static const _huf = Currency(
+    _cld,
+    'HUF',
+    'Vengrijos forintas',
+    one: 'Vengrijos forintas',
+    few: 'Vengrijos forintai',
+    many: 'Vengrijos forinto',
+    other: 'Vengrijos forintų',
+    symbolNarrow: 'Ft',
+  );
+  static const _idr = Currency(
+    _cld,
+    'IDR',
+    'Indonezijos rupija',
+    one: 'Indonezijos rupija',
+    few: 'Indonezijos rupijos',
+    many: 'Indonezijos rupijos',
+    other: 'Indonezijos rupijų',
+    symbolNarrow: 'Rp',
+  );
+  static const _iep = Currency(
+    _cld,
+    'IEP',
+    'Airijos svaras',
+    one: 'Airijos svaras',
+    few: 'Airijos svarai',
+    many: 'Airijos svaro',
+    other: 'Airijos svarų',
+  );
+  static const _ilp = Currency(
+    _cld,
+    'ILP',
+    'Izraelio svaras',
+    one: 'Izraelio svaras',
+    few: 'Izraelio svarai',
+    many: 'Izraelio svaro',
+    other: 'Izraelio svarų',
+  );
+  static const _ilr = Currency(
+    _cld,
+    'ILR',
+    'Izraelio šekelis (1980–1985)',
+    one: 'Izraelio šekelis (1980–1985)',
+    few: 'Izraelio šekeliai (1980–1985)',
+    many: 'Izraelio šekelio (1980–1985)',
+    other: 'Izraelio šekelių (1980–1985)',
+  );
+  static const _ils = Currency(
+    _cld,
+    'ILS',
+    'Izraelio naujasis šekelis',
+    one: 'Izraelio naujasis šekelis',
+    few: 'Izraelio naujieji šekeliai',
+    many: 'Izraelio naujojo šekelio',
+    other: 'Izraelio naujųjų šekelių',
+    symbol: 'ILS',
+    symbolNarrow: 'ILS',
+  );
+  static const _inr = Currency(
+    _cld,
+    'INR',
+    'Indijos rupija',
+    one: 'Indijos rupija',
+    few: 'Indijos rupijos',
+    many: 'Indijos rupijos',
+    other: 'Indijos rupijų',
+    symbol: 'INR',
+    symbolNarrow: 'INR',
+  );
+  static const _iqd = Currency(
+    _cld,
+    'IQD',
+    'Irako dinaras',
+    one: 'Irako dinaras',
+    few: 'Irako dinarai',
+    many: 'Irako dinaro',
+    other: 'Irako dinarų',
+  );
+  static const _irr = Currency(
+    _cld,
+    'IRR',
+    'Irano rialas',
+    one: 'Irano rialas',
+    few: 'Irano rialai',
+    many: 'Irano rialo',
+    other: 'Irano rialų',
+  );
+  static const _isj = Currency(
+    _cld,
+    'ISJ',
+    'Islandijos krona (1918–1981)',
+    one: 'Islandijos krona (1918–1981)',
+    few: 'Islandijos kronos (1918–1981)',
+    many: 'Islandijos kronos (1918–1981)',
+    other: 'Islandijos kronų (1918–1981)',
+  );
+  static const _isk = Currency(
+    _cld,
+    'ISK',
+    'Islandijos krona',
+    one: 'Islandijos krona',
+    few: 'Islandijos kronos',
+    many: 'Islandijos kronos',
+    other: 'Islandijos kronų',
+    symbolNarrow: 'kr',
+  );
+  static const _itl = Currency(
+    _cld,
+    'ITL',
+    'Italijos lira',
+    one: 'Italijos lira',
+    few: 'Italijos liros',
+    many: 'Italijos liros',
+    other: 'Italijos lirų',
+  );
+  static const _jmd = Currency(
+    _cld,
+    'JMD',
+    'Jamaikos doleris',
+    one: 'Jamaikos doleris',
+    few: 'Jamaikos doleriai',
+    many: 'Jamaikos dolerio',
+    other: 'Jamaikos dolerių',
+    symbolNarrow: r'$',
+  );
+  static const _jod = Currency(
+    _cld,
+    'JOD',
+    'Jordanijos dinaras',
+    one: 'Jordanijos dinaras',
+    few: 'Jordanijos dinarai',
+    many: 'Jordanijos dinaro',
+    other: 'Jordanijos dinarų',
+  );
+  static const _jpy = Currency(
+    _cld,
+    'JPY',
+    'Japonijos jena',
+    one: 'Japonijos jena',
+    few: 'Japonijos jenos',
+    many: 'Japonijos jenos',
+    other: 'Japonijos jenų',
+    symbol: 'JPY',
+    symbolNarrow: '¥',
+  );
+  static const _kes = Currency(
+    _cld,
+    'KES',
+    'Kenijos šilingas',
+    one: 'Kenijos šilingas',
+    few: 'Kenijos šilingai',
+    many: 'Kenijos šilingo',
+    other: 'Kenijos šilingų',
+  );
+  static const _kgs = Currency(
+    _cld,
+    'KGS',
+    'Kirgizijos somas',
+    one: 'Kirgizijos somas',
+    few: 'Kirgizijos somai',
+    many: 'Kirgizijos somo',
+    other: 'Kirgizijos somų',
+    symbolNarrow: '⃀',
+  );
+  static const _khr = Currency(
+    _cld,
+    'KHR',
+    'Kambodžos rielis',
+    one: 'Kambodžos rielis',
+    few: 'Kambodžos rieliai',
+    many: 'Kambodžos rielio',
+    other: 'Kambodžos rielių',
+    symbolNarrow: 'KHR',
+  );
+  static const _kmf = Currency(
+    _cld,
+    'KMF',
+    'Komoro frankas',
+    one: 'Komoro frankas',
+    few: 'Komoro frankai',
+    many: 'Komoro franko',
+    other: 'Komoro frankų',
+    symbolNarrow: 'CF',
+  );
+  static const _kpw = Currency(
+    _cld,
+    'KPW',
+    'Šiaurės Korėjos vonas',
+    one: 'Šiaurės Korėjos vonas',
+    few: 'Šiaurės Korėjos vonai',
+    many: 'Šiaurės Korėjos vono',
+    other: 'Šiaurės Korėjos vonų',
+    symbolNarrow: '₩',
+  );
+  static const _krh = Currency(
+    _cld,
+    'KRH',
+    'Pietų Korėjos hwanas (1953–1962)',
+    one: 'Pietų Korėjos hwanas (1953–1962)',
+    few: 'Pietų Korėjos hwanai (1953–1962)',
+    many: 'Pietų Korėjos hwano (1953–1962)',
+    other: 'Pietų Korėjos hwanų (1953–1962)',
+  );
+  static const _kro = Currency(
+    _cld,
+    'KRO',
+    'Pietų Korėjos vonas (1945–1953)',
+    one: 'Pietų Korėjos vonas (1945–1953)',
+    few: 'Pietų Korėjos vonai (1945–1953)',
+    many: 'Pietų Korėjos vono (1945–1953)',
+    other: 'Pietų Korėjos vonų (1945–1953)',
+  );
+  static const _krw = Currency(
+    _cld,
+    'KRW',
+    'Pietų Korėjos vonas',
+    one: 'Pietų Korėjos vonas',
+    few: 'Pietų Korėjos vonai',
+    many: 'Pietų Korėjos vono',
+    other: 'Pietų Korėjos vonų',
+    symbol: 'KRW',
+    symbolNarrow: '₩',
+  );
+  static const _kwd = Currency(
+    _cld,
+    'KWD',
+    'Kuveito dinaras',
+    one: 'Kuveito dinaras',
+    few: 'Kuveito dinarai',
+    many: 'Kuveito dinaro',
+    other: 'Kuveito dinarų',
+  );
+  static const _kyd = Currency(
+    _cld,
+    'KYD',
+    'Kaimanų salų doleris',
+    one: 'Kaimanų salų doleris',
+    few: 'Kaimanų salų doleriai',
+    many: 'Kaimanų salų dolerio',
+    other: 'Kaimanų salų dolerių',
+    symbolNarrow: r'$',
+  );
+  static const _kzt = Currency(
+    _cld,
+    'KZT',
+    'Kazachstano tengė',
+    one: 'Kazachstano tengė',
+    few: 'Kazachstano tengės',
+    many: 'Kazachstano tengės',
+    other: 'Kazachstano tengių',
+    symbolNarrow: '₸',
+  );
+  static const _lak = Currency(
+    _cld,
+    'LAK',
+    'Laoso kipas',
+    one: 'Laoso kipas',
+    few: 'Laoso kipai',
+    many: 'Laoso kipo',
+    other: 'Laoso kipų',
+    symbolNarrow: 'LAK',
+  );
+  static const _lbp = Currency(
+    _cld,
+    'LBP',
+    'Libano svaras',
+    one: 'Libano svaras',
+    few: 'Libano svarai',
+    many: 'Libano svaro',
+    other: 'Libano svarų',
+    symbolNarrow: 'L£',
+  );
+  static const _lkr = Currency(
+    _cld,
+    'LKR',
+    'Šri Lankos rupija',
+    one: 'Šri Lankos rupija',
+    few: 'Šri Lankos rupijos',
+    many: 'Šri Lankos rupijos',
+    other: 'Šri Lankos rupijų',
+    symbolNarrow: 'Rs',
+  );
+  static const _lrd = Currency(
+    _cld,
+    'LRD',
+    'Liberijos doleris',
+    one: 'Liberijos doleris',
+    few: 'Liberijos doleriai',
+    many: 'Liberijos dolerio',
+    other: 'Liberijos dolerių',
+    symbolNarrow: r'$',
+  );
   static const _lsl = Currency(_cld, 'LSL', 'Lesoto lotis');
-  static const _ltl = Currency(_cld, 'LTL', 'Lietuvos litas',
-      one: 'Lietuvos litas',
-      few: 'Lietuvos litai',
-      many: 'Lietuvos lito',
-      other: 'Lietuvos litų',
-      symbolNarrow: 'Lt');
-  static const _ltt = Currency(_cld, 'LTT', 'Lietuvos talonas',
-      one: 'Lietuvos talonas',
-      few: 'Lietuvos talonai',
-      many: 'Lietuvos talonai',
-      other: 'Lietuvos talonai');
+  static const _ltl = Currency(
+    _cld,
+    'LTL',
+    'Lietuvos litas',
+    one: 'Lietuvos litas',
+    few: 'Lietuvos litai',
+    many: 'Lietuvos lito',
+    other: 'Lietuvos litų',
+    symbolNarrow: 'Lt',
+  );
+  static const _ltt = Currency(
+    _cld,
+    'LTT',
+    'Lietuvos talonas',
+    one: 'Lietuvos talonas',
+    few: 'Lietuvos talonai',
+    many: 'Lietuvos talonai',
+    other: 'Lietuvos talonai',
+  );
   static const _luc = Currency(
-      _cld, 'LUC', 'Liuksemburgo konvertuojamas frankas',
-      one: 'Liuksemburgo konvertuojas frankas',
-      few: 'Liuksemburgo konvertuojami frankai',
-      many: 'Liuksemburgo konvertuojamo franko',
-      other: 'Liuksemburgo konvertuojamų frankų');
-  static const _luf = Currency(_cld, 'LUF', 'Liuksemburgo frankas',
-      one: 'Liuksemburgo frankas',
-      few: 'Liuksemburgo frankai',
-      many: 'Liuksemburgo franko',
-      other: 'Liuksemburgo frankų');
-  static const _lul = Currency(_cld, 'LUL', 'Liuksemburgo finansinis frankas',
-      one: 'Liuksemburgo finansinis frankas',
-      few: 'Liuksemburgo finansiniai frankai',
-      many: 'Liuksemburgo finansinio franko',
-      other: 'Liuksemburgo finansinių frankų');
-  static const _lvl = Currency(_cld, 'LVL', 'Latvijos latas',
-      one: 'Latvijos latas',
-      few: 'Latvijos latai',
-      many: 'Latvijos lato',
-      other: 'Latvijos latų',
-      symbolNarrow: 'Ls');
-  static const _lvr = Currency(_cld, 'LVR', 'Latvijos rublis',
-      one: 'Latvijos rublis',
-      few: 'Latvijos rubliai',
-      many: 'Latvijos rublio',
-      other: 'Latvijos rublių');
-  static const _lyd = Currency(_cld, 'LYD', 'Libijos dinaras',
-      one: 'Libijos dinaras',
-      few: 'Libijos dinarai',
-      many: 'Libijos dinaro',
-      other: 'Libijos dinarų');
-  static const _mad = Currency(_cld, 'MAD', 'Maroko dirhamas',
-      one: 'Maroko dirhamas',
-      few: 'Maroko dirhamai',
-      many: 'Maroko dirhamo',
-      other: 'Maroko dirhamų');
-  static const _maf = Currency(_cld, 'MAF', 'Maroko frankas',
-      one: 'Maroko frankas',
-      few: 'Maroko frankai',
-      many: 'Maroko franko',
-      other: 'Maroko frankų');
-  static const _mcf = Currency(_cld, 'MCF', 'Monegasque frankas',
-      one: 'Monegasque frankas',
-      few: 'Monegasque frankai',
-      many: 'Monegasque franko',
-      other: 'Monegasque frankų');
+    _cld,
+    'LUC',
+    'Liuksemburgo konvertuojamas frankas',
+    one: 'Liuksemburgo konvertuojas frankas',
+    few: 'Liuksemburgo konvertuojami frankai',
+    many: 'Liuksemburgo konvertuojamo franko',
+    other: 'Liuksemburgo konvertuojamų frankų',
+  );
+  static const _luf = Currency(
+    _cld,
+    'LUF',
+    'Liuksemburgo frankas',
+    one: 'Liuksemburgo frankas',
+    few: 'Liuksemburgo frankai',
+    many: 'Liuksemburgo franko',
+    other: 'Liuksemburgo frankų',
+  );
+  static const _lul = Currency(
+    _cld,
+    'LUL',
+    'Liuksemburgo finansinis frankas',
+    one: 'Liuksemburgo finansinis frankas',
+    few: 'Liuksemburgo finansiniai frankai',
+    many: 'Liuksemburgo finansinio franko',
+    other: 'Liuksemburgo finansinių frankų',
+  );
+  static const _lvl = Currency(
+    _cld,
+    'LVL',
+    'Latvijos latas',
+    one: 'Latvijos latas',
+    few: 'Latvijos latai',
+    many: 'Latvijos lato',
+    other: 'Latvijos latų',
+    symbolNarrow: 'Ls',
+  );
+  static const _lvr = Currency(
+    _cld,
+    'LVR',
+    'Latvijos rublis',
+    one: 'Latvijos rublis',
+    few: 'Latvijos rubliai',
+    many: 'Latvijos rublio',
+    other: 'Latvijos rublių',
+  );
+  static const _lyd = Currency(
+    _cld,
+    'LYD',
+    'Libijos dinaras',
+    one: 'Libijos dinaras',
+    few: 'Libijos dinarai',
+    many: 'Libijos dinaro',
+    other: 'Libijos dinarų',
+  );
+  static const _mad = Currency(
+    _cld,
+    'MAD',
+    'Maroko dirhamas',
+    one: 'Maroko dirhamas',
+    few: 'Maroko dirhamai',
+    many: 'Maroko dirhamo',
+    other: 'Maroko dirhamų',
+  );
+  static const _maf = Currency(
+    _cld,
+    'MAF',
+    'Maroko frankas',
+    one: 'Maroko frankas',
+    few: 'Maroko frankai',
+    many: 'Maroko franko',
+    other: 'Maroko frankų',
+  );
+  static const _mcf = Currency(
+    _cld,
+    'MCF',
+    'Monegasque frankas',
+    one: 'Monegasque frankas',
+    few: 'Monegasque frankai',
+    many: 'Monegasque franko',
+    other: 'Monegasque frankų',
+  );
   static const _mdc = Currency(_cld, 'MDC', 'Moldovų cupon');
-  static const _mdl = Currency(_cld, 'MDL', 'Moldovos lėja',
-      one: 'Moldovos lėja',
-      few: 'Moldovos lėjos',
-      many: 'Moldovos lėjos',
-      other: 'Moldovos lėjų');
-  static const _mga = Currency(_cld, 'MGA', 'Madagaskaro ariaris',
-      one: 'Madagaskaro ariaris',
-      few: 'Madagaskaro ariariai',
-      many: 'Madagaskaro ariario',
-      other: 'Madagaskaro ariarių',
-      symbolNarrow: 'Ar');
-  static const _mgf = Currency(_cld, 'MGF', 'Madagaskaro frankas',
-      one: 'Madagaskaro frankas',
-      few: 'Madagaskaro frankai',
-      many: 'Madagaskaro franko',
-      other: 'Madagaskaro frankų');
-  static const _mkd = Currency(_cld, 'MKD', 'Makedonijos denaras',
-      one: 'Makedonijos denaras',
-      few: 'Makedonijos denarai',
-      many: 'Makedonijos denaro',
-      other: 'Makedonijos denarų');
-  static const _mkn = Currency(_cld, 'MKN', 'Makedonijos denaras (1992–1993)',
-      one: 'Makedonijos denaras (1992–1993)',
-      few: 'Makedonijos denarai (1992–1993)',
-      many: 'Makedonijos denaro (1992–1993)',
-      other: 'Makedonijos denarų (1992–1993)');
-  static const _mlf = Currency(_cld, 'MLF', 'Malio frankas',
-      one: 'Malio frankas',
-      few: 'Malio frankai',
-      many: 'Malio franko',
-      other: 'Malio frankų');
-  static const _mmk = Currency(_cld, 'MMK', 'Mianmaro kijatas',
-      one: 'Mianmaro kijatas',
-      few: 'Mianmaro kijatai',
-      many: 'Mianmaro kijato',
-      other: 'Mianmaro kijatų',
-      symbolNarrow: 'K');
-  static const _mnt = Currency(_cld, 'MNT', 'Mongolijos tugrikas',
-      one: 'Mongolijos tugrikas',
-      few: 'Mongolijos tugrikai',
-      many: 'Mongolijos tugriko',
-      other: 'Mongolijos tugrikų',
-      symbolNarrow: 'MNT');
-  static const _mop = Currency(_cld, 'MOP', 'Makao pataka',
-      one: 'Makao pataka',
-      few: 'Makao patakos',
-      many: 'Makao patakos',
-      other: 'Makao patakų');
-  static const _mro = Currency(_cld, 'MRO', 'Mauritanijos ugija (1973–2017)',
-      one: 'Mauritanijos ugija (1973–2017)',
-      few: 'Mauritanijos ugijos (1973–2017)',
-      many: 'Mauritanijos ugijos (1973–2017)',
-      other: 'Mauritanijos ugijų (1973–2017)');
-  static const _mru = Currency(_cld, 'MRU', 'Mauritanijos ugija',
-      one: 'Mauritanijos ugija',
-      few: 'Mauritanijos ugijos',
-      many: 'Mauritanijos ugijos',
-      other: 'Mauritanijos ugijų');
+  static const _mdl = Currency(
+    _cld,
+    'MDL',
+    'Moldovos lėja',
+    one: 'Moldovos lėja',
+    few: 'Moldovos lėjos',
+    many: 'Moldovos lėjos',
+    other: 'Moldovos lėjų',
+  );
+  static const _mga = Currency(
+    _cld,
+    'MGA',
+    'Madagaskaro ariaris',
+    one: 'Madagaskaro ariaris',
+    few: 'Madagaskaro ariariai',
+    many: 'Madagaskaro ariario',
+    other: 'Madagaskaro ariarių',
+    symbolNarrow: 'Ar',
+  );
+  static const _mgf = Currency(
+    _cld,
+    'MGF',
+    'Madagaskaro frankas',
+    one: 'Madagaskaro frankas',
+    few: 'Madagaskaro frankai',
+    many: 'Madagaskaro franko',
+    other: 'Madagaskaro frankų',
+  );
+  static const _mkd = Currency(
+    _cld,
+    'MKD',
+    'Makedonijos denaras',
+    one: 'Makedonijos denaras',
+    few: 'Makedonijos denarai',
+    many: 'Makedonijos denaro',
+    other: 'Makedonijos denarų',
+  );
+  static const _mkn = Currency(
+    _cld,
+    'MKN',
+    'Makedonijos denaras (1992–1993)',
+    one: 'Makedonijos denaras (1992–1993)',
+    few: 'Makedonijos denarai (1992–1993)',
+    many: 'Makedonijos denaro (1992–1993)',
+    other: 'Makedonijos denarų (1992–1993)',
+  );
+  static const _mlf = Currency(
+    _cld,
+    'MLF',
+    'Malio frankas',
+    one: 'Malio frankas',
+    few: 'Malio frankai',
+    many: 'Malio franko',
+    other: 'Malio frankų',
+  );
+  static const _mmk = Currency(
+    _cld,
+    'MMK',
+    'Mianmaro kijatas',
+    one: 'Mianmaro kijatas',
+    few: 'Mianmaro kijatai',
+    many: 'Mianmaro kijato',
+    other: 'Mianmaro kijatų',
+    symbolNarrow: 'K',
+  );
+  static const _mnt = Currency(
+    _cld,
+    'MNT',
+    'Mongolijos tugrikas',
+    one: 'Mongolijos tugrikas',
+    few: 'Mongolijos tugrikai',
+    many: 'Mongolijos tugriko',
+    other: 'Mongolijos tugrikų',
+    symbolNarrow: 'MNT',
+  );
+  static const _mop = Currency(
+    _cld,
+    'MOP',
+    'Makao pataka',
+    one: 'Makao pataka',
+    few: 'Makao patakos',
+    many: 'Makao patakos',
+    other: 'Makao patakų',
+  );
+  static const _mro = Currency(
+    _cld,
+    'MRO',
+    'Mauritanijos ugija (1973–2017)',
+    one: 'Mauritanijos ugija (1973–2017)',
+    few: 'Mauritanijos ugijos (1973–2017)',
+    many: 'Mauritanijos ugijos (1973–2017)',
+    other: 'Mauritanijos ugijų (1973–2017)',
+  );
+  static const _mru = Currency(
+    _cld,
+    'MRU',
+    'Mauritanijos ugija',
+    one: 'Mauritanijos ugija',
+    few: 'Mauritanijos ugijos',
+    many: 'Mauritanijos ugijos',
+    other: 'Mauritanijos ugijų',
+  );
   static const _mtl = Currency(_cld, 'MTL', 'Maltos lira');
-  static const _mtp = Currency(_cld, 'MTP', 'Maltos svaras',
-      one: 'Maltos svaras',
-      few: 'Maltos svarai',
-      many: 'Maltos svaro',
-      other: 'Maltos svarų');
-  static const _mur = Currency(_cld, 'MUR', 'Mauricijaus rupija',
-      one: 'Mauricijaus rupija',
-      few: 'Mauricijaus rupijos',
-      many: 'Mauricijaus rupijos',
-      other: 'Mauricijaus rupijų',
-      symbolNarrow: 'Rs');
-  static const _mvp = Currency(_cld, 'MVP', 'Maldyvų rupija',
-      one: 'Maldyvų rupija',
-      few: 'Maldyvų rupijos',
-      many: 'Maldyvų rupijos',
-      other: 'Maldyvų rupijos');
-  static const _mvr = Currency(_cld, 'MVR', 'Maldyvų rufija',
-      one: 'Maldyvų rufija',
-      few: 'Maldyvų rufijos',
-      many: 'Maldyvų rufijos',
-      other: 'Maldyvų rufijų');
-  static const _mwk = Currency(_cld, 'MWK', 'Malavio kvača',
-      one: 'Malavio kvača',
-      few: 'Malavio kvačos',
-      many: 'Malavio kvačos',
-      other: 'Malavio kvačų');
-  static const _mxn = Currency(_cld, 'MXN', 'Meksikos pesas',
-      one: 'Meksikos pesas',
-      few: 'Meksikos pesai',
-      many: 'Meksikos peso',
-      other: 'Meksikos pesų',
-      symbol: 'MXN',
-      symbolNarrow: r'$');
+  static const _mtp = Currency(
+    _cld,
+    'MTP',
+    'Maltos svaras',
+    one: 'Maltos svaras',
+    few: 'Maltos svarai',
+    many: 'Maltos svaro',
+    other: 'Maltos svarų',
+  );
+  static const _mur = Currency(
+    _cld,
+    'MUR',
+    'Mauricijaus rupija',
+    one: 'Mauricijaus rupija',
+    few: 'Mauricijaus rupijos',
+    many: 'Mauricijaus rupijos',
+    other: 'Mauricijaus rupijų',
+    symbolNarrow: 'Rs',
+  );
+  static const _mvp = Currency(
+    _cld,
+    'MVP',
+    'Maldyvų rupija',
+    one: 'Maldyvų rupija',
+    few: 'Maldyvų rupijos',
+    many: 'Maldyvų rupijos',
+    other: 'Maldyvų rupijos',
+  );
+  static const _mvr = Currency(
+    _cld,
+    'MVR',
+    'Maldyvų rufija',
+    one: 'Maldyvų rufija',
+    few: 'Maldyvų rufijos',
+    many: 'Maldyvų rufijos',
+    other: 'Maldyvų rufijų',
+  );
+  static const _mwk = Currency(
+    _cld,
+    'MWK',
+    'Malavio kvača',
+    one: 'Malavio kvača',
+    few: 'Malavio kvačos',
+    many: 'Malavio kvačos',
+    other: 'Malavio kvačų',
+  );
+  static const _mxn = Currency(
+    _cld,
+    'MXN',
+    'Meksikos pesas',
+    one: 'Meksikos pesas',
+    few: 'Meksikos pesai',
+    many: 'Meksikos peso',
+    other: 'Meksikos pesų',
+    symbol: 'MXN',
+    symbolNarrow: r'$',
+  );
   static const _mxp = Currency(
-      _cld, 'MXP', 'Meksikos sidabrinis pesas (1861–1992)',
-      one: 'Meksikos sidabrinis pesas (1861–1992)',
-      few: 'Meksikos sidabriniai pesai (1861–1992)',
-      many: 'Meksikos sidabrino peso (1861–1992)',
-      other: 'Meksikos sidabrinių pesų (1861–1992)');
+    _cld,
+    'MXP',
+    'Meksikos sidabrinis pesas (1861–1992)',
+    one: 'Meksikos sidabrinis pesas (1861–1992)',
+    few: 'Meksikos sidabriniai pesai (1861–1992)',
+    many: 'Meksikos sidabrino peso (1861–1992)',
+    other: 'Meksikos sidabrinių pesų (1861–1992)',
+  );
   static const _mxv = Currency(
-      _cld, 'MXV', 'Meksikos United de Inversion (UDI)',
-      one: 'Meksikos unidad de inversija (UDI)',
-      few: 'Meksikos unidads de inversija (UDI)',
-      many: 'Meksikos unidads de inversija (UDI)',
-      other: 'Meksikos unidads de inversija (UDI)');
-  static const _myr = Currency(_cld, 'MYR', 'Malaizijos ringitas',
-      one: 'Malaizijos ringitas',
-      few: 'Malaizijos ringitai',
-      many: 'Malaizijos ringito',
-      other: 'Malaizijos ringitų',
-      symbolNarrow: 'RM');
-  static const _mze = Currency(_cld, 'MZE', 'Mozambiko eskudas',
-      one: 'Mozambiko eskudas',
-      few: 'Mozambiko eskudai',
-      many: 'Mozambiko eskudo',
-      other: 'Mozambiko eskudų');
-  static const _mzm = Currency(_cld, 'MZM', 'Mozambiko metikalis (1980–2006)',
-      one: 'Mozambiko metikalis (1980–2006)',
-      few: 'Mozambiko metikaliai (1980–2006)',
-      many: 'Mozambiko metikalio (1980–2006)',
-      other: 'Mozambiko metikalių (1980–2006)');
-  static const _mzn = Currency(_cld, 'MZN', 'Mozambiko metikalis',
-      one: 'Mozambiko metikalis',
-      few: 'Mozambiko metikaliai',
-      many: 'Mozambiko metikalio',
-      other: 'Mozambiko metikalių');
-  static const _nad = Currency(_cld, 'NAD', 'Namibijos doleris',
-      one: 'Namibijos doleris',
-      few: 'Namibijos doleriai',
-      many: 'Namibijos dolerio',
-      other: 'Namibijos dolerių',
-      symbolNarrow: r'$');
-  static const _ngn = Currency(_cld, 'NGN', 'Nigerijos naira',
-      one: 'Nigerijos naira',
-      few: 'Nigerijos nairos',
-      many: 'Nigerijos nairos',
-      other: 'Nigerijos nairų',
-      symbolNarrow: '₦');
-  static const _nic = Currency(_cld, 'NIC', 'Nikaragvos kardoba (1988–1991)',
-      one: 'Nikaragvos kordoba (1988–1991)',
-      few: 'Nikaragvos kordobai (1988–1991)',
-      many: 'Nikaragvos kordobos (1988–1991)',
-      other: 'Nikaragvos kordobų (1988–1991)');
-  static const _nio = Currency(_cld, 'NIO', 'Nikaragvos kordoba',
-      one: 'Nikaragvos kordoba',
-      few: 'Nikaragvos kordobos',
-      many: 'Nikaragvos kordobos',
-      other: 'Nikaragvos kordobų',
-      symbolNarrow: r'C$');
-  static const _nlg = Currency(_cld, 'NLG', 'Nyderlandų guldenas',
-      one: 'Nyderlandų guldenas',
-      few: 'Nyderlandų guldenai',
-      many: 'Nyderlandų guldeno',
-      other: 'Nyderlandų guldenų');
-  static const _nok = Currency(_cld, 'NOK', 'Norvegijos krona',
-      one: 'Norvegijos krona',
-      few: 'Norvegijos kronos',
-      many: 'Norvegijos kronos',
-      other: 'Norvegijos kronų',
-      symbolNarrow: 'kr');
-  static const _npr = Currency(_cld, 'NPR', 'Nepalo rupija',
-      one: 'Nepalo rupija',
-      few: 'Nepalo rupijos',
-      many: 'Nepalo rupijos',
-      other: 'Nepalo rupijų',
-      symbolNarrow: 'Rs');
-  static const _nzd = Currency(_cld, 'NZD', 'Naujosios Zelandijos doleris',
-      one: 'Naujosios Zelandijos doleris',
-      few: 'Naujosios Zelandijos doleriai',
-      many: 'Naujosios Zelandijos dolerio',
-      other: 'Naujosios Zelandijos dolerių',
-      symbol: 'NZD',
-      symbolNarrow: r'$');
-  static const _omr = Currency(_cld, 'OMR', 'Omano rialas',
-      one: 'Omano rialas',
-      few: 'Omano rialai',
-      many: 'Omano rialo',
-      other: 'Omano rialų');
-  static const _pab = Currency(_cld, 'PAB', 'Panamos balboja',
-      one: 'Panamos balboja',
-      few: 'Panamos balbojos',
-      many: 'Panamos balbojos',
-      other: 'Panamos balbojų');
-  static const _pei = Currency(_cld, 'PEI', 'Peru intis',
-      one: 'Peru inti',
-      few: 'Peru intis',
-      many: 'Peru intis',
-      other: 'Peru intis');
-  static const _pen = Currency(_cld, 'PEN', 'Peru solis',
-      one: 'Peru solis',
-      few: 'Peru soliai',
-      many: 'Peru solio',
-      other: 'Peru solių');
-  static const _pes = Currency(_cld, 'PES', 'Peru solis (1863–1965)',
-      one: 'Peru solis (1863–1965)',
-      few: 'Peru soliai (1863–1965)',
-      many: 'Peru solio (1863–1965)',
-      other: 'Peru solių (1863–1965)');
-  static const _pgk = Currency(_cld, 'PGK', 'Papua Naujosios Gvinėjos kina',
-      one: 'Papua Naujosios Gvinėjos kina',
-      few: 'Papua Naujosios Gvinėjos kinos',
-      many: 'Papua Naujosios Gvinėjos kinos',
-      other: 'Papua Naujosios Gvinėjos kinų');
-  static const _php = Currency(_cld, 'PHP', 'Filipinų pesas',
-      one: 'Filipinų pesas',
-      few: 'Filipinų pesai',
-      many: 'Filipinų peso',
-      other: 'Filipinų pesų',
-      symbol: 'PHP',
-      symbolNarrow: '₱');
-  static const _pkr = Currency(_cld, 'PKR', 'Pakistano rupija',
-      one: 'Pakistano rupija',
-      few: 'Pakistano rupijos',
-      many: 'Pakistano rupijos',
-      other: 'Pakistano rupijų',
-      symbolNarrow: 'Rs');
-  static const _pln = Currency(_cld, 'PLN', 'Lenkijos zlotas',
-      one: 'Lenkijos zlotas',
-      few: 'Lenkijos zlotai',
-      many: 'Lenkijos zloto',
-      other: 'Lenkijos zlotų',
-      symbolNarrow: 'zl');
-  static const _plz = Currency(_cld, 'PLZ', 'Lenkijos zlotas (1950–1995)',
-      one: 'Lenkijos zlotas (1950–1995)',
-      few: 'Lenkijos zlotai (1950–1995)',
-      many: 'Lenkijos zloto (1950–1995)',
-      other: 'Lenkijos zlotų (1950–1995)');
-  static const _pte = Currency(_cld, 'PTE', 'Portugalijos eskudas',
-      one: 'Portugalijos eskudas',
-      few: 'Portugalijos eskudai',
-      many: 'Portugalijos eskudo',
-      other: 'Portugalijos eskudų');
-  static const _pyg = Currency(_cld, 'PYG', 'Paragvajaus guaranis',
-      one: 'Paragvajaus guaranis',
-      few: 'Paragvajaus guaraniai',
-      many: 'Paragvajaus guaranio',
-      other: 'Paragvajaus guaranių',
-      symbolNarrow: 'Gs');
-  static const _qar = Currency(_cld, 'QAR', 'Kataro rialas',
-      one: 'Kataro rialas',
-      few: 'Kataro rialai',
-      many: 'Kataro rialo',
-      other: 'Kataro rialų');
-  static const _rhd = Currency(_cld, 'RHD', 'Rodezijos doleris',
-      one: 'Rodezijos doleris',
-      few: 'Rodezijos doleriai',
-      many: 'Rodezijos dolerio',
-      other: 'Rodezijos dolerių');
-  static const _rol = Currency(_cld, 'ROL', 'Rumunijos lėja (1952–2006)',
-      one: 'Rumunijos lėja (1952–2006)',
-      few: 'Rumunijos lėjos (1952–2006)',
-      many: 'Rumunijos lėjos (1952–2006)',
-      other: 'Rumunijos lėjų (1952–2006)');
-  static const _ron = Currency(_cld, 'RON', 'Rumunijos lėja',
-      one: 'Rumunijos lėja',
-      few: 'Rumunijos lėjos',
-      many: 'Rumunijos lėjos',
-      other: 'Rumunijos lėjų',
-      symbolNarrow: 'lei');
-  static const _rsd = Currency(_cld, 'RSD', 'Serbijos dinaras',
-      one: 'Serbijos dinaras',
-      few: 'Serbijos dinarai',
-      many: 'Serbijos dinaro',
-      other: 'Serbijos dinarų');
-  static const _rub = Currency(_cld, 'RUB', 'Rusijos rublis',
-      one: 'Rusijos rublis',
-      few: 'Rusijos rubliai',
-      many: 'Rusijos rublio',
-      other: 'Rusijos rublių',
-      symbolNarrow: 'rb',
-      symbolVariant: '₽');
-  static const _rur = Currency(_cld, 'RUR', 'Rusijos rublis (1991–1998)',
-      one: 'Rusijos rublis (1991–1998)',
-      few: 'Rusijos rubliai (1991–1998)',
-      many: 'Rusijos rublio (1991–1998)',
-      other: 'Rusijos rublių (1991–1998)');
-  static const _rwf = Currency(_cld, 'RWF', 'Ruandos frankas',
-      one: 'Ruandos frankas',
-      few: 'Ruandos frankai',
-      many: 'Ruandos franko',
-      other: 'Ruandos frankų',
-      symbolNarrow: 'RF');
-  static const _sar = Currency(_cld, 'SAR', 'Saudo Arabijos rijalas',
-      one: 'Saudo Arabijos rijalas',
-      few: 'Saudo Arabijos rijalai',
-      many: 'Saudo Arabijos rijalo',
-      other: 'Saudo Arabijos rijalų');
-  static const _sbd = Currency(_cld, 'SBD', 'Saliamono salų doleris',
-      one: 'Saliamono salų doleris',
-      few: 'Saliamono salų doleriai',
-      many: 'Saliamono salų dolerio',
-      other: 'Saliamono salų dolerių',
-      symbolNarrow: r'$');
-  static const _scr = Currency(_cld, 'SCR', 'Seišelių rupija',
-      one: 'Seišelių rupija',
-      few: 'Seišelių rupijos',
-      many: 'Seišelių rupijos',
-      other: 'Seišelių rupijų');
-  static const _sdd = Currency(_cld, 'SDD', 'Sudano dinaras (1992–2007)',
-      one: 'Sudano dinaras (1992–2007)',
-      few: 'Sudano dinarai (1992–2007)',
-      many: 'Sudano dinaro (1992–2007)',
-      other: 'Sudano dinarų (1992–2007)');
-  static const _sdg = Currency(_cld, 'SDG', 'Sudano svaras',
-      one: 'Sudano svaras',
-      few: 'Sudano svarai',
-      many: 'Sudano svaro',
-      other: 'Sudano svarų');
-  static const _sdp = Currency(_cld, 'SDP', 'Sudano svaras (1957–1998)',
-      one: 'Sudano svaras (1957–1998)',
-      few: 'Sudano svarai (1957–1998)',
-      many: 'Sudano svaro (1957–1998)',
-      other: 'Sudano svarų (1957–1998)');
-  static const _sek = Currency(_cld, 'SEK', 'Švedijos krona',
-      one: 'Švedijos krona',
-      few: 'Švedijos kronos',
-      many: 'Švedijos kronos',
-      other: 'Švedijos kronų',
-      symbolNarrow: 'kr');
-  static const _sgd = Currency(_cld, 'SGD', 'Singapūro doleris',
-      one: 'Singapūro doleris',
-      few: 'Singapūro doleriai',
-      many: 'Singapūro dolerio',
-      other: 'Singapūro dolerių',
-      symbolNarrow: r'$');
-  static const _shp = Currency(_cld, 'SHP', 'Šv. Elenos salų svaras',
-      one: 'Šv. Elenos salų svaras',
-      few: 'Šv. Elenos salų svarai',
-      many: 'Šv. Elenos salų svaro',
-      other: 'Šv. Elenos salų svarų',
-      symbolNarrow: '£');
-  static const _sit = Currency(_cld, 'SIT', 'Slovėnijos tolaras',
-      one: 'Slovėnijos tolars',
-      few: 'Slovėnijos tolars',
-      many: 'Slovėnijos tolar',
-      other: 'Slovėnijos tolar');
-  static const _skk = Currency(_cld, 'SKK', 'Slovakijos krona',
-      one: 'Slovakijos krona',
-      few: 'Slovakijos kronos',
-      many: 'Slovakijos kronos',
-      other: 'Slovakijos kronų');
-  static const _sle = Currency(_cld, 'SLE', 'Siera Leonės leonė',
-      one: 'Siera Leonės leonė',
-      few: 'Siera Leonės leonės',
-      many: 'Siera Leonės leonės',
-      other: 'Siera Leonės leonių');
-  static const _sll = Currency(_cld, 'SLL', 'Siera Leonės leonė (1964—2022)',
-      one: 'Siera Leonės leonė (1964—2022)',
-      few: 'Siera Leonės leonės (1964—2022)',
-      many: 'Siera Leonės leonės (1964—2022)',
-      other: 'Siera Leonės leonių (1964—2022)');
-  static const _sos = Currency(_cld, 'SOS', 'Somalio šilingas',
-      one: 'Somalio šilingas',
-      few: 'Somalio šilingai',
-      many: 'Somalio šilingo',
-      other: 'Somalio šilingų');
-  static const _srd = Currency(_cld, 'SRD', 'Surimano doleris',
-      one: 'Surimano doleris',
-      few: 'Surimano doleriai',
-      many: 'Surimano dolerio',
-      other: 'Surimano dolerių',
-      symbolNarrow: r'$');
-  static const _srg = Currency(_cld, 'SRG', 'Surimano guldenas',
-      one: 'Surimano guldenas',
-      few: 'Surimano guldenai',
-      many: 'Surimano guldeno',
-      other: 'Surimano guldenų');
-  static const _ssp = Currency(_cld, 'SSP', 'Pietų Sudano svaras',
-      one: 'Pietų Sudano svaras',
-      few: 'Pietų Sudano svarai',
-      many: 'Pietų Sudano svaro',
-      other: 'Pietų Sudano svarų',
-      symbolNarrow: '£');
+    _cld,
+    'MXV',
+    'Meksikos United de Inversion (UDI)',
+    one: 'Meksikos unidad de inversija (UDI)',
+    few: 'Meksikos unidads de inversija (UDI)',
+    many: 'Meksikos unidads de inversija (UDI)',
+    other: 'Meksikos unidads de inversija (UDI)',
+  );
+  static const _myr = Currency(
+    _cld,
+    'MYR',
+    'Malaizijos ringitas',
+    one: 'Malaizijos ringitas',
+    few: 'Malaizijos ringitai',
+    many: 'Malaizijos ringito',
+    other: 'Malaizijos ringitų',
+    symbolNarrow: 'RM',
+  );
+  static const _mze = Currency(
+    _cld,
+    'MZE',
+    'Mozambiko eskudas',
+    one: 'Mozambiko eskudas',
+    few: 'Mozambiko eskudai',
+    many: 'Mozambiko eskudo',
+    other: 'Mozambiko eskudų',
+  );
+  static const _mzm = Currency(
+    _cld,
+    'MZM',
+    'Mozambiko metikalis (1980–2006)',
+    one: 'Mozambiko metikalis (1980–2006)',
+    few: 'Mozambiko metikaliai (1980–2006)',
+    many: 'Mozambiko metikalio (1980–2006)',
+    other: 'Mozambiko metikalių (1980–2006)',
+  );
+  static const _mzn = Currency(
+    _cld,
+    'MZN',
+    'Mozambiko metikalis',
+    one: 'Mozambiko metikalis',
+    few: 'Mozambiko metikaliai',
+    many: 'Mozambiko metikalio',
+    other: 'Mozambiko metikalių',
+  );
+  static const _nad = Currency(
+    _cld,
+    'NAD',
+    'Namibijos doleris',
+    one: 'Namibijos doleris',
+    few: 'Namibijos doleriai',
+    many: 'Namibijos dolerio',
+    other: 'Namibijos dolerių',
+    symbolNarrow: r'$',
+  );
+  static const _ngn = Currency(
+    _cld,
+    'NGN',
+    'Nigerijos naira',
+    one: 'Nigerijos naira',
+    few: 'Nigerijos nairos',
+    many: 'Nigerijos nairos',
+    other: 'Nigerijos nairų',
+    symbolNarrow: '₦',
+  );
+  static const _nic = Currency(
+    _cld,
+    'NIC',
+    'Nikaragvos kardoba (1988–1991)',
+    one: 'Nikaragvos kordoba (1988–1991)',
+    few: 'Nikaragvos kordobai (1988–1991)',
+    many: 'Nikaragvos kordobos (1988–1991)',
+    other: 'Nikaragvos kordobų (1988–1991)',
+  );
+  static const _nio = Currency(
+    _cld,
+    'NIO',
+    'Nikaragvos kordoba',
+    one: 'Nikaragvos kordoba',
+    few: 'Nikaragvos kordobos',
+    many: 'Nikaragvos kordobos',
+    other: 'Nikaragvos kordobų',
+    symbolNarrow: r'C$',
+  );
+  static const _nlg = Currency(
+    _cld,
+    'NLG',
+    'Nyderlandų guldenas',
+    one: 'Nyderlandų guldenas',
+    few: 'Nyderlandų guldenai',
+    many: 'Nyderlandų guldeno',
+    other: 'Nyderlandų guldenų',
+  );
+  static const _nok = Currency(
+    _cld,
+    'NOK',
+    'Norvegijos krona',
+    one: 'Norvegijos krona',
+    few: 'Norvegijos kronos',
+    many: 'Norvegijos kronos',
+    other: 'Norvegijos kronų',
+    symbolNarrow: 'kr',
+  );
+  static const _npr = Currency(
+    _cld,
+    'NPR',
+    'Nepalo rupija',
+    one: 'Nepalo rupija',
+    few: 'Nepalo rupijos',
+    many: 'Nepalo rupijos',
+    other: 'Nepalo rupijų',
+    symbolNarrow: 'Rs',
+  );
+  static const _nzd = Currency(
+    _cld,
+    'NZD',
+    'Naujosios Zelandijos doleris',
+    one: 'Naujosios Zelandijos doleris',
+    few: 'Naujosios Zelandijos doleriai',
+    many: 'Naujosios Zelandijos dolerio',
+    other: 'Naujosios Zelandijos dolerių',
+    symbol: 'NZD',
+    symbolNarrow: r'$',
+  );
+  static const _omr = Currency(
+    _cld,
+    'OMR',
+    'Omano rialas',
+    one: 'Omano rialas',
+    few: 'Omano rialai',
+    many: 'Omano rialo',
+    other: 'Omano rialų',
+  );
+  static const _pab = Currency(
+    _cld,
+    'PAB',
+    'Panamos balboja',
+    one: 'Panamos balboja',
+    few: 'Panamos balbojos',
+    many: 'Panamos balbojos',
+    other: 'Panamos balbojų',
+  );
+  static const _pei = Currency(
+    _cld,
+    'PEI',
+    'Peru intis',
+    one: 'Peru inti',
+    few: 'Peru intis',
+    many: 'Peru intis',
+    other: 'Peru intis',
+  );
+  static const _pen = Currency(
+    _cld,
+    'PEN',
+    'Peru solis',
+    one: 'Peru solis',
+    few: 'Peru soliai',
+    many: 'Peru solio',
+    other: 'Peru solių',
+  );
+  static const _pes = Currency(
+    _cld,
+    'PES',
+    'Peru solis (1863–1965)',
+    one: 'Peru solis (1863–1965)',
+    few: 'Peru soliai (1863–1965)',
+    many: 'Peru solio (1863–1965)',
+    other: 'Peru solių (1863–1965)',
+  );
+  static const _pgk = Currency(
+    _cld,
+    'PGK',
+    'Papua Naujosios Gvinėjos kina',
+    one: 'Papua Naujosios Gvinėjos kina',
+    few: 'Papua Naujosios Gvinėjos kinos',
+    many: 'Papua Naujosios Gvinėjos kinos',
+    other: 'Papua Naujosios Gvinėjos kinų',
+  );
+  static const _php = Currency(
+    _cld,
+    'PHP',
+    'Filipinų pesas',
+    one: 'Filipinų pesas',
+    few: 'Filipinų pesai',
+    many: 'Filipinų peso',
+    other: 'Filipinų pesų',
+    symbol: 'PHP',
+    symbolNarrow: '₱',
+  );
+  static const _pkr = Currency(
+    _cld,
+    'PKR',
+    'Pakistano rupija',
+    one: 'Pakistano rupija',
+    few: 'Pakistano rupijos',
+    many: 'Pakistano rupijos',
+    other: 'Pakistano rupijų',
+    symbolNarrow: 'Rs',
+  );
+  static const _pln = Currency(
+    _cld,
+    'PLN',
+    'Lenkijos zlotas',
+    one: 'Lenkijos zlotas',
+    few: 'Lenkijos zlotai',
+    many: 'Lenkijos zloto',
+    other: 'Lenkijos zlotų',
+    symbolNarrow: 'zl',
+  );
+  static const _plz = Currency(
+    _cld,
+    'PLZ',
+    'Lenkijos zlotas (1950–1995)',
+    one: 'Lenkijos zlotas (1950–1995)',
+    few: 'Lenkijos zlotai (1950–1995)',
+    many: 'Lenkijos zloto (1950–1995)',
+    other: 'Lenkijos zlotų (1950–1995)',
+  );
+  static const _pte = Currency(
+    _cld,
+    'PTE',
+    'Portugalijos eskudas',
+    one: 'Portugalijos eskudas',
+    few: 'Portugalijos eskudai',
+    many: 'Portugalijos eskudo',
+    other: 'Portugalijos eskudų',
+  );
+  static const _pyg = Currency(
+    _cld,
+    'PYG',
+    'Paragvajaus guaranis',
+    one: 'Paragvajaus guaranis',
+    few: 'Paragvajaus guaraniai',
+    many: 'Paragvajaus guaranio',
+    other: 'Paragvajaus guaranių',
+    symbolNarrow: 'Gs',
+  );
+  static const _qar = Currency(
+    _cld,
+    'QAR',
+    'Kataro rialas',
+    one: 'Kataro rialas',
+    few: 'Kataro rialai',
+    many: 'Kataro rialo',
+    other: 'Kataro rialų',
+  );
+  static const _rhd = Currency(
+    _cld,
+    'RHD',
+    'Rodezijos doleris',
+    one: 'Rodezijos doleris',
+    few: 'Rodezijos doleriai',
+    many: 'Rodezijos dolerio',
+    other: 'Rodezijos dolerių',
+  );
+  static const _rol = Currency(
+    _cld,
+    'ROL',
+    'Rumunijos lėja (1952–2006)',
+    one: 'Rumunijos lėja (1952–2006)',
+    few: 'Rumunijos lėjos (1952–2006)',
+    many: 'Rumunijos lėjos (1952–2006)',
+    other: 'Rumunijos lėjų (1952–2006)',
+  );
+  static const _ron = Currency(
+    _cld,
+    'RON',
+    'Rumunijos lėja',
+    one: 'Rumunijos lėja',
+    few: 'Rumunijos lėjos',
+    many: 'Rumunijos lėjos',
+    other: 'Rumunijos lėjų',
+    symbolNarrow: 'lei',
+  );
+  static const _rsd = Currency(
+    _cld,
+    'RSD',
+    'Serbijos dinaras',
+    one: 'Serbijos dinaras',
+    few: 'Serbijos dinarai',
+    many: 'Serbijos dinaro',
+    other: 'Serbijos dinarų',
+  );
+  static const _rub = Currency(
+    _cld,
+    'RUB',
+    'Rusijos rublis',
+    one: 'Rusijos rublis',
+    few: 'Rusijos rubliai',
+    many: 'Rusijos rublio',
+    other: 'Rusijos rublių',
+    symbolNarrow: 'rb',
+    symbolVariant: '₽',
+  );
+  static const _rur = Currency(
+    _cld,
+    'RUR',
+    'Rusijos rublis (1991–1998)',
+    one: 'Rusijos rublis (1991–1998)',
+    few: 'Rusijos rubliai (1991–1998)',
+    many: 'Rusijos rublio (1991–1998)',
+    other: 'Rusijos rublių (1991–1998)',
+  );
+  static const _rwf = Currency(
+    _cld,
+    'RWF',
+    'Ruandos frankas',
+    one: 'Ruandos frankas',
+    few: 'Ruandos frankai',
+    many: 'Ruandos franko',
+    other: 'Ruandos frankų',
+    symbolNarrow: 'RF',
+  );
+  static const _sar = Currency(
+    _cld,
+    'SAR',
+    'Saudo Arabijos rijalas',
+    one: 'Saudo Arabijos rijalas',
+    few: 'Saudo Arabijos rijalai',
+    many: 'Saudo Arabijos rijalo',
+    other: 'Saudo Arabijos rijalų',
+  );
+  static const _sbd = Currency(
+    _cld,
+    'SBD',
+    'Saliamono salų doleris',
+    one: 'Saliamono salų doleris',
+    few: 'Saliamono salų doleriai',
+    many: 'Saliamono salų dolerio',
+    other: 'Saliamono salų dolerių',
+    symbolNarrow: r'$',
+  );
+  static const _scr = Currency(
+    _cld,
+    'SCR',
+    'Seišelių rupija',
+    one: 'Seišelių rupija',
+    few: 'Seišelių rupijos',
+    many: 'Seišelių rupijos',
+    other: 'Seišelių rupijų',
+  );
+  static const _sdd = Currency(
+    _cld,
+    'SDD',
+    'Sudano dinaras (1992–2007)',
+    one: 'Sudano dinaras (1992–2007)',
+    few: 'Sudano dinarai (1992–2007)',
+    many: 'Sudano dinaro (1992–2007)',
+    other: 'Sudano dinarų (1992–2007)',
+  );
+  static const _sdg = Currency(
+    _cld,
+    'SDG',
+    'Sudano svaras',
+    one: 'Sudano svaras',
+    few: 'Sudano svarai',
+    many: 'Sudano svaro',
+    other: 'Sudano svarų',
+  );
+  static const _sdp = Currency(
+    _cld,
+    'SDP',
+    'Sudano svaras (1957–1998)',
+    one: 'Sudano svaras (1957–1998)',
+    few: 'Sudano svarai (1957–1998)',
+    many: 'Sudano svaro (1957–1998)',
+    other: 'Sudano svarų (1957–1998)',
+  );
+  static const _sek = Currency(
+    _cld,
+    'SEK',
+    'Švedijos krona',
+    one: 'Švedijos krona',
+    few: 'Švedijos kronos',
+    many: 'Švedijos kronos',
+    other: 'Švedijos kronų',
+    symbolNarrow: 'kr',
+  );
+  static const _sgd = Currency(
+    _cld,
+    'SGD',
+    'Singapūro doleris',
+    one: 'Singapūro doleris',
+    few: 'Singapūro doleriai',
+    many: 'Singapūro dolerio',
+    other: 'Singapūro dolerių',
+    symbolNarrow: r'$',
+  );
+  static const _shp = Currency(
+    _cld,
+    'SHP',
+    'Šv. Elenos salų svaras',
+    one: 'Šv. Elenos salų svaras',
+    few: 'Šv. Elenos salų svarai',
+    many: 'Šv. Elenos salų svaro',
+    other: 'Šv. Elenos salų svarų',
+    symbolNarrow: '£',
+  );
+  static const _sit = Currency(
+    _cld,
+    'SIT',
+    'Slovėnijos tolaras',
+    one: 'Slovėnijos tolars',
+    few: 'Slovėnijos tolars',
+    many: 'Slovėnijos tolar',
+    other: 'Slovėnijos tolar',
+  );
+  static const _skk = Currency(
+    _cld,
+    'SKK',
+    'Slovakijos krona',
+    one: 'Slovakijos krona',
+    few: 'Slovakijos kronos',
+    many: 'Slovakijos kronos',
+    other: 'Slovakijos kronų',
+  );
+  static const _sle = Currency(
+    _cld,
+    'SLE',
+    'Siera Leonės leonė',
+    one: 'Siera Leonės leonė',
+    few: 'Siera Leonės leonės',
+    many: 'Siera Leonės leonės',
+    other: 'Siera Leonės leonių',
+  );
+  static const _sll = Currency(
+    _cld,
+    'SLL',
+    'Siera Leonės leonė (1964—2022)',
+    one: 'Siera Leonės leonė (1964—2022)',
+    few: 'Siera Leonės leonės (1964—2022)',
+    many: 'Siera Leonės leonės (1964—2022)',
+    other: 'Siera Leonės leonių (1964—2022)',
+  );
+  static const _sos = Currency(
+    _cld,
+    'SOS',
+    'Somalio šilingas',
+    one: 'Somalio šilingas',
+    few: 'Somalio šilingai',
+    many: 'Somalio šilingo',
+    other: 'Somalio šilingų',
+  );
+  static const _srd = Currency(
+    _cld,
+    'SRD',
+    'Surimano doleris',
+    one: 'Surimano doleris',
+    few: 'Surimano doleriai',
+    many: 'Surimano dolerio',
+    other: 'Surimano dolerių',
+    symbolNarrow: r'$',
+  );
+  static const _srg = Currency(
+    _cld,
+    'SRG',
+    'Surimano guldenas',
+    one: 'Surimano guldenas',
+    few: 'Surimano guldenai',
+    many: 'Surimano guldeno',
+    other: 'Surimano guldenų',
+  );
+  static const _ssp = Currency(
+    _cld,
+    'SSP',
+    'Pietų Sudano svaras',
+    one: 'Pietų Sudano svaras',
+    few: 'Pietų Sudano svarai',
+    many: 'Pietų Sudano svaro',
+    other: 'Pietų Sudano svarų',
+    symbolNarrow: '£',
+  );
   static const _std = Currency(
-      _cld, 'STD', 'San Tomės ir Principės dobra (1977–2017)',
-      one: 'San Tomės ir Principės dobra (1977–2017)',
-      few: 'San Tomės ir Principės dobros (1977–2017)',
-      many: 'San Tomės ir Principės dobros (1977–2017)',
-      other: 'Sao Tomės ir Principės dobrų (1977–2017)');
-  static const _stn = Currency(_cld, 'STN', 'San Tomės ir Principės dobra',
-      one: 'San Tomės ir Principės dobra',
-      few: 'San Tomės ir Principės dobros',
-      many: 'San Tomės ir Principės dobros',
-      other: 'Sao Tomės ir Principės dobrų',
-      symbolNarrow: 'Db');
-  static const _sur = Currency(_cld, 'SUR', 'Sovietų rublis',
-      one: 'Sovietų rublis',
-      few: 'Sovietų rubliai',
-      many: 'Sovietų rublio',
-      other: 'Sovietų rublių');
-  static const _svc = Currency(_cld, 'SVC', 'Salvadoro kolonas',
-      one: 'Salvadoro kolonas',
-      few: 'Salvadoro kolonai',
-      many: 'Salvadoro kolonai',
-      other: 'Salvadoro kolonai');
-  static const _syp = Currency(_cld, 'SYP', 'Sirijos svaras',
-      one: 'Sirijos svaras',
-      few: 'Sirijos svarai',
-      many: 'Sirijos svaro',
-      other: 'Sirijos svarų',
-      symbolNarrow: '£');
-  static const _szl = Currency(_cld, 'SZL', 'Svazilando lilangenis',
-      one: 'Svazilando lilangenis',
-      few: 'Svazilando lilangeniai',
-      many: 'Svazilendo lilangenio',
-      other: 'Svazilendo lilangenių');
-  static const _thb = Currency(_cld, 'THB', 'Tailando batas',
-      one: 'Tailando batas',
-      few: 'Tailando batai',
-      many: 'Tailando bato',
-      other: 'Tailando batų',
-      symbolNarrow: '฿');
-  static const _tjr = Currency(_cld, 'TJR', 'Tadžikistano rublis',
-      one: 'Tadžikistano rublis',
-      few: 'Tadžikistano rubliai',
-      many: 'Tadžikistano rublio',
-      other: 'Tadžikistano rublių');
-  static const _tjs = Currency(_cld, 'TJS', 'Tadžikistano somonis',
-      one: 'Tadžikistano somonis',
-      few: 'Tadžikistano somoniai',
-      many: 'Tadžikistano somonio',
-      other: 'Tadžikistano somonių');
-  static const _tmm = Currency(_cld, 'TMM', 'Turkmėnistano manatas (1993–2009)',
-      one: 'Turkmėnistano manatas (1993–2009)',
-      few: 'Turkmėnistano manatai (1993–2009)',
-      many: 'Turkmėnistano manato (1993–2009)',
-      other: 'Turkmėnistano manatų (1993–2009)');
-  static const _tmt = Currency(_cld, 'TMT', 'Turkmėnistano manatas',
-      one: 'Turkmėnistano manatas',
-      few: 'Turkmėnistano manatai',
-      many: 'Turkmėnistano manato',
-      other: 'Turkmėnistano manatų');
-  static const _tnd = Currency(_cld, 'TND', 'Tuniso dinaras',
-      one: 'Tuniso dinaras',
-      few: 'Tuniso dinarai',
-      many: 'Tuniso dinaro',
-      other: 'Tuniso dinarų');
-  static const _top = Currency(_cld, 'TOP', 'Tongo paanga',
-      one: 'Tongo paanga',
-      few: 'Tongo paangos',
-      many: 'Tongo paangos',
-      other: 'Tongo paangų',
-      symbolNarrow: r'T$');
-  static const _tpe = Currency(_cld, 'TPE', 'Timoro eskudas',
-      one: 'Timoro eskudas',
-      few: 'Timoro eskudai',
-      many: 'Timoro eskudo',
-      other: 'Timoro eskudų');
-  static const _trl = Currency(_cld, 'TRL', 'Turkijos lira (1922–2005)',
-      one: 'Turkijos lira (1922–2005)',
-      few: 'Turkijos liros (1922–2005)',
-      many: 'Turkijos liros (1922–2005)',
-      other: 'Turkijos lirų (1922–2005)');
-  static const _$try = Currency(_cld, 'TRY', 'Turkijos lira',
-      one: 'Turkijos lira',
-      few: 'Turkijos liros',
-      many: 'Turkijos liros',
-      other: 'Turkijos lirų',
-      symbolNarrow: '₺',
-      symbolVariant: 'TL');
-  static const _ttd = Currency(_cld, 'TTD', 'Trinidado ir Tobago doleris',
-      one: 'Trinidado ir Tobago doleris',
-      few: 'Trinidado ir Tobago doleriai',
-      many: 'Trinidado ir Tobago dolerio',
-      other: 'Trinidado ir Tobago dolerių',
-      symbolNarrow: r'$');
-  static const _twd = Currency(_cld, 'TWD', 'Taivano naujasis doleris',
-      one: 'Taivano naujasis doleris',
-      few: 'Taivano naujieji doleriai',
-      many: 'Taivano naujojo dolerio',
-      other: 'Taivano naujųjų dolerių',
-      symbol: 'TWD',
-      symbolNarrow: r'$');
-  static const _tzs = Currency(_cld, 'TZS', 'Tanzanijos šilingas',
-      one: 'Tanzanijos šilingas',
-      few: 'Tanzanijos šilingai',
-      many: 'Tanzanijos šilingo',
-      other: 'Tanzanijos šilingų');
-  static const _uah = Currency(_cld, 'UAH', 'Ukrainos grivina',
-      one: 'Ukrainos grivina',
-      few: 'Ukrainos grivinos',
-      many: 'Ukrainos grivinos',
-      other: 'Ukrainos grivinų',
-      symbolNarrow: '₴');
-  static const _uak = Currency(_cld, 'UAK', 'Ukrainos karbovanecas',
-      one: 'Ukrainos karbovanets',
-      few: 'Ukrainos karbovantsiv',
-      many: 'Ukrainos karbovantsiv',
-      other: 'Ukrainos karbovantsiv');
-  static const _ugs = Currency(_cld, 'UGS', 'Ugandos šilingas (1966–1987)',
-      one: 'Ugandos šilingas (1966–1987)',
-      few: 'Ugandos šilingai (1966–1987)',
-      many: 'Ugandos šilingo (1966–1987)',
-      other: 'Ugandos šilingų (1966–1987)');
-  static const _ugx = Currency(_cld, 'UGX', 'Ugandos šilingas',
-      one: 'Ugandos šilingas',
-      few: 'Ugandos šilingai',
-      many: 'Ugandos šilingo',
-      other: 'Ugandos šilingų');
-  static const _usd = Currency(_cld, 'USD', 'JAV doleris',
-      one: 'JAV doleris',
-      few: 'JAV doleriai',
-      many: 'JAV dolerio',
-      other: 'JAV dolerių',
-      symbol: 'USD',
-      symbolNarrow: r'$');
-  static const _usn = Currency(_cld, 'USN', 'JAV doleris (kitos dienos)',
-      one: 'JAV doleris (kitą dieną)',
-      few: 'JAV doleriai (kitą dieną)',
-      many: 'JAV dolerio (kitą dieną)',
-      other: 'JAV dolerių (kitą dieną)');
-  static const _uss = Currency(_cld, 'USS', 'JAV doleris (šios dienos)',
-      one: 'JAV doleris (tą pačią dieną)',
-      few: 'JAV doleriai (tą pačią dieną)',
-      many: 'JAV dolerio (tą pačią dieną)',
-      other: 'JAV dolerių (tą pačią dieną)');
+    _cld,
+    'STD',
+    'San Tomės ir Principės dobra (1977–2017)',
+    one: 'San Tomės ir Principės dobra (1977–2017)',
+    few: 'San Tomės ir Principės dobros (1977–2017)',
+    many: 'San Tomės ir Principės dobros (1977–2017)',
+    other: 'Sao Tomės ir Principės dobrų (1977–2017)',
+  );
+  static const _stn = Currency(
+    _cld,
+    'STN',
+    'San Tomės ir Principės dobra',
+    one: 'San Tomės ir Principės dobra',
+    few: 'San Tomės ir Principės dobros',
+    many: 'San Tomės ir Principės dobros',
+    other: 'Sao Tomės ir Principės dobrų',
+    symbolNarrow: 'Db',
+  );
+  static const _sur = Currency(
+    _cld,
+    'SUR',
+    'Sovietų rublis',
+    one: 'Sovietų rublis',
+    few: 'Sovietų rubliai',
+    many: 'Sovietų rublio',
+    other: 'Sovietų rublių',
+  );
+  static const _svc = Currency(
+    _cld,
+    'SVC',
+    'Salvadoro kolonas',
+    one: 'Salvadoro kolonas',
+    few: 'Salvadoro kolonai',
+    many: 'Salvadoro kolonai',
+    other: 'Salvadoro kolonai',
+  );
+  static const _syp = Currency(
+    _cld,
+    'SYP',
+    'Sirijos svaras',
+    one: 'Sirijos svaras',
+    few: 'Sirijos svarai',
+    many: 'Sirijos svaro',
+    other: 'Sirijos svarų',
+    symbolNarrow: '£',
+  );
+  static const _szl = Currency(
+    _cld,
+    'SZL',
+    'Svazilando lilangenis',
+    one: 'Svazilando lilangenis',
+    few: 'Svazilando lilangeniai',
+    many: 'Svazilendo lilangenio',
+    other: 'Svazilendo lilangenių',
+  );
+  static const _thb = Currency(
+    _cld,
+    'THB',
+    'Tailando batas',
+    one: 'Tailando batas',
+    few: 'Tailando batai',
+    many: 'Tailando bato',
+    other: 'Tailando batų',
+    symbolNarrow: '฿',
+  );
+  static const _tjr = Currency(
+    _cld,
+    'TJR',
+    'Tadžikistano rublis',
+    one: 'Tadžikistano rublis',
+    few: 'Tadžikistano rubliai',
+    many: 'Tadžikistano rublio',
+    other: 'Tadžikistano rublių',
+  );
+  static const _tjs = Currency(
+    _cld,
+    'TJS',
+    'Tadžikistano somonis',
+    one: 'Tadžikistano somonis',
+    few: 'Tadžikistano somoniai',
+    many: 'Tadžikistano somonio',
+    other: 'Tadžikistano somonių',
+  );
+  static const _tmm = Currency(
+    _cld,
+    'TMM',
+    'Turkmėnistano manatas (1993–2009)',
+    one: 'Turkmėnistano manatas (1993–2009)',
+    few: 'Turkmėnistano manatai (1993–2009)',
+    many: 'Turkmėnistano manato (1993–2009)',
+    other: 'Turkmėnistano manatų (1993–2009)',
+  );
+  static const _tmt = Currency(
+    _cld,
+    'TMT',
+    'Turkmėnistano manatas',
+    one: 'Turkmėnistano manatas',
+    few: 'Turkmėnistano manatai',
+    many: 'Turkmėnistano manato',
+    other: 'Turkmėnistano manatų',
+  );
+  static const _tnd = Currency(
+    _cld,
+    'TND',
+    'Tuniso dinaras',
+    one: 'Tuniso dinaras',
+    few: 'Tuniso dinarai',
+    many: 'Tuniso dinaro',
+    other: 'Tuniso dinarų',
+  );
+  static const _top = Currency(
+    _cld,
+    'TOP',
+    'Tongo paanga',
+    one: 'Tongo paanga',
+    few: 'Tongo paangos',
+    many: 'Tongo paangos',
+    other: 'Tongo paangų',
+    symbolNarrow: r'T$',
+  );
+  static const _tpe = Currency(
+    _cld,
+    'TPE',
+    'Timoro eskudas',
+    one: 'Timoro eskudas',
+    few: 'Timoro eskudai',
+    many: 'Timoro eskudo',
+    other: 'Timoro eskudų',
+  );
+  static const _trl = Currency(
+    _cld,
+    'TRL',
+    'Turkijos lira (1922–2005)',
+    one: 'Turkijos lira (1922–2005)',
+    few: 'Turkijos liros (1922–2005)',
+    many: 'Turkijos liros (1922–2005)',
+    other: 'Turkijos lirų (1922–2005)',
+  );
+  static const _$try = Currency(
+    _cld,
+    'TRY',
+    'Turkijos lira',
+    one: 'Turkijos lira',
+    few: 'Turkijos liros',
+    many: 'Turkijos liros',
+    other: 'Turkijos lirų',
+    symbolNarrow: '₺',
+    symbolVariant: 'TL',
+  );
+  static const _ttd = Currency(
+    _cld,
+    'TTD',
+    'Trinidado ir Tobago doleris',
+    one: 'Trinidado ir Tobago doleris',
+    few: 'Trinidado ir Tobago doleriai',
+    many: 'Trinidado ir Tobago dolerio',
+    other: 'Trinidado ir Tobago dolerių',
+    symbolNarrow: r'$',
+  );
+  static const _twd = Currency(
+    _cld,
+    'TWD',
+    'Taivano naujasis doleris',
+    one: 'Taivano naujasis doleris',
+    few: 'Taivano naujieji doleriai',
+    many: 'Taivano naujojo dolerio',
+    other: 'Taivano naujųjų dolerių',
+    symbol: 'TWD',
+    symbolNarrow: r'$',
+  );
+  static const _tzs = Currency(
+    _cld,
+    'TZS',
+    'Tanzanijos šilingas',
+    one: 'Tanzanijos šilingas',
+    few: 'Tanzanijos šilingai',
+    many: 'Tanzanijos šilingo',
+    other: 'Tanzanijos šilingų',
+  );
+  static const _uah = Currency(
+    _cld,
+    'UAH',
+    'Ukrainos grivina',
+    one: 'Ukrainos grivina',
+    few: 'Ukrainos grivinos',
+    many: 'Ukrainos grivinos',
+    other: 'Ukrainos grivinų',
+    symbolNarrow: '₴',
+  );
+  static const _uak = Currency(
+    _cld,
+    'UAK',
+    'Ukrainos karbovanecas',
+    one: 'Ukrainos karbovanets',
+    few: 'Ukrainos karbovantsiv',
+    many: 'Ukrainos karbovantsiv',
+    other: 'Ukrainos karbovantsiv',
+  );
+  static const _ugs = Currency(
+    _cld,
+    'UGS',
+    'Ugandos šilingas (1966–1987)',
+    one: 'Ugandos šilingas (1966–1987)',
+    few: 'Ugandos šilingai (1966–1987)',
+    many: 'Ugandos šilingo (1966–1987)',
+    other: 'Ugandos šilingų (1966–1987)',
+  );
+  static const _ugx = Currency(
+    _cld,
+    'UGX',
+    'Ugandos šilingas',
+    one: 'Ugandos šilingas',
+    few: 'Ugandos šilingai',
+    many: 'Ugandos šilingo',
+    other: 'Ugandos šilingų',
+  );
+  static const _usd = Currency(
+    _cld,
+    'USD',
+    'JAV doleris',
+    one: 'JAV doleris',
+    few: 'JAV doleriai',
+    many: 'JAV dolerio',
+    other: 'JAV dolerių',
+    symbol: 'USD',
+    symbolNarrow: r'$',
+  );
+  static const _usn = Currency(
+    _cld,
+    'USN',
+    'JAV doleris (kitos dienos)',
+    one: 'JAV doleris (kitą dieną)',
+    few: 'JAV doleriai (kitą dieną)',
+    many: 'JAV dolerio (kitą dieną)',
+    other: 'JAV dolerių (kitą dieną)',
+  );
+  static const _uss = Currency(
+    _cld,
+    'USS',
+    'JAV doleris (šios dienos)',
+    one: 'JAV doleris (tą pačią dieną)',
+    few: 'JAV doleriai (tą pačią dieną)',
+    many: 'JAV dolerio (tą pačią dieną)',
+    other: 'JAV dolerių (tą pačią dieną)',
+  );
   static const _uyi = Currency(
-      _cld, 'UYI', 'Urugvajaus pesai en unidades indexadas',
-      one: 'Urugvajaus pesas en unidades indexadas',
-      few: 'Uragvajaus pesai en unidades indexadas',
-      many: 'Urugvajaus pesai en unidades indexadas',
-      other: 'Urugvajaus pesai en unidades indexadas');
-  static const _uyp = Currency(_cld, 'UYP', 'Urugvajaus pesas (1975–1993)',
-      one: 'Urugvajaus pesas (1975–1993)',
-      few: 'Urugvajaus pesai (1975–1993)',
-      many: 'Urugvajaus peso (1975–1993)',
-      other: 'Urugvajaus pesų (1975–1993)');
-  static const _uyu = Currency(_cld, 'UYU', 'Urugvajaus pesas',
-      one: 'Urugvajaus pesas',
-      few: 'Urugvajaus pesai',
-      many: 'Urugvajaus peso',
-      other: 'Urugvajaus pesų',
-      symbolNarrow: r'$');
-  static const _uzs = Currency(_cld, 'UZS', 'Uzbekistano sumas',
-      one: 'Uzbekistano sumas',
-      few: 'Uzbekistano sumai',
-      many: 'Uzbekistano sumo',
-      other: 'Uzbekistano sumų');
-  static const _veb = Currency(_cld, 'VEB', 'Venesuelos bolivaras (1871–2008)',
-      one: 'Venesuelos bolivaras (1871–2008)',
-      few: 'Venesuelos bolivarai (1871–2008)',
-      many: 'Venesuelos bolivaro (1871–2008)',
-      other: 'Venesuelos bolivarų (1871–2008)');
-  static const _vef = Currency(_cld, 'VEF', 'Venesuelos bolivaras (2008–2018)',
-      one: 'Venesuelos bolivaras (2008–2018)',
-      few: 'Venesuelos bolivarai (2008–2018)',
-      many: 'Venesuelos bolivaro (2008–2018)',
-      other: 'Venesuelos bolivarų (2008–2018)',
-      symbolNarrow: 'Bs');
-  static const _ves = Currency(_cld, 'VES', 'Venesuelos bolivaras',
-      one: 'Venesuelos bolivaras',
-      few: 'Venesuelos bolivarai',
-      many: 'Venesuelos bolivaro',
-      other: 'Venesuelos bolivarų');
-  static const _vnd = Currency(_cld, 'VND', 'Vietnamo dongas',
-      one: 'Vietnamo dongas',
-      few: 'Vietnamo dongai',
-      many: 'Vietnamo dongo',
-      other: 'Vietnamo dongų',
-      symbol: 'VND',
-      symbolNarrow: 'VND');
-  static const _vnn = Currency(_cld, 'VNN', 'Vietnamo dongas (1978–1985)',
-      one: 'Vietnamo dongas (1978–1985)',
-      few: 'Vietnamo dongai (1978–1985)',
-      many: 'Vietnamo dongo (1978–1985)',
-      other: 'Vietnamo dongų (1978–1985)');
-  static const _vuv = Currency(_cld, 'VUV', 'Vanuatu vatas',
-      one: 'Vanuatu vatas',
-      few: 'Vanuatu vatai',
-      many: 'Vanuatu vato',
-      other: 'Vanuatu vatų');
-  static const _wst = Currency(_cld, 'WST', 'Samoa tala',
-      one: 'Samoa tala',
-      few: 'Samoa talos',
-      many: 'Samoa talos',
-      other: 'Samoa talų');
-  static const _xaf = Currency(_cld, 'XAF', 'CFA BEAC frankas',
-      one: 'CFA BEAC frankas',
-      few: 'CFA BEAC frankai',
-      many: 'CFA BEAC franko',
-      other: 'CFA BEAC frankų',
-      symbol: 'XAF');
+    _cld,
+    'UYI',
+    'Urugvajaus pesai en unidades indexadas',
+    one: 'Urugvajaus pesas en unidades indexadas',
+    few: 'Uragvajaus pesai en unidades indexadas',
+    many: 'Urugvajaus pesai en unidades indexadas',
+    other: 'Urugvajaus pesai en unidades indexadas',
+  );
+  static const _uyp = Currency(
+    _cld,
+    'UYP',
+    'Urugvajaus pesas (1975–1993)',
+    one: 'Urugvajaus pesas (1975–1993)',
+    few: 'Urugvajaus pesai (1975–1993)',
+    many: 'Urugvajaus peso (1975–1993)',
+    other: 'Urugvajaus pesų (1975–1993)',
+  );
+  static const _uyu = Currency(
+    _cld,
+    'UYU',
+    'Urugvajaus pesas',
+    one: 'Urugvajaus pesas',
+    few: 'Urugvajaus pesai',
+    many: 'Urugvajaus peso',
+    other: 'Urugvajaus pesų',
+    symbolNarrow: r'$',
+  );
+  static const _uzs = Currency(
+    _cld,
+    'UZS',
+    'Uzbekistano sumas',
+    one: 'Uzbekistano sumas',
+    few: 'Uzbekistano sumai',
+    many: 'Uzbekistano sumo',
+    other: 'Uzbekistano sumų',
+  );
+  static const _veb = Currency(
+    _cld,
+    'VEB',
+    'Venesuelos bolivaras (1871–2008)',
+    one: 'Venesuelos bolivaras (1871–2008)',
+    few: 'Venesuelos bolivarai (1871–2008)',
+    many: 'Venesuelos bolivaro (1871–2008)',
+    other: 'Venesuelos bolivarų (1871–2008)',
+  );
+  static const _vef = Currency(
+    _cld,
+    'VEF',
+    'Venesuelos bolivaras (2008–2018)',
+    one: 'Venesuelos bolivaras (2008–2018)',
+    few: 'Venesuelos bolivarai (2008–2018)',
+    many: 'Venesuelos bolivaro (2008–2018)',
+    other: 'Venesuelos bolivarų (2008–2018)',
+    symbolNarrow: 'Bs',
+  );
+  static const _ves = Currency(
+    _cld,
+    'VES',
+    'Venesuelos bolivaras',
+    one: 'Venesuelos bolivaras',
+    few: 'Venesuelos bolivarai',
+    many: 'Venesuelos bolivaro',
+    other: 'Venesuelos bolivarų',
+  );
+  static const _vnd = Currency(
+    _cld,
+    'VND',
+    'Vietnamo dongas',
+    one: 'Vietnamo dongas',
+    few: 'Vietnamo dongai',
+    many: 'Vietnamo dongo',
+    other: 'Vietnamo dongų',
+    symbol: 'VND',
+    symbolNarrow: 'VND',
+  );
+  static const _vnn = Currency(
+    _cld,
+    'VNN',
+    'Vietnamo dongas (1978–1985)',
+    one: 'Vietnamo dongas (1978–1985)',
+    few: 'Vietnamo dongai (1978–1985)',
+    many: 'Vietnamo dongo (1978–1985)',
+    other: 'Vietnamo dongų (1978–1985)',
+  );
+  static const _vuv = Currency(
+    _cld,
+    'VUV',
+    'Vanuatu vatas',
+    one: 'Vanuatu vatas',
+    few: 'Vanuatu vatai',
+    many: 'Vanuatu vato',
+    other: 'Vanuatu vatų',
+  );
+  static const _wst = Currency(
+    _cld,
+    'WST',
+    'Samoa tala',
+    one: 'Samoa tala',
+    few: 'Samoa talos',
+    many: 'Samoa talos',
+    other: 'Samoa talų',
+  );
+  static const _xaf = Currency(
+    _cld,
+    'XAF',
+    'CFA BEAC frankas',
+    one: 'CFA BEAC frankas',
+    few: 'CFA BEAC frankai',
+    many: 'CFA BEAC franko',
+    other: 'CFA BEAC frankų',
+    symbol: 'XAF',
+  );
   static const _xag = Currency(_cld, 'XAG', 'Sidabras');
   static const _xau = Currency(_cld, 'XAU', 'Auksas');
-  static const _xba = Currency(_cld, 'XBA', 'Europos suvestinės vienetas',
-      one: 'Europos suvestinės vienetas',
-      few: 'Europos suvestinės vienetai',
-      many: 'Europos suvestinės vienetai',
-      other: 'Europos suvestinės vienetai');
-  static const _xbb = Currency(_cld, 'XBB', 'Europos piniginis vienetas',
-      one: 'Europos piniginis vienetas',
-      few: 'Europos piniginiai vienetai',
-      many: 'Europos piniginiai vienetai',
-      other: 'Europos piniginiai vienetai');
+  static const _xba = Currency(
+    _cld,
+    'XBA',
+    'Europos suvestinės vienetas',
+    one: 'Europos suvestinės vienetas',
+    few: 'Europos suvestinės vienetai',
+    many: 'Europos suvestinės vienetai',
+    other: 'Europos suvestinės vienetai',
+  );
+  static const _xbb = Currency(
+    _cld,
+    'XBB',
+    'Europos piniginis vienetas',
+    one: 'Europos piniginis vienetas',
+    few: 'Europos piniginiai vienetai',
+    many: 'Europos piniginiai vienetai',
+    other: 'Europos piniginiai vienetai',
+  );
   static const _xbc = Currency(
-      _cld, 'XBC', 'Europos valiutos / apskaitos vienetas (XBC)',
-      one: 'Europos valiutos / apskaitos vienetas (XBC)',
-      few: 'Europos valiutos / apskaitos vienetai (XBC)',
-      many: 'Europos valiutos / apskaitos vienetai (XBC)',
-      other: 'Europos valiutos / apskaitos vienetai (XBC)');
+    _cld,
+    'XBC',
+    'Europos valiutos / apskaitos vienetas (XBC)',
+    one: 'Europos valiutos / apskaitos vienetas (XBC)',
+    few: 'Europos valiutos / apskaitos vienetai (XBC)',
+    many: 'Europos valiutos / apskaitos vienetai (XBC)',
+    other: 'Europos valiutos / apskaitos vienetai (XBC)',
+  );
   static const _xbd = Currency(
-      _cld, 'XBD', 'Europos valiutos / apskaitos vienetas (XBD)',
-      one: 'Europos valiutos / apskaitos vienetas (XBD)',
-      few: 'Europos valiutos / apskaitos vienetas (XBD)',
-      many: 'Europos valiutos / apskaitos vienetai (XBD)',
-      other: 'Europos valiutos / apskaitos vienetai (XBD)');
-  static const _xcd = Currency(_cld, 'XCD', 'Rytų Karibų doleris',
-      one: 'Rytų Karibų doleris',
-      few: 'Rytų Karibų doleriai',
-      many: 'Rytų Karibų dolerio',
-      other: 'Rytų Karibų dolerių',
-      symbol: 'XCD',
-      symbolNarrow: r'$');
+    _cld,
+    'XBD',
+    'Europos valiutos / apskaitos vienetas (XBD)',
+    one: 'Europos valiutos / apskaitos vienetas (XBD)',
+    few: 'Europos valiutos / apskaitos vienetas (XBD)',
+    many: 'Europos valiutos / apskaitos vienetai (XBD)',
+    other: 'Europos valiutos / apskaitos vienetai (XBD)',
+  );
+  static const _xcd = Currency(
+    _cld,
+    'XCD',
+    'Rytų Karibų doleris',
+    one: 'Rytų Karibų doleris',
+    few: 'Rytų Karibų doleriai',
+    many: 'Rytų Karibų dolerio',
+    other: 'Rytų Karibų dolerių',
+    symbol: 'XCD',
+    symbolNarrow: r'$',
+  );
   static const _xcg = Currency(_cld, 'XCG', 'XCG', symbol: 'Cg.');
   static const _xdr = Currency(_cld, 'XDR', 'SDR tarptautinis valiutos fondas');
-  static const _xeu =
-      Currency(_cld, 'XEU', 'Europos piniginis vienetas (1993–1999)');
-  static const _xfo = Currency(_cld, 'XFO', 'Aukso frankas',
-      one: 'Aukso frankas',
-      few: 'Aukso frankai',
-      many: 'Aukso franko',
-      other: 'Aukso frankų');
-  static const _xfu = Currency(_cld, 'XFU', 'Prancūzijos UIC - frankas',
-      one: 'Prancūzijos UIC - frankas',
-      few: 'Prancūzijos UIC - frankai',
-      many: 'Prancūzijos UIC - franko',
-      other: 'Prancūzijos UIC - frankų');
-  static const _xof = Currency(_cld, 'XOF', 'CFA BCEAO frankas',
-      one: 'CFA BCEAO frankas',
-      few: 'CFA BCEAO frankai',
-      many: 'CFA BCEAO franko',
-      other: 'CFA BCEAO frankų',
-      symbol: 'XOF');
+  static const _xeu = Currency(
+    _cld,
+    'XEU',
+    'Europos piniginis vienetas (1993–1999)',
+  );
+  static const _xfo = Currency(
+    _cld,
+    'XFO',
+    'Aukso frankas',
+    one: 'Aukso frankas',
+    few: 'Aukso frankai',
+    many: 'Aukso franko',
+    other: 'Aukso frankų',
+  );
+  static const _xfu = Currency(
+    _cld,
+    'XFU',
+    'Prancūzijos UIC - frankas',
+    one: 'Prancūzijos UIC - frankas',
+    few: 'Prancūzijos UIC - frankai',
+    many: 'Prancūzijos UIC - franko',
+    other: 'Prancūzijos UIC - frankų',
+  );
+  static const _xof = Currency(
+    _cld,
+    'XOF',
+    'CFA BCEAO frankas',
+    one: 'CFA BCEAO frankas',
+    few: 'CFA BCEAO frankai',
+    many: 'CFA BCEAO franko',
+    other: 'CFA BCEAO frankų',
+    symbol: 'XOF',
+  );
   static const _xpd = Currency(_cld, 'XPD', 'Paladis');
-  static const _xpf = Currency(_cld, 'XPF', 'CFP frankas',
-      one: 'CFP frankas',
-      few: 'CFP frankai',
-      many: 'CFP franko',
-      other: 'CFP frankų',
-      symbol: 'XPF');
+  static const _xpf = Currency(
+    _cld,
+    'XPF',
+    'CFP frankas',
+    one: 'CFP frankas',
+    few: 'CFP frankai',
+    many: 'CFP franko',
+    other: 'CFP frankų',
+    symbol: 'XPF',
+  );
   static const _xpt = Currency(_cld, 'XPT', 'Platina');
-  static const _xre = Currency(_cld, 'XRE', 'RINET fondai',
-      one: 'RINET fondas',
-      few: 'RINET fondai',
-      many: 'RINET fondai',
-      other: 'RINET fondai');
-  static const _xsu = Currency(_cld, 'XSU', 'Sukrė',
-      one: 'Sukrė', few: 'Sukrės', many: 'Sukrės', other: 'Sukrių');
+  static const _xre = Currency(
+    _cld,
+    'XRE',
+    'RINET fondai',
+    one: 'RINET fondas',
+    few: 'RINET fondai',
+    many: 'RINET fondai',
+    other: 'RINET fondai',
+  );
+  static const _xsu = Currency(
+    _cld,
+    'XSU',
+    'Sukrė',
+    one: 'Sukrė',
+    few: 'Sukrės',
+    many: 'Sukrės',
+    other: 'Sukrių',
+  );
   static const _xts = Currency(_cld, 'XTS', 'Tikrinamas valiutos kodas');
   static const _xua = Currency(
-      _cld, 'XUA', 'Azijos plėtros banko apskaitos vienetas',
-      one: 'Azijos plėtros banko apskaitos vienetas',
-      few: 'Azijos plėtros banko apskaitos vienetai',
-      many: 'Azijos plėtros banko apskaitos vieneto',
-      other: 'Azijos plėtros banko apskaitos vienetų');
-  static const _xxx = Currency(_cld, 'XXX', 'nežinoma valiuta',
-      one: '(nežinoma valiuta)',
-      few: '(nežinoma valiuta)',
-      many: '(nežinoma valiuta)',
-      other: '(nežinoma valiuta)',
-      symbol: '¤');
-  static const _ydd = Currency(_cld, 'YDD', 'Jemeno dinaras',
-      one: 'Jemeno dinaras',
-      few: 'Jemeno dinarai',
-      many: 'Jemeno dinaro',
-      other: 'Jemeno dinarų');
-  static const _yer = Currency(_cld, 'YER', 'Jemeno rialas',
-      one: 'Jemeno rialas',
-      few: 'Jemeno rialai',
-      many: 'Jemeno rialo',
-      other: 'Jemeno rialų');
+    _cld,
+    'XUA',
+    'Azijos plėtros banko apskaitos vienetas',
+    one: 'Azijos plėtros banko apskaitos vienetas',
+    few: 'Azijos plėtros banko apskaitos vienetai',
+    many: 'Azijos plėtros banko apskaitos vieneto',
+    other: 'Azijos plėtros banko apskaitos vienetų',
+  );
+  static const _xxx = Currency(
+    _cld,
+    'XXX',
+    'nežinoma valiuta',
+    one: '(nežinoma valiuta)',
+    few: '(nežinoma valiuta)',
+    many: '(nežinoma valiuta)',
+    other: '(nežinoma valiuta)',
+    symbol: '¤',
+  );
+  static const _ydd = Currency(
+    _cld,
+    'YDD',
+    'Jemeno dinaras',
+    one: 'Jemeno dinaras',
+    few: 'Jemeno dinarai',
+    many: 'Jemeno dinaro',
+    other: 'Jemeno dinarų',
+  );
+  static const _yer = Currency(
+    _cld,
+    'YER',
+    'Jemeno rialas',
+    one: 'Jemeno rialas',
+    few: 'Jemeno rialai',
+    many: 'Jemeno rialo',
+    other: 'Jemeno rialų',
+  );
   static const _yud = Currency(
-      _cld, 'YUD', 'Jugoslavijos kietasis dinaras (1966–1990)',
-      one: 'Jugoslavijos kietasis dinaras (1966–1990)',
-      few: 'Jugoslavijos kietieji dinarai (1966–1990)',
-      many: 'Jugoslavijos kietiejo dinaro (1966–1990)',
-      other: 'Jugoslavijos kietiejų dinarų (1966–1990)');
+    _cld,
+    'YUD',
+    'Jugoslavijos kietasis dinaras (1966–1990)',
+    one: 'Jugoslavijos kietasis dinaras (1966–1990)',
+    few: 'Jugoslavijos kietieji dinarai (1966–1990)',
+    many: 'Jugoslavijos kietiejo dinaro (1966–1990)',
+    other: 'Jugoslavijos kietiejų dinarų (1966–1990)',
+  );
   static const _yum = Currency(
-      _cld, 'YUM', 'Jugoslavijos naujasis dinaras (1994–2002)',
-      one: 'Jugoslavijos naujasis dinaras (1994–2002)',
-      few: 'Jugoslavijos naujieji dinarai (1994–2002)',
-      many: 'Jugoslavijos naujojo dinaro (1994–2002)',
-      other: 'Jugoslavijos naujųjų dinarų (1994–2002)');
+    _cld,
+    'YUM',
+    'Jugoslavijos naujasis dinaras (1994–2002)',
+    one: 'Jugoslavijos naujasis dinaras (1994–2002)',
+    few: 'Jugoslavijos naujieji dinarai (1994–2002)',
+    many: 'Jugoslavijos naujojo dinaro (1994–2002)',
+    other: 'Jugoslavijos naujųjų dinarų (1994–2002)',
+  );
   static const _yun = Currency(
-      _cld, 'YUN', 'Jugoslavijos konvertuojamas dinaras (1990–1992)',
-      one: 'Jugoslavijos konvertuojamas dinaras (1990–1992)',
-      few: 'Jugoslavijos konvertuojami dinarai (1990–1992)',
-      many: 'Jugoslavijos konvertuojamo dinaro (1990–1992)',
-      other: 'Jugoslavijos konvertuojamų dinarų (1990–1992)');
+    _cld,
+    'YUN',
+    'Jugoslavijos konvertuojamas dinaras (1990–1992)',
+    one: 'Jugoslavijos konvertuojamas dinaras (1990–1992)',
+    few: 'Jugoslavijos konvertuojami dinarai (1990–1992)',
+    many: 'Jugoslavijos konvertuojamo dinaro (1990–1992)',
+    other: 'Jugoslavijos konvertuojamų dinarų (1990–1992)',
+  );
   static const _yur = Currency(
-      _cld, 'YUR', 'Jugoslavijos reformuotas dinaras (1992–1993)',
-      one: 'Jugoslavijos reformuotas dinaras (1992–1993)',
-      few: 'Jugoslavijos reformuoti dinarai (1992–1993)',
-      many: 'Jugoslavijos reformuoto dinaro (1992–1993)',
-      other: 'Jugoslavijos reformuotų dinarų (1992–1993)');
-  static const _zal = Currency(_cld, 'ZAL', 'Pietų Afrikos finansinis randas',
-      one: 'Pietų Afrikos randas (finansinis)',
-      few: 'Pietų Afrikos randai (finansinis)',
-      many: 'Pietų Afrikos rando (finansinis)',
-      other: 'Pietų Afrikos randų (finansinis)');
-  static const _zar = Currency(_cld, 'ZAR', 'Pietų Afrikos Respublikos randas',
-      one: 'Pietų Afrikos Respublikos randas',
-      few: 'Pietų Afrikos Respublikos randai',
-      many: 'Pietų Afrikos Respublikos rando',
-      other: 'Pietų Afrikos Respublikos randų',
-      symbolNarrow: 'R');
-  static const _zmk = Currency(_cld, 'ZMK', 'Zambijos kvača (1968–2012)',
-      one: 'Zambijos kvača (1968–2012)',
-      few: 'Zambijos kvačos (1968–2012)',
-      many: 'Zambijos kvačos (1968–2012)',
-      other: 'Zambijos kvačų (1968–2012)');
-  static const _zmw = Currency(_cld, 'ZMW', 'Zambijos kvača',
-      one: 'Zambijos kvača',
-      few: 'Zambijos kvačos',
-      many: 'Zambijos kvačos',
-      other: 'Zambijos kvačų',
-      symbolNarrow: 'ZK');
-  static const _zrn = Currency(_cld, 'ZRN', 'Zairo naujasis zairas (1993–1998)',
-      one: 'Zairo naujasis zairas (1993–1998)',
-      few: 'Zairo naujieji zairai (1993–1998)',
-      many: 'Zairo naujojo zairo (1993–1998)',
-      other: 'Zairo naujųjų zairų (1993–1998)');
-  static const _zrz = Currency(_cld, 'ZRZ', 'Zairo zairas (1971–1993)',
-      one: 'Zairo zairas (1971–1993)',
-      few: 'Zairo zairai (1971–1993)',
-      many: 'Zairo zairo (1971–1993)',
-      other: 'Zairo zairų (1971–1993)');
-  static const _zwd = Currency(_cld, 'ZWD', 'Zimbabvės doleris (1980–2008)',
-      one: 'Zimbabvės doleris (1980–2008)',
-      few: 'Zimbabvės doleriai (1980–2008)',
-      many: 'Zimbabvės dolerio (1980–2008)',
-      other: 'Zimbabvės dolerių (1980–2008)');
-  static const _zwl = Currency(_cld, 'ZWL', 'Zimbabvės doleris (2009)',
-      one: 'Zimbabvės doleris (2009)',
-      few: 'Zimbabvės doleriai (2009)',
-      many: 'Zimbabvės dolerio (2009)',
-      other: 'Zimbabvės dolerių (2009)');
-  static const _zwr = Currency(_cld, 'ZWR', 'Zimbabvės doleris (2008)',
-      one: 'Zimbabvės doleris (2008)',
-      few: 'Zimbabvės doleriai (2008)',
-      many: 'Zimbabvės dolerio (2008)',
-      other: 'Zimbabvės dolerių (2008)');
+    _cld,
+    'YUR',
+    'Jugoslavijos reformuotas dinaras (1992–1993)',
+    one: 'Jugoslavijos reformuotas dinaras (1992–1993)',
+    few: 'Jugoslavijos reformuoti dinarai (1992–1993)',
+    many: 'Jugoslavijos reformuoto dinaro (1992–1993)',
+    other: 'Jugoslavijos reformuotų dinarų (1992–1993)',
+  );
+  static const _zal = Currency(
+    _cld,
+    'ZAL',
+    'Pietų Afrikos finansinis randas',
+    one: 'Pietų Afrikos randas (finansinis)',
+    few: 'Pietų Afrikos randai (finansinis)',
+    many: 'Pietų Afrikos rando (finansinis)',
+    other: 'Pietų Afrikos randų (finansinis)',
+  );
+  static const _zar = Currency(
+    _cld,
+    'ZAR',
+    'Pietų Afrikos Respublikos randas',
+    one: 'Pietų Afrikos Respublikos randas',
+    few: 'Pietų Afrikos Respublikos randai',
+    many: 'Pietų Afrikos Respublikos rando',
+    other: 'Pietų Afrikos Respublikos randų',
+    symbolNarrow: 'R',
+  );
+  static const _zmk = Currency(
+    _cld,
+    'ZMK',
+    'Zambijos kvača (1968–2012)',
+    one: 'Zambijos kvača (1968–2012)',
+    few: 'Zambijos kvačos (1968–2012)',
+    many: 'Zambijos kvačos (1968–2012)',
+    other: 'Zambijos kvačų (1968–2012)',
+  );
+  static const _zmw = Currency(
+    _cld,
+    'ZMW',
+    'Zambijos kvača',
+    one: 'Zambijos kvača',
+    few: 'Zambijos kvačos',
+    many: 'Zambijos kvačos',
+    other: 'Zambijos kvačų',
+    symbolNarrow: 'ZK',
+  );
+  static const _zrn = Currency(
+    _cld,
+    'ZRN',
+    'Zairo naujasis zairas (1993–1998)',
+    one: 'Zairo naujasis zairas (1993–1998)',
+    few: 'Zairo naujieji zairai (1993–1998)',
+    many: 'Zairo naujojo zairo (1993–1998)',
+    other: 'Zairo naujųjų zairų (1993–1998)',
+  );
+  static const _zrz = Currency(
+    _cld,
+    'ZRZ',
+    'Zairo zairas (1971–1993)',
+    one: 'Zairo zairas (1971–1993)',
+    few: 'Zairo zairai (1971–1993)',
+    many: 'Zairo zairo (1971–1993)',
+    other: 'Zairo zairų (1971–1993)',
+  );
+  static const _zwd = Currency(
+    _cld,
+    'ZWD',
+    'Zimbabvės doleris (1980–2008)',
+    one: 'Zimbabvės doleris (1980–2008)',
+    few: 'Zimbabvės doleriai (1980–2008)',
+    many: 'Zimbabvės dolerio (1980–2008)',
+    other: 'Zimbabvės dolerių (1980–2008)',
+  );
+  static const _zwl = Currency(
+    _cld,
+    'ZWL',
+    'Zimbabvės doleris (2009)',
+    one: 'Zimbabvės doleris (2009)',
+    few: 'Zimbabvės doleriai (2009)',
+    many: 'Zimbabvės dolerio (2009)',
+    other: 'Zimbabvės dolerių (2009)',
+  );
+  static const _zwr = Currency(
+    _cld,
+    'ZWR',
+    'Zimbabvės doleris (2008)',
+    one: 'Zimbabvės doleris (2008)',
+    few: 'Zimbabvės doleriai (2008)',
+    many: 'Zimbabvės dolerio (2008)',
+    other: 'Zimbabvės dolerių (2008)',
+  );
 
   @override
   final unknownCurrency = _xxx;
@@ -18386,8 +19469,9 @@ class TimeZonesLt extends TimeZones {
     'America/Anguilla': TimeZoneNames(exemplarCity: 'Angilija'),
     'America/Antigua': TimeZoneNames(exemplarCity: 'Antigva'),
     'America/Araguaina': TimeZoneNames(exemplarCity: 'Aragvajana'),
-    'America/Argentina/Rio_Gallegos':
-        TimeZoneNames(exemplarCity: 'Rio Galjegosas'),
+    'America/Argentina/Rio_Gallegos': TimeZoneNames(
+      exemplarCity: 'Rio Galjegosas',
+    ),
     'America/Argentina/San_Juan': TimeZoneNames(exemplarCity: 'San Chuanas'),
     'America/Argentina/Ushuaia': TimeZoneNames(exemplarCity: 'Ušuaja'),
     'America/Argentina/La_Rioja': TimeZoneNames(exemplarCity: 'La Riocha'),
@@ -18440,15 +19524,19 @@ class TimeZonesLt extends TimeZones {
     'America/Guyana': TimeZoneNames(exemplarCity: 'Gvajana'),
     'America/Halifax': TimeZoneNames(exemplarCity: 'Halifaksas'),
     'America/Hermosillo': TimeZoneNames(exemplarCity: 'Hermosiljas'),
-    'America/Indiana/Vincennes':
-        TimeZoneNames(exemplarCity: 'Vinsenas, Indiana'),
-    'America/Indiana/Petersburg':
-        TimeZoneNames(exemplarCity: 'Pitersbergas, Indiana'),
-    'America/Indiana/Tell_City':
-        TimeZoneNames(exemplarCity: 'Tel Sitis, Indiana'),
+    'America/Indiana/Vincennes': TimeZoneNames(
+      exemplarCity: 'Vinsenas, Indiana',
+    ),
+    'America/Indiana/Petersburg': TimeZoneNames(
+      exemplarCity: 'Pitersbergas, Indiana',
+    ),
+    'America/Indiana/Tell_City': TimeZoneNames(
+      exemplarCity: 'Tel Sitis, Indiana',
+    ),
     'America/Indiana/Knox': TimeZoneNames(exemplarCity: 'Noksas, Indiana'),
-    'America/Indiana/Winamac':
-        TimeZoneNames(exemplarCity: 'Vinamakas, Indiana'),
+    'America/Indiana/Winamac': TimeZoneNames(
+      exemplarCity: 'Vinamakas, Indiana',
+    ),
     'America/Indiana/Marengo': TimeZoneNames(exemplarCity: 'Marengas, Indiana'),
     'America/Indiana/Vevay': TimeZoneNames(exemplarCity: 'Vivis, Indiana'),
     'America/Inuvik': TimeZoneNames(exemplarCity: 'Inuvikas'),
@@ -18456,14 +19544,16 @@ class TimeZonesLt extends TimeZones {
     'America/Jamaica': TimeZoneNames(exemplarCity: 'Jamaika'),
     'America/Jujuy': TimeZoneNames(exemplarCity: 'Chuchujus'),
     'America/Juneau': TimeZoneNames(exemplarCity: 'Džunas'),
-    'America/Kentucky/Monticello':
-        TimeZoneNames(exemplarCity: 'Montiselas, Kentukis'),
+    'America/Kentucky/Monticello': TimeZoneNames(
+      exemplarCity: 'Montiselas, Kentukis',
+    ),
     'America/Kralendijk': TimeZoneNames(exemplarCity: 'Kralendeikas'),
     'America/La_Paz': TimeZoneNames(exemplarCity: 'La Pasas'),
     'America/Los_Angeles': TimeZoneNames(exemplarCity: 'Los Andželas'),
     'America/Louisville': TimeZoneNames(exemplarCity: 'Luisvilis'),
-    'America/Lower_Princes':
-        TimeZoneNames(exemplarCity: 'Žemutinis Prinses Kvorteris'),
+    'America/Lower_Princes': TimeZoneNames(
+      exemplarCity: 'Žemutinis Prinses Kvorteris',
+    ),
     'America/Maceio': TimeZoneNames(exemplarCity: 'Masejo'),
     'America/Managua': TimeZoneNames(exemplarCity: 'Managva'),
     'America/Manaus': TimeZoneNames(exemplarCity: 'Manausas'),
@@ -18484,12 +19574,15 @@ class TimeZonesLt extends TimeZones {
     'America/New_York': TimeZoneNames(exemplarCity: 'Niujorkas'),
     'America/Nome': TimeZoneNames(exemplarCity: 'Nomas'),
     'America/Noronha': TimeZoneNames(exemplarCity: 'Noronja'),
-    'America/North_Dakota/Beulah':
-        TimeZoneNames(exemplarCity: 'Bjula, Šiaurės Dakota'),
-    'America/North_Dakota/New_Salem':
-        TimeZoneNames(exemplarCity: 'Niu Seilemas, Šiaurės Dakota'),
-    'America/North_Dakota/Center':
-        TimeZoneNames(exemplarCity: 'Senteris, Šiaurės Dakota'),
+    'America/North_Dakota/Beulah': TimeZoneNames(
+      exemplarCity: 'Bjula, Šiaurės Dakota',
+    ),
+    'America/North_Dakota/New_Salem': TimeZoneNames(
+      exemplarCity: 'Niu Seilemas, Šiaurės Dakota',
+    ),
+    'America/North_Dakota/Center': TimeZoneNames(
+      exemplarCity: 'Senteris, Šiaurės Dakota',
+    ),
     'America/Ojinaga': TimeZoneNames(exemplarCity: 'Ochinaga'),
     'America/Paramaribo': TimeZoneNames(exemplarCity: 'Paramaribas'),
     'America/Phoenix': TimeZoneNames(exemplarCity: 'Finiksas'),
@@ -18544,8 +19637,9 @@ class TimeZonesLt extends TimeZones {
     'Europe/Chisinau': TimeZoneNames(exemplarCity: 'Kišiniovas'),
     'Europe/Copenhagen': TimeZoneNames(exemplarCity: 'Kopenhaga'),
     'Europe/Dublin': TimeZoneNames(
-        exemplarCity: 'Dublinas',
-        long: TimeZoneName(daylight: 'Airijos vasaros laikas')),
+      exemplarCity: 'Dublinas',
+      long: TimeZoneName(daylight: 'Airijos vasaros laikas'),
+    ),
     'Europe/Gibraltar': TimeZoneNames(exemplarCity: 'Gibraltaras'),
     'Europe/Guernsey': TimeZoneNames(exemplarCity: 'Gernsis'),
     'Europe/Helsinki': TimeZoneNames(exemplarCity: 'Helsinkis'),
@@ -18558,8 +19652,9 @@ class TimeZonesLt extends TimeZones {
     'Europe/Lisbon': TimeZoneNames(exemplarCity: 'Lisabona'),
     'Europe/Ljubljana': TimeZoneNames(exemplarCity: 'Liubliana'),
     'Europe/London': TimeZoneNames(
-        exemplarCity: 'Londonas',
-        long: TimeZoneName(daylight: 'Britanijos vasaros laikas')),
+      exemplarCity: 'Londonas',
+      long: TimeZoneName(daylight: 'Britanijos vasaros laikas'),
+    ),
     'Europe/Luxembourg': TimeZoneNames(exemplarCity: 'Liuksemburgas'),
     'Europe/Madrid': TimeZoneNames(exemplarCity: 'Madridas'),
     'Europe/Mariehamn': TimeZoneNames(exemplarCity: 'Marianhamina'),
@@ -18773,8 +19868,9 @@ class TimeZonesLt extends TimeZones {
     'Arctic/Longyearbyen': TimeZoneNames(exemplarCity: 'Longjyrbienas'),
     'Antarctica/Casey': TimeZoneNames(exemplarCity: 'Keisis'),
     'Antarctica/Davis': TimeZoneNames(exemplarCity: 'Deivisas'),
-    'Antarctica/DumontDUrville':
-        TimeZoneNames(exemplarCity: 'Diumonas d’Urvilis'),
+    'Antarctica/DumontDUrville': TimeZoneNames(
+      exemplarCity: 'Diumonas d’Urvilis',
+    ),
     'Antarctica/Macquarie': TimeZoneNames(exemplarCity: 'Makvoris'),
     'Antarctica/Mawson': TimeZoneNames(exemplarCity: 'Mosonas'),
     'Antarctica/McMurdo': TimeZoneNames(exemplarCity: 'Makmerdas'),
@@ -18784,8 +19880,9 @@ class TimeZonesLt extends TimeZones {
     'Antarctica/Troll': TimeZoneNames(exemplarCity: 'Trolis'),
     'Antarctica/Vostok': TimeZoneNames(exemplarCity: 'Vostokas'),
     'Etc/UTC': TimeZoneNames(
-        long: TimeZoneName(standard: 'pasaulio suderintasis laikas'),
-        short: TimeZoneName(standard: 'UTC')),
+      long: TimeZoneName(standard: 'pasaulio suderintasis laikas'),
+      short: TimeZoneName(standard: 'UTC'),
+    ),
     'Etc/Unknown': TimeZoneNames(exemplarCity: 'nežinomas miestas'),
   };
 
@@ -18793,559 +19890,925 @@ class TimeZonesLt extends TimeZones {
   Map<String, MetaZone> get metaZoneNames => staticMetaZoneNames;
 
   static const staticMetaZoneNames = <String, MetaZone>{
-    'Acre': MetaZone('Acre',
-        long: TimeZoneName(
-            generic: 'Ako laikas',
-            standard: 'Ako standartinis laikas',
-            daylight: 'Ako vasaros laikas')),
-    'Afghanistan': MetaZone('Afghanistan',
-        long: TimeZoneName(standard: 'Afganistano laikas')),
-    'Africa_Central': MetaZone('Africa_Central',
-        long: TimeZoneName(standard: 'Centrinės Afrikos laikas')),
-    'Africa_Eastern': MetaZone('Africa_Eastern',
-        long: TimeZoneName(standard: 'Rytų Afrikos laikas')),
-    'Africa_Southern': MetaZone('Africa_Southern',
-        long: TimeZoneName(standard: 'Pietų Afrikos laikas')),
-    'Africa_Western': MetaZone('Africa_Western',
-        long: TimeZoneName(
-            generic: 'Vakarų Afrikos laikas',
-            standard: 'Vakarų Afrikos žiemos laikas',
-            daylight: 'Vakarų Afrikos vasaros laikas')),
-    'Alaska': MetaZone('Alaska',
-        long: TimeZoneName(
-            generic: 'Aliaskos laikas',
-            standard: 'Aliaskos žiemos laikas',
-            daylight: 'Aliaskos vasaros laikas')),
-    'Almaty': MetaZone('Almaty',
-        long: TimeZoneName(
-            generic: 'Almatos laikas',
-            standard: 'Almatos žiemos laikas',
-            daylight: 'Almatos vasaros laikas')),
-    'Amazon': MetaZone('Amazon',
-        long: TimeZoneName(
-            generic: 'Amazonės laikas',
-            standard: 'Amazonės žiemos laikas',
-            daylight: 'Amazonės vasaros laikas')),
-    'America_Central': MetaZone('America_Central',
-        long: TimeZoneName(
-            generic: 'Šiaurės Amerikos centro laikas',
-            standard: 'Šiaurės Amerikos centro žiemos laikas',
-            daylight: 'Šiaurės Amerikos centro vasaros laikas')),
-    'America_Eastern': MetaZone('America_Eastern',
-        long: TimeZoneName(
-            generic: 'Šiaurės Amerikos rytų laikas',
-            standard: 'Šiaurės Amerikos rytų žiemos laikas',
-            daylight: 'Šiaurės Amerikos rytų vasaros laikas')),
-    'America_Mountain': MetaZone('America_Mountain',
-        long: TimeZoneName(
-            generic: 'Šiaurės Amerikos kalnų laikas',
-            standard: 'Šiaurės Amerikos kalnų žiemos laikas',
-            daylight: 'Šiaurės Amerikos kalnų vasaros laikas')),
-    'America_Pacific': MetaZone('America_Pacific',
-        long: TimeZoneName(
-            generic: 'Šiaurės Amerikos Ramiojo vandenyno laikas',
-            standard: 'Šiaurės Amerikos Ramiojo vandenyno žiemos laikas',
-            daylight: 'Šiaurės Amerikos Ramiojo vandenyno vasaros laikas')),
-    'Anadyr': MetaZone('Anadyr',
-        long: TimeZoneName(
-            generic: 'Anadyrės laikas',
-            standard: 'Anadyrės žiemos laikas',
-            daylight: 'Anadyrės vasaros laikas')),
-    'Apia': MetaZone('Apia',
-        long: TimeZoneName(
-            generic: 'Apijos laikas',
-            standard: 'Apijos žiemos laikas',
-            daylight: 'Apijos vasaros laikas')),
-    'Aqtau': MetaZone('Aqtau',
-        long: TimeZoneName(
-            generic: 'Aktau laikas',
-            standard: 'Aktau žiemos laikas',
-            daylight: 'Aktau vasaros laikas')),
-    'Aqtobe': MetaZone('Aqtobe',
-        long: TimeZoneName(
-            generic: 'Aktobės laikas',
-            standard: 'Aktobės žiemos laikas',
-            daylight: 'Aktobės vasaros laikas')),
-    'Arabian': MetaZone('Arabian',
-        long: TimeZoneName(
-            generic: 'Arabijos laikas',
-            standard: 'Arabijos žiemos laikas',
-            daylight: 'Arabijos vasaros laikas')),
-    'Argentina': MetaZone('Argentina',
-        long: TimeZoneName(
-            generic: 'Argentinos laikas',
-            standard: 'Argentinos žiemos laikas',
-            daylight: 'Argentinos vasaros laikas')),
-    'Argentina_Western': MetaZone('Argentina_Western',
-        long: TimeZoneName(
-            generic: 'Vakarų Argentinos laikas',
-            standard: 'Vakarų Argentinos žiemos laikas',
-            daylight: 'Vakarų Argentinos vasaros laikas')),
-    'Armenia': MetaZone('Armenia',
-        long: TimeZoneName(
-            generic: 'Armėnijos laikas',
-            standard: 'Armėnijos žiemos laikas',
-            daylight: 'Armėnijos vasaros laikas')),
-    'Atlantic': MetaZone('Atlantic',
-        long: TimeZoneName(
-            generic: 'Atlanto laikas',
-            standard: 'Atlanto žiemos laikas',
-            daylight: 'Atlanto vasaros laikas')),
-    'Australia_Central': MetaZone('Australia_Central',
-        long: TimeZoneName(
-            generic: 'Centrinės Australijos laikas',
-            standard: 'Centrinės Australijos žiemos laikas',
-            daylight: 'Centrinės Australijos vasaros laikas')),
-    'Australia_CentralWestern': MetaZone('Australia_CentralWestern',
-        long: TimeZoneName(
-            generic: 'Centrinės vakarų Australijos laikas',
-            standard: 'Centrinės vakarų Australijos žiemos laikas',
-            daylight: 'Centrinės vakarų Australijos vasaros laikas')),
-    'Australia_Eastern': MetaZone('Australia_Eastern',
-        long: TimeZoneName(
-            generic: 'Rytų Australijos laikas',
-            standard: 'Rytų Australijos žiemos laikas',
-            daylight: 'Rytų Australijos vasaros laikas')),
-    'Australia_Western': MetaZone('Australia_Western',
-        long: TimeZoneName(
-            generic: 'Vakarų Australijos laikas',
-            standard: 'Vakarų Australijos žiemos laikas',
-            daylight: 'Vakarų Australijos vasaros laikas')),
-    'Azerbaijan': MetaZone('Azerbaijan',
-        long: TimeZoneName(
-            generic: 'Azerbaidžano laikas',
-            standard: 'Azerbaidžano žiemos laikas',
-            daylight: 'Azerbaidžano vasaros laikas')),
-    'Azores': MetaZone('Azores',
-        long: TimeZoneName(
-            generic: 'Azorų Salų laikas',
-            standard: 'Azorų Salų žiemos laikas',
-            daylight: 'Azorų Salų vasaros laikas')),
-    'Bangladesh': MetaZone('Bangladesh',
-        long: TimeZoneName(
-            generic: 'Bangladešo laikas',
-            standard: 'Bangladešo žiemos laikas',
-            daylight: 'Bangladešo vasaros laikas')),
+    'Acre': MetaZone(
+      'Acre',
+      long: TimeZoneName(
+        generic: 'Ako laikas',
+        standard: 'Ako standartinis laikas',
+        daylight: 'Ako vasaros laikas',
+      ),
+    ),
+    'Afghanistan': MetaZone(
+      'Afghanistan',
+      long: TimeZoneName(standard: 'Afganistano laikas'),
+    ),
+    'Africa_Central': MetaZone(
+      'Africa_Central',
+      long: TimeZoneName(standard: 'Centrinės Afrikos laikas'),
+    ),
+    'Africa_Eastern': MetaZone(
+      'Africa_Eastern',
+      long: TimeZoneName(standard: 'Rytų Afrikos laikas'),
+    ),
+    'Africa_Southern': MetaZone(
+      'Africa_Southern',
+      long: TimeZoneName(standard: 'Pietų Afrikos laikas'),
+    ),
+    'Africa_Western': MetaZone(
+      'Africa_Western',
+      long: TimeZoneName(
+        generic: 'Vakarų Afrikos laikas',
+        standard: 'Vakarų Afrikos žiemos laikas',
+        daylight: 'Vakarų Afrikos vasaros laikas',
+      ),
+    ),
+    'Alaska': MetaZone(
+      'Alaska',
+      long: TimeZoneName(
+        generic: 'Aliaskos laikas',
+        standard: 'Aliaskos žiemos laikas',
+        daylight: 'Aliaskos vasaros laikas',
+      ),
+    ),
+    'Almaty': MetaZone(
+      'Almaty',
+      long: TimeZoneName(
+        generic: 'Almatos laikas',
+        standard: 'Almatos žiemos laikas',
+        daylight: 'Almatos vasaros laikas',
+      ),
+    ),
+    'Amazon': MetaZone(
+      'Amazon',
+      long: TimeZoneName(
+        generic: 'Amazonės laikas',
+        standard: 'Amazonės žiemos laikas',
+        daylight: 'Amazonės vasaros laikas',
+      ),
+    ),
+    'America_Central': MetaZone(
+      'America_Central',
+      long: TimeZoneName(
+        generic: 'Šiaurės Amerikos centro laikas',
+        standard: 'Šiaurės Amerikos centro žiemos laikas',
+        daylight: 'Šiaurės Amerikos centro vasaros laikas',
+      ),
+    ),
+    'America_Eastern': MetaZone(
+      'America_Eastern',
+      long: TimeZoneName(
+        generic: 'Šiaurės Amerikos rytų laikas',
+        standard: 'Šiaurės Amerikos rytų žiemos laikas',
+        daylight: 'Šiaurės Amerikos rytų vasaros laikas',
+      ),
+    ),
+    'America_Mountain': MetaZone(
+      'America_Mountain',
+      long: TimeZoneName(
+        generic: 'Šiaurės Amerikos kalnų laikas',
+        standard: 'Šiaurės Amerikos kalnų žiemos laikas',
+        daylight: 'Šiaurės Amerikos kalnų vasaros laikas',
+      ),
+    ),
+    'America_Pacific': MetaZone(
+      'America_Pacific',
+      long: TimeZoneName(
+        generic: 'Šiaurės Amerikos Ramiojo vandenyno laikas',
+        standard: 'Šiaurės Amerikos Ramiojo vandenyno žiemos laikas',
+        daylight: 'Šiaurės Amerikos Ramiojo vandenyno vasaros laikas',
+      ),
+    ),
+    'Anadyr': MetaZone(
+      'Anadyr',
+      long: TimeZoneName(
+        generic: 'Anadyrės laikas',
+        standard: 'Anadyrės žiemos laikas',
+        daylight: 'Anadyrės vasaros laikas',
+      ),
+    ),
+    'Apia': MetaZone(
+      'Apia',
+      long: TimeZoneName(
+        generic: 'Apijos laikas',
+        standard: 'Apijos žiemos laikas',
+        daylight: 'Apijos vasaros laikas',
+      ),
+    ),
+    'Aqtau': MetaZone(
+      'Aqtau',
+      long: TimeZoneName(
+        generic: 'Aktau laikas',
+        standard: 'Aktau žiemos laikas',
+        daylight: 'Aktau vasaros laikas',
+      ),
+    ),
+    'Aqtobe': MetaZone(
+      'Aqtobe',
+      long: TimeZoneName(
+        generic: 'Aktobės laikas',
+        standard: 'Aktobės žiemos laikas',
+        daylight: 'Aktobės vasaros laikas',
+      ),
+    ),
+    'Arabian': MetaZone(
+      'Arabian',
+      long: TimeZoneName(
+        generic: 'Arabijos laikas',
+        standard: 'Arabijos žiemos laikas',
+        daylight: 'Arabijos vasaros laikas',
+      ),
+    ),
+    'Argentina': MetaZone(
+      'Argentina',
+      long: TimeZoneName(
+        generic: 'Argentinos laikas',
+        standard: 'Argentinos žiemos laikas',
+        daylight: 'Argentinos vasaros laikas',
+      ),
+    ),
+    'Argentina_Western': MetaZone(
+      'Argentina_Western',
+      long: TimeZoneName(
+        generic: 'Vakarų Argentinos laikas',
+        standard: 'Vakarų Argentinos žiemos laikas',
+        daylight: 'Vakarų Argentinos vasaros laikas',
+      ),
+    ),
+    'Armenia': MetaZone(
+      'Armenia',
+      long: TimeZoneName(
+        generic: 'Armėnijos laikas',
+        standard: 'Armėnijos žiemos laikas',
+        daylight: 'Armėnijos vasaros laikas',
+      ),
+    ),
+    'Atlantic': MetaZone(
+      'Atlantic',
+      long: TimeZoneName(
+        generic: 'Atlanto laikas',
+        standard: 'Atlanto žiemos laikas',
+        daylight: 'Atlanto vasaros laikas',
+      ),
+    ),
+    'Australia_Central': MetaZone(
+      'Australia_Central',
+      long: TimeZoneName(
+        generic: 'Centrinės Australijos laikas',
+        standard: 'Centrinės Australijos žiemos laikas',
+        daylight: 'Centrinės Australijos vasaros laikas',
+      ),
+    ),
+    'Australia_CentralWestern': MetaZone(
+      'Australia_CentralWestern',
+      long: TimeZoneName(
+        generic: 'Centrinės vakarų Australijos laikas',
+        standard: 'Centrinės vakarų Australijos žiemos laikas',
+        daylight: 'Centrinės vakarų Australijos vasaros laikas',
+      ),
+    ),
+    'Australia_Eastern': MetaZone(
+      'Australia_Eastern',
+      long: TimeZoneName(
+        generic: 'Rytų Australijos laikas',
+        standard: 'Rytų Australijos žiemos laikas',
+        daylight: 'Rytų Australijos vasaros laikas',
+      ),
+    ),
+    'Australia_Western': MetaZone(
+      'Australia_Western',
+      long: TimeZoneName(
+        generic: 'Vakarų Australijos laikas',
+        standard: 'Vakarų Australijos žiemos laikas',
+        daylight: 'Vakarų Australijos vasaros laikas',
+      ),
+    ),
+    'Azerbaijan': MetaZone(
+      'Azerbaijan',
+      long: TimeZoneName(
+        generic: 'Azerbaidžano laikas',
+        standard: 'Azerbaidžano žiemos laikas',
+        daylight: 'Azerbaidžano vasaros laikas',
+      ),
+    ),
+    'Azores': MetaZone(
+      'Azores',
+      long: TimeZoneName(
+        generic: 'Azorų Salų laikas',
+        standard: 'Azorų Salų žiemos laikas',
+        daylight: 'Azorų Salų vasaros laikas',
+      ),
+    ),
+    'Bangladesh': MetaZone(
+      'Bangladesh',
+      long: TimeZoneName(
+        generic: 'Bangladešo laikas',
+        standard: 'Bangladešo žiemos laikas',
+        daylight: 'Bangladešo vasaros laikas',
+      ),
+    ),
     'Bhutan': MetaZone('Bhutan', long: TimeZoneName(standard: 'Butano laikas')),
-    'Bolivia':
-        MetaZone('Bolivia', long: TimeZoneName(standard: 'Bolivijos laikas')),
-    'Brasilia': MetaZone('Brasilia',
-        long: TimeZoneName(
-            generic: 'Brazilijos laikas',
-            standard: 'Brazilijos žiemos laikas',
-            daylight: 'Brazilijos vasaros laikas')),
-    'Brunei': MetaZone('Brunei',
-        long: TimeZoneName(standard: 'Brunėjaus Darusalamo laikas')),
-    'Cape_Verde': MetaZone('Cape_Verde',
-        long: TimeZoneName(
-            generic: 'Žaliojo Kyšulio laikas',
-            standard: 'Žaliojo Kyšulio žiemos laikas',
-            daylight: 'Žaliojo Kyšulio vasaros laikas')),
+    'Bolivia': MetaZone(
+      'Bolivia',
+      long: TimeZoneName(standard: 'Bolivijos laikas'),
+    ),
+    'Brasilia': MetaZone(
+      'Brasilia',
+      long: TimeZoneName(
+        generic: 'Brazilijos laikas',
+        standard: 'Brazilijos žiemos laikas',
+        daylight: 'Brazilijos vasaros laikas',
+      ),
+    ),
+    'Brunei': MetaZone(
+      'Brunei',
+      long: TimeZoneName(standard: 'Brunėjaus Darusalamo laikas'),
+    ),
+    'Cape_Verde': MetaZone(
+      'Cape_Verde',
+      long: TimeZoneName(
+        generic: 'Žaliojo Kyšulio laikas',
+        standard: 'Žaliojo Kyšulio žiemos laikas',
+        daylight: 'Žaliojo Kyšulio vasaros laikas',
+      ),
+    ),
     'Casey': MetaZone('Casey', long: TimeZoneName(standard: 'Keisio laikas')),
-    'Chamorro':
-        MetaZone('Chamorro', long: TimeZoneName(standard: 'Čamoro laikas')),
-    'Chatham': MetaZone('Chatham',
-        long: TimeZoneName(
-            generic: 'Čatamo laikas',
-            standard: 'Čatamo žiemos laikas',
-            daylight: 'Čatamo vasaros laikas')),
-    'Chile': MetaZone('Chile',
-        long: TimeZoneName(
-            generic: 'Čilės laikas',
-            standard: 'Čilės žiemos laikas',
-            daylight: 'Čilės vasaros laikas')),
-    'China': MetaZone('China',
-        long: TimeZoneName(
-            generic: 'Kinijos laikas',
-            standard: 'Kinijos žiemos laikas',
-            daylight: 'Kinijos vasaros laikas')),
-    'Christmas': MetaZone('Christmas',
-        long: TimeZoneName(standard: 'Kalėdų Salos laikas')),
-    'Cocos':
-        MetaZone('Cocos', long: TimeZoneName(standard: 'Kokosų Salų laikas')),
-    'Colombia': MetaZone('Colombia',
-        long: TimeZoneName(
-            generic: 'Kolumbijos laikas',
-            standard: 'Kolumbijos žiemos laikas',
-            daylight: 'Kolumbijos vasaros laikas')),
-    'Cook': MetaZone('Cook',
-        long: TimeZoneName(
-            generic: 'Kuko Salų laikas',
-            standard: 'Kuko Salų žiemos laikas',
-            daylight: 'Kuko Salų pusės vasaros laikas')),
-    'Cuba': MetaZone('Cuba',
-        long: TimeZoneName(
-            generic: 'Kubos laikas',
-            standard: 'Kubos žiemos laikas',
-            daylight: 'Kubos vasaros laikas')),
+    'Chamorro': MetaZone(
+      'Chamorro',
+      long: TimeZoneName(standard: 'Čamoro laikas'),
+    ),
+    'Chatham': MetaZone(
+      'Chatham',
+      long: TimeZoneName(
+        generic: 'Čatamo laikas',
+        standard: 'Čatamo žiemos laikas',
+        daylight: 'Čatamo vasaros laikas',
+      ),
+    ),
+    'Chile': MetaZone(
+      'Chile',
+      long: TimeZoneName(
+        generic: 'Čilės laikas',
+        standard: 'Čilės žiemos laikas',
+        daylight: 'Čilės vasaros laikas',
+      ),
+    ),
+    'China': MetaZone(
+      'China',
+      long: TimeZoneName(
+        generic: 'Kinijos laikas',
+        standard: 'Kinijos žiemos laikas',
+        daylight: 'Kinijos vasaros laikas',
+      ),
+    ),
+    'Christmas': MetaZone(
+      'Christmas',
+      long: TimeZoneName(standard: 'Kalėdų Salos laikas'),
+    ),
+    'Cocos': MetaZone(
+      'Cocos',
+      long: TimeZoneName(standard: 'Kokosų Salų laikas'),
+    ),
+    'Colombia': MetaZone(
+      'Colombia',
+      long: TimeZoneName(
+        generic: 'Kolumbijos laikas',
+        standard: 'Kolumbijos žiemos laikas',
+        daylight: 'Kolumbijos vasaros laikas',
+      ),
+    ),
+    'Cook': MetaZone(
+      'Cook',
+      long: TimeZoneName(
+        generic: 'Kuko Salų laikas',
+        standard: 'Kuko Salų žiemos laikas',
+        daylight: 'Kuko Salų pusės vasaros laikas',
+      ),
+    ),
+    'Cuba': MetaZone(
+      'Cuba',
+      long: TimeZoneName(
+        generic: 'Kubos laikas',
+        standard: 'Kubos žiemos laikas',
+        daylight: 'Kubos vasaros laikas',
+      ),
+    ),
     'Davis': MetaZone('Davis', long: TimeZoneName(standard: 'Deiviso laikas')),
-    'DumontDUrville': MetaZone('DumontDUrville',
-        long: TimeZoneName(standard: 'Diumono d’Urvilio laikas')),
-    'East_Timor': MetaZone('East_Timor',
-        long: TimeZoneName(standard: 'Rytų Timoro laikas')),
-    'Easter': MetaZone('Easter',
-        long: TimeZoneName(
-            generic: 'Velykų Salos laikas',
-            standard: 'Velykų salos žiemos laikas',
-            daylight: 'Velykų Salos vasaros laikas')),
-    'Ecuador':
-        MetaZone('Ecuador', long: TimeZoneName(standard: 'Ekvadoro laikas')),
-    'Europe_Central': MetaZone('Europe_Central',
-        long: TimeZoneName(
-            generic: 'Vidurio Europos laikas',
-            standard: 'Vidurio Europos žiemos laikas',
-            daylight: 'Vidurio Europos vasaros laikas')),
-    'Europe_Eastern': MetaZone('Europe_Eastern',
-        long: TimeZoneName(
-            generic: 'Rytų Europos laikas',
-            standard: 'Rytų Europos žiemos laikas',
-            daylight: 'Rytų Europos vasaros laikas')),
-    'Europe_Further_Eastern': MetaZone('Europe_Further_Eastern',
-        long: TimeZoneName(standard: 'Tolimųjų rytų Europos laikas')),
-    'Europe_Western': MetaZone('Europe_Western',
-        long: TimeZoneName(
-            generic: 'Vakarų Europos laikas',
-            standard: 'Vakarų Europos žiemos laikas',
-            daylight: 'Vakarų Europos vasaros laikas')),
-    'Falkland': MetaZone('Falkland',
-        long: TimeZoneName(
-            generic: 'Folklando Salų laikas',
-            standard: 'Folklandų Salų žiemos laikas',
-            daylight: 'Folklando Salų vasaros laikas')),
-    'Fiji': MetaZone('Fiji',
-        long: TimeZoneName(
-            generic: 'Fidžio laikas',
-            standard: 'Fidžio žiemos laikas',
-            daylight: 'Fidžio vasaros laikas')),
-    'French_Guiana': MetaZone('French_Guiana',
-        long: TimeZoneName(standard: 'Prancūzijos Gvianos laikas')),
-    'French_Southern': MetaZone('French_Southern',
-        long:
-            TimeZoneName(standard: 'Pietų Prancūzijos ir antarktinis laikas')),
-    'Galapagos':
-        MetaZone('Galapagos', long: TimeZoneName(standard: 'Galapagų laikas')),
-    'Gambier':
-        MetaZone('Gambier', long: TimeZoneName(standard: 'Gambyro laikas')),
-    'Georgia': MetaZone('Georgia',
-        long: TimeZoneName(
-            generic: 'Gruzijos laikas',
-            standard: 'Gruzijos žiemos laikas',
-            daylight: 'Gruzijos vasaros laikas')),
-    'Gilbert_Islands': MetaZone('Gilbert_Islands',
-        long: TimeZoneName(standard: 'Gilberto Salų laikas')),
+    'DumontDUrville': MetaZone(
+      'DumontDUrville',
+      long: TimeZoneName(standard: 'Diumono d’Urvilio laikas'),
+    ),
+    'East_Timor': MetaZone(
+      'East_Timor',
+      long: TimeZoneName(standard: 'Rytų Timoro laikas'),
+    ),
+    'Easter': MetaZone(
+      'Easter',
+      long: TimeZoneName(
+        generic: 'Velykų Salos laikas',
+        standard: 'Velykų salos žiemos laikas',
+        daylight: 'Velykų Salos vasaros laikas',
+      ),
+    ),
+    'Ecuador': MetaZone(
+      'Ecuador',
+      long: TimeZoneName(standard: 'Ekvadoro laikas'),
+    ),
+    'Europe_Central': MetaZone(
+      'Europe_Central',
+      long: TimeZoneName(
+        generic: 'Vidurio Europos laikas',
+        standard: 'Vidurio Europos žiemos laikas',
+        daylight: 'Vidurio Europos vasaros laikas',
+      ),
+    ),
+    'Europe_Eastern': MetaZone(
+      'Europe_Eastern',
+      long: TimeZoneName(
+        generic: 'Rytų Europos laikas',
+        standard: 'Rytų Europos žiemos laikas',
+        daylight: 'Rytų Europos vasaros laikas',
+      ),
+    ),
+    'Europe_Further_Eastern': MetaZone(
+      'Europe_Further_Eastern',
+      long: TimeZoneName(standard: 'Tolimųjų rytų Europos laikas'),
+    ),
+    'Europe_Western': MetaZone(
+      'Europe_Western',
+      long: TimeZoneName(
+        generic: 'Vakarų Europos laikas',
+        standard: 'Vakarų Europos žiemos laikas',
+        daylight: 'Vakarų Europos vasaros laikas',
+      ),
+    ),
+    'Falkland': MetaZone(
+      'Falkland',
+      long: TimeZoneName(
+        generic: 'Folklando Salų laikas',
+        standard: 'Folklandų Salų žiemos laikas',
+        daylight: 'Folklando Salų vasaros laikas',
+      ),
+    ),
+    'Fiji': MetaZone(
+      'Fiji',
+      long: TimeZoneName(
+        generic: 'Fidžio laikas',
+        standard: 'Fidžio žiemos laikas',
+        daylight: 'Fidžio vasaros laikas',
+      ),
+    ),
+    'French_Guiana': MetaZone(
+      'French_Guiana',
+      long: TimeZoneName(standard: 'Prancūzijos Gvianos laikas'),
+    ),
+    'French_Southern': MetaZone(
+      'French_Southern',
+      long: TimeZoneName(standard: 'Pietų Prancūzijos ir antarktinis laikas'),
+    ),
+    'Galapagos': MetaZone(
+      'Galapagos',
+      long: TimeZoneName(standard: 'Galapagų laikas'),
+    ),
+    'Gambier': MetaZone(
+      'Gambier',
+      long: TimeZoneName(standard: 'Gambyro laikas'),
+    ),
+    'Georgia': MetaZone(
+      'Georgia',
+      long: TimeZoneName(
+        generic: 'Gruzijos laikas',
+        standard: 'Gruzijos žiemos laikas',
+        daylight: 'Gruzijos vasaros laikas',
+      ),
+    ),
+    'Gilbert_Islands': MetaZone(
+      'Gilbert_Islands',
+      long: TimeZoneName(standard: 'Gilberto Salų laikas'),
+    ),
     'GMT': MetaZone('GMT', long: TimeZoneName(standard: 'Grinvičo laikas')),
-    'Greenland_Eastern': MetaZone('Greenland_Eastern',
-        long: TimeZoneName(
-            generic: 'Grenlandijos rytų laikas',
-            standard: 'Grenlandijos rytų žiemos laikas',
-            daylight: 'Grenlandijos rytų vasaros laikas')),
-    'Greenland_Western': MetaZone('Greenland_Western',
-        long: TimeZoneName(
-            generic: 'Grenlandijos vakarų laikas',
-            standard: 'Grenlandijos vakarų žiemos laikas',
-            daylight: 'Grenlandijos vakarų vasaros laikas')),
+    'Greenland_Eastern': MetaZone(
+      'Greenland_Eastern',
+      long: TimeZoneName(
+        generic: 'Grenlandijos rytų laikas',
+        standard: 'Grenlandijos rytų žiemos laikas',
+        daylight: 'Grenlandijos rytų vasaros laikas',
+      ),
+    ),
+    'Greenland_Western': MetaZone(
+      'Greenland_Western',
+      long: TimeZoneName(
+        generic: 'Grenlandijos vakarų laikas',
+        standard: 'Grenlandijos vakarų žiemos laikas',
+        daylight: 'Grenlandijos vakarų vasaros laikas',
+      ),
+    ),
     'Guam': MetaZone('Guam', long: TimeZoneName(standard: 'Guamo laikas')),
-    'Gulf': MetaZone('Gulf',
-        long: TimeZoneName(standard: 'Persijos įlankos laikas')),
-    'Guyana':
-        MetaZone('Guyana', long: TimeZoneName(standard: 'Gajanos laikas')),
-    'Hawaii_Aleutian': MetaZone('Hawaii_Aleutian',
-        long: TimeZoneName(
-            generic: 'Havajų-Aleutų laikas',
-            standard: 'Havajų–Aleutų žiemos laikas',
-            daylight: 'Havajų–Aleutų vasaros laikas')),
-    'Hong_Kong': MetaZone('Hong_Kong',
-        long: TimeZoneName(
-            generic: 'Honkongo laikas',
-            standard: 'Honkongo žiemos laikas',
-            daylight: 'Honkongo vasaros laikas')),
-    'Hovd': MetaZone('Hovd',
-        long: TimeZoneName(
-            generic: 'Hovdo laikas',
-            standard: 'Hovdo žiemos laikas',
-            daylight: 'Hovdo vasaros laikas')),
+    'Gulf': MetaZone(
+      'Gulf',
+      long: TimeZoneName(standard: 'Persijos įlankos laikas'),
+    ),
+    'Guyana': MetaZone(
+      'Guyana',
+      long: TimeZoneName(standard: 'Gajanos laikas'),
+    ),
+    'Hawaii_Aleutian': MetaZone(
+      'Hawaii_Aleutian',
+      long: TimeZoneName(
+        generic: 'Havajų-Aleutų laikas',
+        standard: 'Havajų–Aleutų žiemos laikas',
+        daylight: 'Havajų–Aleutų vasaros laikas',
+      ),
+    ),
+    'Hong_Kong': MetaZone(
+      'Hong_Kong',
+      long: TimeZoneName(
+        generic: 'Honkongo laikas',
+        standard: 'Honkongo žiemos laikas',
+        daylight: 'Honkongo vasaros laikas',
+      ),
+    ),
+    'Hovd': MetaZone(
+      'Hovd',
+      long: TimeZoneName(
+        generic: 'Hovdo laikas',
+        standard: 'Hovdo žiemos laikas',
+        daylight: 'Hovdo vasaros laikas',
+      ),
+    ),
     'India': MetaZone('India', long: TimeZoneName(standard: 'Indijos laikas')),
-    'Indian_Ocean': MetaZone('Indian_Ocean',
-        long: TimeZoneName(standard: 'Indijos vandenyno laikas')),
-    'Indochina': MetaZone('Indochina',
-        long: TimeZoneName(standard: 'Indokinijos laikas')),
-    'Indonesia_Central': MetaZone('Indonesia_Central',
-        long: TimeZoneName(standard: 'Centrinės Indonezijos laikas')),
-    'Indonesia_Eastern': MetaZone('Indonesia_Eastern',
-        long: TimeZoneName(standard: 'Rytų Indonezijos laikas')),
-    'Indonesia_Western': MetaZone('Indonesia_Western',
-        long: TimeZoneName(standard: 'Vakarų Indonezijos laikas')),
-    'Iran': MetaZone('Iran',
-        long: TimeZoneName(
-            generic: 'Irano laikas',
-            standard: 'Irano žiemos laikas',
-            daylight: 'Irano vasaros laikas')),
-    'Irkutsk': MetaZone('Irkutsk',
-        long: TimeZoneName(
-            generic: 'Irkutsko laikas',
-            standard: 'Irkutsko žiemos laikas',
-            daylight: 'Irkutsko vasaros laikas')),
-    'Israel': MetaZone('Israel',
-        long: TimeZoneName(
-            generic: 'Izraelio laikas',
-            standard: 'Izraelio žiemos laikas',
-            daylight: 'Izraelio vasaros laikas')),
-    'Japan': MetaZone('Japan',
-        long: TimeZoneName(
-            generic: 'Japonijos laikas',
-            standard: 'Japonijos žiemos laikas',
-            daylight: 'Japonijos vasaros laikas')),
-    'Kamchatka': MetaZone('Kamchatka',
-        long: TimeZoneName(
-            generic: 'Kamčiatkos Petropavlovsko laikas',
-            standard: 'Kamčiatkos Petropavlovsko žiemos laikas',
-            daylight: 'Kamčiatkos Petropavlovsko vasaros laikas')),
-    'Kazakhstan': MetaZone('Kazakhstan',
-        long: TimeZoneName(standard: 'Kazachstano laikas')),
-    'Kazakhstan_Eastern': MetaZone('Kazakhstan_Eastern',
-        long: TimeZoneName(standard: 'Rytų Kazachstano laikas')),
-    'Kazakhstan_Western': MetaZone('Kazakhstan_Western',
-        long: TimeZoneName(standard: 'Vakarų Kazachstano laikas')),
-    'Korea': MetaZone('Korea',
-        long: TimeZoneName(
-            generic: 'Korėjos laikas',
-            standard: 'Korėjos žiemos laikas',
-            daylight: 'Korėjos vasaros laikas')),
-    'Kosrae':
-        MetaZone('Kosrae', long: TimeZoneName(standard: 'Kosrajė laikas')),
-    'Krasnoyarsk': MetaZone('Krasnoyarsk',
-        long: TimeZoneName(
-            generic: 'Krasnojarsko laikas',
-            standard: 'Krasnojarsko žiemos laikas',
-            daylight: 'Krasnojarsko vasaros laikas')),
-    'Kyrgystan': MetaZone('Kyrgystan',
-        long: TimeZoneName(standard: 'Kirgistano laikas')),
+    'Indian_Ocean': MetaZone(
+      'Indian_Ocean',
+      long: TimeZoneName(standard: 'Indijos vandenyno laikas'),
+    ),
+    'Indochina': MetaZone(
+      'Indochina',
+      long: TimeZoneName(standard: 'Indokinijos laikas'),
+    ),
+    'Indonesia_Central': MetaZone(
+      'Indonesia_Central',
+      long: TimeZoneName(standard: 'Centrinės Indonezijos laikas'),
+    ),
+    'Indonesia_Eastern': MetaZone(
+      'Indonesia_Eastern',
+      long: TimeZoneName(standard: 'Rytų Indonezijos laikas'),
+    ),
+    'Indonesia_Western': MetaZone(
+      'Indonesia_Western',
+      long: TimeZoneName(standard: 'Vakarų Indonezijos laikas'),
+    ),
+    'Iran': MetaZone(
+      'Iran',
+      long: TimeZoneName(
+        generic: 'Irano laikas',
+        standard: 'Irano žiemos laikas',
+        daylight: 'Irano vasaros laikas',
+      ),
+    ),
+    'Irkutsk': MetaZone(
+      'Irkutsk',
+      long: TimeZoneName(
+        generic: 'Irkutsko laikas',
+        standard: 'Irkutsko žiemos laikas',
+        daylight: 'Irkutsko vasaros laikas',
+      ),
+    ),
+    'Israel': MetaZone(
+      'Israel',
+      long: TimeZoneName(
+        generic: 'Izraelio laikas',
+        standard: 'Izraelio žiemos laikas',
+        daylight: 'Izraelio vasaros laikas',
+      ),
+    ),
+    'Japan': MetaZone(
+      'Japan',
+      long: TimeZoneName(
+        generic: 'Japonijos laikas',
+        standard: 'Japonijos žiemos laikas',
+        daylight: 'Japonijos vasaros laikas',
+      ),
+    ),
+    'Kamchatka': MetaZone(
+      'Kamchatka',
+      long: TimeZoneName(
+        generic: 'Kamčiatkos Petropavlovsko laikas',
+        standard: 'Kamčiatkos Petropavlovsko žiemos laikas',
+        daylight: 'Kamčiatkos Petropavlovsko vasaros laikas',
+      ),
+    ),
+    'Kazakhstan': MetaZone(
+      'Kazakhstan',
+      long: TimeZoneName(standard: 'Kazachstano laikas'),
+    ),
+    'Kazakhstan_Eastern': MetaZone(
+      'Kazakhstan_Eastern',
+      long: TimeZoneName(standard: 'Rytų Kazachstano laikas'),
+    ),
+    'Kazakhstan_Western': MetaZone(
+      'Kazakhstan_Western',
+      long: TimeZoneName(standard: 'Vakarų Kazachstano laikas'),
+    ),
+    'Korea': MetaZone(
+      'Korea',
+      long: TimeZoneName(
+        generic: 'Korėjos laikas',
+        standard: 'Korėjos žiemos laikas',
+        daylight: 'Korėjos vasaros laikas',
+      ),
+    ),
+    'Kosrae': MetaZone(
+      'Kosrae',
+      long: TimeZoneName(standard: 'Kosrajė laikas'),
+    ),
+    'Krasnoyarsk': MetaZone(
+      'Krasnoyarsk',
+      long: TimeZoneName(
+        generic: 'Krasnojarsko laikas',
+        standard: 'Krasnojarsko žiemos laikas',
+        daylight: 'Krasnojarsko vasaros laikas',
+      ),
+    ),
+    'Kyrgystan': MetaZone(
+      'Kyrgystan',
+      long: TimeZoneName(standard: 'Kirgistano laikas'),
+    ),
     'Lanka': MetaZone('Lanka', long: TimeZoneName(standard: 'Lankos laikas')),
-    'Line_Islands': MetaZone('Line_Islands',
-        long: TimeZoneName(standard: 'Laino Salų laikas')),
-    'Lord_Howe': MetaZone('Lord_Howe',
-        long: TimeZoneName(
-            generic: 'Lordo Hau laikas',
-            standard: 'Lordo Hau žiemos laikas',
-            daylight: 'Lordo Hau vasaros laikas')),
-    'Macau': MetaZone('Macau',
-        long: TimeZoneName(
-            generic: 'Makau laikas',
-            standard: 'Makau žiemos laikas',
-            daylight: 'Makau vasaros laikas')),
-    'Magadan': MetaZone('Magadan',
-        long: TimeZoneName(
-            generic: 'Magadano laikas',
-            standard: 'Magadano žiemos laikas',
-            daylight: 'Magadano vasaros laikas')),
-    'Malaysia':
-        MetaZone('Malaysia', long: TimeZoneName(standard: 'Malaizijos laikas')),
-    'Maldives':
-        MetaZone('Maldives', long: TimeZoneName(standard: 'Maldyvų laikas')),
-    'Marquesas': MetaZone('Marquesas',
-        long: TimeZoneName(standard: 'Markizo Salų laikas')),
-    'Marshall_Islands': MetaZone('Marshall_Islands',
-        long: TimeZoneName(standard: 'Maršalo Salų laikas')),
-    'Mauritius': MetaZone('Mauritius',
-        long: TimeZoneName(
-            generic: 'Mauricijaus laikas',
-            standard: 'Mauricijaus žiemos laikas',
-            daylight: 'Mauricijaus vasaros laikas')),
+    'Line_Islands': MetaZone(
+      'Line_Islands',
+      long: TimeZoneName(standard: 'Laino Salų laikas'),
+    ),
+    'Lord_Howe': MetaZone(
+      'Lord_Howe',
+      long: TimeZoneName(
+        generic: 'Lordo Hau laikas',
+        standard: 'Lordo Hau žiemos laikas',
+        daylight: 'Lordo Hau vasaros laikas',
+      ),
+    ),
+    'Macau': MetaZone(
+      'Macau',
+      long: TimeZoneName(
+        generic: 'Makau laikas',
+        standard: 'Makau žiemos laikas',
+        daylight: 'Makau vasaros laikas',
+      ),
+    ),
+    'Magadan': MetaZone(
+      'Magadan',
+      long: TimeZoneName(
+        generic: 'Magadano laikas',
+        standard: 'Magadano žiemos laikas',
+        daylight: 'Magadano vasaros laikas',
+      ),
+    ),
+    'Malaysia': MetaZone(
+      'Malaysia',
+      long: TimeZoneName(standard: 'Malaizijos laikas'),
+    ),
+    'Maldives': MetaZone(
+      'Maldives',
+      long: TimeZoneName(standard: 'Maldyvų laikas'),
+    ),
+    'Marquesas': MetaZone(
+      'Marquesas',
+      long: TimeZoneName(standard: 'Markizo Salų laikas'),
+    ),
+    'Marshall_Islands': MetaZone(
+      'Marshall_Islands',
+      long: TimeZoneName(standard: 'Maršalo Salų laikas'),
+    ),
+    'Mauritius': MetaZone(
+      'Mauritius',
+      long: TimeZoneName(
+        generic: 'Mauricijaus laikas',
+        standard: 'Mauricijaus žiemos laikas',
+        daylight: 'Mauricijaus vasaros laikas',
+      ),
+    ),
     'Mawson': MetaZone('Mawson', long: TimeZoneName(standard: 'Mosono laikas')),
-    'Mexico_Pacific': MetaZone('Mexico_Pacific',
-        long: TimeZoneName(
-            generic: 'Meksikos Ramiojo vandenyno laikas',
-            standard: 'Meksikos Ramiojo vandenyno žiemos laikas',
-            daylight: 'Meksikos Ramiojo vandenyno vasaros laikas')),
-    'Mongolia': MetaZone('Mongolia',
-        long: TimeZoneName(
-            generic: 'Ulan Batoro laikas',
-            standard: 'Ulan Batoro žiemos laikas',
-            daylight: 'Ulan Batoro vasaros laikas')),
-    'Moscow': MetaZone('Moscow',
-        long: TimeZoneName(
-            generic: 'Maskvos laikas',
-            standard: 'Maskvos žiemos laikas',
-            daylight: 'Maskvos vasaros laikas')),
-    'Myanmar':
-        MetaZone('Myanmar', long: TimeZoneName(standard: 'Mianmaro laikas')),
+    'Mexico_Pacific': MetaZone(
+      'Mexico_Pacific',
+      long: TimeZoneName(
+        generic: 'Meksikos Ramiojo vandenyno laikas',
+        standard: 'Meksikos Ramiojo vandenyno žiemos laikas',
+        daylight: 'Meksikos Ramiojo vandenyno vasaros laikas',
+      ),
+    ),
+    'Mongolia': MetaZone(
+      'Mongolia',
+      long: TimeZoneName(
+        generic: 'Ulan Batoro laikas',
+        standard: 'Ulan Batoro žiemos laikas',
+        daylight: 'Ulan Batoro vasaros laikas',
+      ),
+    ),
+    'Moscow': MetaZone(
+      'Moscow',
+      long: TimeZoneName(
+        generic: 'Maskvos laikas',
+        standard: 'Maskvos žiemos laikas',
+        daylight: 'Maskvos vasaros laikas',
+      ),
+    ),
+    'Myanmar': MetaZone(
+      'Myanmar',
+      long: TimeZoneName(standard: 'Mianmaro laikas'),
+    ),
     'Nauru': MetaZone('Nauru', long: TimeZoneName(standard: 'Nauru laikas')),
     'Nepal': MetaZone('Nepal', long: TimeZoneName(standard: 'Nepalo laikas')),
-    'New_Caledonia': MetaZone('New_Caledonia',
-        long: TimeZoneName(
-            generic: 'Naujosios Kaledonijos laikas',
-            standard: 'Naujosios Kaledonijos žiemos laikas',
-            daylight: 'Naujosios Kaledonijos vasaros laikas')),
-    'New_Zealand': MetaZone('New_Zealand',
-        long: TimeZoneName(
-            generic: 'Naujosios Zelandijos laikas',
-            standard: 'Naujosios Zelandijos žiemos laikas',
-            daylight: 'Naujosios Zelandijos vasaros laikas')),
-    'Newfoundland': MetaZone('Newfoundland',
-        long: TimeZoneName(
-            generic: 'Niufaundlendo laikas',
-            standard: 'Niufaundlendo žiemos laikas',
-            daylight: 'Niufaundlendo vasaros laikas')),
+    'New_Caledonia': MetaZone(
+      'New_Caledonia',
+      long: TimeZoneName(
+        generic: 'Naujosios Kaledonijos laikas',
+        standard: 'Naujosios Kaledonijos žiemos laikas',
+        daylight: 'Naujosios Kaledonijos vasaros laikas',
+      ),
+    ),
+    'New_Zealand': MetaZone(
+      'New_Zealand',
+      long: TimeZoneName(
+        generic: 'Naujosios Zelandijos laikas',
+        standard: 'Naujosios Zelandijos žiemos laikas',
+        daylight: 'Naujosios Zelandijos vasaros laikas',
+      ),
+    ),
+    'Newfoundland': MetaZone(
+      'Newfoundland',
+      long: TimeZoneName(
+        generic: 'Niufaundlendo laikas',
+        standard: 'Niufaundlendo žiemos laikas',
+        daylight: 'Niufaundlendo vasaros laikas',
+      ),
+    ),
     'Niue': MetaZone('Niue', long: TimeZoneName(standard: 'Niujė laikas')),
-    'Norfolk': MetaZone('Norfolk',
-        long: TimeZoneName(
-            generic: 'Norfolko Salų laikas',
-            standard: 'Norfolko Salų žiemos laikas',
-            daylight: 'Norfolko Salų vasaros laikas')),
-    'Noronha': MetaZone('Noronha',
-        long: TimeZoneName(
-            generic: 'Fernando de Noronjos laikas',
-            standard: 'Fernando de Noronjos žiemos laikas',
-            daylight: 'Fernando de Noronjos vasaros laikas')),
-    'North_Mariana': MetaZone('North_Mariana',
-        long: TimeZoneName(standard: 'Šiaurės Marianos Salų laikas')),
-    'Novosibirsk': MetaZone('Novosibirsk',
-        long: TimeZoneName(
-            generic: 'Novosibirsko laikas',
-            standard: 'Novosibirsko žiemos laikas',
-            daylight: 'Novosibirsko vasaros laikas')),
-    'Omsk': MetaZone('Omsk',
-        long: TimeZoneName(
-            generic: 'Omsko laikas',
-            standard: 'Omsko žiemos laikas',
-            daylight: 'Omsko vasaros laikas')),
-    'Pakistan': MetaZone('Pakistan',
-        long: TimeZoneName(
-            generic: 'Pakistano laikas',
-            standard: 'Pakistano žiemos laikas',
-            daylight: 'Pakistano vasaros laikas')),
+    'Norfolk': MetaZone(
+      'Norfolk',
+      long: TimeZoneName(
+        generic: 'Norfolko Salų laikas',
+        standard: 'Norfolko Salų žiemos laikas',
+        daylight: 'Norfolko Salų vasaros laikas',
+      ),
+    ),
+    'Noronha': MetaZone(
+      'Noronha',
+      long: TimeZoneName(
+        generic: 'Fernando de Noronjos laikas',
+        standard: 'Fernando de Noronjos žiemos laikas',
+        daylight: 'Fernando de Noronjos vasaros laikas',
+      ),
+    ),
+    'North_Mariana': MetaZone(
+      'North_Mariana',
+      long: TimeZoneName(standard: 'Šiaurės Marianos Salų laikas'),
+    ),
+    'Novosibirsk': MetaZone(
+      'Novosibirsk',
+      long: TimeZoneName(
+        generic: 'Novosibirsko laikas',
+        standard: 'Novosibirsko žiemos laikas',
+        daylight: 'Novosibirsko vasaros laikas',
+      ),
+    ),
+    'Omsk': MetaZone(
+      'Omsk',
+      long: TimeZoneName(
+        generic: 'Omsko laikas',
+        standard: 'Omsko žiemos laikas',
+        daylight: 'Omsko vasaros laikas',
+      ),
+    ),
+    'Pakistan': MetaZone(
+      'Pakistan',
+      long: TimeZoneName(
+        generic: 'Pakistano laikas',
+        standard: 'Pakistano žiemos laikas',
+        daylight: 'Pakistano vasaros laikas',
+      ),
+    ),
     'Palau': MetaZone('Palau', long: TimeZoneName(standard: 'Palau laikas')),
-    'Papua_New_Guinea': MetaZone('Papua_New_Guinea',
-        long: TimeZoneName(standard: 'Papua Naujosios Gvinėjos laikas')),
-    'Paraguay': MetaZone('Paraguay',
-        long: TimeZoneName(
-            generic: 'Paragvajaus laikas',
-            standard: 'Paragvajaus žiemos laikas',
-            daylight: 'Paragvajaus vasaros laikas')),
-    'Peru': MetaZone('Peru',
-        long: TimeZoneName(
-            generic: 'Peru laikas',
-            standard: 'Peru žiemos laikas',
-            daylight: 'Peru vasaros laikas')),
-    'Philippines': MetaZone('Philippines',
-        long: TimeZoneName(
-            generic: 'Filipinų laikas',
-            standard: 'Filipinų žiemos laikas',
-            daylight: 'Filipinų vasaros laikas')),
-    'Phoenix_Islands': MetaZone('Phoenix_Islands',
-        long: TimeZoneName(standard: 'Fenikso Salų laikas')),
-    'Pierre_Miquelon': MetaZone('Pierre_Miquelon',
-        long: TimeZoneName(
-            generic: 'Sen Pjero ir Mikelono laikas',
-            standard: 'Sen Pjero ir Mikelono žiemos laikas',
-            daylight: 'Sen Pjero ir Mikelono vasaros laikas')),
-    'Pitcairn':
-        MetaZone('Pitcairn', long: TimeZoneName(standard: 'Pitkerno laikas')),
-    'Ponape':
-        MetaZone('Ponape', long: TimeZoneName(standard: 'Ponapės laikas')),
-    'Pyongyang':
-        MetaZone('Pyongyang', long: TimeZoneName(standard: 'Pchenjano laikas')),
-    'Qyzylorda': MetaZone('Qyzylorda',
-        long: TimeZoneName(
-            generic: 'Kyzylordos laikas',
-            standard: 'Kyzylordos žiemos laikas',
-            daylight: 'Kyzylordos vasaros laikas')),
-    'Reunion':
-        MetaZone('Reunion', long: TimeZoneName(standard: 'Reunjono laikas')),
-    'Rothera':
-        MetaZone('Rothera', long: TimeZoneName(standard: 'Roteros laikas')),
-    'Sakhalin': MetaZone('Sakhalin',
-        long: TimeZoneName(
-            generic: 'Sachalino laikas',
-            standard: 'Sachalino žiemos laikas',
-            daylight: 'Sachalino vasaros laikas')),
-    'Samara': MetaZone('Samara',
-        long: TimeZoneName(
-            generic: 'Samaros laikas',
-            standard: 'Samaros žiemos laikas',
-            daylight: 'Samaros vasaros laikas')),
-    'Samoa': MetaZone('Samoa',
-        long: TimeZoneName(
-            generic: 'Samoa laikas',
-            standard: 'Samoa žiemos laikas',
-            daylight: 'Samoa vasaros laikas')),
-    'Seychelles':
-        MetaZone('Seychelles', long: TimeZoneName(standard: 'Seišelių laikas')),
-    'Singapore':
-        MetaZone('Singapore', long: TimeZoneName(standard: 'Singapūro laikas')),
-    'Solomon': MetaZone('Solomon',
-        long: TimeZoneName(standard: 'Saliamono Salų laikas')),
-    'South_Georgia': MetaZone('South_Georgia',
-        long: TimeZoneName(standard: 'Pietų Džordžijos laikas')),
-    'Suriname':
-        MetaZone('Suriname', long: TimeZoneName(standard: 'Surinamo laikas')),
+    'Papua_New_Guinea': MetaZone(
+      'Papua_New_Guinea',
+      long: TimeZoneName(standard: 'Papua Naujosios Gvinėjos laikas'),
+    ),
+    'Paraguay': MetaZone(
+      'Paraguay',
+      long: TimeZoneName(
+        generic: 'Paragvajaus laikas',
+        standard: 'Paragvajaus žiemos laikas',
+        daylight: 'Paragvajaus vasaros laikas',
+      ),
+    ),
+    'Peru': MetaZone(
+      'Peru',
+      long: TimeZoneName(
+        generic: 'Peru laikas',
+        standard: 'Peru žiemos laikas',
+        daylight: 'Peru vasaros laikas',
+      ),
+    ),
+    'Philippines': MetaZone(
+      'Philippines',
+      long: TimeZoneName(
+        generic: 'Filipinų laikas',
+        standard: 'Filipinų žiemos laikas',
+        daylight: 'Filipinų vasaros laikas',
+      ),
+    ),
+    'Phoenix_Islands': MetaZone(
+      'Phoenix_Islands',
+      long: TimeZoneName(standard: 'Fenikso Salų laikas'),
+    ),
+    'Pierre_Miquelon': MetaZone(
+      'Pierre_Miquelon',
+      long: TimeZoneName(
+        generic: 'Sen Pjero ir Mikelono laikas',
+        standard: 'Sen Pjero ir Mikelono žiemos laikas',
+        daylight: 'Sen Pjero ir Mikelono vasaros laikas',
+      ),
+    ),
+    'Pitcairn': MetaZone(
+      'Pitcairn',
+      long: TimeZoneName(standard: 'Pitkerno laikas'),
+    ),
+    'Ponape': MetaZone(
+      'Ponape',
+      long: TimeZoneName(standard: 'Ponapės laikas'),
+    ),
+    'Pyongyang': MetaZone(
+      'Pyongyang',
+      long: TimeZoneName(standard: 'Pchenjano laikas'),
+    ),
+    'Qyzylorda': MetaZone(
+      'Qyzylorda',
+      long: TimeZoneName(
+        generic: 'Kyzylordos laikas',
+        standard: 'Kyzylordos žiemos laikas',
+        daylight: 'Kyzylordos vasaros laikas',
+      ),
+    ),
+    'Reunion': MetaZone(
+      'Reunion',
+      long: TimeZoneName(standard: 'Reunjono laikas'),
+    ),
+    'Rothera': MetaZone(
+      'Rothera',
+      long: TimeZoneName(standard: 'Roteros laikas'),
+    ),
+    'Sakhalin': MetaZone(
+      'Sakhalin',
+      long: TimeZoneName(
+        generic: 'Sachalino laikas',
+        standard: 'Sachalino žiemos laikas',
+        daylight: 'Sachalino vasaros laikas',
+      ),
+    ),
+    'Samara': MetaZone(
+      'Samara',
+      long: TimeZoneName(
+        generic: 'Samaros laikas',
+        standard: 'Samaros žiemos laikas',
+        daylight: 'Samaros vasaros laikas',
+      ),
+    ),
+    'Samoa': MetaZone(
+      'Samoa',
+      long: TimeZoneName(
+        generic: 'Samoa laikas',
+        standard: 'Samoa žiemos laikas',
+        daylight: 'Samoa vasaros laikas',
+      ),
+    ),
+    'Seychelles': MetaZone(
+      'Seychelles',
+      long: TimeZoneName(standard: 'Seišelių laikas'),
+    ),
+    'Singapore': MetaZone(
+      'Singapore',
+      long: TimeZoneName(standard: 'Singapūro laikas'),
+    ),
+    'Solomon': MetaZone(
+      'Solomon',
+      long: TimeZoneName(standard: 'Saliamono Salų laikas'),
+    ),
+    'South_Georgia': MetaZone(
+      'South_Georgia',
+      long: TimeZoneName(standard: 'Pietų Džordžijos laikas'),
+    ),
+    'Suriname': MetaZone(
+      'Suriname',
+      long: TimeZoneName(standard: 'Surinamo laikas'),
+    ),
     'Syowa': MetaZone('Syowa', long: TimeZoneName(standard: 'Siovos laikas')),
-    'Tahiti':
-        MetaZone('Tahiti', long: TimeZoneName(standard: 'Tahičio laikas')),
-    'Taipei': MetaZone('Taipei',
-        long: TimeZoneName(
-            generic: 'Taipėjaus laikas',
-            standard: 'Taipėjaus žiemos laikas',
-            daylight: 'Taipėjaus vasaros laikas')),
-    'Tajikistan': MetaZone('Tajikistan',
-        long: TimeZoneName(standard: 'Tadžikistano laikas')),
-    'Tokelau':
-        MetaZone('Tokelau', long: TimeZoneName(standard: 'Tokelau laikas')),
-    'Tonga': MetaZone('Tonga',
-        long: TimeZoneName(
-            generic: 'Tongos laikas',
-            standard: 'Tongos žiemos laikas',
-            daylight: 'Tongos vasaros laikas')),
+    'Tahiti': MetaZone(
+      'Tahiti',
+      long: TimeZoneName(standard: 'Tahičio laikas'),
+    ),
+    'Taipei': MetaZone(
+      'Taipei',
+      long: TimeZoneName(
+        generic: 'Taipėjaus laikas',
+        standard: 'Taipėjaus žiemos laikas',
+        daylight: 'Taipėjaus vasaros laikas',
+      ),
+    ),
+    'Tajikistan': MetaZone(
+      'Tajikistan',
+      long: TimeZoneName(standard: 'Tadžikistano laikas'),
+    ),
+    'Tokelau': MetaZone(
+      'Tokelau',
+      long: TimeZoneName(standard: 'Tokelau laikas'),
+    ),
+    'Tonga': MetaZone(
+      'Tonga',
+      long: TimeZoneName(
+        generic: 'Tongos laikas',
+        standard: 'Tongos žiemos laikas',
+        daylight: 'Tongos vasaros laikas',
+      ),
+    ),
     'Truk': MetaZone('Truk', long: TimeZoneName(standard: 'Čuko laikas')),
-    'Turkmenistan': MetaZone('Turkmenistan',
-        long: TimeZoneName(
-            generic: 'Turkmėnistano laikas',
-            standard: 'Turkmėnistano žiemos laikas',
-            daylight: 'Turkmėnistano vasaros laikas')),
+    'Turkmenistan': MetaZone(
+      'Turkmenistan',
+      long: TimeZoneName(
+        generic: 'Turkmėnistano laikas',
+        standard: 'Turkmėnistano žiemos laikas',
+        daylight: 'Turkmėnistano vasaros laikas',
+      ),
+    ),
     'Tuvalu': MetaZone('Tuvalu', long: TimeZoneName(standard: 'Tuvalu laikas')),
-    'Uruguay': MetaZone('Uruguay',
-        long: TimeZoneName(
-            generic: 'Urugvajaus laikas',
-            standard: 'Urugvajaus žiemos laikas',
-            daylight: 'Urugvajaus vasaros laikas')),
-    'Uzbekistan': MetaZone('Uzbekistan',
-        long: TimeZoneName(
-            generic: 'Uzbekistano laikas',
-            standard: 'Uzbekistano žiemos laikas',
-            daylight: 'Uzbekistano vasaros laikas')),
-    'Vanuatu': MetaZone('Vanuatu',
-        long: TimeZoneName(
-            generic: 'Vanuatu laikas',
-            standard: 'Vanuatu žiemos laikas',
-            daylight: 'Vanuatu vasaros laikas')),
-    'Venezuela': MetaZone('Venezuela',
-        long: TimeZoneName(standard: 'Venesuelos laikas')),
-    'Vladivostok': MetaZone('Vladivostok',
-        long: TimeZoneName(
-            generic: 'Vladivostoko laikas',
-            standard: 'Vladivostoko žiemos laikas',
-            daylight: 'Vladivostoko vasaros laikas')),
-    'Volgograd': MetaZone('Volgograd',
-        long: TimeZoneName(
-            generic: 'Volgogrado laikas',
-            standard: 'Volgogrado žiemos laikas',
-            daylight: 'Volgogrado vasaros laikas')),
-    'Vostok':
-        MetaZone('Vostok', long: TimeZoneName(standard: 'Vostoko laikas')),
-    'Wake':
-        MetaZone('Wake', long: TimeZoneName(standard: 'Veiko Salos laikas')),
-    'Wallis': MetaZone('Wallis',
-        long: TimeZoneName(standard: 'Voliso ir Futūnos laikas')),
-    'Yakutsk': MetaZone('Yakutsk',
-        long: TimeZoneName(
-            generic: 'Jakutsko laikas',
-            standard: 'Jakutsko žiemos laikas',
-            daylight: 'Jakutsko vasaros laikas')),
-    'Yekaterinburg': MetaZone('Yekaterinburg',
-        long: TimeZoneName(
-            generic: 'Jekaterinburgo laikas',
-            standard: 'Jekaterinburgo žiemos laikas',
-            daylight: 'Jekaterinburgo vasaros laikas')),
+    'Uruguay': MetaZone(
+      'Uruguay',
+      long: TimeZoneName(
+        generic: 'Urugvajaus laikas',
+        standard: 'Urugvajaus žiemos laikas',
+        daylight: 'Urugvajaus vasaros laikas',
+      ),
+    ),
+    'Uzbekistan': MetaZone(
+      'Uzbekistan',
+      long: TimeZoneName(
+        generic: 'Uzbekistano laikas',
+        standard: 'Uzbekistano žiemos laikas',
+        daylight: 'Uzbekistano vasaros laikas',
+      ),
+    ),
+    'Vanuatu': MetaZone(
+      'Vanuatu',
+      long: TimeZoneName(
+        generic: 'Vanuatu laikas',
+        standard: 'Vanuatu žiemos laikas',
+        daylight: 'Vanuatu vasaros laikas',
+      ),
+    ),
+    'Venezuela': MetaZone(
+      'Venezuela',
+      long: TimeZoneName(standard: 'Venesuelos laikas'),
+    ),
+    'Vladivostok': MetaZone(
+      'Vladivostok',
+      long: TimeZoneName(
+        generic: 'Vladivostoko laikas',
+        standard: 'Vladivostoko žiemos laikas',
+        daylight: 'Vladivostoko vasaros laikas',
+      ),
+    ),
+    'Volgograd': MetaZone(
+      'Volgograd',
+      long: TimeZoneName(
+        generic: 'Volgogrado laikas',
+        standard: 'Volgogrado žiemos laikas',
+        daylight: 'Volgogrado vasaros laikas',
+      ),
+    ),
+    'Vostok': MetaZone(
+      'Vostok',
+      long: TimeZoneName(standard: 'Vostoko laikas'),
+    ),
+    'Wake': MetaZone(
+      'Wake',
+      long: TimeZoneName(standard: 'Veiko Salos laikas'),
+    ),
+    'Wallis': MetaZone(
+      'Wallis',
+      long: TimeZoneName(standard: 'Voliso ir Futūnos laikas'),
+    ),
+    'Yakutsk': MetaZone(
+      'Yakutsk',
+      long: TimeZoneName(
+        generic: 'Jakutsko laikas',
+        standard: 'Jakutsko žiemos laikas',
+        daylight: 'Jakutsko vasaros laikas',
+      ),
+    ),
+    'Yekaterinburg': MetaZone(
+      'Yekaterinburg',
+      long: TimeZoneName(
+        generic: 'Jekaterinburgo laikas',
+        standard: 'Jekaterinburgo žiemos laikas',
+        daylight: 'Jekaterinburgo vasaros laikas',
+      ),
+    ),
     'Yukon': MetaZone('Yukon', long: TimeZoneName(standard: 'Jukono laikas')),
   };
 }
@@ -19484,10 +20947,7 @@ class LocaleDisplayNameLt extends LocaleDisplayName {
       'normal': 'įprastas teksto laužymo stilius',
       'strict': 'griežtas teksto laužymo stilius',
     },
-    'm0': {
-      'bgn': 'BGN simboliai',
-      'ungegn': 'UNGEGN simboliai',
-    },
+    'm0': {'bgn': 'BGN simboliai', 'ungegn': 'UNGEGN simboliai'},
     'ms': {
       'metric': 'metrinė sistema',
       'uksystem': 'angliška matų sistema',

@@ -28,17 +28,20 @@ class CommonLocaleDataDeLI extends CommonLocaleDataDe {
 class CurrenciesDeLI extends CurrenciesDe {
   const CurrenciesDeLI(super.cld);
 
-  static const _eur =
-      Currency(_cld, 'EUR', 'Euro', symbol: 'EUR', symbolNarrow: '€');
+  static const _eur = Currency(
+    _cld,
+    'EUR',
+    'Euro',
+    symbol: 'EUR',
+    symbolNarrow: '€',
+  );
 
   @override
   Currency get eur => _eur;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesDe.staticCurrencies,
-        ...const {
-          'EUR': _eur,
-        }
-      });
+    ...CurrenciesDe.staticCurrencies,
+    ...const {'EUR': _eur},
+  });
 }

@@ -28,17 +28,21 @@ class CommonLocaleDataDeLU extends CommonLocaleDataDe {
 class CurrenciesDeLU extends CurrenciesDe {
   const CurrenciesDeLU(super.cld);
 
-  static const _luf = Currency(_cld, 'LUF', 'Luxemburgischer Franc',
-      one: 'Luxemburgische Franc', other: 'Luxemburgische Franc', symbol: 'F');
+  static const _luf = Currency(
+    _cld,
+    'LUF',
+    'Luxemburgischer Franc',
+    one: 'Luxemburgische Franc',
+    other: 'Luxemburgische Franc',
+    symbol: 'F',
+  );
 
   @override
   Currency get luf => _luf;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesDe.staticCurrencies,
-        ...const {
-          'LUF': _luf,
-        }
-      });
+    ...CurrenciesDe.staticCurrencies,
+    ...const {'LUF': _luf},
+  });
 }

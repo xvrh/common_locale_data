@@ -39,11 +39,9 @@ class TerritoriesKoKP extends TerritoriesKo {
 
   @override
   Map<String, Territory> get territories => Map.unmodifiable({
-        ...TerritoriesKo.staticTerritories,
-        ...const {
-          'KP': _kp,
-        }
-      });
+    ...TerritoriesKo.staticTerritories,
+    ...const {'KP': _kp},
+  });
 }
 
 class TimeZonesKoKP extends TimeZonesKo {
@@ -51,11 +49,16 @@ class TimeZonesKoKP extends TimeZonesKo {
 
   @override
   Map<String, MetaZone> get metaZoneNames => Map.unmodifiable({
-        ...TimeZonesKo.staticMetaZoneNames,
-        ...const {
-          'Korea': MetaZone('Korea',
-              long: TimeZoneName(
-                  generic: '조선 시간', standard: '조선 표준시', daylight: '조선 하계 표준시')),
-        }
-      });
+    ...TimeZonesKo.staticMetaZoneNames,
+    ...const {
+      'Korea': MetaZone(
+        'Korea',
+        long: TimeZoneName(
+          generic: '조선 시간',
+          standard: '조선 표준시',
+          daylight: '조선 하계 표준시',
+        ),
+      ),
+    },
+  });
 }

@@ -19,8 +19,13 @@ class Script {
   /// Localized script name for use in stand alone contexts.
   final String? standAlone;
 
-  const Script(this.code, this.name,
-      {this.short, this.variant, this.standAlone});
+  const Script(
+    this.code,
+    this.name, {
+    this.short,
+    this.variant,
+    this.standAlone,
+  });
 
   @override
   String toString() => name;

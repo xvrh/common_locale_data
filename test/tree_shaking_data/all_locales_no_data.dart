@@ -11,5 +11,5 @@ final notExpected = <String>[
   'heure :',
   'France',
   'Central European Time',
-  'Royaume-Uni'
+  'Royaume-Uni',
 ];

@@ -24,7 +24,7 @@ abstract class Currencies {
   /// The code is a 3 letter ISO 4217 currency code, which will be converted to upper case before lookup.
   Currency? operator [](String? code) => currencies[code?.toUpperCase()];
 
-// FROM HERE ON GENERATED CODE - DO NOT MODIFY BY HAND
+  // FROM HERE ON GENERATED CODE - DO NOT MODIFY BY HAND
 
   /// Localized name for Unknown Currency.
   Currency get unknownCurrency;

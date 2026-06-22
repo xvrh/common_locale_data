@@ -12,7 +12,8 @@ void main() {
     print('${locale.scripts.latn.code}: ${locale.scripts.latn.name}');
     print('${locale.variants.baku1926.code}: ${locale.variants.baku1926.name}');
     print(
-        '${locale.currencies.eur.code}: ${locale.currencies.eur.displayName}');
+      '${locale.currencies.eur.code}: ${locale.currencies.eur.displayName}',
+    );
   }
 }
 

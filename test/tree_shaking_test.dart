@@ -64,19 +64,29 @@ Future<(int, Duration)> check(
 
   if (maxLength != null) {
     print(
-        'Expected Max Length: $maxLength, Actual: ${jsCode.length}, Difference: ${maxLength - jsCode.length}');
+      'Expected Max Length: $maxLength, Actual: ${jsCode.length}, Difference: ${maxLength - jsCode.length}',
+    );
 
-    expect(jsCode.length, lessThanOrEqualTo(maxLength),
-        reason: 'Javascript should be smaller than or equal to: $maxLength');
+    expect(
+      jsCode.length,
+      lessThanOrEqualTo(maxLength),
+      reason: 'Javascript should be smaller than or equal to: $maxLength',
+    );
   }
 
   for (var expectWord in expected) {
-    expect(jsCode.contains(expectWord), isTrue,
-        reason: '"$expectWord" should be in JavaScript');
+    expect(
+      jsCode.contains(expectWord),
+      isTrue,
+      reason: '"$expectWord" should be in JavaScript',
+    );
   }
   for (var expectWord in notExpected) {
-    expect(jsCode.contains(expectWord), isFalse,
-        reason: '"$expectWord" should not be in JavaScript');
+    expect(
+      jsCode.contains(expectWord),
+      isFalse,
+      reason: '"$expectWord" should not be in JavaScript',
+    );
   }
   return (jsCode.length, duration);
 }
@@ -91,11 +101,13 @@ void testFile(
 }) {
   test(
     path.basename(file),
-    () async => check(file,
-        expected: expected,
-        notExpected: notExpected,
-        options: [...options, '-O2'],
-        maxLength: maxLength),
+    () async => check(
+      file,
+      expected: expected,
+      notExpected: notExpected,
+      options: [...options, '-O2'],
+      maxLength: maxLength,
+    ),
     timeout: Timeout(Duration(seconds: 600)),
     tags: long ? ['longTests'] : null,
   );
@@ -107,19 +119,30 @@ Future<String> _compileDart2Js(
   bool printOutput = true,
 }) async {
   var outputDirectory = Directory(
-      path.join(Directory.systemTemp.path, 'common_locale_data_test'));
+    path.join(Directory.systemTemp.path, 'common_locale_data_test'),
+  );
   outputDirectory.createSync();
 
-  var outputFile = File(path.join(outputDirectory.path,
-      '${path.basename(file)}${options.join('_').replaceAll('-', '_').replaceAll('__', '_').toLowerCase()}.js'));
+  var outputFile = File(
+    path.join(
+      outputDirectory.path,
+      '${path.basename(file)}${options.join('_').replaceAll('-', '_').replaceAll('__', '_').toLowerCase()}.js',
+    ),
+  );
 
   if (printOutput) {
     print('Compiling to: ${outputFile.path}');
   }
 
-  var res = await ProcessRunner().runProcess(
-      ['dart', 'compile', 'js', ...options, '-o', outputFile.path, file],
-      printOutput: false);
+  var res = await ProcessRunner().runProcess([
+    'dart',
+    'compile',
+    'js',
+    ...options,
+    '-o',
+    outputFile.path,
+    file,
+  ], printOutput: false);
 
   if (printOutput) {
     print(res.stdout);

@@ -28,20 +28,22 @@ class CommonLocaleDataFrMU extends CommonLocaleDataFr {
 class CurrenciesFrMU extends CurrenciesFr {
   const CurrenciesFrMU(super.cld);
 
-  static const _mur = Currency(_cld, 'MUR', 'roupie mauricienne',
-      one: 'roupie mauricienne',
-      other: 'roupies mauriciennes',
-      symbol: 'Rs',
-      symbolNarrow: 'Rs');
+  static const _mur = Currency(
+    _cld,
+    'MUR',
+    'roupie mauricienne',
+    one: 'roupie mauricienne',
+    other: 'roupies mauriciennes',
+    symbol: 'Rs',
+    symbolNarrow: 'Rs',
+  );
 
   @override
   Currency get mur => _mur;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesFr.staticCurrencies,
-        ...const {
-          'MUR': _mur,
-        }
-      });
+    ...CurrenciesFr.staticCurrencies,
+    ...const {'MUR': _mur},
+  });
 }

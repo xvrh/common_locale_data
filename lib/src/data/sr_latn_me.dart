@@ -75,23 +75,23 @@ class LanguagesSrLatnME extends LanguagesSrLatn {
 
   @override
   Map<String, Language> get languages => Map.unmodifiable({
-        ...LanguagesSrLatn.staticLanguages,
-        ...const {
-          'arn': _arn,
-          'be': _be,
-          'bm': _bm,
-          'bn': _bn,
-          'ff': _ff,
-          'ht': _ht,
-          'lo': _lo,
-          'moh': _moh,
-          'nqo': _nqo,
-          'shi': _shi,
-          'xh': _xh,
-          'zgh': _zgh,
-          'zu': _zu,
-        }
-      });
+    ...LanguagesSrLatn.staticLanguages,
+    ...const {
+      'arn': _arn,
+      'be': _be,
+      'bm': _bm,
+      'bn': _bn,
+      'ff': _ff,
+      'ht': _ht,
+      'lo': _lo,
+      'moh': _moh,
+      'nqo': _nqo,
+      'shi': _shi,
+      'xh': _xh,
+      'zgh': _zgh,
+      'zu': _zu,
+    },
+  });
 }
 
 class TerritoriesSrLatnME extends TerritoriesSrLatn {
@@ -99,8 +99,11 @@ class TerritoriesSrLatnME extends TerritoriesSrLatn {
 
   static const _by = Territory('BY', 'Bjelorusija');
   static const _cg = Territory('CG', 'Kongo', variant: 'Kongo (Republika)');
-  static const _cz =
-      Territory('CZ', 'Češka Republika', variant: 'Češka Republika');
+  static const _cz = Territory(
+    'CZ',
+    'Češka Republika',
+    variant: 'Češka Republika',
+  );
   static const _de = Territory('DE', 'Njemačka');
   static const _kn = Territory('KN', 'Sveti Kits i Nevis');
   static const _pm = Territory('PM', 'Sveti Pjer i Mikelon');
@@ -135,19 +138,19 @@ class TerritoriesSrLatnME extends TerritoriesSrLatn {
 
   @override
   Map<String, Territory> get territories => Map.unmodifiable({
-        ...TerritoriesSrLatn.staticTerritories,
-        ...const {
-          'BY': _by,
-          'CG': _cg,
-          'CZ': _cz,
-          'DE': _de,
-          'KN': _kn,
-          'PM': _pm,
-          'RE': _re,
-          'UM': _um,
-          'VC': _vc,
-          'VG': _vg,
-          'VI': _vi,
-        }
-      });
+    ...TerritoriesSrLatn.staticTerritories,
+    ...const {
+      'BY': _by,
+      'CG': _cg,
+      'CZ': _cz,
+      'DE': _de,
+      'KN': _kn,
+      'PM': _pm,
+      'RE': _re,
+      'UM': _um,
+      'VC': _vc,
+      'VG': _vg,
+      'VI': _vi,
+    },
+  });
 }

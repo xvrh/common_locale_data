@@ -12,10 +12,12 @@ final _regExpTKey = RegExp(r'^([a-zA-Z][0-9])(?=[^a-zA-Z0-9]|$)');
 final _regExpTValue = RegExp(r'^([a-zA-Z0-9]{3,8})(?=[^a-zA-Z0-9]|$)');
 final _regExpSeparator = RegExp(r'[-_]');
 
-final _regExpExtension =
-    RegExp(r'^([a-wy-zA-WY-Z0-9](?:[-_][a-zA-Z0-9]{2,8})+)(?=[^a-zA-Z0-9]|$)');
-final _regExpPrivateUse =
-    RegExp(r'^([xX](?:[-_][a-zA-Z0-9]{1,8})+)(?=[^a-zA-Z0-9]|$)');
+final _regExpExtension = RegExp(
+  r'^([a-wy-zA-WY-Z0-9](?:[-_][a-zA-Z0-9]{2,8})+)(?=[^a-zA-Z0-9]|$)',
+);
+final _regExpPrivateUse = RegExp(
+  r'^([xX](?:[-_][a-zA-Z0-9]{1,8})+)(?=[^a-zA-Z0-9]|$)',
+);
 
 /// Predefined Unicode locale extensions.
 ///
@@ -61,11 +63,14 @@ class UnicodeExtensions {
 
   /// Parse the input into a [UnicodeExtensions]
   factory UnicodeExtensions.parse(
-          Iterable<String> input, String? legacyExtensions) =>
-      _parse(input, legacyExtensions);
+    Iterable<String> input,
+    String? legacyExtensions,
+  ) => _parse(input, legacyExtensions);
 
   static UnicodeExtensions _parse(
-      Iterable<String> extensions, String? legacyExtensions) {
+    Iterable<String> extensions,
+    String? legacyExtensions,
+  ) {
     var attributes = <String>[];
     var uFields = <MapEntry<String, String?>>[];
     String? uRemainder;
@@ -73,15 +78,18 @@ class UnicodeExtensions {
     var tFields = <MapEntry<String, String?>>[];
     String? tRemainder;
 
-    for (var extension in extensions
-        .where((e) => e.startsWith('u-'))
-        .map((e) => e.substring(1))) {
+    for (var extension
+        in extensions
+            .where((e) => e.startsWith('u-'))
+            .map((e) => e.substring(1))) {
       var input = extension;
 
       String? attribute;
       while (true) {
-        (attribute, input) =
-            BaseLanguageId.matchRegExp(_regExpAttribute, input);
+        (attribute, input) = BaseLanguageId.matchRegExp(
+          _regExpAttribute,
+          input,
+        );
 
         if (attribute == null) break;
 
@@ -109,9 +117,10 @@ class UnicodeExtensions {
     }
 
     // split keywords first
-    for (var extension in extensions
-        .where((e) => e.startsWith('t-'))
-        .map((e) => e.substring(2))) {
+    for (var extension
+        in extensions
+            .where((e) => e.startsWith('t-'))
+            .map((e) => e.substring(2))) {
       var input = extension;
 
       tLang = LanguageId.parse(input);
@@ -155,12 +164,13 @@ class UnicodeExtensions {
     }
 
     return UnicodeExtensions(
-        attributes: List.unmodifiable(attributes),
-        uFields: List.unmodifiable(uFields),
-        uRemainder: uRemainder,
-        tLang: tLang,
-        tFields: List.unmodifiable(tFields),
-        tRemainder: tRemainder);
+      attributes: List.unmodifiable(attributes),
+      uFields: List.unmodifiable(uFields),
+      uRemainder: uRemainder,
+      tLang: tLang,
+      tFields: List.unmodifiable(tFields),
+      tRemainder: tRemainder,
+    );
   }
 
   /// Check if the unicode extensions are well-formed
@@ -170,32 +180,52 @@ class UnicodeExtensions {
     isWellFormed &= tRemainder == null;
 
     isWellFormed &= attributes.every(
-        (e) => BaseLanguageId.nullOrMatchWithoutSeparator(_regExpAttribute, e));
+      (e) => BaseLanguageId.nullOrMatchWithoutSeparator(_regExpAttribute, e),
+    );
 
     // attributes can only occur once
-    isWellFormed &= (attributes.length ==
+    isWellFormed &=
+        (attributes.length ==
         attributes.map((e) => e.toLowerCase()).toSet().length);
 
-    isWellFormed &= uFields.every((e) =>
-        BaseLanguageId.nullOrMatchWithoutSeparator(_regExpUKey, e.key) &&
-        (e.value == null ||
-            e.value!.split(_regExpSeparator).every((f) =>
-                BaseLanguageId.nullOrMatchWithoutSeparator(_regExpUValue, f))));
+    isWellFormed &= uFields.every(
+      (e) =>
+          BaseLanguageId.nullOrMatchWithoutSeparator(_regExpUKey, e.key) &&
+          (e.value == null ||
+              e.value!
+                  .split(_regExpSeparator)
+                  .every(
+                    (f) => BaseLanguageId.nullOrMatchWithoutSeparator(
+                      _regExpUValue,
+                      f,
+                    ),
+                  )),
+    );
 
     // uFields can only occur once
-    isWellFormed &= (uFields.length ==
+    isWellFormed &=
+        (uFields.length ==
         uFields.map((e) => e.key.toLowerCase()).toSet().length);
 
     isWellFormed &= tLang?.isWellFormed != false;
 
-    isWellFormed &= tFields.every((e) =>
-        BaseLanguageId.nullOrMatchWithoutSeparator(_regExpUKey, e.key) &&
-        (e.value == null ||
-            e.value!.split(_regExpSeparator).every((f) =>
-                BaseLanguageId.nullOrMatchWithoutSeparator(_regExpUValue, f))));
+    isWellFormed &= tFields.every(
+      (e) =>
+          BaseLanguageId.nullOrMatchWithoutSeparator(_regExpUKey, e.key) &&
+          (e.value == null ||
+              e.value!
+                  .split(_regExpSeparator)
+                  .every(
+                    (f) => BaseLanguageId.nullOrMatchWithoutSeparator(
+                      _regExpUValue,
+                      f,
+                    ),
+                  )),
+    );
 
     // tFields can only occur once
-    isWellFormed &= (tFields.length ==
+    isWellFormed &=
+        (tFields.length ==
         tFields.map((e) => e.key.toLowerCase()).toSet().length);
 
     return isWellFormed;
@@ -210,7 +240,7 @@ class UnicodeExtensions {
 
     var otherExtensions = CombinedIterableView([
       newUFields.where((e) => e.key.length == 1),
-      newTFields.where((e) => e.key.length == 1)
+      newTFields.where((e) => e.key.length == 1),
     ]).map((e) => [e.key, e.value].nonNulls.join('-')).toList();
 
     newUFields.removeWhere((e) => e.key.length == 1);
@@ -218,7 +248,8 @@ class UnicodeExtensions {
 
     var unicodeExtensions = UnicodeExtensions(
       attributes: List.unmodifiable(
-          attributes.map((e) => e.toLowerCase()).toSet().sorted()),
+        attributes.map((e) => e.toLowerCase()).toSet().sorted(),
+      ),
       uFields: List.unmodifiable(newUFields),
       tLang: tLang?.canonicalize(),
       tFields: List.unmodifiable(newTFields),
@@ -255,8 +286,10 @@ class UnicodeExtensions {
 }
 
 List<MapEntry<String, String?>> _canonicalizeFields(
-    Iterable<MapEntry<String, String?>> entries, String extension,
-    {bool removeTrue = false}) {
+  Iterable<MapEntry<String, String?>> entries,
+  String extension, {
+  bool removeTrue = false,
+}) {
   final map = <String, String?>{};
   var extensionKeys = LocaleData.extensionKeys[extension];
 
@@ -265,10 +298,11 @@ List<MapEntry<String, String?>> _canonicalizeFields(
 
     String? value;
     if (extensionKeys?.keys[key]?.keyType == KeyType.timeZone) {
-      value = (TimeZoneData.zoneToShort[
-                  TimeZoneData.aliasToZone[entry.value] ?? entry.value] ??
-              entry.value)
-          ?.toLowerCase();
+      value =
+          (TimeZoneData.zoneToShort[TimeZoneData.aliasToZone[entry.value] ??
+                      entry.value] ??
+                  entry.value)
+              ?.toLowerCase();
     } else {
       value =
           (extensionKeys?.keys[key]?.valueAliases[entry.value] ?? entry.value)
@@ -288,19 +322,22 @@ List<MapEntry<String, String?>> _canonicalizeFields(
     }
   }
 
-  return map.entries.map((e) {
-    var subdivision = e.value;
-    var keyType = extensionKeys?.keys[e.key]?.keyType;
-    if ((keyType == KeyType.subdivisionCode || keyType == KeyType.rgKeyValue) &&
-        subdivision != null) {
-      var alias = LocaleData.subDivisionAlias[subdivision];
-      if (alias != null && alias.length == 2) {
-        alias += 'zzzz';
-      }
-      subdivision = alias?.toLowerCase() ?? subdivision;
-      return MapEntry(e.key, subdivision);
-    } else {
-      return e;
-    }
-  }).sorted((lhs, rhs) => lhs.key.compareTo(rhs.key));
+  return map.entries
+      .map((e) {
+        var subdivision = e.value;
+        var keyType = extensionKeys?.keys[e.key]?.keyType;
+        if ((keyType == KeyType.subdivisionCode ||
+                keyType == KeyType.rgKeyValue) &&
+            subdivision != null) {
+          var alias = LocaleData.subDivisionAlias[subdivision];
+          if (alias != null && alias.length == 2) {
+            alias += 'zzzz';
+          }
+          subdivision = alias?.toLowerCase() ?? subdivision;
+          return MapEntry(e.key, subdivision);
+        } else {
+          return e;
+        }
+      })
+      .sorted((lhs, rhs) => lhs.key.compareTo(rhs.key));
 }

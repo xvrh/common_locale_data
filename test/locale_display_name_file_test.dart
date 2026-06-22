@@ -25,26 +25,34 @@ void main() async {
     group(g.$1, () {
       for (var t in g.$2) {
         test(
-            '${t.locale}: ${t.original} => ${t.displayName} ${t.preferComposition ? 'Composed' : ''} (line: ${t.lineNr})',
-            skip: t.skipReason, () {
-          if (currentLocale != t.locale) {
-            // ignore: deprecated_member_use_from_same_package
-            cld = CommonLocaleDataAll.locales[t.locale] ??
-                LocaleMatcher.getBestCommonLocaleData(
+          '${t.locale}: ${t.original} => ${t.displayName} ${t.preferComposition ? 'Composed' : ''} (line: ${t.lineNr})',
+          skip: t.skipReason,
+          () {
+            if (currentLocale != t.locale) {
+              // ignore: deprecated_member_use_from_same_package
+              cld =
+                  CommonLocaleDataAll.locales[t.locale] ??
+                  LocaleMatcher.getBestCommonLocaleData(
                     [t.locale],
                     // ignore: deprecated_member_use_from_same_package
                     CommonLocaleDataAll.locales.values,
-                    noDefaultLocale: true);
-            currentLocale = t.locale;
-          }
-          expect(cld, isNotNull, reason: 'Cannot find locale: ${t.locale}');
-          expect(
+                    noDefaultLocale: true,
+                  );
+              currentLocale = t.locale;
+            }
+            expect(cld, isNotNull, reason: 'Cannot find locale: ${t.locale}');
+            expect(
               cld!.localeDisplayName.formatWithExtensions(
-                  LocaleId.parse(t.original),
-                  preferComposition: t.preferComposition),
+                LocaleId.parse(t.original),
+                preferComposition: t.preferComposition,
+              ),
               anyOf(
-                  t.displayName, t.displayName.replaceAll('FONIPA', 'fonipa')));
-        });
+                t.displayName,
+                t.displayName.replaceAll('FONIPA', 'fonipa'),
+              ),
+            );
+          },
+        );
       }
     });
   }

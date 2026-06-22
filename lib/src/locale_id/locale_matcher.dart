@@ -62,10 +62,11 @@ class LocaleMatcher {
   final int threshold;
 
   LocaleMatcher._(
-      this.orderedSupportedLocales,
-      this.orderedMaximizedSupportedLocales,
-      this.defaultLocale,
-      this.threshold);
+    this.orderedSupportedLocales,
+    this.orderedMaximizedSupportedLocales,
+    this.defaultLocale,
+    this.threshold,
+  );
 
   /// Create a new [LocaleMatcher] with specified [supportedLocales].
   ///
@@ -90,25 +91,35 @@ class LocaleMatcher {
     LanguageId? desiredForThreshold,
     LanguageId? supportedForThreshold,
   }) {
-    return _constructLocaleMatcher(supportedLocales, noDefaultLocale,
-        defaultLocale, threshold, desiredForThreshold, supportedForThreshold);
+    return _constructLocaleMatcher(
+      supportedLocales,
+      noDefaultLocale,
+      defaultLocale,
+      threshold,
+      desiredForThreshold,
+      supportedForThreshold,
+    );
   }
 
   static LocaleMatcher _constructLocaleMatcher(
-      Iterable<LanguageId> supportedLocales,
-      bool noDefaultLocale,
-      LanguageId? defaultLocale,
-      int? threshold,
-      LanguageId? maxDistanceDesired,
-      LanguageId? maxDistanceSupported) {
+    Iterable<LanguageId> supportedLocales,
+    bool noDefaultLocale,
+    LanguageId? defaultLocale,
+    int? threshold,
+    LanguageId? maxDistanceDesired,
+    LanguageId? maxDistanceSupported,
+  ) {
     var maximizedSupportedLocales = _maximizeLocales(supportedLocales);
 
     if (noDefaultLocale == false) {
       defaultLocale ??= supportedLocales.firstOrNull;
     }
 
-    threshold =
-        _calcThreshold(threshold, maxDistanceDesired, maxDistanceSupported);
+    threshold = _calcThreshold(
+      threshold,
+      maxDistanceDesired,
+      maxDistanceSupported,
+    );
 
     var orderedSupportedLocales = <LanguageId>[];
     var orderedMaximizedSupportedLocales = <LanguageId>[];
@@ -117,9 +128,9 @@ class LocaleMatcher {
       IterableZip([supportedLocales, maximizedSupportedLocales])
           .where((pair) => pair[0].equalLanguageScriptAndRegion(defaultLocale!))
           .forEach((pair) {
-        orderedSupportedLocales.add(pair[0]);
-        orderedMaximizedSupportedLocales.add(pair[1]);
-      });
+            orderedSupportedLocales.add(pair[0]);
+            orderedMaximizedSupportedLocales.add(pair[1]);
+          });
       if (orderedSupportedLocales.isEmpty) {
         orderedSupportedLocales.add(defaultLocale);
         orderedMaximizedSupportedLocales.add(defaultLocale);
@@ -131,17 +142,17 @@ class LocaleMatcher {
       IterableZip([supportedLocales, maximizedSupportedLocales])
           .where((pair) => pair[1].equalLanguageScriptAndRegion(paradigmLocale))
           .forEach((pair) {
-        orderedSupportedLocales.add(pair[0]);
-        orderedMaximizedSupportedLocales.add(pair[1]);
-      });
+            orderedSupportedLocales.add(pair[0]);
+            orderedMaximizedSupportedLocales.add(pair[1]);
+          });
     }
 
     IterableZip([supportedLocales, maximizedSupportedLocales])
         .whereNot((pair) => orderedSupportedLocales.contains(pair[0]))
         .forEach((pair) {
-      orderedSupportedLocales.add(pair[0]);
-      orderedMaximizedSupportedLocales.add(pair[1]);
-    });
+          orderedSupportedLocales.add(pair[0]);
+          orderedMaximizedSupportedLocales.add(pair[1]);
+        });
 
     return LocaleMatcher._(
       orderedSupportedLocales,
@@ -164,13 +175,12 @@ class LocaleMatcher {
     LanguageId supportedLocale, {
     bool favorScript = false,
     bool ignoreFallback = false,
-  }) =>
-      _isMatch(
-        desiredLocale,
-        supportedLocale,
-        favorScript: favorScript,
-        ignoreFallback: ignoreFallback,
-      );
+  }) => _isMatch(
+    desiredLocale,
+    supportedLocale,
+    favorScript: favorScript,
+    ignoreFallback: ignoreFallback,
+  );
 
   bool _isMatch(
     LanguageId desiredLocale,
@@ -179,8 +189,11 @@ class LocaleMatcher {
     required bool ignoreFallback,
   }) {
     var dist = _calcPrimaryDistance(
-        _maximizeLocale(desiredLocale), _maximizeLocale(supportedLocale),
-        ignoreFallback: ignoreFallback, favorScript: favorScript);
+      _maximizeLocale(desiredLocale),
+      _maximizeLocale(supportedLocale),
+      ignoreFallback: ignoreFallback,
+      favorScript: favorScript,
+    );
     return dist <= threshold;
   }
 
@@ -200,13 +213,12 @@ class LocaleMatcher {
     bool favorScript = false,
     bool favorEarlier = true,
     bool ignoreFallback = false,
-  }) =>
-      _getBestMatch(
-        desiredLocales,
-        favorScript: favorScript,
-        favorEarlier: favorEarlier,
-        ignoreFallback: ignoreFallback,
-      );
+  }) => _getBestMatch(
+    desiredLocales,
+    favorScript: favorScript,
+    favorEarlier: favorEarlier,
+    ignoreFallback: ignoreFallback,
+  );
 
   /// Helper method to select the [desiredLocales] from a list of [supportedLocales]s,
   /// where the [supportedLocales] are [CommonLocaleData].
@@ -214,18 +226,21 @@ class LocaleMatcher {
   /// Creates a [LocaleMatcher] with the locales from the supported [supportedLocales]s
   /// and select the best matching [desiredLocales] from them.
   static CommonLocaleData? getBestCommonLocaleData(
-      Iterable<String> desiredLocales,
-      Iterable<CommonLocaleData> supportedLocales,
-      {bool noDefaultLocale = false}) {
-    var selectedLocale = LocaleMatcher(
-      supportedLocales.map((e) => LanguageId.parse(e.locale)),
-      noDefaultLocale: noDefaultLocale,
-    )
-        ._getBestMatch(desiredLocales.map((e) => LanguageId.parse(e)))
-        .supportedLocale;
+    Iterable<String> desiredLocales,
+    Iterable<CommonLocaleData> supportedLocales, {
+    bool noDefaultLocale = false,
+  }) {
+    var selectedLocale =
+        LocaleMatcher(
+              supportedLocales.map((e) => LanguageId.parse(e.locale)),
+              noDefaultLocale: noDefaultLocale,
+            )
+            ._getBestMatch(desiredLocales.map((e) => LanguageId.parse(e)))
+            .supportedLocale;
 
-    return supportedLocales
-        .firstWhereOrNull((e) => selectedLocale.toString() == e.locale);
+    return supportedLocales.firstWhereOrNull(
+      (e) => selectedLocale.toString() == e.locale,
+    );
   }
 
   MatchResult _getBestMatch(
@@ -247,29 +262,43 @@ class LocaleMatcher {
     var bestSecondaryDistance = _clampValue;
     var bestSupportedDistanceFromDefault = _clampValue;
 
-    for (var [maximizedDesiredLocale, desiredLocale]
-        in IterableZip([maximizedDesiredLocales, desiredLocales])) {
-      for (var [maximizedSupportedLocale, supportedLocale] in IterableZip(
-          [orderedMaximizedSupportedLocales, orderedSupportedLocales])) {
+    for (var [maximizedDesiredLocale, desiredLocale] in IterableZip([
+      maximizedDesiredLocales,
+      desiredLocales,
+    ])) {
+      for (var [maximizedSupportedLocale, supportedLocale] in IterableZip([
+        orderedMaximizedSupportedLocales,
+        orderedSupportedLocales,
+      ])) {
         //
         // primary distance using lookup tables + demotion depending on position in array
-        var dist = demotion +
+        var dist =
+            demotion +
             _calcPrimaryDistance(
-                maximizedDesiredLocale, maximizedSupportedLocale,
-                ignoreFallback: ignoreFallback, favorScript: favorScript);
+              maximizedDesiredLocale,
+              maximizedSupportedLocale,
+              ignoreFallback: ignoreFallback,
+              favorScript: favorScript,
+            );
 
         if (dist >= threshold || dist > bestDistance) {
           continue;
         }
 
-        var secondaryDistance = _calcSecondaryDistance(desiredLocale,
-            maximizedDesiredLocale, supportedLocale, maximizedSupportedLocale);
+        var secondaryDistance = _calcSecondaryDistance(
+          desiredLocale,
+          maximizedDesiredLocale,
+          supportedLocale,
+          maximizedSupportedLocale,
+        );
         if (dist == bestDistance && secondaryDistance > bestSecondaryDistance) {
           continue;
         }
 
-        var supportedDistanceFromDefault =
-            _calcDistanceFromDefault(supportedLocale, maximizedSupportedLocale);
+        var supportedDistanceFromDefault = _calcDistanceFromDefault(
+          supportedLocale,
+          maximizedSupportedLocale,
+        );
         if (dist == bestDistance &&
             secondaryDistance == bestSecondaryDistance &&
             (supportedLocale.lang != bestSupported?.lang ||
@@ -293,8 +322,11 @@ class LocaleMatcher {
       if (bestDistance <= demotion) break;
     }
 
-    return MatchResult(bestDesired, bestSupported ?? defaultLocale,
-        bestDistance.clamp(0, _clampValue));
+    return MatchResult(
+      bestDesired,
+      bestSupported ?? defaultLocale,
+      bestDistance.clamp(0, _clampValue),
+    );
   }
 
   static Iterable<LanguageId> _maximizeLocales(Iterable<LanguageId> locales) {
@@ -307,8 +339,11 @@ class LocaleMatcher {
     return r;
   }
 
-  static int _calcThreshold(int? threshold, LanguageId? maxDistanceDesired,
-      LanguageId? maxDistanceSupported) {
+  static int _calcThreshold(
+    int? threshold,
+    LanguageId? maxDistanceDesired,
+    LanguageId? maxDistanceSupported,
+  ) {
     if (threshold != null) {
       return threshold.clamp(0, _clampValue);
     }
@@ -316,16 +351,21 @@ class LocaleMatcher {
     if (maxDistanceDesired != null && maxDistanceSupported != null) {
       // 1+ for an exclusive threshold from an inclusive max
       return 1 +
-          _calcPrimaryDistanceStatic(maxDistanceDesired.addLikelySubTags(),
-              maxDistanceSupported.addLikelySubTags());
+          _calcPrimaryDistanceStatic(
+            maxDistanceDesired.addLikelySubTags(),
+            maxDistanceSupported.addLikelySubTags(),
+          );
     } else {
       return _LocaleMatcherStaticInfo.instance.scriptDistance;
     }
   }
 
   static int _calcPrimaryDistance(
-      BaseLanguageId desiredLocale, BaseLanguageId supportedLocale,
-      {bool ignoreFallback = false, bool favorScript = false}) {
+    BaseLanguageId desiredLocale,
+    BaseLanguageId supportedLocale, {
+    bool ignoreFallback = false,
+    bool favorScript = false,
+  }) {
     // workaround for privateUse
     if (desiredLocale is LocaleId && desiredLocale.isPrivateUse) {
       if (supportedLocale is LocaleId &&
@@ -340,8 +380,12 @@ class LocaleMatcher {
       }
     }
 
-    var dist = _calcPrimaryDistanceStatic(desiredLocale, supportedLocale,
-        ignoreFallback: ignoreFallback, favorScript: favorScript);
+    var dist = _calcPrimaryDistanceStatic(
+      desiredLocale,
+      supportedLocale,
+      ignoreFallback: ignoreFallback,
+      favorScript: favorScript,
+    );
 
     // workaround for pseudo-locales in case favorScript if true
     if (favorScript &&
@@ -354,8 +398,11 @@ class LocaleMatcher {
   }
 
   static int _calcPrimaryDistanceStatic(
-      BaseLanguageId desiredLocale, BaseLanguageId supportedLocale,
-      {bool ignoreFallback = false, bool favorScript = false}) {
+    BaseLanguageId desiredLocale,
+    BaseLanguageId supportedLocale, {
+    bool ignoreFallback = false,
+    bool favorScript = false,
+  }) {
     var dist = 0;
     for (var len = 3; len > 0; len--) {
       if (len == 3 && desiredLocale.region == supportedLocale.region) len--;
@@ -364,10 +411,14 @@ class LocaleMatcher {
       if (len == 0) break;
 
       for (var rule in LocaleData.matchRules[len - 1]) {
-        if (rule.matches(desiredLocale, supportedLocale,
-            ignoreFallback: ignoreFallback)) {
-          dist +=
-              (len == 1 && favorScript) ? rule.distance ~/ 4 : rule.distance;
+        if (rule.matches(
+          desiredLocale,
+          supportedLocale,
+          ignoreFallback: ignoreFallback,
+        )) {
+          dist += (len == 1 && favorScript)
+              ? rule.distance ~/ 4
+              : rule.distance;
           break;
         }
       }
@@ -376,10 +427,11 @@ class LocaleMatcher {
   }
 
   int _calcSecondaryDistance(
-      LanguageId desiredLocale,
-      LanguageId maximizedDesiredLocale,
-      LanguageId supportedLocale,
-      LanguageId maximizedSupportedLocale) {
+    LanguageId desiredLocale,
+    LanguageId maximizedDesiredLocale,
+    LanguageId supportedLocale,
+    LanguageId maximizedSupportedLocale,
+  ) {
     var distance = 0;
     var retDist = 1 << 16;
 
@@ -432,36 +484,39 @@ class LocaleMatcher {
     // languageId is canonicalized, so no need to use toLowerCase()
     if (languageId.variants.contains('psaccent') || languageId.region == 'XA') {
       return LanguageId(
-          lang: ':XA:${languageId.lang}',
-          script: languageId.script,
-          region: languageId.region,
-          variants:
-              languageId.variants.whereNot((e) => e == 'psaccent').toList());
+        lang: ':XA:${languageId.lang}',
+        script: languageId.script,
+        region: languageId.region,
+        variants: languageId.variants.whereNot((e) => e == 'psaccent').toList(),
+      );
     } else if (languageId.variants.contains('psbidi') ||
         languageId.region == 'XB') {
       return LanguageId(
-          lang: ':XB:${languageId.lang}',
-          script: languageId.script,
-          region: languageId.region,
-          variants:
-              languageId.variants.whereNot((e) => e == 'psbidi').toList());
+        lang: ':XB:${languageId.lang}',
+        script: languageId.script,
+        region: languageId.region,
+        variants: languageId.variants.whereNot((e) => e == 'psbidi').toList(),
+      );
     } else if (languageId.variants.contains('pscrack') ||
         languageId.region == 'XC') {
       return LanguageId(
-          lang: ':XC:${languageId.lang}',
-          script: languageId.script,
-          region: languageId.region,
-          variants:
-              languageId.variants.whereNot((e) => e == 'pscrack').toList());
+        lang: ':XC:${languageId.lang}',
+        script: languageId.script,
+        region: languageId.region,
+        variants: languageId.variants.whereNot((e) => e == 'pscrack').toList(),
+      );
     }
     return languageId;
   }
 }
 
 int _calcDistanceFromDefault(
-    LanguageId supportedLocale, LanguageId maximizedSupportedLocale) {
-  var maximizedDefault =
-      LanguageId(lang: maximizedSupportedLocale.lang).addLikelySubTags();
+  LanguageId supportedLocale,
+  LanguageId maximizedSupportedLocale,
+) {
+  var maximizedDefault = LanguageId(
+    lang: maximizedSupportedLocale.lang,
+  ).addLikelySubTags();
 
   if (maximizedSupportedLocale.script != maximizedDefault.script) {
     return 2;
@@ -498,17 +553,17 @@ class MatchResult {
 
     var extensions =
         (desiredLocale is LocaleId && desiredLocale.extensions.isNotEmpty)
-            ? desiredLocale.extensions
-            : supportedLocale is LocaleId
-                ? supportedLocale.extensions
-                : const <String>[];
+        ? desiredLocale.extensions
+        : supportedLocale is LocaleId
+        ? supportedLocale.extensions
+        : const <String>[];
 
     var privateUse =
         (desiredLocale is LocaleId && desiredLocale.privateUse != null)
-            ? desiredLocale.privateUse
-            : supportedLocale is LocaleId
-                ? supportedLocale.privateUse
-                : null;
+        ? desiredLocale.privateUse
+        : supportedLocale is LocaleId
+        ? supportedLocale.privateUse
+        : null;
 
     if (privateUse != null || extensions.isNotEmpty) {
       return LocaleId(
@@ -554,13 +609,17 @@ class MatchResult {
 /// and takes some time, so avoid doing it statically and instead do it on demand.
 class _LocaleMatcherStaticInfo {
   final int languageDistance = LocaleMatcher._calcPrimaryDistanceStatic(
-      BaseLanguageId(lang: 'xx'), BaseLanguageId(lang: 'yy'));
+    BaseLanguageId(lang: 'xx'),
+    BaseLanguageId(lang: 'yy'),
+  );
   final int scriptDistance = LocaleMatcher._calcPrimaryDistanceStatic(
-      BaseLanguageId(lang: 'xx', script: 'Xxxx'),
-      BaseLanguageId(lang: 'xx', script: 'Yyyy'));
+    BaseLanguageId(lang: 'xx', script: 'Xxxx'),
+    BaseLanguageId(lang: 'xx', script: 'Yyyy'),
+  );
   final int demotionPerDesiredLocale = LocaleMatcher._calcPrimaryDistanceStatic(
-      BaseLanguageId(lang: 'en', script: 'Latn', region: 'GB'),
-      BaseLanguageId(lang: 'en', script: 'Latn', region: 'US'));
+    BaseLanguageId(lang: 'en', script: 'Latn', region: 'GB'),
+    BaseLanguageId(lang: 'en', script: 'Latn', region: 'US'),
+  );
 
   final List<LanguageId> paradigmLocales = LocaleData.paradigmLocales
       .map((e) => LanguageId.parse(e).addLikelySubTags())

@@ -38,93 +38,92 @@ class DateFieldsArAE extends DateFieldsAr {
 
   @override
   DateFieldFullData get year => const DateFieldFullData(
-        displayName: MultiLength(
-          long: 'السنة',
-          short: 'السنة',
-          narrow: 'السنة',
-        ),
-        previous: MultiLength(
-          long: 'السنة الماضية',
-          short: 'السنة الماضية',
-          narrow: 'السنة الماضية',
-        ),
-        now: MultiLength(
-          long: 'هذه السنة',
-          short: 'هذه السنة',
-          narrow: 'هذه السنة',
-        ),
-        next: MultiLength(
-          long: 'السنة التالية',
-          short: 'السنة التالية',
-          narrow: 'السنة التالية',
-        ),
-        past: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'قبل {0} سنة',
-            one: 'قبل سنة واحدة',
-            two: 'قبل سنتين',
-            few: 'قبل {0} سنوات',
-            many: 'قبل {0} سنة',
-            other: 'قبل {0} سنة',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'قبل {0} سنة',
-            one: 'قبل سنة واحدة',
-            two: 'قبل سنتين',
-            few: 'قبل {0} سنوات',
-            many: 'قبل {0} سنة',
-            other: 'قبل {0} سنة',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'قبل {0} سنة',
-            one: 'قبل سنة واحدة',
-            two: 'قبل سنتين',
-            few: 'قبل {0} سنوات',
-            many: 'قبل {0} سنة',
-            other: 'قبل {0} سنة',
-          ),
-        ),
-        future: MultiLengthRelativeTime(
-          long: RelativeTime(
-            _locale,
-            zero: 'خلال {0} سنة',
-            one: 'خلال سنة واحدة',
-            two: 'خلال سنتين',
-            few: 'خلال {0} سنوات',
-            many: 'خلال {0} سنة',
-            other: 'خلال {0} سنة',
-          ),
-          short: RelativeTime(
-            _locale,
-            zero: 'خلال {0} سنة',
-            one: 'خلال سنة واحدة',
-            two: 'خلال سنتين',
-            few: 'خلال {0} سنوات',
-            many: 'خلال {0} سنة',
-            other: 'خلال {0} سنة',
-          ),
-          narrow: RelativeTime(
-            _locale,
-            zero: 'خلال {0} سنة',
-            one: 'خلال سنة واحدة',
-            two: 'خلال سنتين',
-            few: 'خلال {0} سنوات',
-            many: 'خلال {0} سنة',
-            other: 'خلال {0} سنة',
-          ),
-        ),
-      );
+    displayName: MultiLength(long: 'السنة', short: 'السنة', narrow: 'السنة'),
+    previous: MultiLength(
+      long: 'السنة الماضية',
+      short: 'السنة الماضية',
+      narrow: 'السنة الماضية',
+    ),
+    now: MultiLength(
+      long: 'هذه السنة',
+      short: 'هذه السنة',
+      narrow: 'هذه السنة',
+    ),
+    next: MultiLength(
+      long: 'السنة التالية',
+      short: 'السنة التالية',
+      narrow: 'السنة التالية',
+    ),
+    past: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'قبل {0} سنة',
+        one: 'قبل سنة واحدة',
+        two: 'قبل سنتين',
+        few: 'قبل {0} سنوات',
+        many: 'قبل {0} سنة',
+        other: 'قبل {0} سنة',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'قبل {0} سنة',
+        one: 'قبل سنة واحدة',
+        two: 'قبل سنتين',
+        few: 'قبل {0} سنوات',
+        many: 'قبل {0} سنة',
+        other: 'قبل {0} سنة',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'قبل {0} سنة',
+        one: 'قبل سنة واحدة',
+        two: 'قبل سنتين',
+        few: 'قبل {0} سنوات',
+        many: 'قبل {0} سنة',
+        other: 'قبل {0} سنة',
+      ),
+    ),
+    future: MultiLengthRelativeTime(
+      long: RelativeTime(
+        _locale,
+        zero: 'خلال {0} سنة',
+        one: 'خلال سنة واحدة',
+        two: 'خلال سنتين',
+        few: 'خلال {0} سنوات',
+        many: 'خلال {0} سنة',
+        other: 'خلال {0} سنة',
+      ),
+      short: RelativeTime(
+        _locale,
+        zero: 'خلال {0} سنة',
+        one: 'خلال سنة واحدة',
+        two: 'خلال سنتين',
+        few: 'خلال {0} سنوات',
+        many: 'خلال {0} سنة',
+        other: 'خلال {0} سنة',
+      ),
+      narrow: RelativeTime(
+        _locale,
+        zero: 'خلال {0} سنة',
+        one: 'خلال سنة واحدة',
+        two: 'خلال سنتين',
+        few: 'خلال {0} سنوات',
+        many: 'خلال {0} سنة',
+        other: 'خلال {0} سنة',
+      ),
+    ),
+  );
 }
 
 class TerritoriesArAE extends TerritoriesAr {
   const TerritoriesArAE(super.cld);
 
   static const _ci = Territory('CI', 'ساحل العاج', variant: 'ساحل العاج');
-  static const _tl =
-      Territory('TL', 'تيمور - ليشتي', variant: 'التيمور الشرقية');
+  static const _tl = Territory(
+    'TL',
+    'تيمور - ليشتي',
+    variant: 'التيمور الشرقية',
+  );
 
   @override
   Territory get ci => _ci;
@@ -133,12 +132,9 @@ class TerritoriesArAE extends TerritoriesAr {
 
   @override
   Map<String, Territory> get territories => Map.unmodifiable({
-        ...TerritoriesAr.staticTerritories,
-        ...const {
-          'CI': _ci,
-          'TL': _tl,
-        }
-      });
+    ...TerritoriesAr.staticTerritories,
+    ...const {'CI': _ci, 'TL': _tl},
+  });
 }
 
 class CurrenciesArAE extends CurrenciesAr {
@@ -151,9 +147,7 @@ class CurrenciesArAE extends CurrenciesAr {
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesAr.staticCurrencies,
-        ...const {
-          'BND': _bnd,
-        }
-      });
+    ...CurrenciesAr.staticCurrencies,
+    ...const {'BND': _bnd},
+  });
 }

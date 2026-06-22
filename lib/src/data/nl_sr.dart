@@ -32,19 +32,22 @@ class CommonLocaleDataNlSR extends CommonLocaleDataNl {
 class CurrenciesNlSR extends CurrenciesNl {
   const CurrenciesNlSR(super.cld);
 
-  static const _srd = Currency(_cld, 'SRD', 'Surinaamse dollar',
-      symbol: r'$', symbolNarrow: r'$');
+  static const _srd = Currency(
+    _cld,
+    'SRD',
+    'Surinaamse dollar',
+    symbol: r'$',
+    symbolNarrow: r'$',
+  );
 
   @override
   Currency get srd => _srd;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesNl.staticCurrencies,
-        ...const {
-          'SRD': _srd,
-        }
-      });
+    ...CurrenciesNl.staticCurrencies,
+    ...const {'SRD': _srd},
+  });
 }
 
 class TimeZonesNlSR extends TimeZonesNl {
@@ -52,11 +55,13 @@ class TimeZonesNlSR extends TimeZonesNl {
 
   @override
   Map<String, MetaZone> get metaZoneNames => Map.unmodifiable({
-        ...TimeZonesNl.staticMetaZoneNames,
-        ...const {
-          'Suriname': MetaZone('Suriname',
-              long: TimeZoneName(standard: 'Surinaamse tijd'),
-              short: TimeZoneName(standard: 'SRT')),
-        }
-      });
+    ...TimeZonesNl.staticMetaZoneNames,
+    ...const {
+      'Suriname': MetaZone(
+        'Suriname',
+        long: TimeZoneName(standard: 'Surinaamse tijd'),
+        short: TimeZoneName(standard: 'SRT'),
+      ),
+    },
+  });
 }

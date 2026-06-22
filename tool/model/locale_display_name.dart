@@ -9,18 +9,18 @@ String? generateLocaleDisplayName(String locale) {
   var buffer = StringBuffer();
 
   var data = readJsonData(
-          'tool/data/localenames/localeDisplayNames/$locale.json',
-          'main/$locale/localeDisplayNames')
-      .cast<String, Map<String, dynamic>>();
+    'tool/data/localenames/localeDisplayNames/$locale.json',
+    'main/$locale/localeDisplayNames',
+  ).cast<String, Map<String, dynamic>>();
 
   var baseLocale = getBaseLocale(locale);
 
   Map<String, Map<String, dynamic>>? baseData;
   if (baseLocale != null) {
     baseData = readJsonData(
-            'tool/data/localenames/localeDisplayNames/$baseLocale.json',
-            'main/$baseLocale/localeDisplayNames')
-        .cast<String, Map<String, dynamic>>();
+      'tool/data/localenames/localeDisplayNames/$baseLocale.json',
+      'main/$baseLocale/localeDisplayNames',
+    ).cast<String, Map<String, dynamic>>();
   }
 
   buffer.writeln('''
@@ -43,7 +43,8 @@ class LocaleDisplayName${locale.toUpperCamelCase()} extends LocaleDisplayName${b
   for (var entry in fields.entries) {
     buffer.writeln('@override');
     buffer.writeln(
-        'String get ${entry.key} => ${escapeDartString(entry.value)};');
+      'String get ${entry.key} => ${escapeDartString(entry.value)};',
+    );
     nonEmpty = true;
   }
 
@@ -54,8 +55,14 @@ class LocaleDisplayName${locale.toUpperCamelCase()} extends LocaleDisplayName${b
   var keyNames = generateKeyNames(data);
   var baseKeyNames = baseData == null ? null : generateKeyNames(baseData);
 
-  var constMap = generateConstMap(keyNames, baseKeyNames, 'String', 'KeyNames',
-      'LocaleDisplayName', baseLocale);
+  var constMap = generateConstMap(
+    keyNames,
+    baseKeyNames,
+    'String',
+    'KeyNames',
+    'LocaleDisplayName',
+    baseLocale,
+  );
   if (constMap != null) {
     nonEmpty = true;
     buffer.write(constMap);
@@ -64,8 +71,14 @@ class LocaleDisplayName${locale.toUpperCamelCase()} extends LocaleDisplayName${b
   var valueNames = generateValueNames(data);
   var baseValueNames = baseData == null ? null : generateValueNames(baseData);
 
-  var constMapLocaleDisplayName = generateConstMap(valueNames, baseValueNames,
-      'Map<String, String>', 'ValueNames', 'LocaleDisplayName', baseLocale);
+  var constMapLocaleDisplayName = generateConstMap(
+    valueNames,
+    baseValueNames,
+    'Map<String, String>',
+    'ValueNames',
+    'LocaleDisplayName',
+    baseLocale,
+  );
 
   if (constMapLocaleDisplayName != null) {
     nonEmpty = true;
@@ -81,12 +94,15 @@ Set<String> generateKeyNames(Map<String, Map<String, dynamic>> data) {
   return (data['keys']!)
       .cast<String, String>()
       .entries
-      .map((e) => MapEntry(
+      .map(
+        (e) => MapEntry(
           LocaleData.extensionKeys.values
                   .firstWhereOrNull((ext) => ext.keyAliases[e.key] != null)
                   ?.keyAliases[e.key] ??
               e.key,
-          e.value))
+          e.value,
+        ),
+      )
       .map((e) => '${escapeDartString(e.key)}: ${escapeDartString(e.value)}')
       .toSet();
 }
@@ -122,7 +138,8 @@ Set<String> generateValueNames(Map<String, Map<String, dynamic>> data) {
 }
 
 Map<String, String> generateLocaleDisplayNameCode(
-    Map<String, Map<String, dynamic>> data) {
+  Map<String, Map<String, dynamic>> data,
+) {
   return {
     'localePattern': data['localeDisplayPattern']!['localePattern'] as String,
     'localeSeparator':
@@ -131,6 +148,6 @@ Map<String, String> generateLocaleDisplayNameCode(
         data['localeDisplayPattern']!['localeKeyTypePattern'] as String,
     'codePatternLanguage': data['codePatterns']!['language'] as String,
     'codePatternScript': data['codePatterns']!['script'] as String,
-    'codePatternTerritory': data['codePatterns']!['territory'] as String
+    'codePatternTerritory': data['codePatterns']!['territory'] as String,
   };
 }

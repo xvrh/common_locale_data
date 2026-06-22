@@ -28,10 +28,22 @@ class CommonLocaleDataFrLU extends CommonLocaleDataFr {
 class CurrenciesFrLU extends CurrenciesFr {
   const CurrenciesFrLU(super.cld);
 
-  static const _frf = Currency(_cld, 'FRF', 'franc français',
-      one: 'franc français', other: 'francs français', symbol: 'FRF');
-  static const _luf = Currency(_cld, 'LUF', 'franc luxembourgeois',
-      one: 'franc luxembourgeois', other: 'francs luxembourgeois', symbol: 'F');
+  static const _frf = Currency(
+    _cld,
+    'FRF',
+    'franc français',
+    one: 'franc français',
+    other: 'francs français',
+    symbol: 'FRF',
+  );
+  static const _luf = Currency(
+    _cld,
+    'LUF',
+    'franc luxembourgeois',
+    one: 'franc luxembourgeois',
+    other: 'francs luxembourgeois',
+    symbol: 'F',
+  );
 
   @override
   Currency get frf => _frf;
@@ -40,10 +52,7 @@ class CurrenciesFrLU extends CurrenciesFr {
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesFr.staticCurrencies,
-        ...const {
-          'FRF': _frf,
-          'LUF': _luf,
-        }
-      });
+    ...CurrenciesFr.staticCurrencies,
+    ...const {'FRF': _frf, 'LUF': _luf},
+  });
 }

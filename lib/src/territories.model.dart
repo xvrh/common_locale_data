@@ -25,9 +25,11 @@ abstract class Territories {
   /// *NOTE 2:* Accesses via this map will cause the data for all currencies
   /// of this locale to be included in the binary.
   @Deprecated(
-      'countries is now a dynamically generated view on the territories member')
-  Map<String, Territory> get countries => Map.fromEntries(territories.entries
-      .where((e) => TerritoryData.countries.contains(e.key)));
+    'countries is now a dynamically generated view on the territories member',
+  )
+  Map<String, Territory> get countries => Map.fromEntries(
+    territories.entries.where((e) => TerritoryData.countries.contains(e.key)),
+  );
 
   /// Access territories (without the extra [territories] indirection)
   ///
@@ -36,7 +38,7 @@ abstract class Territories {
     return territories[code?.toUpperCase()];
   }
 
-// FROM HERE ON GENERATED CODE - DO NOT MODIFY BY HAND
+  // FROM HERE ON GENERATED CODE - DO NOT MODIFY BY HAND
 
   /// Localized name for world.
   Territory get world;

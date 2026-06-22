@@ -38,25 +38,25 @@ class UnitsSvFI extends UnitsSv {
 
   @override
   Unit get speedKilometerPerHour => const Unit(
-        long: UnitCountPattern(
-          _locale,
-          'kilometer per timme',
-          one: '{0} kilometer per timme',
-          other: '{0} kilometer per timme',
-        ),
-        short: UnitCountPattern(
-          _locale,
-          'km/h',
-          one: '{0} kilometer per timme',
-          other: '{0} km/h',
-        ),
-        narrow: UnitCountPattern(
-          _locale,
-          'km/h',
-          one: '{0} km/h',
-          other: '{0} km/h',
-        ),
-      );
+    long: UnitCountPattern(
+      _locale,
+      'kilometer per timme',
+      one: '{0} kilometer per timme',
+      other: '{0} kilometer per timme',
+    ),
+    short: UnitCountPattern(
+      _locale,
+      'km/h',
+      one: '{0} kilometer per timme',
+      other: '{0} km/h',
+    ),
+    narrow: UnitCountPattern(
+      _locale,
+      'km/h',
+      one: '{0} km/h',
+      other: '{0} km/h',
+    ),
+  );
 }
 
 class ScriptsSvFI extends ScriptsSv {
@@ -69,11 +69,9 @@ class ScriptsSvFI extends ScriptsSv {
 
   @override
   Map<String, Script> get scripts => Map.unmodifiable({
-        ...ScriptsSv.staticScripts,
-        ...const {
-          'Arab': _arab,
-        }
-      });
+    ...ScriptsSv.staticScripts,
+    ...const {'Arab': _arab},
+  });
 }
 
 class LocaleDisplayNameSvFI extends LocaleDisplayNameSv {
@@ -81,9 +79,7 @@ class LocaleDisplayNameSvFI extends LocaleDisplayNameSv {
 
   @override
   Map<String, String> get keyNames => Map.unmodifiable({
-        ...LocaleDisplayNameSv.staticKeyNames,
-        ...const {
-          'tz': 'tidszon',
-        }
-      });
+    ...LocaleDisplayNameSv.staticKeyNames,
+    ...const {'tz': 'tidszon'},
+  });
 }

@@ -28,17 +28,20 @@ class CommonLocaleDataMsBN extends CommonLocaleDataMs {
 class CurrenciesMsBN extends CurrenciesMs {
   const CurrenciesMsBN(super.cld);
 
-  static const _bnd =
-      Currency(_cld, 'BND', 'Dolar Brunei', symbol: r'$', symbolNarrow: r'$');
+  static const _bnd = Currency(
+    _cld,
+    'BND',
+    'Dolar Brunei',
+    symbol: r'$',
+    symbolNarrow: r'$',
+  );
 
   @override
   Currency get bnd => _bnd;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesMs.staticCurrencies,
-        ...const {
-          'BND': _bnd,
-        }
-      });
+    ...CurrenciesMs.staticCurrencies,
+    ...const {'BND': _bnd},
+  });
 }

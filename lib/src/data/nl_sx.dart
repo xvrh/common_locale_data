@@ -28,17 +28,19 @@ class CommonLocaleDataNlSX extends CommonLocaleDataNl {
 class CurrenciesNlSX extends CurrenciesNl {
   const CurrenciesNlSX(super.cld);
 
-  static const _ang =
-      Currency(_cld, 'ANG', 'Nederlands-Antilliaanse gulden', symbol: 'NAf.');
+  static const _ang = Currency(
+    _cld,
+    'ANG',
+    'Nederlands-Antilliaanse gulden',
+    symbol: 'NAf.',
+  );
 
   @override
   Currency get ang => _ang;
 
   @override
   Map<String, Currency> get currencies => Map.unmodifiable({
-        ...CurrenciesNl.staticCurrencies,
-        ...const {
-          'ANG': _ang,
-        }
-      });
+    ...CurrenciesNl.staticCurrencies,
+    ...const {'ANG': _ang},
+  });
 }
