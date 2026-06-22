@@ -17,6 +17,7 @@ import 'model/territory.dart';
 import 'model/timezone.dart';
 import 'model/units.dart';
 import 'model/variant.dart';
+import 'model/week_data.dart';
 import 'utils/case_format.dart';
 import 'utils/escape_dart_string.dart';
 import 'utils/generate_class.dart';
@@ -45,6 +46,9 @@ Future<void> main() async {
 
   File('lib/src/units.model.dart')
       .writeAsStringSync(_format(generateUnitsModel()));
+
+  File('lib/src/week_data.g.dart')
+      .writeAsStringSync(_format(generateWeekData()));
 
   File('lib/src/territories.model.dart').writeAsStringSync(
       _format(updateTerritoriesModel('lib/src/territories.model.dart')));
@@ -279,6 +283,7 @@ import 'subdivisions.dart';
 import 'locale_display_name.dart';
 import 'units.dart';
 import 'timezones.dart';
+import 'week_data.dart';
 
 /// The root class providing access to all Common Data (date fields, units, territories etc...).
 abstract class CommonLocaleData {
@@ -335,6 +340,9 @@ abstract class CommonLocaleData {
 
   /// Localized locale display name fields.
   LocaleDisplayName get localeDisplayName;
+
+  /// Week conventions (first day of the week, weekend) for this locale.
+  WeekInfo get weekInfo => resolveWeekInfo(locale);
 ''');
 
   code.writeln('''

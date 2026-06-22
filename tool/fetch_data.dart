@@ -35,7 +35,8 @@ void main() async {
       'windowsZones',
       'likelySubtags',
       'languageMatching',
-      'territoryContainment'
+      'territoryContainment',
+      'weekData'
     }
   };
 

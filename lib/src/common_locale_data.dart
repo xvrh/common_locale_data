@@ -10,6 +10,7 @@ import 'territories.dart';
 import 'timezones.dart';
 import 'units.dart';
 import 'variants.dart';
+import 'week_data.dart';
 
 /// The root class providing access to all Common Data (date fields, units, territories etc...).
 abstract class CommonLocaleData {
@@ -66,6 +67,9 @@ abstract class CommonLocaleData {
 
   /// Localized locale display name fields.
   LocaleDisplayName get localeDisplayName;
+
+  /// Week conventions (first day of the week, weekend) for this locale.
+  WeekInfo get weekInfo => resolveWeekInfo(locale);
 
   /// Map with all supported locale names.
   static final Set<String> localeNames = {

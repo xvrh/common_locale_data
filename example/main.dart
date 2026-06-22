@@ -91,6 +91,23 @@ void main() {
   print(cld.date.year.next.long); // next year
   print(cld.date.year.previous.long); // last year
 
+  // Relative time ("timeago"): turns a DateTime into a localized string,
+  // picking the best unit and using named/calendar-aware forms.
+  print('');
+  var clock = DateTime(2026, 6, 21, 12);
+  print(cld.relativeTime
+      .format(clock.subtract(Duration(minutes: 5)), clock: clock)); // 5 ... ago
+  print(cld.relativeTime
+      .format(clock.add(Duration(days: 3)), clock: clock)); // in 3 days
+  print(cld.relativeTime
+      .format(clock.subtract(Duration(days: 1)), clock: clock)); // yesterday
+  print(cld.relativeTime.formatUnit(1, RelativeUnit.month)); // next month
+
+  // Week conventions
+  print('');
+  print(cld.weekInfo.firstDayOfWeek); // 7 (Sunday) for en, 1 (Monday) for en-GB
+  print(cld.weekInfo.isWeekend(DateTime.sunday)); // true
+
   // Territories
   print('');
   print(cld.territories.world); // world

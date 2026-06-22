@@ -1,3 +1,7 @@
+## 2.3.0
+- Add a high-level relative time ("timeago") formatter (`cld.relativeTime`): formats a `DateTime`/`Duration` as e.g. "3 minutes ago", "in 2 days", "yesterday" or "last week". It is calendar-aware (day/month/year compared by calendar field), can render weekday names ("last Tuesday"), exposes a low-level `formatUnit(offset, unit)` API and `minUnit`/`maxUnit` clamping, and supports long/short/narrow widths
+- Add week conventions (`cld.weekInfo`): first day of the week, weekend days and `minDaysInFirstWeek`, with an `isWeekend()` helper
+
 ## 2.2.1
 - Minor fix to LICENSE and README.md files
 
