@@ -39,6 +39,26 @@ class CommonLocaleDataCaESValencia implements CommonLocaleData {
   static final _timeZones = TimeZonesCaESValencia._(_territories);
   @override
   TimeZones get timeZones => _timeZones;
+
+  static final _listPatterns = ListPatternsCaESValencia._();
+  @override
+  ListPatterns get listPatterns => _listPatterns;
+
+  static final _calendar = CalendarCaESValencia._();
+  @override
+  Calendar get calendar => _calendar;
+
+  static final _currencies = CurrenciesCaESValencia._();
+  @override
+  Currencies get currencies => _currencies;
+
+  @override
+  WeekInfo get weekInfo => const WeekInfo(
+        firstDayOfWeek: 1,
+        weekendStart: 6,
+        weekendEnd: 7,
+        minDaysInFirstWeek: 4,
+      );
 }
 
 class LanguagesCaESValencia extends Languages {
@@ -11369,5 +11389,3565 @@ class TimeZonesCaESValencia extends TimeZones {
         standard: 'Hora de Yukon',
       ),
     ),
+  }, (key) => key.toLowerCase());
+}
+
+class ListPatternsCaESValencia extends ListPatterns {
+  ListPatternsCaESValencia._();
+
+  @override
+  ListPattern get standard => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0} i {1}',
+        two: '{0} i {1}',
+      );
+
+  @override
+  ListPattern get standardShort => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0} i {1}',
+        two: '{0} i {1}',
+      );
+
+  @override
+  ListPattern get standardNarrow => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0} i {1}',
+        two: '{0} i {1}',
+      );
+
+  @override
+  ListPattern get or => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0} o {1}',
+        two: '{0} o {1}',
+      );
+
+  @override
+  ListPattern get orShort => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0} o {1}',
+        two: '{0} o {1}',
+      );
+
+  @override
+  ListPattern get orNarrow => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0} o {1}',
+        two: '{0} o {1}',
+      );
+
+  @override
+  ListPattern get unit => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0} i {1}',
+        two: '{0} i {1}',
+      );
+
+  @override
+  ListPattern get unitShort => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0} i {1}',
+        two: '{0} i {1}',
+      );
+
+  @override
+  ListPattern get unitNarrow => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0} i {1}',
+        two: '{0} i {1}',
+      );
+}
+
+class CalendarCaESValencia extends Calendar {
+  CalendarCaESValencia._();
+
+  @override
+  Months get months => Months(
+        wide: MonthNames(
+          january: 'de gener',
+          february: 'de febrer',
+          march: 'de març',
+          april: 'd’abril',
+          may: 'de maig',
+          june: 'de juny',
+          july: 'de juliol',
+          august: 'd’agost',
+          september: 'de setembre',
+          october: 'd’octubre',
+          november: 'de novembre',
+          december: 'de desembre',
+        ),
+        abbreviated: MonthNames(
+          january: 'de gen.',
+          february: 'de febr.',
+          march: 'de març',
+          april: 'd’abr.',
+          may: 'de maig',
+          june: 'de juny',
+          july: 'de jul.',
+          august: 'd’ag.',
+          september: 'de set.',
+          october: 'd’oct.',
+          november: 'de nov.',
+          december: 'de des.',
+        ),
+        narrow: MonthNames(
+          january: 'GN',
+          february: 'FB',
+          march: 'MÇ',
+          april: 'AB',
+          may: 'MG',
+          june: 'JN',
+          july: 'JL',
+          august: 'AG',
+          september: 'ST',
+          october: 'OC',
+          november: 'NV',
+          december: 'DS',
+        ),
+      );
+
+  @override
+  Months get standaloneMonths => Months(
+        wide: MonthNames(
+          january: 'gener',
+          february: 'febrer',
+          march: 'març',
+          april: 'abril',
+          may: 'maig',
+          june: 'juny',
+          july: 'juliol',
+          august: 'agost',
+          september: 'setembre',
+          october: 'octubre',
+          november: 'novembre',
+          december: 'desembre',
+        ),
+        abbreviated: MonthNames(
+          january: 'gen.',
+          february: 'febr.',
+          march: 'març',
+          april: 'abr.',
+          may: 'maig',
+          june: 'juny',
+          july: 'jul.',
+          august: 'ag.',
+          september: 'set.',
+          october: 'oct.',
+          november: 'nov.',
+          december: 'des.',
+        ),
+        narrow: MonthNames(
+          january: 'GN',
+          february: 'FB',
+          march: 'MÇ',
+          april: 'AB',
+          may: 'MG',
+          june: 'JN',
+          july: 'JL',
+          august: 'AG',
+          september: 'ST',
+          october: 'OC',
+          november: 'NV',
+          december: 'DS',
+        ),
+      );
+
+  @override
+  Weekdays get weekdays => Weekdays(
+        wide: WeekdayNames(
+          monday: 'dilluns',
+          tuesday: 'dimarts',
+          wednesday: 'dimecres',
+          thursday: 'dijous',
+          friday: 'divendres',
+          saturday: 'dissabte',
+          sunday: 'diumenge',
+        ),
+        abbreviated: WeekdayNames(
+          monday: 'dl.',
+          tuesday: 'dt.',
+          wednesday: 'dc.',
+          thursday: 'dj.',
+          friday: 'dv.',
+          saturday: 'ds.',
+          sunday: 'dg.',
+        ),
+        short: WeekdayNames(
+          monday: 'dl.',
+          tuesday: 'dt.',
+          wednesday: 'dc.',
+          thursday: 'dj.',
+          friday: 'dv.',
+          saturday: 'ds.',
+          sunday: 'dg.',
+        ),
+        narrow: WeekdayNames(
+          monday: 'dl.',
+          tuesday: 'dt.',
+          wednesday: 'dc.',
+          thursday: 'dj.',
+          friday: 'dv.',
+          saturday: 'ds.',
+          sunday: 'dg.',
+        ),
+      );
+
+  @override
+  Weekdays get standaloneWeekdays => Weekdays(
+        wide: WeekdayNames(
+          monday: 'dilluns',
+          tuesday: 'dimarts',
+          wednesday: 'dimecres',
+          thursday: 'dijous',
+          friday: 'divendres',
+          saturday: 'dissabte',
+          sunday: 'diumenge',
+        ),
+        abbreviated: WeekdayNames(
+          monday: 'dl.',
+          tuesday: 'dt.',
+          wednesday: 'dc.',
+          thursday: 'dj.',
+          friday: 'dv.',
+          saturday: 'ds.',
+          sunday: 'dg.',
+        ),
+        short: WeekdayNames(
+          monday: 'dl.',
+          tuesday: 'dt.',
+          wednesday: 'dc.',
+          thursday: 'dj.',
+          friday: 'dv.',
+          saturday: 'ds.',
+          sunday: 'dg.',
+        ),
+        narrow: WeekdayNames(
+          monday: 'dl.',
+          tuesday: 'dt.',
+          wednesday: 'dc.',
+          thursday: 'dj.',
+          friday: 'dv.',
+          saturday: 'ds.',
+          sunday: 'dg.',
+        ),
+      );
+
+  @override
+  Quarters get quarters => Quarters(
+        wide: QuarterNames(
+          q1: '1r trimestre',
+          q2: '2n trimestre',
+          q3: '3r trimestre',
+          q4: '4t trimestre',
+        ),
+        abbreviated: QuarterNames(
+          q1: '1T',
+          q2: '2T',
+          q3: '3T',
+          q4: '4T',
+        ),
+        narrow: QuarterNames(
+          q1: '1',
+          q2: '2',
+          q3: '3',
+          q4: '4',
+        ),
+      );
+
+  @override
+  Quarters get standaloneQuarters => Quarters(
+        wide: QuarterNames(
+          q1: '1r trimestre',
+          q2: '2n trimestre',
+          q3: '3r trimestre',
+          q4: '4t trimestre',
+        ),
+        abbreviated: QuarterNames(
+          q1: '1T',
+          q2: '2T',
+          q3: '3T',
+          q4: '4T',
+        ),
+        narrow: QuarterNames(
+          q1: '1',
+          q2: '2',
+          q3: '3',
+          q4: '4',
+        ),
+      );
+
+  @override
+  DayPeriods get dayPeriods => DayPeriods(
+        wide: DayPeriodNames(
+          am: 'a. m.',
+          pm: 'p. m.',
+          midnight: 'mitjanit',
+          morning: 'matinada',
+          afternoon: 'migdia',
+          evening: 'vespre',
+          night: 'nit',
+        ),
+        abbreviated: DayPeriodNames(
+          am: 'a. m.',
+          pm: 'p. m.',
+          midnight: 'mitjanit',
+          morning: 'matinada',
+          afternoon: 'migdia',
+          evening: 'vespre',
+          night: 'nit',
+        ),
+        narrow: DayPeriodNames(
+          am: 'a. m.',
+          pm: 'p. m.',
+          midnight: 'mitjanit',
+          morning: 'matinada',
+          afternoon: 'migdia',
+          evening: 'vespre',
+          night: 'nit',
+        ),
+      );
+
+  @override
+  DayPeriods get standaloneDayPeriods => DayPeriods(
+        wide: DayPeriodNames(
+          am: 'a. m.',
+          pm: 'p. m.',
+          midnight: 'mitjanit',
+          morning: 'matinada',
+          afternoon: 'migdia',
+          evening: 'vespre',
+          night: 'nit',
+        ),
+        abbreviated: DayPeriodNames(
+          am: 'a. m.',
+          pm: 'p. m.',
+          midnight: 'mitjanit',
+          morning: 'matinada',
+          afternoon: 'migdia',
+          evening: 'vespre',
+          night: 'nit',
+        ),
+        narrow: DayPeriodNames(
+          am: 'a. m.',
+          pm: 'p. m.',
+          midnight: 'mitjanit',
+          morning: 'matinada',
+          afternoon: 'migdia',
+          evening: 'vespre',
+          night: 'nit',
+        ),
+      );
+
+  @override
+  Eras get eras => Eras(
+        wide: EraNames(
+          bc: 'abans de Crist',
+          ad: 'després de Crist',
+        ),
+        abbreviated: EraNames(
+          bc: 'aC',
+          ad: 'dC',
+        ),
+        narrow: EraNames(
+          bc: 'aC',
+          ad: 'dC',
+        ),
+      );
+}
+
+class CurrenciesCaESValencia extends Currencies {
+  CurrenciesCaESValencia._();
+
+  @override
+  Currency get adp => Currency(
+        _locale,
+        'ADP',
+        'pesseta andorrana',
+        one: 'pesseta andorrana',
+        other: 'pessetes andorranes',
+      );
+
+  @override
+  Currency get aed => Currency(
+        _locale,
+        'AED',
+        'dírham dels Emirats Àrabs Units',
+        one: 'dírham dels Emirats Àrabs Units',
+        other: 'dírhams dels Emirats Àrabs Units',
+      );
+
+  @override
+  Currency get afa => Currency(
+        _locale,
+        'AFA',
+        'afgani afganès (1927–2002)',
+        one: 'afgani afganès (1927–2002)',
+        other: 'afganis afganesos (1927–2002)',
+      );
+
+  @override
+  Currency get afn => Currency(
+        _locale,
+        'AFN',
+        'afgani afganès',
+        narrowSymbol: '؋',
+        one: 'afgani afganès',
+        other: 'afganis afganesos',
+      );
+
+  @override
+  Currency get alk => Currency(
+        _locale,
+        'ALK',
+        'lek albanès (1946–1965)',
+        one: 'lek albanès (1946–1965)',
+        other: 'lekë albanesos (1946–1965)',
+      );
+
+  @override
+  Currency get all => Currency(
+        _locale,
+        'ALL',
+        'lek',
+        one: 'lek',
+        other: 'lekë',
+      );
+
+  @override
+  Currency get amd => Currency(
+        _locale,
+        'AMD',
+        'dram',
+        narrowSymbol: '֏',
+        one: 'dram',
+        other: 'drams',
+      );
+
+  @override
+  Currency get ang => Currency(
+        _locale,
+        'ANG',
+        'florí de les Antilles Neerlandeses',
+        one: 'florí de les Antilles Neerlandeses',
+        other: 'florins de les Antilles Neerlandeses',
+      );
+
+  @override
+  Currency get aoa => Currency(
+        _locale,
+        'AOA',
+        'kwanza angolès',
+        narrowSymbol: 'Kz',
+        one: 'kwanza angolès',
+        other: 'kwanzas angolesos',
+      );
+
+  @override
+  Currency get aok => Currency(
+        _locale,
+        'AOK',
+        'kwanza angolès (1977–1991)',
+        one: 'kwanza angolès (1977–1991)',
+        other: 'kwanzas angolesos (1977–1991)',
+      );
+
+  @override
+  Currency get aon => Currency(
+        _locale,
+        'AON',
+        'nou kwanza angolès (1990–2000)',
+        one: 'nou kwanza angolès (1990–2000)',
+        other: 'nous kwanzas angolesos (1990–2000)',
+      );
+
+  @override
+  Currency get aor => Currency(
+        _locale,
+        'AOR',
+        'kwanza angolès reajustat (1995–1999)',
+        one: 'kwanza angolès reajustat (1995–1999)',
+        other: 'kwanzas angolesos (1995–1999)',
+      );
+
+  @override
+  Currency get ara => Currency(
+        _locale,
+        'ARA',
+        'austral argentí',
+        one: 'austral argentí',
+        other: 'australs argentins',
+      );
+
+  @override
+  Currency get arl => Currency(
+        _locale,
+        'ARL',
+        'peso ley argentí (1970–1983)',
+        one: 'peso ley argentí (1970–1983)',
+        other: 'pesos ley argentins (1970–1983)',
+      );
+
+  @override
+  Currency get arm => Currency(
+        _locale,
+        'ARM',
+        'peso argentí (1981–1970)',
+        one: 'peso argentí moneda nacional',
+        other: 'pesos argentins moneda nacional',
+      );
+
+  @override
+  Currency get arp => Currency(
+        _locale,
+        'ARP',
+        'peso argentí (1983–1985)',
+        one: 'peso argentí (1983–1985)',
+        other: 'pesos argentins (1983–1985)',
+      );
+
+  @override
+  Currency get ars => Currency(
+        _locale,
+        'ARS',
+        'peso argentí',
+        narrowSymbol: r'$',
+        one: 'peso argentí',
+        other: 'pesos argentins',
+      );
+
+  @override
+  Currency get ats => Currency(
+        _locale,
+        'ATS',
+        'xíling austríac',
+        one: 'xíling austríac',
+        other: 'xílings austríacs',
+      );
+
+  @override
+  Currency get aud => Currency(
+        _locale,
+        'AUD',
+        'dòlar australià',
+        symbol: r'AU$',
+        narrowSymbol: r'$',
+        one: 'dòlar australià',
+        other: 'dòlars australians',
+      );
+
+  @override
+  Currency get awg => Currency(
+        _locale,
+        'AWG',
+        'florí d’Aruba',
+        one: 'florí d’Aruba',
+        other: 'florins d’Aruba',
+      );
+
+  @override
+  Currency get azm => Currency(
+        _locale,
+        'AZM',
+        'manat azerbaidjanès (1993–2006)',
+        one: 'manat azerbaidjanès (1993–2006)',
+        other: 'manats azerbaidjanesos (1993–2006)',
+      );
+
+  @override
+  Currency get azn => Currency(
+        _locale,
+        'AZN',
+        'manat azerbaidjanès',
+        narrowSymbol: '₼',
+        one: 'manat azerbaidjanès',
+        other: 'manats azerbaidjanesos',
+      );
+
+  @override
+  Currency get bad => Currency(
+        _locale,
+        'BAD',
+        'dinar de Bòsnia i Hercegovina (1992–1994)',
+        one: 'dinar de Bòsnia i Hercegovina (1992–1994)',
+        other: 'dinars de Bòsnia i Hercegovina (1992–1994)',
+      );
+
+  @override
+  Currency get bam => Currency(
+        _locale,
+        'BAM',
+        'marc convertible de Bòsnia i Hercegovina',
+        narrowSymbol: 'KM',
+        one: 'marc convertible de Bòsnia i Hercegovina',
+        other: 'marcs convertibles de Bòsnia i Hercegovina',
+      );
+
+  @override
+  Currency get ban => Currency(
+        _locale,
+        'BAN',
+        'nou dinar de Bòsnia i Hercegovina (1994–1997)',
+        one: 'nou dinar de Bòsnia i Hercegovina (1994–1997)',
+        other: 'nous dinars de Bòsnia i Hercegovina (1994–1997)',
+      );
+
+  @override
+  Currency get bbd => Currency(
+        _locale,
+        'BBD',
+        'dòlar de Barbados',
+        narrowSymbol: r'$',
+        one: 'dòlar de Barbados',
+        other: 'dòlars de Barbados',
+      );
+
+  @override
+  Currency get bdt => Currency(
+        _locale,
+        'BDT',
+        'taka',
+        narrowSymbol: '৳',
+      );
+
+  @override
+  Currency get bec => Currency(
+        _locale,
+        'BEC',
+        'franc belga (convertible)',
+        one: 'franc belga (convertible)',
+        other: 'francs belgues (convertibles)',
+      );
+
+  @override
+  Currency get bef => Currency(
+        _locale,
+        'BEF',
+        'franc belga',
+        one: 'franc belga',
+        other: 'francs belgues',
+      );
+
+  @override
+  Currency get bel => Currency(
+        _locale,
+        'BEL',
+        'franc belga (financer)',
+        one: 'franc belga (financer)',
+        other: 'francs belgues (financers)',
+      );
+
+  @override
+  Currency get bgl => Currency(
+        _locale,
+        'BGL',
+        'lev fort búlgar',
+        one: 'lev fort búlgar',
+        other: 'leva forts búlgars',
+      );
+
+  @override
+  Currency get bgm => Currency(
+        _locale,
+        'BGM',
+        'lev socialista búlgar',
+        one: 'lev socialista búlgar',
+        other: 'leva socialistes búlgars',
+      );
+
+  @override
+  Currency get bgn => Currency(
+        _locale,
+        'BGN',
+        'lev',
+        one: 'lev',
+        other: 'leva',
+      );
+
+  @override
+  Currency get bgo => Currency(
+        _locale,
+        'BGO',
+        'lev búlgar (1879–1952)',
+        one: 'lev búlgar (1879–1952)',
+        other: 'leva búlgars (1879–1952)',
+      );
+
+  @override
+  Currency get bhd => Currency(
+        _locale,
+        'BHD',
+        'dinar de Bahrain',
+        one: 'dinar de Bahrain',
+        other: 'dinars de Bahrain',
+      );
+
+  @override
+  Currency get bif => Currency(
+        _locale,
+        'BIF',
+        'franc de Burundi',
+        one: 'franc de Burundi',
+        other: 'francs de Burundi',
+      );
+
+  @override
+  Currency get bmd => Currency(
+        _locale,
+        'BMD',
+        'dòlar de les Bermudes',
+        narrowSymbol: r'$',
+        one: 'dòlar de les Bermudes',
+        other: 'dòlars de les Bermudes',
+      );
+
+  @override
+  Currency get bnd => Currency(
+        _locale,
+        'BND',
+        'dòlar de Brunei',
+        narrowSymbol: r'$',
+        one: 'dòlar de Brunei',
+        other: 'dòlars de Brunei',
+      );
+
+  @override
+  Currency get bob => Currency(
+        _locale,
+        'BOB',
+        'bolivià',
+        narrowSymbol: 'Bs',
+        one: 'bolivià',
+        other: 'bolivians',
+      );
+
+  @override
+  Currency get bol => Currency(
+        _locale,
+        'BOL',
+        'boliviano bolivià (1863–1963)',
+        one: 'boliviano bolivià (1863–1963)',
+        other: 'bolivianos bolivians (1863–1963)',
+      );
+
+  @override
+  Currency get bop => Currency(
+        _locale,
+        'BOP',
+        'peso bolivià',
+        one: 'peso bolivià',
+        other: 'pesos bolivians',
+      );
+
+  @override
+  Currency get bov => Currency(
+        _locale,
+        'BOV',
+        'MVDOL bolivià',
+        one: 'MVDOL bolivià',
+        other: 'MVDOL bolivians',
+      );
+
+  @override
+  Currency get brb => Currency(
+        _locale,
+        'BRB',
+        'cruzeiro novo brasiler (1967–1986)',
+        one: 'cruzeiro novo brasiler (1967–1986)',
+        other: 'cruzeiros novos brasilers (1967–1986)',
+      );
+
+  @override
+  Currency get brc => Currency(
+        _locale,
+        'BRC',
+        'cruzado brasiler',
+        one: 'cruzado brasiler',
+        other: 'cruzados brasilers',
+      );
+
+  @override
+  Currency get bre => Currency(
+        _locale,
+        'BRE',
+        'cruzeiro brasiler (1990–1993)',
+        one: 'cruzeiro brasiler (1990–1993)',
+        other: 'cruzeiros brasilers (1990–1993)',
+      );
+
+  @override
+  Currency get brl => Currency(
+        _locale,
+        'BRL',
+        'real brasiler',
+        symbol: 'BRL',
+        narrowSymbol: r'R$',
+        one: 'real brasiler',
+        other: 'reals brasilers',
+      );
+
+  @override
+  Currency get brn => Currency(
+        _locale,
+        'BRN',
+        'cruzado novo brasiler',
+        one: 'cruzado novo brasiler',
+        other: 'cruzados novos brasilers',
+      );
+
+  @override
+  Currency get brr => Currency(
+        _locale,
+        'BRR',
+        'cruzeiro brasiler',
+        one: 'cruzeiro brasiler',
+        other: 'cruzeiros brasilers',
+      );
+
+  @override
+  Currency get brz => Currency(
+        _locale,
+        'BRZ',
+        'antic cruzeiro brasiler',
+        one: 'antic cruzeiro brasiler',
+        other: 'antics cruzeiros brasilers',
+      );
+
+  @override
+  Currency get bsd => Currency(
+        _locale,
+        'BSD',
+        'dòlar de les Bahames',
+        narrowSymbol: r'$',
+        one: 'dòlar de les Bahames',
+        other: 'dòlars de les Bahames',
+      );
+
+  @override
+  Currency get btn => Currency(
+        _locale,
+        'BTN',
+        'ngultrum de Bhutan',
+        one: 'ngultrum de Bhutan',
+        other: 'ngultrums de Bhutan',
+      );
+
+  @override
+  Currency get buk => Currency(
+        _locale,
+        'BUK',
+        'kyat birmà',
+        one: 'kyat birmà',
+        other: 'kyats birmans',
+      );
+
+  @override
+  Currency get bwp => Currency(
+        _locale,
+        'BWP',
+        'pula de Botswana',
+        narrowSymbol: 'P',
+        one: 'pula de Botswana',
+        other: 'pules de Botswana',
+      );
+
+  @override
+  Currency get byb => Currency(
+        _locale,
+        'BYB',
+        'nou ruble bielorús (1994–1999)',
+        one: 'nou ruble bielorús (1994–1999)',
+        other: 'nous rubles bielorussos (1994–1999)',
+      );
+
+  @override
+  Currency get byn => Currency(
+        _locale,
+        'BYN',
+        'ruble belarús',
+        narrowSymbol: 'р.',
+        one: 'ruble belarús',
+        other: 'rubles belarussos',
+      );
+
+  @override
+  Currency get byr => Currency(
+        _locale,
+        'BYR',
+        'ruble bielorús (2000–2016)',
+        one: 'ruble bielorús (2000–2016)',
+        other: 'rubles bielorussos (2000–2016)',
+      );
+
+  @override
+  Currency get bzd => Currency(
+        _locale,
+        'BZD',
+        'dòlar de Belize',
+        narrowSymbol: r'$',
+        one: 'dòlar de Belize',
+        other: 'dòlars de Belize',
+      );
+
+  @override
+  Currency get cad => Currency(
+        _locale,
+        'CAD',
+        'dòlar canadenc',
+        symbol: 'CAD',
+        narrowSymbol: r'$',
+        one: 'dòlar canadenc',
+        other: 'dòlars canadencs',
+      );
+
+  @override
+  Currency get cdf => Currency(
+        _locale,
+        'CDF',
+        'franc congolès',
+        one: 'franc congolès',
+        other: 'francs congolesos',
+      );
+
+  @override
+  Currency get che => Currency(
+        _locale,
+        'CHE',
+        'euro WIR',
+        one: 'euro WIR',
+        other: 'euros WIR',
+      );
+
+  @override
+  Currency get chf => Currency(
+        _locale,
+        'CHF',
+        'franc suís',
+        one: 'franc suís',
+        other: 'francs suïssos',
+      );
+
+  @override
+  Currency get chw => Currency(
+        _locale,
+        'CHW',
+        'franc WIR',
+        one: 'franc WIR',
+        other: 'francs WIR',
+      );
+
+  @override
+  Currency get cle => Currency(
+        _locale,
+        'CLE',
+        'escut xilè',
+        one: 'escudo xilè',
+        other: 'escudos xilens',
+      );
+
+  @override
+  Currency get clf => Currency(
+        _locale,
+        'CLF',
+        'unidad de fomento xilena',
+        one: 'unidad de fomento xilena',
+        other: 'unidades de fomento xilenes',
+      );
+
+  @override
+  Currency get clp => Currency(
+        _locale,
+        'CLP',
+        'peso xilè',
+        narrowSymbol: r'$',
+        one: 'peso xilè',
+        other: 'pesos xilens',
+      );
+
+  @override
+  Currency get cnh => Currency(
+        _locale,
+        'CNH',
+        'iuan xinès extracontinental',
+        one: 'iuan xinès extracontinental',
+        other: 'iuans xinesos extracontinentals',
+      );
+
+  @override
+  Currency get cnx => Currency(
+        _locale,
+        'CNX',
+        'CNX',
+        one: 'dòlar del Banc Popular Xinès',
+        other: 'dòlars del Banc Popular Xinès',
+      );
+
+  @override
+  Currency get cny => Currency(
+        _locale,
+        'CNY',
+        'iuan',
+        symbol: 'CNY',
+        narrowSymbol: '¥',
+        one: 'iuan',
+        other: 'iuans',
+      );
+
+  @override
+  Currency get cop => Currency(
+        _locale,
+        'COP',
+        'peso colombià',
+        narrowSymbol: r'$',
+        one: 'peso colombià',
+        other: 'pesos colombians',
+      );
+
+  @override
+  Currency get cou => Currency(
+        _locale,
+        'COU',
+        'unidad de valor real colombiana',
+        one: 'unidad de valor real colombiana',
+        other: 'unidades de valor real colombianes',
+      );
+
+  @override
+  Currency get crc => Currency(
+        _locale,
+        'CRC',
+        'colon costa-riqueny',
+        narrowSymbol: '₡',
+        one: 'colon costa-riqueny',
+        other: 'colons costa-riquenys',
+      );
+
+  @override
+  Currency get csd => Currency(
+        _locale,
+        'CSD',
+        'dinar serbi antic',
+        one: 'dinar serbi antic',
+        other: 'dinars serbis antics',
+      );
+
+  @override
+  Currency get csk => Currency(
+        _locale,
+        'CSK',
+        'corona forta txecoslovaca',
+        one: 'corona forta txecoslovaca',
+        other: 'corones fortes txecoslovaques',
+      );
+
+  @override
+  Currency get cuc => Currency(
+        _locale,
+        'CUC',
+        'peso convertible cubà',
+        narrowSymbol: r'$',
+        one: 'peso convertible cubà',
+        other: 'pesos convertibles cubans',
+      );
+
+  @override
+  Currency get cup => Currency(
+        _locale,
+        'CUP',
+        'peso cubà',
+        narrowSymbol: r'$',
+        one: 'peso cubà',
+        other: 'pesos cubans',
+      );
+
+  @override
+  Currency get cve => Currency(
+        _locale,
+        'CVE',
+        'escut de Cap Verd',
+        one: 'escut de Cap Verd',
+        other: 'escuts de Cap Verd',
+      );
+
+  @override
+  Currency get cyp => Currency(
+        _locale,
+        'CYP',
+        'lliura xipriota',
+        one: 'lliura xipriota',
+        other: 'lliures xipriotes',
+      );
+
+  @override
+  Currency get czk => Currency(
+        _locale,
+        'CZK',
+        'corona txeca',
+        narrowSymbol: 'Kč',
+        one: 'corona txeca',
+        other: 'corones txeques',
+      );
+
+  @override
+  Currency get ddm => Currency(
+        _locale,
+        'DDM',
+        'marc de l’Alemanya Oriental',
+        one: 'marc de l’Alemanya Oriental',
+        other: 'marcs de l’Alemanya Oriental',
+      );
+
+  @override
+  Currency get dem => Currency(
+        _locale,
+        'DEM',
+        'marc alemany',
+        one: 'marc alemany',
+        other: 'marcs alemanys',
+      );
+
+  @override
+  Currency get djf => Currency(
+        _locale,
+        'DJF',
+        'franc de Djibouti',
+        one: 'franc de Djibouti',
+        other: 'francs de Djibouti',
+      );
+
+  @override
+  Currency get dkk => Currency(
+        _locale,
+        'DKK',
+        'corona danesa',
+        narrowSymbol: 'kr',
+        one: 'corona danesa',
+        other: 'corones daneses',
+      );
+
+  @override
+  Currency get dop => Currency(
+        _locale,
+        'DOP',
+        'peso dominicà',
+        narrowSymbol: r'$',
+        one: 'peso dominicà',
+        other: 'pesos dominicans',
+      );
+
+  @override
+  Currency get dzd => Currency(
+        _locale,
+        'DZD',
+        'dinar algerià',
+        one: 'dinar algerià',
+        other: 'dinars algerians',
+      );
+
+  @override
+  Currency get ecs => Currency(
+        _locale,
+        'ECS',
+        'sucre equatorià',
+        one: 'sucre equatorià',
+        other: 'sucres equatorians',
+      );
+
+  @override
+  Currency get ecv => Currency(
+        _locale,
+        'ECV',
+        'unidad de valor constante (UVC) equatoriana',
+        one: 'unidad de valor constante (UVC) equatoriana',
+        other: 'unidades de valor constante (UVC) equatorianes',
+      );
+
+  @override
+  Currency get eek => Currency(
+        _locale,
+        'EEK',
+        'corona estoniana',
+        one: 'corona estoniana',
+        other: 'corones estonianes',
+      );
+
+  @override
+  Currency get egp => Currency(
+        _locale,
+        'EGP',
+        'lliura egípcia',
+        narrowSymbol: 'E£',
+        one: 'lliura egípcia',
+        other: 'lliures egípcies',
+      );
+
+  @override
+  Currency get ern => Currency(
+        _locale,
+        'ERN',
+        'nakfa eritreu',
+        one: 'nakfa eritreu',
+        other: 'nakfes eritreus',
+      );
+
+  @override
+  Currency get esa => Currency(
+        _locale,
+        'ESA',
+        'pesseta espanyola (compte A)',
+        one: 'pesseta espanyola (compte A)',
+        other: 'pessetes espanyoles (compte A)',
+      );
+
+  @override
+  Currency get esb => Currency(
+        _locale,
+        'ESB',
+        'pesseta espanyola (compte convertible)',
+        one: 'pesseta espanyola (compte convertible)',
+        other: 'pessetes espanyoles (compte convertible)',
+      );
+
+  @override
+  Currency get esp => Currency(
+        _locale,
+        'ESP',
+        'pesseta espanyola',
+        symbol: '₧',
+        narrowSymbol: '₧',
+        one: 'pesseta espanyola',
+        other: 'pessetes espanyoles',
+      );
+
+  @override
+  Currency get etb => Currency(
+        _locale,
+        'ETB',
+        'birr etíop',
+        one: 'birr etíop',
+        other: 'birrs etíops',
+      );
+
+  @override
+  Currency get eur => Currency(
+        _locale,
+        'EUR',
+        'euro',
+        symbol: '€',
+        narrowSymbol: '€',
+        one: 'euro',
+        other: 'euros',
+      );
+
+  @override
+  Currency get fim => Currency(
+        _locale,
+        'FIM',
+        'marc finlandès',
+        one: 'marc finlandès',
+        other: 'marcs finlandesos',
+      );
+
+  @override
+  Currency get fjd => Currency(
+        _locale,
+        'FJD',
+        'dòlar fijià',
+        narrowSymbol: r'$',
+        one: 'dòlar fijià',
+        other: 'dòlars fijians',
+      );
+
+  @override
+  Currency get fkp => Currency(
+        _locale,
+        'FKP',
+        'lliura de les illes Malvines',
+        narrowSymbol: '£',
+        one: 'lliura de les illes Malvines',
+        other: 'lliures de les illes Malvines',
+      );
+
+  @override
+  Currency get frf => Currency(
+        _locale,
+        'FRF',
+        'franc francès',
+        one: 'franc francès',
+        other: 'francs francesos',
+      );
+
+  @override
+  Currency get gbp => Currency(
+        _locale,
+        'GBP',
+        'lliura esterlina',
+        symbol: '£',
+        narrowSymbol: '£',
+        one: 'lliura esterlina',
+        other: 'lliures esterlines',
+      );
+
+  @override
+  Currency get gek => Currency(
+        _locale,
+        'GEK',
+        'cupó de lari georgià',
+        one: 'cupó de lari georgià',
+        other: 'cupons de lari georgians',
+      );
+
+  @override
+  Currency get gel => Currency(
+        _locale,
+        'GEL',
+        'lari',
+        narrowSymbol: '₾',
+        one: 'lari',
+        other: 'laris',
+      );
+
+  @override
+  Currency get ghc => Currency(
+        _locale,
+        'GHC',
+        'cedi ghanès (1979–2007)',
+        one: 'cedi ghanès (1979–2007)',
+        other: 'cedis ghanesos (1979–2007)',
+      );
+
+  @override
+  Currency get ghs => Currency(
+        _locale,
+        'GHS',
+        'cedi ghanès',
+        narrowSymbol: 'GH₵',
+        one: 'cedi ghanès',
+        other: 'cedis ghanesos',
+      );
+
+  @override
+  Currency get gip => Currency(
+        _locale,
+        'GIP',
+        'lliura de Gibraltar',
+        narrowSymbol: '£',
+        one: 'lliura de Gibraltar',
+        other: 'lliures de Gibraltar',
+      );
+
+  @override
+  Currency get gmd => Currency(
+        _locale,
+        'GMD',
+        'dalasi gambià',
+        one: 'dalasi gambià',
+        other: 'dalasis gambians',
+      );
+
+  @override
+  Currency get gnf => Currency(
+        _locale,
+        'GNF',
+        'franc guineà',
+        narrowSymbol: 'FG',
+        one: 'franc guineà',
+        other: 'francs guineans',
+      );
+
+  @override
+  Currency get gns => Currency(
+        _locale,
+        'GNS',
+        'syli guineà',
+        one: 'syli guineà',
+        other: 'sylis guineans',
+      );
+
+  @override
+  Currency get gqe => Currency(
+        _locale,
+        'GQE',
+        'ekwele de Guinea Equatorial',
+        one: 'ekwele de Guinea Equatorial',
+        other: 'bipkwele de Guinea Equatorial',
+      );
+
+  @override
+  Currency get grd => Currency(
+        _locale,
+        'GRD',
+        'dracma grega',
+        one: 'dracma grega',
+        other: 'dracmes gregues',
+      );
+
+  @override
+  Currency get gtq => Currency(
+        _locale,
+        'GTQ',
+        'quetzal',
+        narrowSymbol: 'Q',
+        one: 'quetzal',
+        other: 'quetzals',
+      );
+
+  @override
+  Currency get gwe => Currency(
+        _locale,
+        'GWE',
+        'escut de la Guinea Portuguesa',
+        one: 'escut de la Guinea Portuguesa',
+        other: 'escuts de la Guinea Portuguesa',
+      );
+
+  @override
+  Currency get gwp => Currency(
+        _locale,
+        'GWP',
+        'peso de Guinea Bissau',
+        one: 'peso de Guinea Bissau',
+        other: 'pesos de Guinea Bissau',
+      );
+
+  @override
+  Currency get gyd => Currency(
+        _locale,
+        'GYD',
+        'dòlar de Guyana',
+        narrowSymbol: r'$',
+        one: 'dòlar de Guyana',
+        other: 'dòlars de Guyana',
+      );
+
+  @override
+  Currency get hkd => Currency(
+        _locale,
+        'HKD',
+        'dòlar de Hong Kong',
+        symbol: r'HK$',
+        narrowSymbol: r'$',
+        one: 'dòlar de Hong Kong',
+        other: 'dòlars de Hong Kong',
+      );
+
+  @override
+  Currency get hnl => Currency(
+        _locale,
+        'HNL',
+        'lempira',
+        narrowSymbol: 'L',
+        one: 'lempira',
+        other: 'lempires',
+      );
+
+  @override
+  Currency get hrd => Currency(
+        _locale,
+        'HRD',
+        'dinar croat',
+        one: 'dinar croat',
+        other: 'dinars croats',
+      );
+
+  @override
+  Currency get hrk => Currency(
+        _locale,
+        'HRK',
+        'kuna',
+        narrowSymbol: 'kn',
+        one: 'kuna',
+        other: 'kunes',
+      );
+
+  @override
+  Currency get htg => Currency(
+        _locale,
+        'HTG',
+        'gourde',
+        one: 'gourde',
+        other: 'gourdes',
+      );
+
+  @override
+  Currency get huf => Currency(
+        _locale,
+        'HUF',
+        'fòrint',
+        narrowSymbol: 'Ft',
+        one: 'fòrint',
+        other: 'fòrints',
+      );
+
+  @override
+  Currency get idr => Currency(
+        _locale,
+        'IDR',
+        'rupia indonèsia',
+        narrowSymbol: 'Rp',
+        one: 'rupia indonèsia',
+        other: 'rupies indonèsies',
+      );
+
+  @override
+  Currency get iep => Currency(
+        _locale,
+        'IEP',
+        'lliura irlandesa',
+        one: 'lliura irlandesa',
+        other: 'lliures irlandeses',
+      );
+
+  @override
+  Currency get ilp => Currency(
+        _locale,
+        'ILP',
+        'lliura israeliana',
+        one: 'lliura israeliana',
+        other: 'lliures israelianes',
+      );
+
+  @override
+  Currency get ilr => Currency(
+        _locale,
+        'ILR',
+        'xéquel israelià',
+      );
+
+  @override
+  Currency get ils => Currency(
+        _locale,
+        'ILS',
+        'nou xéquel israelià',
+        symbol: '₪',
+        narrowSymbol: '₪',
+        one: 'nou xéquel israelià',
+        other: 'nous xéquels israelians',
+      );
+
+  @override
+  Currency get inr => Currency(
+        _locale,
+        'INR',
+        'rupia índia',
+        symbol: '₹',
+        narrowSymbol: '₹',
+        one: 'rupia índia',
+        other: 'rupies índies',
+      );
+
+  @override
+  Currency get iqd => Currency(
+        _locale,
+        'IQD',
+        'dinar iraquià',
+        one: 'dinar iraquià',
+        other: 'dinars iraquians',
+      );
+
+  @override
+  Currency get irr => Currency(
+        _locale,
+        'IRR',
+        'rial iranià',
+        one: 'rial iranià',
+        other: 'rials iranians',
+      );
+
+  @override
+  Currency get isj => Currency(
+        _locale,
+        'ISJ',
+        'corona islandesa antiga',
+        one: 'corona islandesa antiga',
+        other: 'corones islandeses antigues',
+      );
+
+  @override
+  Currency get isk => Currency(
+        _locale,
+        'ISK',
+        'corona islandesa',
+        narrowSymbol: 'kr',
+        one: 'corona islandesa',
+        other: 'corones islandeses',
+      );
+
+  @override
+  Currency get itl => Currency(
+        _locale,
+        'ITL',
+        'lira italiana',
+        one: 'lira italiana',
+        other: 'lires italianes',
+      );
+
+  @override
+  Currency get jmd => Currency(
+        _locale,
+        'JMD',
+        'dòlar jamaicà',
+        narrowSymbol: r'$',
+        one: 'dòlar jamaicà',
+        other: 'dòlars jamaicans',
+      );
+
+  @override
+  Currency get jod => Currency(
+        _locale,
+        'JOD',
+        'dinar jordà',
+        one: 'dinar jordà',
+        other: 'dinars jordans',
+      );
+
+  @override
+  Currency get jpy => Currency(
+        _locale,
+        'JPY',
+        'ien',
+        symbol: '¥',
+        narrowSymbol: '¥',
+        one: 'ien',
+        other: 'iens',
+      );
+
+  @override
+  Currency get kes => Currency(
+        _locale,
+        'KES',
+        'xíling kenyà',
+        one: 'xíling kenyà',
+        other: 'xílings kenyans',
+      );
+
+  @override
+  Currency get kgs => Currency(
+        _locale,
+        'KGS',
+        'som kirguís',
+        narrowSymbol: '⃀',
+        one: 'som kirguís',
+        other: 'soms kirguisos',
+      );
+
+  @override
+  Currency get khr => Currency(
+        _locale,
+        'KHR',
+        'riel cambodjà',
+        narrowSymbol: '៛',
+        one: 'riel cambodjà',
+        other: 'riels cambodjans',
+      );
+
+  @override
+  Currency get kmf => Currency(
+        _locale,
+        'KMF',
+        'franc de les Comores',
+        narrowSymbol: 'CF',
+        one: 'franc de les Comores',
+        other: 'francs de les Comores',
+      );
+
+  @override
+  Currency get kpw => Currency(
+        _locale,
+        'KPW',
+        'won nord-coreà',
+        narrowSymbol: '₩',
+        one: 'won nord-coreà',
+        other: 'wons nord-coreans',
+      );
+
+  @override
+  Currency get krh => Currency(
+        _locale,
+        'KRH',
+        'hwan sud-coreà (1953–1962)',
+        one: 'hwan sud-coreà',
+        other: 'hwans sud-coreans',
+      );
+
+  @override
+  Currency get kro => Currency(
+        _locale,
+        'KRO',
+        'antic won sud-coreà',
+        one: 'antic won sud-coreà',
+        other: 'antics wons sud-coreans',
+      );
+
+  @override
+  Currency get krw => Currency(
+        _locale,
+        'KRW',
+        'won sud-coreà',
+        symbol: '₩',
+        narrowSymbol: '₩',
+        one: 'won sud-coreà',
+        other: 'wons sud-coreans',
+      );
+
+  @override
+  Currency get kwd => Currency(
+        _locale,
+        'KWD',
+        'dinar kuwaitià',
+        one: 'dinar kuwaitià',
+        other: 'dinars kuwaitians',
+      );
+
+  @override
+  Currency get kyd => Currency(
+        _locale,
+        'KYD',
+        'dòlar de les illes Caiman',
+        narrowSymbol: r'$',
+        one: 'dòlar de les illes Caiman',
+        other: 'dòlars de les illes Caiman',
+      );
+
+  @override
+  Currency get kzt => Currency(
+        _locale,
+        'KZT',
+        'tenge',
+        narrowSymbol: '₸',
+        one: 'tenge',
+        other: 'tenges',
+      );
+
+  @override
+  Currency get lak => Currency(
+        _locale,
+        'LAK',
+        'kip laosià',
+        narrowSymbol: '₭',
+        one: 'kip laosià',
+        other: 'kips laosians',
+      );
+
+  @override
+  Currency get lbp => Currency(
+        _locale,
+        'LBP',
+        'lliura libanesa',
+        narrowSymbol: 'L£',
+        one: 'lliura libanesa',
+        other: 'lliures libaneses',
+      );
+
+  @override
+  Currency get lkr => Currency(
+        _locale,
+        'LKR',
+        'rupia de Sri Lanka',
+        narrowSymbol: 'Rs',
+        one: 'rupia de Sri Lanka',
+        other: 'rupies de Sri Lanka',
+      );
+
+  @override
+  Currency get lrd => Currency(
+        _locale,
+        'LRD',
+        'dòlar liberià',
+        narrowSymbol: r'$',
+        one: 'dòlar liberià',
+        other: 'dòlars liberians',
+      );
+
+  @override
+  Currency get lsl => Currency(
+        _locale,
+        'LSL',
+        'loti',
+        one: 'loti',
+        other: 'lotis',
+      );
+
+  @override
+  Currency get ltl => Currency(
+        _locale,
+        'LTL',
+        'litas lituà',
+        narrowSymbol: 'Lt',
+        one: 'litas lituà',
+        other: 'litai lituans',
+      );
+
+  @override
+  Currency get ltt => Currency(
+        _locale,
+        'LTT',
+        'talonas lituà',
+        one: 'talonas lituà',
+        other: 'talonai lituans',
+      );
+
+  @override
+  Currency get luc => Currency(
+        _locale,
+        'LUC',
+        'franc convertible luxemburguès',
+        one: 'franc convertible luxemburguès',
+        other: 'francs convertibles luxemburguesos',
+      );
+
+  @override
+  Currency get luf => Currency(
+        _locale,
+        'LUF',
+        'franc luxemburguès',
+        one: 'franc luxemburguès',
+        other: 'francs luxemburguesos',
+      );
+
+  @override
+  Currency get lul => Currency(
+        _locale,
+        'LUL',
+        'franc financer luxemburguès',
+        one: 'franc financer luxemburguès',
+        other: 'francs financers luxemburguesos',
+      );
+
+  @override
+  Currency get lvl => Currency(
+        _locale,
+        'LVL',
+        'lats letó',
+        narrowSymbol: 'Ls',
+        one: 'lats letó',
+        other: 'lati letons',
+      );
+
+  @override
+  Currency get lvr => Currency(
+        _locale,
+        'LVR',
+        'ruble letó',
+        one: 'ruble letó',
+        other: 'rubles letons',
+      );
+
+  @override
+  Currency get lyd => Currency(
+        _locale,
+        'LYD',
+        'dinar libi',
+        one: 'dinar libi',
+        other: 'dinars libis',
+      );
+
+  @override
+  Currency get mad => Currency(
+        _locale,
+        'MAD',
+        'dírham marroquí',
+        one: 'dírham marroquí',
+        other: 'dírhams marroquins',
+      );
+
+  @override
+  Currency get maf => Currency(
+        _locale,
+        'MAF',
+        'franc marroquí',
+        one: 'franc marroquí',
+        other: 'francs marroquins',
+      );
+
+  @override
+  Currency get mcf => Currency(
+        _locale,
+        'MCF',
+        'franc monegasc',
+        one: 'franc monegasc',
+        other: 'francs monegascos',
+      );
+
+  @override
+  Currency get mdc => Currency(
+        _locale,
+        'MDC',
+        'cupó moldau',
+        one: 'cupó moldau',
+        other: 'cupons moldaus',
+      );
+
+  @override
+  Currency get mdl => Currency(
+        _locale,
+        'MDL',
+        'leu moldau',
+        one: 'leu moldau',
+        other: 'lei moldaus',
+      );
+
+  @override
+  Currency get mga => Currency(
+        _locale,
+        'MGA',
+        'ariary malgaix',
+        narrowSymbol: 'Ar',
+        one: 'ariary malgaix',
+        other: 'ariarys malgaixos',
+      );
+
+  @override
+  Currency get mgf => Currency(
+        _locale,
+        'MGF',
+        'franc malgaix',
+        one: 'franc malgaix',
+        other: 'francs malgaixos',
+      );
+
+  @override
+  Currency get mkd => Currency(
+        _locale,
+        'MKD',
+        'dinar macedoni',
+        one: 'dinar macedoni',
+        other: 'dinars macedonis',
+      );
+
+  @override
+  Currency get mkn => Currency(
+        _locale,
+        'MKN',
+        'denar macedoni (1992–1993)',
+        one: 'denar macedoni (1992–1993)',
+        other: 'denari macedonis (1992–1993)',
+      );
+
+  @override
+  Currency get mlf => Currency(
+        _locale,
+        'MLF',
+        'franc malià',
+        one: 'franc malià',
+        other: 'francs malians',
+      );
+
+  @override
+  Currency get mmk => Currency(
+        _locale,
+        'MMK',
+        'kyat de Myanmar',
+        narrowSymbol: 'K',
+        one: 'kyat de Myanmar',
+        other: 'kyats de Myanmar',
+      );
+
+  @override
+  Currency get mnt => Currency(
+        _locale,
+        'MNT',
+        'tögrög mongol',
+        narrowSymbol: '₮',
+        one: 'tögrög mongol',
+        other: 'tögrögs mongols',
+      );
+
+  @override
+  Currency get mop => Currency(
+        _locale,
+        'MOP',
+        'pataca de Macau',
+        one: 'pataca de Macau',
+        other: 'pataques de Macau',
+      );
+
+  @override
+  Currency get mro => Currency(
+        _locale,
+        'MRO',
+        'ouguiya maurità (1973–2017)',
+        one: 'ouguiya maurità (1973–2017)',
+        other: 'ouguiyas mauritans (1973–2017)',
+      );
+
+  @override
+  Currency get mru => Currency(
+        _locale,
+        'MRU',
+        'ouguiya maurità',
+        one: 'ouguiya maurità',
+        other: 'ouguiyas mauritans',
+      );
+
+  @override
+  Currency get mtl => Currency(
+        _locale,
+        'MTL',
+        'lira maltesa',
+        one: 'lira maltesa',
+        other: 'lires malteses',
+      );
+
+  @override
+  Currency get mtp => Currency(
+        _locale,
+        'MTP',
+        'lliura maltesa',
+        one: 'lliura maltesa',
+        other: 'lliures malteses',
+      );
+
+  @override
+  Currency get mur => Currency(
+        _locale,
+        'MUR',
+        'rupia mauriciana',
+        narrowSymbol: 'Rs',
+        one: 'rupia mauriciana',
+        other: 'rupies mauricianes',
+      );
+
+  @override
+  Currency get mvp => Currency(
+        _locale,
+        'MVP',
+        'Maldivian Rupee (1947–1981)',
+        one: 'Maldivian rupee (1947–1981)',
+        other: 'Maldivian rupees (1947–1981)',
+      );
+
+  @override
+  Currency get mvr => Currency(
+        _locale,
+        'MVR',
+        'rupia de les Maldives',
+        one: 'rupia de les Maldives',
+        other: 'rupies de les Maldives',
+      );
+
+  @override
+  Currency get mwk => Currency(
+        _locale,
+        'MWK',
+        'kwacha malawià',
+        one: 'kwacha malawià',
+        other: 'kwacha malawians',
+      );
+
+  @override
+  Currency get mxn => Currency(
+        _locale,
+        'MXN',
+        'peso mexicà',
+        symbol: 'MXN',
+        narrowSymbol: r'$',
+        one: 'peso mexicà',
+        other: 'pesos mexicans',
+      );
+
+  @override
+  Currency get mxp => Currency(
+        _locale,
+        'MXP',
+        'peso de plata mexicà (1861–1992)',
+        one: 'peso de plata mexicà (1861–1992)',
+        other: 'pesos de plata mexicans (1861–1992)',
+      );
+
+  @override
+  Currency get mxv => Currency(
+        _locale,
+        'MXV',
+        'unidad de inversión (UDI) mexicana',
+        one: 'unidad de inversión (UDI) mexicana',
+        other: 'unidades de inversión (UDI) mexicanes',
+      );
+
+  @override
+  Currency get myr => Currency(
+        _locale,
+        'MYR',
+        'ringgit',
+        narrowSymbol: 'RM',
+        one: 'ringgit',
+        other: 'ringgits',
+      );
+
+  @override
+  Currency get mze => Currency(
+        _locale,
+        'MZE',
+        'escut moçambiquès',
+        one: 'escut moçambiquès',
+        other: 'escuts moçambiquesos',
+      );
+
+  @override
+  Currency get mzm => Currency(
+        _locale,
+        'MZM',
+        'antic metical moçambiquès',
+        one: 'antic metical moçambiquès',
+        other: 'antics meticals moçambiquesos',
+      );
+
+  @override
+  Currency get mzn => Currency(
+        _locale,
+        'MZN',
+        'metical moçambiquès',
+        one: 'metical moçambiquès',
+        other: 'meticals moçambiquesos',
+      );
+
+  @override
+  Currency get nad => Currency(
+        _locale,
+        'NAD',
+        'dòlar namibià',
+        narrowSymbol: r'$',
+        one: 'dòlar namibià',
+        other: 'dòlars namibians',
+      );
+
+  @override
+  Currency get ngn => Currency(
+        _locale,
+        'NGN',
+        'naira nigerià',
+        narrowSymbol: '₦',
+        one: 'naira nigerià',
+        other: 'naires nigerians',
+      );
+
+  @override
+  Currency get nic => Currency(
+        _locale,
+        'NIC',
+        'córdoba nicaragüenca',
+        one: 'córdoba nicaragüenca',
+        other: 'córdobas nicaragüenques',
+      );
+
+  @override
+  Currency get nio => Currency(
+        _locale,
+        'NIO',
+        'córdoba nicaragüenc',
+        narrowSymbol: r'C$',
+        one: 'córdoba nicaragüenc',
+        other: 'córdobas nicaragüencs',
+      );
+
+  @override
+  Currency get nlg => Currency(
+        _locale,
+        'NLG',
+        'florí neerlandès',
+        one: 'florí neerlandès',
+        other: 'florins neerlandesos',
+      );
+
+  @override
+  Currency get nok => Currency(
+        _locale,
+        'NOK',
+        'corona noruega',
+        narrowSymbol: 'kr',
+        one: 'corona noruega',
+        other: 'corones noruegues',
+      );
+
+  @override
+  Currency get npr => Currency(
+        _locale,
+        'NPR',
+        'rupia nepalesa',
+        narrowSymbol: 'Rs',
+        one: 'rupia nepalesa',
+        other: 'rupies nepaleses',
+      );
+
+  @override
+  Currency get nzd => Currency(
+        _locale,
+        'NZD',
+        'dòlar neozelandès',
+        symbol: r'NZ$',
+        narrowSymbol: r'$',
+        one: 'dòlar neozelandès',
+        other: 'dòlars neozelandesos',
+      );
+
+  @override
+  Currency get omr => Currency(
+        _locale,
+        'OMR',
+        'rial omanita',
+        one: 'rial omanita',
+        other: 'rials omanites',
+      );
+
+  @override
+  Currency get pab => Currency(
+        _locale,
+        'PAB',
+        'balboa',
+        one: 'balboa',
+        other: 'balboes',
+      );
+
+  @override
+  Currency get pei => Currency(
+        _locale,
+        'PEI',
+        'inti peruà',
+        one: 'inti peruà',
+        other: 'intis peruans',
+      );
+
+  @override
+  Currency get pen => Currency(
+        _locale,
+        'PEN',
+        'sol',
+        one: 'sol',
+        other: 'sols',
+      );
+
+  @override
+  Currency get pes => Currency(
+        _locale,
+        'PES',
+        'sol peruà (1863–1965)',
+        one: 'sol peruà (1863–1965)',
+        other: 'sols peruans (1863–1965)',
+      );
+
+  @override
+  Currency get pgk => Currency(
+        _locale,
+        'PGK',
+        'kina',
+        one: 'kina',
+        other: 'kines',
+      );
+
+  @override
+  Currency get php => Currency(
+        _locale,
+        'PHP',
+        'peso filipí',
+        symbol: 'PHP',
+        narrowSymbol: '₱',
+        one: 'peso filipí',
+        other: 'pesos filipins',
+      );
+
+  @override
+  Currency get pkr => Currency(
+        _locale,
+        'PKR',
+        'rupia pakistanesa',
+        narrowSymbol: 'Rs',
+        one: 'rupia pakistanesa',
+        other: 'rupies pakistaneses',
+      );
+
+  @override
+  Currency get pln => Currency(
+        _locale,
+        'PLN',
+        'zloty',
+        narrowSymbol: 'zł',
+        one: 'zloty',
+        other: 'zlote',
+      );
+
+  @override
+  Currency get plz => Currency(
+        _locale,
+        'PLZ',
+        'zloty polonès (1950–1995)',
+        one: 'zloty polonès (1950–1995)',
+        other: 'zlote polonesos (1950–1995)',
+      );
+
+  @override
+  Currency get pte => Currency(
+        _locale,
+        'PTE',
+        'escut portuguès',
+        one: 'escut portuguès',
+        other: 'escuts portuguesos',
+      );
+
+  @override
+  Currency get pyg => Currency(
+        _locale,
+        'PYG',
+        'guaraní',
+        narrowSymbol: '₲',
+        one: 'guaraní',
+        other: 'guaranís',
+      );
+
+  @override
+  Currency get qar => Currency(
+        _locale,
+        'QAR',
+        'rial de Qatar',
+        one: 'rial de Qatar',
+        other: 'rials de Qatar',
+      );
+
+  @override
+  Currency get rhd => Currency(
+        _locale,
+        'RHD',
+        'dòlar rhodesià',
+        one: 'dòlar rhodesià',
+        other: 'dòlars rhodesians',
+      );
+
+  @override
+  Currency get rol => Currency(
+        _locale,
+        'ROL',
+        'antic leu romanès',
+        one: 'antic leu romanès',
+        other: 'antics lei romanesos',
+      );
+
+  @override
+  Currency get ron => Currency(
+        _locale,
+        'RON',
+        'leu romanès',
+        narrowSymbol: 'lei',
+        one: 'leu romanès',
+        other: 'lei romanesos',
+      );
+
+  @override
+  Currency get rsd => Currency(
+        _locale,
+        'RSD',
+        'dinar serbi',
+        one: 'dinar serbi',
+        other: 'dinars serbis',
+      );
+
+  @override
+  Currency get rub => Currency(
+        _locale,
+        'RUB',
+        'ruble',
+        narrowSymbol: '₽',
+        one: 'ruble',
+        other: 'rubles',
+      );
+
+  @override
+  Currency get rur => Currency(
+        _locale,
+        'RUR',
+        'ruble rus (1991–1998)',
+        one: 'ruble rus (1991–1998)',
+        other: 'rubles russos (1991–1998)',
+      );
+
+  @override
+  Currency get rwf => Currency(
+        _locale,
+        'RWF',
+        'franc de Ruanda',
+        narrowSymbol: 'RF',
+        one: 'franc de Ruanda',
+        other: 'francs de Ruanda',
+      );
+
+  @override
+  Currency get sar => Currency(
+        _locale,
+        'SAR',
+        'rial saudita',
+        one: 'rial saudita',
+        other: 'rials saudites',
+      );
+
+  @override
+  Currency get sbd => Currency(
+        _locale,
+        'SBD',
+        'dòlar de les illes Salomó',
+        narrowSymbol: r'$',
+        one: 'dòlar de les illes Salomó',
+        other: 'dòlars de les illes Salomó',
+      );
+
+  @override
+  Currency get scr => Currency(
+        _locale,
+        'SCR',
+        'rupia de les Seychelles',
+        one: 'rupia de les Seychelles',
+        other: 'rupies de les Seychelles',
+      );
+
+  @override
+  Currency get sdd => Currency(
+        _locale,
+        'SDD',
+        'dinar sudanès',
+        one: 'dinar sudanès',
+        other: 'dinars sudanesos',
+      );
+
+  @override
+  Currency get sdg => Currency(
+        _locale,
+        'SDG',
+        'lliura sudanesa',
+        one: 'lliura sudanesa',
+        other: 'lliures sudaneses',
+      );
+
+  @override
+  Currency get sdp => Currency(
+        _locale,
+        'SDP',
+        'antiga lliura sudanesa',
+        one: 'antiga lliura sudanesa',
+        other: 'antigues lliures sudaneses',
+      );
+
+  @override
+  Currency get sek => Currency(
+        _locale,
+        'SEK',
+        'corona sueca',
+        narrowSymbol: 'kr',
+        one: 'corona sueca',
+        other: 'corones sueques',
+      );
+
+  @override
+  Currency get sgd => Currency(
+        _locale,
+        'SGD',
+        'dòlar de Singapur',
+        narrowSymbol: r'$',
+        one: 'dòlar de Singapur',
+        other: 'dòlars de Singapur',
+      );
+
+  @override
+  Currency get shp => Currency(
+        _locale,
+        'SHP',
+        'lliura de Santa Helena',
+        narrowSymbol: '£',
+        one: 'lliura de Santa Helena',
+        other: 'lliures de Santa Helena',
+      );
+
+  @override
+  Currency get sit => Currency(
+        _locale,
+        'SIT',
+        'tolar eslovè',
+        one: 'tolar eslovè',
+        other: 'tolars eslovens',
+      );
+
+  @override
+  Currency get skk => Currency(
+        _locale,
+        'SKK',
+        'corona eslovaca',
+        one: 'corona eslovaca',
+        other: 'corones eslovaques',
+      );
+
+  @override
+  Currency get sle => Currency(
+        _locale,
+        'SLE',
+        'leone de Sierra Leone',
+        one: 'leone de Sierra Leone',
+        other: 'leones de Sierra Leone',
+      );
+
+  @override
+  Currency get sll => Currency(
+        _locale,
+        'SLL',
+        'leone de Sierra Leone (1964—2022)',
+        one: 'leone de Sierra Leone (1964—2022)',
+        other: 'leones de Sierra Leone (1964—2022)',
+      );
+
+  @override
+  Currency get sos => Currency(
+        _locale,
+        'SOS',
+        'xíling somali',
+        one: 'xíling somali',
+        other: 'xílings somalis',
+      );
+
+  @override
+  Currency get srd => Currency(
+        _locale,
+        'SRD',
+        'dòlar de Surinam',
+        narrowSymbol: r'$',
+        one: 'dòlar de Surinam',
+        other: 'dòlars de Surinam',
+      );
+
+  @override
+  Currency get srg => Currency(
+        _locale,
+        'SRG',
+        'florí de Surinam',
+        one: 'florí de Surinam',
+        other: 'florins de Surinam',
+      );
+
+  @override
+  Currency get ssp => Currency(
+        _locale,
+        'SSP',
+        'lliura del Sudan del Sud',
+        narrowSymbol: '£',
+        one: 'lliura del Sudan del Sud',
+        other: 'lliures del Sudan del Sud',
+      );
+
+  @override
+  Currency get std => Currency(
+        _locale,
+        'STD',
+        'dobra de São Tomé i Príncipe (1977–2017)',
+        one: 'dobra de São Tomé i Príncipe (1977–2017)',
+        other: 'dobras de São Tomé i Príncipe (1977–2017)',
+      );
+
+  @override
+  Currency get stn => Currency(
+        _locale,
+        'STN',
+        'dobra de São Tomé i Príncipe',
+        narrowSymbol: 'Db',
+        one: 'dobra de São Tomé i Príncipe',
+        other: 'dobras de São Tomé i Príncipe',
+      );
+
+  @override
+  Currency get sur => Currency(
+        _locale,
+        'SUR',
+        'ruble soviètic',
+        one: 'ruble soviètic',
+        other: 'rubles soviètics',
+      );
+
+  @override
+  Currency get svc => Currency(
+        _locale,
+        'SVC',
+        'colon salvadorenc',
+        one: 'colón salvadorenc',
+        other: 'colones salvadorencs',
+      );
+
+  @override
+  Currency get syp => Currency(
+        _locale,
+        'SYP',
+        'lliura siriana',
+        narrowSymbol: '£',
+        one: 'lliura siriana',
+        other: 'lliures sirianes',
+      );
+
+  @override
+  Currency get szl => Currency(
+        _locale,
+        'SZL',
+        'lilangeni swazi',
+        one: 'lilangeni swazi',
+        other: 'emalangeni swazis',
+      );
+
+  @override
+  Currency get thb => Currency(
+        _locale,
+        'THB',
+        'baht',
+        symbol: '฿',
+        narrowSymbol: '฿',
+        one: 'baht',
+        other: 'bahts',
+      );
+
+  @override
+  Currency get tjr => Currency(
+        _locale,
+        'TJR',
+        'ruble tadjik',
+        one: 'ruble tadjik',
+        other: 'rubles tadjiks',
+      );
+
+  @override
+  Currency get tjs => Currency(
+        _locale,
+        'TJS',
+        'somoni tadjik',
+        one: 'somoni tadjik',
+        other: 'somonis tadjiks',
+      );
+
+  @override
+  Currency get tmm => Currency(
+        _locale,
+        'TMM',
+        'manat turcman (1993–2009)',
+        one: 'manat turcman (1993–2009)',
+        other: 'manats turcmans (1993–2009)',
+      );
+
+  @override
+  Currency get tmt => Currency(
+        _locale,
+        'TMT',
+        'manat turcman',
+        one: 'manat turcman',
+        other: 'manats turcmans',
+      );
+
+  @override
+  Currency get tnd => Currency(
+        _locale,
+        'TND',
+        'dinar tunisià',
+        one: 'dinar tunisià',
+        other: 'dinars tunisians',
+      );
+
+  @override
+  Currency get top => Currency(
+        _locale,
+        'TOP',
+        'pa‘anga tongà',
+        narrowSymbol: r'T$',
+        one: 'pa‘anga tongà',
+        other: 'pa‘angas tongans',
+      );
+
+  @override
+  Currency get tpe => Currency(
+        _locale,
+        'TPE',
+        'escut de Timor',
+        one: 'escut de Timor',
+        other: 'escuts de Timor',
+      );
+
+  @override
+  Currency get trl => Currency(
+        _locale,
+        'TRL',
+        'lira turca (1922–2005)',
+        one: 'lira turca (1922–2005)',
+        other: 'lires turques (1922–2005)',
+      );
+
+  @override
+  Currency get try$ => Currency(
+        _locale,
+        'TRY',
+        'lira turca',
+        narrowSymbol: '₺',
+        one: 'lira turca',
+        other: 'lires turques',
+      );
+
+  @override
+  Currency get ttd => Currency(
+        _locale,
+        'TTD',
+        'dòlar de Trinitat i Tobago',
+        narrowSymbol: r'$',
+        one: 'dòlar de Trinitat i Tobago',
+        other: 'dòlars de Trinitat i Tobago',
+      );
+
+  @override
+  Currency get twd => Currency(
+        _locale,
+        'TWD',
+        'nou dòlar de Taiwan',
+        symbol: r'NT$',
+        narrowSymbol: r'$',
+        one: 'nou dòlar de Taiwan',
+        other: 'nous dòlars de Taiwan',
+      );
+
+  @override
+  Currency get tzs => Currency(
+        _locale,
+        'TZS',
+        'xíling tanzà',
+        one: 'xíling tanzà',
+        other: 'xílings tanzans',
+      );
+
+  @override
+  Currency get uah => Currency(
+        _locale,
+        'UAH',
+        'hrívnia',
+        narrowSymbol: '₴',
+        one: 'hrívnia',
+        other: 'hrívnies',
+      );
+
+  @override
+  Currency get uak => Currency(
+        _locale,
+        'UAK',
+        'karbóvanets ucraïnès',
+        one: 'karbóvanets ucraïnès',
+        other: 'karbóvantsiv ucraïnesos',
+      );
+
+  @override
+  Currency get ugs => Currency(
+        _locale,
+        'UGS',
+        'xíling ugandès (1966–1987)',
+        one: 'xíling ugandès (1966–1987)',
+        other: 'xílings ugandesos (1966–1987)',
+      );
+
+  @override
+  Currency get ugx => Currency(
+        _locale,
+        'UGX',
+        'xíling ugandès',
+        one: 'xíling ugandès',
+        other: 'xílings ugandesos',
+      );
+
+  @override
+  Currency get usd => Currency(
+        _locale,
+        'USD',
+        'dòlar dels Estats Units',
+        symbol: 'USD',
+        narrowSymbol: r'$',
+        one: 'dòlar dels Estats Units',
+        other: 'dòlars dels Estats Units',
+      );
+
+  @override
+  Currency get usn => Currency(
+        _locale,
+        'USN',
+        'dòlar dels Estats Units (dia següent)',
+        one: 'dòlar dels Estats Units (dia següent)',
+        other: 'dòlars dels Estats Units (dia següent)',
+      );
+
+  @override
+  Currency get uss => Currency(
+        _locale,
+        'USS',
+        'dòlar dels Estats Units (mateix dia)',
+        one: 'dòlar dels Estats Units (mateix dia)',
+        other: 'dòlars dels Estats Units (mateix dia)',
+      );
+
+  @override
+  Currency get uyi => Currency(
+        _locale,
+        'UYI',
+        'peso uruguaià en unitats indexades',
+        one: 'peso uruguaià en unitats indexades',
+        other: 'pesos uruguaians en unitats indexades',
+      );
+
+  @override
+  Currency get uyp => Currency(
+        _locale,
+        'UYP',
+        'peso uruguaià (1975–1993)',
+        one: 'peso uruguaià (1975–1993)',
+        other: 'pesos uruguaians (1975–1993)',
+      );
+
+  @override
+  Currency get uyu => Currency(
+        _locale,
+        'UYU',
+        'peso uruguaià',
+        narrowSymbol: r'$',
+        one: 'peso uruguaià',
+        other: 'pesos uruguaians',
+      );
+
+  @override
+  Currency get uyw => Currency(
+        _locale,
+        'UYW',
+        'Uruguayan Nominal Wage Index Unit',
+        one: 'Uruguayan nominal wage index unit',
+        other: 'Uruguayan nominal wage index units',
+      );
+
+  @override
+  Currency get uzs => Currency(
+        _locale,
+        'UZS',
+        'som uzbek',
+        one: 'som uzbek',
+        other: 'soms uzbeks',
+      );
+
+  @override
+  Currency get veb => Currency(
+        _locale,
+        'VEB',
+        'bolívar veneçolà (1871–2008)',
+        one: 'bolívar veneçolà (1871–2008)',
+        other: 'bolívars veneçolans (1871–2008)',
+      );
+
+  @override
+  Currency get ved => Currency(
+        _locale,
+        'VED',
+        'Bolívar Soberano',
+        one: 'Bolívar Soberano',
+        other: 'Bolívar Soberanos',
+      );
+
+  @override
+  Currency get vef => Currency(
+        _locale,
+        'VEF',
+        'bolívar veneçolà (2008–2018)',
+        narrowSymbol: 'Bs F',
+        one: 'bolívar veneçolà (2008–2018)',
+        other: 'bolívars veneçolans (2008–2018)',
+      );
+
+  @override
+  Currency get ves => Currency(
+        _locale,
+        'VES',
+        'bolívar veneçolà',
+        one: 'bolívar veneçolà',
+        other: 'bolívars veneçolans',
+      );
+
+  @override
+  Currency get vnd => Currency(
+        _locale,
+        'VND',
+        'dong vietnamita',
+        symbol: '₫',
+        narrowSymbol: '₫',
+        one: 'dong vietnamita',
+        other: 'dongs vietnamites',
+      );
+
+  @override
+  Currency get vnn => Currency(
+        _locale,
+        'VNN',
+        'dong vietnamita (1978–1985)',
+        one: 'dong vietnamita (1978–1985)',
+        other: 'dongs vietnamites (1978–1985)',
+      );
+
+  @override
+  Currency get vuv => Currency(
+        _locale,
+        'VUV',
+        'vatu de Vanuatu',
+        one: 'vatu de Vanuatu',
+        other: 'vatus de Vanuatu',
+      );
+
+  @override
+  Currency get wst => Currency(
+        _locale,
+        'WST',
+        'tala samoà',
+        one: 'tala samoà',
+        other: 'tales samoans',
+      );
+
+  @override
+  Currency get xaf => Currency(
+        _locale,
+        'XAF',
+        'franc CFA BEAC',
+        symbol: 'FCFA',
+        one: 'franc CFA BEAC',
+        other: 'francs CFA BEAC',
+      );
+
+  @override
+  Currency get xag => Currency(
+        _locale,
+        'XAG',
+        'plata',
+      );
+
+  @override
+  Currency get xau => Currency(
+        _locale,
+        'XAU',
+        'or',
+      );
+
+  @override
+  Currency get xba => Currency(
+        _locale,
+        'XBA',
+        'unitat compensatòria europea',
+        one: 'unitat compensatòria europea',
+        other: 'unitats compensatòries europees',
+      );
+
+  @override
+  Currency get xbb => Currency(
+        _locale,
+        'XBB',
+        'unitat monetària europea',
+        one: 'unitat monetària europea',
+        other: 'unitats monetàries europees',
+      );
+
+  @override
+  Currency get xbc => Currency(
+        _locale,
+        'XBC',
+        'unitat de compte europea (XBC)',
+        one: 'unitat de compte europea (XBC)',
+        other: 'unitats de compte europees (XBC)',
+      );
+
+  @override
+  Currency get xbd => Currency(
+        _locale,
+        'XBD',
+        'unitat de compte europea (XBD)',
+        one: 'unitat de compte europea (XBD)',
+        other: 'unitats de compte europees (XBD)',
+      );
+
+  @override
+  Currency get xcd => Currency(
+        _locale,
+        'XCD',
+        'dòlar del Carib Oriental',
+        symbol: 'XCD',
+        narrowSymbol: r'$',
+        one: 'dòlar del Carib Oriental',
+        other: 'dòlars del Carib Oriental',
+      );
+
+  @override
+  Currency get xcg => Currency(
+        _locale,
+        'XCG',
+        'XCG',
+        symbol: 'Cg.',
+      );
+
+  @override
+  Currency get xdr => Currency(
+        _locale,
+        'XDR',
+        'drets especials de gir',
+      );
+
+  @override
+  Currency get xeu => Currency(
+        _locale,
+        'XEU',
+        'unitat de moneda europea',
+        one: 'unitat de moneda europea',
+        other: 'unitats de moneda europees',
+      );
+
+  @override
+  Currency get xfo => Currency(
+        _locale,
+        'XFO',
+        'franc or francès',
+        one: 'franc or francès',
+        other: 'francs or francesos',
+      );
+
+  @override
+  Currency get xfu => Currency(
+        _locale,
+        'XFU',
+        'franc UIC francès',
+        one: 'franc UIC francès',
+        other: 'francs UIC francesos',
+      );
+
+  @override
+  Currency get xof => Currency(
+        _locale,
+        'XOF',
+        'franc CFA BCEAO',
+        symbol: 'F CFA',
+        one: 'franc CFA BCEAO',
+        other: 'francs CFA BCEAO',
+      );
+
+  @override
+  Currency get xpd => Currency(
+        _locale,
+        'XPD',
+        'pal·ladi',
+      );
+
+  @override
+  Currency get xpf => Currency(
+        _locale,
+        'XPF',
+        'franc CFP',
+        symbol: 'CFPF',
+        one: 'franc CFP',
+        other: 'francs CFP',
+      );
+
+  @override
+  Currency get xpt => Currency(
+        _locale,
+        'XPT',
+        'platí',
+      );
+
+  @override
+  Currency get xre => Currency(
+        _locale,
+        'XRE',
+        'fons RINET',
+      );
+
+  @override
+  Currency get xsu => Currency(
+        _locale,
+        'XSU',
+        'Sucre',
+        one: 'Sucre',
+        other: 'Sucres',
+      );
+
+  @override
+  Currency get xts => Currency(
+        _locale,
+        'XTS',
+        'codi reservat per a proves',
+      );
+
+  @override
+  Currency get xua => Currency(
+        _locale,
+        'XUA',
+        'ADB Unit of Account',
+        one: 'ADB unit of account',
+        other: 'ADB units of account',
+      );
+
+  @override
+  Currency get xxx => Currency(
+        _locale,
+        'XXX',
+        'moneda desconeguda',
+        symbol: 'XXX',
+        one: '(unitat monetària desconeguda)',
+        other: '(moneda desconeguda)',
+      );
+
+  @override
+  Currency get ydd => Currency(
+        _locale,
+        'YDD',
+        'dinar iemenita',
+        one: 'dinar iemenita',
+        other: 'dinars iemenites',
+      );
+
+  @override
+  Currency get yer => Currency(
+        _locale,
+        'YER',
+        'rial iemenita',
+        one: 'rial iemenita',
+        other: 'rials iemenites',
+      );
+
+  @override
+  Currency get yud => Currency(
+        _locale,
+        'YUD',
+        'dinar fort iugoslau',
+        one: 'dinar fort iugoslau',
+        other: 'dinars forts iugoslaus',
+      );
+
+  @override
+  Currency get yum => Currency(
+        _locale,
+        'YUM',
+        'nou dinar iugoslau',
+        one: 'nou dinar iugoslau',
+        other: 'nous dinars iugoslaus',
+      );
+
+  @override
+  Currency get yun => Currency(
+        _locale,
+        'YUN',
+        'dinar convertible iugoslau',
+        one: 'dinar convertible iugoslau',
+        other: 'dinars convertibles iugoslaus',
+      );
+
+  @override
+  Currency get yur => Currency(
+        _locale,
+        'YUR',
+        'dinar iugoslau reformat (1992–1993)',
+        one: 'dinar reformat iugoslau',
+        other: 'dinars reformats iugoslaus',
+      );
+
+  @override
+  Currency get zal => Currency(
+        _locale,
+        'ZAL',
+        'rand sud-africà (financer)',
+        one: 'rand sud-africà (financer)',
+        other: 'rands sud-africans (financers)',
+      );
+
+  @override
+  Currency get zar => Currency(
+        _locale,
+        'ZAR',
+        'rand sud-africà',
+        narrowSymbol: 'R',
+        one: 'rand sud-africà',
+        other: 'rands sud-africans',
+      );
+
+  @override
+  Currency get zmk => Currency(
+        _locale,
+        'ZMK',
+        'kwacha zambià (1968–2012)',
+        one: 'kwacha zambià (1968–2012)',
+        other: 'kwacha zambians (1968–2012)',
+      );
+
+  @override
+  Currency get zmw => Currency(
+        _locale,
+        'ZMW',
+        'kwacha zambià',
+        narrowSymbol: 'ZK',
+        one: 'kwacha zambià',
+        other: 'kwacha zambians',
+      );
+
+  @override
+  Currency get zrn => Currency(
+        _locale,
+        'ZRN',
+        'nou zaire zairès',
+        one: 'nou zaire zairès',
+        other: 'nous zaires zairesos',
+      );
+
+  @override
+  Currency get zrz => Currency(
+        _locale,
+        'ZRZ',
+        'zaire zairès',
+        one: 'zaire zairès',
+        other: 'zaires zairesos',
+      );
+
+  @override
+  Currency get zwd => Currency(
+        _locale,
+        'ZWD',
+        'dòlar zimbabuès (1980–2008)',
+        one: 'dòlar zimbabuès (1980–2008)',
+        other: 'dòlars zimbabuesos (1980–2008)',
+      );
+
+  @override
+  Currency get zwg => Currency(
+        _locale,
+        'ZWG',
+        'Zimbabwean Gold',
+        one: 'Zimbabwean gold',
+        other: 'Zimbabwean gold',
+      );
+
+  @override
+  Currency get zwl => Currency(
+        _locale,
+        'ZWL',
+        'dòlar zimbabuès (2009)',
+        one: 'dòlar zimbabuès (2009)',
+        other: 'dòlars zimbabuesos (2009)',
+      );
+
+  @override
+  Currency get zwr => Currency(
+        _locale,
+        'ZWR',
+        'dòlar zimbabuès (2008)',
+        one: 'dòlar zimbabuès (2008)',
+        other: 'dòlars zimbabuesos (2008)',
+      );
+
+  @override
+  late final Map<String, Currency> byCode =
+      CanonicalizedMap<String, String, Currency>.from({
+    'ADP': adp,
+    'AED': aed,
+    'AFA': afa,
+    'AFN': afn,
+    'ALK': alk,
+    'ALL': all,
+    'AMD': amd,
+    'ANG': ang,
+    'AOA': aoa,
+    'AOK': aok,
+    'AON': aon,
+    'AOR': aor,
+    'ARA': ara,
+    'ARL': arl,
+    'ARM': arm,
+    'ARP': arp,
+    'ARS': ars,
+    'ATS': ats,
+    'AUD': aud,
+    'AWG': awg,
+    'AZM': azm,
+    'AZN': azn,
+    'BAD': bad,
+    'BAM': bam,
+    'BAN': ban,
+    'BBD': bbd,
+    'BDT': bdt,
+    'BEC': bec,
+    'BEF': bef,
+    'BEL': bel,
+    'BGL': bgl,
+    'BGM': bgm,
+    'BGN': bgn,
+    'BGO': bgo,
+    'BHD': bhd,
+    'BIF': bif,
+    'BMD': bmd,
+    'BND': bnd,
+    'BOB': bob,
+    'BOL': bol,
+    'BOP': bop,
+    'BOV': bov,
+    'BRB': brb,
+    'BRC': brc,
+    'BRE': bre,
+    'BRL': brl,
+    'BRN': brn,
+    'BRR': brr,
+    'BRZ': brz,
+    'BSD': bsd,
+    'BTN': btn,
+    'BUK': buk,
+    'BWP': bwp,
+    'BYB': byb,
+    'BYN': byn,
+    'BYR': byr,
+    'BZD': bzd,
+    'CAD': cad,
+    'CDF': cdf,
+    'CHE': che,
+    'CHF': chf,
+    'CHW': chw,
+    'CLE': cle,
+    'CLF': clf,
+    'CLP': clp,
+    'CNH': cnh,
+    'CNX': cnx,
+    'CNY': cny,
+    'COP': cop,
+    'COU': cou,
+    'CRC': crc,
+    'CSD': csd,
+    'CSK': csk,
+    'CUC': cuc,
+    'CUP': cup,
+    'CVE': cve,
+    'CYP': cyp,
+    'CZK': czk,
+    'DDM': ddm,
+    'DEM': dem,
+    'DJF': djf,
+    'DKK': dkk,
+    'DOP': dop,
+    'DZD': dzd,
+    'ECS': ecs,
+    'ECV': ecv,
+    'EEK': eek,
+    'EGP': egp,
+    'ERN': ern,
+    'ESA': esa,
+    'ESB': esb,
+    'ESP': esp,
+    'ETB': etb,
+    'EUR': eur,
+    'FIM': fim,
+    'FJD': fjd,
+    'FKP': fkp,
+    'FRF': frf,
+    'GBP': gbp,
+    'GEK': gek,
+    'GEL': gel,
+    'GHC': ghc,
+    'GHS': ghs,
+    'GIP': gip,
+    'GMD': gmd,
+    'GNF': gnf,
+    'GNS': gns,
+    'GQE': gqe,
+    'GRD': grd,
+    'GTQ': gtq,
+    'GWE': gwe,
+    'GWP': gwp,
+    'GYD': gyd,
+    'HKD': hkd,
+    'HNL': hnl,
+    'HRD': hrd,
+    'HRK': hrk,
+    'HTG': htg,
+    'HUF': huf,
+    'IDR': idr,
+    'IEP': iep,
+    'ILP': ilp,
+    'ILR': ilr,
+    'ILS': ils,
+    'INR': inr,
+    'IQD': iqd,
+    'IRR': irr,
+    'ISJ': isj,
+    'ISK': isk,
+    'ITL': itl,
+    'JMD': jmd,
+    'JOD': jod,
+    'JPY': jpy,
+    'KES': kes,
+    'KGS': kgs,
+    'KHR': khr,
+    'KMF': kmf,
+    'KPW': kpw,
+    'KRH': krh,
+    'KRO': kro,
+    'KRW': krw,
+    'KWD': kwd,
+    'KYD': kyd,
+    'KZT': kzt,
+    'LAK': lak,
+    'LBP': lbp,
+    'LKR': lkr,
+    'LRD': lrd,
+    'LSL': lsl,
+    'LTL': ltl,
+    'LTT': ltt,
+    'LUC': luc,
+    'LUF': luf,
+    'LUL': lul,
+    'LVL': lvl,
+    'LVR': lvr,
+    'LYD': lyd,
+    'MAD': mad,
+    'MAF': maf,
+    'MCF': mcf,
+    'MDC': mdc,
+    'MDL': mdl,
+    'MGA': mga,
+    'MGF': mgf,
+    'MKD': mkd,
+    'MKN': mkn,
+    'MLF': mlf,
+    'MMK': mmk,
+    'MNT': mnt,
+    'MOP': mop,
+    'MRO': mro,
+    'MRU': mru,
+    'MTL': mtl,
+    'MTP': mtp,
+    'MUR': mur,
+    'MVP': mvp,
+    'MVR': mvr,
+    'MWK': mwk,
+    'MXN': mxn,
+    'MXP': mxp,
+    'MXV': mxv,
+    'MYR': myr,
+    'MZE': mze,
+    'MZM': mzm,
+    'MZN': mzn,
+    'NAD': nad,
+    'NGN': ngn,
+    'NIC': nic,
+    'NIO': nio,
+    'NLG': nlg,
+    'NOK': nok,
+    'NPR': npr,
+    'NZD': nzd,
+    'OMR': omr,
+    'PAB': pab,
+    'PEI': pei,
+    'PEN': pen,
+    'PES': pes,
+    'PGK': pgk,
+    'PHP': php,
+    'PKR': pkr,
+    'PLN': pln,
+    'PLZ': plz,
+    'PTE': pte,
+    'PYG': pyg,
+    'QAR': qar,
+    'RHD': rhd,
+    'ROL': rol,
+    'RON': ron,
+    'RSD': rsd,
+    'RUB': rub,
+    'RUR': rur,
+    'RWF': rwf,
+    'SAR': sar,
+    'SBD': sbd,
+    'SCR': scr,
+    'SDD': sdd,
+    'SDG': sdg,
+    'SDP': sdp,
+    'SEK': sek,
+    'SGD': sgd,
+    'SHP': shp,
+    'SIT': sit,
+    'SKK': skk,
+    'SLE': sle,
+    'SLL': sll,
+    'SOS': sos,
+    'SRD': srd,
+    'SRG': srg,
+    'SSP': ssp,
+    'STD': std,
+    'STN': stn,
+    'SUR': sur,
+    'SVC': svc,
+    'SYP': syp,
+    'SZL': szl,
+    'THB': thb,
+    'TJR': tjr,
+    'TJS': tjs,
+    'TMM': tmm,
+    'TMT': tmt,
+    'TND': tnd,
+    'TOP': top,
+    'TPE': tpe,
+    'TRL': trl,
+    'TRY': try$,
+    'TTD': ttd,
+    'TWD': twd,
+    'TZS': tzs,
+    'UAH': uah,
+    'UAK': uak,
+    'UGS': ugs,
+    'UGX': ugx,
+    'USD': usd,
+    'USN': usn,
+    'USS': uss,
+    'UYI': uyi,
+    'UYP': uyp,
+    'UYU': uyu,
+    'UYW': uyw,
+    'UZS': uzs,
+    'VEB': veb,
+    'VED': ved,
+    'VEF': vef,
+    'VES': ves,
+    'VND': vnd,
+    'VNN': vnn,
+    'VUV': vuv,
+    'WST': wst,
+    'XAF': xaf,
+    'XAG': xag,
+    'XAU': xau,
+    'XBA': xba,
+    'XBB': xbb,
+    'XBC': xbc,
+    'XBD': xbd,
+    'XCD': xcd,
+    'XCG': xcg,
+    'XDR': xdr,
+    'XEU': xeu,
+    'XFO': xfo,
+    'XFU': xfu,
+    'XOF': xof,
+    'XPD': xpd,
+    'XPF': xpf,
+    'XPT': xpt,
+    'XRE': xre,
+    'XSU': xsu,
+    'XTS': xts,
+    'XUA': xua,
+    'XXX': xxx,
+    'YDD': ydd,
+    'YER': yer,
+    'YUD': yud,
+    'YUM': yum,
+    'YUN': yun,
+    'YUR': yur,
+    'ZAL': zal,
+    'ZAR': zar,
+    'ZMK': zmk,
+    'ZMW': zmw,
+    'ZRN': zrn,
+    'ZRZ': zrz,
+    'ZWD': zwd,
+    'ZWG': zwg,
+    'ZWL': zwl,
+    'ZWR': zwr,
   }, (key) => key.toLowerCase());
 }

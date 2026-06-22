@@ -11,4 +11,6 @@ dartdoc:
       markdown: doc/Territories.md
     "Timezones":
       markdown: doc/Timezones.md
+    "Lists":
+      markdown: doc/Lists.md
   showUndocumentedCategories: true

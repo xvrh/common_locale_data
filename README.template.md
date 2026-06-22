@@ -15,6 +15,10 @@ Repository ([CLDR](https://cldr.unicode.org/)).
 - Translations for time zones and example cities (or similar) for time zones.
 - Translations for calendar fields.
 - Translations for relative time fields.
+- List patterns to join items into a localized string (e.g. "a, b, and c").
+- A high-level relative time ("timeago") formatter (e.g. "3 minutes ago", "in 2 days", "yesterday").
+  It is calendar-aware (an event late yesterday reads "yesterday", not "13 hours ago"), can render
+  weekday names ("last Tuesday") and exposes week conventions (first day of week, weekend).
 
 ## Tree-shaking
 

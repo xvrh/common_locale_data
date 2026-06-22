@@ -1,13 +1,17 @@
 import 'dart:io';
 import 'package:analyzer/dart/ast/token.dart';
 import 'package:dart_style/dart_style.dart';
+import 'model/calendar.dart';
+import 'model/currency.dart';
 import 'model/date_fields.dart';
 import 'model/language.dart';
+import 'model/list_patterns.dart';
 import 'model/script.dart';
 import 'model/territory.dart';
 import 'model/timezone.dart';
 import 'model/units.dart';
 import 'model/variant.dart';
+import 'model/week_data.dart';
 import 'utils/case_format.dart';
 import 'utils/escape_dart_string.dart';
 import 'utils/split_words.dart';
@@ -37,6 +41,8 @@ void main() {
       .writeAsStringSync(_format(generateUnitsModel()));
   File('lib/src/territories_model.dart')
       .writeAsStringSync(_format(generateTerritoriesModel()));
+  File('lib/src/currencies_model.dart')
+      .writeAsStringSync(_format(generateCurrenciesModel()));
   File('lib/src/timezone_data.dart')
       .writeAsStringSync(_format(generateTimeZoneData()));
   File('lib/common_locale_data_all.dart')
@@ -91,6 +97,21 @@ class CommonLocaleData$localeUpperCamel implements CommonLocaleData {
   static final _timeZones = TimeZones$localeUpperCamel._(_territories);
   @override
   TimeZones get timeZones => _timeZones;
+
+  static final _listPatterns = ListPatterns$localeUpperCamel._();
+  @override
+  ListPatterns get listPatterns => _listPatterns;
+
+  static final _calendar = Calendar$localeUpperCamel._();
+  @override
+  Calendar get calendar => _calendar;
+
+  static final _currencies = Currencies$localeUpperCamel._();
+  @override
+  Currencies get currencies => _currencies;
+
+  @override
+  WeekInfo get weekInfo => const ${weekInfoExpression(locale)};
 }
 ''');
 
@@ -101,6 +122,9 @@ class CommonLocaleData$localeUpperCamel implements CommonLocaleData {
     generateDateFields(locale, buffer);
     generateTerritories(locale, buffer);
     generateTimeZones(locale, buffer);
+    generateListPatterns(locale, buffer);
+    generateCalendar(locale, buffer);
+    generateCurrencies(locale, buffer);
 
     var formatted = _format(buffer.toString());
 
@@ -127,13 +151,17 @@ String generateCommon() {
 
   var code = StringBuffer();
   code.writeln('''
+import 'calendar.dart';
+import 'currencies.dart';
 import 'date_fields.dart';
 import 'languages.dart';
+import 'list_patterns.dart';
 import 'scripts.dart';
 import 'variants.dart';
 import 'territories.dart';
 import 'units.dart';
 import 'timezones.dart';
+import 'week_data.dart';
 
 /// The root class providing access to all Common Data (date fields, units, territories etc...).
 abstract class CommonLocaleData {
@@ -175,6 +203,18 @@ abstract class CommonLocaleData {
 
   /// Localized timezone names.
   TimeZones get timeZones;
+
+  /// Localized list patterns (joining items into "a, b, and c").
+  ListPatterns get listPatterns;
+
+  /// Localized (Gregorian) calendar names: months, weekdays, eras etc.
+  Calendar get calendar;
+
+  /// Localized currency names and symbols.
+  Currencies get currencies;
+
+  /// Week conventions (first day of the week, weekend) for this locale.
+  WeekInfo get weekInfo;
 ''');
 
   code.writeln('''
@@ -208,9 +248,13 @@ library;
 
 import 'package:collection/collection.dart';
 
+export 'src/calendar.dart';
 export 'src/common_locale_data.dart';
+export 'src/currencies.dart';
 export 'src/date_fields.dart';
 export 'src/languages.dart';
+export 'src/list_patterns.dart';
+export 'src/relative_time.dart';
 export 'src/scripts.dart';
 export 'src/shared.dart';
 export 'src/territories.dart';
@@ -218,6 +262,7 @@ export 'src/timezone_data.dart';
 export 'src/timezones.dart';
 export 'src/units.dart';
 export 'src/variants.dart';
+export 'src/week_data.dart';
 
   ''');
 

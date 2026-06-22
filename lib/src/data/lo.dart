@@ -39,6 +39,26 @@ class CommonLocaleDataLo implements CommonLocaleData {
   static final _timeZones = TimeZonesLo._(_territories);
   @override
   TimeZones get timeZones => _timeZones;
+
+  static final _listPatterns = ListPatternsLo._();
+  @override
+  ListPatterns get listPatterns => _listPatterns;
+
+  static final _calendar = CalendarLo._();
+  @override
+  Calendar get calendar => _calendar;
+
+  static final _currencies = CurrenciesLo._();
+  @override
+  Currencies get currencies => _currencies;
+
+  @override
+  WeekInfo get weekInfo => const WeekInfo(
+        firstDayOfWeek: 7,
+        weekendStart: 6,
+        weekendEnd: 7,
+        minDaysInFirstWeek: 1,
+      );
 }
 
 class LanguagesLo extends Languages {
@@ -11905,5 +11925,3004 @@ class TimeZonesLo extends TimeZones {
         standard: 'ເວລາຢູຄອນ',
       ),
     ),
+  }, (key) => key.toLowerCase());
+}
+
+class ListPatternsLo extends ListPatterns {
+  ListPatternsLo._();
+
+  @override
+  ListPattern get standard => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0}, {1}',
+        two: '{0} ແລະ {1}',
+      );
+
+  @override
+  ListPattern get standardShort => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0} ແລະ {1}',
+        two: '{0} ແລະ {1}',
+      );
+
+  @override
+  ListPattern get standardNarrow => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0}, {1}',
+        two: '{0} ແລະ {1}',
+      );
+
+  @override
+  ListPattern get or => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0} ຫຼື {1}',
+        two: '{0} ຫຼື {1}',
+      );
+
+  @override
+  ListPattern get orShort => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0} ຫຼື {1}',
+        two: '{0} ຫຼື {1}',
+      );
+
+  @override
+  ListPattern get orNarrow => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0} ຫຼື {1}',
+        two: '{0} ຫຼື {1}',
+      );
+
+  @override
+  ListPattern get unit => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0}, {1}',
+        two: '{0}, {1}',
+      );
+
+  @override
+  ListPattern get unitShort => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0}, {1}',
+        two: '{0}, {1}',
+      );
+
+  @override
+  ListPattern get unitNarrow => ListPattern(
+        start: '{0} {1}',
+        middle: '{0} {1}',
+        end: '{0} {1}',
+        two: '{0} {1}',
+      );
+}
+
+class CalendarLo extends Calendar {
+  CalendarLo._();
+
+  @override
+  Months get months => Months(
+        wide: MonthNames(
+          january: 'ມັງກອນ',
+          february: 'ກຸມພາ',
+          march: 'ມີນາ',
+          april: 'ເມສາ',
+          may: 'ພຶດສະພາ',
+          june: 'ມິຖຸນາ',
+          july: 'ກໍລະກົດ',
+          august: 'ສິງຫາ',
+          september: 'ກັນຍາ',
+          october: 'ຕຸລາ',
+          november: 'ພະຈິກ',
+          december: 'ທັນວາ',
+        ),
+        abbreviated: MonthNames(
+          january: 'ມ.ກ.',
+          february: 'ກ.ພ.',
+          march: 'ມ.ນ.',
+          april: 'ມ.ສ.',
+          may: 'ພ.ພ.',
+          june: 'ມິ.ຖ.',
+          july: 'ກ.ລ.',
+          august: 'ສ.ຫ.',
+          september: 'ກ.ຍ.',
+          october: 'ຕ.ລ.',
+          november: 'ພ.ຈ.',
+          december: 'ທ.ວ.',
+        ),
+        narrow: MonthNames(
+          january: '1',
+          february: '2',
+          march: '3',
+          april: '4',
+          may: '5',
+          june: '6',
+          july: '7',
+          august: '8',
+          september: '9',
+          october: '10',
+          november: '11',
+          december: '12',
+        ),
+      );
+
+  @override
+  Months get standaloneMonths => Months(
+        wide: MonthNames(
+          january: 'ມັງກອນ',
+          february: 'ກຸມພາ',
+          march: 'ມີນາ',
+          april: 'ເມສາ',
+          may: 'ພຶດສະພາ',
+          june: 'ມິຖຸນາ',
+          july: 'ກໍລະກົດ',
+          august: 'ສິງຫາ',
+          september: 'ກັນຍາ',
+          october: 'ຕຸລາ',
+          november: 'ພະຈິກ',
+          december: 'ທັນວາ',
+        ),
+        abbreviated: MonthNames(
+          january: 'ມ.ກ.',
+          february: 'ກ.ພ.',
+          march: 'ມ.ນ.',
+          april: 'ມ.ສ.',
+          may: 'ພ.ພ.',
+          june: 'ມິ.ຖ.',
+          july: 'ກ.ລ.',
+          august: 'ສ.ຫ.',
+          september: 'ກ.ຍ.',
+          october: 'ຕ.ລ.',
+          november: 'ພ.ຈ.',
+          december: 'ທ.ວ.',
+        ),
+        narrow: MonthNames(
+          january: '1',
+          february: '2',
+          march: '3',
+          april: '4',
+          may: '5',
+          june: '6',
+          july: '7',
+          august: '8',
+          september: '9',
+          october: '10',
+          november: '11',
+          december: '12',
+        ),
+      );
+
+  @override
+  Weekdays get weekdays => Weekdays(
+        wide: WeekdayNames(
+          monday: 'ວັນຈັນ',
+          tuesday: 'ວັນອັງຄານ',
+          wednesday: 'ວັນພຸດ',
+          thursday: 'ວັນພະຫັດ',
+          friday: 'ວັນສຸກ',
+          saturday: 'ວັນເສົາ',
+          sunday: 'ວັນອາທິດ',
+        ),
+        abbreviated: WeekdayNames(
+          monday: 'ຈັນ',
+          tuesday: 'ອັງຄານ',
+          wednesday: 'ພຸດ',
+          thursday: 'ພະຫັດ',
+          friday: 'ສຸກ',
+          saturday: 'ເສົາ',
+          sunday: 'ອາທິດ',
+        ),
+        short: WeekdayNames(
+          monday: 'ຈ.',
+          tuesday: 'ອ.',
+          wednesday: 'ພ.',
+          thursday: 'ພຫ.',
+          friday: 'ສຸ.',
+          saturday: 'ສ.',
+          sunday: 'ອາ.',
+        ),
+        narrow: WeekdayNames(
+          monday: 'ຈ',
+          tuesday: 'ອ',
+          wednesday: 'ພ',
+          thursday: 'ພຫ',
+          friday: 'ສຸ',
+          saturday: 'ສ',
+          sunday: 'ອາ',
+        ),
+      );
+
+  @override
+  Weekdays get standaloneWeekdays => Weekdays(
+        wide: WeekdayNames(
+          monday: 'ວັນຈັນ',
+          tuesday: 'ວັນອັງຄານ',
+          wednesday: 'ວັນພຸດ',
+          thursday: 'ວັນພະຫັດ',
+          friday: 'ວັນສຸກ',
+          saturday: 'ວັນເສົາ',
+          sunday: 'ວັນອາທິດ',
+        ),
+        abbreviated: WeekdayNames(
+          monday: 'ຈັນ',
+          tuesday: 'ອັງຄານ',
+          wednesday: 'ພຸດ',
+          thursday: 'ພະຫັດ',
+          friday: 'ສຸກ',
+          saturday: 'ເສົາ',
+          sunday: 'ອາທິດ',
+        ),
+        short: WeekdayNames(
+          monday: 'ຈ.',
+          tuesday: 'ອ.',
+          wednesday: 'ພ.',
+          thursday: 'ພຫ.',
+          friday: 'ສຸ.',
+          saturday: 'ສ.',
+          sunday: 'ອາ.',
+        ),
+        narrow: WeekdayNames(
+          monday: 'ຈ',
+          tuesday: 'ອ',
+          wednesday: 'ພ',
+          thursday: 'ພຫ',
+          friday: 'ສຸ',
+          saturday: 'ສ',
+          sunday: 'ອາ',
+        ),
+      );
+
+  @override
+  Quarters get quarters => Quarters(
+        wide: QuarterNames(
+          q1: 'ໄຕຣມາດ 1',
+          q2: 'ໄຕຣມາດ 2',
+          q3: 'ໄຕຣມາດ 3',
+          q4: 'ໄຕຣມາດ 4',
+        ),
+        abbreviated: QuarterNames(
+          q1: 'ຕມ1',
+          q2: 'ຕມ2',
+          q3: 'ຕມ3',
+          q4: 'ຕມ4',
+        ),
+        narrow: QuarterNames(
+          q1: '1',
+          q2: '2',
+          q3: '3',
+          q4: '4',
+        ),
+      );
+
+  @override
+  Quarters get standaloneQuarters => Quarters(
+        wide: QuarterNames(
+          q1: 'ໄຕຣມາດ 1',
+          q2: 'ໄຕຣມາດ 2',
+          q3: 'ໄຕຣມາດ 3',
+          q4: 'ໄຕຣມາດ 4',
+        ),
+        abbreviated: QuarterNames(
+          q1: 'ຕ1',
+          q2: 'ຕ2',
+          q3: 'ຕ3',
+          q4: 'ຕ4',
+        ),
+        narrow: QuarterNames(
+          q1: '1',
+          q2: '2',
+          q3: '3',
+          q4: '4',
+        ),
+      );
+
+  @override
+  DayPeriods get dayPeriods => DayPeriods(
+        wide: DayPeriodNames(
+          am: 'ກ່ອນທ່ຽງ',
+          pm: 'ຫຼັງທ່ຽງ',
+          midnight: 'ທ່ຽງຄືນ',
+          noon: 'ຕອນທ່ຽງ',
+          morning: 'ຕອນເຊົ້າ',
+          afternoon: 'ຕອນບ່າຍ',
+          evening: 'ຕອນແລງ',
+          night: 'ຕອນກາງຄືນ',
+        ),
+        abbreviated: DayPeriodNames(
+          am: 'ກ່ອນທ່ຽງ',
+          pm: 'ຫຼັງທ່ຽງ',
+          midnight: 'ທ່ຽງຄືນ',
+          noon: 'ຕອນທ່ຽງ',
+          morning: 'ຕອນເຊົ້າ',
+          afternoon: 'ຕອນບ່າຍ',
+          evening: 'ຕອນແລງ',
+          night: 'ກາງຄືນ',
+        ),
+        narrow: DayPeriodNames(
+          am: 'ກ່ອນທ່ຽງ',
+          pm: 'ຫຼັງທ່ຽງ',
+          midnight: 'ທ່ຽງຄືນ',
+          noon: 'ຕອນທ່ຽງ',
+          morning: 'ຕອນເຊົ້າ',
+          afternoon: 'ຕອນທ່ຽງ',
+          evening: 'ຕອນແລງ',
+          night: 'ກາງຄືນ',
+        ),
+      );
+
+  @override
+  DayPeriods get standaloneDayPeriods => DayPeriods(
+        wide: DayPeriodNames(
+          am: 'ກ່ອນທ່ຽງ',
+          pm: 'ຫຼັງທ່ຽງ',
+          midnight: 'ທ່ຽງຄືນ',
+          noon: 'ຕອນທ່ຽງ',
+          morning: '​ເຊົ້າ',
+          afternoon: 'ສວາຍ',
+          evening: 'ແລງ',
+          night: '​ກາງ​ຄືນ',
+        ),
+        abbreviated: DayPeriodNames(
+          am: 'ກ່ອນທ່ຽງ',
+          pm: 'ຫຼັງທ່ຽງ',
+          midnight: 'ທ່ຽງ​ຄືນ',
+          noon: 'ທ່ຽງ',
+          morning: '​ເຊົ້າ',
+          afternoon: 'ສວາຍ',
+          evening: 'ແລງ',
+          night: '​ກາງ​ຄືນ',
+        ),
+        narrow: DayPeriodNames(
+          am: 'ກ່ອນທ່ຽງ',
+          pm: 'ຫຼັງທ່ຽງ',
+          midnight: 'ທ່ຽງ​ຄືນ',
+          noon: 'ທ່ຽງ',
+          morning: '​ເຊົ້າ',
+          afternoon: 'ສ',
+          evening: 'ແລງ',
+          night: '​ກາງ​ຄືນ',
+        ),
+      );
+
+  @override
+  Eras get eras => Eras(
+        wide: EraNames(
+          bc: 'ກ່ອນຄຣິດສັກກະລາດ',
+          ad: 'ຄຣິດສັກກະລາດ',
+        ),
+        abbreviated: EraNames(
+          bc: 'ກ່ອນ ຄ.ສ.',
+          ad: 'ຄ.ສ.',
+        ),
+        narrow: EraNames(
+          bc: 'ກ່ອນ ຄ.ສ.',
+          ad: 'ຄ.ສ.',
+        ),
+      );
+}
+
+class CurrenciesLo extends Currencies {
+  CurrenciesLo._();
+
+  @override
+  Currency get adp => Currency(
+        _locale,
+        'ADP',
+        'ເປເຊຕາ ອັນໂດລາ',
+      );
+
+  @override
+  Currency get aed => Currency(
+        _locale,
+        'AED',
+        'ສະ​ຫະ​ລັດ​ອາ​ຣັບ​ອາ​ມິ​ເຣດ ເດີ​ແຮມ',
+      );
+
+  @override
+  Currency get afa => Currency(
+        _locale,
+        'AFA',
+        'ອັບການິ ອັບການິສະຖານ (1927–2002)',
+      );
+
+  @override
+  Currency get afn => Currency(
+        _locale,
+        'AFN',
+        'ອັຟ​ກັນ ອັຟ​ກາ​ນິ',
+        narrowSymbol: '؋',
+      );
+
+  @override
+  Currency get alk => Currency(
+        _locale,
+        'ALK',
+        'Albanian Lek (1946–1965)',
+        one: 'Albanian lek (1946–1965)',
+        other: 'Albanian lekë (1946–1965)',
+      );
+
+  @override
+  Currency get all => Currency(
+        _locale,
+        'ALL',
+        'ອັລ​ບາ​ນຽນ ເລກ',
+      );
+
+  @override
+  Currency get amd => Currency(
+        _locale,
+        'AMD',
+        'ອາ​ເມ​ນຽນ ແດຣມ',
+        narrowSymbol: '֏',
+      );
+
+  @override
+  Currency get ang => Currency(
+        _locale,
+        'ANG',
+        'ເນ​ເທີ​ແລນ ແອນ​ຕິ​ລຽນ ກິວ​ເດີ',
+      );
+
+  @override
+  Currency get aoa => Currency(
+        _locale,
+        'AOA',
+        'ແອງ​ໂກ​ລັນ ຄວນ​ຊາ',
+        narrowSymbol: 'Kz',
+      );
+
+  @override
+  Currency get aok => Currency(
+        _locale,
+        'AOK',
+        'ກວານຊາ ແອງໂກລາ (1977–1991)',
+      );
+
+  @override
+  Currency get aon => Currency(
+        _locale,
+        'AON',
+        'ກວານຊາ ແອງໂກລາ ໃໝ່ (1995–1999)',
+      );
+
+  @override
+  Currency get aor => Currency(
+        _locale,
+        'AOR',
+        'ກວານຊາກທີ່ແກ້ໄຂໃໝ່ ແອງກູລາ (1995–1999)',
+      );
+
+  @override
+  Currency get ara => Currency(
+        _locale,
+        'ARA',
+        'ອອສຕຣານ ອາກຊັງຕິນ',
+      );
+
+  @override
+  Currency get arl => Currency(
+        _locale,
+        'ARL',
+        'ເປໂຊເລ ອາກຊັງຕິນ (1970–1983)',
+      );
+
+  @override
+  Currency get arm => Currency(
+        _locale,
+        'ARM',
+        'ເປໂຊ ອາກຊັງຕິນ (1881–1970)',
+      );
+
+  @override
+  Currency get arp => Currency(
+        _locale,
+        'ARP',
+        'ເປໂຊ ອາກຊັງຕິນ (1983–1985)',
+      );
+
+  @override
+  Currency get ars => Currency(
+        _locale,
+        'ARS',
+        'ອາ​ເຈນ​ທິ​ນາ ເປ​ໂຊ',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get ats => Currency(
+        _locale,
+        'ATS',
+        'ຊິລລິງ ອົດສະຕາລີ',
+      );
+
+  @override
+  Currency get aud => Currency(
+        _locale,
+        'AUD',
+        'ອອສ​ເຕຣ​ລຽນ ໂດ​ລ່າ',
+        symbol: r'A$',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get awg => Currency(
+        _locale,
+        'AWG',
+        'ອະຣູແບນ ຟລໍຣິນ',
+      );
+
+  @override
+  Currency get azm => Currency(
+        _locale,
+        'AZM',
+        'ມານັດ ອາແຊກບາຍຊານ (1993–2006)',
+      );
+
+  @override
+  Currency get azn => Currency(
+        _locale,
+        'AZN',
+        'ອາ​ເຊີ​ໄບ​ຈາ​ນິ ມາ​ນັດ',
+        narrowSymbol: '₼',
+      );
+
+  @override
+  Currency get bad => Currency(
+        _locale,
+        'BAD',
+        'ດີນາ ບອສເນຍ ເຮີເຊໂບວາເນຍ (1992–1994)',
+      );
+
+  @override
+  Currency get bam => Currency(
+        _locale,
+        'BAM',
+        'ບອ​ສ​ເນຍ-ເຮີ​ເຊ​ໂກວິ​ນາ ຄອນ​ເວີດ​ຕິ​ໂບ ມາກ',
+        narrowSymbol: 'KM',
+      );
+
+  @override
+  Currency get ban => Currency(
+        _locale,
+        'BAN',
+        'ດີນາໃໝ່ ບອສເນຍ ເຮີເຊໂບວີນາ(1994–1997)',
+      );
+
+  @override
+  Currency get bbd => Currency(
+        _locale,
+        'BBD',
+        'ໂດລ່າ ບາບາດຽນ',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get bdt => Currency(
+        _locale,
+        'BDT',
+        'ບັງ​ຄລາ​ເທດ ຕາ​ກາ',
+        narrowSymbol: '৳',
+      );
+
+  @override
+  Currency get bec => Currency(
+        _locale,
+        'BEC',
+        'ຟຣັງ ບູນກາລີ (ປ່ຽນແປງໄດ້)',
+      );
+
+  @override
+  Currency get bef => Currency(
+        _locale,
+        'BEF',
+        'ຟຣັງ ບູນກາລີ',
+      );
+
+  @override
+  Currency get bel => Currency(
+        _locale,
+        'BEL',
+        'ຟຣັງ ບູນກາລີ (ການເງິນ)',
+      );
+
+  @override
+  Currency get bgl => Currency(
+        _locale,
+        'BGL',
+        'ຮາດເລບ ບູນກາລີ',
+      );
+
+  @override
+  Currency get bgm => Currency(
+        _locale,
+        'BGM',
+        'ເລບ ສັງຄົມບູນກາລີ',
+      );
+
+  @override
+  Currency get bgn => Currency(
+        _locale,
+        'BGN',
+        'ບັງ​ກາ​ຣຽນ ເລບ',
+        other: 'ເລບ ບູນກາຣີ',
+      );
+
+  @override
+  Currency get bgo => Currency(
+        _locale,
+        'BGO',
+        'ເລບ ບູນກາລີ (1879–1952)',
+      );
+
+  @override
+  Currency get bhd => Currency(
+        _locale,
+        'BHD',
+        'ບາ​ໄຣ​ນິ ດິ​ນາ',
+      );
+
+  @override
+  Currency get bif => Currency(
+        _locale,
+        'BIF',
+        'ບຸ​ຣັນ​ດຽນ ຟຣັງ',
+      );
+
+  @override
+  Currency get bmd => Currency(
+        _locale,
+        'BMD',
+        'ໂດ​ລ່າ​ເບີ​ມິວ​ດາ',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get bnd => Currency(
+        _locale,
+        'BND',
+        'ບຣູ​ໄນ ໂດ​ລ່າ',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get bob => Currency(
+        _locale,
+        'BOB',
+        'ໂບ​ລິ​ວຽນ ໂບ​ລິ​ເວຍ​ໂນ',
+        narrowSymbol: 'Bs',
+      );
+
+  @override
+  Currency get bol => Currency(
+        _locale,
+        'BOL',
+        'ໂລລິເວຍໂນ ໂລລິເວຍ (1863–1963)',
+      );
+
+  @override
+  Currency get bop => Currency(
+        _locale,
+        'BOP',
+        'ເປໂຊໂລລິເວຍ',
+      );
+
+  @override
+  Currency get bov => Currency(
+        _locale,
+        'BOV',
+        'ມະດອນ ໂລລິເວຍ',
+      );
+
+  @override
+  Currency get brb => Currency(
+        _locale,
+        'BRB',
+        'ກຣູເຊໂດບາຊິ ໃໝ່ (1967–1986)',
+      );
+
+  @override
+  Currency get brc => Currency(
+        _locale,
+        'BRC',
+        'ກຣູຊາໂດບາຊິວ (1986–1989)',
+      );
+
+  @override
+  Currency get bre => Currency(
+        _locale,
+        'BRE',
+        'ກຣູເຊໂຣ ບາຊິ ກຣູໂຊ ບາຊິວ (1993–1994)',
+      );
+
+  @override
+  Currency get brl => Currency(
+        _locale,
+        'BRL',
+        'ບຣາ​ຊິ​ລຽນ ຣຽວ',
+        symbol: r'R$',
+        narrowSymbol: r'R$',
+      );
+
+  @override
+  Currency get brn => Currency(
+        _locale,
+        'BRN',
+        'ກຣູຊາໂດ ບາຊິວ ໃໝ່ (1989–1990)',
+      );
+
+  @override
+  Currency get brr => Currency(
+        _locale,
+        'BRR',
+        'ກຣູເຊໂຣ ບາຊິວ (1993–1994)',
+      );
+
+  @override
+  Currency get brz => Currency(
+        _locale,
+        'BRZ',
+        'ກຣູເຊໂຣ ບາຊິວ (1942–1967)',
+      );
+
+  @override
+  Currency get bsd => Currency(
+        _locale,
+        'BSD',
+        'ໂດລ່າ ບາຮາມຽນ',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get btn => Currency(
+        _locale,
+        'BTN',
+        'ພູ​ຖານ ງຸນດຣັມ',
+      );
+
+  @override
+  Currency get buk => Currency(
+        _locale,
+        'BUK',
+        'ຈາດ ພະມ້າ',
+      );
+
+  @override
+  Currency get bwp => Currency(
+        _locale,
+        'BWP',
+        'ບອດ​ສະ​ວາ​ນານ ພູ​ລາ',
+        narrowSymbol: 'P',
+      );
+
+  @override
+  Currency get byb => Currency(
+        _locale,
+        'BYB',
+        'ຣູໂບ ເບຣາຣຸສ ໃໝ່(1994–1999)',
+      );
+
+  @override
+  Currency get byn => Currency(
+        _locale,
+        'BYN',
+        'ເບ​ລາ​ຣຸ​ສ​ຊຽນ ຣູ​ເບິນ',
+        narrowSymbol: 'р.',
+      );
+
+  @override
+  Currency get byr => Currency(
+        _locale,
+        'BYR',
+        'ເບ​ລາ​ຣຸ​ສ​ຊຽນ ຣູ​ເບິນ (2000–2016)',
+      );
+
+  @override
+  Currency get bzd => Currency(
+        _locale,
+        'BZD',
+        'ໂດ​ລ່າ​ເບ​ລີຊ',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get cad => Currency(
+        _locale,
+        'CAD',
+        'ໂດລ່າແຄນາດາ',
+        symbol: r'CA$',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get cdf => Currency(
+        _locale,
+        'CDF',
+        'ຄອງ​ໂກ​ລີສ ຟຣັງ',
+      );
+
+  @override
+  Currency get che => Currency(
+        _locale,
+        'CHE',
+        'ເອີໂຣ WIR',
+      );
+
+  @override
+  Currency get chf => Currency(
+        _locale,
+        'CHF',
+        'ສະ​ວິ​ສ ຟ​ຣັງ',
+      );
+
+  @override
+  Currency get chw => Currency(
+        _locale,
+        'CHW',
+        'ຟຣັງ WIR',
+      );
+
+  @override
+  Currency get cle => Currency(
+        _locale,
+        'CLE',
+        'ເອສກູໂດ ຊິລີ',
+      );
+
+  @override
+  Currency get clf => Currency(
+        _locale,
+        'CLF',
+        'ຫົວໜ່ວຍບັນຊີ (UF) ຊິລີ',
+      );
+
+  @override
+  Currency get clp => Currency(
+        _locale,
+        'CLP',
+        'ຊິ​ລຽນ ເປ​ໂຊ',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get cnh => Currency(
+        _locale,
+        'CNH',
+        'ຢວນຈີນ (ນອກປະເທດ)',
+      );
+
+  @override
+  Currency get cnx => Currency(
+        _locale,
+        'CNX',
+        'Chinese People’s Bank Dollar',
+        one: 'Chinese People’s Bank dollar',
+        other: 'Chinese People’s Bank dollars',
+      );
+
+  @override
+  Currency get cny => Currency(
+        _locale,
+        'CNY',
+        'ຈີນ ຢວນ',
+        symbol: 'CN¥',
+        narrowSymbol: '¥',
+      );
+
+  @override
+  Currency get cop => Currency(
+        _locale,
+        'COP',
+        'ໂຄ​ລົມ​ບຽນ ເປ​ໂຊ',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get cou => Currency(
+        _locale,
+        'COU',
+        'ຫົວໜ່ວຍຄ່າຈິງ ໂຄລັມເບຍ',
+      );
+
+  @override
+  Currency get crc => Currency(
+        _locale,
+        'CRC',
+        'ໂຄສຕາ ຣິກັນ ໂຄລອນ',
+        narrowSymbol: '₡',
+      );
+
+  @override
+  Currency get csd => Currency(
+        _locale,
+        'CSD',
+        'ດີນາ ເຊີເບຍ (2002–2006)',
+      );
+
+  @override
+  Currency get csk => Currency(
+        _locale,
+        'CSK',
+        'ຮາດໂກຣູນາ ເຊັກໂກສະໂລວັກ',
+      );
+
+  @override
+  Currency get cuc => Currency(
+        _locale,
+        'CUC',
+        'ຄິວແບນ ຄອນເວີດຕິໂບ ເປໂຊ',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get cup => Currency(
+        _locale,
+        'CUP',
+        'ຄິວແບນ ເປໂຊ',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get cve => Currency(
+        _locale,
+        'CVE',
+        'ເຄບ ເວີດ​ດີນ ເອ​ສ​ຄູ​ໂດ',
+      );
+
+  @override
+  Currency get cyp => Currency(
+        _locale,
+        'CYP',
+        'ປອນ ໄຊປຣັດ',
+      );
+
+  @override
+  Currency get czk => Currency(
+        _locale,
+        'CZK',
+        'ເຊກ ໂຄ​ຣູ​ນາ',
+        narrowSymbol: 'Kč',
+      );
+
+  @override
+  Currency get ddm => Currency(
+        _locale,
+        'DDM',
+        'ມາກ ເຢຍລະມັນ ຕາເວັນອອກ',
+      );
+
+  @override
+  Currency get dem => Currency(
+        _locale,
+        'DEM',
+        'ມາກ ເຢຍລະມັນ',
+      );
+
+  @override
+  Currency get djf => Currency(
+        _locale,
+        'DJF',
+        '​ດິ​ບູ​ຈຽນ ຟຣັງ',
+      );
+
+  @override
+  Currency get dkk => Currency(
+        _locale,
+        'DKK',
+        'ແດນ​ນິ​ຊ ໂຄຣນ',
+        narrowSymbol: 'kr',
+        other: 'ແດນ​ນິ​ຊ ໂຄຣນເນີ',
+      );
+
+  @override
+  Currency get dop => Currency(
+        _locale,
+        'DOP',
+        'ໂດ​ມິ​ນິ​ກັນ ເປ​ໂຊ',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get dzd => Currency(
+        _locale,
+        'DZD',
+        'ອັລ​ເຈີ​ຣຽນ ດິ​ນາ',
+      );
+
+  @override
+  Currency get ecs => Currency(
+        _locale,
+        'ECS',
+        'ຊູເກ ເອກາວາດໍ',
+      );
+
+  @override
+  Currency get ecv => Currency(
+        _locale,
+        'ECV',
+        'ຫົວໜ່ວຍຄ່າຄົງທີ່ຂອງເອກາວາດໍ',
+      );
+
+  @override
+  Currency get eek => Currency(
+        _locale,
+        'EEK',
+        'ຄຣູນເອສ ໂຕເນຍ',
+      );
+
+  @override
+  Currency get egp => Currency(
+        _locale,
+        'EGP',
+        'ອີ​ຢິບ​ທຽນ ພາວດ໌',
+        narrowSymbol: 'E£',
+      );
+
+  @override
+  Currency get ern => Currency(
+        _locale,
+        'ERN',
+        'ອິ​ຣິ​ທຣຽນ ແນກ​ຟ​າ',
+      );
+
+  @override
+  Currency get esa => Currency(
+        _locale,
+        'ESA',
+        'ເປເຊຕາສະເປັນ (ບັນຊີ)',
+      );
+
+  @override
+  Currency get esb => Currency(
+        _locale,
+        'ESB',
+        'ເປເຊຕາສະເປນ (ປ່ຽນແປງໄດ້)',
+      );
+
+  @override
+  Currency get esp => Currency(
+        _locale,
+        'ESP',
+        'ເປເຊຕາ ສະເປນ',
+        narrowSymbol: '₧',
+      );
+
+  @override
+  Currency get etb => Currency(
+        _locale,
+        'ETB',
+        'ເອ​ທິ​ໂອ​ປຽນ ເບີ​ຣ໌',
+      );
+
+  @override
+  Currency get eur => Currency(
+        _locale,
+        'EUR',
+        'ຢູ​ໂຣ',
+        symbol: '€',
+        narrowSymbol: '€',
+      );
+
+  @override
+  Currency get fim => Currency(
+        _locale,
+        'FIM',
+        'ມາກກາ ຟິນແລນ',
+      );
+
+  @override
+  Currency get fjd => Currency(
+        _locale,
+        'FJD',
+        'ຟິ​ຈຽນ ໂດ​ລ່າ',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get fkp => Currency(
+        _locale,
+        'FKP',
+        'ຟອ​ລ໌ກ​ແລນ ໄອ​ແລນ​ສ໌ ພາວ​ດ໌',
+        narrowSymbol: '£',
+      );
+
+  @override
+  Currency get frf => Currency(
+        _locale,
+        'FRF',
+        'ຟຣັງ ຝຣັ່ງ',
+      );
+
+  @override
+  Currency get gbp => Currency(
+        _locale,
+        'GBP',
+        'ອັງກິດ ປອນ',
+        symbol: '£',
+        narrowSymbol: '£',
+      );
+
+  @override
+  Currency get gek => Currency(
+        _locale,
+        'GEK',
+        'ກູປອນ ລາຣິທ ຈໍເຈຍ',
+      );
+
+  @override
+  Currency get gel => Currency(
+        _locale,
+        'GEL',
+        'ຈໍ​ຈຽນ ລາ​ຣິ',
+        narrowSymbol: '₾',
+      );
+
+  @override
+  Currency get ghc => Currency(
+        _locale,
+        'GHC',
+        'ເຊດີ ການາ (1979–2007)',
+      );
+
+  @override
+  Currency get ghs => Currency(
+        _locale,
+        'GHS',
+        'ກາ​ນາ​ອຽນ ເຊ​ດິ',
+        narrowSymbol: 'GH₵',
+      );
+
+  @override
+  Currency get gip => Currency(
+        _locale,
+        'GIP',
+        'ກິບ​ຣາ​ທາ ພາ​ວດ໌',
+        narrowSymbol: '£',
+      );
+
+  @override
+  Currency get gmd => Currency(
+        _locale,
+        'GMD',
+        '​ແກມ​ບຽນ ດາ​ລາ​ຊິ',
+      );
+
+  @override
+  Currency get gnf => Currency(
+        _locale,
+        'GNF',
+        'ກິ​ນຽນ ຟຣັງ',
+        narrowSymbol: 'FG',
+      );
+
+  @override
+  Currency get gns => Currency(
+        _locale,
+        'GNS',
+        'ໄຊລິ ກີນີ',
+      );
+
+  @override
+  Currency get gqe => Currency(
+        _locale,
+        'GQE',
+        'ເອັກເວເລ ອີຄວາຕິຣຽວ ກິນີ',
+      );
+
+  @override
+  Currency get grd => Currency(
+        _locale,
+        'GRD',
+        'ດາກຊະມາ ເກຣັກ',
+      );
+
+  @override
+  Currency get gtq => Currency(
+        _locale,
+        'GTQ',
+        'ກົວເຕມາລານ ເຄັດຊອນ',
+        narrowSymbol: 'Q',
+        other: 'ເຄັດຊອນ',
+      );
+
+  @override
+  Currency get gwe => Currency(
+        _locale,
+        'GWE',
+        'ເອສກູໂດ ກີນີໂປຕູເກດ',
+      );
+
+  @override
+  Currency get gwp => Currency(
+        _locale,
+        'GWP',
+        'ເປໂຊກິນີ-ບິສເຊົາ',
+      );
+
+  @override
+  Currency get gyd => Currency(
+        _locale,
+        'GYD',
+        'ກາຍ​ຢາ​ນີ​ສ ໂດ​ລ່າ',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get hkd => Currency(
+        _locale,
+        'HKD',
+        'ຮອງ​ກົງ ໂດ​ລ່າ',
+        symbol: r'HK$',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get hnl => Currency(
+        _locale,
+        'HNL',
+        'ຮອນດູແຣນ ເລມພິຣາ',
+        narrowSymbol: 'L',
+      );
+
+  @override
+  Currency get hrd => Currency(
+        _locale,
+        'HRD',
+        'ດີນາ ໂຄຣເອເຊຍ',
+      );
+
+  @override
+  Currency get hrk => Currency(
+        _locale,
+        'HRK',
+        'ໂຄຣ​ເອ​ທຽນ ຄູ​ນາ',
+        narrowSymbol: 'kn',
+      );
+
+  @override
+  Currency get htg => Currency(
+        _locale,
+        'HTG',
+        'ໄຮ​ຕຽນ ກົວ​ເດ',
+      );
+
+  @override
+  Currency get huf => Currency(
+        _locale,
+        'HUF',
+        'ຮັງ​ກາ​ຣຽນ ຟໍ​ຣິນ',
+        narrowSymbol: 'Ft',
+      );
+
+  @override
+  Currency get idr => Currency(
+        _locale,
+        'IDR',
+        'ອິນ​ໂດ​ເນ​ຊຽນ ໂດ​ລ່າ',
+        narrowSymbol: 'Rp',
+      );
+
+  @override
+  Currency get iep => Currency(
+        _locale,
+        'IEP',
+        'ປອນ ໄອຣິຊ',
+      );
+
+  @override
+  Currency get ilp => Currency(
+        _locale,
+        'ILP',
+        'ປອນ ອີສະລາເອວ',
+      );
+
+  @override
+  Currency get ilr => Currency(
+        _locale,
+        'ILR',
+        'Israeli Shekel (1980–1985)',
+        one: 'Israeli shekel (1980–1985)',
+        other: 'Israeli shekels (1980–1985)',
+      );
+
+  @override
+  Currency get ils => Currency(
+        _locale,
+        'ILS',
+        'ອິສ​ຣາ​ເອວ​ລິ ນິວ ເຊ​ເກວ',
+        symbol: '₪',
+        narrowSymbol: '₪',
+      );
+
+  @override
+  Currency get inr => Currency(
+        _locale,
+        'INR',
+        'ອິນ​ເດຍ ຣູ​ປີ',
+        symbol: '₹',
+        narrowSymbol: '₹',
+      );
+
+  @override
+  Currency get iqd => Currency(
+        _locale,
+        'IQD',
+        'ອິ​ຣັກ​ກິ ດິ​ນາ',
+      );
+
+  @override
+  Currency get irr => Currency(
+        _locale,
+        'IRR',
+        'ອິ​ຣາ​ນິ ຣຽວ',
+      );
+
+  @override
+  Currency get isj => Currency(
+        _locale,
+        'ISJ',
+        'Icelandic Króna (1918–1981)',
+        one: 'Icelandic króna (1918–1981)',
+        other: 'Icelandic krónur (1918–1981)',
+      );
+
+  @override
+  Currency get isk => Currency(
+        _locale,
+        'ISK',
+        'ໄອ​ສ໌​ແລນ​ດິກ ໂຄຣ​ນາ',
+        narrowSymbol: 'kr',
+      );
+
+  @override
+  Currency get itl => Currency(
+        _locale,
+        'ITL',
+        'ລິຣາ ອີຕາລີ',
+      );
+
+  @override
+  Currency get jmd => Currency(
+        _locale,
+        'JMD',
+        '​ຈາ​ໄມ​ກັນ ໂດ​ລ່າ',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get jod => Currency(
+        _locale,
+        'JOD',
+        'ຈໍ​ແດ​ນຽນ ດິ​ນາ',
+      );
+
+  @override
+  Currency get jpy => Currency(
+        _locale,
+        'JPY',
+        'ຍີ່​ປຸ່ນ ເຢນ',
+        symbol: 'JP¥',
+        narrowSymbol: '¥',
+      );
+
+  @override
+  Currency get kes => Currency(
+        _locale,
+        'KES',
+        'ເຄນ​ຢັນ ຊິວ​ລິງ',
+      );
+
+  @override
+  Currency get kgs => Currency(
+        _locale,
+        'KGS',
+        'ຄ​ຣີ​ກິສ​​ຖາ​ນິ ໂຊມ',
+        narrowSymbol: '⃀',
+      );
+
+  @override
+  Currency get khr => Currency(
+        _locale,
+        'KHR',
+        'ກຳ​ປູ​ເຈຍ ຣຽວ',
+        narrowSymbol: '៛',
+      );
+
+  @override
+  Currency get kmf => Currency(
+        _locale,
+        'KMF',
+        'ໂຄ​ໂມ​ຣຽນ ຟຣັງ',
+        narrowSymbol: 'CF',
+      );
+
+  @override
+  Currency get kpw => Currency(
+        _locale,
+        'KPW',
+        'ເກົາ​ຫລີ​ເໜືອ ວອນ',
+        narrowSymbol: '₩',
+      );
+
+  @override
+  Currency get krh => Currency(
+        _locale,
+        'KRH',
+        'ຮາວານ ເກົາຫຼີເນື້',
+      );
+
+  @override
+  Currency get kro => Currency(
+        _locale,
+        'KRO',
+        'ວອນ ເກົາຫຼີໃຕ້ (1945–1953)',
+      );
+
+  @override
+  Currency get krw => Currency(
+        _locale,
+        'KRW',
+        'ເກົາ​ຫລີໃຕ້ ວອນ',
+        symbol: '₩',
+        narrowSymbol: '₩',
+      );
+
+  @override
+  Currency get kwd => Currency(
+        _locale,
+        'KWD',
+        'ຄູ​ເວ​ຕິ ດິ​ນາ',
+      );
+
+  @override
+  Currency get kyd => Currency(
+        _locale,
+        'KYD',
+        'ເຄ​ແມນ ໄອ​ແລນ ໂດ​ລ່າ',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get kzt => Currency(
+        _locale,
+        'KZT',
+        'ຄາ​ຊັກ​ສະ​ຖາ​ນິ ເຕັງ​ເຈ',
+        narrowSymbol: '₸',
+      );
+
+  @override
+  Currency get lak => Currency(
+        _locale,
+        'LAK',
+        'ລາວ ກີບ',
+        symbol: '₭',
+        narrowSymbol: '₭',
+      );
+
+  @override
+  Currency get lbp => Currency(
+        _locale,
+        'LBP',
+        'ເລ​ບາ​ນີ​ສ ພາວດ໌',
+        narrowSymbol: 'L£',
+      );
+
+  @override
+  Currency get lkr => Currency(
+        _locale,
+        'LKR',
+        'ສີ​ລັງ​ກາ ຣູ​ປີ',
+        narrowSymbol: 'Rs',
+      );
+
+  @override
+  Currency get lrd => Currency(
+        _locale,
+        'LRD',
+        'ລິ​ເບີ​ຣຽນ ໂດ​ລ່າ',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get lsl => Currency(
+        _locale,
+        'LSL',
+        'ໂລຕິ ເລໂຊໂຕ',
+      );
+
+  @override
+  Currency get ltl => Currency(
+        _locale,
+        'LTL',
+        'ລິ​ທົວ​ນຽນ ລິ​ທັ​ສ',
+        narrowSymbol: 'Lt',
+      );
+
+  @override
+  Currency get ltt => Currency(
+        _locale,
+        'LTT',
+        'ທາໂລນັສ ລິທົວເນຍ',
+      );
+
+  @override
+  Currency get luc => Currency(
+        _locale,
+        'LUC',
+        'ຟຣັງ ລຸກຊຳບວກ ທີ່ປ່ຽນແປງ',
+      );
+
+  @override
+  Currency get luf => Currency(
+        _locale,
+        'LUF',
+        'ຟຣັງ ລຸກຊຳບວກ',
+      );
+
+  @override
+  Currency get lul => Currency(
+        _locale,
+        'LUL',
+        'ຟຣັງ ລຸກຊຳບວກ ການເງິນ',
+      );
+
+  @override
+  Currency get lvl => Currency(
+        _locale,
+        'LVL',
+        'ລັດ​ວຽນ ລັດ​ສ໌',
+        narrowSymbol: 'Ls',
+        other: 'ລັດ​ວຽນ ລັດ​ຕິ',
+      );
+
+  @override
+  Currency get lvr => Currency(
+        _locale,
+        'LVR',
+        'ຣູໂບ ລາວຽນ',
+      );
+
+  @override
+  Currency get lyd => Currency(
+        _locale,
+        'LYD',
+        'ລິບ​ບຽນ ດິ​ນາ',
+      );
+
+  @override
+  Currency get mad => Currency(
+        _locale,
+        'MAD',
+        'ມໍ​ຣັອກ​ແຄນ​ ເດີ​ແຮມ',
+      );
+
+  @override
+  Currency get maf => Currency(
+        _locale,
+        'MAF',
+        'ຟຣັງ ໂມຣອກໂກ',
+      );
+
+  @override
+  Currency get mcf => Currency(
+        _locale,
+        'MCF',
+        'ຟຣັງ ໂມດາໂກ',
+      );
+
+  @override
+  Currency get mdc => Currency(
+        _locale,
+        'MDC',
+        'ບັດປັນສ່ວນ ມອງໂດວາ',
+      );
+
+  @override
+  Currency get mdl => Currency(
+        _locale,
+        'MDL',
+        'ມອນ​ໂດ​ແວນ ເລ​ອູ',
+      );
+
+  @override
+  Currency get mga => Currency(
+        _locale,
+        'MGA',
+        'ມາ​ລາ​ກາ​ຊີ ອາ​ເຣຍ​ຣີ',
+        narrowSymbol: 'Ar',
+      );
+
+  @override
+  Currency get mgf => Currency(
+        _locale,
+        'MGF',
+        'ຟຣັງ ມາດາກັດສະກາ',
+      );
+
+  @override
+  Currency get mkd => Currency(
+        _locale,
+        'MKD',
+        'ແມັກ​ເຊ​ໂດ​ນຽນ ເດ​ນາ',
+      );
+
+  @override
+  Currency get mkn => Currency(
+        _locale,
+        'MKN',
+        'ດີນາ ມາຊີໂດເນຍ (1992–1993)',
+      );
+
+  @override
+  Currency get mlf => Currency(
+        _locale,
+        'MLF',
+        'ຟຣັງ ມາລີ',
+      );
+
+  @override
+  Currency get mmk => Currency(
+        _locale,
+        'MMK',
+        'ມຽນ​ມາ ຈ໊າດ',
+        narrowSymbol: 'K',
+      );
+
+  @override
+  Currency get mnt => Currency(
+        _locale,
+        'MNT',
+        'ມອງ​ໂກ​ລຽນ ຕູກຣິກ',
+        narrowSymbol: '₮',
+      );
+
+  @override
+  Currency get mop => Currency(
+        _locale,
+        'MOP',
+        'ມາ​ເກົ້າ ປາ​​ຕາ​ກາ',
+      );
+
+  @override
+  Currency get mro => Currency(
+        _locale,
+        'MRO',
+        'ມົວ​ຣິ​ທາ​ນຽນ ອູ​ກິວ​ຢາ (1973–2017)',
+      );
+
+  @override
+  Currency get mru => Currency(
+        _locale,
+        'MRU',
+        'ມົວ​ຣິ​ທາ​ນຽນ ອູ​ກິວ​ຢາ',
+      );
+
+  @override
+  Currency get mtl => Currency(
+        _locale,
+        'MTL',
+        'ລິຣາ ມອນຕາ',
+      );
+
+  @override
+  Currency get mtp => Currency(
+        _locale,
+        'MTP',
+        'ປອນ ມອນຕາ',
+      );
+
+  @override
+  Currency get mur => Currency(
+        _locale,
+        'MUR',
+        'ເມົາ​ຣິ​ທຽນ ຣູ​ປີ',
+        narrowSymbol: 'Rs',
+      );
+
+  @override
+  Currency get mvp => Currency(
+        _locale,
+        'MVP',
+        'Maldivian Rupee (1947–1981)',
+        one: 'Maldivian rupee (1947–1981)',
+        other: 'Maldivian rupees (1947–1981)',
+      );
+
+  @override
+  Currency get mvr => Currency(
+        _locale,
+        'MVR',
+        'ມັ​ລ​ດິ​ວຽນ ຣູ​ຟິ​ຢາ',
+      );
+
+  @override
+  Currency get mwk => Currency(
+        _locale,
+        'MWK',
+        'ມາ​ລາ​ວຽນ ຄວາ​ຊາ',
+      );
+
+  @override
+  Currency get mxn => Currency(
+        _locale,
+        'MXN',
+        'ເມັກຊິກັນ ເປໂຊ',
+        symbol: r'MX$',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get mxp => Currency(
+        _locale,
+        'MXP',
+        'ຫົວໜ່ວຍເງິນ ເປໂຊ ແມັກຊິໂກ(1861–1992)',
+      );
+
+  @override
+  Currency get mxv => Currency(
+        _locale,
+        'MXV',
+        'ຫົວໜ່ວຍການລົງທຶນ ແມັກຊິໂກ',
+      );
+
+  @override
+  Currency get myr => Currency(
+        _locale,
+        'MYR',
+        'ມາ​ເລ​ເຊຍ ຣິງ​ກິດ',
+        narrowSymbol: 'RM',
+      );
+
+  @override
+  Currency get mze => Currency(
+        _locale,
+        'MZE',
+        'ເອສກູໂດ ໂມຊຳບິກ',
+      );
+
+  @override
+  Currency get mzm => Currency(
+        _locale,
+        'MZM',
+        'ເມຕິຄໍ ໂມຊຳບິກ (1980–2006)',
+      );
+
+  @override
+  Currency get mzn => Currency(
+        _locale,
+        'MZN',
+        'ໂມ​ແຊມ​ບິ​ກັນ ເມ​ທິ​ຄອນ',
+      );
+
+  @override
+  Currency get nad => Currency(
+        _locale,
+        'NAD',
+        'ນາ​ມິ​ບຽນ ໂດ​ລ່າ',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get ngn => Currency(
+        _locale,
+        'NGN',
+        'ໄນ​ຣາ ​ໄນເຈີ​ຣຽນ',
+        narrowSymbol: '₦',
+      );
+
+  @override
+  Currency get nic => Currency(
+        _locale,
+        'NIC',
+        'ຄໍໂດບາ ນິກາຣາກົວ (1988–1991)',
+      );
+
+  @override
+  Currency get nio => Currency(
+        _locale,
+        'NIO',
+        'ນິກາຣາກວນ ໂຄໂດບາ',
+        narrowSymbol: r'C$',
+      );
+
+  @override
+  Currency get nlg => Currency(
+        _locale,
+        'NLG',
+        'ກິລເດີ ເນເທີແລນ',
+      );
+
+  @override
+  Currency get nok => Currency(
+        _locale,
+        'NOK',
+        'ນໍ​ເວ​ຈຽນ ​ໂຄຣນ',
+        narrowSymbol: 'kr',
+      );
+
+  @override
+  Currency get npr => Currency(
+        _locale,
+        'NPR',
+        'ເນ​ປານ ຣູ​ປີ',
+        narrowSymbol: 'Rs',
+      );
+
+  @override
+  Currency get nzd => Currency(
+        _locale,
+        'NZD',
+        'ນິວ​ຊີ​ແລນ ໂດ​ລ່າ',
+        symbol: r'NZ$',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get omr => Currency(
+        _locale,
+        'OMR',
+        'ໂອ​ມາ​ນິ ຣຽວ',
+      );
+
+  @override
+  Currency get pab => Currency(
+        _locale,
+        'PAB',
+        'ພານາມານຽນ ບອນບົວ',
+      );
+
+  @override
+  Currency get pei => Currency(
+        _locale,
+        'PEI',
+        'ອິນຕິ ເປຣູ',
+      );
+
+  @override
+  Currency get pen => Currency(
+        _locale,
+        'PEN',
+        'ເປ​ຣູ​ວຽນ ໂຊ​ລ໌',
+      );
+
+  @override
+  Currency get pes => Currency(
+        _locale,
+        'PES',
+        'ໂຊນ ເປຣູ (1863–1965)',
+      );
+
+  @override
+  Currency get pgk => Currency(
+        _locale,
+        'PGK',
+        'ປາ​ປົວ ນິວ ກິ​ນຽນ ກິ​ນາ',
+      );
+
+  @override
+  Currency get php => Currency(
+        _locale,
+        'PHP',
+        'ຟິ​ລິບ​ປິນ ເປ​ໂຊ',
+        symbol: 'PHP',
+        narrowSymbol: '₱',
+      );
+
+  @override
+  Currency get pkr => Currency(
+        _locale,
+        'PKR',
+        'ປາ​ກິ​ສຖານ ຣູ​ປີ',
+        narrowSymbol: 'Rs',
+      );
+
+  @override
+  Currency get pln => Currency(
+        _locale,
+        'PLN',
+        'ໂປ​ລິ​ຊ ຊະ​ລໍ​ຕີ',
+        narrowSymbol: 'zł',
+      );
+
+  @override
+  Currency get plz => Currency(
+        _locale,
+        'PLZ',
+        'ຊະລອສຕີ ໂປແລນ (1950–1995)',
+      );
+
+  @override
+  Currency get pte => Currency(
+        _locale,
+        'PTE',
+        'ເອສກູໂດ ໂປຕູເກສ',
+      );
+
+  @override
+  Currency get pyg => Currency(
+        _locale,
+        'PYG',
+        'ກວາຣານີ ປາຣາກວາຍ',
+        narrowSymbol: '₲',
+      );
+
+  @override
+  Currency get qar => Currency(
+        _locale,
+        'QAR',
+        'ຄາ​ຕາ​ຣິ ຣຽວ',
+      );
+
+  @override
+  Currency get rhd => Currency(
+        _locale,
+        'RHD',
+        'ດອນລາ ໂຣດີເຊຍ',
+      );
+
+  @override
+  Currency get rol => Currency(
+        _locale,
+        'ROL',
+        'ລິວ ໂຣມາເນຍເກົ່າ',
+      );
+
+  @override
+  Currency get ron => Currency(
+        _locale,
+        'RON',
+        'ໂຣ​ມາ​ນຽນ ເລ​ອູ',
+        narrowSymbol: 'lei',
+      );
+
+  @override
+  Currency get rsd => Currency(
+        _locale,
+        'RSD',
+        'ເຊີ​ບຽນ ດິ​ນາ',
+      );
+
+  @override
+  Currency get rub => Currency(
+        _locale,
+        'RUB',
+        'ຣັສ​ຊຽນ ຣູ​ເບິນ',
+        narrowSymbol: '₽',
+      );
+
+  @override
+  Currency get rur => Currency(
+        _locale,
+        'RUR',
+        'ຣູໂບ ຣັດເຊຍ (1991–1998)',
+      );
+
+  @override
+  Currency get rwf => Currency(
+        _locale,
+        'RWF',
+        'ຣະ​ວັນ​ດັນ ຟຣັງ',
+        narrowSymbol: 'RF',
+      );
+
+  @override
+  Currency get sar => Currency(
+        _locale,
+        'SAR',
+        'ຊາ​ອູ​ດິ ຣິ​ຢອນ',
+      );
+
+  @override
+  Currency get sbd => Currency(
+        _locale,
+        'SBD',
+        'ໂຊ​ໂລມອນ ໄອ​ແລນ ໂດ​ລ່າ',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get scr => Currency(
+        _locale,
+        'SCR',
+        'ເຊ​ເຊວ​ລອຍ​ສ໌ ຣູ​ປີ',
+      );
+
+  @override
+  Currency get sdd => Currency(
+        _locale,
+        'SDD',
+        'ດີນາ ຊູດານເກົ່າ',
+      );
+
+  @override
+  Currency get sdg => Currency(
+        _locale,
+        'SDG',
+        'ຊູ​ດານ​ນີ​ສ ພາວດ໌',
+      );
+
+  @override
+  Currency get sdp => Currency(
+        _locale,
+        'SDP',
+        'ປອນ ຊູດານເກົ່າ',
+      );
+
+  @override
+  Currency get sek => Currency(
+        _locale,
+        'SEK',
+        'ສະ​ວີ​ດິ​ຊ ໂຄຣ​ນາ',
+        narrowSymbol: 'kr',
+      );
+
+  @override
+  Currency get sgd => Currency(
+        _locale,
+        'SGD',
+        'ສິງ​ກະ​ໂປ ໂດ​ລ່າ',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get shp => Currency(
+        _locale,
+        'SHP',
+        'ເຊນ ເຮ​ເລ​ນາ ພາວດ໌',
+        narrowSymbol: '£',
+      );
+
+  @override
+  Currency get sit => Currency(
+        _locale,
+        'SIT',
+        'ໂຕລາ ສະໂລວິເນຍ',
+      );
+
+  @override
+  Currency get skk => Currency(
+        _locale,
+        'SKK',
+        'ຄູໂຣນາ ສະໂລວັກ',
+      );
+
+  @override
+  Currency get sle => Currency(
+        _locale,
+        'SLE',
+        'ເຊຍ​ນາ ​ເລໂອ​ນຽນ ເລ​ໂອນ',
+      );
+
+  @override
+  Currency get sll => Currency(
+        _locale,
+        'SLL',
+        'ເຊຍ​ນາ ​ເລໂອ​ນຽນ ເລ​ໂອນ (1964—2022)',
+      );
+
+  @override
+  Currency get sos => Currency(
+        _locale,
+        'SOS',
+        'ໂຊ​ມາ​ລິ ຊິວ​ລິງ',
+      );
+
+  @override
+  Currency get srd => Currency(
+        _locale,
+        'SRD',
+        'ຊູ​ຣິ​ນາ​ມີ​ສ ໂດ​ລ່າ',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get srg => Currency(
+        _locale,
+        'SRG',
+        'ກິລເດີ ຊູຣິນາເມ',
+      );
+
+  @override
+  Currency get ssp => Currency(
+        _locale,
+        'SSP',
+        'ເຊົາ​ທ໌ ຊູ​ດານ​ນີ​ສ ພາວດ໌',
+        narrowSymbol: '£',
+      );
+
+  @override
+  Currency get std => Currency(
+        _locale,
+        'STD',
+        'ເຊົາ ໂທ​ເມ ແອນ ພ​ຣິນ​ຊິ​ປີ ໂດບຣາ (1977–2017)',
+      );
+
+  @override
+  Currency get stn => Currency(
+        _locale,
+        'STN',
+        'ເຊົາ ໂທ​ເມ ແອນ ພ​ຣິນ​ຊິ​ປີ ໂດບຣາ',
+        narrowSymbol: 'Db',
+      );
+
+  @override
+  Currency get sur => Currency(
+        _locale,
+        'SUR',
+        'ຣູໂບ ໂຊວຽດ',
+      );
+
+  @override
+  Currency get svc => Currency(
+        _locale,
+        'SVC',
+        'ໂກລອງ ເອກາວາດໍ',
+      );
+
+  @override
+  Currency get syp => Currency(
+        _locale,
+        'SYP',
+        'ຊີ​ຣຽນ ພາວດ໌',
+        narrowSymbol: '£',
+      );
+
+  @override
+  Currency get szl => Currency(
+        _locale,
+        'SZL',
+        'ສະ​ວາ​ຊິ ລິ​ລັນ​ກິ​ນີ',
+      );
+
+  @override
+  Currency get thb => Currency(
+        _locale,
+        'THB',
+        'ໄທ ບາດ',
+        symbol: '฿',
+        narrowSymbol: '฿',
+      );
+
+  @override
+  Currency get tjr => Currency(
+        _locale,
+        'TJR',
+        'ຣູໂບ ຕັຈີກິສຖານ',
+      );
+
+  @override
+  Currency get tjs => Currency(
+        _locale,
+        'TJS',
+        'ທາ​ຈິ​ກິ​​ຖາ​ນິ ໂຊ​ໂມ​ນິ',
+      );
+
+  @override
+  Currency get tmm => Currency(
+        _locale,
+        'TMM',
+        'ມານັດ ຕວກເມນິສຖານ (1966–1987)',
+      );
+
+  @override
+  Currency get tmt => Currency(
+        _locale,
+        'TMT',
+        'ເຕີກ​ເມ​ນິ​ສ​ຖາ​ນິ ມາ​ນັດ',
+      );
+
+  @override
+  Currency get tnd => Currency(
+        _locale,
+        'TND',
+        'ຕູ​ນິ​ຊຽນ ດິ​ນາ',
+      );
+
+  @override
+  Currency get top => Currency(
+        _locale,
+        'TOP',
+        'ຕອງ​ກັນ ປາ​ອັງ​ກາ',
+        narrowSymbol: r'T$',
+      );
+
+  @override
+  Currency get tpe => Currency(
+        _locale,
+        'TPE',
+        'ເອສກູໂດ ຕີມໍ',
+      );
+
+  @override
+  Currency get trl => Currency(
+        _locale,
+        'TRL',
+        'ລີຕາ ຕູຣາກີເກົ່າ',
+      );
+
+  @override
+  Currency get try$ => Currency(
+        _locale,
+        'TRY',
+        'ເຕີ​ກິ​ຊ ລິ​ຣາ',
+        narrowSymbol: '₺',
+      );
+
+  @override
+  Currency get ttd => Currency(
+        _locale,
+        'TTD',
+        'ທ​ຣິ​ນິ​ແດດ & ໂທ​ບາ​ໂກ ໂດ​ລ່າ',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get twd => Currency(
+        _locale,
+        'TWD',
+        'ນິວ ໄຕ້​ຫວັນ ໂດ​ລ່າ',
+        symbol: r'NT$',
+        narrowSymbol: r'NT$',
+      );
+
+  @override
+  Currency get tzs => Currency(
+        _locale,
+        'TZS',
+        'ທານ​ຊາ​ນຽນ ຊິວ​ລິງ',
+      );
+
+  @override
+  Currency get uah => Currency(
+        _locale,
+        'UAH',
+        'ຢູ​ເຄຣ​ນຽນ ຮະ​ຣີບ​ເນຍ',
+        narrowSymbol: '₴',
+      );
+
+  @override
+  Currency get uak => Currency(
+        _locale,
+        'UAK',
+        'ຄາໂບວາເນດ ອູແກຣນ',
+      );
+
+  @override
+  Currency get ugs => Currency(
+        _locale,
+        'UGS',
+        'ຊິນລິງ ອູກັນດາ (1966–1987)',
+      );
+
+  @override
+  Currency get ugx => Currency(
+        _locale,
+        'UGX',
+        'ອູ​ກັນ​ດັນ ຊິວ​ລິງ',
+      );
+
+  @override
+  Currency get usd => Currency(
+        _locale,
+        'USD',
+        '​ໂດ​ລ່າ​ສະ​ຫະ​ລັດຯ',
+        symbol: r'US$',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get usn => Currency(
+        _locale,
+        'USN',
+        'ດອນລາສະຫະລັດ (ມື້ຖັດໄປ)',
+      );
+
+  @override
+  Currency get uss => Currency(
+        _locale,
+        'USS',
+        'ດອນລາສະຫະລັດ (ມື້ດຽວກັນ)',
+      );
+
+  @override
+  Currency get uyi => Currency(
+        _locale,
+        'UYI',
+        'ເປໂຊອູຣຸກວຍ (ຫົວໜ່ວຍອິນເດັກ)',
+      );
+
+  @override
+  Currency get uyp => Currency(
+        _locale,
+        'UYP',
+        'ເປໂຊ ອູຣຸກວຍ (1975–1993)',
+      );
+
+  @override
+  Currency get uyu => Currency(
+        _locale,
+        'UYU',
+        'ອູ​ຣຸ​ກົວ​ຢານ ເປ​ໂຊ',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get uyw => Currency(
+        _locale,
+        'UYW',
+        'Uruguayan Nominal Wage Index Unit',
+        one: 'Uruguayan nominal wage index unit',
+        other: 'Uruguayan nominal wage index units',
+      );
+
+  @override
+  Currency get uzs => Currency(
+        _locale,
+        'UZS',
+        'ອຸສເບກິສຖານິ ໂຊມ',
+      );
+
+  @override
+  Currency get veb => Currency(
+        _locale,
+        'VEB',
+        'ໂບລີວາ ເວເນຊູເອລາ (1871–2008)',
+      );
+
+  @override
+  Currency get ved => Currency(
+        _locale,
+        'VED',
+        'Bolívar Soberano',
+        one: 'Bolívar Soberano',
+        other: 'Bolívar Soberanos',
+      );
+
+  @override
+  Currency get vef => Currency(
+        _locale,
+        'VEF',
+        'ເວ​ເນ​ຊູ​ເອ​ລັນ ໂບ​ລິ​ວາ (2008–2018)',
+        narrowSymbol: 'Bs',
+        other: 'ເວເນຊູເອລັນ ໂບລິວາສ໌',
+      );
+
+  @override
+  Currency get ves => Currency(
+        _locale,
+        'VES',
+        'ເວ​ເນ​ຊູ​ເອ​ລັນ ໂບ​ລິ​ວາ',
+      );
+
+  @override
+  Currency get vnd => Currency(
+        _locale,
+        'VND',
+        'ຫວຽດ​ນາມ ດົງ',
+        symbol: '₫',
+        narrowSymbol: '₫',
+      );
+
+  @override
+  Currency get vnn => Currency(
+        _locale,
+        'VNN',
+        'ດົງ ຫວຽດນາມ (1978–1985)',
+      );
+
+  @override
+  Currency get vuv => Currency(
+        _locale,
+        'VUV',
+        '​ວາ​ນົວ​ຕູ ວາ​ຕູ',
+      );
+
+  @override
+  Currency get wst => Currency(
+        _locale,
+        'WST',
+        'ຊາ​ໂມນ ທາ​ລາ',
+      );
+
+  @override
+  Currency get xaf => Currency(
+        _locale,
+        'XAF',
+        'ສາທາລະນະລັດອາຟຣິກາກາງ',
+        symbol: 'FCFA',
+        other: 'ຟຣັງ ເຊຟານ ທະນາຄານລັດອາຟຣິກາກາງ',
+      );
+
+  @override
+  Currency get xag => Currency(
+        _locale,
+        'XAG',
+        'ເງິນ',
+      );
+
+  @override
+  Currency get xau => Currency(
+        _locale,
+        'XAU',
+        'ຄຳ',
+      );
+
+  @override
+  Currency get xba => Currency(
+        _locale,
+        'XBA',
+        'ຫົວໜ່ວຍຄອມໂປຊິດ ເອີຣົບ',
+      );
+
+  @override
+  Currency get xbb => Currency(
+        _locale,
+        'XBB',
+        'ຫົວໜ່ວຍໂມນີແທຣີ ເອີຣົບ',
+      );
+
+  @override
+  Currency get xbc => Currency(
+        _locale,
+        'XBC',
+        'ຫົວໜ່ວຍບັນຊີເອີຣົບ (XBC)',
+      );
+
+  @override
+  Currency get xbd => Currency(
+        _locale,
+        'XBD',
+        'ຫົວໜ່ວຍບັນຊີເອີຣົບ (XBD)',
+      );
+
+  @override
+  Currency get xcd => Currency(
+        _locale,
+        'XCD',
+        'ອີ​ສ ຄາ​ຣິ​ບຽນ ໂດ​ລ່າ',
+        symbol: r'EC$',
+        narrowSymbol: r'$',
+      );
+
+  @override
+  Currency get xcg => Currency(
+        _locale,
+        'XCG',
+        'XCG',
+        symbol: 'Cg.',
+      );
+
+  @override
+  Currency get xdr => Currency(
+        _locale,
+        'XDR',
+        'ສິດທິຖອນເງິນພິເສດ',
+      );
+
+  @override
+  Currency get xeu => Currency(
+        _locale,
+        'XEU',
+        'ຫົວໜ່ວຍສະກຸນເງິນ ເອີຣົບ',
+      );
+
+  @override
+  Currency get xfo => Currency(
+        _locale,
+        'XFO',
+        'ຟຣັງ ຄຳຝຣັ່ງ',
+      );
+
+  @override
+  Currency get xfu => Currency(
+        _locale,
+        'XFU',
+        'ຟຣັງ ຢູໄອຊີ ຝຣັ່ງ',
+      );
+
+  @override
+  Currency get xof => Currency(
+        _locale,
+        'XOF',
+        'ຟັງເຊຟານ ອາຟຣິກາຕາເວັນຕົກ',
+        symbol: 'F CFA',
+      );
+
+  @override
+  Currency get xpd => Currency(
+        _locale,
+        'XPD',
+        'ແພເລດຽມ',
+      );
+
+  @override
+  Currency get xpf => Currency(
+        _locale,
+        'XPF',
+        'ຊີ​ເອັບ​ພີ ຟຣັງ',
+        symbol: 'CFPF',
+      );
+
+  @override
+  Currency get xpt => Currency(
+        _locale,
+        'XPT',
+        'ແພລັດຕິນຳ',
+      );
+
+  @override
+  Currency get xre => Currency(
+        _locale,
+        'XRE',
+        'ກອງທຶນໄຣເນັດ',
+      );
+
+  @override
+  Currency get xsu => Currency(
+        _locale,
+        'XSU',
+        'Sucre',
+        one: 'Sucre',
+        other: 'Sucres',
+      );
+
+  @override
+  Currency get xts => Currency(
+        _locale,
+        'XTS',
+        'ລະຫັດທົດສອບສະກຸນເງິນ',
+      );
+
+  @override
+  Currency get xua => Currency(
+        _locale,
+        'XUA',
+        'ADB Unit of Account',
+        one: 'ADB unit of account',
+        other: 'ADB units of account',
+      );
+
+  @override
+  Currency get xxx => Currency(
+        _locale,
+        'XXX',
+        'ສະກຸນເງິນທີ່ບໍ່ຮູ້ຈັກ',
+        symbol: '¤',
+        other: '(ສະກຸນເງິນທີ່ບໍ່ຮູ້ຈັກ)',
+      );
+
+  @override
+  Currency get ydd => Currency(
+        _locale,
+        'YDD',
+        'ດີນາ ເຢເມນ',
+      );
+
+  @override
+  Currency get yer => Currency(
+        _locale,
+        'YER',
+        'ເຢ​ເມ​ນິ ຣຽວ',
+      );
+
+  @override
+  Currency get yud => Currency(
+        _locale,
+        'YUD',
+        'ຮາດດີນາ ຢູໂກສະລາວີ',
+      );
+
+  @override
+  Currency get yum => Currency(
+        _locale,
+        'YUM',
+        'ດີນາໃໝ່ ຢູໂກສະລາວີ (1994–2002)',
+      );
+
+  @override
+  Currency get yun => Currency(
+        _locale,
+        'YUN',
+        'ດີນາ ທີ່ປ່ຽນສະພາບ ຢູໂກສະລາວີ (1990–1992)',
+      );
+
+  @override
+  Currency get yur => Currency(
+        _locale,
+        'YUR',
+        'ດີນາ ປະຕິຮູບ ຢູໂກສະລາວີ (1992–1993)',
+      );
+
+  @override
+  Currency get zal => Currency(
+        _locale,
+        'ZAL',
+        'ແຣນ ອາຟຣິກາໃຕ້ (ການເງິນ)',
+      );
+
+  @override
+  Currency get zar => Currency(
+        _locale,
+        'ZAR',
+        'ເຊົາທ໌ ອາ​ຟຣິ​ກັນ ແຣນດ໌',
+        narrowSymbol: 'R',
+      );
+
+  @override
+  Currency get zmk => Currency(
+        _locale,
+        'ZMK',
+        'ຄວາຊາ ຊັມເບຍ (1968–2012)',
+      );
+
+  @override
+  Currency get zmw => Currency(
+        _locale,
+        'ZMW',
+        'ແຊມ​ບຽນ ຄວາ​ຊາ',
+        narrowSymbol: 'ZK',
+      );
+
+  @override
+  Currency get zrn => Currency(
+        _locale,
+        'ZRN',
+        'ແຊ ຄອງໂກໃໝ່',
+      );
+
+  @override
+  Currency get zrz => Currency(
+        _locale,
+        'ZRZ',
+        'ແຊຄອງໂກ',
+      );
+
+  @override
+  Currency get zwd => Currency(
+        _locale,
+        'ZWD',
+        'ດອນລາ ຊິມບັບເວ (1980–2008)',
+      );
+
+  @override
+  Currency get zwg => Currency(
+        _locale,
+        'ZWG',
+        'Zimbabwean Gold',
+        one: 'Zimbabwean gold',
+        other: 'Zimbabwean gold',
+      );
+
+  @override
+  Currency get zwl => Currency(
+        _locale,
+        'ZWL',
+        'ດອນລາ ຊິມບັບເວ (2009)',
+      );
+
+  @override
+  Currency get zwr => Currency(
+        _locale,
+        'ZWR',
+        'ດອນລາ ຊິມບັບເວ (2008)',
+      );
+
+  @override
+  late final Map<String, Currency> byCode =
+      CanonicalizedMap<String, String, Currency>.from({
+    'ADP': adp,
+    'AED': aed,
+    'AFA': afa,
+    'AFN': afn,
+    'ALK': alk,
+    'ALL': all,
+    'AMD': amd,
+    'ANG': ang,
+    'AOA': aoa,
+    'AOK': aok,
+    'AON': aon,
+    'AOR': aor,
+    'ARA': ara,
+    'ARL': arl,
+    'ARM': arm,
+    'ARP': arp,
+    'ARS': ars,
+    'ATS': ats,
+    'AUD': aud,
+    'AWG': awg,
+    'AZM': azm,
+    'AZN': azn,
+    'BAD': bad,
+    'BAM': bam,
+    'BAN': ban,
+    'BBD': bbd,
+    'BDT': bdt,
+    'BEC': bec,
+    'BEF': bef,
+    'BEL': bel,
+    'BGL': bgl,
+    'BGM': bgm,
+    'BGN': bgn,
+    'BGO': bgo,
+    'BHD': bhd,
+    'BIF': bif,
+    'BMD': bmd,
+    'BND': bnd,
+    'BOB': bob,
+    'BOL': bol,
+    'BOP': bop,
+    'BOV': bov,
+    'BRB': brb,
+    'BRC': brc,
+    'BRE': bre,
+    'BRL': brl,
+    'BRN': brn,
+    'BRR': brr,
+    'BRZ': brz,
+    'BSD': bsd,
+    'BTN': btn,
+    'BUK': buk,
+    'BWP': bwp,
+    'BYB': byb,
+    'BYN': byn,
+    'BYR': byr,
+    'BZD': bzd,
+    'CAD': cad,
+    'CDF': cdf,
+    'CHE': che,
+    'CHF': chf,
+    'CHW': chw,
+    'CLE': cle,
+    'CLF': clf,
+    'CLP': clp,
+    'CNH': cnh,
+    'CNX': cnx,
+    'CNY': cny,
+    'COP': cop,
+    'COU': cou,
+    'CRC': crc,
+    'CSD': csd,
+    'CSK': csk,
+    'CUC': cuc,
+    'CUP': cup,
+    'CVE': cve,
+    'CYP': cyp,
+    'CZK': czk,
+    'DDM': ddm,
+    'DEM': dem,
+    'DJF': djf,
+    'DKK': dkk,
+    'DOP': dop,
+    'DZD': dzd,
+    'ECS': ecs,
+    'ECV': ecv,
+    'EEK': eek,
+    'EGP': egp,
+    'ERN': ern,
+    'ESA': esa,
+    'ESB': esb,
+    'ESP': esp,
+    'ETB': etb,
+    'EUR': eur,
+    'FIM': fim,
+    'FJD': fjd,
+    'FKP': fkp,
+    'FRF': frf,
+    'GBP': gbp,
+    'GEK': gek,
+    'GEL': gel,
+    'GHC': ghc,
+    'GHS': ghs,
+    'GIP': gip,
+    'GMD': gmd,
+    'GNF': gnf,
+    'GNS': gns,
+    'GQE': gqe,
+    'GRD': grd,
+    'GTQ': gtq,
+    'GWE': gwe,
+    'GWP': gwp,
+    'GYD': gyd,
+    'HKD': hkd,
+    'HNL': hnl,
+    'HRD': hrd,
+    'HRK': hrk,
+    'HTG': htg,
+    'HUF': huf,
+    'IDR': idr,
+    'IEP': iep,
+    'ILP': ilp,
+    'ILR': ilr,
+    'ILS': ils,
+    'INR': inr,
+    'IQD': iqd,
+    'IRR': irr,
+    'ISJ': isj,
+    'ISK': isk,
+    'ITL': itl,
+    'JMD': jmd,
+    'JOD': jod,
+    'JPY': jpy,
+    'KES': kes,
+    'KGS': kgs,
+    'KHR': khr,
+    'KMF': kmf,
+    'KPW': kpw,
+    'KRH': krh,
+    'KRO': kro,
+    'KRW': krw,
+    'KWD': kwd,
+    'KYD': kyd,
+    'KZT': kzt,
+    'LAK': lak,
+    'LBP': lbp,
+    'LKR': lkr,
+    'LRD': lrd,
+    'LSL': lsl,
+    'LTL': ltl,
+    'LTT': ltt,
+    'LUC': luc,
+    'LUF': luf,
+    'LUL': lul,
+    'LVL': lvl,
+    'LVR': lvr,
+    'LYD': lyd,
+    'MAD': mad,
+    'MAF': maf,
+    'MCF': mcf,
+    'MDC': mdc,
+    'MDL': mdl,
+    'MGA': mga,
+    'MGF': mgf,
+    'MKD': mkd,
+    'MKN': mkn,
+    'MLF': mlf,
+    'MMK': mmk,
+    'MNT': mnt,
+    'MOP': mop,
+    'MRO': mro,
+    'MRU': mru,
+    'MTL': mtl,
+    'MTP': mtp,
+    'MUR': mur,
+    'MVP': mvp,
+    'MVR': mvr,
+    'MWK': mwk,
+    'MXN': mxn,
+    'MXP': mxp,
+    'MXV': mxv,
+    'MYR': myr,
+    'MZE': mze,
+    'MZM': mzm,
+    'MZN': mzn,
+    'NAD': nad,
+    'NGN': ngn,
+    'NIC': nic,
+    'NIO': nio,
+    'NLG': nlg,
+    'NOK': nok,
+    'NPR': npr,
+    'NZD': nzd,
+    'OMR': omr,
+    'PAB': pab,
+    'PEI': pei,
+    'PEN': pen,
+    'PES': pes,
+    'PGK': pgk,
+    'PHP': php,
+    'PKR': pkr,
+    'PLN': pln,
+    'PLZ': plz,
+    'PTE': pte,
+    'PYG': pyg,
+    'QAR': qar,
+    'RHD': rhd,
+    'ROL': rol,
+    'RON': ron,
+    'RSD': rsd,
+    'RUB': rub,
+    'RUR': rur,
+    'RWF': rwf,
+    'SAR': sar,
+    'SBD': sbd,
+    'SCR': scr,
+    'SDD': sdd,
+    'SDG': sdg,
+    'SDP': sdp,
+    'SEK': sek,
+    'SGD': sgd,
+    'SHP': shp,
+    'SIT': sit,
+    'SKK': skk,
+    'SLE': sle,
+    'SLL': sll,
+    'SOS': sos,
+    'SRD': srd,
+    'SRG': srg,
+    'SSP': ssp,
+    'STD': std,
+    'STN': stn,
+    'SUR': sur,
+    'SVC': svc,
+    'SYP': syp,
+    'SZL': szl,
+    'THB': thb,
+    'TJR': tjr,
+    'TJS': tjs,
+    'TMM': tmm,
+    'TMT': tmt,
+    'TND': tnd,
+    'TOP': top,
+    'TPE': tpe,
+    'TRL': trl,
+    'TRY': try$,
+    'TTD': ttd,
+    'TWD': twd,
+    'TZS': tzs,
+    'UAH': uah,
+    'UAK': uak,
+    'UGS': ugs,
+    'UGX': ugx,
+    'USD': usd,
+    'USN': usn,
+    'USS': uss,
+    'UYI': uyi,
+    'UYP': uyp,
+    'UYU': uyu,
+    'UYW': uyw,
+    'UZS': uzs,
+    'VEB': veb,
+    'VED': ved,
+    'VEF': vef,
+    'VES': ves,
+    'VND': vnd,
+    'VNN': vnn,
+    'VUV': vuv,
+    'WST': wst,
+    'XAF': xaf,
+    'XAG': xag,
+    'XAU': xau,
+    'XBA': xba,
+    'XBB': xbb,
+    'XBC': xbc,
+    'XBD': xbd,
+    'XCD': xcd,
+    'XCG': xcg,
+    'XDR': xdr,
+    'XEU': xeu,
+    'XFO': xfo,
+    'XFU': xfu,
+    'XOF': xof,
+    'XPD': xpd,
+    'XPF': xpf,
+    'XPT': xpt,
+    'XRE': xre,
+    'XSU': xsu,
+    'XTS': xts,
+    'XUA': xua,
+    'XXX': xxx,
+    'YDD': ydd,
+    'YER': yer,
+    'YUD': yud,
+    'YUM': yum,
+    'YUN': yun,
+    'YUR': yur,
+    'ZAL': zal,
+    'ZAR': zar,
+    'ZMK': zmk,
+    'ZMW': zmw,
+    'ZRN': zrn,
+    'ZRZ': zrz,
+    'ZWD': zwd,
+    'ZWG': zwg,
+    'ZWL': zwl,
+    'ZWR': zwr,
   }, (key) => key.toLowerCase());
 }

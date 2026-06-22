@@ -1,10 +1,14 @@
+import 'calendar.dart';
+import 'currencies.dart';
 import 'date_fields.dart';
 import 'languages.dart';
+import 'list_patterns.dart';
 import 'scripts.dart';
-import 'territories.dart';
-import 'timezones.dart';
-import 'units.dart';
 import 'variants.dart';
+import 'territories.dart';
+import 'units.dart';
+import 'timezones.dart';
+import 'week_data.dart';
 
 /// The root class providing access to all Common Data (date fields, units, territories etc...).
 abstract class CommonLocaleData {
@@ -46,6 +50,18 @@ abstract class CommonLocaleData {
 
   /// Localized timezone names.
   TimeZones get timeZones;
+
+  /// Localized list patterns (joining items into "a, b, and c").
+  ListPatterns get listPatterns;
+
+  /// Localized (Gregorian) calendar names: months, weekdays, eras etc.
+  Calendar get calendar;
+
+  /// Localized currency names and symbols.
+  Currencies get currencies;
+
+  /// Week conventions (first day of the week, weekend) for this locale.
+  WeekInfo get weekInfo;
 
   /// Map with all supported locale names.
   static final Set<String> localeNames = {

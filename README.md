@@ -15,6 +15,10 @@ Repository ([CLDR](https://cldr.unicode.org/)).
 - Translations for time zones and example cities (or similar) for time zones.
 - Translations for calendar fields.
 - Translations for relative time fields.
+- List patterns to join items into a localized string (e.g. "a, b, and c").
+- A high-level relative time ("timeago") formatter (e.g. "3 minutes ago", "in 2 days", "yesterday").
+  It is calendar-aware (an event late yesterday reads "yesterday", not "13 hours ago"), can render
+  weekday names ("last Tuesday") and exposes week conventions (first day of week, weekend).
 
 ## Tree-shaking
 
@@ -104,6 +108,52 @@ void main() {
   // Languages
   print('');
   print(cld.languages['en']!.name); // English
+
+  // List patterns
+  print('');
+  print(cld.listPatterns.and(['a', 'b', 'c'])); // a, b, and c
+  print(cld.listPatterns.or.format(['a', 'b', 'c'])); // a, b, or c
+
+  // Calendar names
+  print('');
+  print(cld.calendar.months.wide.january); // January
+  print(cld.calendar.weekdays.wide[DateTime.monday]); // Monday
+  print(cld.calendar.eras.abbreviated.ad); // AD
+
+  // Currencies
+  // Prefer the named getters (e.g. `currencies.usd`) so unused currencies are
+  // tree-shaken away. Use `currencies['USD']` only for dynamic lookup.
+  print('');
+  print(cld.currencies.usd.displayName); // US Dollar
+  print(cld.currencies.usd.symbol); // US$ (en-GB)
+  print(cld.currencies.usd.count(1)); // US dollar
+  print(cld.currencies.usd.count(3)); // US dollars
+  print(cld.currencies['EUR']!.displayName); // Euro (dynamic lookup)
+
+  // Relative time ("timeago"): turns a DateTime into a localized string,
+  // picking the best unit and using named forms where available.
+  print('');
+  var now = DateTime(2026, 6, 21, 12);
+  print(cld.relativeTime
+      .format(now.subtract(Duration(minutes: 5)), clock: now)); // 5 minutes ago
+  print(cld.relativeTime
+      .format(now.add(Duration(days: 3)), clock: now)); // in 3 days
+  print(cld.relativeTime
+      .format(now.subtract(Duration(days: 1)), clock: now)); // yesterday
+  print(cld.relativeTime.format(now.subtract(Duration(hours: 2)),
+      clock: now, length: RelativeTimeLength.narrow)); // 2h ago
+  // Calendar-aware: an event late yesterday reads "yesterday", not "13 hours ago".
+  print(cld.relativeTime.format(DateTime(2026, 6, 20, 20),
+      clock: DateTime(2026, 6, 21, 9))); // yesterday
+  // Opt-in weekday names, and the low-level field API.
+  print(cld.relativeTime
+      .format(DateTime(2026, 6, 17), clock: now, useWeekdayNames: true));
+  print(cld.relativeTime.formatUnit(1, RelativeUnit.month)); // next month
+
+  // Week conventions
+  print('');
+  print(cld.weekInfo.firstDayOfWeek); // 1 (Monday) in the UK
+  print(cld.weekInfo.isWeekend(DateTime.sunday)); // true
 
   // Timezones
   print('');

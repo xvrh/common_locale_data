@@ -39,6 +39,26 @@ class CommonLocaleDataGd implements CommonLocaleData {
   static final _timeZones = TimeZonesGd._(_territories);
   @override
   TimeZones get timeZones => _timeZones;
+
+  static final _listPatterns = ListPatternsGd._();
+  @override
+  ListPatterns get listPatterns => _listPatterns;
+
+  static final _calendar = CalendarGd._();
+  @override
+  Calendar get calendar => _calendar;
+
+  static final _currencies = CurrenciesGd._();
+  @override
+  Currencies get currencies => _currencies;
+
+  @override
+  WeekInfo get weekInfo => const WeekInfo(
+        firstDayOfWeek: 1,
+        weekendStart: 6,
+        weekendEnd: 7,
+        minDaysInFirstWeek: 4,
+      );
 }
 
 class LanguagesGd extends Languages {
@@ -13067,5 +13087,4167 @@ class TimeZonesGd extends TimeZones {
         standard: 'Àm Yukon',
       ),
     ),
+  }, (key) => key.toLowerCase());
+}
+
+class ListPatternsGd extends ListPatterns {
+  ListPatternsGd._();
+
+  @override
+  ListPattern get standard => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0} agus {1}',
+        two: '{0} agus {1}',
+      );
+
+  @override
+  ListPattern get standardShort => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0} ⁊ {1}',
+        two: '{0} ⁊ {1}',
+      );
+
+  @override
+  ListPattern get standardNarrow => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0}, {1}',
+        two: '{0}, {1}',
+      );
+
+  @override
+  ListPattern get or => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0} no {1}',
+        two: '{0} no {1}',
+      );
+
+  @override
+  ListPattern get orShort => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0} no {1}',
+        two: '{0} no {1}',
+      );
+
+  @override
+  ListPattern get orNarrow => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0} no {1}',
+        two: '{0} no {1}',
+      );
+
+  @override
+  ListPattern get unit => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0} agus {1}',
+        two: '{0} agus {1}',
+      );
+
+  @override
+  ListPattern get unitShort => ListPattern(
+        start: '{0}, {1}',
+        middle: '{0}, {1}',
+        end: '{0} ’s {1}',
+        two: '{0} ’s {1}',
+      );
+
+  @override
+  ListPattern get unitNarrow => ListPattern(
+        start: '{0} {1}',
+        middle: '{0} {1}',
+        end: '{0} {1}',
+        two: '{0} {1}',
+      );
+}
+
+class CalendarGd extends Calendar {
+  CalendarGd._();
+
+  @override
+  Months get months => Months(
+        wide: MonthNames(
+          january: 'dhen Fhaoilleach',
+          february: 'dhen Ghearran',
+          march: 'dhen Mhàrt',
+          april: 'dhen Ghiblean',
+          may: 'dhen Chèitean',
+          june: 'dhen Ògmhios',
+          july: 'dhen Iuchar',
+          august: 'dhen Lùnastal',
+          september: 'dhen t-Sultain',
+          october: 'dhen Dàmhair',
+          november: 'dhen t-Samhain',
+          december: 'dhen Dùbhlachd',
+        ),
+        abbreviated: MonthNames(
+          january: 'Faoi',
+          february: 'Gearr',
+          march: 'Màrt',
+          april: 'Gibl',
+          may: 'Cèit',
+          june: 'Ògmh',
+          july: 'Iuch',
+          august: 'Lùna',
+          september: 'Sult',
+          october: 'Dàmh',
+          november: 'Samh',
+          december: 'Dùbh',
+        ),
+        narrow: MonthNames(
+          january: 'F',
+          february: 'G',
+          march: 'M',
+          april: 'G',
+          may: 'C',
+          june: 'Ò',
+          july: 'I',
+          august: 'L',
+          september: 'S',
+          october: 'D',
+          november: 'S',
+          december: 'D',
+        ),
+      );
+
+  @override
+  Months get standaloneMonths => Months(
+        wide: MonthNames(
+          january: 'Am Faoilleach',
+          february: 'An Gearran',
+          march: 'Am Màrt',
+          april: 'An Giblean',
+          may: 'An Cèitean',
+          june: 'An t-Ògmhios',
+          july: 'An t-Iuchar',
+          august: 'An Lùnastal',
+          september: 'An t-Sultain',
+          october: 'An Dàmhair',
+          november: 'An t-Samhain',
+          december: 'An Dùbhlachd',
+        ),
+        abbreviated: MonthNames(
+          january: 'Faoi',
+          february: 'Gearr',
+          march: 'Màrt',
+          april: 'Gibl',
+          may: 'Cèit',
+          june: 'Ògmh',
+          july: 'Iuch',
+          august: 'Lùna',
+          september: 'Sult',
+          october: 'Dàmh',
+          november: 'Samh',
+          december: 'Dùbh',
+        ),
+        narrow: MonthNames(
+          january: 'F',
+          february: 'G',
+          march: 'M',
+          april: 'G',
+          may: 'C',
+          june: 'Ò',
+          july: 'I',
+          august: 'L',
+          september: 'S',
+          october: 'D',
+          november: 'S',
+          december: 'D',
+        ),
+      );
+
+  @override
+  Weekdays get weekdays => Weekdays(
+        wide: WeekdayNames(
+          monday: 'DiLuain',
+          tuesday: 'DiMàirt',
+          wednesday: 'DiCiadain',
+          thursday: 'DiarDaoin',
+          friday: 'DihAoine',
+          saturday: 'DiSathairne',
+          sunday: 'DiDòmhnaich',
+        ),
+        abbreviated: WeekdayNames(
+          monday: 'DiL',
+          tuesday: 'DiM',
+          wednesday: 'DiC',
+          thursday: 'Dia',
+          friday: 'Dih',
+          saturday: 'DiS',
+          sunday: 'DiD',
+        ),
+        short: WeekdayNames(
+          monday: 'Lu',
+          tuesday: 'Mà',
+          wednesday: 'Ci',
+          thursday: 'Da',
+          friday: 'hA',
+          saturday: 'Sa',
+          sunday: 'Dò',
+        ),
+        narrow: WeekdayNames(
+          monday: 'L',
+          tuesday: 'M',
+          wednesday: 'C',
+          thursday: 'A',
+          friday: 'H',
+          saturday: 'S',
+          sunday: 'D',
+        ),
+      );
+
+  @override
+  Weekdays get standaloneWeekdays => Weekdays(
+        wide: WeekdayNames(
+          monday: 'DiLuain',
+          tuesday: 'DiMàirt',
+          wednesday: 'DiCiadain',
+          thursday: 'DiarDaoin',
+          friday: 'DihAoine',
+          saturday: 'DiSathairne',
+          sunday: 'DiDòmhnaich',
+        ),
+        abbreviated: WeekdayNames(
+          monday: 'DiL',
+          tuesday: 'DiM',
+          wednesday: 'DiC',
+          thursday: 'Dia',
+          friday: 'Dih',
+          saturday: 'DiS',
+          sunday: 'DiD',
+        ),
+        short: WeekdayNames(
+          monday: 'Lu',
+          tuesday: 'Mà',
+          wednesday: 'Ci',
+          thursday: 'Da',
+          friday: 'hA',
+          saturday: 'Sa',
+          sunday: 'Dò',
+        ),
+        narrow: WeekdayNames(
+          monday: 'L',
+          tuesday: 'M',
+          wednesday: 'C',
+          thursday: 'A',
+          friday: 'H',
+          saturday: 'S',
+          sunday: 'D',
+        ),
+      );
+
+  @override
+  Quarters get quarters => Quarters(
+        wide: QuarterNames(
+          q1: '1d chairteal',
+          q2: '2na cairteal',
+          q3: '3s cairteal',
+          q4: '4mh cairteal',
+        ),
+        abbreviated: QuarterNames(
+          q1: 'C1',
+          q2: 'C2',
+          q3: 'C3',
+          q4: 'C4',
+        ),
+        narrow: QuarterNames(
+          q1: '1',
+          q2: '2',
+          q3: '3',
+          q4: '4',
+        ),
+      );
+
+  @override
+  Quarters get standaloneQuarters => Quarters(
+        wide: QuarterNames(
+          q1: '1d chairteal',
+          q2: '2na cairteal',
+          q3: '3s cairteal',
+          q4: '4mh cairteal',
+        ),
+        abbreviated: QuarterNames(
+          q1: 'C1',
+          q2: 'C2',
+          q3: 'C3',
+          q4: 'C4',
+        ),
+        narrow: QuarterNames(
+          q1: '1',
+          q2: '2',
+          q3: '3',
+          q4: '4',
+        ),
+      );
+
+  @override
+  DayPeriods get dayPeriods => DayPeriods(
+        wide: DayPeriodNames(
+          am: 'm',
+          pm: 'f',
+        ),
+        abbreviated: DayPeriodNames(
+          am: 'm',
+          pm: 'f',
+        ),
+        narrow: DayPeriodNames(
+          am: 'm',
+          pm: 'f',
+        ),
+      );
+
+  @override
+  DayPeriods get standaloneDayPeriods => DayPeriods(
+        wide: DayPeriodNames(
+          am: 'm',
+          pm: 'f',
+        ),
+        abbreviated: DayPeriodNames(
+          am: 'm',
+          pm: 'f',
+        ),
+        narrow: DayPeriodNames(
+          am: 'm',
+          pm: 'f',
+        ),
+      );
+
+  @override
+  Eras get eras => Eras(
+        wide: EraNames(
+          bc: 'Ro Chrìosta',
+          ad: 'An dèidh Chrìosta',
+        ),
+        abbreviated: EraNames(
+          bc: 'RC',
+          ad: 'AD',
+        ),
+        narrow: EraNames(
+          bc: 'R',
+          ad: 'A',
+        ),
+      );
+}
+
+class CurrenciesGd extends Currencies {
+  CurrenciesGd._();
+
+  @override
+  Currency get adp => Currency(
+        _locale,
+        'ADP',
+        'Peseta Andorrach',
+        one: 'pheseta Andorrach',
+        two: 'pheseta Andorrach',
+        few: 'peseta Andorrach',
+        other: 'peseta Andorrach',
+      );
+
+  @override
+  Currency get aed => Currency(
+        _locale,
+        'AED',
+        'Dirham nan Iomaratan Arabach Aonaichte',
+        one: 'dirham nan IAA',
+        two: 'dhirham nan IAA',
+        few: 'dirham nan IAA',
+        other: 'dirham nan IAA',
+      );
+
+  @override
+  Currency get afa => Currency(
+        _locale,
+        'AFA',
+        'Afghani Afghanach (1927–2002)',
+        one: 'afghani Afghanach (1927–2002)',
+        two: 'afghani Afghanach (1927–2002)',
+        few: 'afghani Afghanach (1927–2002)',
+        other: 'afghani Afghanach (1927–2002)',
+      );
+
+  @override
+  Currency get afn => Currency(
+        _locale,
+        'AFN',
+        'Afghani Afghanach',
+        narrowSymbol: '؋',
+        one: 'afghani Afghanach',
+        two: 'afghani Afghanach',
+        few: 'afghani Afghanach',
+        other: 'afghani Afghanach',
+      );
+
+  @override
+  Currency get alk => Currency(
+        _locale,
+        'ALK',
+        'Lek Albàineach (1946–1965)',
+        one: 'lek Albàineach (1946–1965)',
+        two: 'lek Albàineach (1946–1965)',
+        few: 'lek Albàineach (1946–1965)',
+        other: 'lek Albàineach (1946–1965)',
+      );
+
+  @override
+  Currency get all => Currency(
+        _locale,
+        'ALL',
+        'Lek Albàineach',
+        one: 'lek Albàineach',
+        two: 'lek Albàineach',
+        few: 'lek Albàineach',
+        other: 'lek Albàineach',
+      );
+
+  @override
+  Currency get amd => Currency(
+        _locale,
+        'AMD',
+        'Dram Airmeineach',
+        narrowSymbol: '֏',
+        one: 'dram Airmeineach',
+        two: 'dhram Airmeineach',
+        few: 'dram Airmeineach',
+        other: 'dram Airmeineach',
+      );
+
+  @override
+  Currency get ang => Currency(
+        _locale,
+        'ANG',
+        'Gulden Eileanan Aintilia nan Tìrean Ìsle',
+        one: 'ghulden Eileanan Aintilia nan Tìrean Ìsle',
+        two: 'ghulden Eileanan Aintilia nan Tìrean Ìsle',
+        few: 'gulden Eileanan Aintilia nan Tìrean Ìsle',
+        other: 'gulden Eileanan Aintilia nan Tìrean Ìsle',
+      );
+
+  @override
+  Currency get aoa => Currency(
+        _locale,
+        'AOA',
+        'Kwanza Angòlach',
+        narrowSymbol: 'Kz',
+        one: 'kwanza Angòlach',
+        two: 'kwanza Angòlach',
+        few: 'kwanza Angòlach',
+        other: 'kwanza Angòlach',
+      );
+
+  @override
+  Currency get aok => Currency(
+        _locale,
+        'AOK',
+        'Kwanza Angòlach (1977–1991)',
+        one: 'kwanza Angòlach (1977–1991)',
+        two: 'kwanza Angòlach (1977–1991)',
+        few: 'kwanza Angòlach (1977–1991)',
+        other: 'kwanza Angòlach (1977–1991)',
+      );
+
+  @override
+  Currency get aon => Currency(
+        _locale,
+        'AON',
+        'Kwanza ùr Angòlach (1990–2000)',
+        one: 'kwanza ùr Angòlach (1990–2000)',
+        two: 'kwanza ùr Angòlach (1990–2000)',
+        few: 'kwanza ùr Angòlach (1990–2000)',
+        other: 'kwanza ùr Angòlach (1990–2000)',
+      );
+
+  @override
+  Currency get aor => Currency(
+        _locale,
+        'AOR',
+        'Kwanza ath-ghleusaichte Angòlach (1995–1999)',
+        one: 'kwanza ath-ghleusaichte Angòlach (1995–1999)',
+        two: 'kwanza ath-ghleusaichte Angòlach (1995–1999)',
+        few: 'kwanza ath-ghleusaichte Angòlach (1995–1999)',
+        other: 'kwanza ath-ghleusaichte Angòlach (1995–1999)',
+      );
+
+  @override
+  Currency get ara => Currency(
+        _locale,
+        'ARA',
+        'Austral Argantaineach',
+        one: 'austral Argantaineach',
+        two: 'austral Argantaineach',
+        few: 'austral Argantaineach',
+        other: 'austral Argantaineach',
+      );
+
+  @override
+  Currency get arl => Currency(
+        _locale,
+        'ARL',
+        'Peso ley Argantaineach (1970–1983)',
+        one: 'pheso ley Argantaineach (1970–1983)',
+        two: 'pheso ley Argantaineach (1970–1983)',
+        few: 'pesothan ley Argantaineach (1970–1983)',
+        other: 'peso ley Argantaineach (1970–1983)',
+      );
+
+  @override
+  Currency get arm => Currency(
+        _locale,
+        'ARM',
+        'Peso Argantaineach (1881–1970)',
+        one: 'pheso Argantaineach (1881–1970)',
+        two: 'pheso Argantaineach (1881–1970)',
+        few: 'pesothan Argantaineach (1881–1970)',
+        other: 'peso Argantaineach (1881–1970)',
+      );
+
+  @override
+  Currency get arp => Currency(
+        _locale,
+        'ARP',
+        'Peso Argantaineach (1983–1985)',
+        one: 'pheso Argantaineach (1983–1985)',
+        two: 'pheso Argantaineach (1983–1985)',
+        few: 'pesothan Argantaineach (1983–1985)',
+        other: 'peso Argantaineach (1983–1985)',
+      );
+
+  @override
+  Currency get ars => Currency(
+        _locale,
+        'ARS',
+        'Peso Argantaineach',
+        narrowSymbol: r'$',
+        one: 'pheso Argantaineach',
+        two: 'pheso Argantaineach',
+        few: 'pesothan Argantaineach',
+        other: 'peso Argantaineach',
+      );
+
+  @override
+  Currency get ats => Currency(
+        _locale,
+        'ATS',
+        'Schilling Ostaireach',
+        one: 'schilling Ostaireach',
+        two: 'schilling Ostaireach',
+        few: 'schilling Ostaireach',
+        other: 'schilling Ostaireach',
+      );
+
+  @override
+  Currency get aud => Currency(
+        _locale,
+        'AUD',
+        'Dolar Astràilianach',
+        symbol: r'A$',
+        narrowSymbol: r'$',
+        one: 'dolar Astràilianach',
+        two: 'dholar Astràilianach',
+        few: 'dolaran Astràilianach',
+        other: 'dolar Astràilianach',
+      );
+
+  @override
+  Currency get awg => Currency(
+        _locale,
+        'AWG',
+        'Florin Arùbach',
+        one: 'fhlorin Arùbach',
+        two: 'fhlorin Arùbach',
+        few: 'florin Arùbach',
+        other: 'florin Arùbach',
+      );
+
+  @override
+  Currency get azm => Currency(
+        _locale,
+        'AZM',
+        'Manat Asarbaideànach (1993–2006)',
+        one: 'mhanat Asarbaideànach (1993–2006)',
+        two: 'mhanat Asarbaideànach (1993–2006)',
+        few: 'manat Asarbaideànach (1993–2006)',
+        other: 'manat Asarbaideànach (1993–2006)',
+      );
+
+  @override
+  Currency get azn => Currency(
+        _locale,
+        'AZN',
+        'Manat Asarbaideànach',
+        narrowSymbol: '₼',
+        one: 'mhanat Asarbaideànach',
+        two: 'mhanat Asarbaideànach',
+        few: 'manat Asarbaideànach',
+        other: 'manat Asarbaideànach',
+      );
+
+  @override
+  Currency get bad => Currency(
+        _locale,
+        'BAD',
+        'Dinar Bhosna agus Hearsagobhana (1992–1994)',
+        one: 'dinar Bhosna agus Hearsagobhana (1992–1994)',
+        two: 'dhinar Bhosna agus Hearsagobhana (1992–1994)',
+        few: 'dinar Bhosna agus Hearsagobhana (1992–1994)',
+        other: 'dinar Bhosna agus Hearsagobhana (1992–1994)',
+      );
+
+  @override
+  Currency get bam => Currency(
+        _locale,
+        'BAM',
+        'Mark iompachail Bhosna agus Hearsagobhana',
+        narrowSymbol: 'KM',
+        one: 'mhark iompachail Bhosna agus Hearsagobhana',
+        two: 'mhark iompachail Bhosna agus Hearsagobhana',
+        few: 'mark iompachail Bhosna agus Hearsagobhana',
+        other: 'mark iompachail Bhosna agus Hearsagobhana',
+      );
+
+  @override
+  Currency get ban => Currency(
+        _locale,
+        'BAN',
+        'Dinar ùr Bhosna agus Hearsagobhana (1994–1997)',
+        one: 'dinar ùr Bhosna agus Hearsagobhana (1994–1997)',
+        two: 'dhinar ùr Bhosna agus Hearsagobhana (1994–1997)',
+        few: 'dinar ùr Bhosna agus Hearsagobhana (1994–1997)',
+        other: 'dinar ùr Bhosna agus Hearsagobhana (1994–1997)',
+      );
+
+  @override
+  Currency get bbd => Currency(
+        _locale,
+        'BBD',
+        'Dolar Barbadach',
+        narrowSymbol: r'$',
+        one: 'dolar Barbadach',
+        two: 'dholar Barbadach',
+        few: 'dolaran Barbadach',
+        other: 'dolar Barbadach',
+      );
+
+  @override
+  Currency get bdt => Currency(
+        _locale,
+        'BDT',
+        'Taka Bangladaiseach',
+        narrowSymbol: '৳',
+        one: 'taka Bangladaiseach',
+        two: 'thaka Bangladaiseach',
+        few: 'taka Bangladaiseach',
+        other: 'taka Bangladaiseach',
+      );
+
+  @override
+  Currency get bec => Currency(
+        _locale,
+        'BEC',
+        'Franc Beilgeach (iompachail)',
+        one: 'fhranc Beilgeach (iompachail)',
+        two: 'fhranc Beilgeach (iompachail)',
+        few: 'franc Beilgeach (iompachail)',
+        other: 'franc Beilgeach (iompachail)',
+      );
+
+  @override
+  Currency get bef => Currency(
+        _locale,
+        'BEF',
+        'Franc Beilgeach',
+        one: 'fhranc Beilgeach',
+        two: 'fhranc Beilgeach',
+        few: 'franc Beilgeach',
+        other: 'franc Beilgeach',
+      );
+
+  @override
+  Currency get bel => Currency(
+        _locale,
+        'BEL',
+        'Franc Beilgeach (ionmhasail)',
+        one: 'fhranc Beilgeach (ionmhasail)',
+        two: 'fhranc Beilgeach (ionmhasail)',
+        few: 'franc Beilgeach (ionmhasail)',
+        other: 'franc Beilgeach (ionmhasail)',
+      );
+
+  @override
+  Currency get bgl => Currency(
+        _locale,
+        'BGL',
+        'Lev cruaidh Bulgarach',
+        one: 'lev cruaidh Bulgarach',
+        two: 'lev cruaidh Bulgarach',
+        few: 'lev cruaidh Bulgarach',
+        other: 'lev cruaidh Bulgarach',
+      );
+
+  @override
+  Currency get bgm => Currency(
+        _locale,
+        'BGM',
+        'Lev sòisealach Bulgarach',
+        one: 'lev sòisealach Bulgarach',
+        two: 'lev sòisealach Bulgarach',
+        few: 'lev sòisealach Bulgarach',
+        other: 'lev sòisealach Bulgarach',
+      );
+
+  @override
+  Currency get bgn => Currency(
+        _locale,
+        'BGN',
+        'Lev Bulgarach',
+        one: 'lev Bulgarach',
+        two: 'lev Bulgarach',
+        few: 'lev Bulgarach',
+        other: 'lev Bulgarach',
+      );
+
+  @override
+  Currency get bgo => Currency(
+        _locale,
+        'BGO',
+        'Lev Bulgarach (1879–1952)',
+        one: 'lev Bulgarach (1879–1952)',
+        two: 'lev Bulgarach (1879–1952)',
+        few: 'lev Bulgarach (1879–1952)',
+        other: 'lev Bulgarach (1879–1952)',
+      );
+
+  @override
+  Currency get bhd => Currency(
+        _locale,
+        'BHD',
+        'Dinar Bachraineach',
+        one: 'dinar Bachraineach',
+        two: 'dhinar Bachraineach',
+        few: 'dinar Bachraineach',
+        other: 'dinar Bachraineach',
+      );
+
+  @override
+  Currency get bif => Currency(
+        _locale,
+        'BIF',
+        'Franc Burundaidheach',
+        one: 'fhranc Burundaidheach',
+        two: 'fhranc Burundaidheach',
+        few: 'franc Burundaidheach',
+        other: 'franc Burundaidheach',
+      );
+
+  @override
+  Currency get bmd => Currency(
+        _locale,
+        'BMD',
+        'Dolar Bearmùdach',
+        narrowSymbol: r'$',
+        one: 'dolar Bearmùdach',
+        two: 'dholar Bearmùdach',
+        few: 'dolaran Bearmùdach',
+        other: 'dolar Bearmùdach',
+      );
+
+  @override
+  Currency get bnd => Currency(
+        _locale,
+        'BND',
+        'Dolar Brùnaigheach',
+        narrowSymbol: r'$',
+        one: 'dolar Brùnaigheach',
+        two: 'dholar Brùnaigheach',
+        few: 'dolaran Brùnaigheach',
+        other: 'dolar Brùnaigheach',
+      );
+
+  @override
+  Currency get bob => Currency(
+        _locale,
+        'BOB',
+        'Boliviano Boilibhiach',
+        narrowSymbol: 'Bs',
+        one: 'bholiviano Boilibhiach',
+        two: 'bholiviano Boilibhiach',
+        few: 'boliviano Boilibhiach',
+        other: 'boliviano Boilibhiach',
+      );
+
+  @override
+  Currency get bol => Currency(
+        _locale,
+        'BOL',
+        'Boliviano Boilibhiach (1863–1963)',
+        one: 'bholiviano Boilibhiach (1863–1963)',
+        two: 'bholiviano Boilibhiach (1863–1963)',
+        few: 'boliviano Boilibhiach (1863–1963)',
+        other: 'boliviano Boilibhiach (1863–1963)',
+      );
+
+  @override
+  Currency get bop => Currency(
+        _locale,
+        'BOP',
+        'Peso Boilibhiach',
+        one: 'pheso Boilibhiach',
+        two: 'pheso Boilibhiach',
+        few: 'pesothan Boilibhiach',
+        other: 'peso Boilibhiach',
+      );
+
+  @override
+  Currency get bov => Currency(
+        _locale,
+        'BOV',
+        'Mvdol Boilibhiach',
+        one: 'mvdol Boilibhiach',
+        two: 'mvdol Boilibhiach',
+        few: 'mvdol Boilibhiach',
+        other: 'mvdol Boilibhiach',
+      );
+
+  @override
+  Currency get brb => Currency(
+        _locale,
+        'BRB',
+        'Cruzeiro ùr Braisileach (1967–1986)',
+        one: 'chruzeiro ùr Braisileach (1967–1986)',
+        two: 'chruzeiro ùr Braisileach (1967–1986)',
+        few: 'cruzeiro ùr Braisileach (1967–1986)',
+        other: 'cruzeiro ùr Braisileach (1967–1986)',
+      );
+
+  @override
+  Currency get brc => Currency(
+        _locale,
+        'BRC',
+        'Cruzado Braisileach (1986–1989)',
+        one: 'chruzado Braisileach (1986–1989)',
+        two: 'chruzado Braisileach (1986–1989)',
+        few: 'cruzado Braisileach (1986–1989)',
+        other: 'cruzado Braisileach (1986–1989)',
+      );
+
+  @override
+  Currency get bre => Currency(
+        _locale,
+        'BRE',
+        'Cruzeiro Braisileach (1990–1993)',
+        one: 'chruzeiro Braisileach (1990–1993)',
+        two: 'chruzeiro Braisileach (1990–1993)',
+        few: 'cruzeiro Braisileach (1990–1993)',
+        other: 'cruzeiro Braisileach (1990–1993)',
+      );
+
+  @override
+  Currency get brl => Currency(
+        _locale,
+        'BRL',
+        'Real Braisileach',
+        symbol: r'R$',
+        narrowSymbol: r'R$',
+        one: 'real Braisileach',
+        two: 'real Braisileach',
+        few: 'real Braisileach',
+        other: 'real Braisileach',
+      );
+
+  @override
+  Currency get brn => Currency(
+        _locale,
+        'BRN',
+        'Cruzado ùr Braisileach (1989–1990)',
+        one: 'chruzado ùr Braisileach (1989–1990)',
+        two: 'chruzado ùr Braisileach (1989–1990)',
+        few: 'cruzado ùr Braisileach (1989–1990)',
+        other: 'cruzado ùr Braisileach (1989–1990)',
+      );
+
+  @override
+  Currency get brr => Currency(
+        _locale,
+        'BRR',
+        'Cruzeiro Braisileach (1993–1994)',
+        one: 'chruzeiro Braisileach (1993–1994)',
+        two: 'chruzeiro Braisileach (1993–1994)',
+        few: 'cruzeiro Braisileach (1993–1994)',
+        other: 'cruzeiro Braisileach (1993–1994)',
+      );
+
+  @override
+  Currency get brz => Currency(
+        _locale,
+        'BRZ',
+        'Cruzeiro Braisileach (1942–1967)',
+        one: 'chruzeiro Braisileach (1942–1967)',
+        two: 'chruzeiro Braisileach (1942–1967)',
+        few: 'cruzeiro Braisileach (1942–1967)',
+        other: 'cruzeiro Braisileach (1942–1967)',
+      );
+
+  @override
+  Currency get bsd => Currency(
+        _locale,
+        'BSD',
+        'Dolar Bathamach',
+        narrowSymbol: r'$',
+        one: 'dolar Bathamach',
+        two: 'dholar Bathamach',
+        few: 'dolaran Bathamach',
+        other: 'dolar Bathamach',
+      );
+
+  @override
+  Currency get btn => Currency(
+        _locale,
+        'BTN',
+        'Ngultrum Butànach',
+        one: 'ngultrum Butànach',
+        two: 'ngultrum Butànach',
+        few: 'ngultrum Butànach',
+        other: 'ngultrum Butànach',
+      );
+
+  @override
+  Currency get buk => Currency(
+        _locale,
+        'BUK',
+        'Kyat Burmach',
+        one: 'kyat Burmach',
+        two: 'kyat Burmach',
+        few: 'kyat Burmach',
+        other: 'kyat Burmach',
+      );
+
+  @override
+  Currency get bwp => Currency(
+        _locale,
+        'BWP',
+        'Pula Botsuanach',
+        narrowSymbol: 'P',
+        one: 'phula Botsuanach',
+        two: 'phula Botsuanach',
+        few: 'pula Botsuanach',
+        other: 'pula Botsuanach',
+      );
+
+  @override
+  Currency get byb => Currency(
+        _locale,
+        'BYB',
+        'Rùbal ùr Bealaruiseach (1994–1999)',
+        one: 'rùbal ùr Bealaruiseach (1994–1999)',
+        two: 'rùbal ùr Bealaruiseach (1994–1999)',
+        few: 'rùbalan ùra Bealaruiseach (1994–1999)',
+        other: 'rùbal ùr Bealaruiseach (1994–1999)',
+      );
+
+  @override
+  Currency get byn => Currency(
+        _locale,
+        'BYN',
+        'Rùbal Bealaruiseach',
+        narrowSymbol: 'р.',
+        one: 'rùbal Bealaruiseach',
+        two: 'rùbal Bealaruiseach',
+        few: 'rùbalan Bealaruiseach',
+        other: 'rùbal Bealaruiseach',
+      );
+
+  @override
+  Currency get byr => Currency(
+        _locale,
+        'BYR',
+        'Rùbal Bealaruiseach (2000–2016)',
+        one: 'rùbal Bealaruiseach (2000–2016)',
+        two: 'rùbal Bealaruiseach (2000–2016)',
+        few: 'rùbalan Bealaruiseach (2000–2016)',
+        other: 'rùbal Bealaruiseach (2000–2016)',
+      );
+
+  @override
+  Currency get bzd => Currency(
+        _locale,
+        'BZD',
+        'Dolar Beilìseach',
+        narrowSymbol: r'$',
+        one: 'dolar Beilìseach',
+        two: 'dholar Beilìseach',
+        few: 'dolaran Beilìseach',
+        other: 'dolar Beilìseach',
+      );
+
+  @override
+  Currency get cad => Currency(
+        _locale,
+        'CAD',
+        'Dolar Canadach',
+        symbol: r'CA$',
+        narrowSymbol: r'$',
+        one: 'dolar Canadach',
+        two: 'dholar Canadach',
+        few: 'dolaran Canadach',
+        other: 'dolar Canadach',
+      );
+
+  @override
+  Currency get cdf => Currency(
+        _locale,
+        'CDF',
+        'Franc Congothach',
+        one: 'fhranc Congothach',
+        two: 'fhranc Congothach',
+        few: 'franc Congothach',
+        other: 'franc Congothach',
+      );
+
+  @override
+  Currency get che => Currency(
+        _locale,
+        'CHE',
+        'Eòro WIR',
+        one: 'Eòro WIR',
+        two: 'Eòro WIR',
+        few: 'Eòrothan WIR',
+        other: 'Eòro WIR',
+      );
+
+  @override
+  Currency get chf => Currency(
+        _locale,
+        'CHF',
+        'Franc Eilbheiseach',
+        one: 'fhranc Eilbheiseach',
+        two: 'fhranc Eilbheiseach',
+        few: 'franc Eilbheiseach',
+        other: 'franc Eilbheiseach',
+      );
+
+  @override
+  Currency get chw => Currency(
+        _locale,
+        'CHW',
+        'Franc WIR',
+        one: 'fhranc WIR',
+        two: 'fhranc WIR',
+        few: 'franc WIR',
+        other: 'franc WIR',
+      );
+
+  @override
+  Currency get cle => Currency(
+        _locale,
+        'CLE',
+        'Escudo Sileach',
+        one: 'escudo Sileach',
+        two: 'escudo Sileach',
+        few: 'escudo Sileach',
+        other: 'escudo Sileach',
+      );
+
+  @override
+  Currency get clf => Currency(
+        _locale,
+        'CLF',
+        'Aonad cunntasachd Sileach (UF)',
+        one: 'aonad cunntasachd Sileach (UF)',
+        two: 'aonad cunntasachd Sileach (UF)',
+        few: 'aonadan cunntasachd Sileach (UF)',
+        other: 'aonad cunntasachd Sileach (UF)',
+      );
+
+  @override
+  Currency get clp => Currency(
+        _locale,
+        'CLP',
+        'Peso Sileach',
+        narrowSymbol: r'$',
+        one: 'pheso Sileach',
+        two: 'pheso Sileach',
+        few: 'pesothan Sileach',
+        other: 'peso Sileach',
+      );
+
+  @override
+  Currency get cnh => Currency(
+        _locale,
+        'CNH',
+        'Yuan Sìneach (far-thìreach)',
+        one: 'yuan Sìneach (far-thìreach)',
+        two: 'yuan Sìneach (far-thìreach)',
+        few: 'yuan Sìneach (far-thìreach)',
+        other: 'yuan Sìneach (far-thìreach)',
+      );
+
+  @override
+  Currency get cnx => Currency(
+        _locale,
+        'CNX',
+        'Dolar an t-sluagh-bhanca Shìnich',
+        one: 'dolar an t-sluagh-bhanca Shìnich',
+        two: 'dholar an t-sluagh-bhanca Shìnich',
+        few: 'dolaran an t-sluagh-bhanca Shìnich',
+        other: 'dolar an t-sluagh-bhanca Shìnich',
+      );
+
+  @override
+  Currency get cny => Currency(
+        _locale,
+        'CNY',
+        'Yuan Sìneach',
+        symbol: 'CN¥',
+        narrowSymbol: '¥',
+        one: 'yuan Sìneach',
+        two: 'yuan Sìneach',
+        few: 'yuan Sìneach',
+        other: 'yuan Sìneach',
+      );
+
+  @override
+  Currency get cop => Currency(
+        _locale,
+        'COP',
+        'Peso Coloimbeach',
+        narrowSymbol: r'$',
+        one: 'pheso Coloimbeach',
+        two: 'pheso Coloimbeach',
+        few: 'pesothan Coloimbeach',
+        other: 'peso Coloimbeach',
+      );
+
+  @override
+  Currency get cou => Currency(
+        _locale,
+        'COU',
+        'Aonad fìor-luach Coloimbeach',
+        one: 'aonad fìor-luach Coloimbeach',
+        two: 'aonad fìor-luach Coloimbeach',
+        few: 'aonadan fìor-luach Coloimbeach',
+        other: 'aonad fìor-luach Coloimbeach',
+      );
+
+  @override
+  Currency get crc => Currency(
+        _locale,
+        'CRC',
+        'Colón Costa Rìceach',
+        narrowSymbol: '₡',
+        one: 'cholón Chosta Rìcea',
+        two: 'cholón Costa Rìceach',
+        few: 'colón Costa Rìceach',
+        other: 'colón Costa Rìceach',
+      );
+
+  @override
+  Currency get csd => Currency(
+        _locale,
+        'CSD',
+        'Dinar Sèirbeach (2002–2006)',
+        one: 'dinar Sèirbeach (2002–2006)',
+        two: 'dhinar Sèirbeach (2002–2006)',
+        few: 'dinar Sèirbeach (2002–2006)',
+        other: 'dinar Sèirbeach (2002–2006)',
+      );
+
+  @override
+  Currency get csk => Currency(
+        _locale,
+        'CSK',
+        'Koruna cruaidh Seic-Slòbhacach',
+        one: 'koruna cruaidh Seic-Slòbhacach',
+        two: 'koruna cruaidh Seic-Slòbhacach',
+        few: 'koruna cruaidh Seic-Slòbhacach',
+        other: 'koruna cruaidh Seic-Slòbhacach',
+      );
+
+  @override
+  Currency get cuc => Currency(
+        _locale,
+        'CUC',
+        'Peso iompachail Cùbach',
+        narrowSymbol: r'$',
+        one: 'pheso iompachail Cùbach',
+        two: 'pheso iompachail Cùbach',
+        few: 'pesothan iompachail Cùbach',
+        other: 'peso iompachail Cùbach',
+      );
+
+  @override
+  Currency get cup => Currency(
+        _locale,
+        'CUP',
+        'Peso Cùbach',
+        narrowSymbol: r'$',
+        one: 'pheso Cùbach',
+        two: 'pheso Cùbach',
+        few: 'pesothan Cùbach',
+        other: 'peso Cùbach',
+      );
+
+  @override
+  Currency get cve => Currency(
+        _locale,
+        'CVE',
+        'Escudo a’ Chip Uaine',
+        one: 'escudo a’ Chip Uaine',
+        two: 'escudo a’ Chip Uaine',
+        few: 'escudo a’ Chip Uaine',
+        other: 'escudo a’ Chip Uaine',
+      );
+
+  @override
+  Currency get cyp => Currency(
+        _locale,
+        'CYP',
+        'Punnd Cìoprasach',
+        one: 'phunnd Cìoprasach',
+        two: 'phunnd Cìoprasach',
+        few: 'puinnd Chìoprasach',
+        other: 'punnd Cìoprasach',
+      );
+
+  @override
+  Currency get czk => Currency(
+        _locale,
+        'CZK',
+        'Koruna Seiceach',
+        narrowSymbol: 'Kč',
+        one: 'koruna Seiceach',
+        two: 'koruna Seiceach',
+        few: 'koruna Seiceach',
+        other: 'koruna Seiceach',
+      );
+
+  @override
+  Currency get ddm => Currency(
+        _locale,
+        'DDM',
+        'Mark na Gearmailte an Ear',
+        one: 'mhark na Gearmailte an Ear',
+        two: 'mhark na Gearmailte an Ear',
+        few: 'mark na Gearmailte an Ear',
+        other: 'mark na Gearmailte an Ear',
+      );
+
+  @override
+  Currency get dem => Currency(
+        _locale,
+        'DEM',
+        'Mark Gearmailteach',
+        one: 'mhark Gearmailteach',
+        two: 'mhark Gearmailteach',
+        few: 'mark Gearmailteach',
+        other: 'mark Gearmailteach',
+      );
+
+  @override
+  Currency get djf => Currency(
+        _locale,
+        'DJF',
+        'Franc Diobùtaidheach',
+        one: 'fhranc Diobùtaidheach',
+        two: 'fhranc Diobùtaidheach',
+        few: 'franc Diobùtaidheach',
+        other: 'franc Diobùtaidheach',
+      );
+
+  @override
+  Currency get dkk => Currency(
+        _locale,
+        'DKK',
+        'Krone Danmhairgeach',
+        narrowSymbol: 'kr',
+        one: 'krone Danmhairgeach',
+        two: 'krone Danmhairgeach',
+        few: 'kroner Danmhairgeach',
+        other: 'krone Danmhairgeach',
+      );
+
+  @override
+  Currency get dop => Currency(
+        _locale,
+        'DOP',
+        'Peso Doiminiceach',
+        narrowSymbol: r'$',
+        one: 'pheso Doiminiceach',
+        two: 'pheso Doiminiceach',
+        few: 'pesothan Doiminiceach',
+        other: 'peso Doiminiceach',
+      );
+
+  @override
+  Currency get dzd => Currency(
+        _locale,
+        'DZD',
+        'Dinar Aildireach',
+        one: 'dinar Aildireach',
+        two: 'dhinar Aildireach',
+        few: 'dinar Aildireach',
+        other: 'dinar Aildireach',
+      );
+
+  @override
+  Currency get ecs => Currency(
+        _locale,
+        'ECS',
+        'Sucre Eacuadorach',
+        one: 'sucre Eacuadorach',
+        two: 'shucre Eacuadorach',
+        few: 'sucre Eacuadorach',
+        other: 'sucre Eacuadorach',
+      );
+
+  @override
+  Currency get ecv => Currency(
+        _locale,
+        'ECV',
+        'Aonad luach chunbhalaich Eacuadorach',
+        one: 'aonad luach chunbhalaich Eacuadorach',
+        two: 'aonad luach chunbhalaich Eacuadorach',
+        few: 'aonadan luach chunbhalaich Eacuadorach',
+        other: 'aonad luach chunbhalaich Eacuadorach',
+      );
+
+  @override
+  Currency get eek => Currency(
+        _locale,
+        'EEK',
+        'Kroon Eastoineach',
+        one: 'kroon Eastoineach',
+        two: 'kroon Eastoineach',
+        few: 'kroon Eastoineach',
+        other: 'kroon Eastoineach',
+      );
+
+  @override
+  Currency get egp => Currency(
+        _locale,
+        'EGP',
+        'Punnd Èipheiteach',
+        narrowSymbol: 'E£',
+        one: 'phunnd Èipheiteach',
+        two: 'phunnd Èipheiteach',
+        few: 'puinnd Èipheiteach',
+        other: 'punnd Èipheiteach',
+      );
+
+  @override
+  Currency get ern => Currency(
+        _locale,
+        'ERN',
+        'Nakfa Eartrach',
+        one: 'nakfa Eartrach',
+        two: 'nakfa Eartrach',
+        few: 'nakfa Eartrach',
+        other: 'nakfa Eartrach',
+      );
+
+  @override
+  Currency get esa => Currency(
+        _locale,
+        'ESA',
+        'Peseta Spàinnteach (cunntas A)',
+        one: 'pheseta Spàinnteach (cunntas A)',
+        two: 'pheseta Spàinnteach (cunntas A)',
+        few: 'peseta Spàinnteach (cunntas A)',
+        other: 'peseta Spàinnteach (cunntas A)',
+      );
+
+  @override
+  Currency get esb => Currency(
+        _locale,
+        'ESB',
+        'Peseta Spàinnteach (cunntas iompachail)',
+        one: 'pheseta Spàinnteach (cunntas iompachail)',
+        two: 'pheseta Spàinnteach (cunntas iompachail)',
+        few: 'peseta Spàinnteach (cunntas iompachail)',
+        other: 'peseta Spàinnteach (cunntas iompachail)',
+      );
+
+  @override
+  Currency get esp => Currency(
+        _locale,
+        'ESP',
+        'Peseta Spàinnteach',
+        narrowSymbol: '₧',
+        one: 'pheseta Spàinnteach',
+        two: 'pheseta Spàinnteach',
+        few: 'peseta Spàinnteach',
+        other: 'peseta Spàinnteach',
+      );
+
+  @override
+  Currency get etb => Currency(
+        _locale,
+        'ETB',
+        'Birr Itiopach',
+        one: 'bhirr Itiopach',
+        two: 'bhirr Itiopach',
+        few: 'birr Itiopach',
+        other: 'birr Itiopach',
+      );
+
+  @override
+  Currency get eur => Currency(
+        _locale,
+        'EUR',
+        'Eòro',
+        symbol: '€',
+        narrowSymbol: '€',
+        one: 'Eòro',
+        two: 'Eòro',
+        few: 'Eòrothan',
+        other: 'Eòro',
+      );
+
+  @override
+  Currency get fim => Currency(
+        _locale,
+        'FIM',
+        'Markka Fionnlannach',
+        one: 'mharkka Fionnlannach',
+        two: 'mharkka Fionnlannach',
+        few: 'markka Fionnlannach',
+        other: 'markka Fionnlannach',
+      );
+
+  @override
+  Currency get fjd => Currency(
+        _locale,
+        'FJD',
+        'Dolar Fìditheach',
+        narrowSymbol: r'$',
+        one: 'dolar Fìditheach',
+        two: 'dholar Fìditheach',
+        few: 'dolaran Fìditheach',
+        other: 'dolar Fìditheach',
+      );
+
+  @override
+  Currency get fkp => Currency(
+        _locale,
+        'FKP',
+        'Punnd Fàclannach',
+        narrowSymbol: '£',
+        one: 'phunnd Fàclannach',
+        two: 'phunnd Fàclannach',
+        few: 'puinnd Fhàclannach',
+        other: 'punnd Fàclannach',
+      );
+
+  @override
+  Currency get frf => Currency(
+        _locale,
+        'FRF',
+        'Franc Frangach',
+        one: 'fhranc Frangach',
+        two: 'fhranc Frangach',
+        few: 'franc Frangach',
+        other: 'franc Frangach',
+      );
+
+  @override
+  Currency get gbp => Currency(
+        _locale,
+        'GBP',
+        'Punnd Sasannach',
+        symbol: '£',
+        narrowSymbol: '£',
+        one: 'phunnd Sasannach',
+        two: 'phunnd Sasannach',
+        few: 'puinnd Shasannach',
+        other: 'punnd Sasannach',
+      );
+
+  @override
+  Currency get gek => Currency(
+        _locale,
+        'GEK',
+        'Kupon larit Cairtbheileach',
+        one: 'kupon larit Cairtbheileach',
+        two: 'kupon larit Cairtbheileach',
+        few: 'kupon larit Cairtbheileach',
+        other: 'kupon larit Cairtbheileach',
+      );
+
+  @override
+  Currency get gel => Currency(
+        _locale,
+        'GEL',
+        'Lari Cairtbheileach',
+        narrowSymbol: '₾',
+        one: 'lari Cairtbheileach',
+        two: 'lari Cairtbheileach',
+        few: 'lari Cairtbheileach',
+        other: 'lari Cairtbheileach',
+      );
+
+  @override
+  Currency get ghc => Currency(
+        _locale,
+        'GHC',
+        'Cedi Gànach (1979–2007)',
+        one: 'chedi Gànach (1979–2007)',
+        two: 'chedi Gànach (1979–2007)',
+        few: 'cedi Gànach (1979–2007)',
+        other: 'cedi Gànach (1979–2007)',
+      );
+
+  @override
+  Currency get ghs => Currency(
+        _locale,
+        'GHS',
+        'Cedi Gànach',
+        narrowSymbol: 'GH₵',
+        one: 'chedi Gànach',
+        two: 'chedi Gànach',
+        few: 'cedi Gànach',
+        other: 'cedi Gànach',
+      );
+
+  @override
+  Currency get gip => Currency(
+        _locale,
+        'GIP',
+        'Punnd Diobraltarach',
+        narrowSymbol: '£',
+        one: 'phunnd Diobraltarach',
+        two: 'phunnd Diobraltarach',
+        few: 'puinnd Dhiobraltarach',
+        other: 'punnd Diobraltarach',
+      );
+
+  @override
+  Currency get gmd => Currency(
+        _locale,
+        'GMD',
+        'Dalasi Gaimbitheach',
+        one: 'dalasi Gaimbitheach',
+        two: 'dhalasi Gaimbitheach',
+        few: 'dalasi Gaimbitheach',
+        other: 'dalasi Gaimbitheach',
+      );
+
+  @override
+  Currency get gnf => Currency(
+        _locale,
+        'GNF',
+        'Franc Ginitheach',
+        narrowSymbol: 'FG',
+        one: 'fhranc Ginitheach',
+        two: 'fhranc Ginitheach',
+        few: 'franc Ginitheach',
+        other: 'franc Ginitheach',
+      );
+
+  @override
+  Currency get gns => Currency(
+        _locale,
+        'GNS',
+        'Syli Ginitheach',
+        one: 'syli Ginitheach',
+        two: 'shyli Ginitheach',
+        few: 'syli Ginitheach',
+        other: 'syli Ginitheach',
+      );
+
+  @override
+  Currency get gqe => Currency(
+        _locale,
+        'GQE',
+        'Ekwele Gini Meadhan-Chriosaich',
+        one: 'ekwele Gini Meadhan-Chriosaich',
+        two: 'ekwele Gini Meadhan-Chriosaich',
+        few: 'ekwele Gini Meadhan-Chriosaich',
+        other: 'ekwele Gini Meadhan-Chriosaich',
+      );
+
+  @override
+  Currency get grd => Currency(
+        _locale,
+        'GRD',
+        'Drachma Greugach',
+        one: 'dhrachma Greugach',
+        two: 'dhrachma Greugach',
+        few: 'drachma Greugach',
+        other: 'drachma Greugach',
+      );
+
+  @override
+  Currency get gtq => Currency(
+        _locale,
+        'GTQ',
+        'Quetzal Guatamalach',
+        narrowSymbol: 'Q',
+        one: 'quetzal Guatamalach',
+        two: 'quetzal Guatamalach',
+        few: 'quetzal Guatamalach',
+        other: 'quetzal Guatamalach',
+      );
+
+  @override
+  Currency get gwe => Currency(
+        _locale,
+        'GWE',
+        'Escudo Gini na Portagaile',
+        one: 'escudo Gini na Portagaile',
+        two: 'escudo Gini na Portagaile',
+        few: 'escudo Gini na Portagaile',
+        other: 'escudo Gini na Portagaile',
+      );
+
+  @override
+  Currency get gwp => Currency(
+        _locale,
+        'GWP',
+        'Peso Gini-Biosothach',
+        one: 'pheso Gini-Biosothach',
+        two: 'pheso Gini-Biosothach',
+        few: 'pesothan Gini-Biosothach',
+        other: 'peso Gini-Biosothach',
+      );
+
+  @override
+  Currency get gyd => Currency(
+        _locale,
+        'GYD',
+        'Dolar Guidheànach',
+        narrowSymbol: r'$',
+        one: 'dolar Guidheànach',
+        two: 'dholar Guidheànach',
+        few: 'dolaran Guidheànach',
+        other: 'dolar Guidheànach',
+      );
+
+  @override
+  Currency get hkd => Currency(
+        _locale,
+        'HKD',
+        'Dolar Hong Kong',
+        symbol: r'HK$',
+        narrowSymbol: r'$',
+        one: 'dolar Hong Kong',
+        two: 'dholar Hong Kong',
+        few: 'dolaran Hong Kong',
+        other: 'dolar Hong Kong',
+      );
+
+  @override
+  Currency get hnl => Currency(
+        _locale,
+        'HNL',
+        'Lempira Hondùrach',
+        narrowSymbol: 'L',
+        one: 'lempira Hondùrach',
+        two: 'lempira Hondùrach',
+        few: 'lempira Hondùrach',
+        other: 'lempira Hondùrach',
+      );
+
+  @override
+  Currency get hrd => Currency(
+        _locale,
+        'HRD',
+        'Dinar Cròthaiseach',
+        one: 'dinar Cròthaiseach',
+        two: 'dhinar Cròthaiseach',
+        few: 'dinar Cròthaiseach',
+        other: 'dinar Cròthaiseach',
+      );
+
+  @override
+  Currency get hrk => Currency(
+        _locale,
+        'HRK',
+        'Kuna Cròthaiseach',
+        narrowSymbol: 'kn',
+        one: 'kuna Cròthaiseach',
+        two: 'kuna Cròthaiseach',
+        few: 'kuna Cròthaiseach',
+        other: 'kuna Cròthaiseach',
+      );
+
+  @override
+  Currency get htg => Currency(
+        _locale,
+        'HTG',
+        'Gourde Haidhteach',
+        one: 'ghourde Haidhteach',
+        two: 'ghourde Haidhteach',
+        few: 'gourde Haidhteach',
+        other: 'gourde Haidhteach',
+      );
+
+  @override
+  Currency get huf => Currency(
+        _locale,
+        'HUF',
+        'Forint Ungaireach',
+        narrowSymbol: 'Ft',
+        one: 'fhorint Ungaireach',
+        two: 'fhorint Ungaireach',
+        few: 'forint Ungaireach',
+        other: 'forint Ungaireach',
+      );
+
+  @override
+  Currency get idr => Currency(
+        _locale,
+        'IDR',
+        'Rupiah Innd-Innseach',
+        narrowSymbol: 'Rp',
+        one: 'rupiah Innd-Innseach',
+        two: 'rupiah Innd-Innseach',
+        few: 'rupiah Innd-Innseach',
+        other: 'rupiah Innd-Innseach',
+      );
+
+  @override
+  Currency get iep => Currency(
+        _locale,
+        'IEP',
+        'Punnd Èireannach',
+        one: 'phunnd Èireannach',
+        two: 'phunnd Èireannach',
+        few: 'puinnd Èireannach',
+        other: 'punnd Èireannach',
+      );
+
+  @override
+  Currency get ilp => Currency(
+        _locale,
+        'ILP',
+        'Punnd Iosraeleach',
+        one: 'phunnd Iosraeleach',
+        two: 'phunnd Iosraeleach',
+        few: 'puinnd Iosraeleach',
+        other: 'punnd Iosraeleach',
+      );
+
+  @override
+  Currency get ilr => Currency(
+        _locale,
+        'ILR',
+        'Secel Iosraeleach (1980–1985)',
+        one: 'shecel Iosraeleach (1980–1985)',
+        two: 'shecel Iosraeleach (1980–1985)',
+        few: 'secelean Iosraeleach (1980–1985)',
+        other: 'secel Iosraeleach (1980–1985)',
+      );
+
+  @override
+  Currency get ils => Currency(
+        _locale,
+        'ILS',
+        'Secel ùr Iosraeleach',
+        symbol: '₪',
+        narrowSymbol: '₪',
+        one: 'shecel ùr Iosraeleach',
+        two: 'shecel ùr Iosraeleach',
+        few: 'secelean ùra Iosraeleach',
+        other: 'secel ùr Iosraeleach',
+      );
+
+  @override
+  Currency get inr => Currency(
+        _locale,
+        'INR',
+        'Rupee Innseanach',
+        symbol: '₹',
+        narrowSymbol: '₹',
+        one: 'rupee Innseanach',
+        two: 'rupee Innseanach',
+        few: 'rupee Innseanach',
+        other: 'rupee Innseanach',
+      );
+
+  @override
+  Currency get iqd => Currency(
+        _locale,
+        'IQD',
+        'Dinar Ioràcach',
+        one: 'dinar Ioràcach',
+        two: 'dhinar Ioràcach',
+        few: 'dinar Ioràcach',
+        other: 'dinar Ioràcach',
+      );
+
+  @override
+  Currency get irr => Currency(
+        _locale,
+        'IRR',
+        'Rial Iorànach',
+        one: 'rial Iorànach',
+        two: 'rial Iorànach',
+        few: 'rial Iorànach',
+        other: 'rial Iorànach',
+      );
+
+  @override
+  Currency get isj => Currency(
+        _locale,
+        'ISJ',
+        'Króna Innis Tìleach (1918–1981)',
+        one: 'króna Innis Tìleach (1918–1981)',
+        two: 'króna Innis Tìleach (1918–1981)',
+        few: 'krónur Innis Tìleach (1918–1981)',
+        other: 'króna Innis Tìleach (1918–1981)',
+      );
+
+  @override
+  Currency get isk => Currency(
+        _locale,
+        'ISK',
+        'Króna Innis Tìleach',
+        narrowSymbol: 'kr',
+        one: 'króna Innis Tìleach',
+        two: 'króna Innis Tìleach',
+        few: 'krónur Innis Tìleach',
+        other: 'króna Innis Tìleach',
+      );
+
+  @override
+  Currency get itl => Currency(
+        _locale,
+        'ITL',
+        'Lira Eadailteach',
+        one: 'lira Eadailteach',
+        two: 'lira Eadailteach',
+        few: 'lira Eadailteach',
+        other: 'lira Eadailteach',
+      );
+
+  @override
+  Currency get jmd => Currency(
+        _locale,
+        'JMD',
+        'Dolar Diameugach',
+        narrowSymbol: r'$',
+        one: 'dolar Diameugach',
+        two: 'dholar Diameugach',
+        few: 'dolaran Diameugach',
+        other: 'dolar Diameugach',
+      );
+
+  @override
+  Currency get jod => Currency(
+        _locale,
+        'JOD',
+        'Dinar Iòrdanach',
+        one: 'dinar Iòrdanach',
+        two: 'dhinar Iòrdanach',
+        few: 'dinar Iòrdanach',
+        other: 'dinar Iòrdanach',
+      );
+
+  @override
+  Currency get jpy => Currency(
+        _locale,
+        'JPY',
+        'Yen Seapanach',
+        symbol: 'JP¥',
+        narrowSymbol: '¥',
+        one: 'yen Seapanach',
+        two: 'yen Seapanach',
+        few: 'yen Seapanach',
+        other: 'yen Seapanach',
+      );
+
+  @override
+  Currency get kes => Currency(
+        _locale,
+        'KES',
+        'Shilling Ceineach',
+        one: 'shilling Ceineach',
+        two: 'shilling Ceineach',
+        few: 'shilling Ceineach',
+        other: 'shilling Ceineach',
+      );
+
+  @override
+  Currency get kgs => Currency(
+        _locale,
+        'KGS',
+        'Som Cìorgasach',
+        narrowSymbol: '⃀',
+        one: 'som Cìorgasach',
+        two: 'shom Cìorgasach',
+        few: 'som Cìorgasach',
+        other: 'som Cìorgasach',
+      );
+
+  @override
+  Currency get khr => Currency(
+        _locale,
+        'KHR',
+        'Riel Cambuideach',
+        narrowSymbol: '៛',
+        one: 'riel Cambuideach',
+        two: 'riel Cambuideach',
+        few: 'riel Cambuideach',
+        other: 'riel Cambuideach',
+      );
+
+  @override
+  Currency get kmf => Currency(
+        _locale,
+        'KMF',
+        'Franc Comorosach',
+        narrowSymbol: 'CF',
+        one: 'fhranc Comorosach',
+        two: 'fhranc Comorosach',
+        few: 'franc Comorosach',
+        other: 'franc Comorosach',
+      );
+
+  @override
+  Currency get kpw => Currency(
+        _locale,
+        'KPW',
+        'Won Choirèa a Tuath',
+        narrowSymbol: '₩',
+        one: 'won Choirèa a Tuath',
+        two: 'won Choirèa a Tuath',
+        few: 'won Choirèa a Tuath',
+        other: 'won Choirèa a Tuath',
+      );
+
+  @override
+  Currency get krh => Currency(
+        _locale,
+        'KRH',
+        'Hwan Choirèa a Deas (1953–1962)',
+        one: 'hwan Choirèa a Deas (1953–1962)',
+        two: 'hwan Choirèa a Deas (1953–1962)',
+        few: 'hwan Choirèa a Deas (1953–1962)',
+        other: 'hwan Choirèa a Deas (1953–1962)',
+      );
+
+  @override
+  Currency get kro => Currency(
+        _locale,
+        'KRO',
+        'Won Choirèa a Deas (1945–1953)',
+        one: 'won Choirèa a Deas (1945–1953)',
+        two: 'won Choirèa a Deas (1945–1953)',
+        few: 'won Choirèa a Deas (1945–1953)',
+        other: 'won Choirèa a Deas (1945–1953)',
+      );
+
+  @override
+  Currency get krw => Currency(
+        _locale,
+        'KRW',
+        'Won Choirèa a Deas',
+        symbol: '₩',
+        narrowSymbol: '₩',
+        one: 'won Choirèa a Deas',
+        two: 'won Choirèa a Deas',
+        few: 'won Choirèa a Deas',
+        other: 'won Choirèa a Deas',
+      );
+
+  @override
+  Currency get kwd => Currency(
+        _locale,
+        'KWD',
+        'Dinar Cuibhèiteach',
+        one: 'dinar Cuibhèiteach',
+        two: 'dhinar Cuibhèiteach',
+        few: 'dinar Cuibhèiteach',
+        other: 'dinar Cuibhèiteach',
+      );
+
+  @override
+  Currency get kyd => Currency(
+        _locale,
+        'KYD',
+        'Dolar Caimeanach',
+        narrowSymbol: r'$',
+        one: 'dolar Caimeanach',
+        two: 'dholar Caimeanach',
+        few: 'dolaran Caimeanach',
+        other: 'dolar Caimeanach',
+      );
+
+  @override
+  Currency get kzt => Currency(
+        _locale,
+        'KZT',
+        'Tenge Casachach',
+        narrowSymbol: '₸',
+        one: 'tenge Casachach',
+        two: 'thenge Casachach',
+        few: 'tenge Casachach',
+        other: 'tenge Casachach',
+      );
+
+  @override
+  Currency get lak => Currency(
+        _locale,
+        'LAK',
+        'Kip Làthosach',
+        narrowSymbol: '₭',
+        one: 'kip Làthosach',
+        two: 'kip Làthosach',
+        few: 'kip Làthosach',
+        other: 'kip Làthosach',
+      );
+
+  @override
+  Currency get lbp => Currency(
+        _locale,
+        'LBP',
+        'Punnd Leabanach',
+        narrowSymbol: 'L£',
+        one: 'phunnd Leabanach',
+        two: 'phunnd Leabanach',
+        few: 'puinnd Leabanach',
+        other: 'punnd Leabanach',
+      );
+
+  @override
+  Currency get lkr => Currency(
+        _locale,
+        'LKR',
+        'Rupee Sri Lancach',
+        narrowSymbol: 'Rs',
+        one: 'rupee Sri Lancach',
+        two: 'rupee Sri Lancach',
+        few: 'rupee Sri Lancach',
+        other: 'rupee Sri Lancach',
+      );
+
+  @override
+  Currency get lrd => Currency(
+        _locale,
+        'LRD',
+        'Dolar Libèireach',
+        narrowSymbol: r'$',
+        one: 'dolar Libèireach',
+        two: 'dholar Libèireach',
+        few: 'dolaran Libèireach',
+        other: 'dolar Libèireach',
+      );
+
+  @override
+  Currency get lsl => Currency(
+        _locale,
+        'LSL',
+        'Loti Leasotach',
+        one: 'loti Leasotach',
+        two: 'loti Leasotach',
+        few: 'loti Leasotach',
+        other: 'loti Leasotach',
+      );
+
+  @override
+  Currency get ltl => Currency(
+        _locale,
+        'LTL',
+        'Litas Liotuaineach',
+        narrowSymbol: 'Lt',
+        one: 'litas Liotuaineach',
+        two: 'litas Liotuaineach',
+        few: 'litas Liotuaineach',
+        other: 'litas Liotuaineach',
+      );
+
+  @override
+  Currency get ltt => Currency(
+        _locale,
+        'LTT',
+        'Talonas Liotuaineach',
+        one: 'talonas Liotuaineach',
+        two: 'thalonas Liotuaineach',
+        few: 'talonas Liotuaineach',
+        other: 'talonas Liotuaineach',
+      );
+
+  @override
+  Currency get luc => Currency(
+        _locale,
+        'LUC',
+        'Franc iompachail Lugsamburgach',
+        one: 'fhranc iompachail Lugsamburgach',
+        two: 'fhranc iompachail Lugsamburgach',
+        few: 'franc iompachail Lugsamburgach',
+        other: 'franc iompachail Lugsamburgach',
+      );
+
+  @override
+  Currency get luf => Currency(
+        _locale,
+        'LUF',
+        'Franc Lugsamburgach',
+        one: 'fhranc Lugsamburgach',
+        two: 'fhranc Lugsamburgach',
+        few: 'franc Lugsamburgach',
+        other: 'franc Lugsamburgach',
+      );
+
+  @override
+  Currency get lul => Currency(
+        _locale,
+        'LUL',
+        'Franc ionmhasail Lugsamburgach',
+        one: 'fhranc ionmhasail Lugsamburgach',
+        two: 'fhranc ionmhasail Lugsamburgach',
+        few: 'franc ionmhasail Lugsamburgach',
+        other: 'franc ionmhasail Lugsamburgach',
+      );
+
+  @override
+  Currency get lvl => Currency(
+        _locale,
+        'LVL',
+        'Lats Laitbheach',
+        narrowSymbol: 'Ls',
+        one: 'lats Laitbheach',
+        two: 'lats Laitbheach',
+        few: 'lats Laitbheach',
+        other: 'lats Laitbheach',
+      );
+
+  @override
+  Currency get lvr => Currency(
+        _locale,
+        'LVR',
+        'Rùbal Laitbheach',
+        one: 'rùbal Laitbheach',
+        two: 'rùbal Laitbheach',
+        few: 'rùbalan Laitbheach',
+        other: 'rùbal Laitbheach',
+      );
+
+  @override
+  Currency get lyd => Currency(
+        _locale,
+        'LYD',
+        'Dinar Libitheach',
+        one: 'dinar Libitheach',
+        two: 'dhinar Libitheach',
+        few: 'dinar Libitheach',
+        other: 'dinar Libitheach',
+      );
+
+  @override
+  Currency get mad => Currency(
+        _locale,
+        'MAD',
+        'Dirham Morocach',
+        one: 'dirham Morocach',
+        two: 'dhirham Morocach',
+        few: 'dirham Morocach',
+        other: 'dirham Morocach',
+      );
+
+  @override
+  Currency get maf => Currency(
+        _locale,
+        'MAF',
+        'Franc Morocach',
+        one: 'fhranc Morocach',
+        two: 'fhranc Morocach',
+        few: 'franc Morocach',
+        other: 'franc Morocach',
+      );
+
+  @override
+  Currency get mcf => Currency(
+        _locale,
+        'MCF',
+        'Franc Monacach',
+        one: 'fhranc Monacach',
+        two: 'fhranc Monacach',
+        few: 'franc Monacach',
+        other: 'franc Monacach',
+      );
+
+  @override
+  Currency get mdc => Currency(
+        _locale,
+        'MDC',
+        'Cupon Moldobhach',
+        one: 'chupon Moldobhach',
+        two: 'chupon Moldobhach',
+        few: 'cupon Moldobhach',
+        other: 'cupon Moldobhach',
+      );
+
+  @override
+  Currency get mdl => Currency(
+        _locale,
+        'MDL',
+        'Leu Moldobhach',
+        one: 'leu Moldobhach',
+        two: 'leu Moldobhach',
+        few: 'leu Moldobhach',
+        other: 'leu Moldobhach',
+      );
+
+  @override
+  Currency get mga => Currency(
+        _locale,
+        'MGA',
+        'Ariary Madagasgarach',
+        narrowSymbol: 'Ar',
+        one: 'ariary Madagasgarach',
+        two: 'ariary Madagasgarach',
+        few: 'ariary Madagasgarach',
+        other: 'ariary Madagasgarach',
+      );
+
+  @override
+  Currency get mgf => Currency(
+        _locale,
+        'MGF',
+        'Franc Madagasgarach',
+        one: 'fhranc Madagasgarach',
+        two: 'fhranc Madagasgarach',
+        few: 'franc Madagasgarach',
+        other: 'franc Madagasgarach',
+      );
+
+  @override
+  Currency get mkd => Currency(
+        _locale,
+        'MKD',
+        'Denar Masadonach',
+        one: 'denar Masadonach',
+        two: 'dhenar Masadonach',
+        few: 'denar Masadonach',
+        other: 'denar Masadonach',
+      );
+
+  @override
+  Currency get mkn => Currency(
+        _locale,
+        'MKN',
+        'Denar Masadonach (1992–1993)',
+        one: 'denar Masadonach (1992–1993)',
+        two: 'dhenar Masadonach (1992–1993)',
+        few: 'denar Masadonach (1992–1993)',
+        other: 'denar Masadonach (1992–1993)',
+      );
+
+  @override
+  Currency get mlf => Currency(
+        _locale,
+        'MLF',
+        'Franc Màilitheach',
+        one: 'fhranc Màilitheach',
+        two: 'fhranc Màilitheach',
+        few: 'franc Màilitheach',
+        other: 'franc Màilitheach',
+      );
+
+  @override
+  Currency get mmk => Currency(
+        _locale,
+        'MMK',
+        'Kyat Miànmarach',
+        narrowSymbol: 'K',
+        one: 'kyat Miànmarach',
+        two: 'kyat Miànmarach',
+        few: 'kyat Miànmarach',
+        other: 'kyat Miànmarach',
+      );
+
+  @override
+  Currency get mnt => Currency(
+        _locale,
+        'MNT',
+        'Tugrik Mongolach',
+        narrowSymbol: '₮',
+        one: 'tugrik Mongolach',
+        two: 'thugrik Mongolach',
+        few: 'tugrik Mongolach',
+        other: 'tugrik Mongolach',
+      );
+
+  @override
+  Currency get mop => Currency(
+        _locale,
+        'MOP',
+        'Pataca Macàthuach',
+        one: 'phataca Macàthuach',
+        two: 'phataca Macàthuach',
+        few: 'pataca Macàthuach',
+        other: 'pataca Macàthuach',
+      );
+
+  @override
+  Currency get mro => Currency(
+        _locale,
+        'MRO',
+        'Ouguiya Moratàineach (1973–2017)',
+        one: 'ouguiya Moratàineach (1973–2017)',
+        two: 'ouguiya Moratàineach (1973–2017)',
+        few: 'ouguiya Moratàineach (1973–2017)',
+        other: 'ouguiya Moratàineach (1973–2017)',
+      );
+
+  @override
+  Currency get mru => Currency(
+        _locale,
+        'MRU',
+        'Ouguiya Moratàineach',
+        one: 'ouguiya Moratàineach',
+        two: 'ouguiya Moratàineach',
+        few: 'ouguiya Moratàineach',
+        other: 'ouguiya Moratàineach',
+      );
+
+  @override
+  Currency get mtl => Currency(
+        _locale,
+        'MTL',
+        'Lira Maltach',
+        one: 'lira Maltach',
+        two: 'lira Maltach',
+        few: 'lira Maltach',
+        other: 'lira Maltach',
+      );
+
+  @override
+  Currency get mtp => Currency(
+        _locale,
+        'MTP',
+        'Punnd Maltach',
+        one: 'phunnd Maltach',
+        two: 'phunnd Maltach',
+        few: 'puinnd Mhaltach',
+        other: 'punnd Maltach',
+      );
+
+  @override
+  Currency get mur => Currency(
+        _locale,
+        'MUR',
+        'Rupee Moiriseasach',
+        narrowSymbol: 'Rs',
+        one: 'rupee Moiriseasach',
+        two: 'rupee Moiriseasach',
+        few: 'rupee Moiriseasach',
+        other: 'rupee Moiriseasach',
+      );
+
+  @override
+  Currency get mvp => Currency(
+        _locale,
+        'MVP',
+        'Rupee Maladaibheach',
+        one: 'rupee Maladaibheach',
+        two: 'rupee Maladaibheach',
+        few: 'rupee Maladaibheach',
+        other: 'rupee Maladaibheach',
+      );
+
+  @override
+  Currency get mvr => Currency(
+        _locale,
+        'MVR',
+        'Rufiyaa Maladaibheach',
+        one: 'rufiyaa Maladaibheach',
+        two: 'rufiyaa Maladaibheach',
+        few: 'rufiyaa Maladaibheach',
+        other: 'rufiyaa Maladaibheach',
+      );
+
+  @override
+  Currency get mwk => Currency(
+        _locale,
+        'MWK',
+        'Kwacha Malabhaidheach',
+        one: 'kwacha Malabhaidheach',
+        two: 'kwacha Malabhaidheach',
+        few: 'kwacha Malabhaidheach',
+        other: 'kwacha Malabhaidheach',
+      );
+
+  @override
+  Currency get mxn => Currency(
+        _locale,
+        'MXN',
+        'Peso Meagsagach',
+        symbol: r'MX$',
+        narrowSymbol: r'$',
+        one: 'pheso Meagsagach',
+        two: 'pheso Meagsagach',
+        few: 'pesothan Meagsagach',
+        other: 'peso Meagsagach',
+      );
+
+  @override
+  Currency get mxp => Currency(
+        _locale,
+        'MXP',
+        'Peso airgid Meagsagach (1861–1992)',
+        one: 'pheso airgid Meagsagach (1861–1992)',
+        two: 'pheso airgid Meagsagach (1861–1992)',
+        few: 'pesothan airgid Meagsagach (1861–1992)',
+        other: 'peso airgid Meagsagach (1861–1992)',
+      );
+
+  @override
+  Currency get mxv => Currency(
+        _locale,
+        'MXV',
+        'Aonad inbheistidh Meagsagach',
+        one: 'aonad inbheistidh Meagsagach',
+        two: 'aonad inbheistidh Meagsagach',
+        few: 'aonadan inbheistidh Meagsagach',
+        other: 'aonad inbheistidh Meagsagach',
+      );
+
+  @override
+  Currency get myr => Currency(
+        _locale,
+        'MYR',
+        'Ringgit Malaidheach',
+        narrowSymbol: 'RM',
+        one: 'ringgit Malaidheach',
+        two: 'ringgit Malaidheach',
+        few: 'ringgit Malaidheach',
+        other: 'ringgit Malaidheach',
+      );
+
+  @override
+  Currency get mze => Currency(
+        _locale,
+        'MZE',
+        'Escudo Mòsaimbiceach',
+        one: 'escudo Mòsaimbiceach',
+        two: 'escudo Mòsaimbiceach',
+        few: 'escudo Mòsaimbiceach',
+        other: 'escudo Mòsaimbiceach',
+      );
+
+  @override
+  Currency get mzm => Currency(
+        _locale,
+        'MZM',
+        'Metical Mòsaimbiceach (1980–2006)',
+        one: 'mhetical Mòsaimbiceach (1980–2006)',
+        two: 'mhetical Mòsaimbiceach (1980–2006)',
+        few: 'metical Mòsaimbiceach (1980–2006)',
+        other: 'metical Mòsaimbiceach (1980–2006)',
+      );
+
+  @override
+  Currency get mzn => Currency(
+        _locale,
+        'MZN',
+        'Metical Mòsaimbiceach',
+        one: 'mhetical Mòsaimbiceach',
+        two: 'mhetical Mòsaimbiceach',
+        few: 'metical Mòsaimbiceach',
+        other: 'metical Mòsaimbiceach',
+      );
+
+  @override
+  Currency get nad => Currency(
+        _locale,
+        'NAD',
+        'Dolar Naimibitheach',
+        narrowSymbol: r'$',
+        one: 'dolar Naimibitheach',
+        two: 'dholar Naimibitheach',
+        few: 'dolaran Naimibitheach',
+        other: 'dolar Naimibitheach',
+      );
+
+  @override
+  Currency get ngn => Currency(
+        _locale,
+        'NGN',
+        'Naira Nigèiriach',
+        narrowSymbol: '₦',
+        one: 'naira Nigèiriach',
+        two: 'naira Nigèiriach',
+        few: 'naira Nigèiriach',
+        other: 'naira Nigèiriach',
+      );
+
+  @override
+  Currency get nic => Currency(
+        _locale,
+        'NIC',
+        'Córdoba Niocaragach (1988–1991)',
+        one: 'chórdoba Niocaragach (1988–1991)',
+        two: 'chórdoba Niocaragach (1988–1991)',
+        few: 'córdoba Niocaragach (1988–1991)',
+        other: 'córdoba Niocaragach (1988–1991)',
+      );
+
+  @override
+  Currency get nio => Currency(
+        _locale,
+        'NIO',
+        'Córdoba Niocaragach',
+        narrowSymbol: r'C$',
+        one: 'chórdoba Niocaragach',
+        two: 'chórdoba Niocaragach',
+        few: 'córdoba Niocaragach',
+        other: 'córdoba Niocaragach',
+      );
+
+  @override
+  Currency get nlg => Currency(
+        _locale,
+        'NLG',
+        'Gulden Duitseach',
+        one: 'ghulden Duitseach',
+        two: 'ghulden Duitseach',
+        few: 'gulden Duitseach',
+        other: 'gulden Duitseach',
+      );
+
+  @override
+  Currency get nok => Currency(
+        _locale,
+        'NOK',
+        'Krone Nirribheach',
+        narrowSymbol: 'kr',
+        one: 'krone Nirribheach',
+        two: 'krone Nirribheach',
+        few: 'kroner Nirribheach',
+        other: 'krone Nirribheach',
+      );
+
+  @override
+  Currency get npr => Currency(
+        _locale,
+        'NPR',
+        'Rupee Neapàlach',
+        narrowSymbol: 'Rs',
+        one: 'rupee Neapàlach',
+        two: 'rupee Neapàlach',
+        few: 'rupee Neapàlach',
+        other: 'rupee Neapàlach',
+      );
+
+  @override
+  Currency get nzd => Currency(
+        _locale,
+        'NZD',
+        'Dolar Shealainn Nuaidh',
+        symbol: r'NZ$',
+        narrowSymbol: r'$',
+        one: 'dolar Shealainn Nuaidh',
+        two: 'dholar Shealainn Nuaidh',
+        few: 'dolaran Shealainn Nuaidh',
+        other: 'dolar Shealainn Nuaidh',
+      );
+
+  @override
+  Currency get omr => Currency(
+        _locale,
+        'OMR',
+        'Rial Omànach',
+        one: 'rial Omànach',
+        two: 'rial Omànach',
+        few: 'rial Omànach',
+        other: 'rial Omànach',
+      );
+
+  @override
+  Currency get pab => Currency(
+        _locale,
+        'PAB',
+        'Balboa Panamach',
+        one: 'bhalboa Panamach',
+        two: 'bhalboa Panamach',
+        few: 'balboa Panamach',
+        other: 'balboa Panamach',
+      );
+
+  @override
+  Currency get pei => Currency(
+        _locale,
+        'PEI',
+        'Inti Pearùthach',
+        one: 'inti Pearùthach',
+        two: 'inti Pearùthach',
+        few: 'inti Pearùthach',
+        other: 'inti Pearùthach',
+      );
+
+  @override
+  Currency get pen => Currency(
+        _locale,
+        'PEN',
+        'Sol Pearùthach',
+        one: 'sol Pearùthach',
+        two: 'shol Pearùthach',
+        few: 'sol Pearùthach',
+        other: 'sol Pearùthach',
+      );
+
+  @override
+  Currency get pes => Currency(
+        _locale,
+        'PES',
+        'Sol Pearùthach (1863–1965)',
+        one: 'sol Pearùthach (1863–1965)',
+        two: 'shol Pearùthach (1863–1965)',
+        few: 'sol Pearùthach (1863–1965)',
+        other: 'sol Pearùthach (1863–1965)',
+      );
+
+  @override
+  Currency get pgk => Currency(
+        _locale,
+        'PGK',
+        'Kina Ghini Nuaidh Paputhaiche',
+        one: 'kina Ghini Nuaidh Paputhaiche',
+        two: 'kina Ghini Nuaidh Paputhaiche',
+        few: 'kina Ghini Nuaidh Paputhaiche',
+        other: 'kina Ghini Nuaidh Paputhaiche',
+      );
+
+  @override
+  Currency get php => Currency(
+        _locale,
+        'PHP',
+        'Peso Filipineach',
+        symbol: 'PHP',
+        narrowSymbol: '₱',
+        one: 'pheso Filipineach',
+        two: 'pheso Filipineach',
+        few: 'pesothan Filipineach',
+        other: 'peso Filipineach',
+      );
+
+  @override
+  Currency get pkr => Currency(
+        _locale,
+        'PKR',
+        'Rupee Pagastànach',
+        narrowSymbol: 'Rs',
+        one: 'rupee Pagastànach',
+        two: 'rupee Pagastànach',
+        few: 'rupee Pagastànach',
+        other: 'rupee Pagastànach',
+      );
+
+  @override
+  Currency get pln => Currency(
+        _locale,
+        'PLN',
+        'Złoty Pòlainneach',
+        narrowSymbol: 'zł',
+        one: 'złoty Pòlainneach',
+        two: 'złoty Pòlainneach',
+        few: 'złoty Pòlainneach',
+        other: 'złoty Pòlainneach',
+      );
+
+  @override
+  Currency get plz => Currency(
+        _locale,
+        'PLZ',
+        'Złoty Pòlainneach (1950–1995)',
+        one: 'złoty Pòlainneach (1950–1995)',
+        two: 'złoty Pòlainneach (1950–1995)',
+        few: 'złoty Pòlainneach (1950–1995)',
+        other: 'złoty Pòlainneach (1950–1995)',
+      );
+
+  @override
+  Currency get pte => Currency(
+        _locale,
+        'PTE',
+        'Escudo Portagaileach',
+        one: 'escudo Portagaileach',
+        two: 'escudo Portagaileach',
+        few: 'escudo Portagaileach',
+        other: 'escudo Portagaileach',
+      );
+
+  @override
+  Currency get pyg => Currency(
+        _locale,
+        'PYG',
+        'Guaraní Paraguaidheach',
+        narrowSymbol: '₲',
+        one: 'ghuaraní Paraguaidheach',
+        two: 'ghuaraní Paraguaidheach',
+        few: 'guaraní Paraguaidheach',
+        other: 'guaraní Paraguaidheach',
+      );
+
+  @override
+  Currency get qar => Currency(
+        _locale,
+        'QAR',
+        'Rial Catarach',
+        one: 'rial Catarach',
+        two: 'rial Catarach',
+        few: 'rial Catarach',
+        other: 'rial Catarach',
+      );
+
+  @override
+  Currency get rhd => Currency(
+        _locale,
+        'RHD',
+        'Dolar Rhodesiach',
+        one: 'dolar Rhodesiach',
+        two: 'dholar Rhodesiach',
+        few: 'dolaran Rhodesiach',
+        other: 'dolar Rhodesiach',
+      );
+
+  @override
+  Currency get rol => Currency(
+        _locale,
+        'ROL',
+        'Leu Romàineach (1952–2006)',
+        one: 'leu Romàineach (1952–2006)',
+        two: 'leu Romàineach (1952–2006)',
+        few: 'leu Romàineach (1952–2006)',
+        other: 'leu Romàineach (1952–2006)',
+      );
+
+  @override
+  Currency get ron => Currency(
+        _locale,
+        'RON',
+        'Leu Romàineach',
+        narrowSymbol: 'leu',
+        one: 'leu Romàineach',
+        two: 'leu Romàineach',
+        few: 'leu Romàineach',
+        other: 'leu Romàineach',
+      );
+
+  @override
+  Currency get rsd => Currency(
+        _locale,
+        'RSD',
+        'Dinar Sèirbeach',
+        one: 'dinar Sèirbeach',
+        two: 'dhinar Sèirbeach',
+        few: 'dinar Sèirbeach',
+        other: 'dinar Sèirbeach',
+      );
+
+  @override
+  Currency get rub => Currency(
+        _locale,
+        'RUB',
+        'Rùbal Ruiseach',
+        narrowSymbol: '₽',
+        one: 'rùbal Ruiseach',
+        two: 'rùbal Ruiseach',
+        few: 'rùbalan Ruiseach',
+        other: 'rùbal Ruiseach',
+      );
+
+  @override
+  Currency get rur => Currency(
+        _locale,
+        'RUR',
+        'Rùbal Ruiseach (1991–1998)',
+        narrowSymbol: 'р.',
+        one: 'rùbal Ruiseach (1991–1998)',
+        two: 'rùbal Ruiseach (1991–1998)',
+        few: 'rùbalan Ruiseach (1991–1998)',
+        other: 'rùbal Ruiseach (1991–1998)',
+      );
+
+  @override
+  Currency get rwf => Currency(
+        _locale,
+        'RWF',
+        'Franc Rubhandach',
+        narrowSymbol: 'RF',
+        one: 'fhranc Rubhandach',
+        two: 'fhranc Rubhandach',
+        few: 'franc Rubhandach',
+        other: 'franc Rubhandach',
+      );
+
+  @override
+  Currency get sar => Currency(
+        _locale,
+        'SAR',
+        'Riyal Sabhdach',
+        one: 'riyal Sabhdach',
+        two: 'riyal Sabhdach',
+        few: 'riyal Sabhdach',
+        other: 'riyal Sabhdach',
+      );
+
+  @override
+  Currency get sbd => Currency(
+        _locale,
+        'SBD',
+        'Dolar Eileanan Sholaimh',
+        narrowSymbol: r'$',
+        one: 'dolar Eileanan Sholaimh',
+        two: 'dholar Eileanan Sholaimh',
+        few: 'dolaran Eileanan Sholaimh',
+        other: 'dolar Eileanan Sholaimh',
+      );
+
+  @override
+  Currency get scr => Currency(
+        _locale,
+        'SCR',
+        'Rupee Seiseallach',
+        one: 'rupee Seiseallach',
+        two: 'rupee Seiseallach',
+        few: 'rupee Seiseallach',
+        other: 'rupee Seiseallach',
+      );
+
+  @override
+  Currency get sdd => Currency(
+        _locale,
+        'SDD',
+        'Dinar Sudànach (1992–2007)',
+        one: 'dinar Sudànach (1992–2007)',
+        two: 'dhinar Sudànach (1992–2007)',
+        few: 'dinar Sudànach (1992–2007)',
+        other: 'dinar Sudànach (1992–2007)',
+      );
+
+  @override
+  Currency get sdg => Currency(
+        _locale,
+        'SDG',
+        'Punnd Sudànach',
+        one: 'phunnd Sudànach',
+        two: 'phunnd Sudànach',
+        few: 'puinnd Shudànach',
+        other: 'punnd Sudànach',
+      );
+
+  @override
+  Currency get sdp => Currency(
+        _locale,
+        'SDP',
+        'Punnd Sudànach (1957–1998)',
+        one: 'phunnd Sudànach (1957–1998)',
+        two: 'phunnd Sudànach (1957–1998)',
+        few: 'puinnd Shudànach (1957–1998)',
+        other: 'punnd Sudànach (1957–1998)',
+      );
+
+  @override
+  Currency get sek => Currency(
+        _locale,
+        'SEK',
+        'Krona Suaineach',
+        narrowSymbol: 'kr',
+        one: 'krona Suaineach',
+        two: 'krona Suaineach',
+        few: 'kronor Suaineach',
+        other: 'krona Suaineach',
+      );
+
+  @override
+  Currency get sgd => Currency(
+        _locale,
+        'SGD',
+        'Dolar Singeapòrach',
+        narrowSymbol: r'$',
+        one: 'dolar Singeapòrach',
+        two: 'dholar Singeapòrach',
+        few: 'dolaran Singeapòrach',
+        other: 'dolar Singeapòrach',
+      );
+
+  @override
+  Currency get shp => Currency(
+        _locale,
+        'SHP',
+        'Punnd Eilean Naomh Eilidh',
+        narrowSymbol: '£',
+        one: 'phunnd Eilean Naomh Eilidh',
+        two: 'phunnd Eilean Naomh Eilidh',
+        few: 'puinnd Eilean Naomh Eilidh',
+        other: 'punnd Eilean Naomh Eilidh',
+      );
+
+  @override
+  Currency get sit => Currency(
+        _locale,
+        'SIT',
+        'Tolar Slòbhaineach',
+        one: 'tolar Slòbhaineach',
+        two: 'tholar Slòbhaineach',
+        few: 'tolar Slòbhaineach',
+        other: 'tolar Slòbhaineach',
+      );
+
+  @override
+  Currency get skk => Currency(
+        _locale,
+        'SKK',
+        'Koruna Slòbhacach',
+        one: 'koruna Slòbhacach',
+        two: 'koruna Slòbhacach',
+        few: 'koruna Slòbhacach',
+        other: 'koruna Slòbhacach',
+      );
+
+  @override
+  Currency get sle => Currency(
+        _locale,
+        'SLE',
+        'Leone Siarra Leòmhannach ùr',
+        one: 'leone Siarra Leòmhannach ùr',
+        two: 'leone Siarra Leòmhannach ùr',
+        few: 'leone Siarra Leòmhannach ùr',
+        other: 'leone Siarra Leòmhannach ùr',
+      );
+
+  @override
+  Currency get sll => Currency(
+        _locale,
+        'SLL',
+        'Leone Siarra Leòmhannach',
+        one: 'leone Siarra Leòmhannach',
+        two: 'leone Siarra Leòmhannach',
+        few: 'leone Siarra Leòmhannach',
+        other: 'leone Siarra Leòmhannach',
+      );
+
+  @override
+  Currency get sos => Currency(
+        _locale,
+        'SOS',
+        'Shilling Somàilitheach',
+        one: 'shilling Somàilitheach',
+        two: 'shilling Somàilitheach',
+        few: 'shilling Somàilitheach',
+        other: 'shilling Somàilitheach',
+      );
+
+  @override
+  Currency get srd => Currency(
+        _locale,
+        'SRD',
+        'Dolar Suranamach',
+        narrowSymbol: r'$',
+        one: 'dolar Suranamach',
+        two: 'dholar Suranamach',
+        few: 'dolaran Suranamach',
+        other: 'dolar Suranamach',
+      );
+
+  @override
+  Currency get srg => Currency(
+        _locale,
+        'SRG',
+        'Gulden Suranamach',
+        one: 'ghulden Suranamach',
+        two: 'ghulden Suranamach',
+        few: 'gulden Suranamach',
+        other: 'gulden Suranamach',
+      );
+
+  @override
+  Currency get ssp => Currency(
+        _locale,
+        'SSP',
+        'Punnd Sudàin a Deas',
+        narrowSymbol: '£',
+        one: 'phunnd Sudàin a Deas',
+        two: 'phunnd Sudàin a Deas',
+        few: 'puinnd Shudàin a Deas',
+        other: 'punnd Sudàin a Deas',
+      );
+
+  @override
+  Currency get std => Currency(
+        _locale,
+        'STD',
+        'Dobra São Tomé agus Príncipe (1977–2017)',
+        one: 'dobra São Tomé agus Príncipe (1977–2017)',
+        two: 'dhobra São Tomé agus Príncipe (1977–2017)',
+        few: 'dobra São Tomé agus Príncipe (1977–2017)',
+        other: 'dobra São Tomé agus Príncipe (1977–2017)',
+      );
+
+  @override
+  Currency get stn => Currency(
+        _locale,
+        'STN',
+        'Dobra São Tomé agus Príncipe',
+        narrowSymbol: 'Db',
+        one: 'dobra São Tomé agus Príncipe',
+        two: 'dhobra São Tomé agus Príncipe',
+        few: 'dobra São Tomé agus Príncipe',
+        other: 'dobra São Tomé agus Príncipe',
+      );
+
+  @override
+  Currency get sur => Currency(
+        _locale,
+        'SUR',
+        'Rùbal Sovietach',
+        one: 'rùbal Sovietach',
+        two: 'rùbal Sovietach',
+        few: 'rùbalan Sovietach',
+        other: 'rùbal Sovietach',
+      );
+
+  @override
+  Currency get svc => Currency(
+        _locale,
+        'SVC',
+        'Colón Salbhadorach',
+        one: 'cholón Salbhadorach',
+        two: 'cholón Salbhadorach',
+        few: 'colón Salbhadorach',
+        other: 'colón Salbhadorach',
+      );
+
+  @override
+  Currency get syp => Currency(
+        _locale,
+        'SYP',
+        'Punnd Siridheach',
+        narrowSymbol: '£',
+        one: 'phunnd Siridheach',
+        two: 'phunnd Siridheach',
+        few: 'puinnd Shiridheach',
+        other: 'punnd Siridheach',
+      );
+
+  @override
+  Currency get szl => Currency(
+        _locale,
+        'SZL',
+        'Lilangeni Suasaidheach',
+        one: 'lilangeni Suasaidheach',
+        two: 'lilangeni Suasaidheach',
+        few: 'lilangeni Suasaidheach',
+        other: 'lilangeni Suasaidheach',
+      );
+
+  @override
+  Currency get thb => Currency(
+        _locale,
+        'THB',
+        'Baht Tàidheach',
+        symbol: '฿',
+        narrowSymbol: '฿',
+        one: 'bhaht Tàidheach',
+        two: 'bhaht Tàidheach',
+        few: 'baht Tàidheach',
+        other: 'baht Tàidheach',
+      );
+
+  @override
+  Currency get tjr => Currency(
+        _locale,
+        'TJR',
+        'Rùbal Taidigeach',
+        one: 'rùbal Taidigeach',
+        two: 'rùbal Taidigeach',
+        few: 'rùbalan Taidigeach',
+        other: 'rùbal Taidigeach',
+      );
+
+  @override
+  Currency get tjs => Currency(
+        _locale,
+        'TJS',
+        'Somoni Taidigeach',
+        one: 'somoni Taidigeach',
+        two: 'shomoni Taidigeach',
+        few: 'somoni Taidigeach',
+        other: 'somoni Taidigeach',
+      );
+
+  @override
+  Currency get tmm => Currency(
+        _locale,
+        'TMM',
+        'Manat Turcmanach (1993–2009)',
+        one: 'mhanat Turcmanach (1993–2009)',
+        two: 'mhanat Turcmanach (1993–2009)',
+        few: 'manat Turcmanach (1993–2009)',
+        other: 'manat Turcmanach (1993–2009)',
+      );
+
+  @override
+  Currency get tmt => Currency(
+        _locale,
+        'TMT',
+        'Manat Turcmanach',
+        one: 'mhanat Turcmanach',
+        two: 'mhanat Turcmanach',
+        few: 'manat Turcmanach',
+        other: 'manat Turcmanach',
+      );
+
+  @override
+  Currency get tnd => Currency(
+        _locale,
+        'TND',
+        'Dinar Tuiniseach',
+        one: 'dinar Tuiniseach',
+        two: 'dhinar Tuiniseach',
+        few: 'dinar Tuiniseach',
+        other: 'dinar Tuiniseach',
+      );
+
+  @override
+  Currency get top => Currency(
+        _locale,
+        'TOP',
+        'Paʻanga Tongach',
+        narrowSymbol: r'T$',
+        one: 'phaʻanga Tongach',
+        two: 'phaʻanga Tongach',
+        few: 'paʻanga Tongach',
+        other: 'paʻanga Tongach',
+      );
+
+  @override
+  Currency get tpe => Currency(
+        _locale,
+        'TPE',
+        'Escudo Tìomorach',
+        one: 'escudo Tìomorach',
+        two: 'escudo Tìomorach',
+        few: 'escudo Tìomorach',
+        other: 'escudo Tìomorach',
+      );
+
+  @override
+  Currency get trl => Currency(
+        _locale,
+        'TRL',
+        'Lira Turcach (1922–2005)',
+        one: 'lira Turcach (1922–2005)',
+        two: 'lira Turcach (1922–2005)',
+        few: 'lira Turcach (1922–2005)',
+        other: 'lira Turcach (1922–2005)',
+      );
+
+  @override
+  Currency get try$ => Currency(
+        _locale,
+        'TRY',
+        'Lira Turcach',
+        narrowSymbol: '₺',
+        one: 'lira Turcach',
+        two: 'lira Turcach',
+        few: 'lira Turcach',
+        other: 'lira Turcach',
+      );
+
+  @override
+  Currency get ttd => Currency(
+        _locale,
+        'TTD',
+        'Dolar Thrianaid agus Thobago',
+        narrowSymbol: r'$',
+        one: 'dolar Thrianaid agus Thobago',
+        two: 'dholar Thrianaid agus Thobago',
+        few: 'dolaran Thrianaid agus Thobago',
+        other: 'dolar Thrianaid agus Thobago',
+      );
+
+  @override
+  Currency get twd => Currency(
+        _locale,
+        'TWD',
+        'Dolar ùr Taidh-Bhànach',
+        symbol: r'NT$',
+        narrowSymbol: r'NT$',
+        one: 'dolar ùr Taidh-Bhànach',
+        two: 'dholar ùr Taidh-Bhànach',
+        few: 'dolaran ùra Taidh-Bhànach',
+        other: 'dolar ùr Taidh-Bhànach',
+      );
+
+  @override
+  Currency get tzs => Currency(
+        _locale,
+        'TZS',
+        'Shilling Tansanaidheach',
+        one: 'shilling Tansanaidheach',
+        two: 'shilling Tansanaidheach',
+        few: 'shilling Tansanaidheach',
+        other: 'shilling Tansanaidheach',
+      );
+
+  @override
+  Currency get uah => Currency(
+        _locale,
+        'UAH',
+        'Hryvnia Ucràineach',
+        narrowSymbol: '₴',
+        one: 'hryvnia Ucràineach',
+        two: 'hryvnia Ucràineach',
+        few: 'hryvnia Ucràineach',
+        other: 'hryvnia Ucràineach',
+      );
+
+  @override
+  Currency get uak => Currency(
+        _locale,
+        'UAK',
+        'Karbovanets Ucràineach',
+        one: 'karbovanets Ucràineach',
+        two: 'karbovanets Ucràineach',
+        few: 'karbovanets Ucràineach',
+        other: 'karbovanets Ucràineach',
+      );
+
+  @override
+  Currency get ugs => Currency(
+        _locale,
+        'UGS',
+        'Shilling Ugandach (1966–1987)',
+        one: 'shilling Ugandach (1966–1987)',
+        two: 'shilling Ugandach (1966–1987)',
+        few: 'shilling Ugandach (1966–1987)',
+        other: 'shilling Ugandach (1966–1987)',
+      );
+
+  @override
+  Currency get ugx => Currency(
+        _locale,
+        'UGX',
+        'Shilling Ugandach',
+        one: 'shilling Ugandach',
+        two: 'shilling Ugandach',
+        few: 'shilling Ugandach',
+        other: 'shilling Ugandach',
+      );
+
+  @override
+  Currency get usd => Currency(
+        _locale,
+        'USD',
+        'Dolar nan Stàitean Aonaichte',
+        symbol: r'$',
+        narrowSymbol: r'$',
+        one: 'dolar nan Stàitean Aonaichte',
+        two: 'dholar nan Stàitean Aonaichte',
+        few: 'dolaran nan Stàitean Aonaichte',
+        other: 'dolar nan Stàitean Aonaichte',
+      );
+
+  @override
+  Currency get usn => Currency(
+        _locale,
+        'USN',
+        'Dolar nan SA (an ath–latha)',
+        one: 'dolar nan SA (an ath–latha)',
+        two: 'dholar nan SA (an ath–latha)',
+        few: 'dolaran nan SA (an ath–latha)',
+        other: 'dolar nan SA (an ath–latha)',
+      );
+
+  @override
+  Currency get uss => Currency(
+        _locale,
+        'USS',
+        'Dolar nan SA (an aon latha)',
+        one: 'dolar nan SA (an aon latha)',
+        two: 'dholar nan SA (an aon latha)',
+        few: 'dolaran nan SA (an aon latha)',
+        other: 'dolar nan SA (an aon latha)',
+      );
+
+  @override
+  Currency get uyi => Currency(
+        _locale,
+        'UYI',
+        'Peso Uruguaidheach (aonadan inneacsaichte)',
+        one: 'pheso Uruguaidheach (aonadan inneacsaichte)',
+        two: 'pheso Uruguaidheach (aonadan inneacsaichte)',
+        few: 'pesothan Uruguaidheach (aonadan inneacsaichte)',
+        other: 'peso Uruguaidheach (aonadan inneacsaichte)',
+      );
+
+  @override
+  Currency get uyp => Currency(
+        _locale,
+        'UYP',
+        'Peso Uruguaidheach (1975–1993)',
+        one: 'pheso Uruguaidheach (1975–1993)',
+        two: 'pheso Uruguaidheach (1975–1993)',
+        few: 'pesothan Uruguaidheach (1975–1993)',
+        other: 'peso Uruguaidheach (1975–1993)',
+      );
+
+  @override
+  Currency get uyu => Currency(
+        _locale,
+        'UYU',
+        'Peso Uruguaidheach',
+        narrowSymbol: r'$',
+        one: 'pheso Uruguaidheach',
+        two: 'pheso Uruguaidheach',
+        few: 'pesothan Uruguaidheach',
+        other: 'peso Uruguaidheach',
+      );
+
+  @override
+  Currency get uyw => Currency(
+        _locale,
+        'UYW',
+        'Aonad inneacs tuarastail ainmeach Uruguaidh',
+        one: 'aonad inneacs tuarastail ainmeach Uruguaidh',
+        two: 'aonad inneacs tuarastail ainmeach Uruguaidh',
+        few: 'aonadan inneacs tuarastail ainmeach Uruguaidh',
+        other: 'aonad inneacs tuarastail ainmeach Uruguaidh',
+      );
+
+  @override
+  Currency get uzs => Currency(
+        _locale,
+        'UZS',
+        'Som Usbagach',
+        one: 'som Usbagach',
+        two: 'shom Usbagach',
+        few: 'som Usbagach',
+        other: 'som Usbagach',
+      );
+
+  @override
+  Currency get veb => Currency(
+        _locale,
+        'VEB',
+        'Bolívar Bheinisealach (1871–2008)',
+        one: 'bholívar Bheinisealach (1871–2008)',
+        two: 'bholívar Bheinisealach (1871–2008)',
+        few: 'bolívar Bheinisealach (1871–2008)',
+        other: 'bolívar Bheinisealach (1871–2008)',
+      );
+
+  @override
+  Currency get ved => Currency(
+        _locale,
+        'VED',
+        'Bolívar Soberano',
+        one: 'bholívar Soberano',
+        two: 'bholívar Soberano',
+        few: 'bolívar Soberano',
+        other: 'bolívar Soberano',
+      );
+
+  @override
+  Currency get vef => Currency(
+        _locale,
+        'VEF',
+        'Bolívar Bheinisealach (2008–2018)',
+        narrowSymbol: 'Bs',
+        one: 'bholívar Bheinisealach (2008–2018)',
+        two: 'bholívar Bheinisealach (2008–2018)',
+        few: 'bolívar Bheinisealach (2008–2018)',
+        other: 'bolívar Bheinisealach (2008–2018)',
+      );
+
+  @override
+  Currency get ves => Currency(
+        _locale,
+        'VES',
+        'Bolívar Bheinisealach',
+        one: 'bholívar Bheinisealach',
+        two: 'bholívar Bheinisealach',
+        few: 'bolívar Bheinisealach',
+        other: 'bolívar Bheinisealach',
+      );
+
+  @override
+  Currency get vnd => Currency(
+        _locale,
+        'VND',
+        'Dong Bhiet-Namach',
+        symbol: '₫',
+        narrowSymbol: '₫',
+        one: 'dong Bhiet-Namach',
+        two: 'dhong Bhiet-Namach',
+        few: 'dong Bhiet-Namach',
+        other: 'dong Bhiet-Namach',
+      );
+
+  @override
+  Currency get vnn => Currency(
+        _locale,
+        'VNN',
+        'Dong Bhiet-Namach (1978–1985)',
+        one: 'dong Bhiet-Namach (1978–1985)',
+        two: 'dhong Bhiet-Namach (1978–1985)',
+        few: 'dong Bhiet-Namach (1978–1985)',
+        other: 'dong Bhiet-Namach (1978–1985)',
+      );
+
+  @override
+  Currency get vuv => Currency(
+        _locale,
+        'VUV',
+        'Vatu Vanuatuthach',
+        one: 'vatu Vanuatuthach',
+        two: 'vatu Vanuatuthach',
+        few: 'vatu Vanuatuthach',
+        other: 'vatu Vanuatuthach',
+      );
+
+  @override
+  Currency get wst => Currency(
+        _locale,
+        'WST',
+        'Tala Samothach',
+        one: 'tala Samothach',
+        two: 'thala Samothach',
+        few: 'tala Samothach',
+        other: 'tala Samothach',
+      );
+
+  @override
+  Currency get xaf => Currency(
+        _locale,
+        'XAF',
+        'Franc CFA Meadhan-Afragach',
+        symbol: 'FCFA',
+        one: 'fhranc CFA Meadhan-Afragach',
+        two: 'fhranc CFA Meadhan-Afragach',
+        few: 'franc CFA Meadhan-Afragach',
+        other: 'franc CFA Meadhan-Afragach',
+      );
+
+  @override
+  Currency get xag => Currency(
+        _locale,
+        'XAG',
+        'Airgead',
+        one: 'unnsa tròidh airgid',
+        two: 'unnsa tròidh airgid',
+        few: 'unnsachan tròidh airgid',
+        other: 'unnsa tròidh airgid',
+      );
+
+  @override
+  Currency get xau => Currency(
+        _locale,
+        'XAU',
+        'Òr',
+        one: 'unnsa tròidh òir',
+        two: 'unnsa tròidh òir',
+        few: 'unnsachan tròidh òir',
+        other: 'unnsa tròidh òir',
+      );
+
+  @override
+  Currency get xba => Currency(
+        _locale,
+        'XBA',
+        'Aonad co-dhèanta Eòrpach',
+        one: 'aonad co-dhèanta Eòrpach',
+        two: 'aonad co-dhèanta Eòrpach',
+        few: 'aonadan co-dhèanta Eòrpach',
+        other: 'aonad co-dhèanta Eòrpach',
+      );
+
+  @override
+  Currency get xbb => Currency(
+        _locale,
+        'XBB',
+        'Aonad airgid Eòrpach',
+        one: 'aonad airgid Eòrpach',
+        two: 'aonad airgid Eòrpach',
+        few: 'aonadan airgid Eòrpach',
+        other: 'aonad airgid Eòrpach',
+      );
+
+  @override
+  Currency get xbc => Currency(
+        _locale,
+        'XBC',
+        'Aonad cunntasachd Eòrpach (XBC)',
+        one: 'aonad cunntasachd Eòrpach (XBC)',
+        two: 'aonad cunntasachd Eòrpach (XBC)',
+        few: 'aonadan cunntasachd Eòrpach (XBC)',
+        other: 'aonad cunntasachd Eòrpach (XBC)',
+      );
+
+  @override
+  Currency get xbd => Currency(
+        _locale,
+        'XBD',
+        'Aonad cunntasachd Eòrpach (XBD)',
+        one: 'aonad cunntasachd Eòrpach (XBD)',
+        two: 'aonad cunntasachd Eòrpach (XBD)',
+        few: 'aonadan cunntasachd Eòrpach (XBD)',
+        other: 'aonad cunntasachd Eòrpach (XBD)',
+      );
+
+  @override
+  Currency get xcd => Currency(
+        _locale,
+        'XCD',
+        'Dolar Caraibeach earach',
+        symbol: r'EC$',
+        narrowSymbol: r'$',
+        one: 'dolar Caraibeach earach',
+        two: 'dholar Caraibeach earach',
+        few: 'dolaran Caraibeach earach',
+        other: 'dolar Caraibeach earach',
+      );
+
+  @override
+  Currency get xcg => Currency(
+        _locale,
+        'XCG',
+        'Gulden Caraibeach',
+        symbol: 'Cg.',
+        one: 'ghulden Caraibeach',
+        two: 'ghulden Caraibeach',
+        few: 'gulden Caraibeach',
+        other: 'gulden Caraibeach',
+      );
+
+  @override
+  Currency get xdr => Currency(
+        _locale,
+        'XDR',
+        'Còir tarraing shònraichte',
+        one: 'chòir tarraing shònraichte',
+        two: 'chòir tarraing shònraichte',
+        few: 'còirichean tarraing sònraichte',
+        other: 'còir tarraing shònraichte',
+      );
+
+  @override
+  Currency get xeu => Currency(
+        _locale,
+        'XEU',
+        'Aonad airgeadra Eòrpach',
+        one: 'aonad airgeadra Eòrpach',
+        two: 'aonad airgeadra Eòrpach',
+        few: 'aonadan airgeadra Eòrpach',
+        other: 'aonad airgeadra Eòrpach',
+      );
+
+  @override
+  Currency get xfo => Currency(
+        _locale,
+        'XFO',
+        'Franc òir Frangach',
+        one: 'fhranc òir Frangach',
+        two: 'fhranc òir Frangach',
+        few: 'franc òir Frangach',
+        other: 'franc òir Frangach',
+      );
+
+  @override
+  Currency get xfu => Currency(
+        _locale,
+        'XFU',
+        'Franc UIC Frangach',
+        one: 'fhranc UIC Frangach',
+        two: 'fhranc UIC Frangach',
+        few: 'franc UIC Frangach',
+        other: 'franc UIC Frangach',
+      );
+
+  @override
+  Currency get xof => Currency(
+        _locale,
+        'XOF',
+        'Franc CFA Afraga an Iar',
+        symbol: 'F CFA',
+        one: 'fhranc CFA Afraga an Iar',
+        two: 'fhranc CFA Afraga an Iar',
+        few: 'franc CFA Afraga an Iar',
+        other: 'franc CFA Afraga an Iar',
+      );
+
+  @override
+  Currency get xpd => Currency(
+        _locale,
+        'XPD',
+        'Pallaideam',
+        one: 'unnsa tròidh pallaideim',
+        two: 'unnsa tròidh pallaideim',
+        few: 'unnsachan tròidh pallaideim',
+        other: 'unnsa tròidh pallaideim',
+      );
+
+  @override
+  Currency get xpf => Currency(
+        _locale,
+        'XPF',
+        'Franc CFP',
+        symbol: 'CFPF',
+        one: 'fhranc CFP',
+        two: 'fhranc CFP',
+        few: 'franc CFP',
+        other: 'franc CFP',
+      );
+
+  @override
+  Currency get xpt => Currency(
+        _locale,
+        'XPT',
+        'Platanam',
+        one: 'unnsa tròidh platanaim',
+        two: 'unnsa tròidh platanaim',
+        few: 'unnsachan tròidh platanaim',
+        other: 'unnsa tròidh platanaim',
+      );
+
+  @override
+  Currency get xre => Currency(
+        _locale,
+        'XRE',
+        'Aonad maoine RINET',
+        one: 'aonad maoine RINET',
+        two: 'aonad maoine RINET',
+        few: 'aonadan maoine RINET',
+        other: 'aonad maoine RINET',
+      );
+
+  @override
+  Currency get xsu => Currency(
+        _locale,
+        'XSU',
+        'Sucre',
+        one: 'sucre',
+        two: 'sucre',
+        few: 'sucre',
+        other: 'sucre',
+      );
+
+  @override
+  Currency get xts => Currency(
+        _locale,
+        'XTS',
+        'Còd airgeadra fo dheuchainn',
+        one: 'aonad airgeadra fo dheuchainn',
+        two: 'aonad airgeadra fo dheuchainn',
+        few: 'aonadan airgeadra fo dheuchainn',
+        other: 'aonad airgeadra fo dheuchainn',
+      );
+
+  @override
+  Currency get xua => Currency(
+        _locale,
+        'XUA',
+        'Aonad cunntasachd ADB',
+        one: 'aonad cunntasachd ADB',
+        two: 'aonad cunntasachd ADB',
+        few: 'aonadan cunntasachd ADB',
+        other: 'aonad cunntasachd ADB',
+      );
+
+  @override
+  Currency get xxx => Currency(
+        _locale,
+        'XXX',
+        'Airgeadra neo-aithnichte',
+        symbol: 'XXX',
+        one: '(aonad airgeadra neo–aithnichte)',
+        two: '(aonad airgeadra neo–aithnichte)',
+        few: '(aonadan airgeadra neo–aithnichte)',
+        other: '(aonad airgeadra neo–aithnichte)',
+      );
+
+  @override
+  Currency get ydd => Currency(
+        _locale,
+        'YDD',
+        'Dinar Eamanach',
+        one: 'dinar Eamanach',
+        two: 'dhinar Eamanach',
+        few: 'dinar Eamanach',
+        other: 'dinar Eamanach',
+      );
+
+  @override
+  Currency get yer => Currency(
+        _locale,
+        'YER',
+        'Rial Eamanach',
+        one: 'rial Eamanach',
+        two: 'rial Eamanach',
+        few: 'rial Eamanach',
+        other: 'rial Eamanach',
+      );
+
+  @override
+  Currency get yud => Currency(
+        _locale,
+        'YUD',
+        'Dinar cruaidh Iùgoslabhach (1966–1990)',
+        one: 'dinar cruaidh Iùgoslabhach (1966–1990)',
+        two: 'dhinar cruaidh Iùgoslabhach (1966–1990)',
+        few: 'dinar cruaidh Iùgoslabhach (1966–1990)',
+        other: 'dinar cruaidh Iùgoslabhach (1966–1990)',
+      );
+
+  @override
+  Currency get yum => Currency(
+        _locale,
+        'YUM',
+        'Dinar ùr Iùgoslabhach (1994–2002)',
+        one: 'dinar ùr Iùgoslabhach (1994–2002)',
+        two: 'dhinar ùr Iùgoslabhach (1994–2002)',
+        few: 'dinar ùr Iùgoslabhach (1994–2002)',
+        other: 'dinar ùr Iùgoslabhach (1994–2002)',
+      );
+
+  @override
+  Currency get yun => Currency(
+        _locale,
+        'YUN',
+        'Dinar iompachail Iùgoslabhach (1990–1992)',
+        one: 'dinar iompachail Iùgoslabhach (1990–1992)',
+        two: 'dhinar iompachail Iùgoslabhach (1990–1992)',
+        few: 'dinar iompachail Iùgoslabhach (1990–1992)',
+        other: 'dinar iompachail Iùgoslabhach (1990–1992)',
+      );
+
+  @override
+  Currency get yur => Currency(
+        _locale,
+        'YUR',
+        'Dinar ath-leasaichte Iùgoslabhach (1992–1993)',
+        one: 'dinar ath-leasaichte Iùgoslabhach (1992–1993)',
+        two: 'dhinar ath-leasaichte Iùgoslabhach (1992–1993)',
+        few: 'dinar ath-leasaichte Iùgoslabhach (1992–1993)',
+        other: 'dinar ath-leasaichte Iùgoslabhach (1992–1993)',
+      );
+
+  @override
+  Currency get zal => Currency(
+        _locale,
+        'ZAL',
+        'Rand Afraga a Deas (ionmhasail)',
+        one: 'rand Afraga a Deas (ionmhasail)',
+        two: 'rand Afraga a Deas (ionmhasail)',
+        few: 'rand Afraga a Deas (ionmhasail)',
+        other: 'rand Afraga a Deas (ionmhasail)',
+      );
+
+  @override
+  Currency get zar => Currency(
+        _locale,
+        'ZAR',
+        'Rand Afraga a Deas',
+        narrowSymbol: 'R',
+        one: 'rand Afraga a Deas',
+        two: 'rand Afraga a Deas',
+        few: 'rand Afraga a Deas',
+        other: 'rand Afraga a Deas',
+      );
+
+  @override
+  Currency get zmk => Currency(
+        _locale,
+        'ZMK',
+        'Kwacha Sàimbitheach (1968–2012)',
+        one: 'kwacha Sàimbitheach (1968–2012)',
+        two: 'kwacha Sàimbitheach (1968–2012)',
+        few: 'kwacha Sàimbitheach (1968–2012)',
+        other: 'kwacha Sàimbitheach (1968–2012)',
+      );
+
+  @override
+  Currency get zmw => Currency(
+        _locale,
+        'ZMW',
+        'Kwacha Sàimbitheach',
+        narrowSymbol: 'ZK',
+        one: 'kwacha Sàimbitheach',
+        two: 'kwacha Sàimbitheach',
+        few: 'kwacha Sàimbitheach',
+        other: 'kwacha Sàimbitheach',
+      );
+
+  @override
+  Currency get zrn => Currency(
+        _locale,
+        'ZRN',
+        'Zaïre ùr Zaïreach (1993–1998)',
+        one: 'zaïre ùr Zaïreach (1993–1998)',
+        two: 'zaïre ùr Zaïreach (1993–1998)',
+        few: 'zaïre ùr Zaïreach (1993–1998)',
+        other: 'zaïre ùr Zaïreach (1993–1998)',
+      );
+
+  @override
+  Currency get zrz => Currency(
+        _locale,
+        'ZRZ',
+        'Zaïre Zaïreach (1971–1993)',
+        one: 'zaïre Zaïreach (1971–1993)',
+        two: 'zaïre Zaïreach (1971–1993)',
+        few: 'zaïre Zaïreach (1971–1993)',
+        other: 'zaïre Zaïreach (1971–1993)',
+      );
+
+  @override
+  Currency get zwd => Currency(
+        _locale,
+        'ZWD',
+        'Dolar Sìombabuthach (1980–2008)',
+        one: 'dolar Sìombabuthach (1980–2008)',
+        two: 'dholar Sìombabuthach (1980–2008)',
+        few: 'dolaran Sìombabuthach (1980–2008)',
+        other: 'dolar Sìombabuthach (1980–2008)',
+      );
+
+  @override
+  Currency get zwg => Currency(
+        _locale,
+        'ZWG',
+        'Zimbabwean Gold',
+        one: 'Zimbabwean gold',
+        other: 'Zimbabwean gold',
+      );
+
+  @override
+  Currency get zwl => Currency(
+        _locale,
+        'ZWL',
+        'Dolar Sìombabuthach (2009)',
+        one: 'dolar Sìombabuthach (2009)',
+        two: 'dholar Sìombabuthach (2009)',
+        few: 'dolaran Sìombabuthach (2009)',
+        other: 'dolar Sìombabuthach (2009)',
+      );
+
+  @override
+  Currency get zwr => Currency(
+        _locale,
+        'ZWR',
+        'Dolar Sìombabuthach (2008)',
+        one: 'dolar Sìombabuthach (2008)',
+        two: 'dholar Sìombabuthach (2008)',
+        few: 'dolaran Sìombabuthach (2008)',
+        other: 'dolar Sìombabuthach (2008)',
+      );
+
+  @override
+  late final Map<String, Currency> byCode =
+      CanonicalizedMap<String, String, Currency>.from({
+    'ADP': adp,
+    'AED': aed,
+    'AFA': afa,
+    'AFN': afn,
+    'ALK': alk,
+    'ALL': all,
+    'AMD': amd,
+    'ANG': ang,
+    'AOA': aoa,
+    'AOK': aok,
+    'AON': aon,
+    'AOR': aor,
+    'ARA': ara,
+    'ARL': arl,
+    'ARM': arm,
+    'ARP': arp,
+    'ARS': ars,
+    'ATS': ats,
+    'AUD': aud,
+    'AWG': awg,
+    'AZM': azm,
+    'AZN': azn,
+    'BAD': bad,
+    'BAM': bam,
+    'BAN': ban,
+    'BBD': bbd,
+    'BDT': bdt,
+    'BEC': bec,
+    'BEF': bef,
+    'BEL': bel,
+    'BGL': bgl,
+    'BGM': bgm,
+    'BGN': bgn,
+    'BGO': bgo,
+    'BHD': bhd,
+    'BIF': bif,
+    'BMD': bmd,
+    'BND': bnd,
+    'BOB': bob,
+    'BOL': bol,
+    'BOP': bop,
+    'BOV': bov,
+    'BRB': brb,
+    'BRC': brc,
+    'BRE': bre,
+    'BRL': brl,
+    'BRN': brn,
+    'BRR': brr,
+    'BRZ': brz,
+    'BSD': bsd,
+    'BTN': btn,
+    'BUK': buk,
+    'BWP': bwp,
+    'BYB': byb,
+    'BYN': byn,
+    'BYR': byr,
+    'BZD': bzd,
+    'CAD': cad,
+    'CDF': cdf,
+    'CHE': che,
+    'CHF': chf,
+    'CHW': chw,
+    'CLE': cle,
+    'CLF': clf,
+    'CLP': clp,
+    'CNH': cnh,
+    'CNX': cnx,
+    'CNY': cny,
+    'COP': cop,
+    'COU': cou,
+    'CRC': crc,
+    'CSD': csd,
+    'CSK': csk,
+    'CUC': cuc,
+    'CUP': cup,
+    'CVE': cve,
+    'CYP': cyp,
+    'CZK': czk,
+    'DDM': ddm,
+    'DEM': dem,
+    'DJF': djf,
+    'DKK': dkk,
+    'DOP': dop,
+    'DZD': dzd,
+    'ECS': ecs,
+    'ECV': ecv,
+    'EEK': eek,
+    'EGP': egp,
+    'ERN': ern,
+    'ESA': esa,
+    'ESB': esb,
+    'ESP': esp,
+    'ETB': etb,
+    'EUR': eur,
+    'FIM': fim,
+    'FJD': fjd,
+    'FKP': fkp,
+    'FRF': frf,
+    'GBP': gbp,
+    'GEK': gek,
+    'GEL': gel,
+    'GHC': ghc,
+    'GHS': ghs,
+    'GIP': gip,
+    'GMD': gmd,
+    'GNF': gnf,
+    'GNS': gns,
+    'GQE': gqe,
+    'GRD': grd,
+    'GTQ': gtq,
+    'GWE': gwe,
+    'GWP': gwp,
+    'GYD': gyd,
+    'HKD': hkd,
+    'HNL': hnl,
+    'HRD': hrd,
+    'HRK': hrk,
+    'HTG': htg,
+    'HUF': huf,
+    'IDR': idr,
+    'IEP': iep,
+    'ILP': ilp,
+    'ILR': ilr,
+    'ILS': ils,
+    'INR': inr,
+    'IQD': iqd,
+    'IRR': irr,
+    'ISJ': isj,
+    'ISK': isk,
+    'ITL': itl,
+    'JMD': jmd,
+    'JOD': jod,
+    'JPY': jpy,
+    'KES': kes,
+    'KGS': kgs,
+    'KHR': khr,
+    'KMF': kmf,
+    'KPW': kpw,
+    'KRH': krh,
+    'KRO': kro,
+    'KRW': krw,
+    'KWD': kwd,
+    'KYD': kyd,
+    'KZT': kzt,
+    'LAK': lak,
+    'LBP': lbp,
+    'LKR': lkr,
+    'LRD': lrd,
+    'LSL': lsl,
+    'LTL': ltl,
+    'LTT': ltt,
+    'LUC': luc,
+    'LUF': luf,
+    'LUL': lul,
+    'LVL': lvl,
+    'LVR': lvr,
+    'LYD': lyd,
+    'MAD': mad,
+    'MAF': maf,
+    'MCF': mcf,
+    'MDC': mdc,
+    'MDL': mdl,
+    'MGA': mga,
+    'MGF': mgf,
+    'MKD': mkd,
+    'MKN': mkn,
+    'MLF': mlf,
+    'MMK': mmk,
+    'MNT': mnt,
+    'MOP': mop,
+    'MRO': mro,
+    'MRU': mru,
+    'MTL': mtl,
+    'MTP': mtp,
+    'MUR': mur,
+    'MVP': mvp,
+    'MVR': mvr,
+    'MWK': mwk,
+    'MXN': mxn,
+    'MXP': mxp,
+    'MXV': mxv,
+    'MYR': myr,
+    'MZE': mze,
+    'MZM': mzm,
+    'MZN': mzn,
+    'NAD': nad,
+    'NGN': ngn,
+    'NIC': nic,
+    'NIO': nio,
+    'NLG': nlg,
+    'NOK': nok,
+    'NPR': npr,
+    'NZD': nzd,
+    'OMR': omr,
+    'PAB': pab,
+    'PEI': pei,
+    'PEN': pen,
+    'PES': pes,
+    'PGK': pgk,
+    'PHP': php,
+    'PKR': pkr,
+    'PLN': pln,
+    'PLZ': plz,
+    'PTE': pte,
+    'PYG': pyg,
+    'QAR': qar,
+    'RHD': rhd,
+    'ROL': rol,
+    'RON': ron,
+    'RSD': rsd,
+    'RUB': rub,
+    'RUR': rur,
+    'RWF': rwf,
+    'SAR': sar,
+    'SBD': sbd,
+    'SCR': scr,
+    'SDD': sdd,
+    'SDG': sdg,
+    'SDP': sdp,
+    'SEK': sek,
+    'SGD': sgd,
+    'SHP': shp,
+    'SIT': sit,
+    'SKK': skk,
+    'SLE': sle,
+    'SLL': sll,
+    'SOS': sos,
+    'SRD': srd,
+    'SRG': srg,
+    'SSP': ssp,
+    'STD': std,
+    'STN': stn,
+    'SUR': sur,
+    'SVC': svc,
+    'SYP': syp,
+    'SZL': szl,
+    'THB': thb,
+    'TJR': tjr,
+    'TJS': tjs,
+    'TMM': tmm,
+    'TMT': tmt,
+    'TND': tnd,
+    'TOP': top,
+    'TPE': tpe,
+    'TRL': trl,
+    'TRY': try$,
+    'TTD': ttd,
+    'TWD': twd,
+    'TZS': tzs,
+    'UAH': uah,
+    'UAK': uak,
+    'UGS': ugs,
+    'UGX': ugx,
+    'USD': usd,
+    'USN': usn,
+    'USS': uss,
+    'UYI': uyi,
+    'UYP': uyp,
+    'UYU': uyu,
+    'UYW': uyw,
+    'UZS': uzs,
+    'VEB': veb,
+    'VED': ved,
+    'VEF': vef,
+    'VES': ves,
+    'VND': vnd,
+    'VNN': vnn,
+    'VUV': vuv,
+    'WST': wst,
+    'XAF': xaf,
+    'XAG': xag,
+    'XAU': xau,
+    'XBA': xba,
+    'XBB': xbb,
+    'XBC': xbc,
+    'XBD': xbd,
+    'XCD': xcd,
+    'XCG': xcg,
+    'XDR': xdr,
+    'XEU': xeu,
+    'XFO': xfo,
+    'XFU': xfu,
+    'XOF': xof,
+    'XPD': xpd,
+    'XPF': xpf,
+    'XPT': xpt,
+    'XRE': xre,
+    'XSU': xsu,
+    'XTS': xts,
+    'XUA': xua,
+    'XXX': xxx,
+    'YDD': ydd,
+    'YER': yer,
+    'YUD': yud,
+    'YUM': yum,
+    'YUN': yun,
+    'YUR': yur,
+    'ZAL': zal,
+    'ZAR': zar,
+    'ZMK': zmk,
+    'ZMW': zmw,
+    'ZRN': zrn,
+    'ZRZ': zrz,
+    'ZWD': zwd,
+    'ZWG': zwg,
+    'ZWL': zwl,
+    'ZWR': zwr,
   }, (key) => key.toLowerCase());
 }

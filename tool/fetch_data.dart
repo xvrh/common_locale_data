@@ -14,12 +14,15 @@ void main() async {
       'aliases',
       'metaZones',
       'primaryZones',
-      'windowsZones'
+      'windowsZones',
+      'weekData',
+      'likelySubtags'
     }
   };
 
   final sets = <String, Set<String>>{
     'units': {'units', 'measurementSystemNames'},
+    'numbers': {'currencies'},
     'dates': {'dateFields', 'ca-gregorian', 'timeZoneNames'},
     'localenames': {
       'languages',
