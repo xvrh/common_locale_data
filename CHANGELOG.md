@@ -1,3 +1,6 @@
+## 2.4.0
+- Add list patterns (`cld.listPatterns`): join a list of items into a localized text such as "A, B, and C" (`standard`), "A, B, or C" (`or`) or "3 ft 7 in" (`unit`), each in long/short/narrow widths. Includes the same Spanish ("y" → "e", "o" → "u") and Hebrew ("ו" → "ו-") rules as ICU
+
 ## 2.3.0
 - Add a high-level relative time ("timeago") formatter (`cld.relativeTime`): formats a `DateTime`/`Duration` as e.g. "3 minutes ago", "in 2 days", "yesterday" or "last week". It is calendar-aware (day/month/year compared by calendar field), can render weekday names ("last Tuesday"), exposes a low-level `formatUnit(offset, unit)` API and `minUnit`/`maxUnit` clamping, and supports long/short/narrow widths
 - Add week conventions (`cld.weekInfo`): first day of the week, weekend days and `minDaysInFirstWeek`, with an `isWeekend()` helper

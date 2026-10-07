@@ -58,6 +58,10 @@ class CommonLocaleDataPcm extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNamePcm(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsPcm(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsPcm extends Units {
@@ -11760,4 +11764,74 @@ class LocaleDisplayNamePcm extends LocaleDisplayName {
       'vaii': 'Vaí Nọ́mba-dẹm',
     },
   };
+}
+
+class ListPatternsPcm extends ListPatterns {
+  const ListPatternsPcm(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} an {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, an {1}',
+    ),
+    short: ListPattern(
+      two: '{0} & {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, & {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, ọ {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} ọ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ọ {1}',
+    ),
+    short: ListPattern(
+      two: '{0} ọ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, ọ {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} ọ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ọ {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    short: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+  );
 }

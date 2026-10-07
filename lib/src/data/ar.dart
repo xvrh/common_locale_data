@@ -58,6 +58,10 @@ class CommonLocaleDataAr extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameAr(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsAr(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsAr extends Units {
@@ -20043,4 +20047,74 @@ class LocaleDisplayNameAr extends LocaleDisplayName {
       'vaii': 'أرقام فاي',
     },
   };
+}
+
+class ListPatternsAr extends ListPatterns {
+  const ListPatternsAr(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} و{1}',
+      start: '{0} و{1}',
+      middle: '{0} و{1}',
+      end: '{0} و{1}',
+    ),
+    short: ListPattern(
+      two: '{0} و{1}',
+      start: '{0} و{1}',
+      middle: '{0} و{1}',
+      end: '{0} و{1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} و{1}',
+      start: '{0} و{1}',
+      middle: '{0} و{1}',
+      end: '{0} و{1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} أو {1}',
+      start: '{0} أو {1}',
+      middle: '{0} أو {1}',
+      end: '{0} أو {1}',
+    ),
+    short: ListPattern(
+      two: '{0} أو {1}',
+      start: '{0} أو {1}',
+      middle: '{0} أو {1}',
+      end: '{0} أو {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} أو {1}',
+      start: '{0} أو {1}',
+      middle: '{0} أو {1}',
+      end: '{0} أو {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} و{1}',
+      start: '{0}، و{1}',
+      middle: '{0}، و{1}',
+      end: '{0}، و{1}',
+    ),
+    short: ListPattern(
+      two: '{0} و{1}',
+      start: '{0}، و{1}',
+      middle: '{0}، و{1}',
+      end: '{0}، و{1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} و{1}',
+      start: '{0} و{1}',
+      middle: '{0} و{1}',
+      end: '{0} و{1}',
+    ),
+  );
 }

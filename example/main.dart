@@ -151,6 +151,12 @@ void main() {
   print(cld.weekInfo.firstDayOfWeek); // 7 (Sunday) for en, 1 (Monday) for en-GB
   print(cld.weekInfo.isWeekend(DateTime.sunday)); // true
 
+  // List patterns
+  print('');
+  print(cld.listPatterns.standard.long.format(['A', 'B', 'C'])); // A, B and C
+  print(cld.listPatterns.or.long.format(['A', 'B', 'C'])); // A, B or C
+  print(cld.listPatterns.unit.narrow.format(['3 ft', '7 in'])); // 3 ft 7 in
+
   // Territories
   print('');
   print(cld.territories.world); // world

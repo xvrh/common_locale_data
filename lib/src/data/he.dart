@@ -58,6 +58,10 @@ class CommonLocaleDataHe extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameHe(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsHe(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsHe extends Units {
@@ -16945,4 +16949,74 @@ class LocaleDisplayNameHe extends LocaleDisplayName {
       'wcho': 'ספרות וונצ׳ו',
     },
   };
+}
+
+class ListPatternsHe extends ListPatterns {
+  const ListPatternsHe(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: HebrewListPattern(
+      two: '{0} ו{1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ו{1}',
+    ),
+    short: HebrewListPattern(
+      two: '{0} ו{1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ו{1}',
+    ),
+    narrow: HebrewListPattern(
+      two: '{0} ו{1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ו{1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: HebrewListPattern(
+      two: '{0} או {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} או {1}',
+    ),
+    short: HebrewListPattern(
+      two: '{0} או {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} או {1}',
+    ),
+    narrow: HebrewListPattern(
+      two: '{0} או {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} או {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: HebrewListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ו-{1}',
+    ),
+    short: HebrewListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    narrow: HebrewListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+  );
 }

@@ -15,4 +15,6 @@ dartdoc:
       markdown: doc/Locales.md
     "Currencies":
       markdown: doc/Currencies.md
+    "Lists":
+      markdown: doc/Lists.md
   showUndocumentedCategories: false

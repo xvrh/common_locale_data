@@ -58,6 +58,10 @@ class CommonLocaleDataMl extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameMl(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsMl(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsMl extends Units {
@@ -13606,4 +13610,74 @@ class LocaleDisplayNameMl extends LocaleDisplayName {
       'wara': 'വറാങ് സിറ്റി അക്കങ്ങൾ',
     },
   };
+}
+
+class ListPatternsMl extends ListPatterns {
+  const ListPatternsMl(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} കൂടാതെ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1} എന്നിവ',
+    ),
+    short: ListPattern(
+      two: '{0} കൂടാതെ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1} എന്നിവ',
+    ),
+    narrow: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1} എന്നിവ',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} അല്ലെങ്കിൽ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, അല്ലെങ്കിൽ {1}',
+    ),
+    short: ListPattern(
+      two: '{0} അല്ലെങ്കിൽ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, അല്ലെങ്കിൽ {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} അല്ലെങ്കിൽ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, അല്ലെങ്കിൽ {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    short: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0}, {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+  );
 }

@@ -58,6 +58,10 @@ class CommonLocaleDataPaGuru extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNamePaGuru(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsPaGuru(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsPaGuru extends Units {
@@ -12070,4 +12074,74 @@ class LocaleDisplayNamePaGuru extends LocaleDisplayName {
       'vaii': 'ਵਾਈ ਅੰਕ',
     },
   };
+}
+
+class ListPatternsPaGuru extends ListPatterns {
+  const ListPatternsPaGuru(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} ਅਤੇ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ਅਤੇ {1}',
+    ),
+    short: ListPattern(
+      two: '{0} ਅਤੇ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ਅਤੇ {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} ਜਾਂ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ਜਾਂ {1}',
+    ),
+    short: ListPattern(
+      two: '{0} ਜਾਂ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, ਜਾਂ {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} ਜਾਂ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, ਜਾਂ {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    short: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+  );
 }

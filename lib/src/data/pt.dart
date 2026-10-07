@@ -58,6 +58,10 @@ class CommonLocaleDataPt extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNamePt(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsPt(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsPt extends Units {
@@ -18255,4 +18259,74 @@ class LocaleDisplayNamePt extends LocaleDisplayName {
       'vaii': 'Algarismos vai',
     },
   };
+}
+
+class ListPatternsPt extends ListPatterns {
+  const ListPatternsPt(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} e {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} e {1}',
+    ),
+    short: ListPattern(
+      two: '{0} e {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} e {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} ou {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ou {1}',
+    ),
+    short: ListPattern(
+      two: '{0} ou {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ou {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} ou {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ou {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} e {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} e {1}',
+    ),
+    short: ListPattern(
+      two: '{0} e {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} e {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+  );
 }

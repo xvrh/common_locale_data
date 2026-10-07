@@ -55,6 +55,10 @@ class CommonLocaleDataPtGW extends CommonLocaleDataPt {
   static final _localeDisplayName = LocaleDisplayNamePtGW(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsPtGW(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsPtGW extends UnitsPt {
@@ -6309,4 +6313,30 @@ class LocaleDisplayNamePtGW extends LocaleDisplayNamePt {
       },
     },
   });
+}
+
+class ListPatternsPtGW extends ListPatternsPt {
+  const ListPatternsPtGW(super.cld);
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} e {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} e {1}',
+    ),
+    short: ListPattern(
+      two: '{0} e {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} e {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} e {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} e {1}',
+    ),
+  );
 }

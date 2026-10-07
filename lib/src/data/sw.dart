@@ -58,6 +58,10 @@ class CommonLocaleDataSw extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameSw(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsSw(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsSw extends Units {
@@ -13969,4 +13973,74 @@ class LocaleDisplayNameSw extends LocaleDisplayName {
       'vaii': 'Nambari za Kivai',
     },
   };
+}
+
+class ListPatternsSw extends ListPatterns {
+  const ListPatternsSw(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} na {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} na {1}',
+    ),
+    short: ListPattern(
+      two: '{0} na {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} na {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} na {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} au {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} au {1}',
+    ),
+    short: ListPattern(
+      two: '{0} au {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, au {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} au {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, au {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} na {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} na {1}',
+    ),
+    short: ListPattern(
+      two: '{0} na {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} na {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} na {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} na {1}',
+    ),
+  );
 }

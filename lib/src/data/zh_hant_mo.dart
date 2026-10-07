@@ -55,6 +55,10 @@ class CommonLocaleDataZhHantMO extends CommonLocaleDataZhHant {
   static final _localeDisplayName = LocaleDisplayNameZhHantMO(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsZhHantMO(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsZhHantMO extends UnitsZhHant {
@@ -2964,4 +2968,30 @@ class LocaleDisplayNameZhHantMO extends LocaleDisplayNameZhHant {
       },
     },
   });
+}
+
+class ListPatternsZhHantMO extends ListPatternsZhHant {
+  const ListPatternsZhHantMO(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0}及{1}',
+      start: '{0}、{1}',
+      middle: '{0}、{1}',
+      end: '{0}及{1}',
+    ),
+    short: ListPattern(
+      two: '{0}及{1}',
+      start: '{0}、{1}',
+      middle: '{0}、{1}',
+      end: '{0}及{1}',
+    ),
+    narrow: ListPattern(
+      two: '{0}及{1}',
+      start: '{0}、{1}',
+      middle: '{0}、{1}',
+      end: '{0}及{1}',
+    ),
+  );
 }

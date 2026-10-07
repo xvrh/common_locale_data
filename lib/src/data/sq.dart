@@ -58,6 +58,10 @@ class CommonLocaleDataSq extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameSq(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsSq(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsSq extends Units {
@@ -13573,4 +13577,74 @@ class LocaleDisplayNameSq extends LocaleDisplayName {
       'wcho': 'shifra vanço',
     },
   };
+}
+
+class ListPatternsSq extends ListPatterns {
+  const ListPatternsSq(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} dhe {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} dhe {1}',
+    ),
+    short: ListPattern(
+      two: '{0} dhe {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} dhe {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} dhe {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} dhe {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} ose {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ose {1}',
+    ),
+    short: ListPattern(
+      two: '{0} ose {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ose {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} ose {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ose {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} e {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} e {1}',
+    ),
+    short: ListPattern(
+      two: '{0} e {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} e {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} e {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} e {1}',
+    ),
+  );
 }

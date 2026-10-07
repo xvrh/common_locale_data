@@ -58,6 +58,10 @@ class CommonLocaleDataUz extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameUz(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsUz(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsUz extends Units {
@@ -12689,4 +12693,74 @@ class LocaleDisplayNameUz extends LocaleDisplayName {
       'vaii': 'vay raqamlari',
     },
   };
+}
+
+class ListPatternsUz extends ListPatterns {
+  const ListPatternsUz(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} va {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} va {1}',
+    ),
+    short: ListPattern(
+      two: '{0} va {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} va {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} yoki {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} yoki {1}',
+    ),
+    short: ListPattern(
+      two: '{0} yoki {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} yoki {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} yoki {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} yoki {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+    short: ListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+  );
 }

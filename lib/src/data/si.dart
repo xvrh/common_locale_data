@@ -58,6 +58,10 @@ class CommonLocaleDataSi extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameSi(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsSi(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsSi extends Units {
@@ -15437,4 +15441,74 @@ class LocaleDisplayNameSi extends LocaleDisplayName {
       'vaii': 'වායි ඉලක්කම්',
     },
   };
+}
+
+class ListPatternsSi extends ListPatterns {
+  const ListPatternsSi(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} සහ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, සහ {1}',
+    ),
+    short: ListPattern(
+      two: '{0} සහ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, සහ {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} සහ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, සහ {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} හෝ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, හෝ {1}',
+    ),
+    short: ListPattern(
+      two: '{0} හෝ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, හෝ {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} හෝ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, හෝ {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} සහ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, සහ {1}',
+    ),
+    short: ListPattern(
+      two: '{0} සහ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, සහ {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} සහ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, සහ {1}',
+    ),
+  );
 }

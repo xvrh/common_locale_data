@@ -58,6 +58,10 @@ class CommonLocaleDataEl extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameEl(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsEl(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsEl extends Units {
@@ -17968,4 +17972,74 @@ class LocaleDisplayNameEl extends LocaleDisplayName {
       'vaii': 'Ψηφία Βάι',
     },
   };
+}
+
+class ListPatternsEl extends ListPatterns {
+  const ListPatternsEl(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} και {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} και {1}',
+    ),
+    short: ListPattern(
+      two: '{0} και {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} και {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} ή {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ή {1}',
+    ),
+    short: ListPattern(
+      two: '{0} ή {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ή {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} ή {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ή {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    short: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+  );
 }

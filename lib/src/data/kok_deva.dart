@@ -58,6 +58,10 @@ class CommonLocaleDataKokDeva extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameKokDeva(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsKokDeva(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsKokDeva extends Units {
@@ -10713,4 +10717,74 @@ class LocaleDisplayNameKokDeva extends LocaleDisplayName {
       'vaii': 'वाई अंक',
     },
   };
+}
+
+class ListPatternsKokDeva extends ListPatterns {
+  const ListPatternsKokDeva(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    short: ListPattern(
+      two: '{0} & {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, & {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} वा {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, वा {1}',
+    ),
+    short: ListPattern(
+      two: '{0} वा {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, वा {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} वा {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, वा {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    short: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+  );
 }

@@ -58,6 +58,10 @@ class CommonLocaleDataKm extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameKm(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsKm(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsKm extends Units {
@@ -10800,4 +10804,74 @@ class LocaleDisplayNameKm extends LocaleDisplayName {
       'vaii': 'លេខវ៉ៃ',
     },
   };
+}
+
+class ListPatternsKm extends ListPatterns {
+  const ListPatternsKm(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} និង​{1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} និង {1}',
+    ),
+    short: ListPattern(
+      two: '{0} និង {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} និង {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} ឬ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ឬ {1}',
+    ),
+    short: ListPattern(
+      two: '{0} ឬ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ឬ {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} ឬ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ឬ {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+    short: ListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+  );
 }

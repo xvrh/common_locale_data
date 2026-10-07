@@ -58,6 +58,10 @@ class CommonLocaleDataMy extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameMy(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsMy(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsMy extends Units {
@@ -11231,4 +11235,74 @@ class LocaleDisplayNameMy extends LocaleDisplayName {
       'vaii': 'ဗိုင်း ဂဏန်းခြေ',
     },
   };
+}
+
+class ListPatternsMy extends ListPatterns {
+  const ListPatternsMy(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0}နှင့် {1}',
+      start: '{0} - {1}',
+      middle: '{0} - {1}',
+      end: '{0}နှင့် {1}',
+    ),
+    short: ListPattern(
+      two: '{0}နှင့် {1}',
+      start: '{0} - {1}',
+      middle: '{0} - {1}',
+      end: '{0}နှင့် {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0}နှင့် {1}',
+      start: '{0} - {1}',
+      middle: '{0} - {1}',
+      end: '{0}နှင့် {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} သို့မဟုတ် {1}',
+      start: '{0} - {1}',
+      middle: '{0} - {1}',
+      end: '{0} သို့မဟုတ် {1}',
+    ),
+    short: ListPattern(
+      two: '{0} သို့မဟုတ် {1}',
+      start: '{0} - {1}',
+      middle: '{0} - {1}',
+      end: '{0} သို့မဟုတ် {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} သို့မဟုတ် {1}',
+      start: '{0} - {1}',
+      middle: '{0} - {1}',
+      end: '{0} သို့မဟုတ် {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0}နှင့် {1}',
+      start: '{0}- {1}',
+      middle: '{0}- {1}',
+      end: '{0}နှင့် {1}',
+    ),
+    short: ListPattern(
+      two: '{0}နှင့် {1}',
+      start: '{0} - {1}',
+      middle: '{0} - {1}',
+      end: '{0}နှင့် {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0}နှင့် {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0}နှင့် {1}',
+    ),
+  );
 }

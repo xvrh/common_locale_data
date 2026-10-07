@@ -3,6 +3,7 @@
 import 'currencies.dart';
 import 'date_fields.dart';
 import 'languages.dart';
+import 'list_patterns.dart';
 import 'locale_display_name.dart';
 import 'scripts.dart';
 import 'subdivisions.dart';
@@ -67,6 +68,9 @@ abstract class CommonLocaleData {
 
   /// Localized locale display name fields.
   LocaleDisplayName get localeDisplayName;
+
+  /// Localized patterns to join a list of items ("A, B, and C").
+  ListPatterns get listPatterns;
 
   /// Week conventions (first day of the week, weekend) for this locale.
   WeekInfo get weekInfo => resolveWeekInfo(locale);

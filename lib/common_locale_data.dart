@@ -15,6 +15,7 @@ export 'src/common_locale_data.dart';
 export 'src/currencies.dart';
 export 'src/date_fields.dart';
 export 'src/languages.dart';
+export 'src/list_patterns.dart';
 export 'src/locale_display_name.dart';
 export 'src/locale_id/locale_id.dart';
 export 'src/locale_id/locale_matcher.dart';

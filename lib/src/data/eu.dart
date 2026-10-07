@@ -58,6 +58,10 @@ class CommonLocaleDataEu extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameEu(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsEu(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsEu extends Units {
@@ -16891,4 +16895,74 @@ class LocaleDisplayNameEu extends LocaleDisplayName {
       'wcho': 'Wancho digituak',
     },
   };
+}
+
+class ListPatternsEu extends ListPatterns {
+  const ListPatternsEu(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} eta {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} eta {1}',
+    ),
+    short: ListPattern(
+      two: '{0} eta {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} eta {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} edo {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} edo {1}',
+    ),
+    short: ListPattern(
+      two: '{0} edo {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} edo {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} edo {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} edo {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} eta {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} eta {1}',
+    ),
+    short: ListPattern(
+      two: '{0} eta {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} eta {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} eta {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} eta {1}',
+    ),
+  );
 }

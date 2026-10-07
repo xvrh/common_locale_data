@@ -9,6 +9,7 @@ import 'config.dart';
 import 'model/currency.dart';
 import 'model/date_fields.dart';
 import 'model/language.dart';
+import 'model/list_patterns.dart';
 import 'model/locale.dart';
 import 'model/locale_display_name.dart';
 import 'model/script.dart';
@@ -125,6 +126,7 @@ Future<void> generateLocale(String locale) async {
   var currenciesCode = generateCurrencies(locale);
   var timezonesCode = generateTimeZones(locale);
   var localeDisplayNameCode = generateLocaleDisplayName(locale);
+  var listPatternsCode = generateListPatterns(locale);
 
   if (unitsCode == null &&
       dateFieldsCode == null &&
@@ -135,7 +137,8 @@ Future<void> generateLocale(String locale) async {
       subdivisionsCode == null &&
       currenciesCode == null &&
       timezonesCode == null &&
-      localeDisplayNameCode == null) {
+      localeDisplayNameCode == null &&
+      listPatternsCode == null) {
     stderr.writeln(
       '*** No difference found between locale: $locale and base locale: $baseLocale',
     );
@@ -264,6 +267,14 @@ Future<void> generateLocale(String locale) async {
   ''');
   }
 
+  if (listPatternsCode != null) {
+    buffer.writeln('''
+    static final _listPatterns = ListPatterns$localeUpperCamel(_cld);
+    @override
+    ListPatterns get listPatterns => _listPatterns;
+''');
+  }
+
   buffer.writeln('}');
   buffer.writeln();
 
@@ -277,6 +288,7 @@ Future<void> generateLocale(String locale) async {
   if (currenciesCode != null) buffer.writeln(currenciesCode);
   if (timezonesCode != null) buffer.writeln(timezonesCode);
   if (localeDisplayNameCode != null) buffer.writeln(localeDisplayNameCode);
+  if (listPatternsCode != null) buffer.writeln(listPatternsCode);
 
   await File(
     'lib/src/data/$localeSnakeCase.dart',
@@ -293,6 +305,7 @@ String generateCommon() {
 
 import 'date_fields.dart';
 import 'languages.dart';
+import 'list_patterns.dart';
 import 'scripts.dart';
 import 'variants.dart';
 import 'currencies.dart';
@@ -358,6 +371,9 @@ abstract class CommonLocaleData {
 
   /// Localized locale display name fields.
   LocaleDisplayName get localeDisplayName;
+
+  /// Localized patterns to join a list of items ("A, B, and C").
+  ListPatterns get listPatterns;
 
   /// Week conventions (first day of the week, weekend) for this locale.
   WeekInfo get weekInfo => resolveWeekInfo(locale);
