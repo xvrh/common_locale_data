@@ -58,6 +58,10 @@ class CommonLocaleDataSrCyrl extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameSrCyrl(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsSrCyrl(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsSrCyrl extends Units {
@@ -17860,4 +17864,74 @@ class LocaleDisplayNameSrCyrl extends LocaleDisplayName {
       'vaii': 'ваи цифре',
     },
   };
+}
+
+class ListPatternsSrCyrl extends ListPatterns {
+  const ListPatternsSrCyrl(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} и {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} и {1}',
+    ),
+    short: ListPattern(
+      two: '{0} и {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} и {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} и {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} и {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} или {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} или {1}',
+    ),
+    short: ListPattern(
+      two: '{0} или {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} или {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} или {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} или {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} и {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} и {1}',
+    ),
+    short: ListPattern(
+      two: '{0} и {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} и {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} и {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} и {1}',
+    ),
+  );
 }

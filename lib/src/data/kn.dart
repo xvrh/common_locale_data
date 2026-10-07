@@ -58,6 +58,10 @@ class CommonLocaleDataKn extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameKn(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsKn(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsKn extends Units {
@@ -16813,4 +16817,74 @@ class LocaleDisplayNameKn extends LocaleDisplayName {
       'vaii': 'ವಾಯ್ ಅಂಕೆಗಳು',
     },
   };
+}
+
+class ListPatternsKn extends ListPatterns {
+  const ListPatternsKn(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} ಮತ್ತು {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, ಮತ್ತು {1}',
+    ),
+    short: ListPattern(
+      two: '{0} ಮತ್ತು {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, ಮತ್ತು {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} ಅಥವಾ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, ಅಥವಾ {1}',
+    ),
+    short: ListPattern(
+      two: '{0} ಅಥವಾ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, ಅಥವಾ {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} ಅಥವಾ {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, ಅಥವಾ {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    short: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+  );
 }

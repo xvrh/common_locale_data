@@ -58,6 +58,10 @@ class CommonLocaleDataAf extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameAf(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsAf(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsAf extends Units {
@@ -11828,4 +11832,74 @@ class LocaleDisplayNameAf extends LocaleDisplayName {
       'vaii': 'Vai-syfers',
     },
   };
+}
+
+class ListPatternsAf extends ListPatterns {
+  const ListPatternsAf(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} en {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} en {1}',
+    ),
+    short: ListPattern(
+      two: '{0} en {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} en {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} en {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} of {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} of {1}',
+    ),
+    short: ListPattern(
+      two: '{0} of {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} of {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} of {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} of {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    short: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+  );
 }

@@ -58,6 +58,10 @@ class CommonLocaleDataKk extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameKk(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsKk(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsKk extends Units {
@@ -12432,4 +12436,74 @@ class LocaleDisplayNameKk extends LocaleDisplayName {
       'wcho': 'Ванчо цифрлары',
     },
   };
+}
+
+class ListPatternsKk extends ListPatterns {
+  const ListPatternsKk(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} және {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    short: ListPattern(
+      two: '{0} және {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} және {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} не {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, не болмаса {1}',
+    ),
+    short: ListPattern(
+      two: '{0} не {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, не болмаса {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} не {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, не болмаса {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+    short: ListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+  );
 }

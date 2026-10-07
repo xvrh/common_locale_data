@@ -58,6 +58,10 @@ class CommonLocaleDataAm extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameAm(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsAm(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsAm extends Units {
@@ -10609,4 +10613,74 @@ class LocaleDisplayNameAm extends LocaleDisplayName {
       'vaii': 'የቫይ አሃዞች',
     },
   };
+}
+
+class ListPatternsAm extends ListPatterns {
+  const ListPatternsAm(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} እና {1}',
+      start: '{0}፣ {1}',
+      middle: '{0}፣ {1}',
+      end: '{0} እና {1}',
+    ),
+    short: ListPattern(
+      two: '{0} እና {1}',
+      start: '{0}፣ {1}',
+      middle: '{0}፣ {1}',
+      end: '{0} እና {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} እና {1}',
+      start: '{0}፣ {1}',
+      middle: '{0}፣ {1}',
+      end: '{0} እና {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} ወይም {1}',
+      start: '{0}፣ {1}',
+      middle: '{0}፣ {1}',
+      end: '{0} ወይም {1}',
+    ),
+    short: ListPattern(
+      two: '{0} ወይም {1}',
+      start: '{0}፣ {1}',
+      middle: '{0}፣ {1}',
+      end: '{0} ወይም {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} ወይም {1}',
+      start: '{0}፣ {1}',
+      middle: '{0}፣ {1}',
+      end: '{0} ወይም {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} እና {1}',
+      start: '{0}፣ {1}',
+      middle: '{0}፣ {1}',
+      end: '{0} እና {1}',
+    ),
+    short: ListPattern(
+      two: '{0} እና {1}',
+      start: '{0}፣ {1}',
+      middle: '{0}፣ {1}',
+      end: '{0} እና {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} እና {1}',
+      start: '{0}፣ {1}',
+      middle: '{0}፣ {1}',
+      end: '{0} እና {1}',
+    ),
+  );
 }

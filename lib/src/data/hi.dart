@@ -58,6 +58,10 @@ class CommonLocaleDataHi extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameHi(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsHi(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsHi extends Units {
@@ -16031,4 +16035,74 @@ class LocaleDisplayNameHi extends LocaleDisplayName {
       'vaii': 'वाई अंक',
     },
   };
+}
+
+class ListPatternsHi extends ListPatterns {
+  const ListPatternsHi(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} और {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, और {1}',
+    ),
+    short: ListPattern(
+      two: '{0} और {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} और {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} और {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} और {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} या {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} या {1}',
+    ),
+    short: ListPattern(
+      two: '{0} या {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} या {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} या {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} या {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} और {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, और {1}',
+    ),
+    short: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} {1}',
+    ),
+  );
 }

@@ -58,6 +58,10 @@ class CommonLocaleDataTk extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameTk(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsTk(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsTk extends Units {
@@ -11655,4 +11659,74 @@ class LocaleDisplayNameTk extends LocaleDisplayName {
       'vaii': 'Waý sanlary',
     },
   };
+}
+
+class ListPatternsTk extends ListPatterns {
+  const ListPatternsTk(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} we {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} we {1}',
+    ),
+    short: ListPattern(
+      two: '{0} we {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} we {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} ýa-da {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ýa-da {1}',
+    ),
+    short: ListPattern(
+      two: '{0} ýa-da {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ýa-da {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} ýa-da {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ýa-da {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    short: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+  );
 }

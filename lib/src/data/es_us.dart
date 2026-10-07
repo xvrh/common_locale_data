@@ -51,6 +51,10 @@ class CommonLocaleDataEsUS extends CommonLocaleDataEs {
   static final _localeDisplayName = LocaleDisplayNameEsUS(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsEsUS(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsEsUS extends UnitsEs {
@@ -2169,4 +2173,30 @@ class LocaleDisplayNameEsUS extends LocaleDisplayNameEs {
       },
     },
   });
+}
+
+class ListPatternsEsUS extends ListPatternsEs {
+  const ListPatternsEsUS(super.cld);
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: SpanishListPattern(
+      two: '{0} y {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} y {1}',
+    ),
+    short: SpanishListPattern(
+      two: '{0} y {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} y {1}',
+    ),
+    narrow: SpanishListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+  );
 }

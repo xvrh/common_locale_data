@@ -43,6 +43,16 @@ void main() {
     print(locale.localeDisplayName.keyNames.values);
     print(locale.localeDisplayName.valueNames.values);
 
+    for (var listPattern in [
+      locale.listPatterns.standard,
+      locale.listPatterns.or,
+      locale.listPatterns.unit,
+    ]) {
+      print(listPattern.long.format(['A', 'B', 'C']));
+      print(listPattern.short.format(['A', 'B', 'C']));
+      print(listPattern.narrow.format(['A', 'B', 'C']));
+    }
+
     print(
       locale.timeZones['Europe/Paris']?.format(
         TimeZoneStyle.genericShort,

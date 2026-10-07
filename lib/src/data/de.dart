@@ -58,6 +58,10 @@ class CommonLocaleDataDe extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameDe(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsDe(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsDe extends Units {
@@ -18242,4 +18246,74 @@ class LocaleDisplayNameDe extends LocaleDisplayName {
       'vaii': 'Vai-Ziffern',
     },
   };
+}
+
+class ListPatternsDe extends ListPatterns {
+  const ListPatternsDe(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} und {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} und {1}',
+    ),
+    short: ListPattern(
+      two: '{0} und {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} und {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} und {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} und {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} oder {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} oder {1}',
+    ),
+    short: ListPattern(
+      two: '{0} oder {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} oder {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} oder {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} oder {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} und {1}',
+    ),
+    short: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} und {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} und {1}',
+    ),
+  );
 }

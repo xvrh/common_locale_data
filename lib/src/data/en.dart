@@ -58,6 +58,10 @@ class CommonLocaleDataEn extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameEn(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsEn(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsEn extends Units {
@@ -18608,4 +18612,74 @@ class LocaleDisplayNameEn extends LocaleDisplayName {
     't0': {'und': 'Unspecified Machine Translation'},
     'va': {'posix': 'POSIX Compliant Locale'},
   };
+}
+
+class ListPatternsEn extends ListPatterns {
+  const ListPatternsEn(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} and {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, and {1}',
+    ),
+    short: ListPattern(
+      two: '{0} & {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, & {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} or {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, or {1}',
+    ),
+    short: ListPattern(
+      two: '{0} or {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, or {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} or {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, or {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    short: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+  );
 }

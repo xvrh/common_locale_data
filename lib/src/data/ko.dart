@@ -58,6 +58,10 @@ class CommonLocaleDataKo extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameKo(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsKo(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsKo extends Units {
@@ -15039,4 +15043,74 @@ class LocaleDisplayNameKo extends LocaleDisplayName {
       'vaii': '바이 숫자',
     },
   };
+}
+
+class ListPatternsKo extends ListPatterns {
+  const ListPatternsKo(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} 및 {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} 및 {1}',
+    ),
+    short: ListPattern(
+      two: '{0} 및 {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} 및 {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} 및 {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} 및 {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} 또는 {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} 또는 {1}',
+    ),
+    short: ListPattern(
+      two: '{0} 또는 {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} 또는 {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} 또는 {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} 또는 {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+    short: ListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+  );
 }

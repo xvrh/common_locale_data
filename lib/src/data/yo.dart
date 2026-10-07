@@ -58,6 +58,10 @@ class CommonLocaleDataYo extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameYo(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsYo(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsYo extends Units {
@@ -10558,4 +10562,74 @@ class LocaleDisplayNameYo extends LocaleDisplayName {
       'vaii': 'Àwọn díjíìtì Fai',
     },
   };
+}
+
+class ListPatternsYo extends ListPatterns {
+  const ListPatternsYo(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} àti{1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    short: ListPattern(
+      two: '{0} àti{1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} àti {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} àti{1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} àti {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} tàbí {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, tabi {1}',
+    ),
+    short: ListPattern(
+      two: '{0} tàbí {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, tabi {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} tàbí {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, tabi {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} àti{1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    short: ListPattern(
+      two: '{0} àti{1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} àti{1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+  );
 }

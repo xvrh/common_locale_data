@@ -20,17 +20,21 @@ Translations for:
   - relative time fields
   - time zones and example cities (or similar) for time zones
   - week conventions (first day of the week, weekend days)
+  - list patterns ("A, B, and C", "A, B, or C")
 
 ## Functionality
 
 Translations can be accessed via static member functions or dynamic maps.
 
-Formatting functions are available for: units, currencies, relative time fields, timezones and 
+Formatting functions are available for: units, currencies, relative time fields, timezones, lists and 
 locale identifiers.
 
 A high-level relative time ("timeago") formatter (`cld.relativeTime`) turns a `DateTime`/`Duration`
 into a localized string such as "3 minutes ago", "in 2 days", "yesterday" or "last week". It is
 calendar-aware, picks the best unit automatically, and supports long/short/narrow widths.
+
+List patterns (`cld.listPatterns`) join a list of items into a localized text such as "A, B, and C",
+"A, B, or C" or "3 ft 7 in", in long/short/narrow widths.
 
 Locale identifiers support parsing, canonicalization, adding and removing of likely subtags and
 formatting in various forms.
@@ -233,6 +237,12 @@ void main() {
   print('');
   print(cld.weekInfo.firstDayOfWeek); // 7 (Sunday) for en, 1 (Monday) for en-GB
   print(cld.weekInfo.isWeekend(DateTime.sunday)); // true
+
+  // List patterns
+  print('');
+  print(cld.listPatterns.standard.long.format(['A', 'B', 'C'])); // A, B and C
+  print(cld.listPatterns.or.long.format(['A', 'B', 'C'])); // A, B or C
+  print(cld.listPatterns.unit.narrow.format(['3 ft', '7 in'])); // 3 ft 7 in
 
   // Territories
   print('');

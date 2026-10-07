@@ -47,6 +47,10 @@ class CommonLocaleDataEnHK extends CommonLocaleDataEn {
   static final _localeDisplayName = LocaleDisplayNameEnHK(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsEnHK(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsEnHK extends UnitsEn {
@@ -1895,4 +1899,52 @@ class LocaleDisplayNameEnHK extends LocaleDisplayNameEn {
       },
     },
   });
+}
+
+class ListPatternsEnHK extends ListPatternsEn {
+  const ListPatternsEnHK(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} and {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} and {1}',
+    ),
+    short: ListPattern(
+      two: '{0} and {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} and {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} or {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} or {1}',
+    ),
+    short: ListPattern(
+      two: '{0} or {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} or {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} or {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} or {1}',
+    ),
+  );
 }

@@ -58,6 +58,10 @@ class CommonLocaleDataSl extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameSl(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsSl(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsSl extends Units {
@@ -17845,4 +17849,74 @@ class LocaleDisplayNameSl extends LocaleDisplayName {
       'wara': 'Warang Citi števke',
     },
   };
+}
+
+class ListPatternsSl extends ListPatterns {
+  const ListPatternsSl(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} in {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} in {1}',
+    ),
+    short: ListPattern(
+      two: '{0} in {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} in {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} in {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} in {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} ali {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ali {1}',
+    ),
+    short: ListPattern(
+      two: '{0} ali {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ali {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} ali {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} ali {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} in {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} in {1}',
+    ),
+    short: ListPattern(
+      two: '{0} in {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} in {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} in {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} in {1}',
+    ),
+  );
 }

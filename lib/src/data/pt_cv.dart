@@ -55,6 +55,10 @@ class CommonLocaleDataPtCV extends CommonLocaleDataPt {
   static final _localeDisplayName = LocaleDisplayNamePtCV(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsPtCV(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsPtCV extends UnitsPt {
@@ -6311,4 +6315,30 @@ class LocaleDisplayNamePtCV extends LocaleDisplayNamePt {
       },
     },
   });
+}
+
+class ListPatternsPtCV extends ListPatternsPt {
+  const ListPatternsPtCV(super.cld);
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} e {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} e {1}',
+    ),
+    short: ListPattern(
+      two: '{0} e {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} e {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} e {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} e {1}',
+    ),
+  );
 }

@@ -58,6 +58,10 @@ class CommonLocaleDataTi extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameTi(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsTi(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsTi extends Units {
@@ -10855,4 +10859,74 @@ class LocaleDisplayNameTi extends LocaleDisplayName {
       'vaii': 'ቫይ ኣሃዛት',
     },
   };
+}
+
+class ListPatternsTi extends ListPatterns {
+  const ListPatternsTi(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0}ን {1}ን',
+      start: '{0}፣ {1}',
+      middle: '{0}፣ {1}',
+      end: '{0}ን {1}ን',
+    ),
+    short: ListPattern(
+      two: '{0}ን {1}ን',
+      start: '{0}፣ {1}',
+      middle: '{0}፣ {1}',
+      end: '{0}ን {1}ን',
+    ),
+    narrow: ListPattern(
+      two: '{0}፣ {1}',
+      start: '{0}፣ {1}',
+      middle: '{0}፣ {1}',
+      end: '{0}ን {1}ን',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} ወይ {1}',
+      start: '{0}፣ {1}',
+      middle: '{0}፣ {1}',
+      end: '{0} ወይ {1}',
+    ),
+    short: ListPattern(
+      two: '{0} ወይ {1}',
+      start: '{0}፣ {1}',
+      middle: '{0}፣ {1}',
+      end: '{0} ወይ {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} ወይ {1}',
+      start: '{0}፣ {1}',
+      middle: '{0}፣ {1}',
+      end: '{0} ወይ {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0}፣ {1}',
+      start: '{0}፣ {1}',
+      middle: '{0}፣ {1}',
+      end: '{0}፣ {1}',
+    ),
+    short: ListPattern(
+      two: '{0}፣ {1}',
+      start: '{0}፣ {1}',
+      middle: '{0}፣ {1}',
+      end: '{0}፣ {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+  );
 }

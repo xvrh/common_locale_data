@@ -58,6 +58,10 @@ class CommonLocaleDataDsb extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameDsb(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsDsb(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsDsb extends Units {
@@ -14357,4 +14361,74 @@ class LocaleDisplayNameDsb extends LocaleDisplayName {
       'vaii': 'vaiske cyfry',
     },
   };
+}
+
+class ListPatternsDsb extends ListPatterns {
+  const ListPatternsDsb(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} a {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} a {1}',
+    ),
+    short: ListPattern(
+      two: '{0} a {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} a {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} a {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} a {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} abo {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} abo {1}',
+    ),
+    short: ListPattern(
+      two: '{0} abo {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} abo {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} abo {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} abo {1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} a {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} a {1}',
+    ),
+    short: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} a {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0}, {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0}, {1}',
+    ),
+  );
 }

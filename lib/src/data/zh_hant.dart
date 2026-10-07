@@ -58,6 +58,10 @@ class CommonLocaleDataZhHant extends CommonLocaleData {
   static final _localeDisplayName = LocaleDisplayNameZhHant(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsZhHant(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsZhHant extends Units {
@@ -15498,4 +15502,74 @@ class LocaleDisplayNameZhHant extends LocaleDisplayName {
       'wara': '瓦蘭齊地數字',
     },
   };
+}
+
+class ListPatternsZhHant extends ListPatterns {
+  const ListPatternsZhHant(super.cld);
+
+  @override
+  MultiLengthListPattern get standard => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0}和{1}',
+      start: '{0}、{1}',
+      middle: '{0}、{1}',
+      end: '{0}和{1}',
+    ),
+    short: ListPattern(
+      two: '{0}和{1}',
+      start: '{0}、{1}',
+      middle: '{0}、{1}',
+      end: '{0}和{1}',
+    ),
+    narrow: ListPattern(
+      two: '{0}、{1}',
+      start: '{0}、{1}',
+      middle: '{0}、{1}',
+      end: '{0}和{1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get or => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0}或{1}',
+      start: '{0}、{1}',
+      middle: '{0}、{1}',
+      end: '{0}或{1}',
+    ),
+    short: ListPattern(
+      two: '{0}或{1}',
+      start: '{0}、{1}',
+      middle: '{0}、{1}',
+      end: '{0}或{1}',
+    ),
+    narrow: ListPattern(
+      two: '{0}或{1}',
+      start: '{0}、{1}',
+      middle: '{0}、{1}',
+      end: '{0}或{1}',
+    ),
+  );
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+    short: ListPattern(
+      two: '{0} {1}',
+      start: '{0} {1}',
+      middle: '{0} {1}',
+      end: '{0} {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0}{1}',
+      start: '{0}{1}',
+      middle: '{0}{1}',
+      end: '{0}{1}',
+    ),
+  );
 }

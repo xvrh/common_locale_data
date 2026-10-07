@@ -55,6 +55,10 @@ class CommonLocaleDataPtMZ extends CommonLocaleDataPt {
   static final _localeDisplayName = LocaleDisplayNamePtMZ(_cld);
   @override
   LocaleDisplayName get localeDisplayName => _localeDisplayName;
+
+  static final _listPatterns = ListPatternsPtMZ(_cld);
+  @override
+  ListPatterns get listPatterns => _listPatterns;
 }
 
 class UnitsPtMZ extends UnitsPt {
@@ -6310,4 +6314,30 @@ class LocaleDisplayNamePtMZ extends LocaleDisplayNamePt {
       },
     },
   });
+}
+
+class ListPatternsPtMZ extends ListPatternsPt {
+  const ListPatternsPtMZ(super.cld);
+
+  @override
+  MultiLengthListPattern get unit => const MultiLengthListPattern(
+    long: ListPattern(
+      two: '{0} e {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} e {1}',
+    ),
+    short: ListPattern(
+      two: '{0} e {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} e {1}',
+    ),
+    narrow: ListPattern(
+      two: '{0} e {1}',
+      start: '{0}, {1}',
+      middle: '{0}, {1}',
+      end: '{0} e {1}',
+    ),
+  );
 }
