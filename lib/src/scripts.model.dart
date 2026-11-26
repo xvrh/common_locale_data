@@ -1,6 +1,23 @@
 import 'common_locale_data.dart';
 import 'scripts.dart';
 
+/// Looks up a [Script] of [Scripts] by its code.
+///
+/// An extension rather than a member of [Scripts]: an extension operator is
+/// resolved at compile time, so a `[]` on an untyped receiver elsewhere in a
+/// program cannot keep it in a dart2js build.
+///
+/// {@category Languages}
+extension ScriptsLookup on Scripts {
+  /// Access scripts (without the extra [Scripts.scripts] indirection)
+  ///
+  /// The code is a ISO 15924 script code, which will be converted to title case before lookup.
+  Script? operator [](String? code) {
+    if (code == null) return null;
+    return scripts[code[0].toUpperCase() + code.substring(1).toLowerCase()];
+  }
+}
+
 /// Container for localized script names.
 ///
 /// {@category Languages}
@@ -18,14 +35,6 @@ abstract class Scripts {
   /// *NOTE 2:* Accesses via this map will cause the data for all scripts
   /// of this locale to be included in the binary.
   Map<String, Script> get scripts;
-
-  /// Access scripts (without the extra [scripts] indirection)
-  ///
-  /// The code is a ISO 15924 script code, which will be converted to title case before lookup.
-  Script? operator [](String? code) {
-    if (code == null) return null;
-    return scripts[code[0].toUpperCase() + code.substring(1).toLowerCase()];
-  }
 
   // FROM HERE ON GENERATED CODE - DO NOT MODIFY BY HAND
 

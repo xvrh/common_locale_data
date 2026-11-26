@@ -2,6 +2,24 @@ import 'common_locale_data.dart';
 import 'languages.dart';
 import 'locale_id/language_id.dart';
 
+/// Looks up a [Language] of [Languages] by its code.
+///
+/// An extension rather than a member of [Languages]: an extension operator is
+/// resolved at compile time, so a `[]` on an untyped receiver elsewhere in a
+/// program cannot keep it, and the canonicalization rules it reaches, in a
+/// dart2js build.
+///
+/// {@category Languages}
+extension LanguagesLookup on Languages {
+  /// Access languages (without the extra [Languages.languages] indirection).
+  ///
+  /// The code is a 2 or 3 letter ISO 639 language code, possibly followed by a script and region.
+  Language? operator [](String? code) {
+    if (code == null) return null;
+    return languages[LanguageId.parse(code).canonicalize().toUnicodeBCP47()];
+  }
+}
+
 /// Container for localized language names.
 ///
 /// {@category Languages}
@@ -19,14 +37,6 @@ abstract class Languages {
   /// *NOTE 2:* Accesses via this map will cause the data for all languages
   /// of this locale to be included in the binary.
   Map<String, Language> get languages;
-
-  /// Access languages (without the extra [languages] indirection).
-  ///
-  /// The code is a 2 or 3 letter ISO 639 language code, possibly followed by a script and region.
-  Language? operator [](String? code) {
-    if (code == null) return null;
-    return languages[LanguageId.parse(code).canonicalize().toUnicodeBCP47()];
-  }
 
   // FROM HERE ON GENERATED CODE - DO NOT MODIFY BY HAND
 

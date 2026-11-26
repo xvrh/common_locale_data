@@ -1,6 +1,22 @@
 import 'common_locale_data.dart';
 import 'territories.dart';
 
+/// Looks up a [Territory] of [Territories] by its code.
+///
+/// An extension rather than a member of [Territories]: an extension operator is
+/// resolved at compile time, so a `[]` on an untyped receiver elsewhere in a
+/// program cannot keep it in a dart2js build.
+///
+/// {@category Territories}
+extension TerritoriesLookup on Territories {
+  /// Access territories (without the extra [Territories.territories] indirection)
+  ///
+  /// The code is a ISO 3166 territory code, which will be converted to upper case before lookup.
+  Territory? operator [](String? code) {
+    return territories[code?.toUpperCase()];
+  }
+}
+
 /// Container for localized territory names.
 ///
 /// {@category Territories}
@@ -30,13 +46,6 @@ abstract class Territories {
   Map<String, Territory> get countries => Map.fromEntries(
     territories.entries.where((e) => TerritoryData.countries.contains(e.key)),
   );
-
-  /// Access territories (without the extra [territories] indirection)
-  ///
-  /// The code is a ISO 3166 territory code, which will be converted to upper case before lookup.
-  Territory? operator [](String? code) {
-    return territories[code?.toUpperCase()];
-  }
 
   // FROM HERE ON GENERATED CODE - DO NOT MODIFY BY HAND
 
