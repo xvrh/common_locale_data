@@ -1,6 +1,20 @@
 import 'common_locale_data.dart';
 import 'currencies.dart';
 
+/// Looks up a [Currency] of [Currencies] by its code.
+///
+/// An extension rather than a member of [Currencies]: an extension operator is
+/// resolved at compile time, so a `[]` on an untyped receiver elsewhere in a
+/// program cannot keep it in a dart2js build.
+///
+/// {@category Currencies}
+extension CurrenciesLookup on Currencies {
+  /// Access currencies (without the extra [Currencies.currencies] indirection)
+  ///
+  /// The code is a 3 letter ISO 4217 currency code, which will be converted to upper case before lookup.
+  Currency? operator [](String? code) => currencies[code?.toUpperCase()];
+}
+
 /// Container for localized currency names.
 ///
 /// {@category Currencies}
@@ -18,11 +32,6 @@ abstract class Currencies {
   /// *NOTE 2:* Accesses via this map will cause the data for all currencies
   /// of this locale to be included in the binary.
   Map<String, Currency> get currencies;
-
-  /// Access currencies (without the extra [currencies] indirection)
-  ///
-  /// The code is a 3 letter ISO 4217 currency code, which will be converted to upper case before lookup.
-  Currency? operator [](String? code) => currencies[code?.toUpperCase()];
 
   // FROM HERE ON GENERATED CODE - DO NOT MODIFY BY HAND
 

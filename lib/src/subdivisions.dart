@@ -17,8 +17,17 @@ abstract class Subdivisions {
   /// *NOTE 2:* Accesses via this map will cause the data for all subdivisions
   /// of this locale to be included in the binary.
   Map<String, String> get subdivisions;
+}
 
-  /// Access subdivisions (without the extra [subdivisions] indirection)
+/// Looks up a subdivision name of [Subdivisions] by its code.
+///
+/// An extension rather than a member of [Subdivisions]: an extension operator
+/// is resolved at compile time, so a `[]` on an untyped receiver elsewhere in a
+/// program cannot keep it in a dart2js build.
+///
+/// {@category Territories}
+extension SubdivisionsLookup on Subdivisions {
+  /// Access subdivisions (without the extra [Subdivisions.subdivisions] indirection)
   ///
   /// The code is based on teh ISO 3166-2 subdivision codes, which will be converted to lower case before lookup.
   ///

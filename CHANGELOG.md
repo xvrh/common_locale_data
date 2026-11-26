@@ -1,3 +1,9 @@
+## 3.0.0
+- Code lookups (`cld.languages['es']`, and the same on `territories`, `scripts`, `variants`, `currencies`, `subdivisions` and `timeZones`) are extension operators (`LanguagesLookup`, `TerritoriesLookup` etc...) instead of instance members. dart2js keeps an instance `operator []` as soon as any `[]` in a program has an untyped receiver, such as decoded JSON or intl's date symbols, so every web build carried the language canonicalization rules (about 300 KB of JavaScript), the time zone data and each instantiated container's map, even without a lookup. Typed calls compile unchanged (breaking change):
+  - a lookup through `dynamic` no longer resolves
+  - a subclass can no longer override a lookup or call `super[...]`
+  - a library that imports `package:common_locale_data/src/...` instead of a public library must import the public library to see the extensions
+
 ## 2.4.0
 - Add list patterns (`cld.listPatterns`): join a list of items into a localized text such as "A, B, and C" (`standard`), "A, B, or C" (`or`) or "3 ft 7 in" (`unit`), each in long/short/narrow widths. Includes the same Spanish ("y" → "e", "o" → "u") and Hebrew ("ו" → "ו-") rules as ICU
 

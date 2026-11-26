@@ -5,6 +5,7 @@ import 'package:test/test.dart';
 import 'tree_shaking_data/date_field_direct_access_field.dart' as date_field;
 import 'tree_shaking_data/date_fields_dynamic.dart' as date_fields_dynamic;
 import 'tree_shaking_data/timezone.dart' as timezone;
+import 'tree_shaking_data/untyped_index.dart' as untyped_index;
 
 Future<void> main() async {
   testFile(
@@ -26,6 +27,13 @@ Future<void> main() async {
     expected: timezone.expected,
     notExpected: timezone.notExpected,
     maxLength: 260000,
+  );
+
+  testFile(
+    'test/tree_shaking_data/untyped_index.dart',
+    expected: untyped_index.expected,
+    notExpected: untyped_index.notExpected,
+    maxLength: 180000,
   );
 
   // don't check expected data, only size, to save compilation time of this test file

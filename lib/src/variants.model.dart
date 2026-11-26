@@ -1,6 +1,22 @@
 import 'common_locale_data.dart';
 import 'variants.dart';
 
+/// Looks up a [Variant] of [Variants] by its code.
+///
+/// An extension rather than a member of [Variants]: an extension operator is
+/// resolved at compile time, so a `[]` on an untyped receiver elsewhere in a
+/// program cannot keep it in a dart2js build.
+///
+/// {@category Languages}
+extension VariantsLookup on Variants {
+  /// Access variants (without the extra [Variants.variants] indirection)
+  ///
+  /// The code is a RFC5646 locale variant code, which will be converted to upper case before lookup.
+  Variant? operator [](String? code) {
+    return variants[code?.toUpperCase()];
+  }
+}
+
 /// Container for localized locale variant names.
 ///
 /// {@category Languages}
@@ -18,13 +34,6 @@ abstract class Variants {
   /// *NOTE 2:* Accesses via this map will cause the data for all variants
   /// of this locale to be included in the binary.
   Map<String, Variant> get variants;
-
-  /// Access variants (without the extra [variants] indirection)
-  ///
-  /// The code is a RFC5646 locale variant code, which will be converted to upper case before lookup.
-  Variant? operator [](String? code) {
-    return variants[code?.toUpperCase()];
-  }
 
   // FROM HERE ON GENERATED CODE - DO NOT MODIFY BY HAND
 

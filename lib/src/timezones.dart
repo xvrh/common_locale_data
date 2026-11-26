@@ -1,6 +1,7 @@
 import 'package:collection/collection.dart';
 import 'package:intl/intl.dart';
 import 'common_locale_data.dart';
+import 'territories.dart';
 import 'timezone.data.dart';
 
 /// Timezone formatting options.
@@ -127,11 +128,6 @@ abstract class TimeZones {
     return TimeZone(this, code, dateTime);
   }
 
-  /// Get a timezone by the IANA/Olson [code] for the current date and time.
-  TimeZone? operator [](String? code) {
-    return get(code);
-  }
-
   /// Format the timezone offset in the desired [style].
   /// For the formats that use a name, this format falls back to a numeric format.
   String format(TimeZoneStyle style, Duration offset) {
@@ -243,6 +239,21 @@ abstract class TimeZones {
     } else {
       return '$sign$hours';
     }
+  }
+}
+
+/// Looks up a [TimeZone] of [TimeZones] by its code.
+///
+/// An extension rather than a member of [TimeZones]: an extension operator is
+/// resolved at compile time, so a `[]` on an untyped receiver elsewhere in a
+/// program cannot keep it, and the time zone data it reaches, in a dart2js
+/// build.
+///
+/// {@category Timezones}
+extension TimeZonesLookup on TimeZones {
+  /// Get a timezone by the IANA/Olson [code] for the current date and time.
+  TimeZone? operator [](String? code) {
+    return get(code);
   }
 }
 

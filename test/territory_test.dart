@@ -1,4 +1,4 @@
-import 'package:common_locale_data/src/data/en.dart';
+import 'package:common_locale_data/en.dart';
 import 'package:test/test.dart';
 
 void main() {
